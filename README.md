@@ -51,7 +51,11 @@ La salida queda en `portable-site/dist/`. No se versionan `node_modules/` ni `di
 
 ## Estado de publicación
 
-Este repositorio conserva el código y la documentación de la migración. No activa GitHub Pages ni realiza despliegues automáticos. La aplicación mantiene rutas absolutas `/assets/...`; una futura publicación fiel debe ubicarse en la raíz de un dominio o subdominio.
+La versión pública se despliega automáticamente desde `main` mediante GitHub Pages:
+
+<https://manign1984.github.io/reforma-fresco-noble/>
+
+La compilación de Pages adapta las rutas públicas al subdirectorio `/reforma-fresco-noble/` desde `vite.config.js`. Esta transformación ocurre únicamente durante el build y conserva intactos los archivos recuperados literalmente.
 
 ## Desarrollo futuro
 

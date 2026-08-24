@@ -43,7 +43,13 @@ El resultado queda en `dist/` y puede alojarse en cualquier servicio de archivos
 
 ## Condición de alojamiento
 
-La versión preserva las rutas absolutas originales (`/assets/...`). Debe publicarse en la raíz de un dominio o subdominio. Para alojarla dentro de una subcarpeta hay que adaptar esas rutas; ese cambio no se incluyó porque alteraría el código literal recuperado.
+La versión preserva en sus fuentes las rutas absolutas originales (`/assets/...`). Por defecto se compila para la raíz de un dominio o subdominio.
+
+Para GitHub Pages, `vite.config.js` acepta `GITHUB_PAGES_BASE=/reforma-fresco-noble/` y transforma esas rutas únicamente durante la compilación. De ese modo la publicación funciona dentro del subdirectorio sin modificar el código literal recuperado.
+
+La versión pública se encuentra en:
+
+<https://manign1984.github.io/reforma-fresco-noble/>
 
 ## Datos y privacidad
 
