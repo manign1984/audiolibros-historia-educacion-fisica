@@ -21,16 +21,17 @@ function ResultCount({ count, query }) {
 function ApaReference({ entry }) {
   return (
     <p className="catalog-entry__citation">
-      {entry.citation.beforeBook}{' '}
-      <em>{entry.citation.bookTitle}</em>{' '}
-      {entry.citation.afterBook}
+      {entry.citation.beforeItalic}{' '}
+      <em>{entry.citation.italic}</em>
+      {!entry.citation.afterItalic.startsWith(',') && ' '}
+      {entry.citation.afterItalic}
     </p>
   );
 }
 
 function WorkThumbnail({ entry }) {
   return (
-    <figure className="work-thumbnail">
+    <figure className={`work-thumbnail ${entry.thumbnail.fit === 'contain' ? 'work-thumbnail--contain' : ''}`}>
       <img
         src={resolveSitePath(entry.thumbnail.src, import.meta.env.BASE_URL)}
         alt={entry.thumbnail.alt}

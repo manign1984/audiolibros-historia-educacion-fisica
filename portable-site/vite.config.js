@@ -39,6 +39,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         biblioteca: fileURLToPath(new URL('./index.html', import.meta.url)),
+        orbuchEducarAlCuerpo: fileURLToPath(new URL('./textos/orbuch-educar-al-cuerpo/index.html', import.meta.url)),
         pineauFrescoNoble: fileURLToPath(new URL('./textos/pineau-fresco-noble/index.html', import.meta.url)),
       },
     },

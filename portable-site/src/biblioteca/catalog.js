@@ -6,15 +6,35 @@ export const LIBRARY_CONFIG = {
 
 export const catalog = [
   {
+    id: 'orbuch-educar-al-cuerpo',
+    authorDisplay: 'Orbuch, I. P.',
+    authorSearch: ['Iván Pablo Orbuch', 'Ivan Pablo Orbuch', 'Orbuch, Iván', 'Orbuch, I. P.'],
+    sortAuthor: 'Orbuch, Iván Pablo',
+    title: 'Educar al cuerpo dentro y fuera del aula. Análisis de dos experiencias en la Nueva Argentina de Perón',
+    citation: {
+      beforeItalic: 'Orbuch, I. P. (2020). Educar al cuerpo dentro y fuera del aula. Análisis de dos experiencias en la Nueva Argentina de Perón.',
+      italic: 'History of Education in Latin America, 3',
+      afterItalic: ', e21435.',
+    },
+    thumbnail: {
+      src: 'assets/orbuch-gimnasia-compensatoria-portada.png',
+      alt: 'Portada de Gimnasia compensatoria en el aula, uno de los documentos analizados por Iván Orbuch',
+      year: '1949–1950',
+      label: 'Aula y oficina',
+      fit: 'contain',
+    },
+    path: 'textos/orbuch-educar-al-cuerpo/',
+  },
+  {
     id: 'pineau-fresco-noble',
     authorDisplay: 'Pineau, P.',
     authorSearch: ['Pablo Pineau', 'Pineau, Pablo', 'Pineau, P.'],
     sortAuthor: 'Pineau, Pablo',
     title: 'Renovación, represión, cooptación: Las estrategias de la Reforma Fresco–Noble (Provincia de Buenos Aires, década del 30)',
     citation: {
-      beforeBook: 'Pineau, P. (1999). Renovación, represión, cooptación: Las estrategias de la Reforma Fresco–Noble (Provincia de Buenos Aires, década del 30). En A. Ascolani (Comp.),',
-      bookTitle: 'La educación en Argentina: Estudios de historia',
-      afterBook: '(pp. 223–239). Ediciones del Arca.',
+      beforeItalic: 'Pineau, P. (1999). Renovación, represión, cooptación: Las estrategias de la Reforma Fresco–Noble (Provincia de Buenos Aires, década del 30). En A. Ascolani (Comp.),',
+      italic: 'La educación en Argentina: Estudios de historia',
+      afterItalic: '(pp. 223–239). Ediciones del Arca.',
     },
     thumbnail: {
       src: 'assets/pablo-pineau.webp',
@@ -70,6 +90,7 @@ export function resolveSitePath(path, baseUrl = '/') {
 }
 
 export function citationAsPlainText(entry) {
-  const { beforeBook, bookTitle, afterBook } = entry.citation;
-  return `${beforeBook} ${bookTitle} ${afterBook}`;
+  const { beforeItalic, italic, afterItalic } = entry.citation;
+  const separator = afterItalic.startsWith(',') ? '' : ' ';
+  return `${beforeItalic} ${italic}${separator}${afterItalic}`;
 }

@@ -315,6 +315,16 @@ input:focus-visible {
   filter: sepia(0.18) contrast(1.03);
 }
 
+.work-thumbnail--contain {
+  background: #d9d1c1;
+}
+
+.work-thumbnail--contain img {
+  padding: 0.65rem 0.65rem 3.1rem 2rem;
+  object-fit: contain;
+  filter: sepia(0.08) contrast(1.02);
+}
+
 .work-thumbnail figcaption {
   position: absolute;
   z-index: 3;
