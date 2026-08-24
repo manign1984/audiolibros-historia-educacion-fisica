@@ -18,6 +18,8 @@ import {
 } from 'lucide-react';
 import { timeline } from './data.js';
 import IntegratedReader from './IntegratedReader.jsx';
+import { pineauReaderConfig } from './readerConfigs.js';
+import { readingDocument } from './readingDocument.js';
 
 const AUDIOBOOK_DRIVE_ID = '17w1Pw25aGLXu_cR9mRBZgIOnCG2qNAEm';
 const AUDIOBOOK_DRIVE_URL = `https://drive.google.com/file/d/${AUDIOBOOK_DRIVE_ID}/view`;
@@ -654,7 +656,11 @@ function ReadingSection({ showToast }) {
         </article>
 
         <div className="reading-reader-stage">
-          <IntegratedReader showToast={showToast} />
+          <IntegratedReader
+            showToast={showToast}
+            readingDocument={readingDocument}
+            config={pineauReaderConfig}
+          />
         </div>
       </div>
     </section>

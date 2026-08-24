@@ -27,14 +27,6 @@ import {
   VolumeX,
   X,
 } from 'lucide-react';
-import { readingDocument } from './readingDocument.js';
-
-const AUDIOBOOK_DRIVE_ID = '17w1Pw25aGLXu_cR9mRBZgIOnCG2qNAEm';
-const AUDIOBOOK_DRIVE_URL = `https://drive.google.com/file/d/${AUDIOBOOK_DRIVE_ID}/view`;
-const AUDIOBOOK_URL = '/assets/pineau-audiolibro.mp3';
-const PDF_URL = '/assets/pineau-renovacion-represion-cooptacion.pdf';
-const NOTES_KEY = 'fresco-noble-reader-notes-v1';
-const STATE_KEY = 'fresco-noble-reader-state-v1';
 
 const EMPTY_STATE = {
   currentTime: 0,
@@ -54,7 +46,7 @@ function readStoredValue(key, fallback) {
   }
 }
 
-function migrateStoredNotes(notes) {
+function migrateStoredNotes(notes, readingDocument) {
   if (!Array.isArray(notes)) return [];
   const mapping = readingDocument.legacySentenceMap || {};
 
@@ -81,6 +73,11 @@ function excerpt(text, length = 132) {
   return `${text.slice(0, length).trimEnd()}…`;
 }
 
+function noteAudioTime(note, sentence) {
+  if (Number.isFinite(sentence?.start)) return sentence.start;
+  return Number.isFinite(note?.audioTime) ? note.audioTime : null;
+}
+
 function findActiveSentence(sentences, currentTime) {
   if (!sentences.length) return null;
   let low = 0;
@@ -100,31 +97,40 @@ function findActiveSentence(sentences, currentTime) {
   return candidate;
 }
 
-function buildNotesText(notes, sentenceMap) {
+function buildNotesText(notes, sentenceMap, config) {
   const lines = [
     'CUADERNO DE LECTURA',
-    'Pablo Pineau · Renovación, represión, cooptación',
+    config.authorAndTitle,
     `Exportado: ${new Intl.DateTimeFormat('es-AR', { dateStyle: 'long', timeStyle: 'short' }).format(new Date())}`,
     '',
   ];
 
   notes.forEach((note, index) => {
     const sentence = sentenceMap.get(note.sentenceId);
-    lines.push(`${index + 1}. ${sentence?.sectionTitle || 'Texto'} · ${formatTime(sentence?.start || 0)}`);
+    const audioTime = noteAudioTime(note, sentence);
+    if (Number.isFinite(sentence?.start)) {
+      lines.push(`${index + 1}. ${sentence?.sectionTitle || 'Texto'} · ${formatTime(sentence.start)}`);
+    } else {
+      lines.push(`${index + 1}. ${sentence?.sectionTitle || 'Texto'}`);
+      if (Number.isFinite(audioTime)) {
+        lines.push(`Momento real del audio al crear la nota (sin alineación oración–audio): ${formatTime(audioTime)}`);
+      }
+    }
     lines.push(`“${sentence?.text || 'Oración no disponible'}”`);
     lines.push(note.text);
     lines.push('');
   });
 
-  lines.push('Las notas fueron creadas en el lector integrado de la experiencia Reforma Fresco–Noble.');
+  lines.push(`Las notas fueron creadas en el lector integrado de la experiencia ${config.experienceName}.`);
   return lines.join('\n');
 }
 
 function NoteCard({ note, sentence, onGo, onEdit, onDelete, compact = false }) {
+  const audioTime = noteAudioTime(note, sentence);
   return (
     <article className={`margin-note ${compact ? 'margin-note--compact' : ''}`}>
       <button className="margin-note__jump" type="button" onClick={() => onGo(note)}>
-        <span>{sentence?.sectionTitle || 'Texto'} · {formatTime(sentence?.start || 0)}</span>
+        <span>{sentence?.sectionTitle || 'Texto'}{Number.isFinite(audioTime) ? ` · ${formatTime(audioTime)}` : ''}</span>
         <q>{excerpt(sentence?.text, compact ? 92 : 118)}</q>
       </button>
       <p>{note.text}</p>
@@ -140,7 +146,7 @@ function NoteCard({ note, sentence, onGo, onEdit, onDelete, compact = false }) {
   );
 }
 
-function ReaderLauncher({ onOpen, progress, noteCount }) {
+function ReaderLauncher({ onOpen, progress, noteCount, readingDocument, config }) {
   const hasProgress = progress.currentTime > 3;
   const progressPercent = Math.min(100, (progress.currentTime / readingDocument.duration) * 100);
 
@@ -153,16 +159,13 @@ function ReaderLauncher({ onOpen, progress, noteCount }) {
         </div>
         <div className="reader-launcher__copy">
           <p className="eyebrow">Lector integrado · texto + audiolibro</p>
-          <h3 id="reader-launcher-title">Leé, escuchá y anotá sin salir del recorrido</h3>
-          <p>
-            El texto sigue el audiolibro oración por oración. Podés detenerte, dejar una nota y volver a
-            escuchar exactamente desde ese lugar.
-          </p>
+          <h3 id="reader-launcher-title">{config.sync.launcherTitle}</h3>
+          <p>{config.sync.launcherDescription}</p>
         </div>
       </div>
 
       <ul className="reader-launcher__features" aria-label="Funciones del lector">
-        <li><span>01</span><strong>Oración activa</strong><small>El resaltado acompaña la voz sin convertir la lectura en un karaoke.</small></li>
+        <li><span>01</span><strong>{config.sync.featureTitle}</strong><small>{config.sync.featureDescription}</small></li>
         <li><span>02</span><strong>Anotaciones propias</strong><small>Se guardan solamente en este dispositivo.</small></li>
         <li><span>03</span><strong>Cuaderno portátil</strong><small>Descargá todo o compartilo con las aplicaciones instaladas.</small></li>
       </ul>
@@ -180,8 +183,8 @@ function ReaderLauncher({ onOpen, progress, noteCount }) {
             {hasProgress ? `Continuar desde ${formatTime(progress.currentTime)}` : 'Entrar al lector integrado'}
           </button>
           <nav aria-label="Abrir los recursos originales">
-            <a href={PDF_URL} target="_blank" rel="noreferrer">PDF <ExternalLink size={13} /></a>
-            <a href={AUDIOBOOK_DRIVE_URL} target="_blank" rel="noreferrer">Audio <ExternalLink size={13} /></a>
+            <a href={config.pdfUrl} target="_blank" rel="noreferrer">PDF <ExternalLink size={13} /></a>
+            <a href={config.audiobookExternalUrl} target="_blank" rel="noreferrer">Audio <ExternalLink size={13} /></a>
           </nav>
         </div>
       </div>
@@ -193,7 +196,7 @@ function ReaderLauncher({ onOpen, progress, noteCount }) {
   );
 }
 
-export default function IntegratedReader({ showToast }) {
+export default function IntegratedReader({ showToast, readingDocument, config }) {
   const dialogRef = useRef(null);
   const audioRef = useRef(null);
   const textScrollRef = useRef(null);
@@ -210,20 +213,20 @@ export default function IntegratedReader({ showToast }) {
   const [audioSource, setAudioSource] = useState('');
   const [audioError, setAudioError] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [currentTime, setCurrentTime] = useState(() => readStoredValue(STATE_KEY, EMPTY_STATE).currentTime || 0);
+  const [currentTime, setCurrentTime] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).currentTime || 0);
   const [duration, setDuration] = useState(readingDocument.duration);
-  const [playbackRate, setPlaybackRate] = useState(() => readStoredValue(STATE_KEY, EMPTY_STATE).playbackRate || 1);
-  const [volume, setVolume] = useState(() => readStoredValue(STATE_KEY, EMPTY_STATE).volume ?? 1);
+  const [playbackRate, setPlaybackRate] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).playbackRate || 1);
+  const [volume, setVolume] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).volume ?? 1);
   const [muted, setMuted] = useState(false);
-  const [followText, setFollowText] = useState(() => readStoredValue(STATE_KEY, EMPTY_STATE).followText ?? true);
-  const [fontScale, setFontScale] = useState(() => readStoredValue(STATE_KEY, EMPTY_STATE).fontScale || 1);
+  const [followText, setFollowText] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).followText ?? true);
+  const [fontScale, setFontScale] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).fontScale || 1);
   const [selectedSentenceId, setSelectedSentenceId] = useState(null);
-  const [notes, setNotes] = useState(() => migrateStoredNotes(readStoredValue(NOTES_KEY, [])));
+  const [notes, setNotes] = useState(() => migrateStoredNotes(readStoredValue(config.storage.notesKey, []), readingDocument));
   const [editor, setEditor] = useState(null);
   const [editorText, setEditorText] = useState('');
   const [localStatus, setLocalStatus] = useState('');
 
-  const sentences = useMemo(() => [
+  const sentences = useMemo(() => ([
     ...(readingDocument.frontMatter || []).map((sentence) => ({
       ...sentence,
       sectionId: 'frontmatter',
@@ -235,14 +238,26 @@ export default function IntegratedReader({ showToast }) {
         paragraph.sentences.map((sentence) => ({ ...sentence, sectionId: section.id, sectionTitle: section.title })),
       ),
     ]),
-  ], []);
+  ]).map((sentence, order) => ({ ...sentence, order })), [readingDocument]);
 
   const sentenceMap = useMemo(() => new Map(sentences.map((sentence) => [sentence.id, sentence])), [sentences]);
-  const activeSentence = useMemo(() => findActiveSentence(sentences, currentTime), [sentences, currentTime]);
+  const timedSentences = useMemo(
+    () => sentences.filter((sentence) => Number.isFinite(sentence.start)),
+    [sentences],
+  );
+  const activeSentence = useMemo(
+    () => config.sync.status === 'ready' ? findActiveSentence(timedSentences, currentTime) : null,
+    [config.sync.status, currentTime, timedSentences],
+  );
   const selectedSentence = sentenceMap.get(selectedSentenceId) || null;
   const annotationTarget = selectedSentence || activeSentence || sentences[0];
   const sortedNotes = useMemo(
-    () => [...notes].sort((a, b) => (sentenceMap.get(a.sentenceId)?.start || 0) - (sentenceMap.get(b.sentenceId)?.start || 0)),
+    () => [...notes].sort((a, b) => {
+      const left = sentenceMap.get(a.sentenceId);
+      const right = sentenceMap.get(b.sentenceId);
+      return (Number.isFinite(left?.start) ? left.start : left?.order || 0)
+        - (Number.isFinite(right?.start) ? right.start : right?.order || 0);
+    }),
     [notes, sentenceMap],
   );
   const leftNotes = sortedNotes.filter((_, index) => index % 2 === 0);
@@ -266,7 +281,7 @@ export default function IntegratedReader({ showToast }) {
 
     const prepareSeekableAudio = async () => {
       try {
-        const response = await fetch(AUDIOBOOK_URL, {
+        const response = await fetch(config.audiobookUrl, {
           cache: 'force-cache',
           signal: controller.signal,
         });
@@ -287,7 +302,7 @@ export default function IntegratedReader({ showToast }) {
 
     prepareSeekableAudio();
     return () => controller.abort();
-  }, [audioSource, open]);
+  }, [audioSource, config.audiobookUrl, open]);
 
   useEffect(() => () => {
     if (audioObjectUrlRef.current) URL.revokeObjectURL(audioObjectUrlRef.current);
@@ -302,16 +317,16 @@ export default function IntegratedReader({ showToast }) {
 
   useEffect(() => {
     try {
-      window.localStorage.setItem(NOTES_KEY, JSON.stringify(notes));
+      window.localStorage.setItem(config.storage.notesKey, JSON.stringify(notes));
     } catch {
       // El lector sigue funcionando si el navegador bloquea el almacenamiento local.
     }
-  }, [notes]);
+  }, [config.storage.notesKey, notes]);
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
       try {
-        window.localStorage.setItem(STATE_KEY, JSON.stringify({
+        window.localStorage.setItem(config.storage.stateKey, JSON.stringify({
           currentTime,
           playbackRate,
           volume,
@@ -324,7 +339,7 @@ export default function IntegratedReader({ showToast }) {
       }
     }, 450);
     return () => window.clearTimeout(timer);
-  }, [currentTime, playbackRate, volume, followText, fontScale]);
+  }, [config.storage.stateKey, currentTime, playbackRate, volume, followText, fontScale]);
 
   useEffect(() => {
     if (!open || !playing || !followText || !activeSentence) return;
@@ -438,11 +453,16 @@ export default function IntegratedReader({ showToast }) {
   const openNoteEditor = (sentenceId, note = null) => {
     if (!sentenceId) return;
     const audio = audioRef.current;
+    const sentence = sentenceMap.get(sentenceId);
     resumeAfterEditorRef.current = Boolean(audio && !audio.paused);
     audio?.pause();
     setPlaying(false);
     setSelectedSentenceId(sentenceId);
-    setEditor({ sentenceId, noteId: note?.id || null });
+    setEditor({
+      sentenceId,
+      noteId: note?.id || null,
+      audioTime: noteAudioTime(note, sentence) ?? currentTime,
+    });
     setEditorText(note?.text || '');
     setDrawerOpen(false);
   };
@@ -467,6 +487,9 @@ export default function IntegratedReader({ showToast }) {
       return [...current, {
         id: `note-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
         sentenceId: editor.sentenceId,
+        ...(!Number.isFinite(sentenceMap.get(editor.sentenceId)?.start)
+          ? { audioTime: editor.audioTime, audioTimeSource: 'playback-position-at-annotation' }
+          : {}),
         text,
         createdAt: timestamp,
         updatedAt: timestamp,
@@ -488,7 +511,8 @@ export default function IntegratedReader({ showToast }) {
     const sentence = sentenceMap.get(note.sentenceId);
     if (!sentence) return;
     setSelectedSentenceId(sentence.id);
-    seekTo(sentence.start);
+    const audioTime = noteAudioTime(note, sentence);
+    if (Number.isFinite(audioTime)) seekTo(audioTime);
     setDrawerOpen(false);
     window.requestAnimationFrame(() => {
       document.querySelector(`[data-reader-sentence="${sentence.id}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -499,7 +523,7 @@ export default function IntegratedReader({ showToast }) {
     const sentence = sentences.find((item) => item.sectionId === sectionId);
     if (!sentence) return;
     setSelectedSentenceId(sentence.id);
-    seekTo(sentence.start);
+    if (Number.isFinite(sentence.start)) seekTo(sentence.start);
     document.querySelector(`[data-reader-sentence="${sentence.id}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
@@ -518,9 +542,46 @@ export default function IntegratedReader({ showToast }) {
       return;
     }
     if (format === 'json') {
-      downloadFile(JSON.stringify({ version: 1, document: readingDocument.title, notes }, null, 2), 'notas-fresco-noble.json', 'application/json');
+      const exportedAt = new Date().toISOString();
+      const entries = sortedNotes.map((note) => {
+        const sentence = sentenceMap.get(note.sentenceId);
+        const audioTime = noteAudioTime(note, sentence);
+        return {
+          id: note.id,
+          section: sentence?.sectionTitle || 'Texto',
+          audioTime,
+          audioTimeBasis: Number.isFinite(sentence?.start)
+            ? 'sentence-sync'
+            : Number.isFinite(note?.audioTime)
+              ? 'playback-position-at-annotation'
+              : 'unavailable',
+          selectedText: sentence?.text || null,
+          note: note.text,
+          createdAt: note.createdAt,
+          updatedAt: note.updatedAt,
+        };
+      });
+      downloadFile(
+        JSON.stringify({
+          version: 1,
+          workId: config.workId,
+          author: readingDocument.author,
+          title: readingDocument.title,
+          authorAndTitle: config.authorAndTitle,
+          document: readingDocument.title,
+          exportedAt,
+          entries,
+          notes,
+        }, null, 2),
+        config.export.jsonFileName,
+        'application/json',
+      );
     } else {
-      downloadFile(buildNotesText(sortedNotes, sentenceMap), 'cuaderno-lectura-fresco-noble.txt', 'text/plain;charset=utf-8');
+      downloadFile(
+        buildNotesText(sortedNotes, sentenceMap, config),
+        config.export.textFileName,
+        'text/plain;charset=utf-8',
+      );
     }
     notify('Cuaderno descargado');
   };
@@ -530,14 +591,14 @@ export default function IntegratedReader({ showToast }) {
       notify('Todavía no hay notas para compartir');
       return;
     }
-    const text = buildNotesText(sortedNotes, sentenceMap);
-    const file = new File([text], 'cuaderno-lectura-fresco-noble.txt', { type: 'text/plain' });
+    const text = buildNotesText(sortedNotes, sentenceMap, config);
+    const file = new File([text], config.export.textFileName, { type: 'text/plain' });
     try {
       if (navigator.share && navigator.canShare?.({ files: [file] })) {
-        await navigator.share({ title: 'Cuaderno de lectura · Fresco–Noble', text: 'Mis notas de lectura', files: [file] });
+        await navigator.share({ title: config.export.shareTitle, text: 'Mis notas de lectura', files: [file] });
         notify('Cuaderno compartido');
       } else if (navigator.share) {
-        await navigator.share({ title: 'Cuaderno de lectura · Fresco–Noble', text });
+        await navigator.share({ title: config.export.shareTitle, text });
         notify('Notas compartidas');
       } else if (navigator.clipboard) {
         await navigator.clipboard.writeText(text);
@@ -589,11 +650,18 @@ export default function IntegratedReader({ showToast }) {
 
   return (
     <>
-      <ReaderLauncher onOpen={() => setOpen(true)} progress={readerProgress} noteCount={notes.length} />
+      <ReaderLauncher
+        onOpen={() => setOpen(true)}
+        progress={readerProgress}
+        noteCount={notes.length}
+        readingDocument={readingDocument}
+        config={config}
+      />
 
       <dialog
         ref={dialogRef}
         className="integrated-reader"
+        aria-label={`Lector integrado: ${config.shortTitle}`}
         onClose={() => setOpen(false)}
         onCancel={(event) => { event.preventDefault(); closeReader(); }}
       >
@@ -613,10 +681,10 @@ export default function IntegratedReader({ showToast }) {
 
           <header className="reader-app__header">
             <div className="reader-app__identity">
-              <span className="reader-app__mark" aria-hidden="true">FN</span>
+              <span className="reader-app__mark" aria-hidden="true">{config.mark}</span>
               <div>
                 <p>Modo lectura</p>
-                <strong>Renovación, represión, cooptación</strong>
+                <strong>{config.shortTitle}</strong>
               </div>
             </div>
 
@@ -624,7 +692,7 @@ export default function IntegratedReader({ showToast }) {
               <span><BookOpen size={13} aria-hidden="true" /> Capítulo</span>
               <select
                 aria-label="Elegir capítulo del texto"
-                value={activeSentence?.sectionId || readingDocument.sections[0].id}
+                value={selectedSentence?.sectionId || activeSentence?.sectionId || readingDocument.sections[0].id}
                 onChange={(event) => jumpToSection(event.target.value)}
               >
                 {(readingDocument.frontMatter || []).length > 0 && <option value="frontmatter">Portada</option>}
@@ -642,7 +710,7 @@ export default function IntegratedReader({ showToast }) {
               <button className="reader-header-button" type="button" onClick={() => setDrawerOpen(true)}>
                 <NotebookPen size={17} /> <span>Cuaderno</span><b>{notes.length}</b>
               </button>
-              <a className="reader-header-button reader-header-button--link" href={PDF_URL} target="_blank" rel="noreferrer">
+              <a className="reader-header-button reader-header-button--link" href={config.pdfUrl} target="_blank" rel="noreferrer">
                 <FileText size={17} /> <span>PDF</span>
               </a>
               <button className="reader-close" type="button" onClick={closeReader} aria-label="Cerrar modo lectura"><X size={22} /></button>
@@ -676,7 +744,7 @@ export default function IntegratedReader({ showToast }) {
                   <h2>{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'subtitle'))}</h2>
                   <span>{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'author'))}</span>
                   <div>
-                    <Headphones size={17} /> El resaltado acompaña la oración que se está escuchando.
+                    <Headphones size={17} /> {config.sync.coverMessage}
                   </div>
                 </header>
 
@@ -694,18 +762,26 @@ export default function IntegratedReader({ showToast }) {
                   </section>
                 ))}
 
-                <section className="reader-document__apparatus" aria-labelledby="reader-apparatus-title">
-                  <h2 id="reader-apparatus-title">Notas y bibliografía</h2>
-                  <p>El audiolibro recorre el cuerpo principal del artículo. Las notas académicas y la bibliografía se conservan aquí para completar la versión textual.</p>
-                  <details>
-                    <summary><span>Notas del texto</span><b>{readingDocument.endnotes.length}</b></summary>
-                    <ol>{readingDocument.endnotes.map((note) => <li key={note.number}><span>{note.number}</span><p>{note.text}</p></li>)}</ol>
-                  </details>
-                  <details>
-                    <summary><span>Bibliografía</span><b>{readingDocument.bibliography.length}</b></summary>
-                    <ul>{readingDocument.bibliography.map((entry, index) => <li key={`${index}-${entry.slice(0, 20)}`}>{entry}</li>)}</ul>
-                  </details>
-                </section>
+                {((readingDocument.endnotes || []).length > 0
+                  || (readingDocument.bibliography || []).length > 0
+                  || readingDocument.sourceNote) && (
+                  <section className="reader-document__apparatus" aria-labelledby="reader-apparatus-title">
+                    <h2 id="reader-apparatus-title">Notas y bibliografía</h2>
+                    <p>{readingDocument.sourceNote || 'El audiolibro recorre el cuerpo principal del artículo. Las notas académicas y la bibliografía se conservan aquí para completar la versión textual.'}</p>
+                    {(readingDocument.endnotes || []).length > 0 && (
+                      <details>
+                        <summary><span>Notas del texto</span><b>{readingDocument.endnotes.length}</b></summary>
+                        <ol>{readingDocument.endnotes.map((note) => <li key={note.number}><span>{note.number}</span><p>{note.text}</p></li>)}</ol>
+                      </details>
+                    )}
+                    {(readingDocument.bibliography || []).length > 0 && (
+                      <details>
+                        <summary><span>Bibliografía</span><b>{readingDocument.bibliography.length}</b></summary>
+                        <ul>{readingDocument.bibliography.map((entry, index) => <li key={`${index}-${entry.slice(0, 20)}`}>{entry}</li>)}</ul>
+                      </details>
+                    )}
+                  </section>
+                )}
               </article>
             </main>
 
@@ -727,14 +803,14 @@ export default function IntegratedReader({ showToast }) {
             )}
             {audioError && (
               <div className="reader-player__error" role="alert">
-                El navegador no pudo cargar el audio. Podés seguir leyendo y anotando, o <a href={AUDIOBOOK_DRIVE_URL} target="_blank" rel="noreferrer">abrir el audiolibro aparte</a>.
+                El navegador no pudo cargar el audio. Podés seguir leyendo y anotando, o <a href={config.audiobookExternalUrl} target="_blank" rel="noreferrer">abrir el audiolibro aparte</a>.
               </div>
             )}
 
             <div className="reader-player__context">
-              <span>{selectedSentence ? 'Oración elegida' : 'Oración activa'}</span>
+              <span>{selectedSentence ? 'Oración elegida' : config.sync.status === 'ready' ? 'Oración activa' : 'Texto listo para anotar'}</span>
               <q>{excerpt(annotationTarget?.text, 118)}</q>
-              {selectedSentence && (
+              {selectedSentence && Number.isFinite(selectedSentence.start) && (
                 <button type="button" onClick={() => { seekTo(selectedSentence.start, true); setSelectedSentenceId(null); }}>
                   <Play size={13} /> Escuchar desde aquí
                 </button>
@@ -775,9 +851,11 @@ export default function IntegratedReader({ showToast }) {
                 <input type="range" min="0" max="1" step="0.05" value={volume} onChange={(event) => changeVolume(Number(event.target.value))} aria-label="Volumen" />
               </div>
 
-              <button className={`reader-player__follow ${followText ? 'is-active' : ''}`} type="button" aria-pressed={followText} onClick={() => setFollowText((value) => !value)}>
-                <List size={17} /> <span>{followText ? 'Siguiendo texto' : 'Seguir texto'}</span>
-              </button>
+              {config.sync.status === 'ready' && (
+                <button className={`reader-player__follow ${followText ? 'is-active' : ''}`} type="button" aria-pressed={followText} onClick={() => setFollowText((value) => !value)}>
+                  <List size={17} /> <span>{followText ? 'Siguiendo texto' : 'Seguir texto'}</span>
+                </button>
+              )}
 
               <button className="reader-player__annotate" type="button" onClick={() => openNoteEditor(annotationTarget?.id)}>
                 <BookmarkPlus size={18} /> <span>Anotar</span>
@@ -816,7 +894,16 @@ export default function IntegratedReader({ showToast }) {
                   <div><p>{editor.noteId ? 'Editar anotación' : 'Nueva anotación'}</p><h2 id="note-editor-title">El audio quedó en pausa</h2></div>
                   <button type="button" onClick={() => closeNoteEditor(true)} aria-label="Cancelar anotación"><X size={21} /></button>
                 </header>
-                <blockquote><span>{formatTime(editorSentence?.start || currentTime)}</span>{editorSentence?.text}</blockquote>
+                <blockquote>
+                  <span>
+                    {Number.isFinite(editorSentence?.start)
+                      ? formatTime(editorSentence.start)
+                      : Number.isFinite(editor.audioTime)
+                        ? `${formatTime(editor.audioTime)} · posición del audio al anotar`
+                        : 'Sin tiempo asignado'}
+                  </span>
+                  {editorSentence?.text}
+                </blockquote>
                 <label>
                   <span>Tu comentario</span>
                   <textarea autoFocus rows="6" maxLength="3000" value={editorText} onChange={(event) => setEditorText(event.target.value)} placeholder="¿Qué te hace pensar esta oración? ¿Con qué concepto, fuente o experiencia la relacionás?" />
