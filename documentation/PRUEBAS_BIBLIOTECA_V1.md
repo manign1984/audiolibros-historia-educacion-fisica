@@ -1,5 +1,7 @@
 # Pruebas de la biblioteca académica — etapa 1
 
+> Registro histórico: estas pruebas se ejecutaron cuando el repositorio todavía se llamaba `reforma-fresco-noble`. Para la transición al nombre de biblioteca, consultar `RENOMBRADO_REPOSITORIO.md`.
+
 ## Alcance
 
 Estas comprobaciones corresponden a la rama `feat/biblioteca-academica-v1`. La referencia de integridad es el SHA inicial de `main` `bbc447efd2b7f0b9ef77807123b3808f45694381`.

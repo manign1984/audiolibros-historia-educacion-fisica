@@ -42,11 +42,7 @@ jobs:
         run: npm run verify:build
 
       - name: Build for GitHub Pages
-        env:
-          GITHUB_PAGES_BASE: /reforma-fresco-noble/
-        run: npm run build
+        run: GITHUB_PAGES_BASE="/${GITHUB_REPOSITORY#*/}/" npm run build
 
       - name: Verify static routes and assets
-        env:
-          GITHUB_PAGES_BASE: /reforma-fresco-noble/
-        run: npm run verify:build
+        run: GITHUB_PAGES_BASE="/${GITHUB_REPOSITORY#*/}/" npm run verify:build

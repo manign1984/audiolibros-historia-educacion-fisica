@@ -56,11 +56,11 @@ El resultado queda en `dist/` y puede alojarse en cualquier servicio de archivos
 
 La versión preserva en sus fuentes las rutas absolutas originales (`/assets/...`). Por defecto se compila para la raíz de un dominio o subdominio.
 
-Para GitHub Pages, `vite.config.js` acepta `GITHUB_PAGES_BASE=/reforma-fresco-noble/` y transforma esas rutas únicamente durante la compilación. De ese modo la publicación funciona dentro del subdirectorio y conserva la ubicación pública de los recursos.
+Para GitHub Pages, `vite.config.js` acepta `GITHUB_PAGES_BASE`. Los workflows calculan ese valor desde el nombre vigente del repositorio y transforman las rutas únicamente durante la compilación. De ese modo la publicación funciona dentro del subdirectorio y conserva la ubicación pública de los recursos.
 
 La versión pública se encuentra en:
 
-<https://manign1984.github.io/reforma-fresco-noble/>
+<https://manign1984.github.io/biblioteca-historia-educacion-fisica/>
 
 ## Datos y privacidad
 
