@@ -1,0 +1,130 @@
+{
+  "backupId": "FN-PREMIG-20260823-SITEV57-7882327",
+  "sourceCommit": "7882327b5bf619ba81335d136e9eddc96cf894c9",
+  "sourceTree": "dbb99c32a4b0bb8aaf46a959ef46cbb2ab9807e2",
+  "architecture": {
+    "original": "React 19 + Vinext + Vite + Cloudflare adapter for ChatGPT Sites",
+    "portable": "React 19 SPA + Vite static build",
+    "backend": false,
+    "database": false,
+    "serviceWorker": false,
+    "analytics": false,
+    "authentication": false
+  },
+  "storage": [
+    {
+      "key": "fresco-noble-reader-notes-v1",
+      "purpose": "reader notes",
+      "persisted": true
+    },
+    {
+      "key": "fresco-noble-reader-state-v1",
+      "purpose": "audio and reader state",
+      "persisted": true
+    },
+    {
+      "key": "fresco-noble-genealogia",
+      "purpose": "genealogical draft",
+      "persisted": true
+    }
+  ],
+  "counts": {
+    "localAssets": 36,
+    "runtimeAssets": 30,
+    "declaredNotRenderedAssets": 3,
+    "unreferencedAssets": 3,
+    "timelineItems": 18,
+    "players": 22,
+    "readingUnits": 201
+  },
+  "mediaQueries": [
+    {
+      "source": "src/styles.css",
+      "query": "(min-width: 901px)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "(min-width: 1121px)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "(max-width: 1499px)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "(min-width: 901px)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "(min-width: 1121px)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "(min-width: 901px) and (max-width: 1500px)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "(max-width: 1120px)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "(min-width: 1121px) and (max-width: 1500px)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "(max-width: 900px)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "(max-width: 640px)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "(prefers-reduced-motion: reduce)"
+    },
+    {
+      "source": "src/styles.css",
+      "query": "print"
+    },
+    {
+      "source": "src/reader.css",
+      "query": "(max-width: 1220px)"
+    },
+    {
+      "source": "src/reader.css",
+      "query": "(max-width: 900px)"
+    },
+    {
+      "source": "src/reader.css",
+      "query": "(max-width: 640px)"
+    },
+    {
+      "source": "src/reader.css",
+      "query": "(prefers-reduced-motion: reduce)"
+    }
+  ],
+  "reconstructedFiles": [
+    "portable-site/package.json",
+    "portable-site/package-lock.json",
+    "portable-site/vite.config.js",
+    "portable-site/README.md",
+    "portable-site/.gitignore",
+    "data/reading-sync_reconstructed-from-site.srt"
+  ],
+  "literalFiles": [
+    "portable-site/index.html",
+    "portable-site/src/**",
+    "portable-site/public/assets/**",
+    "portable-site/scripts/generate-reading-document-from-srt.mjs",
+    "data/reading-sync_exact.json",
+    "data/content-structure_exact.json"
+  ],
+  "auditArtifacts": [
+    "README.md",
+    "documentation/**",
+    "data/assets-inventory.csv",
+    "data/external-resources.csv",
+    "data/technical-manifest.json",
+    "tools/generate-audit-data.mjs"
+  ]
+}

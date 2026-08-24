@@ -1,0 +1,833 @@
+{
+  "provenance": {
+    "classification": "literal_extraction",
+    "sourceCommit": "7882327b5bf619ba81335d136e9eddc96cf894c9",
+    "sources": [
+      "src/App.jsx",
+      "src/data.js",
+      "src/readingDocument.js"
+    ]
+  },
+  "navigation": [
+    [
+      "inicio",
+      "Inicio"
+    ],
+    [
+      "autor",
+      "Autor"
+    ],
+    [
+      "contexto",
+      "Contexto"
+    ],
+    [
+      "lectura",
+      "Lectura"
+    ],
+    [
+      "partido",
+      "Partido"
+    ],
+    [
+      "genealogia",
+      "Conciencia histórica"
+    ],
+    [
+      "creditos",
+      "Créditos"
+    ]
+  ],
+  "strategies": [
+    {
+      "id": "renovadora",
+      "number": "01",
+      "title": "Renovadora",
+      "verb": "Desplazar",
+      "color": "#d7a51f",
+      "definition": "Reordena la escena pedagógica alrededor de la infancia, la actividad y una formación que busca intervenir sobre mente, cuerpo y alma.",
+      "evidence": "Escuela Nueva, niño como centro, educación integral, gimnasia cotidiana, deporte y nuevas superficies educativas.",
+      "question": "¿Qué cambia en la idea de niño, de aprendizaje y de educación?",
+      "image": "/assets/estrategia-renovadora-archivo.webp",
+      "imageAlt": "Fotografía histórica de niñas y niños de la Escuela Serena trabajando con plantas y regaderas en la huerta escolar",
+      "imageCaption": "Escuela Serena: “La tierra los ayuda a pensar y a ser reflexivos” · Archivo Pedagógico Cossettini / IRICE-CONICET.",
+      "imageSourceUrl": "https://pensarlaescuela.com/2015/10/01/nuevas-pedagogias-que-no-son-tan-nuevas/",
+      "fieldHint": "Buscá las piezas que oponen actividad e integralidad a la escuela centrada en la palabra, la mente y la autoridad docente.",
+      "roundSummary": "La renovación no elimina el disciplinamiento: abre nuevas superficies de intervención —cuerpo y alma— que también podrán ser reguladas."
+    },
+    {
+      "id": "represiva",
+      "number": "02",
+      "title": "Represiva",
+      "verb": "Custodiar",
+      "color": "#b64a36",
+      "definition": "Define enemigos del “espíritu” y procura fijar una moral católica, nacionalista y antiliberal mediante vigilancia y exclusión.",
+      "evidence": "Religión, “Dios, Patria y Hogar”, nacionalismo, inspección ideológica y rechazo del materialismo, el cosmopolitismo y la duda.",
+      "question": "¿Quiénes son nombrados como amenaza y qué prácticas los silencian?",
+      "image": "/assets/estrategia-represiva-archivo.webp",
+      "imageAlt": "Fotografía histórica de estudiantes y docentes reunidos frente a la Escuela número 10 de Munro en 1937",
+      "imageCaption": "Escuela N.º 10 de Munro, 1937 · Archivo Histórico Fotográfico de la Municipalidad de Vicente López.",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Escuela_10_de_munro_1937.jpg",
+      "fieldHint": "No confundas asistencia con represión: aquí importan la moral obligatoria, la vigilancia y la definición de voces peligrosas.",
+      "roundSummary": "La represión no es solo prohibición. También produce sujetos, valores y pertenencias mediante rituales, currículos e inspección."
+    },
+    {
+      "id": "cooptativa",
+      "number": "03",
+      "title": "Cooptativa",
+      "verb": "Incorporar",
+      "color": "#2f7470",
+      "definition": "Atiende demandas y dimensiones antes relegadas, pero las integra bajo dirección y contralor del Estado.",
+      "evidence": "Escalafón docente, comedores, copa de leche, colonias, campos deportivos y cooperadoras escolares.",
+      "question": "¿Qué demanda se satisface y qué autonomía se redefine al hacerlo?",
+      "image": "/assets/estrategia-cooptativa-archivo.webp",
+      "imageAlt": "Fotografía histórica titulada Gota de leche, esperando turno, con mujeres y niños en un servicio público de protección infantil",
+      "imageCaption": "“Gota de leche — esperando turno”, 1910 · Administración Sanitaria y Asistencia Pública de la Capital.",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:MG-03-020_(Protecci%C3%B3n_a_la_primera_infancia._Gota_de_leche_%E2%80%93_Esperando_turno).tif",
+      "fieldHint": "Mirá dónde aparecen beneficios, derechos o instituciones sociales que el Estado incorpora y conduce.",
+      "roundSummary": "La cooptación combina respuesta material y construcción de lealtades. La inclusión puede convivir con subordinación y control."
+    }
+  ],
+  "players": [
+    {
+      "id": "reforma-nino",
+      "team": "reforma",
+      "strategy": "renovadora",
+      "number": 1,
+      "title": "Niño como centro",
+      "short": "Niño centro",
+      "image": "/assets/jugador-nino.webp",
+      "glyph": "NC",
+      "note": "El respeto al niño pasa a justificar la práctica pedagógica y la infancia se imagina como constructora del futuro."
+    },
+    {
+      "id": "reforma-escuela-nueva",
+      "team": "reforma",
+      "strategy": "renovadora",
+      "number": 2,
+      "title": "Escuela Nueva y activismo",
+      "short": "Escuela Nueva",
+      "glyph": "EN",
+      "note": "La Reforma realiza una apropiación específica del escolanovismo y cuestiona el verbalismo de la escuela tradicional."
+    },
+    {
+      "id": "reforma-integral",
+      "team": "reforma",
+      "strategy": "renovadora",
+      "number": 3,
+      "title": "Educación integral",
+      "short": "Mente · cuerpo · alma",
+      "glyph": "∴",
+      "note": "Lo educativo se expande desde la mente hacia el cuerpo y el alma, nuevas superficies de formación e intervención."
+    },
+    {
+      "id": "reforma-deportes",
+      "team": "reforma",
+      "strategy": "renovadora",
+      "number": 4,
+      "title": "Educación física y deportes",
+      "short": "E. física y deportes",
+      "image": "/assets/jugador-deportes.webp",
+      "glyph": "EF",
+      "note": "La cultura física amplía la formación escolar; en el texto también puede adquirir marcas militaristas y asistenciales.",
+      "crossTags": [
+        "renovadora",
+        "represiva",
+        "cooptativa"
+      ]
+    },
+    {
+      "id": "reforma-dph",
+      "team": "reforma",
+      "strategy": "represiva",
+      "number": 5,
+      "title": "Dios, Patria y Hogar",
+      "short": "Dios · Patria · Hogar",
+      "glyph": "DPH",
+      "note": "La tríada condensa el horizonte moral, religioso y nacionalista con el que se quiere orientar la escuela."
+    },
+    {
+      "id": "reforma-religion",
+      "team": "reforma",
+      "strategy": "represiva",
+      "number": 6,
+      "title": "Enseñanza religiosa",
+      "short": "Religión escolar",
+      "glyph": "†",
+      "note": "La religión católica se incorpora como fundamento moral y como límite frente a ideas consideradas disolventes."
+    },
+    {
+      "id": "reforma-nacionalismo",
+      "team": "reforma",
+      "strategy": "represiva",
+      "number": 7,
+      "title": "Nacionalismo escolar",
+      "short": "Nacionalismo",
+      "glyph": "N",
+      "note": "Rituales, símbolos y contenidos patrióticos buscan producir una pertenencia nacional homogénea."
+    },
+    {
+      "id": "reforma-inspector",
+      "team": "reforma",
+      "strategy": "represiva",
+      "number": 8,
+      "title": "Inspector controlador ideológico",
+      "short": "Inspector",
+      "image": "/assets/jugador-inspector.webp",
+      "glyph": "IC",
+      "note": "La inspección excede lo administrativo: vigila orientaciones, textos y posiciones docentes."
+    },
+    {
+      "id": "reforma-escalafon",
+      "team": "reforma",
+      "strategy": "cooptativa",
+      "number": 9,
+      "title": "Escalafón y mejora salarial",
+      "short": "Escalafón docente",
+      "glyph": "↑",
+      "note": "El Estado responde a antiguas demandas laborales docentes y redefine su relación con el colectivo magisterial."
+    },
+    {
+      "id": "reforma-comedores",
+      "team": "reforma",
+      "strategy": "cooptativa",
+      "number": 10,
+      "title": "Comedores, copa de leche y colonias",
+      "short": "Asistencia escolar",
+      "glyph": "AL",
+      "note": "Las prácticas asistenciales reconocen condicionantes sociales y, a la vez, intervienen sobre cuerpos, hábitos y moral.",
+      "crossTags": [
+        "cooptativa",
+        "represiva"
+      ]
+    },
+    {
+      "id": "reforma-cooperadoras",
+      "team": "reforma",
+      "strategy": "cooptativa",
+      "number": 11,
+      "title": "Cooperadoras bajo contralor estatal",
+      "short": "Cooperadoras",
+      "glyph": "CE",
+      "note": "La sociedad civil es convocada a cooperar, mientras el Estado conserva la dirección y el derecho de control.",
+      "crossTags": [
+        "cooptativa",
+        "represiva"
+      ]
+    },
+    {
+      "id": "resiste-docente",
+      "team": "resistencia",
+      "strategy": "renovadora",
+      "number": 1,
+      "title": "Docente como centro",
+      "short": "Docente centro",
+      "image": "/assets/jugador-docente.webp",
+      "glyph": "DC",
+      "note": "Funciona como contramodelo de la centralidad infantil defendida por la estrategia renovadora."
+    },
+    {
+      "id": "resiste-verbalismo",
+      "team": "resistencia",
+      "strategy": "renovadora",
+      "number": 2,
+      "title": "Clase verbalista y enciclopedista",
+      "short": "Verbalismo",
+      "glyph": "VE",
+      "note": "Representa la enseñanza que la Reforma diagnostica como pasiva, libresca y alejada de la actividad infantil."
+    },
+    {
+      "id": "resiste-mente",
+      "team": "resistencia",
+      "strategy": "renovadora",
+      "number": 3,
+      "title": "Instrucción limitada a la mente",
+      "short": "Solo la mente",
+      "glyph": "M",
+      "note": "Es la superficie educativa que el proyecto considera insuficiente frente a la formación de cuerpo y alma."
+    },
+    {
+      "id": "resiste-aula",
+      "team": "resistencia",
+      "strategy": "renovadora",
+      "number": 4,
+      "title": "Escuela encerrada en el aula",
+      "short": "Aula cerrada",
+      "glyph": "□",
+      "note": "Se contrapone a campos deportivos, colonias y otras extensiones de la acción escolar."
+    },
+    {
+      "id": "resiste-laicidad",
+      "team": "resistencia",
+      "strategy": "represiva",
+      "number": 5,
+      "title": "Laicidad escolar",
+      "short": "Laicidad",
+      "glyph": "L",
+      "note": "Defiende una escuela sin enseñanza confesional obligatoria frente al giro católico de la Reforma."
+    },
+    {
+      "id": "resiste-duda",
+      "team": "resistencia",
+      "strategy": "represiva",
+      "number": 6,
+      "title": "Libre pensamiento y duda",
+      "short": "Pensamiento y duda",
+      "glyph": "?",
+      "note": "La duda, lejos de ser amenaza, aparece como condición de una cultura crítica y plural."
+    },
+    {
+      "id": "resiste-cosmopolitismo",
+      "team": "resistencia",
+      "strategy": "represiva",
+      "number": 7,
+      "title": "Cosmopolitismo y cultura universal",
+      "short": "Cosmopolitismo",
+      "glyph": "◎",
+      "note": "Se opone a la clausura nacionalista que identifica lo internacional con una amenaza al espíritu."
+    },
+    {
+      "id": "resiste-autonomia",
+      "team": "resistencia",
+      "strategy": "represiva",
+      "number": 8,
+      "title": "Autonomía docente y voces críticas",
+      "short": "Autonomía docente",
+      "glyph": "AD",
+      "note": "Expresa el margen profesional y político que la vigilancia ideológica procura reducir."
+    },
+    {
+      "id": "resiste-asociacion",
+      "team": "resistencia",
+      "strategy": "cooptativa",
+      "number": 9,
+      "title": "Asociación de Maestros",
+      "short": "Asoc. de Maestros",
+      "image": "/assets/jugador-asociacion.webp",
+      "glyph": "AM",
+      "note": "La organización docente mantiene demandas y cuestionamientos que el gobierno intenta absorber o desplazar."
+    },
+    {
+      "id": "resiste-sociedades",
+      "team": "resistencia",
+      "strategy": "cooptativa",
+      "number": 10,
+      "title": "Sociedades Populares de Educación",
+      "short": "Sociedades populares",
+      "glyph": "SP",
+      "note": "Eran espacios autónomos de la sociedad civil, con presencia de sectores radicales, socialistas y anarquistas."
+    },
+    {
+      "id": "resiste-comunidad",
+      "team": "resistencia",
+      "strategy": "cooptativa",
+      "number": 11,
+      "title": "Comunidad escolar autónoma",
+      "short": "Comunidad autónoma",
+      "glyph": "CA",
+      "note": "Propone un vínculo escuela-comunidad no subordinado al contralor estatal."
+    }
+  ],
+  "timeline": [
+    {
+      "id": "crisis-1929",
+      "year": "1929",
+      "scope": "Mundo",
+      "dimension": "Economía y vida cotidiana",
+      "title": "Crisis de Wall Street",
+      "titleLines": [
+        "Crisis de Wall Street"
+      ],
+      "text": "El derrumbe financiero se transforma en una depresión mundial: desempleo, proteccionismo y crisis de legitimidad de las democracias liberales.",
+      "image": "/assets/timeline-1929-wall-street.jpg",
+      "imageAlt": "Multitud reunida frente a la Bolsa de Nueva York luego del derrumbe bursátil de 1929",
+      "imageCaption": "Multitud frente a la Bolsa de Nueva York, 1929.",
+      "imageCredit": "Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Crowd_outside_nyse.jpg"
+    },
+    {
+      "id": "mundial-1930",
+      "year": "1930",
+      "scope": "Mundo",
+      "dimension": "Deporte y cultura de masas",
+      "title": "El primer Mundial de fútbol",
+      "titleLines": [
+        "El primer Mundial",
+        "de fútbol"
+      ],
+      "text": "Uruguay organiza y gana la primera Copa Mundial de la FIFA. El torneo consolida al fútbol como espectáculo popular internacional y convierte al Río de la Plata en uno de los centros de la nueva cultura deportiva de masas.",
+      "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Uruguay_national_football_team_1930.jpg",
+      "imageAlt": "Selección uruguaya campeona del primer Mundial de fútbol en 1930",
+      "imageCaption": "La selección de Uruguay, campeona mundial en 1930.",
+      "imageCredit": "Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Uruguay_national_football_team_1930.jpg"
+    },
+    {
+      "id": "golpe-1930",
+      "cardClass": "timeline-event--portraits-1930",
+      "year": "1930",
+      "scope": "Argentina",
+      "dimension": "Política",
+      "title": "Golpe de Estado",
+      "titleLines": [
+        "Golpe de Estado"
+      ],
+      "text": "El derrocamiento de Hipólito Yrigoyen abre un ciclo de autoritarismo, fraude electoral y restauración conservadora conocido como Década Infame.",
+      "image": "/assets/timeline-1930-uriburu.jpg",
+      "imageClass": "timeline-image--portraits-1930",
+      "imageAlt": "José Félix Uriburu conversa con Agustín Pedro Justo en septiembre de 1930",
+      "imageCaption": "Uriburu y Justo, septiembre de 1930.",
+      "imageCredit": "Caras y Caretas · Dominio público",
+      "source": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_F%C3%A9lix_Uriburu_y_Agust%C3%ADn_Pedro_Justo.JPG"
+    },
+    {
+      "id": "chaco-1932",
+      "year": "1932–35",
+      "scope": "Región",
+      "dimension": "Guerra y territorio",
+      "title": "La Guerra del Chaco",
+      "titleLines": [
+        "La Guerra del Chaco"
+      ],
+      "text": "Bolivia y Paraguay se enfrentan por el control del Chaco Boreal. La guerra más sangrienta de Sudamérica en el siglo XX moviliza sociedades enteras y deja decenas de miles de muertos antes del armisticio de 1935.",
+      "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Paraguayos_en_alihuat%C3%A1.jpg",
+      "imageAlt": "Tropas paraguayas en el fortín Alihuatá durante la Guerra del Chaco",
+      "imageCaption": "Tropas paraguayas en Alihuatá, 1932.",
+      "imageCredit": "Carlos De Sanctis · Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Paraguayos_en_alihuat%C3%A1.jpg"
+    },
+    {
+      "id": "roca-runciman-1933",
+      "year": "1933",
+      "scope": "Argentina",
+      "dimension": "Economía y soberanía",
+      "title": "Tratado Roca–Runciman",
+      "titleLines": [
+        "Tratado Roca–",
+        "Runciman"
+      ],
+      "text": "Argentina y el Reino Unido firman un acuerdo comercial que garantiza cuotas para la carne argentina a cambio de amplias concesiones británicas. El pacto se vuelve emblema del debate sobre dependencia y soberanía económica.",
+      "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Roca_Runciman.jpg",
+      "imageAlt": "Julio Argentino Roca hijo y Walter Runciman revisan el tratado comercial de 1933",
+      "imageCaption": "Roca y Runciman revisan el acuerdo, Londres, 1933.",
+      "imageCredit": "La Nación · Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Roca_Runciman.jpg"
+    },
+    {
+      "id": "yrigoyen-1933",
+      "year": "1933",
+      "scope": "Argentina",
+      "dimension": "Política y sociedad",
+      "title": "Muere Hipólito Yrigoyen",
+      "titleLines": [
+        "Muere Hipólito",
+        "Yrigoyen"
+      ],
+      "text": "El expresidente radical muere el 3 de julio. Su multitudinario funeral transforma las calles porteñas en una demostración popular y revela la persistencia de una identidad política desplazada por el golpe de 1930.",
+      "image": "/assets/timeline-1933-yrigoyen.jpg",
+      "imageClass": "timeline-image--yrigoyen",
+      "imageAlt": "Retrato fotográfico de Hipólito Yrigoyen durante sus años como presidente de la Argentina",
+      "imageCaption": "Hipólito Yrigoyen, circa 1920–1930.",
+      "imageCredit": "Narodowe Archiwum Cyfrowe · Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Hipolito_Yrigoyen_-_NAC.jpg"
+    },
+    {
+      "id": "nazismo-1933",
+      "year": "1933",
+      "scope": "Mundo",
+      "dimension": "Política y propaganda",
+      "title": "Nazismo en el poder",
+      "titleLines": [
+        "Nazismo en el poder"
+      ],
+      "text": "Hitler es nombrado canciller y el régimen nazi transforma rápidamente la república alemana en una dictadura de partido único.",
+      "image": "/assets/timeline-1933-potsdam.jpg",
+      "imageAlt": "Adolf Hitler y Paul von Hindenburg durante el llamado Día de Potsdam de 1933",
+      "imageCaption": "El “Día de Potsdam” como escena de propaganda, 1933.",
+      "imageCredit": "Bundesarchiv · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S38324,_Tag_von_Potsdam,_Adolf_Hitler,_Paul_v._Hindenburg.jpg"
+    },
+    {
+      "id": "tango-1933",
+      "year": "1933",
+      "scope": "Argentina",
+      "dimension": "Cultura, arte y tecnología",
+      "title": "El cine sonoro se vuelve industria",
+      "titleLines": [
+        "El cine sonoro",
+        "se vuelve industria"
+      ],
+      "text": "El estreno de ¡Tango! condensa una cultura urbana de masas en expansión: estudios cinematográficos, discos, radio, estrellas populares y nuevas formas de imaginar la vida moderna.",
+      "image": "/assets/timeline-1933-tango.jpg",
+      "imageAlt": "Afiche de la película argentina Tango, estrenada en 1933",
+      "imageCaption": "Afiche de ¡Tango!, Argentina Sono Film, 1933.",
+      "imageCredit": "Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Tango_1933_film_poster.jpg"
+    },
+    {
+      "id": "escuela-serena-1935",
+      "year": "1935",
+      "scope": "Argentina",
+      "dimension": "Educación y Escuela Nueva",
+      "title": "La Escuela Serena",
+      "titleLines": [
+        "La Escuela Serena"
+      ],
+      "text": "Olga y Leticia Cossettini impulsan en la Escuela Dr. Gabriel Carrasco de Rosario una experiencia de Escuela Nueva que integra arte, ciencias, observación, expresión y vínculo con la comunidad. Entre 1935 y 1950, niñas y niños ocupan un lugar activo y creador en el aprendizaje.",
+      "image": "/assets/timeline-1941-olga-cossettini.jpg",
+      "imageAlt": "Olga Cossettini se inclina mientras dos personas la observan, en una fotografía de 1941",
+      "imageCaption": "Olga Cossettini, 1941.",
+      "imageCredit": "Archivo Pedagógico Cossettini · Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Olga_Cossettini_-_1941.JPG"
+    },
+    {
+      "id": "fresco-1936",
+      "year": "1936",
+      "scope": "Provincia",
+      "dimension": "Estado y territorio",
+      "title": "Gobierno de Manuel Fresco",
+      "titleLines": [
+        "Gobierno de",
+        "Manuel Fresco"
+      ],
+      "text": "Comienza un gobierno conservador de fuerte impronta nacionalista, católica, autoritaria e intervencionista, acompañado por un vasto plan de obra pública.",
+      "image": "/assets/manuel-fresco.webp",
+      "imageAlt": "Retrato de Manuel A. Fresco",
+      "imageCaption": "Manuel A. Fresco, gobernador bonaerense entre 1936 y 1940.",
+      "imageCredit": "Cámara de Diputados de la Nación · Dominio público"
+    },
+    {
+      "id": "tiempos-modernos-1936",
+      "year": "1936",
+      "scope": "Mundo",
+      "dimension": "Cine, trabajo y tecnología",
+      "title": "Chaplin estrena Tiempos modernos",
+      "titleLines": [
+        "Chaplin estrena",
+        "Tiempos modernos"
+      ],
+      "text": "Charles Chaplin convierte la fábrica, la máquina y la precariedad en comedia y crítica social. La película captura las tensiones entre progreso técnico, disciplina industrial, desempleo y dignidad humana.",
+      "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chaplin_-_Modern_Times.jpg",
+      "imageAlt": "Charles Chaplin en una escena promocional de la película Tiempos modernos",
+      "imageCaption": "Charles Chaplin en Tiempos modernos, 1936.",
+      "imageCredit": "Fotografía promocional · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Chaplin_-_Modern_Times.jpg"
+    },
+    {
+      "id": "guerra-civil-espanola",
+      "year": "1936–39",
+      "scope": "Mundo",
+      "dimension": "Guerra, política y cultura",
+      "title": "La Guerra Civil Española",
+      "titleLines": [
+        "La Guerra Civil",
+        "Española"
+      ],
+      "text": "El levantamiento militar contra la República abre una guerra que moviliza brigadas internacionales, exilios y solidaridades transnacionales. El conflicto se vuelve antesala ideológica y militar de la Segunda Guerra Mundial.",
+      "image": "/assets/timeline-1936-republica-espanola.jpg",
+      "imageClass": "timeline-image--republica",
+      "imageAlt": "Alegoría de la República española junto al león hispano y símbolos de libertad, igualdad y progreso",
+      "imageCaption": "Alegoría de la República española, el orden político atacado por la sublevación militar de 1936.",
+      "imageCredit": "Litografía de S. Dura según J. Barrera · CC BY-SA 3.0 · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Republique-allegorie.jpg"
+    },
+    {
+      "id": "reforma-1937",
+      "year": "1937",
+      "scope": "Provincia",
+      "dimension": "Educación",
+      "title": "Reforma Fresco–Noble",
+      "titleLines": [
+        "Reforma",
+        "Fresco–Noble"
+      ],
+      "text": "La reforma educativa busca fundar una nueva pedagogía: formación moral, religiosa, patriótica, estética y física, articulada con medidas sociales y laborales.",
+      "image": "/assets/timeline-1937-fresco-noble.jpg",
+      "imageClass": "timeline-image--fresco-noble",
+      "imageAlt": "Manuel A. Fresco y otro hombre caminan de frente durante una recorrida oficial",
+      "imageCaption": "Manuel A. Fresco durante una recorrida oficial.",
+      "imageCredit": "Fotografía aportada al proyecto"
+    },
+    {
+      "id": "puente-1937",
+      "year": "1937",
+      "scope": "Mundo",
+      "dimension": "Tecnología e infraestructura",
+      "title": "El futuro también se construye",
+      "titleLines": [
+        "El futuro también",
+        "se construye"
+      ],
+      "text": "La apertura del Golden Gate se vuelve emblema de ingeniería, movilidad y monumentalidad. Las grandes obras condensan promesas de progreso, pero también capacidad estatal, organización del trabajo y poder simbólico.",
+      "image": "/assets/timeline-1937-golden-gate.jpg",
+      "imageAlt": "Aviones Catalina de la Marina estadounidense vuelan sobre el puente Golden Gate en mayo de 1937",
+      "imageCaption": "El Golden Gate recién inaugurado, mayo de 1937.",
+      "imageCredit": "U.S. Navy · Dominio público",
+      "source": "https://commons.wikimedia.org/wiki/File:PBY-1_Catalinas_of_VP-9_over_the_Golden_Gate_Bridge_in_May_1937.jpg"
+    },
+    {
+      "id": "fision-1938",
+      "year": "1938",
+      "scope": "Mundo",
+      "dimension": "Ciencia",
+      "title": "La fisión nuclear abre otra era",
+      "titleLines": [
+        "La fisión nuclear",
+        "abre otra era"
+      ],
+      "text": "Los experimentos de Otto Hahn y Fritz Strassmann, interpretados por Lise Meitner y Otto Frisch, permiten comprender la fisión nuclear: un avance científico pronto atravesado por la guerra y el debate ético.",
+      "image": "/assets/timeline-1938-fission.jpg",
+      "imageAlt": "Cuaderno de laboratorio vinculado con los experimentos de fisión nuclear de 1938",
+      "imageCaption": "Cuaderno de laboratorio de 1938, Deutsches Museum.",
+      "imageCredit": "J. Brew · CC BY-SA 2.0 · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Otto_Hahn%27s_notebook_1938_-_Deutsches_Museum_-_Munich.jpg"
+    },
+    {
+      "id": "guerra-1939",
+      "year": "1939",
+      "scope": "Mundo",
+      "dimension": "Guerra y sociedad",
+      "title": "Comienza la guerra",
+      "titleLines": [
+        "Comienza la guerra"
+      ],
+      "text": "La invasión alemana de Polonia inicia la Segunda Guerra Mundial. La “precuela” de tensiones, expansiones y guerras regionales desemboca en conflicto abierto.",
+      "image": "/assets/timeline-1939-poland.jpg",
+      "imageAlt": "Tropas alemanas desfilan por Varsovia en septiembre de 1939",
+      "imageCaption": "Tropas alemanas en Varsovia, septiembre de 1939.",
+      "imageCredit": "U.S. National Archives · Dominio público",
+      "source": "https://commons.wikimedia.org/wiki/File:German_troops_parade_through_Warsaw,_Poland,_09-1939_-_NARA_-_559369.jpg"
+    },
+    {
+      "id": "educacion-fisica-1940",
+      "year": "1940",
+      "scope": "Provincia",
+      "dimension": "Cuerpo y política social",
+      "title": "El cuerpo como asunto de gobierno",
+      "titleLines": [
+        "El cuerpo como",
+        "asunto de gobierno"
+      ],
+      "text": "La educación física, los deportes y las colonias amplían la intervención estatal sobre la infancia. Renovación pedagógica, asistencia, disciplina y construcción de adhesiones pueden operar al mismo tiempo.",
+      "image": "/assets/fresco-educacion-fisica-1940.webp",
+      "imageAlt": "Portada de La educación física: una innovación de mi gobierno, publicada por Manuel A. Fresco en 1940",
+      "imageCaption": "Manuel A. Fresco, La educación física: una innovación de mi gobierno, 1940.",
+      "imageCredit": "Ejemplar aportado al proyecto"
+    },
+    {
+      "id": "golpe-1943",
+      "year": "1943",
+      "scope": "Argentina",
+      "dimension": "Política",
+      "title": "Fin del ciclo conservador",
+      "titleLines": [
+        "Fin del ciclo",
+        "conservador"
+      ],
+      "text": "Un nuevo golpe militar clausura el período 1930–1943 y abre otra etapa de la relación entre nacionalismo, Estado, educación y política social.",
+      "image": "/assets/timeline-1943-argentina.jpg",
+      "imageAlt": "Portadas de diarios argentinos que anuncian la caída del gobierno de Ramón Castillo en junio de 1943",
+      "imageCaption": "La Razón y El Día anuncian el golpe de junio de 1943.",
+      "imageCredit": "Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Revolucion_del_43.jpg"
+    }
+  ],
+  "diagnosisItems": [
+    {
+      "id": "intelectualismo",
+      "text": "Excesivo intelectualismo, verbalismo y enciclopedismo",
+      "correct": true
+    },
+    {
+      "id": "cuerpo",
+      "text": "Ausencia de formación del cuerpo y del alma",
+      "correct": true
+    },
+    {
+      "id": "valores",
+      "text": "Carencia de valores morales y patrióticos",
+      "correct": true
+    },
+    {
+      "id": "trabajo",
+      "text": "Escasa formación para el trabajo",
+      "correct": true
+    },
+    {
+      "id": "desercion",
+      "text": "Deserción escolar y analfabetismo",
+      "correct": true
+    },
+    {
+      "id": "profesiones",
+      "text": "Exceso de profesionales liberales",
+      "correct": true
+    },
+    {
+      "id": "religion",
+      "text": "Exceso de enseñanza religiosa",
+      "correct": false
+    },
+    {
+      "id": "deportes",
+      "text": "Demasiados deportes y colonias escolares",
+      "correct": false
+    },
+    {
+      "id": "inspectores",
+      "text": "Ausencia total de inspección escolar",
+      "correct": false
+    }
+  ],
+  "genealogyThemes": [
+    {
+      "id": "integral",
+      "title": "Educación integral",
+      "subtitle": "Mente, cuerpo y alma",
+      "hint": "En 1937 amplió el objeto de la escuela. Preguntá qué significa hoy “integral”, quién define sus dimensiones y qué controles puede legitimar.",
+      "tags": [
+        "Renovadora",
+        "Represiva"
+      ]
+    },
+    {
+      "id": "deporte",
+      "title": "Educación física y deporte",
+      "subtitle": "Derecho, disciplina, cultura",
+      "hint": "Seguí la transformación desde gimnasia, desfiles y campos deportivos hasta los sentidos actuales de salud, inclusión, rendimiento y ciudadanía.",
+      "tags": [
+        "Renovadora",
+        "Represiva",
+        "Cooptativa"
+      ]
+    },
+    {
+      "id": "asistencia",
+      "title": "Asistencia escolar",
+      "subtitle": "Comedores, salud y bienestar",
+      "hint": "Reconstruí cómo una ayuda material puede ampliar derechos y, a la vez, establecer criterios sobre cuerpos, familias, hábitos y merecimiento.",
+      "tags": [
+        "Cooptativa",
+        "Represiva"
+      ]
+    },
+    {
+      "id": "inspeccion",
+      "title": "Inspección y control",
+      "subtitle": "Gobernar la enseñanza",
+      "hint": "Diferenciá acompañamiento pedagógico, regulación pública y vigilancia ideológica. ¿Qué continuidades y rupturas encontrás?",
+      "tags": [
+        "Represiva"
+      ]
+    },
+    {
+      "id": "comunidad",
+      "title": "Escuela y comunidad",
+      "subtitle": "Participación o subordinación",
+      "hint": "Compará cooperadoras dirigidas por el Estado, organizaciones autónomas y formas actuales de participación. ¿Quién decide y quién “coopera”?",
+      "tags": [
+        "Cooptativa",
+        "Represiva"
+      ]
+    }
+  ],
+  "declaredButNotRendered": {
+    "readingTabs": [
+      {
+        "id": "pregunta",
+        "label": "Pregunta de partida",
+        "eyebrow": "El problema historiográfico",
+        "title": "¿Cómo leer una reforma que mezcla gestos tan distintos?",
+        "text": "Pineau parte de una incomodidad: políticas conservadoras impulsaron prácticas que luego también aparecerían vinculadas con tradiciones pedagógicas populares o democratizadoras. En vez de resolver la tensión con una etiqueta única, investiga cómo se construyó una nueva hegemonía pedagógica.",
+        "prompt": "Al leer, evitá preguntar solo “¿fue moderna o autoritaria?”. Preguntá qué articulación hizo posible que fuera ambas cosas —y más— a la vez."
+      },
+      {
+        "id": "diagnostico",
+        "label": "Diagnóstico",
+        "eyebrow": "La escena que la Reforma declara en crisis",
+        "title": "Una escuela acusada de educar solamente la mente",
+        "text": "El diagnóstico oficial denuncia intelectualismo, verbalismo, enciclopedismo, falta de valores morales y patrióticos, escasa formación del cuerpo y el alma, débil preparación para el trabajo, deserción y analfabetismo. Ese diagnóstico no es neutral: define qué debe cambiar y habilita determinadas intervenciones.",
+        "prompt": "Todo diagnóstico distribuye responsabilidades. ¿Qué sujetos, saberes y prácticas quedan presentados como problema?"
+      },
+      {
+        "id": "hipotesis",
+        "label": "Hipótesis",
+        "eyebrow": "La clave explicativa de Pineau",
+        "title": "Una pedagogía hegemónica hecha de negociación y conflicto",
+        "text": "El triunfo de la Reforma se explica por su capacidad de producir un nuevo imaginario pedagógico y volverlo operativo mediante tres estrategias combinadas: renovar lenguajes y prácticas, reprimir posiciones consideradas enemigas e incorporar demandas bajo conducción estatal.",
+        "prompt": "Hegemonía no significa acuerdo sin conflicto: supone alianzas, concesiones, exclusiones y una manera de presentar un orden particular como horizonte común."
+      },
+      {
+        "id": "huellas",
+        "label": "Huellas",
+        "eyebrow": "El cierre abierto del texto",
+        "title": "Un hito “fundante” cuyas marcas pueden rastrearse",
+        "text": "La Reforma tradujo problemas políticos en dispositivos pedagógicos y logró sedimentar prácticas duraderas. Pineau invita a reconocer huellas sin suponer que el presente repite intacto a 1937: las instituciones cambian, pero conservan capas, tensiones y vocabularios de otros momentos.",
+        "prompt": "Esta es la puerta a una lectura genealógica: ¿qué llegó hasta hoy, mediante qué transformaciones y con qué alternativas no realizadas?"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Campo pedagógico",
+        "text": "Espacio de posiciones, disputas y autoridades donde distintos grupos pugnan por definir qué cuenta como educación legítima."
+      },
+      {
+        "term": "Hegemonía",
+        "text": "Capacidad de una articulación particular para presentarse como sentido común y conducir un conjunto social, combinando consenso, concesión y coerción."
+      },
+      {
+        "term": "Imaginario pedagógico",
+        "text": "Red de ideas, valores, sujetos y prácticas que vuelve pensable un determinado orden educativo y orienta lo que se considera posible."
+      },
+      {
+        "term": "Sujeto pedagógico",
+        "text": "Identidad producida en la relación educativa: no es un individuo dado, sino una forma histórica de imaginar y formar a niños, docentes, familias o ciudadanía."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Renovación, represión, cooptación",
+    "subtitle": "Las estrategias de la Reforma Fresco–Noble (Provincia de Buenos Aires, década del 30)",
+    "author": "Pablo Pineau",
+    "duration": 3005.727,
+    "source": {
+      "kind": "ElevenLabs SRT",
+      "cueCount": 561,
+      "finalCueEnd": 3002.814
+    },
+    "sections": [
+      {
+        "id": "apertura",
+        "title": "Apertura",
+        "shortTitle": "Apertura",
+        "paragraphCount": 8,
+        "sentenceCount": 24
+      },
+      {
+        "id": "problema-pedagogias",
+        "title": "El problema de las pedagogías",
+        "shortTitle": "El problema de las pedagogías",
+        "paragraphCount": 7,
+        "sentenceCount": 29
+      },
+      {
+        "id": "pedagogia-reforma",
+        "title": "La pedagogía de la Reforma Fresco–Noble",
+        "shortTitle": "La pedagogía de la Reforma",
+        "paragraphCount": 5,
+        "sentenceCount": 13
+      },
+      {
+        "id": "estrategias-triunfo",
+        "title": "Las estrategias del triunfo",
+        "shortTitle": "Las estrategias del triunfo",
+        "paragraphCount": 42,
+        "sentenceCount": 129
+      }
+    ],
+    "renderedUnitCount": 201,
+    "endnoteCount": 20,
+    "bibliographyCount": 12,
+    "legacySentenceMapCount": 191
+  }
+}

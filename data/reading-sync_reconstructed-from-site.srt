@@ -1,0 +1,803 @@
+1
+00:00:00,000 --> 00:00:05,362
+Renovación, represión, cooptación
+
+2
+00:00:06,362 --> 00:00:13,467
+Las estrategias de la Reforma Fresco–Noble (Provincia de Buenos Aires, década del 30)
+
+3
+00:00:14,467 --> 00:00:15,814
+Pablo Pineau[1]
+
+4
+00:00:16,814 --> 00:00:37,935
+Una primera mirada a lo largo de la historia de la educación de la provincia de Buenos Aires pone en evidencia que la gran cantidad de prácticas y propuestas impulsadas en ella por los grupos conservadores presentan fuertes similitudes con las que posteriormente tratarían de impulsar dichos grupos a nivel nacional.
+
+5
+00:00:38,002 --> 00:00:58,053
+Esto permite plantear como hipótesis que la Provincia fue el lugar en que dichos sectores, hegemonizando su conducción política y privilegiando este espacio para su accionar partidario, ensayaron las distintas propuestas educativas que luego implementaron, o intentaron implementar, a nivel nacional.[2]
+
+6
+00:00:58,053 --> 00:01:05,672
+Por ejemplo en 1875 se establece en la provincia la ley de Educación Común de alcance local.
+
+7
+00:01:05,756 --> 00:01:23,502
+En ella se encuentran una serie de elementos que luego serán retomados por la ley nacional 1420 de 1884 sobre educación pública de injerencia federal, de la que la primera se constituye en un importante antecedente.
+
+8
+00:01:23,502 --> 00:01:45,747
+En el tiempo transcurrido entre 1890 y 1916 aproximadamente las propuestas educativas de los sectores tradicionales se orientaron a intentar segmentar y diversificar el sistema creado anteriormente y a impedir el acceso de nuevos sectores a sus estamentos más altos.
+
+9
+00:01:45,747 --> 00:01:54,397
+Los más claros exponentes de este proceso, a nivel nacional, son los proyectos Magnasco y Saavedra Lamas.
+
+10
+00:01:54,480 --> 00:02:00,395
+En el mismo período se encuentran propuestas semejantes en la provincia.
+
+11
+00:02:00,479 --> 00:02:20,627
+En 1905, por ejemplo, fue modificada la mencionada ley de 1875, estableciéndose que el nivel primario básico, que hasta entonces constaba de seis grados, se dividiera en un ciclo elemental obligatorio de cuatro años y otro complementario de dos.
+
+12
+00:02:20,710 --> 00:02:31,630
+En 1914, el entonces Director General de Escuelas, Matías Sánchez Sorondo, propuso reducir la obligatoriedad escolar a sólo dos años.
+
+13
+00:02:31,630 --> 00:02:42,838
+La denominada Década Infame (1930-1943) se identifica en la provincia con la llegada al poder de Manuel Fresco durante 1936-1940.
+
+14
+00:02:42,925 --> 00:02:57,363
+Su gobernación por la mayoría de los autores, cualquiera fuera su tendencia, como el mayor avance que las teorías fascistas y corporativistas tuvieron en nuestro país.
+
+15
+00:02:57,450 --> 00:03:07,993
+Declarado admirador de Hitler, Franco y Mussolini, Fresco intentó aplicar sus preceptos a la Provincia durante su gestión.
+
+16
+00:03:07,993 --> 00:03:31,805
+En 1937, siendo ministro de interior Roberto J. Noble, se impulsó una Reforma al sistema educativo provincial que diversificaba y segmentaba el ciclo complementario, reforzaba las prácticas militaristas dentro de la escuela e imponía la enseñanza religiosa en las escuelas oficiales.
+
+17
+00:03:31,890 --> 00:03:46,957
+De esta forma la provincia volvió a adelantarse a las propuestas educativas que los grupos conservadores del gobierno nacional de facto de 1943 intentaron imponer a nivel nacional.
+
+18
+00:03:46,957 --> 00:04:09,215
+Esta última etapa -la década de 1930, nuestro objeto de análisis- ha sido calificada como un período restaurador, autoritario y retrógrado, y por tanto la Reforma educativa llevada a cabo entonces fue comprendida una experiencia tradicional, reaccionaria, antirenovadora, autoritaria y antirevolucionaria.
+
+19
+00:04:09,289 --> 00:04:15,801
+No nos parecen erradas estas aseveraciones, pero sí que no agotan la riqueza del proceso.
+
+20
+00:04:15,875 --> 00:04:30,151
+Una rápida ojeada al escrito La reforma educacional en Buenos Aires: Hacia una escuela nacionalista y vocacional nos pone en evidencia que, al menos, la crítica de anti renovadora no se sustancia.
+
+21
+00:04:30,225 --> 00:04:36,289
+Asombra el dominio que se tenía y el uso que se hacía de los pedagogos del momento.
+
+22
+00:04:36,363 --> 00:04:45,016
+En la misma, son comunes las referencias a Dewey, Montessori, Lombardo-Radice, Gentile, Freinet y Piaget, entre otros.
+
+23
+00:04:45,090 --> 00:05:01,451
+Es realmente notable el hecho que no se asume una postura “restauradora y tradicionalista” que busque volver a un pasado glorioso, sino que generalmente se invoca un futuro mejor, al que se llegará por medio de la educación.
+
+24
+00:05:01,525 --> 00:05:11,369
+Discurso de inclusión parcial, la propuesta hegemonizadora de la Reforma parece mucho más rica que lo que la primera lectura demuestra.
+
+25
+00:05:11,443 --> 00:05:27,918
+Si no, no podría explicarse, por ejemplo, cómo se logra derribar uno de los mayores baluartes del sistema liberal: La enseñanza laica, por qué sus fundamentos siguieron vigentes una vez destituido el gobierno que los impulsó.
+
+26
+00:05:27,918 --> 00:05:42,186
+Algunos trabajos que se han ocupado del tema avanzan en una línea que parte de cuestionar las características de restauración y antirenovación, y qué nos parece más fructífera para el análisis.
+
+27
+00:05:42,260 --> 00:06:02,052
+La gobernación de Fresco pasa entonces a ser leída como una nueva “puesta a punto”, sin duda bajo un imaginario reaccionario, “fascista”, “conservador fraudulento”, “nacionalista de derecha”, pero capaz de instrumentar respuestas a algunos de los desafíos del momento.
+
+28
+00:06:02,052 --> 00:06:04,049
+El problema de las pedagogías
+
+29
+00:06:04,049 --> 00:06:21,053
+En un trabajo anterior[3], al analizar el devenir de la escolarización de la provincia entre 1875 y 1930, ubicamos dos proyectos triunfantes de los grupos conservadores para dicho periodo de análisis.
+
+30
+00:06:21,141 --> 00:06:33,957
+El primero de ellos, expresado por la ley de 1875, puede comprenderse como una propuesta que instaura lo que denominamos un imaginario civilizatorio.
+
+31
+00:06:34,044 --> 00:06:42,316
+El segundo, a partir de las modificaciones legales de 1905 establece un imaginario normalizador[4].
+
+32
+00:06:42,316 --> 00:06:53,494
+Comenzamos a analizar el periodo de la Década del 30 buscando identificar el nuevo imaginario que se implementó, al que denominaremos ”imaginario disciplinador”[5].
+
+33
+00:06:53,564 --> 00:07:14,750
+Pero al avanzar en la investigación, comprobamos que no solo se produjo un cambio de imaginario, sino que la Reforma constituyó una nueva Pedagogía hegemónica que permitió tanto al triunfo del nuevo imaginario como que sus improntas se extendieran Más allá de la caída del gobierno que la puso en marcha.
+
+34
+00:07:14,750 --> 00:07:39,343
+Mientras que los imaginarios civilizatorio y normalizador se habían montado en la pedagogía hegemónica que había acompañado al triunfo y la expansión de la escolarización, el imaginario disciplinador implicó la generación de una nueva pedagogía, entendiendo por tal a todo conjunto disciplinariamente para referirse a lo educativo en su acepción moderna.
+
+35
+00:07:39,343 --> 00:07:54,408
+La organización disciplinaria -forma típica de la modernidad- implica una manera especial de ordenar el uso y la economía de los saberes en juego en una determinada relación productiva de poder/saber[6].
+
+36
+00:07:54,484 --> 00:08:03,003
+Este proceso se dio conjuntamente a la creación del espacio institucional donde reinaría la pedagogía: la escuela.
+
+37
+00:08:03,079 --> 00:08:13,970
+La empresa moderna produjo un doble proceso: por un lado construyó una especial forma de entender lo educativo y a su vez lo redujo a lo escolar.
+
+38
+00:08:14,046 --> 00:08:25,086
+Cabe recordar que este fenómeno, identificable a nivel mundial, adoptó particularidades en cada caso: en el nuestro, la Provincia de Buenos Aires.
+
+39
+00:08:25,086 --> 00:08:49,414
+Este proceso de Constitución de las pedagogías se realiza mediante articulaciones específicas de elementos puramente ”pedagógicos” con las traducciones en dicha clave de determinados enunciados que diversos discursos ponen a disposición de la pedagogía mediante complejos procesos de distribución, recontextualización y evaluación[7].
+
+40
+00:08:49,488 --> 00:09:06,477
+Existen diversas fuentes de las cuales las pedagogías pueden tomar elementos para articular, y el resultado -la pedagogía propuesta- depende tanto de lo que se ha tomado como de las distintas formas en las que han sido articulados.
+
+41
+00:09:06,551 --> 00:09:21,294
+Así, buscamos alejarnos de posturas reduccionistas -por ejemplo, referirnos a la “pedagogía positivista”- para buscar analizar las traducciones pedagógicas y las diversas posibilidades de articulación.
+
+42
+00:09:21,368 --> 00:09:37,449
+Hablaremos entonces de “pedagogías que tomaron elementos del positivismo”, y en cada caso concreto será necesario analizar qué fue lo que tornó y en qué otros elementos lo articuló, provenientes o no de la misma fuente.
+
+43
+00:09:37,524 --> 00:09:49,589
+Así, en cada momento histórico, es posible hablar de la presencia de diversas pedagogías, que se ordenan colectivamente conformando un ”campo”[8], el campo pedagógico.
+
+44
+00:09:49,664 --> 00:09:58,899
+Por adoptar tal configuración, las distintas pedagogías luchan en su interior para dominarlo, y gozar de validez y veracidad.
+
+45
+00:09:58,974 --> 00:10:07,247
+Deben para tal construir sus criterios de completud, coherencia, no contradicción e intentar imponerlos al resto.
+
+46
+00:10:07,322 --> 00:10:22,811
+Aquellas propuestas que logran este objetivo se convierten en las “pedagogías hegemónicas”[9] de cada periodo histórico, que establecen a su vez a los imaginarios pedagógicos hegemónicos de cada período histórico[10].
+
+47
+00:10:22,811 --> 00:10:32,792
+Cualquiera sea su forma de determinación, toda pedagogía hegemónica es producto de distintas negociaciones entre los grupos intervinientes.
+
+48
+00:10:32,864 --> 00:10:46,086
+No es el resultado de procesos abstractos, ahistóricos y objetivos, sino que se origina a partir de conflictos, compromisos y alianzas de movimientos y grupos socialmente identificables.
+
+49
+00:10:46,158 --> 00:10:53,463
+El campo pedagógico es un espacio de lucha donde se incorporan y amalgaman tendencias contradictorias.
+
+50
+00:10:53,535 --> 00:11:09,901
+No se mantiene como un hecho, sino que toma formas sociales particulares e incorpora ciertos intereses que son a su vez el producto de luchas continuas tanto entre los grupos dominados y dominantes como al interior de los mismos.
+
+51
+00:11:09,901 --> 00:11:23,356
+Las luchas dentro del campo pedagógico por la autoridad y el reconocimiento no obedecen a motivaciones exclusivamente epistemológicas o políticas, sino a una complementariedad variable entre ambas.
+
+52
+00:11:23,425 --> 00:11:32,390
+Sus resultados no solo tienen manifestaciones en el plano de las ideas, sino también en el ámbito de las posiciones institucionales.
+
+53
+00:11:32,459 --> 00:11:38,737
+Los que quedan fuera del campo también quedan desautorizados para participar en los debates.
+
+54
+00:11:38,806 --> 00:11:48,123
+De esta forma, en la discusión por el método único y correcto se cifra la pelea entre distintas concepciones sociales sobre la educación.
+
+55
+00:11:48,192 --> 00:12:12,270
+No se trata solamente de diferencias académicas sino que dichas disputas deben ubicarse en los procesos de regulación social, deben comprenderse como peleas por la constitución de sujetos pedagógicos y por el establecimiento de una especial relación entre sociedad y escuela a partir de complejas articulaciones que constituyen los distintos enunciados.
+
+56
+00:12:12,270 --> 00:12:37,831
+En función de las consideraciones, es nuestra hipótesis que el triunfo de la Reforma educativa de 1937 en la Provincia de Buenos Aires se debió a que fue capaz de generar un nuevo imaginario pedagógico basado en una nueva “pedagogía hegemónica” y de lograr implantarla con una política que combinaba estrategias renovadoras, represivas y cooptativas.
+
+57
+00:12:37,905 --> 00:12:41,387
+Veamos su desarrollo en los párrafos siguientes.
+
+58
+00:12:41,387 --> 00:12:44,452
+La pedagogía de la Reforma Fresco–Noble
+
+59
+00:12:44,452 --> 00:13:23,885
+La Reforma bonaerense de 1937 parte de un diagnóstico sobre la situación educativa provincial de entonces que identifica los siguientes problemas: excesivo intelectualismo, verbalismo y enciclopedismo, carencia de valores morales y patrióticos que guíen la acción escolar, ausencia de la formación del “alma” y el “cuerpo” de los niños, limitando el trabajo pedagógico a la “mente”, ausencia de la formación para el trabajo, altísima deserción escolar y exceso de profesionales liberales.
+
+60
+00:13:23,967 --> 00:13:28,896
+Estos males son los que buscaba remediar la Reforma mediante.
+
+61
+00:13:28,896 --> 00:13:45,660
+“...el cultivo de los sentimientos patrios, morales, religiosos y estéticos en armonía con el desarrollo físico y psíquico del niño, (para formar generaciones) en la fe de Dios, el amor a la Patria y el afecto a la familia”[11].
+
+62
+00:13:45,660 --> 00:14:51,065
+Consideramos que en el periodo 1930- 1936 se produjo un estallido del viejo imaginario normalizador que había ordenado el espacio escolar provincial hasta entonces, lo que estuvo acompañado de una discriminación de nuevos elementos que serían rearticulados por la nueva propuesta, tales como la importancia de la formación moral y religiosa, una nueva concepción del nacionalismo, la innovación pedagógica, la Escuela Nueva, las prácticas asistencialistas, el antiintelectualismo, la educación artística, una especial concepción de la infancia, una nueva articulación entre la escuela y la comunidad, la lucha contra el analfabetismo, etc, y sobre los cuales se construiría el nuevo imaginario disciplinador, articulándose con algunos otros significantes previos, tales como el higienismo, los rituales patrióticos o el currículum humanista antipragmático.
+
+63
+00:14:51,065 --> 00:15:27,410
+Sostenemos entonces que la Reforma logró imponerse y mantenerse aún después de destituido Fresco no solo porque fue capaz de generar un nuevo imaginario, sino porque estableció una nueva “pedagogía hegemónica” - esto es, una forma disciplinar de ordenar y comprender la problemática educativa- también a partir de articular y traducir elementos provenientes de diversos discursos presentes en la década de 1930 junto a viejos significantes tomados de otras pedagogías previas.
+
+64
+00:15:27,410 --> 00:15:44,539
+Esta nueva pedagogía se generó a partir de la articulación de aportes provenientes mayormente del espiritualismo, el nacionalismo y la Escuela Nueva, con un fuerte punto nodal de engarce en una nueva conceptualización de la infancia.
+
+65
+00:15:44,614 --> 00:16:14,719
+El espiritualismo rescató la necesidad de tener en cuenta las cuestiones filosóficas - en especial aquellas referidas a los “fines y valores”- para analizar las problemáticas educativas y estableció un nuevo sujeto pedagógico: la “persona”, ser portador de trascendencia, y, a partir de la oposición entre “Instrucción” y “educación integral” construyó dos nuevas superficies pedagógicas: el cuerpo y el alma.
+
+66
+00:16:14,794 --> 00:16:46,925
+La Escuela Nueva dio lugar a una traducción escolar optimista de diversas modernizaciones sociales de ese entonces, tales como los sistemas políticos de masas, las modificaciones en el proceso productivo, la internacionalización de la cultura, los medios de comunicación masivo y las nuevas tecnologías, y estableció como criterio de validación de las propuestas pedagógicas la adecuación a la infancia, el paidocentrismo y el activismo.
+
+67
+00:16:46,999 --> 00:17:13,661
+Los nacionalismos de acuerdo a los distintos, y muchas veces contradictorios entre sí, atributos que adquirieron en la época - republicano, patriótico, militarista, católico, hispanista, tradicionalista, xenófobo, popular, industrialista, estatista, popular, latinoamericanista, antiimperialista, etc- se constituyeron en los basamentos y fines de las propuestas.
+
+68
+00:17:13,735 --> 00:17:28,851
+Sobre esta nueva construcción se ensambló el imaginario disciplinador, lo que implicó el establecimiento de nuevas formas de control social coherentes con los modelos políticos institucionales de la época.
+
+69
+00:17:28,851 --> 00:17:44,575
+Sirva para entender este proceso el siguiente ejemplo: en 1937, la Reforma instituyó en la Provincia la práctica obligatoria de tiro en las escuelas primarias para los alumnos varones y optativas para las niñas.
+
+70
+00:17:44,650 --> 00:17:56,233
+Si bien esta no fue una propuesta totalmente original -ya que se había ensayado anteriormente en varias ocasiones- sí lo son las justificaciones esgrimidas.
+
+71
+00:17:56,309 --> 00:18:19,331
+David Kraiselburd, el Inspector General de Escuelas, avalaba dicha medida con argumentos provenientes de una especial concepción de infancia y una no menos especial lectura de la Escuela Nueva: “Perseguiremos una educación natural y en una educación natural no puede descuidarse el aspecto bélico de los niños”[12].
+
+72
+00:18:19,331 --> 00:18:21,421
+Las estrategias del triunfo
+
+73
+00:18:21,421 --> 00:19:09,672
+A su vez, la Reforma generó y legitimó la implementación de tres estrategias para su puesta en marcha: la estrategia renovadora, al rescatar la centralidad del niño en el proceso pedagógico y la específica lectura que se realizó de la Escuela Nueva, la estrategia represiva, como forma de cuidar el espíritu contra sus enemigos - el materialismo, el cosmopolitismo, el internacionalismo, el comunismo, la duda-, y la estrategia cooptativa, al incorporar las dimensiones “olvidadas” por las pedagogías previas, como lo deportivo, el esparcimiento o la alimentación, al llevar a cabo prácticas asistencialistas o al responder a demandas sindicales docentes.
+
+74
+00:19:09,672 --> 00:19:16,332
+La Reforma incorporó a lo nuevo, a lo que se considera renovador, como uno de sus puntos de apoyo.
+
+75
+00:19:16,401 --> 00:19:33,867
+Sobre esta articulación se basó la estrategia renovadora, que buscó formar a los implicados en las necesidades de la Renovación contínua y permanente, lo que implicó la Constitución de nuevos sujetos y el desarrollo de una serie de dispositivos para tal fin.
+
+76
+00:19:33,867 --> 00:19:37,738
+La Reforma implicó una nueva concepción de la infancia.
+
+77
+00:19:37,809 --> 00:19:49,834
+En primer lugar, el “respeto al niño” se convirtió en la justificación de las prácticas pedagógicas, contrariamente a la validación cientificista proveniente del positivismo.
+
+78
+00:19:49,905 --> 00:20:22,304
+En segundo lugar, y coherente con las nuevas imágenes de la infancia que se estaban construyendo en Argentina[13], la Reforma se presentó como una apuesta a las “Nuevas Generaciones” y a su papel de constructoras de un futuro glorioso - en una fuerte articulación con el carácter fundante de la Reforma-, portadoras de una misión indeclinable y llena de honores, a diferencias de posturas que las comprenderán como cuidadores de un pasado glorioso que debía recuperarse.
+
+79
+00:20:22,304 --> 00:20:32,362
+La Estrategia Renovadora se presentó también en la creación de las nuevas superficies educativas que abría la nueva pedagogía hegemónica.
+
+80
+00:20:32,436 --> 00:20:48,549
+En su crítica a lo que denominaban la “pedagogía positivista” - que había limitado lo educativo a lo instruccional- Los postulados espiritualistas habían abierto puntos de impacto de acción educativa: el cuerpo y el alma.
+
+81
+00:20:48,623 --> 00:21:01,268
+Sobre el accionar de estas nuevas superficies se logró la articulación con la Escuela Nueva, ya que se consideraba que la Escuela Tradicional limitaba su impacto a la mente.
+
+82
+00:21:01,268 --> 00:21:19,913
+La educación física - que tenía como su blanco el cuerpo de los alumnos- adoptó tres orientaciones: en primer lugar, Una mínima capacitación para el trabajo con los cursos de preaprendizaje profesional - a todas luces insuficiente para un futuro desempeño laboral.
+
+83
+00:21:19,985 --> 00:21:30,196
+En segundo lugar, hacia la militarización de las prácticas infantiles, Como por ejemplo, la realización de los desfiles y los ejercicios de tiro.
+
+84
+00:21:30,267 --> 00:21:40,417
+Finalmente, la tercer dimensión de la educación física la orientó hacia la formación atlética y deportiva tanto dentro como fuera de la escuela.
+
+85
+00:21:40,417 --> 00:21:54,271
+De acuerdo a esto, Se realizaron modificaciones curriculares, cursos de preaprendizaje, media hora de gimnasia diaria, concurrencia a campos de deportes y prácticas de tiro, etc.
+
+86
+00:21:54,349 --> 00:22:14,725
+Para lograr estos últimos fines, el 21 de julio de 1936, se creó la Dirección de Educación Física y Cultura, ocupada del desarrollo de esta orientación, desde los campeonatos deportivos y la enseñanza gimnástica en las escuelas hasta los desfiles de los alumnos.
+
+87
+00:22:14,803 --> 00:22:24,096
+Estas actividades tendrían lugar no solo en las escuelas, sino especialmente en campos de deportes creados para tal fin.
+
+88
+00:22:24,175 --> 00:22:31,646
+Se esperaba cumplir con una gran gama de actividades y atender a una fuerte variedad de sujetos.
+
+89
+00:22:31,724 --> 00:22:47,104
+Los centros de deportes debían volverse nuevos espacios de vinculación entre el Estado y la Sociedad Civil, mediante un determinado y especial intercambio de saberes y prácticas de muy diverso tipo.
+
+90
+00:22:47,104 --> 00:22:55,378
+También la educación moral - que impactaba en el “alma”- implicó dos sentidos fuertemente imbricados.
+
+91
+00:22:55,461 --> 00:23:19,393
+En primer lugar la orientación religiosa, con el establecimiento de la obligatoriedad de su enseñanza en las escuelas públicas dentro del horario de clase a cargo de personal especialmente designados por la autoridad eclesiástica, medida a la que en 1939, la Ley 4755 le dio rango legislativo.
+
+92
+00:23:19,475 --> 00:23:22,863
+Volveremos sobre este punto más adelante.
+
+93
+00:23:22,863 --> 00:23:44,458
+En segundo lugar, una nueva orientación nacionalista, con la incorporación de las tradiciones regionales en el currículum y la incentivación de las prácticas y rituales patrióticos tales como desfiles, actos públicos, exhibición y entrega de símbolos patrios, juramentos patrióticos, etc.
+
+94
+00:23:44,458 --> 00:24:08,700
+Estas nuevas superficies educativas se presentan fuertemente entrelazadas: la nación la salud y la religión son cada una consecuencia y condición directa de la otra y se realizan prácticas que así lo evidencian: los actos patrios comienzan con Misas o bendiciones y terminan con desfiles o demostraciones gimnásticas.
+
+95
+00:24:08,700 --> 00:24:17,180
+La Reforma - en tanto renovación- implicó la generación de prácticas de capacitación de los docentes en ejercicio.
+
+96
+00:24:17,255 --> 00:24:38,468
+Se continuaron usando los dispositivos ya clásicos, o en todo caso aggiornados, como la Revista de Educación, o las visitas de Inspección, pero fue necesario aplicar nuevos que permitieran asegurar los principios de la Reforma en todos los docentes en una forma más segura y permanente.
+
+97
+00:24:38,468 --> 00:24:56,550
+La práctica preferida fue la implementación de Cursos de Perfeccionamiento, como los “cursos vacacionales” dictados entre diciembre de 1937 y febrero de 1938 en Mar del Plata, a los que concurrieron 280 docentes de toda la Provincia.
+
+98
+00:24:56,628 --> 00:25:09,061
+La elección de la ciudad se debió a que de esta forma también se garantizaba el descanso de los concurrentes, lo que permite ver aquí algún elemento cooptativo.
+
+99
+00:25:09,139 --> 00:25:17,794
+Fuertemente vinculado con la capacitación, la estrategia renovadora impactó también en la figura del Inspector.
+
+100
+00:25:17,873 --> 00:25:26,218
+Los modelos previos habían constituido al Cuerpo de Inspectores como uno de sus dispositivos por excelencia.
+
+101
+00:25:26,297 --> 00:25:47,552
+De a poco se fue moldeando la imagen del Inspector con la que históricamente hoy contamos: la de un señor que llega a las escuelas de improviso, que cuenta con fuertes poderes punitivos, y ante el cual la institución debe romper su rutina y simular funcionar perfectamente.
+
+102
+00:25:47,631 --> 00:26:02,199
+Cada vez más el Imaginario normalizador fue uniformando la práctica y la mirada, y las funciones de asesoramiento y capacitación van desapareciendo en manos de las de contralor y punición.
+
+103
+00:26:02,199 --> 00:26:13,145
+La Reforma buscó construir un nuevo modelo de Inspección: por un lado se rescató la función de asesoramiento, pero se la ubicó en una matriz moralizante.
+
+104
+00:26:13,217 --> 00:26:21,423
+La dupla asesoramiento/punición inscribió al primer término en lo didáctico y metodológico y lo segundo en lo moral.
+
+105
+00:26:21,495 --> 00:26:32,079
+Al tiempo que el inspector estimulaba la experiencia didáctica, controlaba duramente las desviaciones “ideológicas” que presentaban algunos docentes.
+
+106
+00:26:32,151 --> 00:26:44,366
+El Cuerpo de Inspección debía ser una de las vías de renovación más importantes mediante el estímulo de las nuevas propuestas didácticas y el contralor de las desviaciones.
+
+107
+00:26:44,366 --> 00:26:56,836
+Por otra parte, respecto de la estrategia represiva, la Reforma implicó el establecimiento de una cantidad de dispositivos que buscaban desterrar y ocultar cualquier voz diferente.
+
+108
+00:26:56,906 --> 00:27:13,623
+Por un lado, el marco político de exclusión de partidos y fraudes electorales repercutían en el sistema escolar, por ejemplo, en cesantías de docentes y censuras de escritos, prácticas “clásicas” que se heredaban desde comienzos de la década[14].
+
+109
+00:27:13,623 --> 00:27:39,676
+Dentro de esta estrategia deben ubicarse las continuas proclamas en Pos del cierre de las instituciones en las que se sembraba la duda y se estimulaban las ideas disolventes, en especial las Escuelas Normales y las Universidades, donde se formaba una “plétora de intelectuales” que, llevados por la desesperación, no dudaban en tomar “los caminos de Moscú o Barcelona”[15].
+
+110
+00:27:39,676 --> 00:28:01,828
+Pero más allá de éstas, la reforma se propuso lograr una homogeneización ideológica de la población según los criterios fuertemente excluyentes del nacionalismo tradicionalista y la religión católica - modificaciones amparadas constitucionalmente desde la Reforma de 1934-, como ya se ha presentado.
+
+111
+00:28:01,828 --> 00:28:14,619
+Toda voz que se alzara contra estos elementos era considerada como enemiga de la máxima de la Reforma: Dios- Patria- Hogar, y por tal debía ser duramente acallada.
+
+112
+00:28:14,699 --> 00:28:22,679
+Reinterpretando a Alberdi, una de las máximas literales de la Reforma fue: “Gobernar es disciplinar”.[16]
+
+113
+00:28:22,679 --> 00:28:50,775
+La Reforma identificó dos enemigos, que debían ser perseguidos, desterrados y excluidos: la Duda y el cosmopolitismo, que serían combatidos con el Dogma y la Patria, la Certeza y el Culto a los Símbolos, todos estos últimos representados y salvaguardados por el Gobierno del momento, de forma tal que cualquier oposición a este era una afrenta a la Patria y la Nación.
+
+114
+00:28:50,775 --> 00:28:58,700
+La nueva pedagogía hegemónica construía al mismo tiempo a su objeto -la infancia- y a su mayor enemigo.
+
+115
+00:28:58,777 --> 00:29:20,357
+La negación de la duda implicaba una vuelta a posturas premodernas, en las que los “nuevos métodos” perdían su capacidad de generar cuestionamientos y desequilibrios, para volverse la vía por la cual se desarrolla la “verdad” que reside en el alma impoluta y tentadora de la niñez.
+
+116
+00:29:20,357 --> 00:29:33,551
+Apoyándose en las posturas dogmáticas más retrógradas, la duda y la problematización fueron considerados los peores enemigos del niño y, por tal, de una educación correcta.
+
+117
+00:29:33,628 --> 00:29:40,420
+Ante la duda era necesario presentar las verdades irrefutables: la Religión y la Nación.
+
+118
+00:29:40,420 --> 00:29:51,976
+Los nuevos nacionalismos de la década del 30 presentaron posturas xenófobas a partir de identificar a dos enemigos: el internacionalismo y el cosmopolitismo.
+
+119
+00:29:52,050 --> 00:30:08,341
+A diferencia de las décadas anteriores la justificaciones raciales y biológicas del nacionalismo -típicas del positivismo en ese entonces en decadencia-, sin desaparecer totalmente, dejaron paso a diferencias “ideológicas”.
+
+120
+00:30:08,415 --> 00:30:21,983
+Por ejemplo, la inmigración no fue portadora de males con sede biológica sino intelectual; eran sus ideas, y no sus cuerpos, los que atentaban contra el desarrollo “normal” de la nación.
+
+121
+00:30:21,983 --> 00:30:37,147
+Mientras se reelaboraba la oposición al internacionalismo en tanto punto del iceberg del comunismo y el anarquismo, y portal sin mayores nuevos aportes al respecto, la década del 30 se opuso al cosmopolitismo.
+
+122
+00:30:37,220 --> 00:30:54,134
+Por tal se comprendería a la visión heredada del positivismo que sostiene la existencia de una cultura universal y neutra -claramente la de Europa occidental- cuya expansión y desarrollo era la garantía del progreso de las sociedades.
+
+123
+00:30:54,207 --> 00:31:04,458
+La difusión de la escuela y de la ciencia, del capitalismo y de la democracia liberal, al liberalismo y al normalismo se ubican en esta línea.
+
+124
+00:31:04,532 --> 00:31:23,714
+El cosmopolitismo pasó a ser una expresión del perseguido positivismo a partir de que las posturas nacionalistas se articularon con el espiritualismo: en la Nación anidaba “el espíritu” que estaba más allá de la pura y dura materialidad qué importaba al positivismo[17].
+
+125
+00:31:23,787 --> 00:31:29,738
+Era entonces necesario denunciar esa falacia y llegar a la esencia de la cuestión.
+
+126
+00:31:29,738 --> 00:32:14,963
+La necesidad de la escuela nacionalista (bajo el slogan “la escuela Argentina será nacionalista o no será nada”, sostenido por un gobierno que decía ser “un gobierno argentino de soluciones argentinas para problemas argentinos”) implicaba que las formas “clásicas” y “objetivas” de construcción de saberes -la ciencia, la lógica, la especulación intelectual- debían subordinarse a los fines preestablecidos y ponerse al servicio de la nacionalidad como único criterio de verdad y única forma de evitar los desvíos hacia las ideas “foráneas” a los que la rápidamente podían orientarse si se perdía el recaudo nacionalista.
+
+127
+00:32:15,037 --> 00:32:39,825
+De aquí que las posturas antiintelectualistas pudieran ocupar importantes espacios en los planteos de la Reforma: mientras que el espiritualismo le permitía crear las nuevas superficies pedagógicas -alma y cuerpo-, la especial articulación lograda con el nacionalismo implicaba un fuerte recorte de los saberes “intelectuales” a transmitir.
+
+128
+00:32:39,899 --> 00:32:54,948
+Se consideraba que esas cuestiones se vinculaban “en forma natural” con el cosmopolitismo, por los cual los controles debían ser más que rigurosos para separar “de su cauce natural” la formación intelectual.
+
+129
+00:32:55,022 --> 00:33:26,450
+La implantación del nacionalismo excluyente continuó los rituales heredados de periodos anteriores -juramento a la bandera, cantos patrióticos, actos escolares, patriotización del currículum, etc-, pero también sumó nuevos con mayor pompa y boato, en especial los desfiles públicos, las concentraciones disciplinadas de alumnos y docentes y las demostraciones físicas y deportivas, en los que también se celebraban ritos religiosos.
+
+130
+00:33:26,524 --> 00:33:33,639
+Por supuesto, la influencia del fascismo en estas manifestaciones amadas por Fresco es indudable.
+
+131
+00:33:33,639 --> 00:33:40,190
+Mientras el cosmopolitismo se combatía con el nacionalismo, la duda se combatía con el Dogma.
+
+132
+00:33:40,261 --> 00:33:56,345
+Se estableció que los dos principios que rigen a las “sociedades civilizadas” eran el culto a las tradiciones patrias y la fe en Dios, principios por otra parte establecidos por la constitución provincial para guiar la educación.
+
+133
+00:33:56,416 --> 00:34:13,070
+En una especial lectura de la historia argentina, influida por un rescate del hispanismo, se construyó la ecuación Nación= cristianismo, lo que justificaba la inclusión de la enseñanza religiosa en el currículum de las escuelas públicas.
+
+134
+00:34:13,141 --> 00:34:21,041
+Era necesario conservar las tradiciones nacionales, entre las que tenía un lugar destacado la Religión Católica.
+
+135
+00:34:21,112 --> 00:34:32,200
+La laicidad y el libre pensamiento eran comprendidos como posturas que buscaban amparar las tendencias “hostiles a nuestra nacionalidad y a nuestra religión”.
+
+136
+00:34:32,200 --> 00:34:50,707
+La enseñanza religiosa en las escuelas públicas se implementó desde 1936, pero dicha medida alcanzó estatus legal en 1939 con la sanción de la ley 4755 sobre Enseñanza Religiosa en las Escuelas.
+
+137
+00:34:50,803 --> 00:35:05,498
+Apenas sancionada dicha ley, el Consejo General dictó una resolución que reglamentaba lo legislado y fortificaba su decisión de 1936 comentada más arriba.
+
+138
+00:35:05,498 --> 00:35:19,654
+La implantación de la enseñanza religiosa fue acompañada por una serie de modificaciones rituales, que buscaban crear una nueva ingeniería nacional fundada en la unión “indisoluble” de religión y patria.
+
+139
+00:35:19,725 --> 00:35:28,608
+Por ejemplo, en los actos patrióticos hacía uso de la palabra -o al menos se encontraba presente- un representante eclesiástico.
+
+140
+00:35:28,678 --> 00:35:37,914
+En esta línea también se encuentra la celebración de Misas en los eventos escolares como las efemérides o los actos de fin de curso.
+
+141
+00:35:37,914 --> 00:35:45,072
+La estrategia represiva también actuó sobre el docente, quién debía ser permanentemente controlado.
+
+142
+00:35:45,145 --> 00:36:15,903
+Por supuesto, y continuando tendencias previas, los Inspectores eran quienes tenían que ocuparse de esta cuestión: como sostuvimos en el apartado anterior, estos funcionarios -amén de lograr la renovación pedagógica de los docentes y volverse “maestros de maestros”- tenían como función controlar muy fuertemente los “desvíos” en los que podían caer los docentes, si optaban por la duda o cuestionaban la Nación o la Religión.
+
+143
+00:36:15,903 --> 00:36:26,534
+Pero no alcanzaba con renovar y reprimir, seguramente en forma menor, pero ambas estrategias ya habían sido intentadas con logros relativos.
+
+144
+00:36:26,610 --> 00:36:34,325
+La Reforma en análisis logró sumarle una nueva vía: la cooptación a los sujetos a los que iba dirigida.
+
+145
+00:36:34,402 --> 00:36:44,788
+De esta forma, se buscaba que la Reforma hiciera “carne” en los sujetos de forma tal que la consideraran su proyecto y adhirieran a ella.
+
+146
+00:36:44,788 --> 00:37:04,386
+En primer lugar, se produjo una fuerte modificación en la forma en que se interpeló a los sujetos: aquellos que no eran considerados “enemigos” -los enumerados en el apartado anterior- debían ser no solo sumados sino escuchados, ensalzados y sus demandas satisfechas[18].
+
+147
+00:37:04,386 --> 00:37:16,282
+Por ejemplo, en el caso de los docentes, se produjo un fuerte cambio en el discurso, qué buscaba acortar la distancia entre la Dirección General de Escuelas y los docentes.
+
+148
+00:37:16,352 --> 00:37:20,691
+Se buscaba identificar a las autoridades con el cuerpo docente.
+
+149
+00:37:20,761 --> 00:37:31,135
+Por ejemplo, Rufino T. Bello, el nuevo Director General de Escuelas, se había desempeñado como docente, y esta condición es muy resaltada y recordada.
+
+150
+00:37:31,135 --> 00:37:38,867
+El fuerte discurso antinormalista de la Reforma generó oposiciones no menores entre la docencia.
+
+151
+00:37:38,948 --> 00:37:52,541
+Hasta ese entonces, los maestros de la provincia se hallaban agremiados en la Asociación de Maestros de la Provincia de Buenos Aires, fundada el 25 de diciembre de 1900.
+
+152
+00:37:52,623 --> 00:38:16,613
+Esta institución, si bien albergaba grupos políticos muy distintos -desde anarquistas a conservadores- se reconocía fuertemente normalista y volvía suyas las banderas de la Instrucción Pública: obligatoriedad, laicidad, función principal del Estado, necesidad de erradicación del analfabetismo, etc.
+
+153
+00:38:16,694 --> 00:38:23,658
+Por tal razón, muchos enunciados de la nueva política educativa no le serán muy caros.
+
+154
+00:38:23,658 --> 00:38:40,866
+Ante esta situación, el gobierno desarrolló una política doble: por un lado buscó captar a los docentes dando lugar a viejos reclamos del sector, y por el otro, estimuló la creación de agremiaciones “paralelas” a la Asociación de Maestros.
+
+155
+00:38:40,939 --> 00:38:50,340
+En el primer caso, el gobierno de Fresco se hizo cargo de demandas insatisfechas, pero las reinscribió en la lógica de la Reforma.
+
+156
+00:38:50,340 --> 00:39:20,470
+Al analizar la cuestión, el propio Fresco sostiene que, en realidad, los pedidos de aumento de salarios, la estabilidad en el cargo o el escalafón docente eran en realidad la manifestación de la angustia de los docentes por no poder ver llevado a cabo lo que querían en materia educativa, presos de un laicismo paralizante y de un enciclopedismo inútil y de la falta de directrices claras por parte de las autoridades.
+
+157
+00:39:20,543 --> 00:39:29,882
+De esta forma, la satisfacción de las demandas presentadas pasadas a ser entendida por el gobierno como una adhesión a la Reforma.
+
+158
+00:39:29,882 --> 00:39:41,071
+Así, se apresuró la sanción, con carácter de ley, de un largamente demandado Escalafón Docente[19], Ha probado como la ley N° 4675 el 12 de enero de 1938.
+
+159
+00:39:41,147 --> 00:39:48,961
+Este reestablecía las categorías - suprimiendo la de “maestro auxiliar”- y fijaba los sueldos respectivos.
+
+160
+00:39:49,036 --> 00:40:15,915
+Se fijaron también las condiciones de ingreso a la carrera, las promociones y ascensos, se establecen la Junta Superiores de Clasificación -integradas por el Cuerpo de Inspectores-, los concursos de ascenso por oposición y las condiciones de estabilidad y disciplina - se crea un Tribunal de Disciplina también compuesto por integrantes del cuerpo de inspección.
+
+161
+00:40:15,915 --> 00:40:24,256
+Esta medida, que lograba regularizar una situación bastante caótica, fue celebrada por el magisterio provincial.
+
+162
+00:40:24,331 --> 00:40:38,057
+Junto a esto, el gobierno de Fresco implicó una mejora de los salarios docentes, quebrando una tendencia de empobrecimiento continuo detectable en los primeros años de la década del 30.
+
+163
+00:40:38,057 --> 00:40:45,577
+Otros actos se ubican en esta línea: por ejemplo, se comenzó a festejar con gran pompa el Día del Maestro.
+
+164
+00:40:45,648 --> 00:41:04,756
+En los discursos que se pronunciaban para la ocasión, las autoridades volvían a presentar los fundamentos de la Reforma como una visión compartida por los docentes, por ejemplo, Incentivando la publicación de artículos redactados por docentes en la Revista de Educación.
+
+165
+00:41:04,756 --> 00:41:14,188
+Finalmente, puede sostenerse que las prácticas de capacitación ya presentadas también permiten ser leídas en sede de esta estrategia.
+
+166
+00:41:14,188 --> 00:41:31,295
+Pero de todas maneras, y aunque en forma tibia, la Asociación cuestionó algunos elementos de la política oficial, como la cesantía de docentes, la designación de los libros de texto, la enseñanza religiosa o las propuestas de escuela rural.
+
+167
+00:41:31,367 --> 00:41:37,936
+Por eso, el gobierno buscó la generación de otra agrupación docente más cercana a sus ideas.
+
+168
+00:41:38,009 --> 00:41:53,674
+El 10 de septiembre de 1936, en la sala de sesiones del Consejo General de Educación, se llevó a cabo una asamblea convocada para dejar constituida la Corporación Nacionalista de Maestros de la Provincia de Buenos Aires.
+
+169
+00:41:53,746 --> 00:42:15,551
+Obviamente, esto fue fuertemente apoyado por las autoridades, que no solo facilitaron el lugar para el hecho, sino que muchas se hicieron presentes, desde el propio gobernador Fresco hasta las específicamente educativas como el Director General de Escuelas, integrantes del Consejo y el Inspector General.
+
+170
+00:42:15,624 --> 00:42:25,509
+En su asamblea de constitución Noble presentó las bases de la Reforma y terminó invocando la colaboración del magisterio en su realización.
+
+171
+00:42:25,581 --> 00:42:42,239
+De esta forma, la cooptación funcionaba, por un lado, volviendo a la Reforma una demanda de los docentes -considerando que el colectivo estaba representado en la Corporación- y, por el otro, volviendo al docente su artífice principal.
+
+172
+00:42:42,239 --> 00:42:50,338
+Por otra parte, la reforma desarrolló un vasto conjunto de prácticas asistencialistas.
+
+173
+00:42:50,434 --> 00:43:05,130
+Por ejemplo, desarrolló una amplia campaña de construcción y mejoramiento de los edificios escolares, y se dictaron dos leyes sobre el tema (N°4771 y 4783).
+
+174
+00:43:05,226 --> 00:43:15,397
+Según fuentes oficiales -un tanto dudosas- se construyeron 101 nuevos edificios escolares entre 1936 y 1940.
+
+175
+00:43:15,397 --> 00:43:30,457
+La reforma retomó de los modelos previos la función de la erradicación del analfabetismo, pero fue capaz de superar a las opciones que la procedían al hacer un especial hincapié en las variables sociales del problema.
+
+176
+00:43:30,527 --> 00:43:44,422
+El analfabetismo no se debía -o al menos exclusivamente- a la “desidia” de la población sino que se vinculaba fuertemente, por ejemplo, con el trabajo infantil, o la inexistencia de escuelas o caminos.
+
+177
+00:43:44,422 --> 00:44:01,242
+El problema del analfabetismo fue un tema principal en la agenda educativa en el período: junto a las medidas comentadas, se abrieron el periodo turnos vespertinos en 16 escuelas para qué en los mismos se llevara a cabo la alfabetización de adultos.
+
+178
+00:44:01,310 --> 00:44:31,511
+El reconocimiento de los condicionantes socioeconómicos condujo a la puesta en marcha de prácticas asistenciales y cooptativas, como la sanción del escalafón docente, los cursos nocturnos para adultos analfabetos, los comedores escolares, los recreos y las colonias de vacaciones, los campos deportivos y el fomento y sostenimiento de las cooperadoras escolares, entre otras prácticas, todas ellas dirigidas, o al menos controladas, por el Estado.
+
+179
+00:44:31,511 --> 00:44:41,094
+El 31 de octubre de 1939 el Consejo General de Educación sancionó el Reglamento para las Colonias Escolares de Vacaciones.
+
+180
+00:44:41,174 --> 00:45:03,787
+Este establecía que cada año, a partir del primero de julio, el Cuerpo Médico Escolar, por intermedio de Visitadores de Higiene Escolar y Médicos Inspectoras de Zona procederían a la selección de los niños que compondrían los contingentes de colonos según cuestiones “clínicas y sociales”.
+
+181
+00:45:03,787 --> 00:45:12,983
+Un fenómeno similar se registra con los Comedores Escolares, que llegaron al número de 53 distribuidos por toda la provincia.
+
+182
+00:45:13,057 --> 00:45:36,131
+El 19 de agosto de 1937 el Consejo General de Educación resolvió la creación, en cada cabeza de partido, de un comedor escolar, financiado por la Asociación Cooperadora con el aporte del Estado en caso de que fuera necesario, coordinando por la también recientemente creada Dirección General de Comedores Escolares.
+
+183
+00:45:36,205 --> 00:45:47,399
+Así, el 19 de agosto de 1937, la Dirección General de Escuelas, a propuesta del Poder Ejecutivo, sancionó un proyecto de creación de Comedores Escolares.
+
+184
+00:45:47,473 --> 00:46:11,867
+Se creaba entonces la Administración General de Comedores Escolares, formada por un miembro del Consejo Escolar de Educación, el director del Cuerpo Médico Escolar, un director de escuela primaria, un delegado de la Administración de las Sociedades de Cooperadoras, y un delegado de la Dirección General de Educación Física y Cultura.
+
+185
+00:46:11,941 --> 00:46:16,910
+De ésta debía depender las comisiones administradoras por distrito.
+
+186
+00:46:16,910 --> 00:46:27,213
+A su vez, todo esto se presentó acompañado de la ampliación de los servicios de la copa de leche, la miga de pan, el desayuno y la merienda.
+
+187
+00:46:27,287 --> 00:46:40,057
+Junto a esto, se intensificaron las prácticas sanitarias como la vacunación, la revisación y seguimiento médico de los alumnos y se amplió la planta del Cuerpo Médico Escolar.
+
+188
+00:46:40,057 --> 00:46:52,567
+Estos hechos guardan una fuerte relación con la nueva definición de la educación: estas prácticas buscaban incidir en el cuerpo de los alumnos para volverlos sanos y aptos.
+
+189
+00:46:52,640 --> 00:47:07,429
+Si bien el higienismo previo les había dado importancia como condición de lo educativo -de acuerdo al reduccionismo biologicista- ahora estas son puestas al mismo nivel que las prácticas institucionales.
+
+190
+00:47:07,503 --> 00:47:15,969
+A su vez, la formación del alma también tendría lugar allí, sobre todo en lo que concierne a la formación patriótica.
+
+191
+00:47:16,042 --> 00:47:24,505
+Existía una fuerte relación entre el cuerpo sano, la moral correcta y la Patria, con fuertes improntas militaristas.
+
+192
+00:47:24,578 --> 00:47:34,625
+La creación de la Dirección General de Educación Física y Cultura ha sido probablemente la mayor acción llevada a cabo en esta estrategia.
+
+193
+00:47:34,625 --> 00:47:50,435
+Por otra parte, las impulsadas Asociaciones Cooperadoras debían constituirse en uno de los vínculos más fuertes entre la escuela y la sociedad civil, desterrando de ese lugar a los ya fuertemente alicaídos Consejos Escolares.
+
+194
+00:47:50,435 --> 00:48:06,110
+Estos organismos -en íntima vinculación con la Dirección General de Educación Física y Cultura- eran el puntal en la que se llevaban a cabo las tareas asistencialistas y se establecía un nuevo vínculo con la Sociedad Civil.
+
+195
+00:48:06,181 --> 00:48:25,290
+Si en el imaginario civilizatorio esta función debía ser cumplida por los Consejos Escolares, y en el normalizador por el Cuerpo de Inspectores, en el disciplinario los encargados serán las Cooperadoras Escolares y otros centros para escolares -como los centros deportivos-.
+
+196
+00:48:25,290 --> 00:48:38,693
+De esta forma, la vinculación entre el Estado y la Sociedad Civil quedaba modificada fuertemente, en el que el primero avanza sobre la segunda mediante una relación de subordinación.
+
+197
+00:48:38,767 --> 00:48:47,256
+Las instituciones no estatales debían “cooperar” con el Estado, y éste se reservaba un fuerte derecho de contralor.
+
+198
+00:48:47,256 --> 00:49:02,945
+Finalmente, es destacable la inexistencia de menciones en el discurso oficial a las florecientes por aquel entonces Sociedades Populares de Educación, que en 1931 eran más de 100 en el territorio provincial[20].
+
+199
+00:49:03,021 --> 00:49:25,825
+Es posible pensar que el estímulo a los centros de deportes y a las cooperadoras fuera un intento de neutralizarla, sabido que las primeras eran importantes lugares de actuación de los sectores opositores radicales, socialistas y anarquistas, lo que permite identificar huellas represivas en este tema.
+
+200
+00:49:25,902 --> 00:49:30,910
+Una vez más, las estrategias se presentan fuertemente articuladas.
+
+201
+00:49:30,910 --> 00:50:02,814
+En síntesis, la nueva pedagogía hegemónica y este tema de estrategias permitió construir un proyecto educativo que no sólo traducía en sede pedagógica los planteos políticos del momento sino que el mismo logró imponerse y convertir a la Reforma de 1937 en un hito “fundante” en la educación de la Provincia cuyos ecos y huellas son aún claramente rastreables en la actual educación bonaerense.
