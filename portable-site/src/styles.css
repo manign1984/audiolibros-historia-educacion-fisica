@@ -599,6 +599,23 @@ summary:focus-visible {
   z-index: 1;
 }
 
+.work-library-link {
+  display: inline-flex;
+  margin-bottom: 1.15rem;
+  padding-bottom: 0.12rem;
+  color: var(--paper-deep);
+  border-bottom: 1px solid rgba(244, 237, 223, 0.42);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.work-library-link:hover {
+  color: var(--mustard);
+  border-color: currentColor;
+}
+
 .hero-kicker {
   display: flex;
   max-width: 560px;
@@ -3402,6 +3419,13 @@ summary:focus-visible {
 }
 
 .footer-bottom a { color: var(--mustard); }
+
+.footer-bottom__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.65rem 1.1rem;
+}
 
 /* Toast */
 .toast {

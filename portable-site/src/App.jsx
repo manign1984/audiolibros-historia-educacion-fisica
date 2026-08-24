@@ -21,6 +21,7 @@ import IntegratedReader from './IntegratedReader.jsx';
 
 const AUDIOBOOK_DRIVE_ID = '17w1Pw25aGLXu_cR9mRBZgIOnCG2qNAEm';
 const AUDIOBOOK_DRIVE_URL = `https://drive.google.com/file/d/${AUDIOBOOK_DRIVE_ID}/view`;
+const LIBRARY_HOME_URL = import.meta.env.BASE_URL;
 
 const NAV_ITEMS = [
   ['inicio', 'Inicio'],
@@ -426,6 +427,7 @@ function Hero() {
       <div className="hero-radiance" aria-hidden="true" />
       <div className="hero-grid page-shell">
         <div className="hero-copy">
+          <a className="work-library-link" href={LIBRARY_HOME_URL}>← Volver a la biblioteca</a>
           <p className="hero-kicker"><span>Provincia de Buenos Aires</span><span>1937</span></p>
           <h1>
             <span className="hero-title-line">La reforma educativa</span>
@@ -708,7 +710,10 @@ function Footer() {
       </div>
       <div className="footer-bottom page-shell">
         <span>Diseño inspirado en la geometría monumental de Francisco Salamone.</span>
-        <a href="#inicio">Volver arriba ↑</a>
+        <nav className="footer-bottom__links" aria-label="Enlaces de cierre">
+          <a href={LIBRARY_HOME_URL}>← Volver a la biblioteca</a>
+          <a href="#inicio">Volver arriba ↑</a>
+        </nav>
       </div>
     </footer>
   );

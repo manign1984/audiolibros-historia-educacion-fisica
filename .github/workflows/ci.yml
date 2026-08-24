@@ -32,10 +32,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test library catalog
+        run: npm run test:library
+
       - name: Build static site
         run: npm run build
+
+      - name: Verify root deployment
+        run: npm run verify:build
 
       - name: Build for GitHub Pages
         env:
           GITHUB_PAGES_BASE: /reforma-fresco-noble/
         run: npm run build
+
+      - name: Verify static routes and assets
+        env:
+          GITHUB_PAGES_BASE: /reforma-fresco-noble/
+        run: npm run verify:build

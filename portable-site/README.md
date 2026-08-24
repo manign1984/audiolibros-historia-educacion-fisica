@@ -1,24 +1,35 @@
-# La reforma educativa Fresco–Noble — versión portable
+# Biblioteca académica — versión estática portable
 
-Esta carpeta contiene una migración ejecutable fuera de ChatGPT Sites. La aplicación se entrega como una SPA estática de React y Vite, sin servidor, base de datos ni servicios propios de Sites.
+Esta carpeta contiene la biblioteca académica y su primera obra, la migración ejecutable de la Reforma Fresco–Noble.
+
+## Rutas
+
+- `/`: biblioteca, buscador y catálogo.
+- `/textos/pineau-fresco-noble/`: experiencia Fresco–Noble completa.
+
+Vite compila ambas rutas como documentos HTML físicos, sin servidor, base de datos ni servicios propios de Sites. El nombre provisional de la biblioteca y el catálogo se editan en `src/biblioteca/catalog.js`. La explicación de arquitectura y continuidad está en `../documentation/BIBLIOTECA_ACADEMICA.md`.
 
 ## Fidelidad
 
-Los siguientes elementos fueron copiados literalmente del estado respaldado `FN-PREMIG-20260823-SITEV57-7882327`, commit `7882327b5bf619ba81335d136e9eddc96cf894c9`:
+La obra se originó en el estado respaldado `FN-PREMIG-20260823-SITEV57-7882327`, commit `7882327b5bf619ba81335d136e9eddc96cf894c9`. Permanecen sin cambios en esta integración:
 
-- `index.html`
-- todo `src/`
+- `textos/pineau-fresco-noble/index.html`, copia del antiguo documento raíz;
+- `src/IntegratedReader.jsx`;
+- `src/data.js`;
+- `src/main.jsx`;
+- `src/reader.css`;
+- `src/readingDocument.js`;
 - todo `public/assets/`
 - `scripts/generate-reading-document-from-srt.mjs`
 
-Solo se reconstruyó la capa de arranque y compilación para eliminar la dependencia técnica de ChatGPT Sites/Vinext/Cloudflare:
+La biblioteca agrega `src/biblioteca/` y reemplaza el documento raíz. `App.jsx` y `styles.css` solo incorporan enlaces de regreso; `vite.config.js` suma las entradas multipágina. La capa portable continúa compuesta por:
 
 - `package.json`
 - `vite.config.js`
 - este `README.md`
 - `.gitignore`
 
-No se reescribieron el contenido, la interfaz, la lógica del carrusel, las actividades, el lector, la sincronización, las notas ni los estilos.
+No se reescribieron el contenido, la lógica del carrusel, el lector, la sincronización, las notas ni los recursos de la obra.
 
 ## Requisitos
 
@@ -45,7 +56,7 @@ El resultado queda en `dist/` y puede alojarse en cualquier servicio de archivos
 
 La versión preserva en sus fuentes las rutas absolutas originales (`/assets/...`). Por defecto se compila para la raíz de un dominio o subdominio.
 
-Para GitHub Pages, `vite.config.js` acepta `GITHUB_PAGES_BASE=/reforma-fresco-noble/` y transforma esas rutas únicamente durante la compilación. De ese modo la publicación funciona dentro del subdirectorio sin modificar el código literal recuperado.
+Para GitHub Pages, `vite.config.js` acepta `GITHUB_PAGES_BASE=/reforma-fresco-noble/` y transforma esas rutas únicamente durante la compilación. De ese modo la publicación funciona dentro del subdirectorio y conserva la ubicación pública de los recursos.
 
 La versión pública se encuentra en:
 
@@ -57,9 +68,8 @@ No existe backend. El navegador guarda únicamente:
 
 - `fresco-noble-reader-notes-v1`
 - `fresco-noble-reader-state-v1`
-- `fresco-noble-genealogia`
 
-Las notas, el progreso de lectura y el borrador genealógico permanecen en `localStorage` del dispositivo. No se envían a un servidor.
+Las notas y el progreso de lectura permanecen en `localStorage` del dispositivo. No se envían a un servidor. La clave histórica `fresco-noble-genealogia` puede persistir en navegadores que usaron la actividad eliminada, pero la interfaz actual no la consulta.
 
 ## Dependencias externas durante la navegación
 
