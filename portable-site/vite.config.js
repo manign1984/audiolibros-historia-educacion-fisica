@@ -1,5 +1,7 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
+import { fileURLToPath } from 'node:url';
+import { LIBRARY_CONFIG } from './src/biblioteca/catalog.js';
 
 const configuredBase = process.env.GITHUB_PAGES_BASE || '/';
 const base = configuredBase.endsWith('/') ? configuredBase : `${configuredBase}/`;
@@ -19,9 +21,28 @@ function preservePublicAssetPaths() {
   };
 }
 
+function libraryMetadata() {
+  return {
+    name: 'library-metadata',
+    transformIndexHtml(html) {
+      return html
+        .replaceAll('__LIBRARY_NAME__', LIBRARY_CONFIG.name)
+        .replaceAll('__LIBRARY_DESCRIPTION__', LIBRARY_CONFIG.description);
+    },
+  };
+}
+
 export default defineConfig({
   base,
-  plugins: [preservePublicAssetPaths(), react()],
+  plugins: [libraryMetadata(), preservePublicAssetPaths(), react()],
+  build: {
+    rollupOptions: {
+      input: {
+        biblioteca: fileURLToPath(new URL('./index.html', import.meta.url)),
+        pineauFrescoNoble: fileURLToPath(new URL('./textos/pineau-fresco-noble/index.html', import.meta.url)),
+      },
+    },
+  },
   server: {
     host: '0.0.0.0',
   },

@@ -1,4 +1,17 @@
-# Migración técnica completa — La reforma educativa Fresco–Noble
+# Biblioteca de Historia de la Educación y de la Educación Física
+
+Este repositorio contiene una biblioteca académica estática para leer textos y, cuando se encuentren disponibles, escuchar sus audiolibros. La primera obra es el recorrido dedicado a Pablo Pineau y la Reforma Fresco–Noble.
+
+## Arquitectura pública incorporada por esta etapa
+
+- Biblioteca y catálogo: `/reforma-fresco-noble/`.
+- Primera obra: `/reforma-fresco-noble/textos/pineau-fresco-noble/`.
+- Catálogo manual, búsqueda local y orden bibliográfico: `portable-site/src/biblioteca/`.
+- Documentación de esta etapa: `documentation/BIBLIOTECA_ACADEMICA.md`.
+
+La compilación es estática y multipágina. No utiliza backend, base de datos, autenticación ni CMS. Fresco–Noble conserva su identidad Art Déco y su lector integrado como obra interna.
+
+## Antecedente: migración técnica de Fresco–Noble
 
 Entrega preparada a partir del estado publicado y respaldado antes de la auditoría.
 
