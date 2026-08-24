@@ -4,8 +4,8 @@ Este repositorio contiene una biblioteca académica estática para leer textos y
 
 ## Arquitectura pública incorporada por esta etapa
 
-- Biblioteca y catálogo: `/biblioteca-historia-educacion-fisica/`.
-- Primera obra: `/biblioteca-historia-educacion-fisica/textos/pineau-fresco-noble/`.
+- Biblioteca y catálogo: `/audiolibros-historia-educacion-fisica/`.
+- Primera obra: `/audiolibros-historia-educacion-fisica/textos/pineau-fresco-noble/`.
 - Catálogo manual, búsqueda local y orden bibliográfico: `portable-site/src/biblioteca/`.
 - Documentación de esta etapa: `documentation/BIBLIOTECA_ACADEMICA.md`.
 - Transición del nombre y de la URL: `documentation/RENOMBRADO_REPOSITORIO.md`.
@@ -67,7 +67,7 @@ La salida queda en `portable-site/dist/`. No se versionan `node_modules/` ni `di
 
 La versión pública se despliega automáticamente desde `main` mediante GitHub Pages:
 
-<https://manign1984.github.io/biblioteca-historia-educacion-fisica/>
+<https://manign1984.github.io/audiolibros-historia-educacion-fisica/>
 
 La compilación de Pages obtiene automáticamente el subdirectorio público desde el nombre del repositorio. `vite.config.js` aplica ese valor durante el build y conserva intactos los archivos recuperados literalmente.
 

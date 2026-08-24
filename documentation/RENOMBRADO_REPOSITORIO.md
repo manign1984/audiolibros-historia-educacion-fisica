@@ -2,13 +2,13 @@
 
 ## Identidad pública
 
-El repositorio pasa de `reforma-fresco-noble` a `biblioteca-historia-educacion-fisica` para que la URL represente al proyecto general y no solamente a su primera obra.
+El repositorio pasa de `reforma-fresco-noble` a `audiolibros-historia-educacion-fisica` para que la URL represente al proyecto general y no solamente a su primera obra.
 
 | Elemento | Anterior | Nuevo |
 |---|---|---|
-| Repositorio | `manign1984/reforma-fresco-noble` | `manign1984/biblioteca-historia-educacion-fisica` |
-| Biblioteca | `https://manign1984.github.io/reforma-fresco-noble/` | `https://manign1984.github.io/biblioteca-historia-educacion-fisica/` |
-| Fresco–Noble | `…/reforma-fresco-noble/textos/pineau-fresco-noble/` | `…/biblioteca-historia-educacion-fisica/textos/pineau-fresco-noble/` |
+| Repositorio | `manign1984/reforma-fresco-noble` | `manign1984/audiolibros-historia-educacion-fisica` |
+| Biblioteca | `https://manign1984.github.io/reforma-fresco-noble/` | `https://manign1984.github.io/audiolibros-historia-educacion-fisica/` |
+| Fresco–Noble | `…/reforma-fresco-noble/textos/pineau-fresco-noble/` | `…/audiolibros-historia-educacion-fisica/textos/pineau-fresco-noble/` |
 
 ## Estrategia técnica
 

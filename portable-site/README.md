@@ -60,7 +60,7 @@ Para GitHub Pages, `vite.config.js` acepta `GITHUB_PAGES_BASE`. Los workflows ca
 
 La versión pública se encuentra en:
 
-<https://manign1984.github.io/biblioteca-historia-educacion-fisica/>
+<https://manign1984.github.io/audiolibros-historia-educacion-fisica/>
 
 ## Datos y privacidad
 
