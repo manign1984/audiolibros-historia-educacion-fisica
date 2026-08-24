@@ -1,16 +1,17 @@
 # Biblioteca de Historia de la Educación y de la Educación Física
 
-Este repositorio contiene una biblioteca académica estática para leer textos y, cuando se encuentren disponibles, escuchar sus audiolibros. La primera obra es el recorrido dedicado a Pablo Pineau y la Reforma Fresco–Noble.
+Este repositorio contiene una biblioteca académica estática para leer textos y escuchar sus audiolibros. Reúne dos obras: Iván Pablo Orbuch sobre educación corporal en el primer peronismo y Pablo Pineau sobre la Reforma Fresco–Noble.
 
 ## Arquitectura pública incorporada por esta etapa
 
 - Biblioteca y catálogo: `/audiolibros-historia-educacion-fisica/`.
-- Primera obra: `/audiolibros-historia-educacion-fisica/textos/pineau-fresco-noble/`.
+- Orbuch: `/audiolibros-historia-educacion-fisica/textos/orbuch-educar-al-cuerpo/`.
+- Pineau: `/audiolibros-historia-educacion-fisica/textos/pineau-fresco-noble/`.
 - Catálogo manual, búsqueda local y orden bibliográfico: `portable-site/src/biblioteca/`.
 - Documentación de esta etapa: `documentation/BIBLIOTECA_ACADEMICA.md`.
 - Transición del nombre y de la URL: `documentation/RENOMBRADO_REPOSITORIO.md`.
 
-La compilación es estática y multipágina. No utiliza backend, base de datos, autenticación ni CMS. Fresco–Noble conserva su identidad Art Déco y su lector integrado como obra interna.
+La compilación es estática y multipágina. No utiliza backend, base de datos, autenticación ni CMS. Las obras conservan identidades editoriales propias y comparten un único motor de lectura parametrizado.
 
 ## Antecedente: migración técnica de Fresco–Noble
 
@@ -33,13 +34,16 @@ El Site publicado no fue modificado, guardado como una nueva versión ni despleg
 - `documentation/MATRIZ_DE_FIDELIDAD.md`: clasificación literal/reconstruido y evidencia de cada componente.
 - `documentation/PRUEBAS_Y_RESULTADOS.md`: pruebas funcionales, responsive, persistencia y compilación.
 - `documentation/GUIA_DE_MIGRACION_Y_DESPLIEGUE.md`: ejecución, compilación, despliegue y continuidad de datos.
+- `documentation/INTEGRACION_ORBUCH_SEGUNDA_OBRA.md`: recuperación y decisiones de la segunda obra.
+- `documentation/LECTOR_COMPARTIDO.md`: contrato operativo del motor común.
+- `documentation/PRUEBAS_ORBUCH_SEGUNDA_OBRA.md`: verificaciones y límites conocidos.
 - `data/`: inventarios, estructura exacta y sincronización audio–texto.
 - `evidence/`: captura de referencia del estado publicado.
 - `tools/`: generador reproducible de inventarios y extracciones.
 
-## Resultado principal
+## Resultado de la migración inicial
 
-La interfaz, el contenido, los estilos, el carrusel, las actividades, el lector, la sincronización audio–texto y los recursos locales se recuperaron literalmente del commit publicado. La migración reemplaza únicamente la envoltura específica de Sites/Vinext/Cloudflare por una compilación estática de React y Vite.
+En la migración inicial, la interfaz, el contenido, los estilos, el carrusel, las actividades, el lector, la sincronización audio–texto y los recursos locales se recuperaron literalmente del commit publicado. El historial Git conserva esa referencia. Etapas posteriores retiraron las actividades por decisión editorial, incorporaron la biblioteca y parametrizaron el lector para sumar Orbuch sin alterar el documento temporizado de Pineau.
 
 El archivo `data/reading-sync_reconstructed-from-site.srt` está marcado como reconstruido: conserva las 201 unidades y los tiempos exactos que consume el Site, pero no pretende ser el SRT original de ElevenLabs. La representación literal extraída está en `data/reading-sync_exact.json`.
 

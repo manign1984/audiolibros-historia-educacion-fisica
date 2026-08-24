@@ -35,6 +35,9 @@ jobs:
       - name: Test library catalog
         run: npm run test:library
 
+      - name: Test shared reader and two works
+        run: npm run test:two-works
+
       - name: Build static site
         run: npm run build
 

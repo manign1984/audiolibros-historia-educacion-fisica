@@ -1,8 +1,8 @@
-# Biblioteca académica — arquitectura de la primera etapa
+# Biblioteca académica — arquitectura con dos obras
 
 ## Propósito
 
-El repositorio dejó de representar conceptualmente una sola página y pasó a contener una biblioteca académica estática. La primera versión reúne una obra real: el recorrido dedicado al artículo de Pablo Pineau sobre la Reforma Fresco–Noble.
+El repositorio contiene una biblioteca académica estática con dos obras reales: el recorrido dedicado al artículo de Iván Pablo Orbuch sobre educación corporal durante el primer peronismo y la experiencia sobre Pablo Pineau y la Reforma Fresco–Noble.
 
 La biblioteca funciona sin backend, base de datos, autenticación ni CMS. El catálogo se edita manualmente y toda la búsqueda ocurre en el navegador.
 
@@ -11,6 +11,7 @@ La biblioteca funciona sin backend, base de datos, autenticación ni CMS. El cat
 | Ruta conceptual | GitHub Pages | Contenido |
 |---|---|---|
 | `/` | `/audiolibros-historia-educacion-fisica/` | Biblioteca y catálogo |
+| `/textos/orbuch-educar-al-cuerpo/` | `/audiolibros-historia-educacion-fisica/textos/orbuch-educar-al-cuerpo/` | Obra de Iván Orbuch |
 | `/textos/pineau-fresco-noble/` | `/audiolibros-historia-educacion-fisica/textos/pineau-fresco-noble/` | Obra Fresco–Noble |
 
 La aplicación usa una compilación multipágina de Vite. Cada ruta pública tiene un archivo `index.html` físico dentro de `dist/`, por lo que una apertura directa o una recarga de la obra no dependen de un router del navegador ni producen el 404 típico de una SPA en GitHub Pages.
@@ -23,17 +24,19 @@ La aplicación usa una compilación multipágina de Vite. Cada ruta pública tie
 portable-site/
 ├── index.html                              # biblioteca
 ├── textos/
-│   └── pineau-fresco-noble/
-│       └── index.html                      # documento HTML de la obra
+│   ├── orbuch-educar-al-cuerpo/index.html  # documento HTML de Orbuch
+│   └── pineau-fresco-noble/index.html      # documento HTML de Pineau
 ├── src/
 │   ├── biblioteca/
 │   │   ├── LibraryHome.jsx                 # interfaz del catálogo
 │   │   ├── catalog.js                      # configuración y fuente única de obras
 │   │   ├── library.css                     # identidad neutral de la biblioteca
 │   │   └── main.jsx                        # entrada React de la biblioteca
+│   ├── orbuch/                             # página, estilos y documento de Orbuch
 │   ├── App.jsx                             # recorrido Fresco–Noble
-│   ├── IntegratedReader.jsx                # lector de la primera obra
-│   ├── readingDocument.js                  # texto y sincronización de la primera obra
+│   ├── IntegratedReader.jsx                # único motor de lectura
+│   ├── readerConfigs.js                    # configuración separada por obra
+│   ├── readingDocument.js                  # texto y tiempos de Pineau
 │   └── ...
 └── vite.config.js                          # base público y entradas multipágina
 ```
@@ -53,35 +56,43 @@ La búsqueda normaliza mayúsculas, tildes y signos; divide la consulta en térm
 
 ## Qué se comparte y qué permanece singular
 
-En esta etapa solo se comparte la infraestructura inequívocamente común: portada de biblioteca, catálogo, búsqueda, construcción de URLs y compilación estática. Fresco–Noble conserva su componente `App`, sus estilos Art Déco, el carrusel, el lector, el reproductor, la sincronización, el audio, las notas y el almacenamiento local.
+Ambas obras importan directamente el mismo `IntegratedReader.jsx`. El motor concentra diálogo, reproducción, seek, velocidad, volumen, capítulos, selección de oración, seguimiento cuando existen tiempos, anotaciones, persistencia y exportación. `readerConfigs.js` aporta identidad, recursos, textos de interfaz, nombres de exportación y claves de almacenamiento. Cada obra conserva su propia página, estilos, `readingDocument`, audio, PDF y demás fuentes.
 
-No se creó todavía una abstracción universal del lector. Podrá evaluarse cuando una segunda obra permita comprobar qué parte de su contrato es verdaderamente común.
+Pineau mantiene su documento sincronizado de 201 unidades y sus claves históricas. Orbuch usa un documento propio construido desde la versión accesible recuperada, un MP3 real de 27:53 y claves exclusivas. Como no se recuperó SRT/VTT ni otra fuente temporal, Orbuch se declara `pending`: permite leer, escuchar, buscar capítulos y anotar, pero no inventa resaltado, reproducción desde una oración ni saltos de capítulo al audio. Las notas de Orbuch registran la posición real del reproductor al crearse, diferenciada expresamente de una sincronización oración–audio.
 
-## Integración frente a edición
+El contrato operativo está en `documentation/LECTOR_COMPARTIDO.md`.
 
-Los cambios de esta etapa son estructurales:
+## Integración de la segunda obra
 
-- la antigua portada raíz se trasladó a una ruta interna;
-- se agregó la biblioteca;
-- se añadieron enlaces discretos de regreso;
-- Vite pasó a compilar dos documentos HTML.
+Los cambios de esta etapa son estructurales y editoriales:
 
-No se modificaron el texto narrado, `readingDocument.js`, los tiempos, `IntegratedReader.jsx`, el MP3, el PDF ni los demás recursos de la obra. La miniatura reutiliza el retrato de Pablo Pineau ya existente.
+- se incorporó una tercera entrada física de Vite, además de biblioteca y Pineau;
+- se parametrizó el lector existente sin duplicarlo;
+- se añadió Orbuch con identidad propia, autor, contexto, fuentes de 1949/1950, lectura y créditos;
+- el catálogo pasó a dos referencias APA 7 en orden Orbuch → Pineau;
+- se conservaron separados textos, recursos, progreso y notas.
 
-## Incorporar una obra futura
+No se modificaron `readingDocument.js`, los tiempos, el MP3, el PDF ni los estilos de Pineau. `App.jsx` solo conecta Pineau explícitamente con su documento y configuración; el cambio funcional se concentra en el motor común.
+
+## Incorporar una tercera obra
 
 Mientras el proyecto siga siendo pequeño, una nueva obra requiere deliberadamente acciones explícitas y revisables:
 
 1. crear su ruta física bajo `textos/`;
 2. agregar su entrada HTML a `vite.config.js`;
 3. incorporar una entrada bibliográfica revisada en `catalog.js`;
-4. preparar su página y sus recursos singulares;
-5. probar búsqueda, enlace directo, retorno, compilación raíz y compilación para Pages.
+4. preparar su página, estilos, recursos, configuración y `readingDocument` singulares;
+5. usar tiempos únicamente si existe una fuente real verificada;
+6. asignar claves estables y únicas a notas y progreso;
+7. probar catálogo, lector, enlace directo, retorno, build raíz y build de Pages.
 
-No deben inventarse metadatos para completar una entrada ni copiarse automáticamente el lector y el reproductor de Fresco–Noble.
+No deben inventarse metadatos ni tiempos, copiarse el lector o construirse un generador industrial de obras.
 
 ## Trazabilidad
 
 - SHA inicial de `main`: `bbc447efd2b7f0b9ef77807123b3808f45694381`.
 - Rama de implementación: `feat/biblioteca-academica-v1`.
+- SHA de `main` antes de la segunda obra: `aad25a75c159e7a65e78c799f4877d6ec7175bd1`.
+- Rama de la segunda obra: `feat/orbuch-segunda-obra`.
+- El Site original de Orbuch se inspeccionó como fuente y no fue modificado.
 - La publicación sobre `main` queda fuera de esta etapa hasta revisión y autorización de la Pull Request.
