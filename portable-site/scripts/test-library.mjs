@@ -46,12 +46,12 @@ assert.deepEqual(sortCatalog(mockEntries).map((entry) => entry.id), ['a1', 'a2',
 
 assert.equal(resolveSitePath(pineau.path, '/'), '/textos/pineau-fresco-noble/');
 assert.equal(
-  resolveSitePath(pineau.path, '/reforma-fresco-noble/'),
-  '/reforma-fresco-noble/textos/pineau-fresco-noble/',
+  resolveSitePath(pineau.path, '/audiolibros-historia-educacion-fisica/'),
+  '/audiolibros-historia-educacion-fisica/textos/pineau-fresco-noble/',
 );
 assert.equal(
-  resolveSitePath(pineau.thumbnail.src, '/reforma-fresco-noble'),
-  '/reforma-fresco-noble/assets/pablo-pineau.webp',
+  resolveSitePath(pineau.thumbnail.src, '/audiolibros-historia-educacion-fisica'),
+  '/audiolibros-historia-educacion-fisica/assets/pablo-pineau.webp',
 );
 
 await access(new URL('../textos/pineau-fresco-noble/index.html', import.meta.url));

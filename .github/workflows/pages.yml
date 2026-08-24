@@ -40,9 +40,7 @@ jobs:
         run: npm ci
 
       - name: Build static site
-        env:
-          GITHUB_PAGES_BASE: /reforma-fresco-noble/
-        run: npm run build
+        run: GITHUB_PAGES_BASE="/${GITHUB_REPOSITORY#*/}/" npm run build
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4

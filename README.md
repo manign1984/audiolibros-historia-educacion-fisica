@@ -4,10 +4,11 @@ Este repositorio contiene una biblioteca académica estática para leer textos y
 
 ## Arquitectura pública incorporada por esta etapa
 
-- Biblioteca y catálogo: `/reforma-fresco-noble/`.
-- Primera obra: `/reforma-fresco-noble/textos/pineau-fresco-noble/`.
+- Biblioteca y catálogo: `/audiolibros-historia-educacion-fisica/`.
+- Primera obra: `/audiolibros-historia-educacion-fisica/textos/pineau-fresco-noble/`.
 - Catálogo manual, búsqueda local y orden bibliográfico: `portable-site/src/biblioteca/`.
 - Documentación de esta etapa: `documentation/BIBLIOTECA_ACADEMICA.md`.
+- Transición del nombre y de la URL: `documentation/RENOMBRADO_REPOSITORIO.md`.
 
 La compilación es estática y multipágina. No utiliza backend, base de datos, autenticación ni CMS. Fresco–Noble conserva su identidad Art Déco y su lector integrado como obra interna.
 
@@ -66,9 +67,9 @@ La salida queda en `portable-site/dist/`. No se versionan `node_modules/` ni `di
 
 La versión pública se despliega automáticamente desde `main` mediante GitHub Pages:
 
-<https://manign1984.github.io/reforma-fresco-noble/>
+<https://manign1984.github.io/audiolibros-historia-educacion-fisica/>
 
-La compilación de Pages adapta las rutas públicas al subdirectorio `/reforma-fresco-noble/` desde `vite.config.js`. Esta transformación ocurre únicamente durante el build y conserva intactos los archivos recuperados literalmente.
+La compilación de Pages obtiene automáticamente el subdirectorio público desde el nombre del repositorio. `vite.config.js` aplica ese valor durante el build y conserva intactos los archivos recuperados literalmente.
 
 ## Desarrollo futuro
 

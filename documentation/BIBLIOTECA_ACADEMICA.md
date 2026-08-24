@@ -10,12 +10,12 @@ La biblioteca funciona sin backend, base de datos, autenticación ni CMS. El cat
 
 | Ruta conceptual | GitHub Pages | Contenido |
 |---|---|---|
-| `/` | `/reforma-fresco-noble/` | Biblioteca y catálogo |
-| `/textos/pineau-fresco-noble/` | `/reforma-fresco-noble/textos/pineau-fresco-noble/` | Obra Fresco–Noble |
+| `/` | `/audiolibros-historia-educacion-fisica/` | Biblioteca y catálogo |
+| `/textos/pineau-fresco-noble/` | `/audiolibros-historia-educacion-fisica/textos/pineau-fresco-noble/` | Obra Fresco–Noble |
 
 La aplicación usa una compilación multipágina de Vite. Cada ruta pública tiene un archivo `index.html` físico dentro de `dist/`, por lo que una apertura directa o una recarga de la obra no dependen de un router del navegador ni producen el 404 típico de una SPA en GitHub Pages.
 
-`import.meta.env.BASE_URL` construye los enlaces entre biblioteca y obra. `vite.config.js` mantiene además la adaptación ya existente de los recursos `/assets/` al subdirectorio de GitHub Pages.
+`import.meta.env.BASE_URL` construye los enlaces entre biblioteca y obra. Los workflows obtienen el subdirectorio desde `GITHUB_REPOSITORY`, y `vite.config.js` adapta además los recursos `/assets/` al `base` resultante de GitHub Pages.
 
 ## Estructura
 
