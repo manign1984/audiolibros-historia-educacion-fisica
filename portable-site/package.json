@@ -11,6 +11,7 @@
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "test:library": "node scripts/test-library.mjs",
+    "test:two-works": "node scripts/test-two-works.mjs",
     "verify:build": "node scripts/verify-build.mjs"
   },
   "dependencies": {

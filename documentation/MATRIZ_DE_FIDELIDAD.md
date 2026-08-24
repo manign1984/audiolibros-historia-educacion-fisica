@@ -9,8 +9,9 @@
 
 | Componente | Clasificación | Evidencia | Observación |
 |---|---|---|---|
-| `portable-site/src/App.jsx` | Modificado por solicitud editorial y estructural | Base literal del commit `7882327…`; cambios posteriores del 24/08/2026 | Se retiró el contenido postlectura por solicitud editorial. Para integrar la obra se agregaron únicamente enlaces de regreso a la biblioteca. |
-| `portable-site/src/IntegratedReader.jsx` | Literal | SHA-256 `171d43db4e347d4529a915b20804405b3ebf7002526d484f285e1a0d3bf1b992` | Reproductor, notas, exportación y sincronización |
+| `portable-site/src/App.jsx` | Modificado por solicitud editorial y estructural | Base literal del commit `7882327…`; historial Git | Además del recorte postlectura y el regreso a la biblioteca, conecta Pineau explícitamente con su documento y configuración. |
+| `portable-site/src/IntegratedReader.jsx` | Modificado por solicitud estructural | Base literal SHA-256 `171d43db4e347d4529a915b20804405b3ebf7002526d484f285e1a0d3bf1b992`; rama `feat/orbuch-segunda-obra` | Único motor compartido. Identidad, recursos, almacenamiento y exportación pasan por configuración; los tiempos siguen viniendo del documento de cada obra. |
+| `portable-site/src/readerConfigs.js` | Reconstruido por solicitud estructural | Rama `feat/orbuch-segunda-obra` | Dos configuraciones, recursos y namespaces de `localStorage` independientes. |
 | `portable-site/src/data.js` | Literal respecto de la migración, con cambios editoriales posteriores registrados en Git | SHA-256 de la copia migrada `e74f7d64229ecaa562e0c78821bde5b99afa75ab56fd497312191b1828caf538` | Línea de tiempo, estrategias, jugadores y actividades; el historial Git conserva los cambios posteriores. |
 | `portable-site/src/readingDocument.js` | Literal | SHA-256 `42743f60e54b7d247891ed49fe3271c9ebff1124fcdcbe45dd171fb63f152982` | Texto y tiempos que consume el Site |
 | `portable-site/src/styles.css` | Modificado por solicitud estructural | Base literal SHA-256 `1233c47a46f497753c75f171d4954082d340b0190f58a441f8934929f1d3d1df`; cambio registrado en Git | Diseño general y responsive de la obra más estilos acotados para los enlaces de regreso. |
@@ -18,15 +19,19 @@
 | `portable-site/src/main.jsx` | Literal | Comparación byte a byte con el commit | Entrada React ya presente en el Site |
 | `portable-site/index.html` | Modificado por solicitud estructural | Cambio registrado en la rama de biblioteca | Documento raíz y metadatos de la nueva biblioteca. |
 | `portable-site/textos/pineau-fresco-noble/index.html` | Literal respecto del estado previo a la biblioteca | Copia byte a byte del antiguo `portable-site/index.html` | Metadatos y contenedor de la primera obra, ahora en su ruta interna. |
-| `portable-site/src/biblioteca/**` | Reconstruido por solicitud estructural | Rama `feat/biblioteca-academica-v1` | Portada, catálogo, búsqueda, referencia APA, miniatura y estilos de la biblioteca. |
-| `portable-site/public/assets/**` | Literal | Comparación completa y `data/assets-inventory.csv` | 36 recursos preservados |
-| MP3 | Literal | SHA-256 `46b19c38a1b0d15db4010ab1dd002f72a99939f1486116595d257286deeeae2c` | Audiolibro usado por el Site |
+| `portable-site/src/biblioteca/**` | Reconstruido y ampliado por solicitud estructural | Ramas `feat/biblioteca-academica-v1` y `feat/orbuch-segunda-obra` | Portada, catálogo de dos obras, búsqueda, referencias APA, miniaturas y estilos de la biblioteca. |
+| Recursos originales de Pineau en `portable-site/public/assets/` | Literal | Comparación completa y `data/assets-inventory.csv` | 36 recursos preservados |
+| Recursos `orbuch-*` | Recuperados o derivados de fuentes recuperadas | `data/orbuch-assets-inventory.csv` | MP3, tres PDF, texto accesible, mural, tipografías y reproducciones documentales. |
+| MP3 Pineau | Literal | SHA-256 `46b19c38a1b0d15db4010ab1dd002f72a99939f1486116595d257286deeeae2c` | Audiolibro y sincronización preservados. |
+| MP3 Orbuch | Recuperado de Drive | SHA-256 `1ad70702ffd057916d20b17810713f0c8a26f1a076f4bd812a5bb327f5e2140c` | 1673.900408 s; no se recuperó SRT/VTT. |
+| `portable-site/src/orbuch/**` | Reconstruido desde el Site y fuentes aportadas | Rama `feat/orbuch-segunda-obra` | Página singular, estilos, texto accesible y `readingDocument` sin tiempos inventados. |
+| `portable-site/textos/orbuch-educar-al-cuerpo/index.html` | Reconstruido por solicitud estructural | Entrada física de Vite | URL refrescable de la segunda obra. |
 | Generador desde SRT | Literal | Comparación byte a byte | Requiere el SRT externo, no incluido en el Site |
 | `data/reading-sync_exact.json` | Extracción literal | Generado desde `readingDocument.js` | 201 unidades, textos e intervalos exactos |
 | `data/content-structure_exact.json` | Extracción literal de la versión migrada | Generado desde `data.js` y `readingDocument.js` | Conserva la estructura extraída del estado migrado; no se regenera automáticamente tras cambios editoriales posteriores. |
 | `portable-site/package.json` | Reconstruido | Declarado en el manifiesto técnico | Dependencias fijadas para Vite puro |
 | `portable-site/package-lock.json` | Reconstruido mecánicamente | `npm install --package-lock-only` | Resolución reproducible de la capa portable |
-| `portable-site/vite.config.js` | Reconstruido y ampliado por solicitud estructural | Historial Git | Sustituye Vinext/Cloudflare, adapta el base de Pages y compila biblioteca y obra como entradas multipágina. |
+| `portable-site/vite.config.js` | Reconstruido y ampliado por solicitud estructural | Historial Git | Adapta el base de Pages y compila biblioteca, Orbuch y Pineau como entradas multipágina. |
 | `portable-site/.gitignore` | Reconstruido | Declarado en el manifiesto técnico | Higiene del paquete |
 | `data/reading-sync_reconstructed-from-site.srt` | Reconstruido | Derivado de las 201 unidades exactas | No es el SRT de 561 cues de ElevenLabs |
 | Documentación e inventarios | Documentación | Este paquete | Auditoría y guías nuevas |
@@ -44,6 +49,12 @@ Por decisión del proyecto, la página principal deja para una etapa futura todo
 ## Integración estructural de la biblioteca del 24/08/2026
 
 La URL raíz pasa a presentar un catálogo académico y la experiencia Fresco–Noble se conserva como primera obra bajo `textos/pineau-fresco-noble/`. Esta integración añade una entrada de React independiente para la biblioteca, un catálogo manual, búsqueda local, compilación Vite multipágina y enlaces de retorno. No modifica `IntegratedReader.jsx`, `readingDocument.js`, `data.js`, `reader.css`, el generador desde SRT ni los recursos de `public/assets/`.
+
+## Integración de Orbuch del 24/08/2026
+
+La segunda obra se reconstruye desde el Site recuperado, el artículo académico, los cuadernillos de 1949/1950, el texto accesible y el MP3 definitivo. Se conserva la identidad cívico-popular azul, dorada y roja, pero la página se condensa a Inicio, Autor, Contexto/archivo, Lectura y Créditos. No se trasladan cuestionarios, juegos, actividades postlectura ni CSS acumulado del Site. El Site original no fue modificado.
+
+La solicitud de compartir infraestructura habilita el cambio de `IntegratedReader.jsx`: Pineau y Orbuch importan una sola implementación. `readingDocument.js`, sus 201 tiempos y los recursos de Pineau permanecen literales. El documento de Orbuch no contiene campos `start`/`end`; el resaltado, seguimiento y salto desde oración quedan pendientes hasta disponer de tiempos reales.
 
 ## Alcance de la reconstrucción del SRT
 

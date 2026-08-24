@@ -1,0 +1,16 @@
+path,bytes,sha256,extension,status,provenance,sourceReferences,width,height,durationSeconds,pages
+/assets/orbuch-audiolibro.mp3,40174404,1ad70702ffd057916d20b17810713f0c8a26f1a076f4bd812a5bb327f5e2140c,mp3,runtime,Drive del proyecto,src/readerConfigs.js,,,1673.900408,
+/assets/orbuch-aula-generalidades.jpg,161506,9f6ac0c30d22b2cc2b18790cc8ee0b52f3496160394b253f69e070937ba65c1a,jpg,runtime,Derivada del cuadernillo de 1949,src/orbuch/OrbuchApp.jsx,1177,858,,
+/assets/orbuch-aula-plan-ejercicios.jpg,137860,83b3d10237a4b078500919bd43d629788d4650f2955abb3af2b78e33737e3f1a,jpg,runtime,Derivada del cuadernillo de 1949,src/orbuch/OrbuchApp.jsx,1177,858,,
+/assets/orbuch-educar-al-cuerpo.pdf,426457,726b877620519d8b2ad3f2444dfcf04cfed7d68fedae91e4bbcb7a6671ad4ca2,pdf,runtime,Artículo académico aportado,src/orbuch/OrbuchApp.jsx;src/readerConfigs.js,,,,14
+/assets/orbuch-gimnasia-compensatoria-1949.pdf,3436419,c16511428cd149dd4454981b85647dc2dc4be2a2bc417becb6e72edd271ebef2,pdf,runtime,Fuente primaria aportada,src/orbuch/OrbuchApp.jsx,,,,14
+/assets/orbuch-gimnasia-compensatoria-portada.png,71013,3ddabb578a9b7dddeba485430d125881ea778cc0aba4fdc9e33af9c3a443bc12,png,runtime,Derivada del cuadernillo de 1949,src/orbuch/OrbuchApp.jsx;src/biblioteca/catalog.js,566,853,,
+/assets/orbuch-gimnasia-oficinas-1950.pdf,7014075,52828ca1f89422f0dba788e32566402718a99238a676efdf53087539ef0f5aa2,pdf,runtime,Fuente primaria aportada,src/orbuch/OrbuchApp.jsx,,,,17
+/assets/orbuch-gimnasia-oficinas-portada.png,627123,0628520d9ee19edf69d4eedf1938b59dc959ca5dc0a3d864bf857fe8dd30eae4,png,runtime,Derivada del cuadernillo de 1950,src/orbuch/OrbuchApp.jsx,504,687,,
+/assets/orbuch-hero-mural-desktop.webp,91096,d710c9535e40b0ccb8fe1e26d037ddc1d7f7f74c355848f6bda3dd762fc8b350,webp,runtime,Site original de Orbuch,src/orbuch/OrbuchApp.jsx,1672,941,,
+/assets/orbuch-hero-mural-mobile.webp,55314,7671620d8a5bb7152e4601c54c3f9bba7e67b96f1d65d778054300f554ff04b8,webp,runtime,Site original de Orbuch,src/orbuch/OrbuchApp.jsx,1200,675,,
+/assets/orbuch-nimbus-sans-narrow-bold.otf,81340,6d7cec07f5a9035e208532dab35a51312aef4a7f26eb524dd614c9fcd97c3264,otf,runtime,Site original de Orbuch,src/orbuch/orbuch.css,,,,
+/assets/orbuch-nimbus-sans-narrow-regular.otf,80864,0111cf7c05377c4f1685d37bfa8b3edd2033278122f69e0a9803a8514e352b99,otf,runtime,Site original de Orbuch,src/orbuch/orbuch.css,,,,
+/assets/orbuch-oficina-derecho-salud.jpg,50816,de7d487c2cc22fba9f281aaf3dffdb774c3c89853af6dd5c1b1a7f522dd8172e,jpg,runtime,Derivada del cuadernillo de 1950,src/orbuch/OrbuchApp.jsx,645,876,,
+/assets/orbuch-oficina-plan-ejercicios.jpg,205781,2b3d7753423cba457848fef734964432f4727c54661dd720b988dd5a4b096009,jpg,runtime,Derivada del cuadernillo de 1950,src/orbuch/OrbuchApp.jsx,1663,1062,,
+/assets/orbuch-texto-accesible.txt,27826,40257bd3e7aeff620cdb0dff1bcf7d51de7c00d134b92b1dda7c622bb7638f3e,txt,runtime,Texto accesible recuperado del proyecto,src/orbuch/OrbuchApp.jsx;src/orbuch/buildReadingDocument.js,,,,
