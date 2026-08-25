@@ -84,6 +84,12 @@
   grid-template-rows: minmax(0, 1fr) auto;
 }
 
+/* Las placas sin fotografía heredaban 510 px mínimos del primer diseño. */
+.orbuch-history-event__visual.is-typographic {
+  min-height: 0;
+  height: 100%;
+}
+
 .orbuch-history-event__visual img {
   width: 100%;
   height: 100%;
