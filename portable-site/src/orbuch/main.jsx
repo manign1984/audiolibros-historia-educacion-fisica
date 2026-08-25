@@ -8,6 +8,7 @@ import OrbuchApp from './OrbuchApp.jsx';
 import HistoricalContextEnhancement from './HistoricalContextCarousel.jsx';
 import './orbuch.css';
 import '../reader.css';
+import './orbuch-context-carousel-full-slide.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
