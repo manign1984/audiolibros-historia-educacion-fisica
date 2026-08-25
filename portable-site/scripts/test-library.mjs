@@ -87,14 +87,17 @@ assert.equal(
 
 assert.notEqual(orbuchReaderConfig.storage.notesKey, pineauReaderConfig.storage.notesKey, 'Las notas deben tener espacios locales independientes.');
 assert.notEqual(orbuchReaderConfig.storage.stateKey, pineauReaderConfig.storage.stateKey, 'El progreso debe tener espacios locales independientes.');
-assert.equal(orbuchReaderConfig.sync.status, 'pending');
+assert.equal(orbuchReaderConfig.sync.status, 'ready');
 assert.equal(pineauReaderConfig.sync.status, 'ready');
 assert.equal(orbuchReadingDocument.duration, 1673.900408);
 assert.equal(orbuchReadingDocument.sections.length, 4);
 const orbuchSentences = orbuchReadingDocument.sections.flatMap((section) => section.paragraphs.flatMap((paragraph) => paragraph.sentences));
 assert.ok(orbuchSentences.length > 100, 'El texto accesible de Orbuch debe conservar segmentación suficiente para anotar.');
-assert.ok(orbuchSentences.every((sentence) => !Object.hasOwn(sentence, 'start') && !Object.hasOwn(sentence, 'end')), 'No deben fabricarse tiempos para Orbuch.');
-assert.doesNotMatch(JSON.stringify(orbuchReadingDocument), /"(?:start|end)":/, 'Ningún nivel del documento Orbuch debe contener tiempos inventados.');
+assert.ok(orbuchSentences.every((sentence) => Number.isFinite(sentence.start) && Number.isFinite(sentence.end)), 'Todas las oraciones de Orbuch deben usar tiempos del SRT validado.');
+assert.ok(orbuchReadingDocument.frontMatter.every((sentence) => Number.isFinite(sentence.start) && Number.isFinite(sentence.end)));
+assert.ok(orbuchReadingDocument.sections.every((section) => Number.isFinite(section.headingSentence?.start) && Number.isFinite(section.headingSentence?.end)));
+assert.equal(orbuchReadingDocument.syncMetadata.status, 'source-srt-validated');
+assert.equal(orbuchReadingDocument.syncMetadata.units, 154);
 
 await Promise.all([
   access(new URL('../textos/orbuch-educar-al-cuerpo/index.html', import.meta.url)),
@@ -108,4 +111,4 @@ assert.match(
   'Las entradas que comparten inicial deben permanecer alineadas con la columna bibliográfica.',
 );
 
-console.log('Biblioteca: dos obras, búsqueda, APA, rutas, almacenamiento y ausencia de tiempos inventados verificados.');
+console.log('Biblioteca: dos obras, búsqueda, APA, rutas, almacenamiento y sincronización SRT verificada.');

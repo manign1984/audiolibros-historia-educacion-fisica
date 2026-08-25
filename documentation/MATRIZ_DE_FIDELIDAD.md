@@ -10,7 +10,7 @@
 | Componente | Clasificación | Evidencia | Observación |
 |---|---|---|---|
 | `portable-site/src/App.jsx` | Modificado por solicitud editorial y estructural | Base literal del commit `7882327…`; historial Git | Además del recorte postlectura y el regreso a la biblioteca, conecta Pineau explícitamente con su documento y configuración. |
-| `portable-site/src/IntegratedReader.jsx` | Modificado por solicitud estructural | Base literal SHA-256 `171d43db4e347d4529a915b20804405b3ebf7002526d484f285e1a0d3bf1b992`; rama `feat/orbuch-segunda-obra` | Único motor compartido. Identidad, recursos, almacenamiento y exportación pasan por configuración; los tiempos siguen viniendo del documento de cada obra. |
+| `portable-site/src/IntegratedReader.jsx` | Modificado por solicitud estructural y funcional | Base literal SHA-256 `171d43db4e347d4529a915b20804405b3ebf7002526d484f285e1a0d3bf1b992`; ramas de integración y corrección | Único motor compartido. Identidad, recursos, almacenamiento y exportación pasan por configuración; los tiempos siguen viniendo del documento de cada obra. El selector común añade `0,9×` y `1,1×`. |
 | `portable-site/src/readerConfigs.js` | Reconstruido por solicitud estructural | Rama `feat/orbuch-segunda-obra` | Dos configuraciones, recursos y namespaces de `localStorage` independientes. |
 | `portable-site/src/data.js` | Literal respecto de la migración, con cambios editoriales posteriores registrados en Git | SHA-256 de la copia migrada `e74f7d64229ecaa562e0c78821bde5b99afa75ab56fd497312191b1828caf538` | Línea de tiempo, estrategias, jugadores y actividades; el historial Git conserva los cambios posteriores. |
 | `portable-site/src/readingDocument.js` | Literal | SHA-256 `42743f60e54b7d247891ed49fe3271c9ebff1124fcdcbe45dd171fb63f152982` | Texto y tiempos que consume el Site |
@@ -21,10 +21,10 @@
 | `portable-site/textos/pineau-fresco-noble/index.html` | Literal respecto del estado previo a la biblioteca | Copia byte a byte del antiguo `portable-site/index.html` | Metadatos y contenedor de la primera obra, ahora en su ruta interna. |
 | `portable-site/src/biblioteca/**` | Reconstruido y ampliado por solicitud estructural | Ramas `feat/biblioteca-academica-v1` y `feat/orbuch-segunda-obra` | Portada, catálogo de dos obras, búsqueda, referencias APA, miniaturas y estilos de la biblioteca. |
 | Recursos originales de Pineau en `portable-site/public/assets/` | Literal | Comparación completa y `data/assets-inventory.csv` | 36 recursos preservados |
-| Recursos `orbuch-*` | Recuperados o derivados de fuentes recuperadas | `data/orbuch-assets-inventory.csv` | MP3, tres PDF, texto accesible, mural, tipografías y reproducciones documentales. |
+| Recursos `orbuch-*` | Recuperados, aportados o derivados de fuentes verificadas | `data/orbuch-assets-inventory.csv` | MP3, SRT, tres PDF, texto accesible, retrato institucional, mural, tipografías y reproducciones documentales. |
 | MP3 Pineau | Literal | SHA-256 `46b19c38a1b0d15db4010ab1dd002f72a99939f1486116595d257286deeeae2c` | Audiolibro y sincronización preservados. |
-| MP3 Orbuch | Recuperado de Drive | SHA-256 `1ad70702ffd057916d20b17810713f0c8a26f1a076f4bd812a5bb327f5e2140c` | 1673.900408 s; no se recuperó SRT/VTT. |
-| `portable-site/src/orbuch/**` | Reconstruido desde el Site y corregido por fidelidad visual | Ramas `feat/orbuch-segunda-obra` y `fix/orbuch-fidelidad-visual` | Página singular, estilos, texto accesible y `readingDocument` sin tiempos inventados. La segunda rama recupera la composición editorial del Site sin restaurar sus actividades. |
+| MP3 Orbuch | Recuperado de Drive | SHA-256 `1ad70702ffd057916d20b17810713f0c8a26f1a076f4bd812a5bb327f5e2140c` | 1673.900408 s; sincronizado con el SRT aportado y validado. |
+| `portable-site/src/orbuch/**` | Reconstruido desde el Site y corregido por solicitudes editoriales | Ramas `feat/orbuch-segunda-obra`, `fix/orbuch-fidelidad-visual` y `fix/orbuch-five-blocks-sync-speed` | Página singular, estilos, texto accesible y `readingDocument` con tiempos del SRT. Conserva la composición editorial sin restaurar actividades. |
 | `portable-site/textos/orbuch-educar-al-cuerpo/index.html` | Reconstruido por solicitud estructural | Entrada física de Vite | URL refrescable de la segunda obra. |
 | Generador desde SRT | Literal | Comparación byte a byte | Requiere el SRT externo, no incluido en el Site |
 | `data/reading-sync_exact.json` | Extracción literal | Generado desde `readingDocument.js` | 201 unidades, textos e intervalos exactos |
@@ -54,7 +54,7 @@ La URL raíz pasa a presentar un catálogo académico y la experiencia Fresco–
 
 La segunda obra se reconstruye desde el Site recuperado, el artículo académico, los cuadernillos de 1949/1950, el texto accesible y el MP3 definitivo. La primera integración conservó la identidad cívico-popular azul, dorada y roja, pero condensó la página a Inicio, Autor, Contexto/archivo, Lectura y Créditos. No se trasladaron cuestionarios, juegos ni actividades postlectura. El Site original no fue modificado.
 
-La solicitud de compartir infraestructura habilita el cambio de `IntegratedReader.jsx`: Pineau y Orbuch importan una sola implementación. `readingDocument.js`, sus 201 tiempos y los recursos de Pineau permanecen literales. El documento de Orbuch no contiene campos `start`/`end`; el resaltado, seguimiento y salto desde oración quedan pendientes hasta disponer de tiempos reales.
+La solicitud de compartir infraestructura habilita el cambio de `IntegratedReader.jsx`: Pineau y Orbuch importan una sola implementación. `readingDocument.js`, sus 201 tiempos y los recursos de Pineau permanecen literales. En esa primera etapa el documento de Orbuch no contenía campos `start`/`end`; la incorporación posterior del SRT real resuelve esa limitación sin alterar los tiempos de Pineau.
 
 ## Alcance de la reconstrucción del SRT
 
@@ -73,3 +73,11 @@ La fuente de verdad para reproducir el comportamiento del lector es `readingDocu
 La comparación directa entre la página publicada en GitHub Pages y el Site `educar-el-cuerpo.man-ign.chatgpt.site` mostró que la primera integración conservaba el mural y la paleta, pero no la composición editorial. El título ocupaba casi todo el primer pliegue y faltaban la pregunta-problema, la introducción, los dos expedientes, las tres operaciones, el contador de secciones y el ritmo gráfico de las secciones interiores.
 
 La rama `fix/orbuch-fidelidad-visual` recupera esos elementos y reorganiza el recorrido público en siete estaciones: Inicio, Problema, Autor, Contexto, Lectura, Archivo y Créditos. Se restauran la retícula, la tipografía de afiche, los banderines, los marcos documentales, los fondos por sección, la línea de tiempo vertical y los enlaces de continuidad. Siguen excluidos los cuestionarios, la clasificación de evidencias y la producción final del Site original. El lector compartido, el MP3, los PDF, el texto accesible, las claves de almacenamiento y Pineau no se modifican.
+
+## Unificación en cinco bloques y sincronización del 24/08/2026
+
+La solicitud editorial siguiente adopta para Orbuch la misma navegación principal de Pineau: Inicio, Autor, Contexto, Lectura y Créditos. La pregunta-problema se distribuye entre Inicio y Contexto; el archivo comparado, los cuadernillos y sus reproducciones pasan a ser subsecciones de Contexto. La ficha de autor utiliza un retrato institucional de UNAHUR mostrado en blanco y negro, una síntesis de 60 palabras y un enlace de ampliación académica.
+
+El SRT aportado por el proyecto contiene 410 cues y su texto hablado coincide completamente con el guion accesible. Como su duración declarada (`1668.456` s) difiere de la del MP3 (`1673.900408` s), `generate-orbuch-sync.mjs` aplica una escala uniforme, conserva hashes de las tres fuentes y controla la deriva contra las pausas observadas en los cuatro títulos de capítulo. El resultado asigna intervalos a 154 unidades y habilita `sync.status: 'ready'`. Esta sincronización no es inferida por reparto proporcional: parte del SRT real y explicita la única normalización temporal aplicada.
+
+El lector compartido añade las velocidades `0,9×` y `1,1×`; no altera el documento temporizado ni los recursos de Pineau. El SRT y el retrato se publican con su procedencia en el inventario y en Créditos.

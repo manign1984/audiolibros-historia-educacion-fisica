@@ -1,0 +1,665 @@
+{
+  "metadata": {
+    "status": "source-srt-validated",
+    "method": "exact normalized-text alignment to the supplied SRT, scaled to the definitive MP3 duration",
+    "audioSha256": "1ad70702ffd057916d20b17810713f0c8a26f1a076f4bd812a5bb327f5e2140c",
+    "transcriptSha256": "40257bd3e7aeff620cdb0dff1bcf7d51de7c00d134b92b1dda7c622bb7638f3e",
+    "sourceSrtSha256": "682613e2319592787e38bb5fd426da21803085d20549f0f2c57bd81bed224d87",
+    "audioDuration": 1673.900408,
+    "sourceSrtDuration": 1668.456,
+    "timeScale": 1.003263141,
+    "sourceCues": 410,
+    "spokenCues": 406,
+    "units": 154,
+    "normalizedCharacters": 22528,
+    "waveformChecks": [
+      {
+        "id": "introduccion-titulo",
+        "srtStart": 9.162,
+        "audioStart": 9.578,
+        "scaledStart": 9.192,
+        "error": 0.386
+      },
+      {
+        "id": "aula-titulo",
+        "srtStart": 426.065,
+        "audioStart": 427.627,
+        "scaledStart": 427.455,
+        "error": 0.172
+      },
+      {
+        "id": "oficinas-titulo",
+        "srtStart": 1134.324,
+        "audioStart": 1138.15,
+        "scaledStart": 1138.025,
+        "error": 0.125
+      },
+      {
+        "id": "conclusiones-titulo",
+        "srtStart": 1596.82,
+        "audioStart": 1601.95,
+        "scaledStart": 1602.031,
+        "error": 0.081
+      }
+    ],
+    "note": "Marcas basadas en el SRT aportado por el proyecto; la escala corrige la diferencia uniforme de duración entre esa línea temporal y el MP3 definitivo."
+  },
+  "timings": {
+    "portada-titulo": {
+      "start": 0,
+      "end": 3.623
+    },
+    "portada-subtitulo": {
+      "start": 3.623,
+      "end": 6.837
+    },
+    "portada-autor": {
+      "start": 7.339,
+      "end": 8.69
+    },
+    "introduccion-titulo": {
+      "start": 9.192,
+      "end": 10.17
+    },
+    "introduccion-p1-s1": {
+      "start": 10.672,
+      "end": 22.272
+    },
+    "introduccion-p1-s2": {
+      "start": 22.272,
+      "end": 36.296
+    },
+    "introduccion-p1-s3": {
+      "start": 36.296,
+      "end": 42.612
+    },
+    "introduccion-p1-s4": {
+      "start": 42.612,
+      "end": 57.541
+    },
+    "introduccion-p2-s1": {
+      "start": 57.541,
+      "end": 69.328
+    },
+    "introduccion-p3-s1": {
+      "start": 69.328,
+      "end": 81.815
+    },
+    "introduccion-p3-s2": {
+      "start": 81.815,
+      "end": 85.077
+    },
+    "introduccion-p3-s3": {
+      "start": 85.077,
+      "end": 98.961
+    },
+    "introduccion-p3-s4": {
+      "start": 98.961,
+      "end": 126.636
+    },
+    "introduccion-p3-s5": {
+      "start": 126.636,
+      "end": 138.051
+    },
+    "introduccion-p4-s1": {
+      "start": 138.051,
+      "end": 157.899
+    },
+    "introduccion-p4-s2": {
+      "start": 157.899,
+      "end": 166.565
+    },
+    "introduccion-p5-s1": {
+      "start": 166.565,
+      "end": 177.154
+    },
+    "introduccion-p5-s2": {
+      "start": 177.154,
+      "end": 186.553
+    },
+    "introduccion-p5-s3": {
+      "start": 186.553,
+      "end": 199.901
+    },
+    "introduccion-p5-s4": {
+      "start": 199.901,
+      "end": 204.909
+    },
+    "introduccion-p6-s1": {
+      "start": 204.909,
+      "end": 215.253
+    },
+    "introduccion-p6-s2": {
+      "start": 215.253,
+      "end": 239.341
+    },
+    "introduccion-p7-s1": {
+      "start": 239.341,
+      "end": 247.215
+    },
+    "introduccion-p7-s2": {
+      "start": 247.215,
+      "end": 256.22
+    },
+    "introduccion-p7-s3": {
+      "start": 256.22,
+      "end": 261.425
+    },
+    "introduccion-p8-s1": {
+      "start": 261.425,
+      "end": 281.507
+    },
+    "introduccion-p8-s2": {
+      "start": 281.507,
+      "end": 295.158
+    },
+    "introduccion-p8-s3": {
+      "start": 295.158,
+      "end": 307.271
+    },
+    "introduccion-p9-s1": {
+      "start": 307.271,
+      "end": 320.084
+    },
+    "introduccion-p9-s2": {
+      "start": 320.084,
+      "end": 327.993
+    },
+    "introduccion-p9-s3": {
+      "start": 327.993,
+      "end": 335.04
+    },
+    "introduccion-p10-s1": {
+      "start": 335.04,
+      "end": 342.168
+    },
+    "introduccion-p10-s2": {
+      "start": 342.168,
+      "end": 364.858
+    },
+    "introduccion-p10-s3": {
+      "start": 364.858,
+      "end": 376.048
+    },
+    "introduccion-p10-s4": {
+      "start": 376.048,
+      "end": 384.893
+    },
+    "introduccion-p11-s1": {
+      "start": 384.893,
+      "end": 396.96
+    },
+    "introduccion-p11-s2": {
+      "start": 396.96,
+      "end": 411.45
+    },
+    "introduccion-p11-s3": {
+      "start": 411.45,
+      "end": 426.452
+    },
+    "aula-titulo": {
+      "start": 427.455,
+      "end": 429.739
+    },
+    "aula-p1-s1": {
+      "start": 430.742,
+      "end": 439.244
+    },
+    "aula-p1-s2": {
+      "start": 439.244,
+      "end": 442.209
+    },
+    "aula-p1-s3": {
+      "start": 442.209,
+      "end": 448.307
+    },
+    "aula-p1-s4": {
+      "start": 448.307,
+      "end": 459.135
+    },
+    "aula-p1-s5": {
+      "start": 459.135,
+      "end": 463.449
+    },
+    "aula-p2-s1": {
+      "start": 463.449,
+      "end": 472.302
+    },
+    "aula-p3-s1": {
+      "start": 472.302,
+      "end": 490.473
+    },
+    "aula-p4-s1": {
+      "start": 490.473,
+      "end": 504.498
+    },
+    "aula-p4-s2": {
+      "start": 504.498,
+      "end": 511.58
+    },
+    "aula-p5-s1": {
+      "start": 511.58,
+      "end": 527.116
+    },
+    "aula-p5-s2": {
+      "start": 527.116,
+      "end": 531.241
+    },
+    "aula-p5-s3": {
+      "start": 531.241,
+      "end": 538.043
+    },
+    "aula-p5-s4": {
+      "start": 538.043,
+      "end": 550.809
+    },
+    "aula-p6-s1": {
+      "start": 550.809,
+      "end": 573.498
+    },
+    "aula-p7-s1": {
+      "start": 573.498,
+      "end": 581.745
+    },
+    "aula-p7-s2": {
+      "start": 581.745,
+      "end": 591.436
+    },
+    "aula-p7-s3": {
+      "start": 591.436,
+      "end": 610.865
+    },
+    "aula-p8-s1": {
+      "start": 610.865,
+      "end": 621.161
+    },
+    "aula-p9-s1": {
+      "start": 621.161,
+      "end": 646.693
+    },
+    "aula-p9-s2": {
+      "start": 646.693,
+      "end": 665.284
+    },
+    "aula-p9-s3": {
+      "start": 665.284,
+      "end": 669.57
+    },
+    "aula-p10-s1": {
+      "start": 669.57,
+      "end": 679.96
+    },
+    "aula-p10-s2": {
+      "start": 679.96,
+      "end": 699.995
+    },
+    "aula-p10-s3": {
+      "start": 699.995,
+      "end": 706.166
+    },
+    "aula-p10-s4": {
+      "start": 706.166,
+      "end": 715.463
+    },
+    "aula-p11-s1": {
+      "start": 715.463,
+      "end": 726.876
+    },
+    "aula-p11-s2": {
+      "start": 726.876,
+      "end": 727.391
+    },
+    "aula-p12-s1": {
+      "start": 727.391,
+      "end": 729.952
+    },
+    "aula-p12-s2": {
+      "start": 729.952,
+      "end": 735.731
+    },
+    "aula-p12-s3": {
+      "start": 735.731,
+      "end": 745.163
+    },
+    "aula-p12-s4": {
+      "start": 745.163,
+      "end": 752.83
+    },
+    "aula-p13-s1": {
+      "start": 752.83,
+      "end": 760.005
+    },
+    "aula-p14-s1": {
+      "start": 760.005,
+      "end": 768.922
+    },
+    "aula-p14-s2": {
+      "start": 768.922,
+      "end": 769.603
+    },
+    "aula-p15-s1": {
+      "start": 769.603,
+      "end": 780.412
+    },
+    "aula-p15-s2": {
+      "start": 780.412,
+      "end": 791.227
+    },
+    "aula-p15-s3": {
+      "start": 791.227,
+      "end": 794.762
+    },
+    "aula-p16-s1": {
+      "start": 794.762,
+      "end": 804.174
+    },
+    "aula-p16-s2": {
+      "start": 804.174,
+      "end": 815.312
+    },
+    "aula-p16-s3": {
+      "start": 815.312,
+      "end": 817.871
+    },
+    "aula-p17-s1": {
+      "start": 817.871,
+      "end": 823.135
+    },
+    "aula-p17-s2": {
+      "start": 823.135,
+      "end": 836.741
+    },
+    "aula-p17-s3": {
+      "start": 836.741,
+      "end": 842.891
+    },
+    "aula-p18-s1": {
+      "start": 842.891,
+      "end": 854.586
+    },
+    "aula-p18-s2": {
+      "start": 854.586,
+      "end": 857.7
+    },
+    "aula-p18-s3": {
+      "start": 857.7,
+      "end": 872.523
+    },
+    "aula-p18-s4": {
+      "start": 872.523,
+      "end": 884.01
+    },
+    "aula-p18-s5": {
+      "start": 884.01,
+      "end": 885.289
+    },
+    "aula-p19-s1": {
+      "start": 885.289,
+      "end": 894.222
+    },
+    "aula-p19-s2": {
+      "start": 894.222,
+      "end": 902.202
+    },
+    "aula-p19-s3": {
+      "start": 902.202,
+      "end": 914.735
+    },
+    "aula-p19-s4": {
+      "start": 914.735,
+      "end": 933.046
+    },
+    "aula-p20-s1": {
+      "start": 933.046,
+      "end": 950.471
+    },
+    "aula-p20-s2": {
+      "start": 950.471,
+      "end": 965.381
+    },
+    "aula-p21-s1": {
+      "start": 965.381,
+      "end": 978.24
+    },
+    "aula-p22-s1": {
+      "start": 978.24,
+      "end": 991.752
+    },
+    "aula-p22-s2": {
+      "start": 991.752,
+      "end": 998.508
+    },
+    "aula-p23-s1": {
+      "start": 998.508,
+      "end": 1014.434
+    },
+    "aula-p23-s2": {
+      "start": 1014.434,
+      "end": 1026.835
+    },
+    "aula-p24-s1": {
+      "start": 1026.835,
+      "end": 1042.21
+    },
+    "aula-p24-s2": {
+      "start": 1042.21,
+      "end": 1051.155
+    },
+    "aula-p25-s1": {
+      "start": 1051.155,
+      "end": 1064.2
+    },
+    "aula-p26-s1": {
+      "start": 1064.2,
+      "end": 1077.152
+    },
+    "aula-p27-s1": {
+      "start": 1077.152,
+      "end": 1083.489
+    },
+    "aula-p27-s2": {
+      "start": 1083.489,
+      "end": 1108.602
+    },
+    "aula-p27-s3": {
+      "start": 1108.602,
+      "end": 1115.756
+    },
+    "aula-p28-s1": {
+      "start": 1115.756,
+      "end": 1127.704
+    },
+    "aula-p28-s2": {
+      "start": 1127.704,
+      "end": 1137.022
+    },
+    "oficinas-titulo": {
+      "start": 1138.025,
+      "end": 1139.563
+    },
+    "oficinas-p1-s1": {
+      "start": 1140.567,
+      "end": 1149.259
+    },
+    "oficinas-p1-s2": {
+      "start": 1149.259,
+      "end": 1159.296
+    },
+    "oficinas-p1-s3": {
+      "start": 1159.296,
+      "end": 1179.75
+    },
+    "oficinas-p1-s4": {
+      "start": 1179.75,
+      "end": 1191.677
+    },
+    "oficinas-p1-s5": {
+      "start": 1191.677,
+      "end": 1205.422
+    },
+    "oficinas-p2-s1": {
+      "start": 1205.422,
+      "end": 1214.553
+    },
+    "oficinas-p2-s2": {
+      "start": 1214.553,
+      "end": 1224.617
+    },
+    "oficinas-p3-s1": {
+      "start": 1224.617,
+      "end": 1248.332
+    },
+    "oficinas-p4-s1": {
+      "start": 1248.332,
+      "end": 1263.288
+    },
+    "oficinas-p4-s2": {
+      "start": 1263.288,
+      "end": 1275.588
+    },
+    "oficinas-p5-s1": {
+      "start": 1275.588,
+      "end": 1281.551
+    },
+    "oficinas-p6-s1": {
+      "start": 1281.551,
+      "end": 1309.833
+    },
+    "oficinas-p7-s1": {
+      "start": 1309.833,
+      "end": 1322.599
+    },
+    "oficinas-p8-s1": {
+      "start": 1322.599,
+      "end": 1340.49
+    },
+    "oficinas-p9-s1": {
+      "start": 1340.49,
+      "end": 1351.765
+    },
+    "oficinas-p10-s1": {
+      "start": 1351.765,
+      "end": 1370.447
+    },
+    "oficinas-p11-s1": {
+      "start": 1370.447,
+      "end": 1378.378
+    },
+    "oficinas-p11-s2": {
+      "start": 1378.378,
+      "end": 1384.751
+    },
+    "oficinas-p11-s3": {
+      "start": 1384.751,
+      "end": 1398.339
+    },
+    "oficinas-p11-s4": {
+      "start": 1398.339,
+      "end": 1409.724
+    },
+    "oficinas-p11-s5": {
+      "start": 1409.724,
+      "end": 1412.881
+    },
+    "oficinas-p11-s6": {
+      "start": 1412.881,
+      "end": 1423.887
+    },
+    "oficinas-p11-s7": {
+      "start": 1423.887,
+      "end": 1443.223
+    },
+    "oficinas-p12-s1": {
+      "start": 1443.223,
+      "end": 1459.623
+    },
+    "oficinas-p12-s2": {
+      "start": 1459.623,
+      "end": 1471.411
+    },
+    "oficinas-p12-s3": {
+      "start": 1471.411,
+      "end": 1478.632
+    },
+    "oficinas-p13-s1": {
+      "start": 1478.632,
+      "end": 1486.087
+    },
+    "oficinas-p13-s2": {
+      "start": 1486.087,
+      "end": 1494.286
+    },
+    "oficinas-p14-s1": {
+      "start": 1494.286,
+      "end": 1499.971
+    },
+    "oficinas-p15-s1": {
+      "start": 1499.971,
+      "end": 1527.552
+    },
+    "oficinas-p16-s1": {
+      "start": 1527.552,
+      "end": 1534.867
+    },
+    "oficinas-p16-s2": {
+      "start": 1534.867,
+      "end": 1544.397
+    },
+    "oficinas-p16-s3": {
+      "start": 1544.397,
+      "end": 1548.145
+    },
+    "oficinas-p17-s1": {
+      "start": 1548.145,
+      "end": 1563.568
+    },
+    "oficinas-p18-s1": {
+      "start": 1563.568,
+      "end": 1574.609
+    },
+    "oficinas-p18-s2": {
+      "start": 1574.609,
+      "end": 1580.827
+    },
+    "oficinas-p18-s3": {
+      "start": 1580.827,
+      "end": 1587.563
+    },
+    "oficinas-p18-s4": {
+      "start": 1587.563,
+      "end": 1595.536
+    },
+    "oficinas-p18-s5": {
+      "start": 1595.536,
+      "end": 1601.027
+    },
+    "conclusiones-titulo": {
+      "start": 1602.031,
+      "end": 1603.009
+    },
+    "conclusiones-p1-s1": {
+      "start": 1604.012,
+      "end": 1613.284
+    },
+    "conclusiones-p1-s2": {
+      "start": 1613.284,
+      "end": 1623.628
+    },
+    "conclusiones-p1-s3": {
+      "start": 1623.628,
+      "end": 1641.146
+    },
+    "conclusiones-p2-s1": {
+      "start": 1641.146,
+      "end": 1650.744
+    },
+    "conclusiones-p2-s2": {
+      "start": 1650.744,
+      "end": 1664.395
+    },
+    "conclusiones-p2-s3": {
+      "start": 1664.395,
+      "end": 1673.9
+    }
+  }
+}

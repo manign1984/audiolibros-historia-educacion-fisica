@@ -88,11 +88,9 @@ img { display: block; max-width: 100%; }
   box-shadow: 0 5px 16px rgba(9, 31, 46, 0.2);
   backdrop-filter: blur(12px);
 }
-.orbuch-header[data-section='problema'] { --header-accent: #ef8061; }
 .orbuch-header[data-section='autor'] { --header-accent: #82c5df; }
 .orbuch-header[data-section='contexto'] { --header-accent: #edbd52; }
 .orbuch-header[data-section='lectura'] { --header-accent: #91cbe1; }
-.orbuch-header[data-section='archivo'] { --header-accent: #e5c58b; }
 .orbuch-header[data-section='creditos'] { --header-accent: #acd3df; }
 .orbuch-header__inner {
   display: grid;
@@ -231,49 +229,43 @@ img { display: block; max-width: 100%; }
 
 /* Sistema de títulos y enlaces de continuidad. */
 .orbuch-section-heading { position: relative; display: grid; max-width: 1240px; align-items: start; grid-template-columns: 122px minmax(0, 1fr); gap: 34px; }
-.orbuch-section-heading > span,
-.orbuch-section-number { width: fit-content; padding: 10px 11px 8px; color: var(--orbuch-paper-light); border: 3px solid var(--orbuch-navy); border-radius: 3px 15px 3px 15px; background: var(--section-accent); box-shadow: 5px 5px 0 var(--orbuch-navy); font-family: var(--orbuch-display); font-size: clamp(2.9rem, 4.5vw, 5rem); font-weight: 800; letter-spacing: 0.01em; line-height: 0.82; }
-.orbuch-section-heading p,
-.orbuch-section-kicker { width: fit-content; margin: 0 0 17px; padding: 6px 10px; color: var(--orbuch-paper-light); background: var(--section-accent); font-family: var(--orbuch-display); font-size: 0.73rem; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; }
-.orbuch-section-heading h2,
-.orbuch-problem__heading h2 { max-width: 1020px; margin: 0; color: var(--orbuch-navy); font-family: var(--orbuch-display); font-size: clamp(3rem, 5.7vw, 5.6rem); font-weight: 900; letter-spacing: -0.018em; line-height: 0.9; text-transform: uppercase; text-wrap: balance; }
+.orbuch-section-heading > span { width: fit-content; padding: 10px 11px 8px; color: var(--orbuch-paper-light); border: 3px solid var(--orbuch-navy); border-radius: 3px 15px 3px 15px; background: var(--section-accent); box-shadow: 5px 5px 0 var(--orbuch-navy); font-family: var(--orbuch-display); font-size: clamp(2.9rem, 4.5vw, 5rem); font-weight: 800; letter-spacing: 0.01em; line-height: 0.82; }
+.orbuch-section-heading p { width: fit-content; margin: 0 0 17px; padding: 6px 10px; color: var(--orbuch-paper-light); background: var(--section-accent); font-family: var(--orbuch-display); font-size: 0.73rem; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; }
+.orbuch-section-heading h2 { max-width: 1020px; margin: 0; color: var(--orbuch-navy); font-family: var(--orbuch-display); font-size: clamp(3rem, 5.7vw, 5.6rem); font-weight: 900; letter-spacing: -0.018em; line-height: 0.9; text-transform: uppercase; text-wrap: balance; }
 .orbuch-section-intro { max-width: 800px; margin-top: 25px; color: #355565; font-size: clamp(1rem, 1.15vw, 1.18rem); line-height: 1.65; }
 .orbuch-continue-link { display: flex; width: fit-content; align-items: center; gap: 22px; margin: 62px 0 0 auto; padding: 14px 18px; color: var(--orbuch-navy); border: 2px solid var(--orbuch-navy); border-radius: 3px 18px 3px 18px; background: rgba(255, 246, 220, 0.86); box-shadow: 5px 5px 0 var(--section-accent); font-family: var(--orbuch-display); font-size: 0.84rem; font-weight: 900; letter-spacing: 0.06em; text-decoration: none; text-transform: uppercase; }
 .orbuch-continue-link:hover svg { transform: translateX(5px); }
 
-/* Problema */
-.orbuch-problem { --section-accent: var(--orbuch-red); --section-shadow: rgba(200, 61, 44, 0.2); background: linear-gradient(rgba(249, 226, 202, 0.95), rgba(249, 226, 202, 0.95)), radial-gradient(circle at 82% 18%, rgba(200, 61, 44, 0.3), transparent 32%); }
-.orbuch-problem::after,
 .orbuch-author::after,
 .orbuch-context::after,
-.orbuch-reading::after,
-.orbuch-archive::after { position: absolute; z-index: 0; top: 45px; right: -150px; width: 520px; aspect-ratio: 1; border-radius: 50%; content: ''; opacity: 0.13; background: repeating-conic-gradient(from -12deg, var(--section-accent) 0deg 7deg, transparent 7deg 15deg); pointer-events: none; }
+.orbuch-reading::after { position: absolute; z-index: 0; top: 45px; right: -150px; width: 520px; aspect-ratio: 1; border-radius: 50%; content: ''; opacity: 0.13; background: repeating-conic-gradient(from -12deg, var(--section-accent) 0deg 7deg, transparent 7deg 15deg); pointer-events: none; }
 .orbuch-section > .orbuch-shell { position: relative; z-index: 1; }
-.orbuch-problem__grid { display: grid; max-width: 1180px; grid-template-columns: 122px minmax(0, 1fr); gap: 36px 34px; }
-.orbuch-problem__heading { align-self: start; }
-.orbuch-question-card { position: relative; min-height: 270px; padding: 42px clamp(28px, 5vw, 70px); border: 3px solid var(--orbuch-navy); border-radius: 2px 30px 2px 2px; background: rgba(255, 247, 223, 0.95); box-shadow: 8px 8px 0 var(--section-shadow); grid-column: 2; }
+
+/* Autor: misma estructura editorial que la ficha de Pineau, con identidad Orbuch. */
+.orbuch-author { --section-accent: var(--orbuch-gold); --section-shadow: rgba(7, 27, 53, 0.28); color: var(--orbuch-paper-light); background: #2f78a6; }
+.orbuch-author__grid { display: grid; align-items: center; grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.7fr); gap: clamp(2rem, 5vw, 5rem); }
+.orbuch-author__portrait-wrap { position: relative; margin: 0; padding: 1rem 1rem 0 0; }
+.orbuch-author__portrait-wrap::before { position: absolute; top: -12px; right: -12px; bottom: 22px; left: 12px; content: ''; border: 1px solid rgba(255, 242, 204, 0.5); }
+.orbuch-author__initial { position: absolute; z-index: 2; top: -0.6em; left: -0.22em; color: transparent; font-family: var(--orbuch-display); font-size: 8rem; line-height: 1; -webkit-text-stroke: 1px var(--orbuch-gold-light); }
+.orbuch-author__portrait { position: relative; z-index: 1; width: 100%; aspect-ratio: 1.05; object-fit: cover; object-position: center 24%; filter: grayscale(1) contrast(1.14); clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%); }
+.orbuch-author__portrait-wrap figcaption { position: relative; z-index: 2; margin-top: 0.6rem; color: rgba(255, 242, 204, 0.62); font-size: 0.63rem; }
+.orbuch-author__eyebrow { width: fit-content; margin: 0 0 0.75rem; color: var(--orbuch-paper-light); font-family: var(--orbuch-display); font-size: 0.74rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+.orbuch-author__copy h2 { display: inline-block; margin: 0 0 0.25rem; padding: 0 0.18em 0.08em 0; border-bottom: 4px double var(--orbuch-gold); font-family: var(--orbuch-display); font-size: clamp(3.15rem, 5.65vw, 5.4rem); font-weight: 400; letter-spacing: 0.035em; line-height: 0.98; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.24); text-transform: uppercase; }
+.orbuch-author__role { margin: 0 0 1.4rem; color: var(--orbuch-gold-light); font-size: 0.82rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; }
+.orbuch-author__summary { max-width: 820px; margin: 0 0 2rem; color: rgba(255, 242, 204, 0.93); font-size: 1.05rem; line-height: 1.72; }
+.orbuch-author__link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--orbuch-paper-light); border-bottom: 1px solid currentColor; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-decoration: none; text-transform: uppercase; }
+.orbuch-author__link:hover { color: var(--orbuch-gold-light); }
+
+/* Contexto: pregunta, cronología, argumento y archivo dentro de un único bloque. */
+.orbuch-context { --section-accent: #d29624; --section-shadow: rgba(210, 150, 36, 0.22); background: linear-gradient(rgba(249, 232, 177, 0.95), rgba(249, 232, 177, 0.95)), radial-gradient(circle at 84% 16%, rgba(210, 150, 36, 0.34), transparent 30%); }
+.orbuch-context__problem { display: grid; max-width: 1040px; margin: clamp(3.3rem, 7vw, 5.5rem) 0 0 148px; gap: 1.5rem; }
+.orbuch-question-card { position: relative; min-height: 270px; padding: 42px clamp(28px, 5vw, 70px); border: 3px solid var(--orbuch-navy); border-radius: 2px 30px 2px 2px; background: rgba(255, 247, 223, 0.95); box-shadow: 8px 8px 0 var(--section-shadow); }
 .orbuch-question-card::before { position: absolute; top: -10px; left: 6%; width: 38%; height: 12px; content: ''; background: var(--orbuch-gold); }
 .orbuch-question-card > span { color: var(--orbuch-red); font-family: var(--orbuch-display); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .orbuch-question-card p { max-width: 880px; margin: 28px 0 0; color: var(--orbuch-navy); font-family: Georgia, serif; font-size: clamp(1.6rem, 3.3vw, 3rem); font-weight: 700; line-height: 1.18; }
-.orbuch-reading-warning { margin-left: 122px; padding: 24px 28px; border: 2px solid var(--orbuch-navy); border-left: 9px solid var(--orbuch-red); background: rgba(255, 246, 220, 0.86); grid-column: 1 / -1; }
+.orbuch-reading-warning { padding: 24px 28px; border: 2px solid var(--orbuch-navy); border-left: 9px solid var(--orbuch-red); background: rgba(255, 246, 220, 0.86); }
 .orbuch-reading-warning strong { font-family: var(--orbuch-display); font-size: 1.35rem; text-transform: uppercase; }
 .orbuch-reading-warning p { max-width: 820px; margin: 0.65rem 0 0; line-height: 1.65; }
-.orbuch-next-piece { margin-left: 122px; grid-column: 1 / -1; }
-.orbuch-next-piece span { display: inline-block; padding: 4px 8px; color: var(--orbuch-paper-light); background: var(--section-accent); font-family: var(--orbuch-display); font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
-.orbuch-next-piece p { margin: 0.6rem 0 0; font-family: Georgia, serif; font-size: 1.15rem; }
-
-/* Autor */
-.orbuch-author { --section-accent: #2f78a6; --section-shadow: rgba(47, 120, 166, 0.21); background: linear-gradient(rgba(219, 238, 246, 0.95), rgba(219, 238, 246, 0.95)), repeating-linear-gradient(135deg, rgba(47, 120, 166, 0.07) 0, rgba(47, 120, 166, 0.07) 2px, transparent 2px, transparent 18px); }
-.orbuch-author__file { display: grid; max-width: 1180px; margin: clamp(3.2rem, 6vw, 5rem) 0 0 148px; border: 3px solid var(--orbuch-navy); background: var(--orbuch-paper-light); box-shadow: 8px 8px 0 var(--section-shadow); grid-template-columns: minmax(250px, 0.68fr) minmax(420px, 1.32fr); }
-.orbuch-author__index { display: flex; min-height: 330px; flex-direction: column; justify-content: flex-end; padding: 42px 34px; color: var(--orbuch-paper-light); border-right: 3px solid var(--orbuch-navy); background: linear-gradient(rgba(51, 112, 148, 0.95), rgba(51, 112, 148, 0.95)), radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.28), transparent 34%); }
-.orbuch-author__index span,
-.orbuch-author__index small { font-size: 0.67rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
-.orbuch-author__index span { margin-bottom: auto; }
-.orbuch-author__index strong { max-width: 310px; font-family: var(--orbuch-display); font-size: clamp(2.5rem, 3.4vw, 4.1rem); font-weight: 900; line-height: 0.9; text-transform: uppercase; }
-.orbuch-author__index small { margin-top: 18px; font-size: 0.62rem; line-height: 1.5; }
-.orbuch-author__bio { padding: 45px clamp(30px, 4vw, 62px); }
-.orbuch-author__bio p { max-width: 720px; margin: 0 0 19px; color: #293d4c; font-family: Georgia, serif; font-size: 1.04rem; line-height: 1.72; }
-.orbuch-text-link { display: inline-flex; align-items: center; gap: 0.4rem; color: #225f86; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-underline-offset: 4px; text-transform: uppercase; }
 .orbuch-argument-map { display: grid; max-width: 1180px; margin: 52px 0 0 148px; border-top: 3px solid var(--orbuch-navy); border-left: 3px solid var(--orbuch-navy); grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .orbuch-argument-map article { min-height: 235px; padding: 28px 25px; border-right: 3px solid var(--orbuch-navy); border-bottom: 3px solid var(--orbuch-navy); background: rgba(255, 246, 220, 0.84); }
 .orbuch-argument-map article:nth-child(even) { background: rgba(192, 222, 234, 0.82); }
@@ -281,8 +273,6 @@ img { display: block; max-width: 100%; }
 .orbuch-argument-map h3 { margin: 52px 0 10px; font-family: var(--orbuch-display); font-size: 1.5rem; font-weight: 900; line-height: 1; }
 .orbuch-argument-map p { margin: 0; color: #46535a; font-size: 0.87rem; line-height: 1.55; }
 
-/* Contexto */
-.orbuch-context { --section-accent: #d29624; --section-shadow: rgba(210, 150, 36, 0.22); background: linear-gradient(rgba(249, 232, 177, 0.95), rgba(249, 232, 177, 0.95)), radial-gradient(circle at 84% 16%, rgba(210, 150, 36, 0.34), transparent 30%); }
 .orbuch-timeline { max-width: 1040px; margin: clamp(3.3rem, 7vw, 6rem) 0 0 148px; padding: 0; list-style: none; }
 .orbuch-timeline li { position: relative; display: grid; padding: 0 0 42px; grid-template-columns: 210px minmax(0, 1fr); gap: 38px; }
 .orbuch-timeline li::before { position: absolute; top: 7px; bottom: -7px; left: 199px; width: 4px; content: ''; background: var(--orbuch-navy); }
@@ -297,6 +287,11 @@ img { display: block; max-width: 100%; }
 .orbuch-context__statement p { margin: 0 0 0.35rem; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .orbuch-context__statement strong { display: block; font-family: var(--orbuch-display); font-size: clamp(1.65rem, 3vw, 2.7rem); line-height: 1; text-transform: uppercase; }
 .orbuch-context__statement span { display: block; max-width: 760px; margin-top: 0.8rem; color: rgba(255, 242, 204, 0.84); line-height: 1.6; }
+.orbuch-context__subheading { max-width: 1040px; margin: clamp(4rem, 8vw, 7rem) 0 0 148px; padding-top: 1.5rem; border-top: 3px solid var(--orbuch-navy); }
+.orbuch-context__subheading p { width: fit-content; margin: 0 0 0.8rem; padding: 5px 9px; color: var(--orbuch-paper-light); background: var(--orbuch-red); font-family: var(--orbuch-display); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.11em; text-transform: uppercase; }
+.orbuch-context__subheading h3 { max-width: 900px; margin: 0; color: var(--orbuch-navy); font-family: var(--orbuch-display); font-size: clamp(2.3rem, 4.4vw, 4.2rem); font-weight: 900; line-height: 0.94; text-transform: uppercase; }
+.orbuch-context__subheading > span { display: block; max-width: 760px; margin-top: 1rem; color: #405766; font-size: 1rem; line-height: 1.65; }
+.orbuch-context__subheading--archive { margin-top: clamp(4.5rem, 9vw, 8rem); }
 
 /* Lectura */
 .orbuch-reading { --section-accent: #317ca4; --section-shadow: rgba(49, 124, 164, 0.21); background: linear-gradient(rgba(215, 235, 244, 0.96), rgba(215, 235, 244, 0.96)), repeating-linear-gradient(0deg, transparent 0, transparent 34px, rgba(49, 124, 164, 0.08) 35px); }
@@ -304,12 +299,11 @@ img { display: block; max-width: 100%; }
 .orbuch-reading-question span { font-family: var(--orbuch-display); font-size: 0.66rem; font-weight: 800; letter-spacing: 0.1em; line-height: 1.5; text-transform: uppercase; }
 .orbuch-reading-question p { margin: 0; font-family: Georgia, serif; font-size: clamp(1.05rem, 2vw, 1.35rem); line-height: 1.5; }
 .orbuch-reader-stage { max-width: 1180px; margin: 2.5rem 0 0 148px; }
-.orbuch-resource-strip { display: grid; max-width: 1180px; margin: 1rem 0 0 148px; gap: 2px; background: var(--orbuch-navy); grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.orbuch-resource-strip { display: grid; max-width: 1180px; margin: 1rem 0 0 148px; gap: 2px; background: var(--orbuch-navy); grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .orbuch-resource-strip a { display: flex; min-width: 0; min-height: 64px; align-items: center; justify-content: center; gap: 0.55rem; padding: 0.8rem; color: var(--orbuch-navy); background: var(--orbuch-paper-card); font-size: 0.67rem; font-weight: 800; text-decoration: none; text-transform: uppercase; }
 .orbuch-resource-strip a:hover { background: var(--orbuch-gold); }
 
-/* Archivo */
-.orbuch-archive { --section-accent: #a85834; --section-shadow: rgba(168, 88, 52, 0.21); background: linear-gradient(rgba(242, 220, 174, 0.96), rgba(242, 220, 174, 0.96)), repeating-linear-gradient(90deg, rgba(11, 46, 89, 0.045) 0, rgba(11, 46, 89, 0.045) 1px, transparent 1px, transparent 8px); }
+/* Fuentes primarias dentro de Contexto. */
 .orbuch-dossiers { display: grid; max-width: 1180px; align-items: start; margin: clamp(3.5rem, 7vw, 5.5rem) 0 0 148px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
 .orbuch-dossier { min-width: 0; padding: clamp(1rem, 2.5vw, 2rem); color: var(--orbuch-ink); border: 3px solid var(--orbuch-navy); background: var(--orbuch-paper-card); box-shadow: 8px 8px 0 var(--section-shadow); }
 .orbuch-dossier--aula { border-top: 10px solid var(--orbuch-red); }
@@ -348,7 +342,8 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 1240px) {
   .orbuch-shell { width: min(1180px, calc(100% - 3rem)); }
-  .orbuch-author__file,
+  .orbuch-context__problem,
+  .orbuch-context__subheading,
   .orbuch-argument-map,
   .orbuch-timeline,
   .orbuch-context__statement,
@@ -386,12 +381,7 @@ img { display: block; max-width: 100%; }
   .orbuch-folder--oficina { right: 4%; bottom: 0; }
   .orbuch-hero-operations { position: relative; width: calc(100% + 44px); height: 82px; margin: 0 -22px; padding: 0 16px; }
   .orbuch-section-heading { grid-template-columns: 62px minmax(0, 1fr); gap: 17px; }
-  .orbuch-section-heading > span,
-  .orbuch-section-number { padding: 8px 7px 7px; font-size: 2.55rem; }
-  .orbuch-problem__grid { grid-template-columns: 62px minmax(0, 1fr); gap: 30px 17px; }
-  .orbuch-question-card { grid-column: 1 / -1; }
-  .orbuch-reading-warning,
-  .orbuch-next-piece { margin-left: 0; }
+  .orbuch-section-heading > span { padding: 8px 7px 7px; font-size: 2.55rem; }
 }
 
 @media (max-width: 780px) {
@@ -402,8 +392,8 @@ img { display: block; max-width: 100%; }
   .orbuch-progress-track { display: none; }
   .orbuch-mobile-progress { position: absolute; inset: auto 0 0; display: block; height: 3px; background: rgba(255, 246, 220, 0.16); }
   .orbuch-argument-map { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .orbuch-author__file { grid-template-columns: 1fr; }
-  .orbuch-author__index { min-height: 250px; border-right: 0; border-bottom: 3px solid var(--orbuch-navy); }
+  .orbuch-author__grid { grid-template-columns: 1fr; }
+  .orbuch-author__portrait-wrap { width: min(100%, 360px); }
   .orbuch-reading-question { grid-template-columns: 1fr; }
   .orbuch-resource-strip { grid-template-columns: 1fr; }
   .orbuch-credits__bottom { align-items: flex-start; flex-direction: column; }
@@ -436,23 +426,16 @@ img { display: block; max-width: 100%; }
   .orbuch-hero-operations { width: calc(100% + 28px); height: 76px; margin: 0 -14px; padding: 0 5px; }
   .orbuch-hero-operations li { gap: 6px; font-size: 0.6rem; letter-spacing: 0.06em; }
   .orbuch-hero-operations b { width: 25px; height: 25px; font-size: 0.65rem; }
-  .orbuch-problem::after,
   .orbuch-author::after,
   .orbuch-context::after,
-  .orbuch-reading::after,
-  .orbuch-archive::after { top: 30px; right: -165px; width: 360px; }
+  .orbuch-reading::after { top: 30px; right: -165px; width: 360px; }
   .orbuch-section-heading { grid-template-columns: 47px minmax(0, 1fr); gap: 11px; }
-  .orbuch-section-heading > span,
-  .orbuch-section-number { padding: 7px 5px 6px; border-width: 2px; box-shadow: 3px 3px 0 var(--orbuch-navy); font-size: 2rem; }
-  .orbuch-section-heading p,
-  .orbuch-section-kicker { max-width: 100%; padding: 5px 7px; font-size: 0.65rem; }
-  .orbuch-section-heading h2,
-  .orbuch-problem__heading h2 { font-size: clamp(1.9rem, 9.5vw, 3rem); overflow-wrap: normal; word-break: normal; hyphens: none; }
-  .orbuch-problem__grid { grid-template-columns: 47px minmax(0, 1fr); gap: 24px 11px; }
+  .orbuch-section-heading > span { padding: 7px 5px 6px; border-width: 2px; box-shadow: 3px 3px 0 var(--orbuch-navy); font-size: 2rem; }
+  .orbuch-section-heading p { max-width: 100%; padding: 5px 7px; font-size: 0.65rem; }
+  .orbuch-section-heading h2 { font-size: clamp(1.9rem, 9.5vw, 3rem); overflow-wrap: normal; word-break: normal; hyphens: none; }
   .orbuch-question-card { min-height: 0; padding: 30px 21px; box-shadow: 5px 5px 0 var(--section-shadow); }
   .orbuch-question-card p { font-size: clamp(1.35rem, 6vw, 1.85rem); }
   .orbuch-reading-warning { padding: 20px; }
-  .orbuch-author__file,
   .orbuch-argument-map,
   .orbuch-context__statement,
   .orbuch-reading-question,
@@ -460,6 +443,10 @@ img { display: block; max-width: 100%; }
   .orbuch-argument-map { grid-template-columns: 1fr; }
   .orbuch-argument-map article { min-height: 190px; }
   .orbuch-argument-map h3 { margin-top: 34px; }
+  .orbuch-author__copy h2 { font-size: clamp(2.7rem, 14vw, 4.6rem); }
+  .orbuch-author__initial { font-size: 6.4rem; }
+  .orbuch-author__summary { font-size: 0.98rem; }
+  .orbuch-context__subheading h3 { font-size: clamp(2rem, 10vw, 3.2rem); }
   .orbuch-timeline li { padding-bottom: 34px; grid-template-columns: 90px minmax(0, 1fr); gap: 24px; }
   .orbuch-timeline li::before { left: 98px; }
   .orbuch-timeline li::after { left: 93px; }

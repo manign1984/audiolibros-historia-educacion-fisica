@@ -15,11 +15,9 @@ import { orbuchReadingDocument } from './orbuchReadingDocument.js';
 
 const NAV_ITEMS = [
   ['inicio', 'Inicio'],
-  ['problema', 'Problema'],
   ['autor', 'Autor'],
   ['contexto', 'Contexto'],
   ['lectura', 'Lectura'],
-  ['archivo', 'Archivo'],
   ['creditos', 'Créditos'],
 ];
 
@@ -220,7 +218,7 @@ function Hero() {
         <p className="orbuch-hero-intro">
           Un recorrido para reconstruir cómo una política estatal de educación corporal atravesó el aula y la oficina, y qué tensiones aparecieron al intentar llevarla a la práctica.
         </p>
-        <a className="orbuch-primary-action" href="#problema">
+        <a className="orbuch-primary-action" href="#autor">
           Comenzar el recorrido
           <svg aria-hidden="true" viewBox="0 0 42 20"><path d="M1 10h38M31 2l8 8-8 8" /></svg>
         </a>
@@ -264,67 +262,30 @@ function ContinueLink({ href, children }) {
   );
 }
 
-function ProblemSection() {
-  return (
-    <section id="problema" className="orbuch-problem orbuch-section">
-      <div className="orbuch-shell">
-        <div className="orbuch-problem__grid">
-          <div className="orbuch-section-number" aria-hidden="true">02</div>
-          <div className="orbuch-problem__heading">
-            <p className="orbuch-section-kicker">Abrir el expediente</p>
-            <h2>La pregunta que organiza el recorrido</h2>
-          </div>
-          <div className="orbuch-question-card">
-            <span>Pregunta de lectura · Documento 01</span>
-            <p>¿Cómo intentó el Consejo Nacional de Educación Física extender la educación corporal desde la escuela hacia otros espacios cotidianos, y qué revela esa expansión sobre el Estado peronista?</p>
-          </div>
-          <aside className="orbuch-reading-warning">
-            <strong>No busques una historia de éxito lineal.</strong>
-            <p>Los cuadernillos permiten conocer lo que se quiso prescribir. Para comprender qué ocurrió al implementarlo hay que leer también las resistencias, negociaciones y límites reconstruidos por Iván Orbuch.</p>
-          </aside>
-          <div className="orbuch-next-piece">
-            <span>Siguiente pieza</span>
-            <p>Autor, contexto y lugar de enunciación</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function AuthorSection() {
   return (
     <section id="autor" className="orbuch-author orbuch-section">
-      <div className="orbuch-shell">
-        <SectionHeader
-          number="03"
-          eyebrow="Lugar de enunciación"
-          title="Quién escribe y desde qué problema"
-          text="Conocer al autor no reemplaza el análisis: permite reconocer qué preguntas orientan la selección de fuentes y la interpretación."
-        />
-        <div className="orbuch-author__file">
-          <div className="orbuch-author__index">
-            <span>Ficha de autor</span>
-            <strong>Orbuch, Iván Pablo</strong>
-            <small>Historia de la educación · Educación Física</small>
-          </div>
-          <article className="orbuch-author__bio">
-            <p>Iván Orbuch es profesor de Historia, Magíster en Ciencias Sociales y Doctor en Educación. Se desempeña como docente e investigador en la Universidad Nacional de Hurlingham.</p>
-            <p>
-              El texto examina políticas de educación corporal desde la historia de la educación. Por eso no se limita a describir ejercicios: pregunta por organismos, proyectos estatales, destinatarios, discursos de legitimación y dificultades de implementación.
-            </p>
-            <a className="orbuch-text-link" href="https://aulaabierta.unahur.edu.ar/index.php/2020/01/08/investigacion-sub-40-ivan-orbuch/" target="_blank" rel="noreferrer">
-              Perfil institucional en UNAHUR <ExternalLink size={14} />
-            </a>
-          </article>
+      <div className="orbuch-shell orbuch-author__grid">
+        <figure className="orbuch-author__portrait-wrap">
+          <div className="orbuch-author__initial" aria-hidden="true">I</div>
+          <img
+            className="orbuch-author__portrait"
+            src="/assets/orbuch-ivan-orbuch.webp"
+            alt="Retrato de Iván Pablo Orbuch"
+          />
+          <figcaption>Fotografía: Universidad Nacional de Hurlingham (UNAHUR), 2020.</figcaption>
+        </figure>
+        <div className="orbuch-author__copy">
+          <p className="orbuch-author__eyebrow">El autor del texto</p>
+          <h2>Iván Pablo Orbuch</h2>
+          <p className="orbuch-author__role">Historiador de la educación · Doctor en Educación</p>
+          <p className="orbuch-author__summary">
+            Iván Pablo Orbuch es profesor de Historia, magíster en Ciencias Sociales y doctor en Educación. Docente e investigador de la Universidad Nacional de Hurlingham, estudia los vínculos entre educación, cultura física, ciudadanía y Estado. Sus trabajos reconstruyen políticas del primer peronismo y atienden especialmente a sus organismos, lenguajes, destinatarios, mediaciones y dificultades de implementación, tanto en espacios escolares como extraescolares.
+          </p>
+          <a className="orbuch-author__link" href="https://aulaabierta.unahur.edu.ar/index.php/2020/01/08/investigacion-sub-40-ivan-orbuch/" target="_blank" rel="noreferrer">
+            Ver biografía académica <ExternalLink size={15} />
+          </a>
         </div>
-        <div className="orbuch-argument-map">
-          <article><span>01</span><h3>Antecedentes</h3><p>Reconstruye organismos y proyectos previos para evitar pensar 1946 como un comienzo absoluto.</p></article>
-          <article><span>02</span><h3>Escala estatal</h3><p>Señala una ruptura en la masividad, la centralización y la voluntad de alcanzar todo el territorio.</p></article>
-          <article><span>03</span><h3>Dos experiencias</h3><p>Analiza los cuadernillos para el aula y la oficina como estrategias emparentadas, pero no idénticas.</p></article>
-          <article><span>04</span><h3>Prescripción y práctica</h3><p>La insistencia persuasiva de las fuentes se interpreta como indicio de resistencias y límites.</p></article>
-        </div>
-        <ContinueLink href="#contexto">Continuar hacia el contexto</ContinueLink>
       </div>
     </section>
   );
@@ -366,11 +327,21 @@ function ContextSection() {
     <section id="contexto" className="orbuch-context orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
-          number="04"
-          eyebrow="Contexto selectivo"
+          number="03"
+          eyebrow="Contexto histórico y documental"
           title="Un Estado que busca ampliar su radio de acción"
-          text="La cronología reúne sólo los procesos necesarios para comprender la aparición de ambos cuadernillos y las tensiones que los atraviesan."
+          text="La pregunta, la cronología y las fuentes primarias reúnen los elementos necesarios para comprender la aparición de ambos cuadernillos y las tensiones que los atraviesan."
         />
+        <div className="orbuch-context__problem">
+          <div className="orbuch-question-card">
+            <span>Pregunta que organiza el recorrido</span>
+            <p>¿Cómo intentó el Consejo Nacional de Educación Física extender la educación corporal desde la escuela hacia otros espacios cotidianos, y qué revela esa expansión sobre el Estado peronista?</p>
+          </div>
+          <aside className="orbuch-reading-warning">
+            <strong>No busques una historia de éxito lineal.</strong>
+            <p>Los cuadernillos permiten conocer lo que se quiso prescribir. Para comprender qué ocurrió al implementarlo hay que leer también las resistencias, negociaciones y límites reconstruidos por Iván Orbuch.</p>
+          </aside>
+        </div>
         <ol className="orbuch-timeline" aria-label="Cronología selectiva de 1936 a 1950">
           {CONTEXT_EVENTS.map((event) => (
             <li key={event.year}>
@@ -393,6 +364,24 @@ function ContextSection() {
             <span>La creación del Consejo bajo dependencia castrense resolvió institucionalmente una disputa, pero no eliminó la coexistencia de lenguajes sanitarios, pedagógicos, productivos y disciplinarios.</span>
           </div>
         </div>
+        <div className="orbuch-context__subheading">
+          <p>Claves de lectura</p>
+          <h3>Cuatro movimientos del argumento</h3>
+        </div>
+        <div className="orbuch-argument-map">
+          <article><span>01</span><h3>Antecedentes</h3><p>Reconstruye organismos y proyectos previos para evitar pensar 1946 como un comienzo absoluto.</p></article>
+          <article><span>02</span><h3>Escala estatal</h3><p>Señala una ruptura en la masividad, la centralización y la voluntad de alcanzar todo el territorio.</p></article>
+          <article><span>03</span><h3>Dos experiencias</h3><p>Analiza los cuadernillos para el aula y la oficina como estrategias emparentadas, pero no idénticas.</p></article>
+          <article><span>04</span><h3>Prescripción y práctica</h3><p>La insistencia persuasiva de las fuentes se interpreta como indicio de resistencias y límites.</p></article>
+        </div>
+        <div className="orbuch-context__subheading orbuch-context__subheading--archive">
+          <p>Archivo comparado</p>
+          <h3>Dos documentos, una expansión y diferentes mediaciones</h3>
+          <span>Cada expediente reúne el cuadernillo original, una selección visual y las claves analíticas reconstruidas por el texto de Orbuch.</span>
+        </div>
+        <div className="orbuch-dossiers">
+          {DOSSIERS.map((source) => <Dossier key={source.id} source={source} />)}
+        </div>
         <ContinueLink href="#lectura">Preparar la lectura</ContinueLink>
       </div>
     </section>
@@ -404,10 +393,10 @@ function ReadingSection() {
     <section id="lectura" className="orbuch-reading orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
-          number="05"
+          number="04"
           eyebrow="Mesa de lectura"
           title="Leer con una pregunta y el texto completo"
-          text="El artículo académico sigue siendo el centro. El lector reúne texto accesible, audiolibro y anotaciones sin fabricar una sincronización que todavía no existe."
+          text="El artículo académico sigue siendo el centro. El lector reúne texto accesible, audiolibro y anotaciones, y ahora acompaña la narración oración por oración."
         />
         <aside className="orbuch-reading-question">
           <span>Pregunta que acompaña la lectura</span>
@@ -420,25 +409,7 @@ function ReadingSection() {
           <a href="/assets/orbuch-educar-al-cuerpo.pdf" target="_blank" rel="noreferrer"><FileText size={19} /><span>Artículo académico</span><ExternalLink size={13} /></a>
           <a href="/assets/orbuch-texto-accesible.txt" target="_blank" rel="noreferrer"><BookOpen size={19} /><span>Texto accesible</span><ExternalLink size={13} /></a>
           <a href="/assets/orbuch-audiolibro.mp3" target="_blank" rel="noreferrer"><Headphones size={19} /><span>MP3 · 27:53</span><ExternalLink size={13} /></a>
-        </div>
-        <ContinueLink href="#archivo">Abrir los expedientes</ContinueLink>
-      </div>
-    </section>
-  );
-}
-
-function ArchiveSection() {
-  return (
-    <section id="archivo" className="orbuch-archive orbuch-section">
-      <div className="orbuch-shell">
-        <SectionHeader
-          number="06"
-          eyebrow="Archivo comparado"
-          title="Dos documentos, una expansión y diferentes mediaciones"
-          text="Cada expediente reúne el cuadernillo original, una selección visual y las claves analíticas reconstruidas por el texto de Orbuch."
-        />
-        <div className="orbuch-dossiers">
-          {DOSSIERS.map((source) => <Dossier key={source.id} source={source} />)}
+          <a href="/assets/orbuch-subtitulos.srt" target="_blank" rel="noreferrer"><FileText size={19} /><span>Subtítulos SRT</span><ExternalLink size={13} /></a>
         </div>
         <ContinueLink href="#creditos">Consultar créditos y procedencias</ContinueLink>
       </div>
@@ -451,7 +422,7 @@ function CreditsSection() {
     <footer id="creditos" className="orbuch-credits orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
-          number="07"
+          number="05"
           eyebrow="Créditos y procedencias"
           title="Cada recurso conserva su historia"
           text="Las referencias siguen APA 7. Los documentos primarios se publican para uso educativo con la procedencia disponible y sin atribuirles una licencia no consignada."
@@ -477,8 +448,14 @@ function CreditsSection() {
             <p>Torre, J. C., &amp; Pastoriza, E. (2002). La democratización del bienestar. En J. C. Torre (Dir.), <em>Los años peronistas (1943–1955)</em> (pp. 257–312). Sudamericana.</p>
           </article>
           <article>
+            <h3>Audio y subtítulos</h3>
+            <p>El audiolibro definitivo y el archivo SRT fueron aportados por el proyecto. Sus 410 cues coinciden íntegramente con el guion accesible; las marcas se normalizan a la duración técnica del MP3 para evitar deriva durante la escucha.</p>
+          </article>
+          <article>
             <h3>Identidad visual</h3>
             <p>El mural cívico-popular fue creado para el Site original. Evoca la cultura gráfica institucional del primer peronismo; no reproduce un afiche histórico ni representa personas identificables.</p>
+            <p>Retrato de Iván Pablo Orbuch: Universidad Nacional de Hurlingham, perfil institucional <em>Investigación Sub 40</em> (2020).</p>
+            <a href="https://aulaabierta.unahur.edu.ar/index.php/2020/01/08/investigacion-sub-40-ivan-orbuch/" target="_blank" rel="noreferrer">Fuente de la fotografía <ExternalLink size={13} /></a>
           </article>
           <article>
             <h3>Datos y privacidad</h3>
@@ -502,11 +479,9 @@ export default function OrbuchApp() {
       <SiteHeader active={active} progress={progress} />
       <main>
         <Hero />
-        <ProblemSection />
         <AuthorSection />
         <ContextSection />
         <ReadingSection />
-        <ArchiveSection />
       </main>
       <CreditsSection />
     </div>

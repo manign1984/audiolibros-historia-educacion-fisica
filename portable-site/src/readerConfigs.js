@@ -45,11 +45,11 @@ export const orbuchReaderConfig = {
     shareTitle: 'Cuaderno de lectura · Iván Orbuch',
   },
   sync: {
-    status: 'pending',
-    launcherTitle: 'Leé, escuchá y anotá en un mismo espacio',
-    launcherDescription: 'El texto accesible y el audiolibro están completos. La sincronización oración por oración queda pendiente hasta disponer de tiempos reales.',
-    featureTitle: 'Texto y audio completos',
-    featureDescription: 'La escucha y la lectura conviven sin marcas de tiempo inventadas.',
-    coverMessage: 'Sincronización fina pendiente: el texto no se resalta automáticamente hasta contar con tiempos reales.',
+    status: 'ready',
+    launcherTitle: 'Leé, escuchá y anotá sin salir del recorrido',
+    launcherDescription: 'El texto acompaña el audiolibro oración por oración. Podés detenerte, dejar una nota y volver a escuchar desde ese pasaje.',
+    featureTitle: 'Oración activa',
+    featureDescription: 'El resaltado y el desplazamiento acompañan el momento real del audio.',
+    coverMessage: 'El resaltado acompaña la oración que se está escuchando.',
   },
 };

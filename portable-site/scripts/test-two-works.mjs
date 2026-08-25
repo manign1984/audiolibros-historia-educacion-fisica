@@ -16,7 +16,7 @@ async function sha256(path) {
   return createHash('sha256').update(contents).digest('hex');
 }
 
-const [reader, pineauApp, orbuchApp, orbuchStyles, readerStyles, configSource, accessibleSource, accessiblePublic] = await Promise.all([
+const [reader, pineauApp, orbuchApp, orbuchStyles, readerStyles, configSource, accessibleSource, accessiblePublic, timingSource] = await Promise.all([
   text('src/IntegratedReader.jsx'),
   text('src/App.jsx'),
   text('src/orbuch/OrbuchApp.jsx'),
@@ -25,7 +25,9 @@ const [reader, pineauApp, orbuchApp, orbuchStyles, readerStyles, configSource, a
   text('src/readerConfigs.js'),
   text('src/orbuch/orbuch-texto-accesible.txt'),
   text('public/assets/orbuch-texto-accesible.txt'),
+  text('src/orbuch/orbuch-timings.json'),
 ]);
+const timingData = JSON.parse(timingSource);
 
 assert.match(pineauApp, /import IntegratedReader from '\.\/IntegratedReader\.jsx'/);
 assert.match(orbuchApp, /import IntegratedReader from '\.\.\/IntegratedReader\.jsx'/);
@@ -60,10 +62,11 @@ for (const capability of [
 
 assert.match(reader, /audioTimeSource: 'playback-position-at-annotation'/);
 assert.match(reader, /sin alineación oración–audio/);
-assert.match(configSource, /status: 'ready'/);
-assert.match(configSource, /status: 'pending'/);
+assert.equal((configSource.match(/status: 'ready'/g) || []).length, 2, 'Ambas obras deben activar la sincronización real.');
 assert.match(configSource, /fresco-noble-reader-notes-v1/);
 assert.match(configSource, /orbuch-educar-cuerpo-reader-notes-v1/);
+assert.match(reader, /\[0\.75, 0\.9, 1, 1\.1, 1\.25, 1\.5, 2\]/);
+assert.match(reader, /String\(rate\)\.replace\('\.', ','\)/);
 
 assert.equal(accessibleSource, accessiblePublic, 'El readingDocument y el TXT público deben usar el mismo texto.');
 assert.equal(
@@ -78,22 +81,36 @@ assert.equal(
 );
 assert.equal(await sha256('public/assets/orbuch-audiolibro.mp3'), '1ad70702ffd057916d20b17810713f0c8a26f1a076f4bd812a5bb327f5e2140c');
 assert.equal((await stat(resolve(assets, 'orbuch-audiolibro.mp3'))).size, 40174404);
+assert.equal(await sha256('public/assets/orbuch-subtitulos.srt'), '682613e2319592787e38bb5fd426da21803085d20549f0f2c57bd81bed224d87');
+assert.equal(await sha256('public/assets/orbuch-ivan-orbuch.webp'), '8613d3e186eb3cb78a98cb3890d0fb28c227ce2b559a08800e9726df1c1b0357');
 assert.equal(await sha256('public/assets/orbuch-educar-al-cuerpo.pdf'), '726b877620519d8b2ad3f2444dfcf04cfed7d68fedae91e4bbcb7a6671ad4ca2');
 assert.equal(await sha256('public/assets/orbuch-gimnasia-compensatoria-1949.pdf'), 'c16511428cd149dd4454981b85647dc2dc4be2a2bc417becb6e72edd271ebef2');
 assert.equal(await sha256('public/assets/orbuch-gimnasia-oficinas-1950.pdf'), '52828ca1f89422f0dba788e32566402718a99238a676efdf53087539ef0f5aa2');
 
-for (const sectionId of ['inicio', 'problema', 'autor', 'contexto', 'lectura', 'archivo', 'creditos']) {
+for (const sectionId of ['inicio', 'autor', 'contexto', 'lectura', 'creditos']) {
   assert.match(orbuchApp, new RegExp(`id="${sectionId}"`), `Falta la sección ${sectionId}.`);
 }
+assert.doesNotMatch(orbuchApp, /id="(?:problema|archivo)"/, 'Orbuch debe tener exactamente los cinco bloques solicitados.');
 for (const fidelityMarker of [
   'Recorrido documental e interactivo',
-  'La pregunta que organiza el recorrido',
+  'Pregunta que organiza el recorrido',
   'Dos expedientes históricos',
+  'Cuatro movimientos del argumento',
+  'Subtítulos SRT',
   'Prescripción',
   'Implementación',
   'Tensiones',
 ]) {
   assert.ok(orbuchApp.includes(fidelityMarker), `Debe conservarse la pieza editorial “${fidelityMarker}”.`);
+}
+for (const authorMarker of [
+  'orbuch-ivan-orbuch.webp',
+  'Retrato de Iván Pablo Orbuch',
+  'El autor del texto',
+  'Historiador de la educación · Doctor en Educación',
+  'Ver biografía académica',
+]) {
+  assert.ok(orbuchApp.includes(authorMarker), `La ficha de autor debe conservar “${authorMarker}”.`);
 }
 const referencedAssets = [...new Set(orbuchApp.match(/\/assets\/orbuch-[A-Za-z0-9._-]+/g) || [])];
 for (const resource of referencedAssets) {
@@ -118,7 +135,20 @@ assert.match(orbuchStyles, /:focus-visible/);
 assert.match(orbuchStyles, /overflow: clip/);
 assert.match(readerStyles, /width: 100vw/);
 
+assert.equal(timingData.metadata.status, 'source-srt-validated');
+assert.equal(timingData.metadata.sourceCues, 410);
+assert.equal(timingData.metadata.spokenCues, 406);
+assert.equal(timingData.metadata.units, 154);
+assert.equal(timingData.metadata.normalizedCharacters, 22528);
+assert.equal(timingData.metadata.sourceSrtSha256, '682613e2319592787e38bb5fd426da21803085d20549f0f2c57bd81bed224d87');
+assert.ok(timingData.metadata.waveformChecks.every(({ error }) => error < 0.45));
+const timingEntries = Object.values(timingData.timings);
+assert.equal(timingEntries.length, 154);
+timingEntries.forEach((entry, index) => {
+  assert.ok(Number.isFinite(entry.start) && Number.isFinite(entry.end) && entry.end > entry.start);
+  if (index > 0) assert.ok(entry.start >= timingEntries[index - 1].end);
+});
 const subtitleFiles = (await readdir(assets)).filter((name) => name.startsWith('orbuch-') && /\.(srt|vtt)$/i.test(name));
-assert.deepEqual(subtitleFiles, [], 'No debe publicarse una sincronización inexistente.');
+assert.deepEqual(subtitleFiles, ['orbuch-subtitulos.srt']);
 
 console.log('Dos obras: motor único, recursos auténticos, aislamiento, exportación y contratos responsive/accesibles verificados.');
