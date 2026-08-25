@@ -5,11 +5,15 @@ import '@fontsource/archivo/500.css';
 import '@fontsource/archivo/600.css';
 import '@fontsource/archivo/700.css';
 import OrbuchApp from './OrbuchApp.jsx';
+import HistoricalContextEnhancement from './HistoricalContextCarousel.jsx';
 import './orbuch.css';
 import '../reader.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <OrbuchApp />
+    <>
+      <OrbuchApp />
+      <HistoricalContextEnhancement />
+    </>
   </React.StrictMode>,
 );
