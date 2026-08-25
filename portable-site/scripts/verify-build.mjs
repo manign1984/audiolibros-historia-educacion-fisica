@@ -57,12 +57,14 @@ assert.ok(allJavaScript.includes('Elegir capítulo del texto'));
 assert.ok(allJavaScript.includes('Escuchar desde aquí'));
 assert.ok(allJavaScript.includes('fresco-noble-reader-notes-v1'));
 assert.ok(allJavaScript.includes('orbuch-educar-cuerpo-reader-notes-v1'));
-assert.ok(allJavaScript.includes('Sincronización fina pendiente'));
+assert.ok(allJavaScript.includes('El resaltado y el desplazamiento acompañan el momento real del audio.'));
+assert.ok(allJavaScript.includes('.75,.9,1,1.1,1.25,1.5,2'), 'El bundle compartido debe incluir 0,9× y 1,1×.');
 for (const restoredOrbuchMarker of [
   'Recorrido documental e interactivo',
-  'La pregunta que organiza el recorrido',
+  'Pregunta que organiza el recorrido',
   'Dos expedientes históricos',
-  'Abrir los expedientes',
+  'Subtítulos SRT',
+  'Ver biografía académica',
 ]) {
   assert.ok(allJavaScript.includes(restoredOrbuchMarker), `Falta la pieza recuperada de Orbuch: ${restoredOrbuchMarker}`);
 }
@@ -88,6 +90,8 @@ await Promise.all([
   access(resolve(dist, 'assets/pineau-renovacion-represion-cooptacion.pdf')),
   access(resolve(dist, 'assets/pablo-pineau.webp')),
   access(resolve(dist, 'assets/orbuch-audiolibro.mp3')),
+  access(resolve(dist, 'assets/orbuch-subtitulos.srt')),
+  access(resolve(dist, 'assets/orbuch-ivan-orbuch.webp')),
   access(resolve(dist, 'assets/orbuch-educar-al-cuerpo.pdf')),
   access(resolve(dist, 'assets/orbuch-gimnasia-compensatoria-1949.pdf')),
   access(resolve(dist, 'assets/orbuch-gimnasia-oficinas-1950.pdf')),

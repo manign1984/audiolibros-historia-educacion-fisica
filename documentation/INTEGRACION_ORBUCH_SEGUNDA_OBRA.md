@@ -10,7 +10,9 @@ También se revisaron el artículo académico de Orbuch, los cuadernillos comple
 
 Se conservaron la identidad cívico-popular azul, dorada y roja; el mural “Amanecer alegórico”; las tipografías; el eje aula–oficina; las reproducciones documentales; el texto accesible; los PDF auténticos y el MP3 definitivo.
 
-La integración inicial condensó la arquitectura editorial en cinco destinos. Tras comparar visualmente la publicación con el Site de referencia, la corrección `fix/orbuch-fidelidad-visual` recuperó siete estaciones informativas: Inicio, Problema, Autor, Contexto, Lectura/audiolibro, Archivo y Créditos. El lector del proyecto continúa como infraestructura común mediante configuración, mientras Orbuch mantiene página, estilos, documento, recursos y almacenamiento propios.
+La integración inicial condensó la arquitectura editorial en cinco destinos. Tras comparar visualmente la publicación con el Site de referencia, la corrección `fix/orbuch-fidelidad-visual` recuperó siete estaciones informativas. La solicitud editorial posterior vuelve a unificar la navegación con Pineau en cinco bloques exactos: Inicio, Autor, Contexto, Lectura y Créditos. La pregunta-problema permanece en Inicio/Contexto y los dos expedientes primarios se integran dentro de Contexto, por lo que no se pierde contenido al retirar esas estaciones independientes.
+
+La ficha de autor adopta la estructura de Pineau: retrato institucional en blanco y negro, nombre, titulación, síntesis de 60 palabras y enlace de ampliación. La fotografía procede del perfil institucional de UNAHUR *Investigación Sub 40 – Iván Orbuch* (2020) y se acredita tanto junto a la imagen como en Créditos.
 
 No se trasladaron cuestionarios, juegos, actividades prácticas o postlectura, cuentas, backend, CMS ni el CSS acumulado del Site. Tampoco se reutilizó la identidad Art Déco de Pineau. Estas exclusiones responden al alcance editorial y evitan confundir infraestructura compartida con identidad singular.
 
@@ -29,11 +31,13 @@ El PDF es el artículo académico con notas y bibliografía. El texto del lector
 
 El MP3 definitivo se recuperó de Drive. Tiene 40.174.404 bytes, MPEG Layer III mono a 44,1 kHz y 192 kb/s, duración `1673.900408` segundos (27:53) y SHA-256 `1ad70702ffd057916d20b17810713f0c8a26f1a076f4bd812a5bb327f5e2140c`.
 
-No se encontró SRT, VTT ni otra fuente temporal correspondiente a ese archivo. Por eso `orbuchReadingDocument` no contiene `start`/`end` y la configuración declara `sync.status: 'pending'`. No hay resaltado automático, seguimiento ni saltos oración–audio simulados. El audio completo, seek manual, controles y anotaciones funcionan independientemente; cada nota registra la posición real del audio al crearse.
+El proyecto aportó posteriormente el SRT original de 410 cues (406 hablados), SHA-256 `682613e2319592787e38bb5fd426da21803085d20549f0f2c57bd81bed224d87`. Su texto hablado normalizado coincide exactamente con los 22.528 caracteres del guion accesible. La línea temporal del SRT termina en `1668.456` s y el MP3 definitivo en `1673.900408` s; el generador aplica un factor uniforme `1.003263141` y verifica el resultado contra las pausas reales de los cuatro títulos de capítulo, con un error máximo inferior a 0,45 s.
+
+`orbuchReadingDocument` contiene ahora 154 unidades temporizadas —portada, cuatro títulos y 147 oraciones— y la configuración declara `sync.status: 'ready'`. Quedan habilitados resaltado, desplazamiento automático, seguimiento optativo, salto desde una oración y salto temporal desde el selector de capítulos. El SRT se publica también como recurso descargable.
 
 ## Arquitectura y aislamiento
 
-Pineau y Orbuch importan el mismo `IntegratedReader.jsx`. Pineau conserva `readingDocument.js`, su MP3, PDF, estilos y claves históricas. Orbuch usa `src/orbuch/orbuchReadingDocument.js`, assets `orbuch-*` y claves propias. Los bundles de Vite extraen un chunk `reader-*` compartido y generan entradas distintas para ambas obras.
+Pineau y Orbuch importan el mismo `IntegratedReader.jsx`. Pineau conserva `readingDocument.js`, su MP3, PDF, estilos y claves históricas. Orbuch usa `src/orbuch/orbuchReadingDocument.js`, `orbuch-timings.json`, assets `orbuch-*` y claves propias. Los bundles de Vite extraen un chunk `reader-*` compartido y generan entradas distintas para ambas obras. El selector común de velocidad incorpora `0,9×` y `1,1×` para ambos reproductores, además de las velocidades preexistentes.
 
 El inventario de recursos está en `data/orbuch-assets-inventory.csv` y el contrato para futuras obras en `documentation/LECTOR_COMPARTIDO.md`.
 

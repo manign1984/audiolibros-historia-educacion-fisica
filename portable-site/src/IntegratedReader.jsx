@@ -842,7 +842,9 @@ export default function IntegratedReader({ showToast, readingDocument, config })
               <label className="reader-player__speed">
                 <span>Velocidad</span>
                 <select value={playbackRate} onChange={(event) => changeRate(Number(event.target.value))}>
-                  {[0.75, 1, 1.25, 1.5, 2].map((rate) => <option key={rate} value={rate}>{rate}×</option>)}
+                  {[0.75, 0.9, 1, 1.1, 1.25, 1.5, 2].map((rate) => (
+                    <option key={rate} value={rate}>{String(rate).replace('.', ',')}×</option>
+                  ))}
                 </select>
               </label>
 

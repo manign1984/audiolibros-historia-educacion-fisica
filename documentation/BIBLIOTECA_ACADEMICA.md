@@ -58,7 +58,7 @@ La búsqueda normaliza mayúsculas, tildes y signos; divide la consulta en térm
 
 Ambas obras importan directamente el mismo `IntegratedReader.jsx`. El motor concentra diálogo, reproducción, seek, velocidad, volumen, capítulos, selección de oración, seguimiento cuando existen tiempos, anotaciones, persistencia y exportación. `readerConfigs.js` aporta identidad, recursos, textos de interfaz, nombres de exportación y claves de almacenamiento. Cada obra conserva su propia página, estilos, `readingDocument`, audio, PDF y demás fuentes.
 
-Pineau mantiene su documento sincronizado de 201 unidades y sus claves históricas. Orbuch usa un documento propio construido desde la versión accesible recuperada, un MP3 real de 27:53 y claves exclusivas. Como no se recuperó SRT/VTT ni otra fuente temporal, Orbuch se declara `pending`: permite leer, escuchar, buscar capítulos y anotar, pero no inventa resaltado, reproducción desde una oración ni saltos de capítulo al audio. Las notas de Orbuch registran la posición real del reproductor al crearse, diferenciada expresamente de una sincronización oración–audio.
+Pineau mantiene su documento sincronizado de 201 unidades y sus claves históricas. Orbuch usa un documento propio construido desde la versión accesible recuperada, el MP3 real de 27:53, el SRT aportado por el proyecto y claves exclusivas. Sus 154 unidades temporizadas habilitan resaltado, seguimiento y saltos precisos; el SRT se valida por igualdad textual completa y se escala a la duración técnica del MP3. Ambos reproductores comparten, entre otras, las velocidades `0,9×`, `1×` y `1,1×`.
 
 El contrato operativo está en `documentation/LECTOR_COMPARTIDO.md`.
 

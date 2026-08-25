@@ -2,7 +2,7 @@
 
 ## Referencias
 
-- Ramas: `feat/orbuch-segunda-obra` y corrección `fix/orbuch-fidelidad-visual`.
+- Ramas: `feat/orbuch-segunda-obra`, `fix/orbuch-fidelidad-visual` y corrección `fix/orbuch-five-blocks-sync-speed`.
 - SHA de `main` al iniciar: `aad25a75c159e7a65e78c799f4877d6ec7175bd1`.
 - Fecha: 24/08/2026.
 
@@ -25,7 +25,7 @@ GITHUB_PAGES_BASE=/audiolibros-historia-educacion-fisica/ npm run verify:build
 
 Se inspeccionaron directamente, en el mismo navegador y con el mismo ancho de escritorio, la URL pública de GitHub Pages y el Site `educar-el-cuerpo.man-ign.chatgpt.site`. La primera versión de GitHub conservaba el mural, pero presentaba un título sobredimensionado, un velo mucho más oscuro y un primer pliegue sin pregunta-problema, introducción, expedientes ni operaciones de lectura. El encabezado tampoco conservaba el contador y la barra central del recorrido. En las secciones interiores se había perdido la alternancia de papeles coloreados, marcos documentales y cronología vertical.
 
-La corrección recupera esos contratos visuales con CSS propio y componentes semánticos, sin copiar la lógica evaluativa del Site. Las pruebas de contrato exigen ahora siete `id` de sección, las piezas editoriales recuperadas, la altura y composición del hero, los expedientes, las tres operaciones, los breakpoints y la ausencia de actividades excluidas.
+La corrección recupera esos contratos visuales con CSS propio y componentes semánticos, sin copiar la lógica evaluativa del Site. La solicitud posterior fija cinco `id` de sección, como en Pineau: Inicio, Autor, Contexto, Lectura y Créditos. Problema y Archivo se conservan como contenidos internos de Contexto. Las pruebas exigen además la ficha de autor con retrato, titulación, resumen de 60 palabras, enlace institucional y ausencia de actividades excluidas.
 
 ## Resultado automatizado
 
@@ -34,17 +34,17 @@ La corrección recupera esos contratos visuales con CSS propio y componentes sem
 | Catálogo | Dos obras; orden O → P; APA 7; búsquedas Orbuch/cuerpo/Pineau/reforma; rutas y caso vacío | Correcto |
 | Motor común | Un solo `IntegratedReader.jsx`; ambos imports y ambos bundles apuntan al mismo chunk `reader-*` | Correcto |
 | Aislamiento | Claves distintas para notas/progreso y recursos configurados por obra | Correcto |
-| Orbuch | Siete estaciones informativas, documentos, imágenes, créditos, texto accesible y recursos existentes | Correcto tras la corrección de fidelidad visual |
+| Orbuch | Cinco bloques, documentos integrados en Contexto, retrato institucional, créditos, texto accesible y recursos existentes | Correcto |
 | Audio | MP3 real de 40.174.404 bytes; SHA y duración 1673.900408 s verificados con `ffprobe` | Correcto |
-| Sincronización | Cero campos `start`/`end` en el documento Orbuch; cero SRT/VTT publicado; estado `pending` | Correcto y pendiente por fuente |
-| Pineau | SHA de `readingDocument.js` y MP3 sin cambios; estado `ready`; controles compartidos presentes | Correcto |
+| Sincronización | SRT de 410 cues; igualdad de 22.528 caracteres normalizados; 154 unidades temporizadas; cuatro controles de onda < 0,45 s; estado `ready` | Correcto |
+| Pineau | SHA de `readingDocument.js` y MP3 sin cambios; estado `ready`; velocidades compartidas `0,9×` y `1,1×` agregadas | Correcto |
 | Exportación | Metadatos por obra; TXT/JSON; posición real de audio diferenciada en Orbuch | Correcto por contrato |
 | Responsive | Breakpoints de obra 1040/780/520 y lector 1220/900/640; ancho fluido, navegación móvil y `overflow` controlado | Correcto por análisis estático |
 | Accesibilidad | HTML semántico, `alt`, labels, foco visible, teclado, `aria-current`, estados y movimiento reducido | Correcto por análisis estático |
 | Build raíz | Biblioteca y dos `index.html` físicos; assets y chunk común | Correcto |
 | Build Pages | Base `/audiolibros-historia-educacion-fisica/`, tres entradas y assets | Correcto |
 
-`pdfinfo` confirmó 14 páginas para el artículo, 14 para el cuadernillo de 1949 y 17 para el de 1950. Los hashes completos están en `data/orbuch-assets-inventory.csv`.
+`pdfinfo` confirmó 14 páginas para el artículo, 14 para el cuadernillo de 1949 y 17 para el de 1950. El SRT y el retrato institucional también quedan fijados por SHA-256. Los hashes completos están en `data/orbuch-assets-inventory.csv`.
 
 ## Regresión de Pineau
 
@@ -56,7 +56,7 @@ No se presenta como realizada una prueba manual posrefactor de play/pausa, seek,
 
 Los anchos de referencia 360, 390, 768, 1024 y 1366 px quedan cubiertos por el diseño base y sus breakpoints, y el código evita anchos rígidos, deformación de miniaturas y navegación móvil oculta. Sin embargo, la inspección visual interactiva en esos cinco viewports y la prueba manual completa de audio, notas, persistencia, exportación y compartir deben realizarse en el preview del PR o en un entorno con navegador habilitado.
 
-La sincronización fina de Orbuch seguirá pendiente aun después de esa revisión hasta recuperar el SRT/VTT correspondiente al MP3 definitivo.
+La sincronización fina de Orbuch dejó de estar pendiente al incorporarse el SRT aportado por el proyecto. La revisión manual del seguimiento completo sigue siendo recomendable en el preview del PR; el entorno local de navegador continúa bloqueando URLs `127.0.0.1` con `ERR_BLOCKED_BY_CLIENT`.
 
 ## CI
 

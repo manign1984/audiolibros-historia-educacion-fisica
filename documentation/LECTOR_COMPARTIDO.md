@@ -30,7 +30,7 @@ El componente recibe un objeto con `title`, `subtitle`, `author`, `duration`, `f
 
 Cada sección tiene `id`, `title`, `shortTitle` y `paragraphs`. Cada párrafo contiene `id`, `kind` y `sentences`. Toda oración requiere `id` y `text`. `start` y `end` solo se agregan cuando provienen de una sincronización real verificada.
 
-El documento de Pineau conserva 201 unidades temporizadas. El de Orbuch se construye desde su texto accesible y no contiene `start` ni `end` porque no se recuperó SRT/VTT.
+El documento de Pineau conserva 201 unidades temporizadas. El de Orbuch se construye desde su texto accesible y contiene 154 unidades temporizadas a partir del SRT aportado por el proyecto. El generador exige igualdad completa del texto normalizado, ajusta la duración del SRT a la del MP3 definitivo y registra hashes y controles contra la onda de audio en `orbuch-timings.json`.
 
 ## Audio, PDF y sincronización
 
@@ -39,6 +39,8 @@ El audio y el PDF se sirven como assets locales; el audio puede declarar además
 Con `sync.status: 'ready'`, el motor habilita oración activa, reproducción desde una oración, salto temporal por capítulo y seguimiento automático. Con `pending`, esas funciones dependientes de tiempos quedan ocultas o inactivas. El resto del lector sigue disponible.
 
 En una obra no sincronizada, una nota guarda la posición real del reproductor al crearse. La exportación la etiqueta como `playback-position-at-annotation`: permite volver a ese punto sin presentarlo como alineación oración–audio.
+
+El selector de reproducción vive en el motor común. Las velocidades publicadas son `0,75×`, `0,9×`, `1×`, `1,1×`, `1,25×`, `1,5×` y `2×`, por lo que cualquier cambio controlado allí afecta a ambas obras.
 
 ## Exportación
 

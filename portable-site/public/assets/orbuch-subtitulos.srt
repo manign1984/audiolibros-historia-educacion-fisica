@@ -1,0 +1,1990 @@
+1
+00:00:00,000 --> 00:00:00,500
+<break time="0.5s" />
+
+2
+00:00:00,500 --> 00:00:03,611
+Educar al cuerpo dentro y fuera del aula.
+
+3
+00:00:03,611 --> 00:00:06,815
+Análisis de dos experiencias en la Nueva
+Argentina de Perón.
+
+4
+00:00:06,815 --> 00:00:07,315
+<break time="0.5s" />
+
+5
+00:00:07,315 --> 00:00:08,662
+Iván Pablo Orbuch.
+
+6
+00:00:08,662 --> 00:00:09,162
+<break time="0.5s" />
+
+7
+00:00:09,162 --> 00:00:10,137
+Introducción.
+
+8
+00:00:10,137 --> 00:00:10,637
+<break time="0.5s" />
+
+9
+00:00:10,637 --> 00:00:14,528
+La fundación de entes gubernamentales
+destinados a regular y dirigir la
+
+10
+00:00:14,528 --> 00:00:18,865
+educación corporal ocurrió tanto en los
+años previos al ascenso del peronismo a
+
+11
+00:00:18,865 --> 00:00:22,200
+instancias de poder, como en los
+prolegómenos de su gobierno.
+
+12
+00:00:22,200 --> 00:00:26,984
+Por caso, en la década de mil novecientos
+treinta puede citarse a la Dirección
+
+13
+00:00:26,984 --> 00:00:31,767
+General de Educación Física y Cultura
+creada por Manuel Fresco el veintiuno de
+
+14
+00:00:31,767 --> 00:00:36,178
+julio de mil novecientos treinta y seis
+en la provincia de Buenos Aires.
+
+15
+00:00:36,178 --> 00:00:40,633
+El cuatro de junio de mil novecientos
+treinta y siete se erigió el Consejo
+
+16
+00:00:40,633 --> 00:00:45,271
+Nacional de Educación Física. De acuerdo
+a lo planteado por Eduardo Galak, el
+
+17
+00:00:45,271 --> 00:00:49,787
+diecisiete de junio de mil novecientos
+treinta y ocho, y como contrapartida
+
+18
+00:00:49,787 --> 00:00:54,669
+pedagógica, se creó la Dirección General
+de Educación Física bajo dependencia del
+
+19
+00:00:54,669 --> 00:00:57,354
+Ministerio de Justicia e Instrucción
+Pública.
+
+20
+00:00:57,354 --> 00:01:02,214
+Este breve recorrido demuestra que antes
+de la llegada del peronismo al poder la
+
+21
+00:01:02,214 --> 00:01:06,889
+cultura física tomó tanta importancia que
+se crearon varios organismos con la
+
+22
+00:01:06,889 --> 00:01:09,103
+finalidad de regularla y difundirla.
+
+23
+00:01:09,103 --> 00:01:13,099
+Por su parte, en la primera etapa del
+gobierno de Juan Domingo Perón se
+
+24
+00:01:13,099 --> 00:01:17,553
+hicieron palpables las discrepancias al
+interior de la coalición oficialista en
+
+25
+00:01:17,553 --> 00:01:21,549
+lo concerniente al modo en que debía
+implementarse la Educación Física.
+
+26
+00:01:21,549 --> 00:01:25,749
+Fue así que se presentaron tres
+propuestas legislativas. El veintiséis de
+
+27
+00:01:25,749 --> 00:01:30,181
+septiembre de mil novecientos cuarenta y
+seis, el Senador Nacional Diego Luis
+
+28
+00:01:30,181 --> 00:01:34,673
+Molinari, presentó un proyecto de Ley,
+proponiendo la creación de la Dirección
+
+29
+00:01:34,673 --> 00:01:38,639
+Nacional de Educación Física bajo la
+órbita del Ministerio de Guerra.
+
+30
+00:01:38,639 --> 00:01:43,547
+La segunda de las iniciativas se dio el
+veintitrés de octubre de mil novecientos
+
+31
+00:01:43,547 --> 00:01:48,517
+cuarenta y seis cuando el jujeño Manuel
+Sarmiento, proveniente de la Unión Cívica
+
+32
+00:01:48,517 --> 00:01:53,177
+Radical Yrigoyenista, el porteño Antonio
+Benítez y el bonaerense José Emilio
+
+33
+00:01:53,177 --> 00:01:57,837
+Visca, ambos integrantes del Partido
+Laborista elaboraron un proyecto de Ley
+
+34
+00:01:57,837 --> 00:02:02,496
+con la finalidad de crear el Consejo
+Nacional de Educación Física y Medicina
+
+35
+00:02:02,496 --> 00:02:06,224
+del Deporte en dependencia de la
+Secretaría de Salud Pública.
+
+36
+00:02:06,224 --> 00:02:11,057
+Por último, el cinco de febrero de mil
+novecientos cuarenta y siete, se presentó
+
+37
+00:02:11,057 --> 00:02:15,339
+un proyecto para erigir el Consejo
+Nacional de Educación Física bajo la
+
+38
+00:02:15,339 --> 00:02:17,602
+dependencia del Ministerio de Guerra.
+
+39
+00:02:17,602 --> 00:02:22,025
+En lo concerniente a la Dirección
+Nacional de Educación Física, se sostiene
+
+40
+00:02:22,025 --> 00:02:26,507
+en sus fundamentos la imperiosa necesidad
+de su creación ya que Argentina se
+
+41
+00:02:26,507 --> 00:02:30,930
+encontraba retrasada respecto a países
+como Estados Unidos, Brasil, México,
+
+42
+00:02:30,930 --> 00:02:35,472
+Chile y Venezuela quienes contaban con
+organismos estatales que organizaban y
+
+43
+00:02:35,472 --> 00:02:37,385
+coordinaban la Educación Física.
+
+44
+00:02:37,385 --> 00:02:42,726
+Dado que esta era una parte central de la
+educación integral de los ciudadanos, el
+
+45
+00:02:42,726 --> 00:02:46,023
+deber del Estado pasaba por fomentarla y
+regularla.
+
+46
+00:02:46,023 --> 00:02:50,611
+El Consejo Nacional de Educación Física y
+Medicina del Deporte tuvo entre sus
+
+47
+00:02:50,611 --> 00:02:55,320
+objetivos unir el aspecto sanitario con
+la educación corporal situándose dentro
+
+48
+00:02:55,320 --> 00:03:00,211
+de la medicina social. Esta especialidad
+luchaba contra los factores indirectos de
+
+49
+00:03:00,211 --> 00:03:04,678
+la enfermedad y mortalidad, dado que
+buscaba asegurar la prolongación de la
+
+50
+00:03:04,678 --> 00:03:05,946
+vida útil del hombre.
+
+51
+00:03:05,946 --> 00:03:11,067
+Vale la pena destacar que la intervención
+estatal en los procesos biológicos de las
+
+52
+00:03:11,067 --> 00:03:15,938
+personas fue una constante en el plano
+internacional a mediados de siglo veinte
+
+53
+00:03:15,938 --> 00:03:20,871
+y fue definida por Michael Foucault como
+biopolítica. Abonando lo mencionado, en
+
+54
+00:03:20,871 --> 00:03:24,243
+un trabajo realizado con Eduardo Galak,
+sostenemos que:
+
+55
+00:03:24,243 --> 00:03:28,971
+Resulta significativo aclarar que este
+sentido respecto a lo político del
+
+56
+00:03:28,971 --> 00:03:33,699
+peronismo puede ser leído en clave
+biopolítica pensada como régimen de la
+
+57
+00:03:33,699 --> 00:03:34,553
+vida moderna.
+
+58
+00:03:34,553 --> 00:03:39,151
+El modo de gobierno peronista expresado
+en los Planes Quinquenales de mil
+
+59
+00:03:39,151 --> 00:03:43,365
+novecientos cuarenta y seis a mil
+novecientos cincuenta y uno y mil
+
+60
+00:03:43,365 --> 00:03:48,091
+novecientos cincuenta y dos a mil
+novecientos cincuenta y cinco refleja una
+
+61
+00:03:48,091 --> 00:03:52,241
+explícita pretensión por gestionar
+centralizadamente la vida de la
+
+62
+00:03:52,241 --> 00:03:56,647
+población, particularmente a través de
+institucionalizar -y, por ende,
+
+63
+00:03:56,647 --> 00:03:58,563
+legitimar- prácticas sociales.
+
+64
+00:03:58,563 --> 00:04:02,885
+La iniciativa legislativa planteaba que
+el presidente del Consejo Nacional de
+
+65
+00:04:02,885 --> 00:04:06,411
+Educación Física y Medicina del Deporte
+tenía que ser un civil.
+
+66
+00:04:06,411 --> 00:04:11,132
+Además, se abogaba por la obligatoriedad
+de la Educación Física en todos los
+
+67
+00:04:11,132 --> 00:04:15,539
+niveles educativos, tanto “nacionales,
+municipales, o particulares”. La
+
+68
+00:04:15,539 --> 00:04:20,134
+formación profesional de los futuros
+docentes también quedaba en manos del
+
+69
+00:04:20,134 --> 00:04:20,575
+Estado.
+
+70
+00:04:20,575 --> 00:04:24,555
+Por su parte, el Consejo Nacional de
+Educación Física debía quedar bajo
+
+71
+00:04:24,555 --> 00:04:28,991
+dependencia del Ministerio de Guerra,
+colaborar con los equipos técnicos de las
+
+72
+00:04:28,991 --> 00:04:33,426
+Fuerzas Armadas a fin de fijar normas
+para difundir la cultura física, ocuparse
+
+73
+00:04:33,426 --> 00:04:37,464
+de lo relativo a la práctica e
+instrucción del tiro deportivo y proponer
+
+74
+00:04:37,464 --> 00:04:40,591
+los planes de enseñanza para la pre y
+post conscripción.
+
+75
+00:04:40,591 --> 00:04:45,702
+Asimismo, debía dar las directivas “a las
+que ha de someterse la Educación Física
+
+76
+00:04:45,702 --> 00:04:50,621
+por el personal de las organizaciones
+industriales y comerciales, de fábrica y
+
+77
+00:04:50,621 --> 00:04:54,198
+de talleres, así como el de las
+reparticiones estatales”.
+
+78
+00:04:54,198 --> 00:04:59,413
+Esto demuestra: por un lado, las
+intenciones de expandir la cultura física
+
+79
+00:04:59,413 --> 00:05:04,772
+por fuera del sistema educativo y por el
+otro el propósito de dotarla de una
+
+80
+00:05:04,772 --> 00:05:06,272
+impronta militarista.
+
+81
+00:05:06,272 --> 00:05:10,121
+En el Consejo Nacional de Educación
+Física se buscaba establecer la
+
+82
+00:05:10,121 --> 00:05:14,028
+obligatoriedad de la práctica de la
+Educación Física en las escuelas
+
+83
+00:05:14,028 --> 00:05:18,518
+primarias, secundarias, especiales y
+superiores sean nacionales, municipales o
+
+84
+00:05:18,518 --> 00:05:19,043
+privadas.
+
+85
+00:05:19,043 --> 00:05:24,094
+La citada exigencia contribuyó a dejar en
+claro la escasez de condiciones adecuadas
+
+86
+00:05:24,094 --> 00:05:28,960
+en la mayoría de los establecimientos del
+país. Su falta de obligatoriedad hasta
+
+87
+00:05:28,960 --> 00:05:33,457
+entonces, revelaba que la asignatura
+ocupaba aún un lugar subalterno en la
+
+88
+00:05:33,457 --> 00:05:33,950
+escuela.
+
+89
+00:05:33,950 --> 00:05:38,434
+Las dilaciones en la sanción de estos
+proyectos de ley mencionados, influyeron
+
+90
+00:05:38,434 --> 00:05:41,055
+para que Perón decida intervenir en el
+asunto.
+
+91
+00:05:41,055 --> 00:05:45,883
+De hecho, el diez de febrero de mil
+novecientos cuarenta y siete se dirigió a
+
+92
+00:05:45,883 --> 00:05:50,648
+la Honorable Cámara de Diputados de la
+Nación solicitándoles que “se incluya
+
+93
+00:05:50,648 --> 00:05:55,349
+entre los asuntos a considerar en las
+actuales sesiones extraordinarias, el
+
+94
+00:05:55,349 --> 00:06:00,050
+Proyecto de Ley por el que se crea el
+Consejo Nacional de Educación Física”
+
+95
+00:06:00,050 --> 00:06:03,671
+enviado apenas días antes, el cinco de
+febrero de ese año.
+
+96
+00:06:03,671 --> 00:06:08,456
+Finalmente, el entonces presidente
+dispuso su creación por medio del decreto
+
+97
+00:06:08,456 --> 00:06:12,986
+treinta y cuatro mil ochocientos
+diecisiete del seis de noviembre de mil
+
+98
+00:06:12,986 --> 00:06:17,325
+novecientos cuarenta y siete. La
+existencia de distintos proyectos de
+
+99
+00:06:17,325 --> 00:06:22,110
+leyes en un corto periodo reveló la
+presencia de tensiones al interior de la
+
+100
+00:06:22,110 --> 00:06:23,641
+coalición gubernamental.
+
+101
+00:06:23,641 --> 00:06:28,109
+El Consejo Nacional de Educación Física
+puede interpretarse como un elemento de
+
+102
+00:06:28,109 --> 00:06:32,290
+continuidad respecto a organismos
+gubernamentales erigidos con antelación,
+
+103
+00:06:32,290 --> 00:06:35,669
+cuyo propósito era planificar la cultura
+física poblacional.
+
+104
+00:06:35,669 --> 00:06:39,847
+No obstante, a los fines de esta
+investigación, el signo distintivo del
+
+105
+00:06:39,847 --> 00:06:44,144
+nuevo ente radica en las rupturas
+propiciadas por su accionar visibles en
+
+106
+00:06:44,144 --> 00:06:48,918
+la escala y masividad de sus políticas,
+puesto que estas se encontraron dirigidas
+
+107
+00:06:48,918 --> 00:06:50,112
+a toda la población.
+
+108
+00:06:50,112 --> 00:06:54,170
+Esto significará la intención de abarcar
+a todo el territorio nacional con
+
+109
+00:06:54,170 --> 00:06:58,395
+contenidos, propuestas metodológicas,
+recursos humanos y materiales provistos
+
+110
+00:06:58,395 --> 00:07:02,730
+por el Estado en sintonía con la mayor
+centralización propuesta por el gobierno
+
+111
+00:07:02,730 --> 00:07:05,065
+peronista en otras esferas
+gubernamentales.
+
+112
+00:07:06,065 --> 00:07:08,341
+Gimnasia compensatoria en el aula.
+
+113
+00:07:09,341 --> 00:07:13,955
+En el año mil novecientos cuarenta y
+nueve un cuadernillo elaborado por el
+
+114
+00:07:13,955 --> 00:07:18,632
+Consejo Nacional de Educación Física
+llegó al ámbito escolar. Su título era
+
+115
+00:07:18,632 --> 00:07:23,499
+Gimnasia Compensatoria en el aula. Su
+autor fue Alejandro Amavet quien cumplió
+
+116
+00:07:23,499 --> 00:07:26,849
+un destacado papel en el campo de la
+Educación Física.
+
+117
+00:07:26,849 --> 00:07:31,469
+El folleto estuvo destinado a alumnos de
+segundo a sexto grado de la escuela
+
+118
+00:07:31,469 --> 00:07:36,398
+primaria y se distribuyó en las escuelas
+de todo el país mediante la impresión de
+
+119
+00:07:36,398 --> 00:07:41,080
+diez mil ejemplares. En su portada se
+aprecia a un alumno haciendo ejercicios
+
+120
+00:07:41,080 --> 00:07:41,942
+en su pupitre.
+
+121
+00:07:41,942 --> 00:07:46,719
+Precisamente esa era la idea del
+material: introducir la Educación Física
+
+122
+00:07:46,719 --> 00:07:50,766
+en todas las asignaturas escolares, ya
+que su práctica diaria:
+
+123
+00:07:50,766 --> 00:07:55,448
+No interfiere en lo más mínimo en la
+enseñanza de las otras asignaturas, pues
+
+124
+00:07:55,448 --> 00:08:00,130
+tres minutos restados a la hora escolar
+nada significan y reemplazan en forma
+
+125
+00:08:00,130 --> 00:08:05,120
+útil un tiempo mucho mayor que se pierde
+en reconvenciones disciplinarias, que son
+
+126
+00:08:05,120 --> 00:08:08,878
+las que realmente perjudican el normal
+desarrollo de aquellas.
+
+127
+00:08:08,878 --> 00:08:13,948
+El cuadernillo intentó ser un firme
+aliado de la educación corporal que
+
+128
+00:08:13,948 --> 00:08:19,598
+debían poseer los alumnos argentinos,
+demostrando el lugar protagónico que de a
+
+129
+00:08:19,598 --> 00:08:22,857
+poco empezaba a tener en el sistema
+educativo.
+
+130
+00:08:22,857 --> 00:08:27,583
+La Educación Física, desde esta lógica,
+puede pensarse como el dispositivo por
+
+131
+00:08:27,583 --> 00:08:29,916
+excelencia de la educación del cuerpo.
+
+132
+00:08:29,916 --> 00:08:35,466
+Las imágenes muestran un grupo de alumnos
+de nivel primario ejercitándose en clase
+
+133
+00:08:35,466 --> 00:08:40,400
+en dos prestigiosas escuelas, El
+Instituto Félix Bernasconi del barrio de
+
+134
+00:08:40,400 --> 00:08:45,402
+Parque Patricios sito en Capital Federal,
+y la Escuela Graduada Joaquín V.
+
+135
+00:08:45,402 --> 00:08:49,513
+González, dependiente de la Universidad
+Nacional de La Plata.
+
+136
+00:08:49,513 --> 00:08:53,917
+La trascendencia de esas instituciones
+educativas sirve como legitimadoras de
+
+137
+00:08:53,917 --> 00:08:56,293
+las prácticas que se quieren implementar.
+
+138
+00:08:56,293 --> 00:09:01,019
+Puede esgrimirse, en la percepción de
+cualquier directivo que tome contacto con
+
+139
+00:09:01,019 --> 00:09:05,018
+este folleto, que si esas notables
+escuelas practicaban la gimnasia
+
+140
+00:09:05,018 --> 00:09:09,017
+compensatoria no debían caber dudas de
+sus altos efectos benéficos.
+
+141
+00:09:09,017 --> 00:09:13,203
+El presente folleto tiene por objeto
+poner al alcance del docente un
+
+142
+00:09:13,203 --> 00:09:18,076
+procedimiento simple pero eficaz para
+prevenir y en todo caso contrarrestar los
+
+143
+00:09:18,076 --> 00:09:22,699
+vicios más comunes de la postura del
+educando cuyas causas deben atribuirse
+
+144
+00:09:22,699 --> 00:09:27,697
+tanto a los bancos inapropiados, como a
+la inmovilidad forzada en el aula y a las
+
+145
+00:09:27,697 --> 00:09:31,633
+técnicas de enseñanza de ciertas ramas
+intelectuales y manuales.
+
+146
+00:09:31,633 --> 00:09:37,113
+Un objetivo explícito es el de normalizar
+hábitos y conductas a fin de lograr una
+
+147
+00:09:37,113 --> 00:09:39,853
+homogeneización de la población escolar.
+
+148
+00:09:39,853 --> 00:09:45,393
+Por su parte, otro concepto que recorre
+las páginas del citado documento es que
+
+149
+00:09:45,393 --> 00:09:49,512
+debe desterrarse “la antinomia de lo
+físico con lo mental”.
+
+150
+00:09:49,512 --> 00:09:53,515
+De ese modo las argumentaciones hacían
+hincapié en dejar en claro las
+
+151
+00:09:53,515 --> 00:09:58,165
+potencialidades de este tipo de gimnasia
+que se haría a toda hora y en todas las
+
+152
+00:09:58,165 --> 00:10:02,756
+clases a fin de dotar a los alumnos de
+una mejor postura ya que “sólo el cuerpo
+
+153
+00:10:02,756 --> 00:10:07,171
+sigue siendo la envoltura ordinaria que
+protege a medias el precioso don del
+
+154
+00:10:07,171 --> 00:10:08,878
+conocimiento y la sabiduría”.
+
+155
+00:10:08,878 --> 00:10:13,459
+Las ideas de una educación integral que
+contemple lo físico, lo intelectual y lo
+
+156
+00:10:13,459 --> 00:10:17,981
+moral también pueden vislumbrarse en el
+presente documento del Consejo Nacional
+
+157
+00:10:17,981 --> 00:10:19,141
+de Educación Física.
+
+158
+00:10:19,141 --> 00:10:22,898
+Cierto es que para los defectos
+posturales se habla de gimnasia
+
+159
+00:10:22,898 --> 00:10:27,382
+correctiva, como si esta especial
+terapéutica fuera tan fácil y conveniente
+
+160
+00:10:27,382 --> 00:10:31,805
+de aplicar actualmente en la escuela,
+pero es necesario convenir que tales
+
+161
+00:10:31,805 --> 00:10:36,652
+defectos tienen su origen por lo general
+en los malos hábitos de la actitud y que
+
+162
+00:10:36,652 --> 00:10:41,257
+estos pueden fácilmente combatirse por
+quienes tienen la misión de educar, no
+
+163
+00:10:41,257 --> 00:10:44,590
+unilateralmente, sino en toda la acepción
+de la palabra.
+
+164
+00:10:44,590 --> 00:10:50,012
+Y si el maestro estudia para a su vez
+enseñar las asignaturas intelectuales más
+
+165
+00:10:50,012 --> 00:10:55,504
+diversas, porque así lo exige su delicada
+y noble misión, también debe poseer el
+
+166
+00:10:55,504 --> 00:11:00,579
+conocimiento y la práctica de todo
+aquello que beneficie al educando en lo
+
+167
+00:11:00,579 --> 00:11:06,071
+que se refiere a su naturaleza física.
+Recién entonces podrá ostentar el honroso
+
+168
+00:11:06,071 --> 00:11:07,392
+título de educador.
+
+169
+00:11:07,392 --> 00:11:11,656
+El intento de posicionar a la Educación
+Física como una asignatura prestigiosa
+
+170
+00:11:11,656 --> 00:11:15,256
+dentro del sistema escolar, del mismo
+modo que el llamamiento a la
+
+171
+00:11:15,256 --> 00:11:17,748
+participación docente se observa con
+claridad.
+
+172
+00:11:17,748 --> 00:11:23,092
+La conciencia de la responsabilidad
+inherente a la labor docente, “sabiamente
+
+173
+00:11:23,092 --> 00:11:28,577
+administrada, le hará ver que no es el
+desarrollo más o menos perfecto del plan
+
+174
+00:11:28,577 --> 00:11:34,132
+de estudio el desiderátum de la escuela,
+sino el alumno en su educación integral
+
+175
+00:11:34,132 --> 00:11:37,718
+que es, en suma, el principio y el fin de
+la misma”.
+
+176
+00:11:37,718 --> 00:11:42,098
+En esa educación integral que pregonaba
+el gobierno peronista el lugar de la
+
+177
+00:11:42,098 --> 00:11:46,420
+Educación Física era central. Por eso no
+debe sorprender que a lo largo del
+
+178
+00:11:46,420 --> 00:11:50,975
+documento se busque dejar en claro los
+efectos positivos tanto para la escuela,
+
+179
+00:11:50,975 --> 00:11:53,136
+como para los docentes y los alumnos.
+
+180
+00:11:53,136 --> 00:11:57,945
+Sobre los estudiantes, la gimnasia
+compensatoria podía contribuir a crear
+
+181
+00:11:57,945 --> 00:12:02,888
+los hábitos automáticos de una buena
+postura “liberándolo de reconvenciones
+
+182
+00:12:02,888 --> 00:12:05,025
+verbales inoportunas”. A su vez:
+
+183
+00:12:05,025 --> 00:12:10,543
+ayuda al crecimiento normal del niño.
+Beneficia el aparato cardiorespiratorio,
+
+184
+00:12:10,543 --> 00:12:13,338
+sin alterar mayormente su ritmo normal.
+
+185
+00:12:13,338 --> 00:12:17,937
+Actúa higiénicamente sobre su
+incontenible necesidad de movimiento al
+
+186
+00:12:17,937 --> 00:12:22,739
+encauzar la actividad infantil al
+procurar la satisfacción subsiguiente.
+
+187
+00:12:22,739 --> 00:12:27,405
+Actúa positivamente sobre la conducta
+normalizando la atención pata el
+
+188
+00:12:27,405 --> 00:12:30,381
+aprendizaje de las asignaturas
+intelectuales.
+
+189
+00:12:30,381 --> 00:12:35,005
+Desde esta perspectiva, la Educación
+Física “ya no será simplemente un saber
+
+190
+00:12:35,005 --> 00:12:37,533
+de la normación sino de la
+normalización”.
+
+191
+00:12:37,533 --> 00:12:42,347
+Respecto a la labor docente, la gimnasia
+compensatoria contribuía con numerosos
+
+192
+00:12:42,347 --> 00:12:47,100
+aportes, subestimados por “la educación
+intelectualista en boga”. De ese modo:
+
+193
+00:12:47,100 --> 00:12:52,043
+Aseguraba una mejor fiscalización de la
+enseñanza que imparte a la dada, por la
+
+194
+00:12:52,043 --> 00:12:57,050
+eliminación de la fatiga psicofísica que
+disminuye la atención y predispone a la
+
+195
+00:12:57,050 --> 00:12:57,874
+indisciplina.
+
+196
+00:12:57,874 --> 00:13:03,158
+Evita toda clase de reconvenciones
+verbales a los mal sentados o que adoptan
+
+197
+00:13:03,158 --> 00:13:08,654
+posturas inconvenientes, Permite un mayor
+dominio disciplinario sobre la clase.
+
+198
+00:13:08,654 --> 00:13:12,177
+Completa digna y eficazmente su acción de
+educador.
+
+199
+00:13:12,177 --> 00:13:17,223
+En lo atinente a la institución escolar,
+la gimnasia compensatoria contribuye a
+
+200
+00:13:17,223 --> 00:13:21,558
+normalizar, afianzar y consolidar la
+disciplina de todos los grados.
+
+201
+00:13:21,558 --> 00:13:26,264
+Siguiendo los aportes de Somoza
+Rodríguez, la mirada disciplinaria de la
+
+202
+00:13:26,264 --> 00:13:31,500
+pedagogía implementada por el gobierno
+peronista se aprecia en los propósitos de
+
+203
+00:13:31,500 --> 00:13:35,211
+este cuadernillo. De este modo la
+gimnasia compensatoria:
+
+204
+00:13:35,211 --> 00:13:39,333
+Refuerza eficazmente la relativa
+eficiencia de la actual clase de
+
+205
+00:13:39,333 --> 00:13:44,357
+Educación Física. Ya que esta necesita
+determinadas comodidades y elementos, de
+
+206
+00:13:44,357 --> 00:13:49,317
+los que por ahora carece, para cumplir
+sus fines: la gimnasia compensatoria se
+
+207
+00:13:49,317 --> 00:13:54,019
+hace diariamente sin necesidad de
+gimnasio, vestuario, vestimenta y ducha.
+
+208
+00:13:54,019 --> 00:13:58,037
+Contribuye a dignificar la misión de la
+escuela transformándola realmente en el
+
+209
+00:13:58,037 --> 00:14:00,149
+centro de formación integral de la niñez.
+
+210
+00:14:00,149 --> 00:14:04,458
+Por cierto, para que todas estas ventajas
+pudieran materializarse era menester,
+
+211
+00:14:04,458 --> 00:14:08,712
+desde la perspectiva de los funcionarios
+que pergeñaron este material, que los
+
+212
+00:14:08,712 --> 00:14:11,806
+docentes se dieran cuenta de sus enormes
+potencialidades.
+
+213
+00:14:11,806 --> 00:14:16,832
+Sólo así se podían adquirir resultados
+positivos. La constante recurrencia en la
+
+214
+00:14:16,832 --> 00:14:22,050
+búsqueda de la ayuda del plantel docente,
+refleja que necesariamente hubo tensiones
+
+215
+00:14:22,050 --> 00:14:26,504
+para que el peronismo imponga
+uniformemente sus criterios, en línea con
+
+216
+00:14:26,504 --> 00:14:29,685
+lo planteado por Adriana Puiggrós y Jorge
+Bernetti.
+
+217
+00:14:29,685 --> 00:14:33,948
+El folleto dejaba en claro, ante la
+posible desconfianza del cuerpo
+
+218
+00:14:33,948 --> 00:14:38,664
+magisterial, que el propósito no era
+formar gimnastas, sino que se buscaba
+
+219
+00:14:38,664 --> 00:14:42,410
+formar el carácter de los argentinos. A
+tales efectos, era:
+
+220
+00:14:42,410 --> 00:14:47,198
+Necesario dejar de considerar a la
+Educación Física como una asignatura de
+
+221
+00:14:47,198 --> 00:14:52,184
+enseñanza ya que el alumno no viene a
+aprenderla sino a hacerla. Cuando falla
+
+222
+00:14:52,184 --> 00:14:56,907
+este postulado esencial, el maestro
+trabaja sin interés y el aburrimiento
+
+223
+00:14:56,907 --> 00:14:59,268
+alcanza a la mayoría de los alumnos.
+
+224
+00:14:59,268 --> 00:15:05,039
+Por extensión la escuela resulta engañada
+y se utiliza a los niños para realizar
+
+225
+00:15:05,039 --> 00:15:10,518
+inútiles remedos de desfiles y números
+anodino donde no hay arte y menos aún
+
+226
+00:15:10,518 --> 00:15:11,760
+Educación Física.
+
+227
+00:15:11,760 --> 00:15:16,168
+La gimnasia compensatoria tendrá la
+virtud de hacer conocer lo que es un
+
+228
+00:15:16,168 --> 00:15:21,010
+educando en vías de formación y demostrar
+al maestro que así como puede obrarse
+
+229
+00:15:21,010 --> 00:15:25,603
+sobre la inteligencia y sentimiento de
+los alumnos, puede actuarse con toda
+
+230
+00:15:25,603 --> 00:15:30,011
+eficiencia sobre el cuerpo preservándolo,
+mejorándolo y embelleciéndolo.
+
+231
+00:15:30,011 --> 00:15:35,182
+El documento realiza una directa crítica
+a los desfiles infantiles, asociado al
+
+232
+00:15:35,182 --> 00:15:40,287
+tipo de Educación Física propiciada por
+los militares, si bien su autor era un
+
+233
+00:15:40,287 --> 00:15:44,927
+docente con larga trayectoria como
+docente en el ámbito militar, lo que
+
+234
+00:15:44,927 --> 00:15:47,380
+demuestra la complejidad del periodo.
+
+235
+00:15:47,380 --> 00:15:51,733
+La distinción entre escuela teórica y
+escuela práctica, cara al ideario
+
+236
+00:15:51,733 --> 00:15:56,458
+peronista, donde se busca formar un
+ciudadano activo y en movimiento se torna
+
+237
+00:15:56,458 --> 00:16:00,873
+visible, del mismo modo que las
+reminiscencias de un discurso impregnado
+
+238
+00:16:00,873 --> 00:16:02,241
+de tintes eugenésicos.
+
+239
+00:16:02,241 --> 00:16:06,902
+Se puede verificar que estos postulados
+están inmersos en la necesidad de generar
+
+240
+00:16:06,902 --> 00:16:11,446
+una escuela activa que deje atrás las
+tradicionales características discursivas
+
+241
+00:16:11,446 --> 00:16:15,058
+donde el docente se pasaba largos minutos
+explicando los temas.
+
+242
+00:16:15,058 --> 00:16:19,110
+La gimnasia compensatoria debía
+impartirse en conjunto bajo la dirección
+
+243
+00:16:19,110 --> 00:16:23,333
+del propio maestro de grado, el que
+ulteriormente se haría reemplazar, para
+
+244
+00:16:23,333 --> 00:16:27,042
+que sirva de estímulo, por aquellos
+alumnos que demuestren mayores
+
+245
+00:16:27,042 --> 00:16:28,526
+disposiciones y aptitudes.
+
+246
+00:16:28,526 --> 00:16:33,644
+Las indicaciones al modo de impartir la
+gimnasia compensatoria revelan que la
+
+247
+00:16:33,644 --> 00:16:35,260
+misma debía practicarse:
+
+248
+00:16:35,260 --> 00:16:40,972
+a) Diariamente SIN EXCEPCIÓN a razón de
+una vez por cada hora escolar.
+
+249
+00:16:40,972 --> 00:16:44,780
+b) Con una duración no mayor de TRES
+MINUTOS por clase.
+
+250
+00:16:44,780 --> 00:16:49,427
+c) AL PROMEDIAR LA HORA DE CLASE, que es
+cuando comienza a manifestarse la
+
+251
+00:16:49,427 --> 00:16:54,328
+necesidad de su aplicación. Si razones
+pedagógicas de otra índole aconsejan su
+
+252
+00:16:54,328 --> 00:16:58,530
+postergación (no su adelanto o
+eliminación) será conveniente que su
+
+253
+00:16:58,530 --> 00:17:03,495
+práctica se realice no lejos de la señal
+que marca la mitad de la hora escolar.
+
+254
+00:17:03,495 --> 00:17:07,940
+El folleto dedica numeroso espacio a
+enseñar la didáctica de los ejercicios a
+
+255
+00:17:07,940 --> 00:17:12,678
+los docentes que se encargarían de llevar
+a la práctica este tipo de gimnasia, que
+
+256
+00:17:12,678 --> 00:17:16,773
+es un claro intento de expandir la
+influencia de la Educación Física al
+
+257
+00:17:16,773 --> 00:17:18,820
+resto de las asignaturas escolares.
+
+258
+00:17:18,820 --> 00:17:24,065
+Empero, es marcado el tono exploratorio
+de las sugerencias a adoptar, seguramente
+
+259
+00:17:24,065 --> 00:17:27,736
+como un modo de cooptar docentes para
+llevarlas adelante.
+
+260
+00:17:27,736 --> 00:17:31,975
+La correcta postura al sentarse es uno de
+los temas claves para la gimnasia
+
+261
+00:17:31,975 --> 00:17:35,641
+compensatoria y en el cuadernillo se
+dedican numerosos gráficos y
+
+262
+00:17:35,641 --> 00:17:39,994
+explicaciones para que los docentes
+puedan comprender la específica didáctica
+
+263
+00:17:39,994 --> 00:17:40,739
+que requería.
+
+264
+00:17:40,739 --> 00:17:45,489
+A sabiendas de las distintas lecturas que
+el plantel profesoral podía hacer del
+
+265
+00:17:45,489 --> 00:17:50,056
+material se realizó una aclaración que
+buscaba a la vez tranquilizar y sumar
+
+266
+00:17:50,056 --> 00:17:53,649
+adeptos para la implementación de la
+gimnasia compensatoria:
+
+267
+00:17:53,649 --> 00:17:58,568
+Para la confección de este plan elemental
+se ha tenido en cuenta, primordialmente,
+
+268
+00:17:58,568 --> 00:17:59,965
+su valor de aplicación.
+
+269
+00:17:59,965 --> 00:18:04,996
+Precisamente su sencillez está de acuerdo
+con lo factible y tanto el maestro que lo
+
+270
+00:18:04,996 --> 00:18:09,965
+interprete y enseñe cómo el alumno que lo
+practique, no han de encontrar en él los
+
+271
+00:18:09,965 --> 00:18:14,628
+inconvenientes de otras iniciativas de
+gran valor pedagógico para la escuela,
+
+272
+00:18:14,628 --> 00:18:19,290
+pero cuya aplicación se ha visto trabada
+desde sus comienzos por pretender lo
+
+273
+00:18:19,290 --> 00:18:24,076
+amplio y definitivo antes que lo simple y
+gradual, que el principio esencial de
+
+274
+00:18:24,076 --> 00:18:24,996
+toda enseñanza.
+
+275
+00:18:24,996 --> 00:18:29,385
+Cuando se aprecien los beneficios, los
+maestros serán los más grandes
+
+276
+00:18:29,385 --> 00:18:33,387
+entusiastas propulsores de esta
+actividad. El derrotero de esta
+
+277
+00:18:33,387 --> 00:18:37,904
+iniciativa, que distó de poder
+implementarse de modo acabado, da cuenta
+
+278
+00:18:37,904 --> 00:18:42,874
+de las tensiones existentes entre las
+directivas emanadas y su efectiva puesta
+
+279
+00:18:42,874 --> 00:18:44,036
+en funcionamiento.
+
+280
+00:18:44,036 --> 00:18:48,235
+En efecto, puede apreciarse que la
+relación entre la macro política
+
+281
+00:18:48,235 --> 00:18:52,624
+educativa y la realidad institucional
+escolar no se presentó exenta de
+
+282
+00:18:52,624 --> 00:18:53,324
+conflictos.
+
+283
+00:18:54,324 --> 00:18:55,857
+Gimnasia de Oficinas.
+
+284
+00:18:56,857 --> 00:19:01,205
+El folleto fue parte de las políticas
+públicas implementadas por el gobierno
+
+285
+00:19:01,205 --> 00:19:05,727
+peronista en lo referido a diseminar la
+educación corporal en la población. Los
+
+286
+00:19:05,727 --> 00:19:10,017
+datos disponibles respecto a su forma de
+distribución son escasos y sólo se
+
+287
+00:19:10,017 --> 00:19:14,771
+menciona en el folleto que se imprimieron
+cinco mil ediciones, lo cual es un número
+
+288
+00:19:14,771 --> 00:19:15,525
+considerable.
+
+289
+00:19:15,525 --> 00:19:20,411
+Se trató de un segmento fuera del alcance
+de las políticas educativas, y por tanto
+
+290
+00:19:20,411 --> 00:19:24,935
+puede afirmarse que fue novedosa la
+propuesta en tanto el gobierno peronista
+
+291
+00:19:24,935 --> 00:19:29,398
+buscó adentrarse en el ámbito privado
+desde las políticas públicas, lo cual
+
+292
+00:19:29,398 --> 00:19:33,922
+redundó en un interés por mejorar las
+condiciones de vida de la población, a
+
+293
+00:19:33,922 --> 00:19:35,913
+tono con postulados biopolíticos.
+
+294
+00:19:35,913 --> 00:19:40,241
+En ese sentido, cabe destacar que en la
+primera página se hace referencia al
+
+295
+00:19:40,241 --> 00:19:44,742
+derecho a la preservación de la salud,
+tal como se lee en la nueva Constitución
+
+296
+00:19:44,742 --> 00:19:47,801
+sancionada en el año mil novecientos
+cuarenta y nueve.
+
+297
+00:19:47,801 --> 00:19:53,129
+Allí se hace referencia a que el derecho
+a la salud física, está asociada a la
+
+298
+00:19:53,129 --> 00:19:58,595
+salud moral, debiendo la sociedad y el
+Estado velar por ambas, lo que explicaría
+
+299
+00:19:58,595 --> 00:20:01,501
+la injerencia estatal en el ámbito
+privado.
+
+300
+00:20:01,501 --> 00:20:06,774
+El capítulo uno, titulado generalidades,
+advierte sobre algunas extendidas
+
+301
+00:20:06,774 --> 00:20:10,603
+percepciones que el cuadernillo se
+proponía desterrar.
+
+302
+00:20:10,603 --> 00:20:15,228
+El énfasis en estas cuestiones es
+visible, como si el éxito de la medida
+
+303
+00:20:15,228 --> 00:20:20,178
+dependiera de poder convencer a los
+oficinistas de las bondades de la cultura
+
+304
+00:20:20,178 --> 00:20:20,634
+física.
+
+305
+00:20:20,634 --> 00:20:25,387
+Si entráramos en una oficina común en
+plena actividad, haciendo abstracción
+
+306
+00:20:25,387 --> 00:20:29,948
+completa de todo elemento de trabajo o
+producción, y nos concretáramos a
+
+307
+00:20:29,948 --> 00:20:34,958
+observar exclusivamente y con criterio
+anatómico al numeroso personal absorbido
+
+308
+00:20:34,958 --> 00:20:39,069
+por la tarea cotidiana, quedaríamos
+asombrados por la cantidad de
+
+309
+00:20:39,069 --> 00:20:43,116
+interesantes comprobaciones y
+conclusiones que nos depararía tan
+
+310
+00:20:43,116 --> 00:20:44,272
+particular examen.
+
+311
+00:20:44,272 --> 00:20:48,582
+Muchas de esas conclusiones hacían
+referencia a la rutina laboral que era
+
+312
+00:20:48,582 --> 00:20:53,073
+interpretada como perniciosa para la
+salud corporal y mental transformando a
+
+313
+00:20:53,073 --> 00:20:57,383
+los hombres y mujeres en personas
+agobiadas que hacen su trabajo “como un
+
+314
+00:20:57,383 --> 00:20:59,179
+mal necesario para subsistir”.
+
+315
+00:20:59,179 --> 00:21:04,243
+Estas condiciones dieron lugar a la
+llamada “espalda de oficinas”, que era la
+
+316
+00:21:04,243 --> 00:21:09,440
+denominación con la que se conocía a la
+espalda curva, producto de las horas de
+
+317
+00:21:09,440 --> 00:21:11,439
+trabajo en una misma posición.
+
+318
+00:21:11,439 --> 00:21:17,383
+El cuadernillo prosigue explicando que se
+ha intentado poner fin a esta situación:
+
+319
+00:21:17,383 --> 00:21:22,628
+Desde el taylorismo hasta la recreación y
+el empleo de las horas libres, desde la
+
+320
+00:21:22,628 --> 00:21:26,758
+medicina del trabajo en sus fases
+preventivas de la higiene y la
+
+321
+00:21:26,758 --> 00:21:31,740
+psicotécnica, y terapéuticas de las
+clínicas y hospitales, hasta las modernas
+
+322
+00:21:31,740 --> 00:21:36,329
+legislaciones sociales, todas las
+técnicas adoptadas y ensayadas se han
+
+323
+00:21:36,329 --> 00:21:40,853
+movido, por lo general, dentro de un
+respeto absoluto por el tiempo de
+
+324
+00:21:40,853 --> 00:21:45,573
+trabajo, actuando ya sea antes o después
+de las horas dedicadas al mismo.
+
+325
+00:21:45,573 --> 00:21:50,549
+La explicación hizo hincapié en que el
+citado excesivo respeto por el trabajo se
+
+326
+00:21:50,549 --> 00:21:55,462
+tornó perjudicial puesto que contribuyó
+con un exponencial aumento de la fatiga
+
+327
+00:21:55,462 --> 00:21:58,297
+muscular de todos los trabajadores de
+oficina.
+
+328
+00:21:58,297 --> 00:22:03,219
+La gimnasia de oficinas según el folleto,
+“era un tipo profesional de gimnasia
+
+329
+00:22:03,219 --> 00:22:07,693
+compensatoria que, desarrollada sin
+mayores exigencias disciplinarias y
+
+330
+00:22:07,693 --> 00:22:12,167
+formales, obra a manera de derivativo
+psicofísico, descanso, estímulo y
+
+331
+00:22:12,167 --> 00:22:16,130
+regocijo para quienes lo aceptan y
+practiquen voluntariamente”.
+
+332
+00:22:16,130 --> 00:22:20,793
+En las páginas del folleto puede leerse
+que este tipo de actividad consistía en
+
+333
+00:22:20,793 --> 00:22:25,336
+una serie de ejercicios breves que se
+realizaban con la misma indumentaria de
+
+334
+00:22:25,336 --> 00:22:27,368
+trabajo, siendo interpretado como:
+
+335
+00:22:27,368 --> 00:22:32,397
+un alivio contra el sedentarismo, un
+estimulante para la prosecución de sus
+
+336
+00:22:32,397 --> 00:22:37,563
+tareas, y un descanso psicomental de
+extraordinario poder para insistir en su
+
+337
+00:22:37,563 --> 00:22:42,388
+insistencia y continuidad, la salud del
+empleado, la conservación de sus
+
+338
+00:22:42,388 --> 00:22:45,990
+aptitudes laborativas y la eficacia de su
+rendimiento.
+
+339
+00:22:45,990 --> 00:22:50,889
+Una Argentina en movimiento a través de
+la regulación de los cuerpos parece ser
+
+340
+00:22:50,889 --> 00:22:55,097
+el principal propósito de Gimnasia de
+oficinas. En las páginas de la
+
+341
+00:22:55,097 --> 00:22:59,807
+publicación se abogaba por la difusión de
+esta particular forma de actividad
+
+342
+00:22:59,807 --> 00:23:00,247
+física.
+
+343
+00:23:00,247 --> 00:23:05,686
+“Experimentarla aunque más no fuera por
+espíritu de ensayo, crítica o humorismo
+
+344
+00:23:05,686 --> 00:23:10,915
+(tan característico de la idiosincrasia
+de nuestro pueblo) significaría a la
+
+345
+00:23:10,915 --> 00:23:16,075
+postre su adopción sincera y entusiasta”.
+Se dejaba en claro que no buscaba
+
+346
+00:23:16,075 --> 00:23:21,304
+imponerse esta nueva metodología, sino
+aplicarse por consenso, a tono con el
+
+347
+00:23:21,304 --> 00:23:25,139
+adagio peronista que sostiene que
+gobernar es persuadir.
+
+348
+00:23:25,139 --> 00:23:29,974
+Para ello se enumeraron las ventajas que
+proveía. Para el empleado creaba el
+
+349
+00:23:29,974 --> 00:23:34,679
+hábito de una buena postura, contribuía a
+preservar el buen estado físico,
+
+350
+00:23:34,679 --> 00:23:39,256
+eliminaba los errores y falta de atención
+para con el trabajo cotidiano.
+
+351
+00:23:39,256 --> 00:23:44,106
+También colaboraba con las relaciones
+personales al interior de la oficina, ya
+
+352
+00:23:44,106 --> 00:23:48,578
+que “hace menos frecuentes las
+discusiones o polémicas suscitadas por la
+
+353
+00:23:48,578 --> 00:23:53,427
+intoxicación progresiva que produce el
+trabajo continuado y monótono, a la par
+
+354
+00:23:53,427 --> 00:23:58,529
+que fomenta la cortesía, la camaradería y
+la comprensión entre empleados y jefes”.
+
+355
+00:23:58,529 --> 00:24:03,020
+Para el empleador las gratificaciones
+derivadas de la implementación de este
+
+356
+00:24:03,020 --> 00:24:07,211
+método eran, como se mencionó, que se
+favorecían las relaciones con los
+
+357
+00:24:07,211 --> 00:24:11,283
+subordinados, aumentando la calidad y
+cantidad de trabajo y mejorando
+
+358
+00:24:11,283 --> 00:24:14,876
+significativamente la disciplina dentro
+del ambiente laboral.
+
+359
+00:24:14,876 --> 00:24:19,984
+Por último, para el Consejo Nacional de
+Educación Física, la gimnasia de oficinas
+
+360
+00:24:19,984 --> 00:24:25,093
+contribuía con el desarrollo del país en
+general ya que aumentaba la producción y
+
+361
+00:24:25,093 --> 00:24:26,625
+disminuía el ausentismo.
+
+362
+00:24:26,625 --> 00:24:30,833
+Estos temas fueron claves dentro de la
+relación entre el gobierno peronista y
+
+363
+00:24:30,833 --> 00:24:33,823
+los empresarios, como lo ha demostrado
+Claudio Bellini.
+
+364
+00:24:33,823 --> 00:24:38,112
+Asimismo, se hizo hincapié en la
+necesidad de formar líderes de oficinas
+
+365
+00:24:38,112 --> 00:24:41,253
+que se seleccionarían entre los propios
+trabajadores.
+
+366
+00:24:41,253 --> 00:24:46,248
+Estos aspirantes debían reunirse dentro
+del horario laboral por espacio de una
+
+367
+00:24:46,248 --> 00:24:49,426
+hora con la finalidad de conocer el
+procedimiento.
+
+368
+00:24:49,426 --> 00:24:53,865
+Las clases debían durar entre cinco y
+diez minutos y debían hacerse efectivas
+
+369
+00:24:53,865 --> 00:24:55,092
+en el momento en que:
+
+370
+00:24:55,092 --> 00:25:00,283
+con mayor evidencia se evidencia el deseo
+de hacer una pausa en la tarea habitual:
+
+371
+00:25:00,283 --> 00:25:04,897
+ya para reponer energías, procurar un
+descanso para la vista o la espalda
+
+372
+00:25:04,897 --> 00:25:09,639
+dolorida, proporcionar libertad de acción
+a los miembros inferiores u otras
+
+373
+00:25:09,639 --> 00:25:14,445
+regiones musculares que han permanecido
+inmóviles y, sobre todo, distraer la
+
+374
+00:25:14,445 --> 00:25:19,572
+mente absorbida por las preocupaciones de
+un trabajo por lo general monótono, y a
+
+375
+00:25:19,572 --> 00:25:22,584
+esa altura de la jornada, deprimente y
+aburrido.
+
+376
+00:25:22,584 --> 00:25:26,822
+Las ventajas que la gimnasia para
+oficinas promovía estaban ligadas a
+
+377
+00:25:26,822 --> 00:25:29,875
+mejorar y fortificar la salud de los
+trabajadores.
+
+378
+00:25:29,875 --> 00:25:34,307
+Asimismo, el progreso en la relación
+entre trabajadores y empresarios, así
+
+379
+00:25:34,307 --> 00:25:38,739
+como el aumento en la producción se
+encontraban presentes en la base de la
+
+380
+00:25:38,739 --> 00:25:43,110
+propuesta. Esto encuentra su conexión con
+palabras del primer mandatario:
+
+381
+00:25:43,110 --> 00:25:48,210
+“Nosotros hemos sido los primeros en
+pensar que más vale cuidar bien a un
+
+382
+00:25:48,210 --> 00:25:53,311
+hombre que a una máquina, porque
+entendemos que si una máquina vale mucho
+
+383
+00:25:53,311 --> 00:25:58,482
+dinero, el hombre, económicamente
+considerado, también vale mucho dinero”.
+
+384
+00:25:58,482 --> 00:26:02,920
+Los conceptos vertidos por el entonces
+presidente demuestran que la gimnasia
+
+385
+00:26:02,920 --> 00:26:07,535
+para oficinas fue parte de un plan que
+contempló extender la educación corporal
+
+386
+00:26:07,535 --> 00:26:09,488
+a vastos segmentos poblacionales.
+
+387
+00:26:09,488 --> 00:26:13,670
+No obstante, al igual que con la gimnasia
+compensatoria en el aula, su
+
+388
+00:26:13,670 --> 00:26:18,277
+implementación fue dificultosa. En un
+caso, por las resistencias docentes, en
+
+389
+00:26:18,277 --> 00:26:22,399
+el otro por la dificultad del Estado en
+avanzar en empresas privadas.
+
+390
+00:26:22,399 --> 00:26:26,789
+De hecho, en las conclusiones del citado
+cuadernillo se enfatizó en los
+
+391
+00:26:26,789 --> 00:26:31,681
+“escépticos” que seguramente existirían
+con la propuesta. Una elegante forma de
+
+392
+00:26:31,681 --> 00:26:35,820
+dejar en claro que la teoría no siempre
+se condice con la práctica.
+
+393
+00:26:36,820 --> 00:26:37,795
+Conclusiones.
+
+394
+00:26:38,795 --> 00:26:42,554
+Ya en los primeros años del gobierno
+encabezado por Juan Domingo Perón la
+
+395
+00:26:42,554 --> 00:26:46,784
+presentación de iniciativas legislativas
+destinadas a incidir en la cultura física
+
+396
+00:26:46,784 --> 00:26:48,037
+poblacional fue visible.
+
+397
+00:26:48,037 --> 00:26:52,355
+El contraste entre la postura militar y
+la médica fue un reflejo de las tensiones
+
+398
+00:26:52,355 --> 00:26:56,566
+entre los diversos grupos que apoyaban al
+primer peronismo lo que demuestra que
+
+399
+00:26:56,566 --> 00:26:58,347
+este no era un bloque monolítico.
+
+400
+00:26:58,347 --> 00:27:03,072
+La creación por decreto del Consejo
+Nacional de Educación Física, bajo
+
+401
+00:27:03,072 --> 00:27:08,344
+dependencia castrense, permitió zanjar
+esos disimiles puntos de vista y fue el
+
+402
+00:27:08,344 --> 00:27:13,411
+puntapié inicial para comenzar a llevar
+adelante una serie de políticas que
+
+403
+00:27:13,411 --> 00:27:15,808
+buscaron aplicarse en todo el país.
+
+404
+00:27:15,808 --> 00:27:20,322
+Gimnasia compensatoria en el aula y
+Gimnasia de oficinas, fueron dos
+
+405
+00:27:20,322 --> 00:27:25,375
+estrategias ideadas y aplicadas por el
+Consejo Nacional de Educación Física.
+
+406
+00:27:25,375 --> 00:27:29,799
+Ambos cuadernillos, explicados e
+ilustrados metódicamente, buscaron
+
+407
+00:27:29,799 --> 00:27:35,295
+expandir la educación corporal de un modo
+del que poco se conocía hasta entonces en
+
+408
+00:27:35,295 --> 00:27:38,982
+Argentina: en cualquier clase escolar y
+en las oficinas.
+
+409
+00:27:38,982 --> 00:27:43,844
+Fue así que los aspectos pedagógicos de
+la Educación Física fueron considerados
+
+410
+00:27:43,844 --> 00:27:48,456
+relevantes para formar el carácter de los
+ciudadanos de la Nueva Argentina.
+

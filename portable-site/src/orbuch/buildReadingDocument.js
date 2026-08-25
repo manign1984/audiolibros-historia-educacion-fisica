@@ -1,3 +1,5 @@
+import orbuchTimingData from './orbuch-timings.json' with { type: 'json' };
+
 const SECTION_TITLES = new Map([
   ['Introducción', { id: 'introduccion', shortTitle: 'Introducción' }],
   ['Gimnasia compensatoria en el aula', { id: 'aula', shortTitle: 'En el aula' }],
@@ -16,10 +18,12 @@ function splitSentences(text) {
 }
 
 function sentenceRecord(text, id, role) {
+  const timing = orbuchTimingData.timings[id];
   return {
     id,
     text,
     ...(role ? { role } : {}),
+    ...(timing || {}),
   };
 }
 
@@ -40,6 +44,7 @@ export function buildOrbuchReadingDocument(source) {
       currentSection = {
         ...sectionMeta,
         title: block,
+        headingSentence: sentenceRecord(block, `${sectionMeta.id}-titulo`, 'heading'),
         paragraphs: [],
       };
       sections.push(currentSection);
@@ -63,8 +68,9 @@ export function buildOrbuchReadingDocument(source) {
     title,
     subtitle,
     author,
-    duration: 1673.900408,
-    syncStatus: 'pending',
+    duration: orbuchTimingData.metadata.audioDuration,
+    syncStatus: 'ready',
+    syncMetadata: orbuchTimingData.metadata,
     frontMatter: [
       sentenceRecord(title, 'portada-titulo', 'title'),
       sentenceRecord(subtitle, 'portada-subtitulo', 'subtitle'),
@@ -73,6 +79,6 @@ export function buildOrbuchReadingDocument(source) {
     sections,
     endnotes: [],
     bibliography: [],
-    sourceNote: 'Versión textual accesible recuperada del proyecto original y adaptada para la narración. El PDF académico conserva el aparato crítico completo.',
+    sourceNote: 'Versión textual accesible recuperada del proyecto original y adaptada para la narración. La alineación usa el SRT aportado por el proyecto, validado contra el guion y ajustado a la duración del MP3 definitivo; el PDF académico conserva el aparato crítico completo.',
   };
 }
