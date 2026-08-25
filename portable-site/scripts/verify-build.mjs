@@ -58,6 +58,14 @@ assert.ok(allJavaScript.includes('Escuchar desde aquí'));
 assert.ok(allJavaScript.includes('fresco-noble-reader-notes-v1'));
 assert.ok(allJavaScript.includes('orbuch-educar-cuerpo-reader-notes-v1'));
 assert.ok(allJavaScript.includes('Sincronización fina pendiente'));
+for (const restoredOrbuchMarker of [
+  'Recorrido documental e interactivo',
+  'La pregunta que organiza el recorrido',
+  'Dos expedientes históricos',
+  'Abrir los expedientes',
+]) {
+  assert.ok(allJavaScript.includes(restoredOrbuchMarker), `Falta la pieza recuperada de Orbuch: ${restoredOrbuchMarker}`);
+}
 
 for (const removedSection of [
   'La brújula del texto',

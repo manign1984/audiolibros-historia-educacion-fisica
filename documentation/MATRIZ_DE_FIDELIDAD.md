@@ -24,7 +24,7 @@
 | Recursos `orbuch-*` | Recuperados o derivados de fuentes recuperadas | `data/orbuch-assets-inventory.csv` | MP3, tres PDF, texto accesible, mural, tipografías y reproducciones documentales. |
 | MP3 Pineau | Literal | SHA-256 `46b19c38a1b0d15db4010ab1dd002f72a99939f1486116595d257286deeeae2c` | Audiolibro y sincronización preservados. |
 | MP3 Orbuch | Recuperado de Drive | SHA-256 `1ad70702ffd057916d20b17810713f0c8a26f1a076f4bd812a5bb327f5e2140c` | 1673.900408 s; no se recuperó SRT/VTT. |
-| `portable-site/src/orbuch/**` | Reconstruido desde el Site y fuentes aportadas | Rama `feat/orbuch-segunda-obra` | Página singular, estilos, texto accesible y `readingDocument` sin tiempos inventados. |
+| `portable-site/src/orbuch/**` | Reconstruido desde el Site y corregido por fidelidad visual | Ramas `feat/orbuch-segunda-obra` y `fix/orbuch-fidelidad-visual` | Página singular, estilos, texto accesible y `readingDocument` sin tiempos inventados. La segunda rama recupera la composición editorial del Site sin restaurar sus actividades. |
 | `portable-site/textos/orbuch-educar-al-cuerpo/index.html` | Reconstruido por solicitud estructural | Entrada física de Vite | URL refrescable de la segunda obra. |
 | Generador desde SRT | Literal | Comparación byte a byte | Requiere el SRT externo, no incluido en el Site |
 | `data/reading-sync_exact.json` | Extracción literal | Generado desde `readingDocument.js` | 201 unidades, textos e intervalos exactos |
@@ -52,7 +52,7 @@ La URL raíz pasa a presentar un catálogo académico y la experiencia Fresco–
 
 ## Integración de Orbuch del 24/08/2026
 
-La segunda obra se reconstruye desde el Site recuperado, el artículo académico, los cuadernillos de 1949/1950, el texto accesible y el MP3 definitivo. Se conserva la identidad cívico-popular azul, dorada y roja, pero la página se condensa a Inicio, Autor, Contexto/archivo, Lectura y Créditos. No se trasladan cuestionarios, juegos, actividades postlectura ni CSS acumulado del Site. El Site original no fue modificado.
+La segunda obra se reconstruye desde el Site recuperado, el artículo académico, los cuadernillos de 1949/1950, el texto accesible y el MP3 definitivo. La primera integración conservó la identidad cívico-popular azul, dorada y roja, pero condensó la página a Inicio, Autor, Contexto/archivo, Lectura y Créditos. No se trasladaron cuestionarios, juegos ni actividades postlectura. El Site original no fue modificado.
 
 La solicitud de compartir infraestructura habilita el cambio de `IntegratedReader.jsx`: Pineau y Orbuch importan una sola implementación. `readingDocument.js`, sus 201 tiempos y los recursos de Pineau permanecen literales. El documento de Orbuch no contiene campos `start`/`end`; el resaltado, seguimiento y salto desde oración quedan pendientes hasta disponer de tiempos reales.
 
@@ -67,3 +67,9 @@ El SRT reconstruido:
 - no se presenta como archivo original ni como sustituto forense del SRT de ElevenLabs.
 
 La fuente de verdad para reproducir el comportamiento del lector es `readingDocument.js`; la extracción JSON es su representación portátil sin pérdida.
+
+## Corrección de fidelidad visual de Orbuch del 24/08/2026
+
+La comparación directa entre la página publicada en GitHub Pages y el Site `educar-el-cuerpo.man-ign.chatgpt.site` mostró que la primera integración conservaba el mural y la paleta, pero no la composición editorial. El título ocupaba casi todo el primer pliegue y faltaban la pregunta-problema, la introducción, los dos expedientes, las tres operaciones, el contador de secciones y el ritmo gráfico de las secciones interiores.
+
+La rama `fix/orbuch-fidelidad-visual` recupera esos elementos y reorganiza el recorrido público en siete estaciones: Inicio, Problema, Autor, Contexto, Lectura, Archivo y Créditos. Se restauran la retícula, la tipografía de afiche, los banderines, los marcos documentales, los fondos por sección, la línea de tiempo vertical y los enlaces de continuidad. Siguen excluidos los cuestionarios, la clasificación de evidencias y la producción final del Site original. El lector compartido, el MP3, los PDF, el texto accesible, las claves de almacenamiento y Pineau no se modifican.

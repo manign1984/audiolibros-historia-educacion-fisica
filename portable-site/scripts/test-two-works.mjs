@@ -82,8 +82,18 @@ assert.equal(await sha256('public/assets/orbuch-educar-al-cuerpo.pdf'), '726b877
 assert.equal(await sha256('public/assets/orbuch-gimnasia-compensatoria-1949.pdf'), 'c16511428cd149dd4454981b85647dc2dc4be2a2bc417becb6e72edd271ebef2');
 assert.equal(await sha256('public/assets/orbuch-gimnasia-oficinas-1950.pdf'), '52828ca1f89422f0dba788e32566402718a99238a676efdf53087539ef0f5aa2');
 
-for (const sectionId of ['inicio', 'autor', 'contexto', 'lectura', 'creditos']) {
+for (const sectionId of ['inicio', 'problema', 'autor', 'contexto', 'lectura', 'archivo', 'creditos']) {
   assert.match(orbuchApp, new RegExp(`id="${sectionId}"`), `Falta la sección ${sectionId}.`);
+}
+for (const fidelityMarker of [
+  'Recorrido documental e interactivo',
+  'La pregunta que organiza el recorrido',
+  'Dos expedientes históricos',
+  'Prescripción',
+  'Implementación',
+  'Tensiones',
+]) {
+  assert.ok(orbuchApp.includes(fidelityMarker), `Debe conservarse la pieza editorial “${fidelityMarker}”.`);
 }
 const referencedAssets = [...new Set(orbuchApp.match(/\/assets\/orbuch-[A-Za-z0-9._-]+/g) || [])];
 for (const resource of referencedAssets) {
@@ -98,6 +108,10 @@ for (const forbidden of ['Comprobar respuestas', 'Producción final', 'Clasific�
 
 for (const breakpoint of ['1040px', '780px', '520px']) assert.ok(orbuchStyles.includes(`max-width: ${breakpoint}`));
 for (const breakpoint of ['1220px', '900px', '640px']) assert.ok(readerStyles.includes(`max-width: ${breakpoint}`));
+assert.match(orbuchStyles, /min-height:\s*max\(920px, 100svh\)/);
+assert.match(orbuchStyles, /text-shadow:\s*3px 3px 0/);
+assert.match(orbuchStyles, /\.orbuch-hero-operations/);
+assert.match(orbuchStyles, /\.orbuch-folder--aula/);
 assert.match(orbuchStyles, /prefers-reduced-motion: reduce/);
 assert.match(readerStyles, /prefers-reduced-motion: reduce/);
 assert.match(orbuchStyles, /:focus-visible/);
