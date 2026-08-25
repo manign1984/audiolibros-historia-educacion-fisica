@@ -10,9 +10,11 @@ También se revisaron el artículo académico de Orbuch, los cuadernillos comple
 
 Se conservaron la identidad cívico-popular azul, dorada y roja; el mural “Amanecer alegórico”; las tipografías; el eje aula–oficina; las reproducciones documentales; el texto accesible; los PDF auténticos y el MP3 definitivo.
 
-La arquitectura editorial se condensó en cinco destinos: Inicio, Autor, Contexto y archivo, Lectura/audiolibro y Créditos. El lector del proyecto se convirtió en infraestructura común mediante configuración, mientras Orbuch mantiene página, estilos, documento, recursos y almacenamiento propios.
+La integración inicial condensó la arquitectura editorial en cinco destinos. Tras comparar visualmente la publicación con el Site de referencia, la corrección `fix/orbuch-fidelidad-visual` recuperó siete estaciones informativas: Inicio, Problema, Autor, Contexto, Lectura/audiolibro, Archivo y Créditos. El lector del proyecto continúa como infraestructura común mediante configuración, mientras Orbuch mantiene página, estilos, documento, recursos y almacenamiento propios.
 
 No se trasladaron cuestionarios, juegos, actividades prácticas o postlectura, cuentas, backend, CMS ni el CSS acumulado del Site. Tampoco se reutilizó la identidad Art Déco de Pineau. Estas exclusiones responden al alcance editorial y evitan confundir infraestructura compartida con identidad singular.
+
+La corrección de fidelidad no revierte esa decisión. Recupera la composición visual del primer pliegue, el contador y progreso del encabezado, la pregunta que organiza el recorrido, el perfil documental del autor, la cronología vertical, la separación entre lectura y archivo, y los fondos y marcos gráficos propios de cada sección. No reincorpora evaluación ni producción estudiantil.
 
 ## Fuentes y fidelidad
 

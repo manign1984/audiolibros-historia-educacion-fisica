@@ -2,7 +2,7 @@
 
 ## Referencias
 
-- Rama: `feat/orbuch-segunda-obra`.
+- Ramas: `feat/orbuch-segunda-obra` y corrección `fix/orbuch-fidelidad-visual`.
 - SHA de `main` al iniciar: `aad25a75c159e7a65e78c799f4877d6ec7175bd1`.
 - Fecha: 24/08/2026.
 
@@ -21,6 +21,12 @@ GITHUB_PAGES_BASE=/audiolibros-historia-educacion-fisica/ npm run build
 GITHUB_PAGES_BASE=/audiolibros-historia-educacion-fisica/ npm run verify:build
 ```
 
+## Comparación visual que originó la corrección
+
+Se inspeccionaron directamente, en el mismo navegador y con el mismo ancho de escritorio, la URL pública de GitHub Pages y el Site `educar-el-cuerpo.man-ign.chatgpt.site`. La primera versión de GitHub conservaba el mural, pero presentaba un título sobredimensionado, un velo mucho más oscuro y un primer pliegue sin pregunta-problema, introducción, expedientes ni operaciones de lectura. El encabezado tampoco conservaba el contador y la barra central del recorrido. En las secciones interiores se había perdido la alternancia de papeles coloreados, marcos documentales y cronología vertical.
+
+La corrección recupera esos contratos visuales con CSS propio y componentes semánticos, sin copiar la lógica evaluativa del Site. Las pruebas de contrato exigen ahora siete `id` de sección, las piezas editoriales recuperadas, la altura y composición del hero, los expedientes, las tres operaciones, los breakpoints y la ausencia de actividades excluidas.
+
 ## Resultado automatizado
 
 | Área | Comprobación | Resultado |
@@ -28,7 +34,7 @@ GITHUB_PAGES_BASE=/audiolibros-historia-educacion-fisica/ npm run verify:build
 | Catálogo | Dos obras; orden O → P; APA 7; búsquedas Orbuch/cuerpo/Pineau/reforma; rutas y caso vacío | Correcto |
 | Motor común | Un solo `IntegratedReader.jsx`; ambos imports y ambos bundles apuntan al mismo chunk `reader-*` | Correcto |
 | Aislamiento | Claves distintas para notas/progreso y recursos configurados por obra | Correcto |
-| Orbuch | Cinco secciones, documentos, imágenes, créditos, texto accesible y recursos existentes | Correcto |
+| Orbuch | Siete estaciones informativas, documentos, imágenes, créditos, texto accesible y recursos existentes | Correcto tras la corrección de fidelidad visual |
 | Audio | MP3 real de 40.174.404 bytes; SHA y duración 1673.900408 s verificados con `ffprobe` | Correcto |
 | Sincronización | Cero campos `start`/`end` en el documento Orbuch; cero SRT/VTT publicado; estado `pending` | Correcto y pendiente por fuente |
 | Pineau | SHA de `readingDocument.js` y MP3 sin cambios; estado `ready`; controles compartidos presentes | Correcto |
