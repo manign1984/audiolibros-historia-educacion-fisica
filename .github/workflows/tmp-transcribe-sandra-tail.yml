@@ -1,0 +1,54 @@
+name: Temporary transcribe Sandra Emanuel tail
+
+on:
+  push:
+    branches:
+      - tmp/transcripcion-sandra-emanuel
+    paths:
+      - '.github/workflows/tmp-transcribe-sandra-tail.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  tail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      HF_HUB_DISABLE_XET: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: tmp/transcripcion-sandra-emanuel
+      - name: Install faster-whisper
+        run: python -m pip install faster-whisper
+      - name: Download audio
+        run: curl -L --fail --retry 3 -o sandra.m4a 'https://drive.usercontent.google.com/download?id=16u6eACV93EaxqakNh98ZjtorrOdDZHxB&export=download&confirm=t'
+      - name: Transcribe final window
+        run: |
+          mkdir -p tmp/sandra-emanuel-transcription/tail
+          python3 - <<'PY'
+          from faster_whisper import WhisperModel
+          import json
+          start=3600.0; end=4534.18375
+          model=WhisperModel('small', device='cpu', compute_type='int8', cpu_threads=4)
+          segments,info=model.transcribe('sandra.m4a', language='es', beam_size=5, best_of=5,
+              vad_filter=True, condition_on_previous_text=True, clip_timestamps=[start,end])
+          segs=[{'start':float(s.start),'end':float(s.end),'text':s.text.strip()} for s in segments]
+          out='tmp/sandra-emanuel-transcription/tail/chunk_004.json'
+          with open(out,'w',encoding='utf-8') as f:
+              json.dump({'idx':4,'window_start':start,'window_end':end,'duration':info.duration,'segments':segs},f,ensure_ascii=False,indent=2)
+          def hms(x):
+              x=max(0,int(x)); return f'{x//3600:02d}:{(x%3600)//60:02d}:{x%60:02d}'
+          with open('tmp/sandra-emanuel-transcription/tail/Sandra_Emanuel_tail.txt','w',encoding='utf-8') as f:
+              f.write('\n'.join(f"[{hms(s['start'])}–{hms(s['end'])}] {s['text']}" for s in segs))
+          print('segments',len(segs),'duration',info.duration)
+          PY
+      - name: Commit tail result
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin tmp/transcripcion-sandra-emanuel || true
+          git add tmp/sandra-emanuel-transcription/tail
+          git commit -m 'tmp: final segment transcription of Sandra Emanuel' || exit 0
+          git push origin tmp/transcripcion-sandra-emanuel
