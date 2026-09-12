@@ -1,0 +1,45 @@
+name: Temporary transcribe Sandra Emanuel tail base
+
+on:
+  push:
+    branches:
+      - tmp/transcripcion-sandra-emanuel
+    paths:
+      - '.github/workflows/tmp-transcribe-sandra-tail-base.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  tail-base:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      HF_HUB_DISABLE_XET: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: tmp/transcripcion-sandra-emanuel
+      - run: python -m pip install faster-whisper
+      - run: curl -L --fail --retry 3 -o sandra.m4a 'https://drive.usercontent.google.com/download?id=16u6eACV93EaxqakNh98ZjtorrOdDZHxB&export=download&confirm=t'
+      - name: Transcribe tail base
+        run: |
+          mkdir -p tmp/sandra-emanuel-transcription/tail-base
+          python3 - <<'PY'
+          from faster_whisper import WhisperModel
+          import json
+          model=WhisperModel('base', device='cpu', compute_type='int8', cpu_threads=4)
+          segments,info=model.transcribe('sandra.m4a', language='es', beam_size=5, vad_filter=True, clip_timestamps=[3600.0,4534.18375])
+          segs=[{'start':float(s.start),'end':float(s.end),'text':s.text.strip()} for s in segments]
+          with open('tmp/sandra-emanuel-transcription/tail-base/chunk_004_base.json','w',encoding='utf-8') as f: json.dump({'segments':segs},f,ensure_ascii=False,indent=2)
+          def hms(x): x=int(x); return f'{x//3600:02d}:{(x%3600)//60:02d}:{x%60:02d}'
+          with open('tmp/sandra-emanuel-transcription/tail-base/Sandra_Emanuel_tail_base.txt','w',encoding='utf-8') as f: f.write('\n'.join(f"[{hms(s['start'])}–{hms(s['end'])}] {s['text']}" for s in segs))
+          PY
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin tmp/transcripcion-sandra-emanuel || true
+          git add tmp/sandra-emanuel-transcription/tail-base
+          git commit -m 'tmp: base fallback tail transcription of Sandra Emanuel' || exit 0
+          git push origin tmp/transcripcion-sandra-emanuel
