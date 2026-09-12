@@ -1,0 +1,109 @@
+name: Temporary parallel transcribe Sandra Emanuel
+
+on:
+  push:
+    branches:
+      - tmp/transcripcion-sandra-emanuel
+    paths:
+      - '.github/workflows/tmp-transcribe-sandra-emanuel.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  chunk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { idx: 0, start: 0 }
+          - { idx: 1, start: 900 }
+          - { idx: 2, start: 1800 }
+          - { idx: 3, start: 2700 }
+          - { idx: 4, start: 3600 }
+          - { idx: 5, start: 4500 }
+          - { idx: 6, start: 5400 }
+          - { idx: 7, start: 6300 }
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: tmp/transcripcion-sandra-emanuel
+      - name: Install faster-whisper
+        run: python -m pip install faster-whisper
+      - name: Download audio
+        run: curl -L --fail --retry 3 -o sandra.m4a 'https://drive.usercontent.google.com/download?id=16u6eACV93EaxqakNh98ZjtorrOdDZHxB&export=download&confirm=t'
+      - name: Transcribe 15-minute window
+        env:
+          IDX: ${{ matrix.idx }}
+          START: ${{ matrix.start }}
+        run: |
+          mkdir -p out
+          python3 - <<'PY'
+          from faster_whisper import WhisperModel
+          import json, os
+          idx=int(os.environ['IDX']); start=float(os.environ['START']); end=start+900
+          model=WhisperModel('small', device='cpu', compute_type='int8', cpu_threads=4)
+          segments,info=model.transcribe(
+              'sandra.m4a', language='es', beam_size=5, best_of=5,
+              vad_filter=True, condition_on_previous_text=True,
+              clip_timestamps=[start,end]
+          )
+          segs=[{'start':float(s.start),'end':float(s.end),'text':s.text.strip()} for s in segments]
+          with open(f'out/chunk_{idx:03d}.json','w',encoding='utf-8') as f:
+              json.dump({'idx':idx,'window_start':start,'window_end':end,'duration':info.duration,'segments':segs},f,ensure_ascii=False,indent=2)
+          print('idx',idx,'start',start,'segments',len(segs),'duration',info.duration)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sandra-chunk-${{ matrix.idx }}
+          path: out/chunk_*.json
+          retention-days: 1
+
+  assemble:
+    needs: chunk
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: tmp/transcripcion-sandra-emanuel
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: sandra-chunk-*
+          path: chunks
+          merge-multiple: true
+      - name: Assemble parallel small transcript
+        run: |
+          mkdir -p tmp/sandra-emanuel-transcription/parallel-small
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          files=sorted(Path('chunks').glob('chunk_*.json'))
+          allsegs=[]; meta=[]
+          for p in files:
+              d=json.loads(p.read_text(encoding='utf-8'))
+              meta.append({k:d.get(k) for k in ('idx','window_start','window_end','duration')})
+              allsegs.extend(d.get('segments',[]))
+          allsegs.sort(key=lambda x:(x['start'],x['end']))
+          clean=[]
+          for s in allsegs:
+              if clean and abs(s['start']-clean[-1]['start'])<0.5 and s['text']==clean[-1]['text']:
+                  continue
+              clean.append(s)
+          out=Path('tmp/sandra-emanuel-transcription/parallel-small')
+          out.joinpath('Sandra_Emanuel_parallel_small.json').write_text(json.dumps({'chunks':meta,'segments':clean},ensure_ascii=False,indent=2),encoding='utf-8')
+          def hms(x):
+              x=max(0,int(x)); return f'{x//3600:02d}:{(x%3600)//60:02d}:{x%60:02d}'
+          out.joinpath('Sandra_Emanuel_parallel_small.txt').write_text('\n'.join(f"[{hms(s['start'])}–{hms(s['end'])}] {s['text']}" for s in clean),encoding='utf-8')
+          print('files',len(files),'segments',len(clean))
+          PY
+      - name: Commit assembled result
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin tmp/transcripcion-sandra-emanuel || true
+          git add tmp/sandra-emanuel-transcription/parallel-small
+          git commit -m 'tmp: parallel small transcription of Sandra Emanuel' || exit 0
+          git push origin tmp/transcripcion-sandra-emanuel
