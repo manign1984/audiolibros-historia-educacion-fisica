@@ -85,3 +85,7 @@ El lector compartido añade las velocidades `0,9×` y `1,1×`; no altera el docu
 ## Ampliación y renovación visual del 27/10/2026
 
 Por solicitud del proyecto +TEC, la portada adopta una estética de catálogo audiovisual y se amplía a 29 lecturas, con dos recorridos completos y 27 fichas en preparación. Se incorporan seis colecciones temáticas, filtros, lista personal local y continuidad desde el progreso existente. La procedencia bibliográfica, los límites de cobertura del programa y la validación se detallan en `CATALOGO_2026.md`. No se alteran las dos experiencias publicadas, los documentos temporizados, el lector compartido ni los recursos originales.
+
+## Identidad del encabezado del 27/10/2026
+
+Por pedido explícito, el encabezado de la biblioteca y las fichas muestra “Historia de la Educación Física” a la izquierda y los logos de UNAHUR y +TEC a la derecha. `logo-unahur.png` y `logo-mas-tec.png` son copias byte a byte de los PNG transparentes adjuntados por el proyecto. Se conservan colores, proporciones y transparencias; solo cambia su tamaño de presentación mediante CSS. La navegación pasa a una segunda fila en pantallas menores y los logos se apilan en celulares estrechos. El cambio se limita al encabezado compartido y no modifica el pie, el catálogo ni los recorridos de lectura.
