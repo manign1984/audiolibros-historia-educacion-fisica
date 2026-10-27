@@ -9,11 +9,11 @@ export const collections = [
   { id: 'presente', title: 'Debates del presente', period: 'Democracia e historia reciente', color: 'pink', mark: '06', description: 'Transformaciones del sistema educativo y del campo de la Educación Física.' },
 ];
 
-// [id, autor, título de portada, título completo, colección, año, referencia, origen]
+// [id, autor, título de portada, título completo, colección, año, referencia, origen, portada opcional]
 const records = [
   ['aisenstein-tabla-rasa', 'Ángela Aisenstein', '¿Hacemos tabla rasa del pasado?', '¿Hacemos tabla rasa del pasado? El saber histórico en la formación docente en Educación Física', 'miradas', '2006', 'Aisenstein, A. (2006). ¿Hacemos tabla rasa del pasado? El saber histórico en la formación docente en Educación Física. En A. Aisenstein y P. Scharagrodsky, Tras las huellas de la Educación Física escolar argentina. Cuerpo, género y pedagogía, 1880–1950. Prometeo.', 'programa-optativa'],
   ['braudel-historia-duraciones', 'Fernand Braudel', 'Historia y duraciones', 'Historia y duraciones. Apuntes de cátedra, resumen', 'miradas', '', 'Braudel, F. Historia y duraciones. Apuntes de cátedra, resumen. El programa consultado no consigna fecha.', 'programa'],
-  ['hobsbawm-historia-siglo-xx', 'Eric Hobsbawm', 'Historia del siglo XX', 'Historia del siglo XX', 'miradas', '1995', 'Hobsbawm, E. (1995). Historia del siglo XX. Crítica.', 'programa'],
+  ['hobsbawm-historia-siglo-xx', 'Eric Hobsbawm', 'Historia del siglo XX', 'Historia del siglo XX', 'miradas', '1995', 'Hobsbawm, E. (1995). Historia del siglo XX. Crítica.', 'programa', 'assets/portada-hobsbawm-historia-siglo-xx.png'],
   ['braslavsky-discriminacion-educativa', 'Cecilia Braslavsky', 'La discriminación educativa', 'La discriminación educativa en Argentina', 'miradas', '1985', 'Braslavsky, C. (1985). La discriminación educativa en Argentina. Referencia incluida en el programa de la asignatura.', 'programa-optativa'],
   ['narodowski-periodizaciones', 'Mariano Narodowski', 'Cómo periodizamos la historia', 'La utilización de las periodizaciones macropolíticas en la historia de la educación. Algunos problemas', 'miradas', '1997', 'Narodowski, M. (1997). La utilización de las periodizaciones macropolíticas en la historia de la educación. Algunos problemas. En M. Narodowski y A. Martínez Boom, Escuela, historia y poder. Miradas desde América Latina. Novedades Educativas. Fecha según el programa consultado.', 'programa-optativa'],
   ['orbuch-relevancia-historia', 'Iván Orbuch', 'La historia en la formación docente', 'La relevancia de la Historia en la formación de los profesores de Educación Física', 'miradas', '2019', 'Orbuch, I. (2019). La relevancia de la Historia en la formación de los profesores de Educación Física. Ficha de cátedra.', 'programa-optativa'],
@@ -40,8 +40,8 @@ const records = [
   ['vassiliades-politicas-docentes', 'Alejandro Vassiliades', 'Enseñanza y políticas docentes', 'Impugnaciones de la enseñanza y desplazamientos de la pedagogía: políticas docentes y discursos estandarizados en Argentina durante la presidencia de Mauricio Macri (2015–2019)', 'presente', '2020', 'Vassiliades, A. (2020). Impugnaciones de la enseñanza y desplazamientos de la pedagogía: políticas docentes y discursos estandarizados en Argentina durante la presidencia de Mauricio Macri (2015–2019). Espacios en Blanco. Revista de Educación, 30(2), 247–262.', 'programa'],
 ];
 
-export const plannedWorks = records.map(([id, author, shortTitle, title, collection, year, reference, source], index) => ({
-  id, author, shortTitle, title, collection, year, reference, source,
+export const plannedWorks = records.map(([id, author, shortTitle, title, collection, year, reference, source, artwork], index) => ({
+  id, author, shortTitle, title, collection, year, reference, source, artwork,
   status: 'preparation',
   authorDisplay: author,
   authorSearch: [author],

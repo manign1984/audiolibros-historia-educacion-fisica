@@ -23,6 +23,9 @@
 
 @media(max-width:760px){.shelf--featured .shelf-rail{grid-auto-columns:85%}.shelf--featured .cover{aspect-ratio:1.8}.shelf--featured .cover-image-title{bottom:18px;left:18px;right:18px}.shelf--featured .cover-image-title strong{font-size:27px}.shelf--featured .shelf-arrows{display:flex}.work-card .save-button{width:40px;height:40px}.shelf-arrows button{width:40px;height:40px}.card-author{font-size:11px}.work-card h3{font-size:13px}.card-meta{font-size:10px}.status-badge{font-size:8px}.collection-period{font-size:9px}}
 
+/* Keep landscape artwork readable in the bibliographic detail view. */
+.work-intro .cover--large.cover--image{aspect-ratio:16/9;padding:0}
+
 /* Course identity and the original institutional logos. */
 .header-inner{gap:36px}
 .brand--course{flex-shrink:0;white-space:normal}
