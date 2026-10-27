@@ -27,16 +27,17 @@ function usePersonalLibrary() {
   return { saved, toggle, notice };
 }
 
-export function Brand() {
+export function Brand({ course = false }) {
+  if (course) return <a className="brand brand--course" href={base} aria-label="Historia de la Educación Física, inicio"><span className="brand-mark" aria-hidden="true"><i /><i /><i /><i /></span><span className="brand-course-title">Historia de la<span>Educación Física</span></span></a>;
   return <a className="brand" href={base} aria-label="Biblioteca +TEC, inicio"><span className="brand-mark" aria-hidden="true"><i /><i /><i /><i /></span><span>Biblioteca<span className="brand-tec">+TEC</span></span></a>;
 }
 
 function Header({ view = 'home', onView }) {
   const items = [['home', 'Inicio'], ['explore', 'Explorar'], ['list', 'Mi lista']];
   return <header className="library-header"><div className="library-shell header-inner">
-    <Brand />
+    <Brand course />
     <nav aria-label="Navegación principal">{items.map(([id, label]) => <a key={id} href={`${base}${id === 'home' ? '' : `?vista=${id}`}`} aria-current={view === id ? 'page' : undefined} onClick={onView ? (event) => { event.preventDefault(); onView(id); } : undefined}>{id === 'list' && <Bookmark size={15} aria-hidden="true" />}{label}</a>)}</nav>
-    <a className="project-link" href={`${base}#proyecto`}>UNAHUR <span>Proyecto +TEC</span></a>
+    <a className="project-link" href={`${base}#proyecto`} aria-label="UNAHUR y +TEC: sobre el proyecto"><img className="project-logo project-logo--unahur" src={href('assets/logo-unahur.png')} width="1223" height="393" alt="Universidad Nacional de Hurlingham" /><img className="project-logo project-logo--tec" src={href('assets/logo-mas-tec.png')} width="1743" height="864" alt="+TEC" /></a>
   </div></header>;
 }
 
