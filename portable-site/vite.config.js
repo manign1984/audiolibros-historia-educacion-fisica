@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
-import { LIBRARY_CONFIG } from './src/biblioteca/catalog.js';
+import { LIBRARY_CONFIG, catalog } from './src/biblioteca/catalog.js';
 
 const configuredBase = process.env.GITHUB_PAGES_BASE || '/';
 const base = configuredBase.endsWith('/') ? configuredBase : `${configuredBase}/`;
@@ -41,11 +41,13 @@ export default defineConfig({
         biblioteca: fileURLToPath(new URL('./index.html', import.meta.url)),
         orbuchEducarAlCuerpo: fileURLToPath(new URL('./textos/orbuch-educar-al-cuerpo/index.html', import.meta.url)),
         pineauFrescoNoble: fileURLToPath(new URL('./textos/pineau-fresco-noble/index.html', import.meta.url)),
+        ...Object.fromEntries(catalog.filter((entry) => entry.status === 'preparation').map((entry) => [entry.id, fileURLToPath(new URL(`./${entry.path}index.html`, import.meta.url))])),
       },
     },
   },
   server: {
     host: '0.0.0.0',
+    allowedHosts: ['terminal.local'],
   },
   preview: {
     host: '0.0.0.0',
