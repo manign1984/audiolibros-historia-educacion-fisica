@@ -46,7 +46,7 @@ const publishedWorks = [
     year: '1999',
     duration: 3005.727,
     stateKey: 'fresco-noble-reader-state-v1',
-    artwork: 'assets/cancha-fresco-noble.webp',
+    artwork: 'assets/portada-pineau-fresco-noble.png',
     description: 'Las estrategias de la Reforma Fresco–Noble en la provincia de Buenos Aires. Educación, cultura física y política en la década de 1930.',
     authorDisplay: 'Pineau, P.',
     authorSearch: ['Pablo Pineau', 'Pineau, Pablo', 'Pineau, P.'],

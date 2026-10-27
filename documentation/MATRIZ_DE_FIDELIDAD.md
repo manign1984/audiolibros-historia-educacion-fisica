@@ -89,3 +89,7 @@ Por solicitud del proyecto +TEC, la portada adopta una estética de catálogo au
 ## Identidad del encabezado del 27/10/2026
 
 Por pedido explícito, el encabezado de la biblioteca y las fichas muestra “Historia de la Educación Física” a la izquierda y los logos de UNAHUR y +TEC a la derecha. `logo-unahur.png` y `logo-mas-tec.png` son copias byte a byte de los PNG transparentes adjuntados por el proyecto. Se conservan colores, proporciones y transparencias; solo cambia su tamaño de presentación mediante CSS. La navegación pasa a una segunda fila en pantallas menores y los logos se apilan en celulares estrechos. El cambio se limita al encabezado compartido y no modifica el pie, el catálogo ni los recorridos de lectura.
+
+## Portadas de Pineau y Hobsbawm del 27/10/2026
+
+Por solicitud del proyecto se incorporan las imágenes adjuntas como portadas de «Renovación, represión, cooptación» de Pablo Pineau y «Historia del siglo XX» de Eric Hobsbawm. `portada-pineau-fresco-noble.png` y `portada-hobsbawm-historia-siglo-xx.png` conservan byte a byte los PNG originales. Se muestran en las tarjetas del catálogo, búsquedas y lista personal; Pineau también usa su nueva imagen en el destacado de inicio y Hobsbawm en su ficha bibliográfica. No se alteran los recursos originales, las experiencias de lectura, el contenido bibliográfico ni el estado de disponibilidad.
