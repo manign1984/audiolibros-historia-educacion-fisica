@@ -1,12 +1,24 @@
+import { plannedWorks, collections } from './plannedWorks.js';
+export { collections };
+
 export const LIBRARY_CONFIG = {
   name: 'Biblioteca de Historia de la Educación y de la Educación Física',
   subtitle: 'Textos académicos para leer y escuchar',
   description: 'Biblioteca académica de textos de Historia de la Educación y de la Educación Física para leer y escuchar.',
 };
 
-export const catalog = [
+const publishedWorks = [
   {
     id: 'orbuch-educar-al-cuerpo',
+    status: 'available',
+    author: 'Iván Pablo Orbuch',
+    shortTitle: 'Educar al cuerpo dentro y fuera del aula',
+    collection: 'peronismo',
+    year: '2020',
+    duration: 1673.900408,
+    stateKey: 'orbuch-educar-cuerpo-reader-state-v1',
+    artwork: 'assets/orbuch-hero-mural-desktop.webp',
+    description: 'Dos experiencias de educación corporal en la Nueva Argentina de Perón. Un recorrido entre la escuela, el trabajo y la vida cotidiana.',
     authorDisplay: 'Orbuch, I. P.',
     authorSearch: ['Iván Pablo Orbuch', 'Ivan Pablo Orbuch', 'Orbuch, Iván', 'Orbuch, I. P.'],
     sortAuthor: 'Orbuch, Iván Pablo',
@@ -27,6 +39,15 @@ export const catalog = [
   },
   {
     id: 'pineau-fresco-noble',
+    status: 'available',
+    author: 'Pablo Pineau',
+    shortTitle: 'Renovación, represión, cooptación',
+    collection: 'conservadurismo',
+    year: '1999',
+    duration: 3005.727,
+    stateKey: 'fresco-noble-reader-state-v1',
+    artwork: 'assets/cancha-fresco-noble.webp',
+    description: 'Las estrategias de la Reforma Fresco–Noble en la provincia de Buenos Aires. Educación, cultura física y política en la década de 1930.',
     authorDisplay: 'Pineau, P.',
     authorSearch: ['Pablo Pineau', 'Pineau, Pablo', 'Pineau, P.'],
     sortAuthor: 'Pineau, Pablo',
@@ -46,6 +67,8 @@ export const catalog = [
   },
 ];
 
+export const catalog = [...publishedWorks, ...plannedWorks];
+
 export function normalizeForSearch(value = '') {
   return String(value)
     .normalize('NFD')
@@ -63,6 +86,8 @@ export function matchesCatalogEntry(entry, query) {
     ...entry.authorSearch,
     entry.authorDisplay,
     entry.title,
+    entry.shortTitle,
+    collections.find((collection) => collection.id === entry.collection)?.title,
   ].join(' '));
 
   return tokens.every((token) => haystack.includes(token));
@@ -90,6 +115,7 @@ export function resolveSitePath(path, baseUrl = '/') {
 }
 
 export function citationAsPlainText(entry) {
+  if (entry.reference) return entry.reference;
   const { beforeItalic, italic, afterItalic } = entry.citation;
   const separator = afterItalic.startsWith(',') ? '' : ' ';
   return `${beforeItalic} ${italic}${separator}${afterItalic}`;

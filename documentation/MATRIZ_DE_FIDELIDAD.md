@@ -19,7 +19,7 @@
 | `portable-site/src/main.jsx` | Literal | Comparación byte a byte con el commit | Entrada React ya presente en el Site |
 | `portable-site/index.html` | Modificado por solicitud estructural | Cambio registrado en la rama de biblioteca | Documento raíz y metadatos de la nueva biblioteca. |
 | `portable-site/textos/pineau-fresco-noble/index.html` | Literal respecto del estado previo a la biblioteca | Copia byte a byte del antiguo `portable-site/index.html` | Metadatos y contenedor de la primera obra, ahora en su ruta interna. |
-| `portable-site/src/biblioteca/**` | Reconstruido y ampliado por solicitud estructural | Ramas `feat/biblioteca-academica-v1` y `feat/orbuch-segunda-obra` | Portada, catálogo de dos obras, búsqueda, referencias APA, miniaturas y estilos de la biblioteca. |
+| `portable-site/src/biblioteca/**` | Reconstruido y ampliado por solicitud estructural y visual | Historial Git y `CATALOGO_2026.md` | Portada, catálogo de 29 lecturas, seis colecciones, búsqueda, filtros, lista personal y fichas bibliográficas. Dos recorridos completos y 27 en preparación. |
 | Recursos originales de Pineau en `portable-site/public/assets/` | Literal | Comparación completa y `data/assets-inventory.csv` | 36 recursos preservados |
 | Recursos `orbuch-*` | Recuperados, aportados o derivados de fuentes verificadas | `data/orbuch-assets-inventory.csv` | MP3, SRT, tres PDF, texto accesible, retrato institucional, mural, tipografías y reproducciones documentales. |
 | MP3 Pineau | Literal | SHA-256 `46b19c38a1b0d15db4010ab1dd002f72a99939f1486116595d257286deeeae2c` | Audiolibro y sincronización preservados. |
@@ -81,3 +81,7 @@ La solicitud editorial siguiente adopta para Orbuch la misma navegación princip
 El SRT aportado por el proyecto contiene 410 cues y su texto hablado coincide completamente con el guion accesible. Como su duración declarada (`1668.456` s) difiere de la del MP3 (`1673.900408` s), `generate-orbuch-sync.mjs` aplica una escala uniforme, conserva hashes de las tres fuentes y controla la deriva contra las pausas observadas en los cuatro títulos de capítulo. El resultado asigna intervalos a 154 unidades y habilita `sync.status: 'ready'`. Esta sincronización no es inferida por reparto proporcional: parte del SRT real y explicita la única normalización temporal aplicada.
 
 El lector compartido añade las velocidades `0,9×` y `1,1×`; no altera el documento temporizado ni los recursos de Pineau. El SRT y el retrato se publican con su procedencia en el inventario y en Créditos.
+
+## Ampliación y renovación visual del 27/10/2026
+
+Por solicitud del proyecto +TEC, la portada adopta una estética de catálogo audiovisual y se amplía a 29 lecturas, con dos recorridos completos y 27 fichas en preparación. Se incorporan seis colecciones temáticas, filtros, lista personal local y continuidad desde el progreso existente. La procedencia bibliográfica, los límites de cobertura del programa y la validación se detallan en `CATALOGO_2026.md`. No se alteran las dos experiencias publicadas, los documentos temporizados, el lector compartido ni los recursos originales.

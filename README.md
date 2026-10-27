@@ -1,13 +1,14 @@
 # Biblioteca de Historia de la Educación y de la Educación Física
 
-Este repositorio contiene una biblioteca académica estática para leer textos y escuchar sus audiolibros. Reúne dos obras: Iván Pablo Orbuch sobre educación corporal en el primer peronismo y Pablo Pineau sobre la Reforma Fresco–Noble.
+Este repositorio contiene una biblioteca académica estática para leer textos y escuchar sus audiolibros. El catálogo reúne 29 lecturas: dos recorridos completos (Orbuch y Pineau) y 27 fichas en preparación. La ampliación parte del programa UNAHUR 2024–2025 recuperado y de materiales del proyecto; no certifica la cobertura de una versión posterior del programa.
 
 ## Arquitectura pública incorporada por esta etapa
 
 - Biblioteca y catálogo: `/audiolibros-historia-educacion-fisica/`.
 - Orbuch: `/audiolibros-historia-educacion-fisica/textos/orbuch-educar-al-cuerpo/`.
 - Pineau: `/audiolibros-historia-educacion-fisica/textos/pineau-fresco-noble/`.
-- Catálogo manual, búsqueda local y orden bibliográfico: `portable-site/src/biblioteca/`.
+- Catálogo manual, seis colecciones temáticas, búsqueda, filtros, lista personal y continuidad de lectura: `portable-site/src/biblioteca/`.
+- Renovación visual y procedencia del catálogo: `documentation/CATALOGO_2026.md`.
 - Documentación de esta etapa: `documentation/BIBLIOTECA_ACADEMICA.md`.
 - Transición del nombre y de la URL: `documentation/RENOMBRADO_REPOSITORIO.md`.
 

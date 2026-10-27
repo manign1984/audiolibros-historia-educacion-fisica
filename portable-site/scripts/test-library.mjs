@@ -2,7 +2,8 @@ import assert from 'node:assert/strict';
 import { access, readFile } from 'node:fs/promises';
 import {
   alphabeticGroup,
-  catalog,
+  catalog as allCatalog,
+  collections,
   citationAsPlainText,
   filterCatalog,
   matchesCatalogEntry,
@@ -13,6 +14,7 @@ import {
 import { orbuchReaderConfig, pineauReaderConfig } from '../src/readerConfigs.js';
 import { buildOrbuchReadingDocument } from '../src/orbuch/buildReadingDocument.js';
 
+const catalog = allCatalog.filter((entry) => entry.status === 'available');
 const orbuch = catalog.find((entry) => entry.id === 'orbuch-educar-al-cuerpo');
 const pineau = catalog.find((entry) => entry.id === 'pineau-fresco-noble');
 const orbuchAccessibleText = await readFile(new URL('../src/orbuch/orbuch-texto-accesible.txt', import.meta.url), 'utf8');
@@ -104,11 +106,45 @@ await Promise.all([
   access(new URL('../textos/pineau-fresco-noble/index.html', import.meta.url)),
 ]);
 
-const libraryStyles = await readFile(new URL('../src/biblioteca/library.css', import.meta.url), 'utf8');
-assert.match(
-  libraryStyles,
-  /\.catalog-entry\s*\{[^}]*grid-column:\s*2;/s,
-  'Las entradas que comparten inicial deben permanecer alineadas con la columna bibliográfica.',
-);
+// New catalog entries have stable physical routes; their availability is explicit.
+assert.equal(allCatalog.length, 29);
+assert.equal(new Set(allCatalog.map((entry) => entry.id)).size, allCatalog.length);
+for (const entry of allCatalog) {
+  assert.ok(collections.some((collection) => collection.id === entry.collection));
+  assert.ok(citationAsPlainText(entry).length > 30);
+  assert.ok(['available', 'preparation'].includes(entry.status));
+  await access(new URL(`../${entry.path}index.html`, import.meta.url));
+  if (entry.status === 'preparation') {
+    assert.equal(entry.duration, undefined, 'No inventar duración para audios pendientes.');
+    assert.equal(entry.stateKey, undefined, 'Una ficha sin audio no puede mostrar progreso.');
+  }
+}
+assert.equal(filterCatalog(allCatalog, 'FEIGUÍN').length, 1);
+assert.equal(filterCatalog(allCatalog, 'galak dicho')[0].id, 'galak-del-dicho-al-hecho');
+assert.equal(filterCatalog(allCatalog, 'zzzinexistente').length, 0);
 
-console.log('Biblioteca: dos obras, búsqueda, APA, rutas, almacenamiento y sincronización SRT verificada.');
+const { LIST_KEY, readList, saveList, readProgress } = await import('../src/biblioteca/libraryState.js');
+const values = new Map();
+const storage = { getItem: (key) => values.get(key), setItem: (key, value) => values.set(key, value) };
+const ids = allCatalog.map((entry) => entry.id);
+assert.deepEqual(readList(storage, ids), []);
+assert.ok(saveList(storage, [pineau.id, orbuch.id]));
+assert.deepEqual(readList(storage, ids), [pineau.id, orbuch.id]);
+values.set(LIST_KEY, JSON.stringify([pineau.id, pineau.id, 'unknown']));
+assert.deepEqual(readList(storage, ids), [pineau.id]);
+values.set(LIST_KEY, 'broken-json');
+assert.deepEqual(readList(storage, ids), []);
+assert.equal(readProgress(storage, pineau), 0);
+values.set(pineau.stateKey, JSON.stringify({ currentTime: 60 }));
+assert.equal(readProgress(storage, pineau), 60);
+values.set(pineau.stateKey, JSON.stringify({ currentTime: -20 }));
+assert.equal(readProgress(storage, pineau), 0);
+values.set(pineau.stateKey, JSON.stringify({ currentTime: 999999 }));
+assert.equal(readProgress(storage, pineau), pineau.duration);
+values.set(pineau.stateKey, JSON.stringify({ currentTime: '60' }));
+assert.equal(readProgress(storage, pineau), 0);
+const blocked = { getItem() { throw new Error('Blocked'); }, setItem() { throw new Error('Blocked'); } };
+assert.deepEqual(readList(blocked, ids), []);
+assert.equal(saveList(blocked, ids), false);
+assert.equal(readProgress(blocked, pineau), 0);
+console.log('Biblioteca: 29 fichas, 2 recorridos completos, búsqueda, APA, rutas, lista, progreso y sincronización verificados.');
