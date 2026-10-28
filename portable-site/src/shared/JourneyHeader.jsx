@@ -3,6 +3,7 @@ import { ArrowLeft } from 'lucide-react';
 import '@fontsource/archivo/latin-600.css';
 import '@fontsource/archivo/latin-700.css';
 import './journey-header.css';
+import './hero-viewport.css';
 
 export const JOURNEY_SECTIONS = [
   ['inicio', 'Inicio'],
