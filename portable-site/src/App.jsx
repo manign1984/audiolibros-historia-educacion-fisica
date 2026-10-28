@@ -21,15 +21,21 @@ import IntegratedReader from './IntegratedReader.jsx';
 import { pineauReaderConfig } from './readerConfigs.js';
 import { readingDocument } from './readingDocument.js';
 import JourneyHeader, { JOURNEY_SECTIONS as NAV_ITEMS, useJourneyNavigation } from './shared/JourneyHeader.jsx';
+import './pineau-block-labels.css';
 
 const AUDIOBOOK_DRIVE_ID = '17w1Pw25aGLXu_cR9mRBZgIOnCG2qNAEm';
 const AUDIOBOOK_DRIVE_URL = `https://drive.google.com/file/d/${AUDIOBOOK_DRIVE_ID}/view`;
 const LIBRARY_HOME_URL = import.meta.env.BASE_URL;
 
-function SectionHeading({ index, section, title, titleLines, mobileTitleLines, text, inverse = false }) {
+function PineauBlockLabel({ sectionId, className = '' }) {
+  const index = NAV_ITEMS.findIndex(([id]) => id === sectionId);
+  return <p className={`pineau-block-label ${className}`}>{String(index + 1).padStart(2, '0')} · {NAV_ITEMS[index][1]}</p>;
+}
+
+function SectionHeading({ index, section, sectionId, pilotBlockLabels, title, titleLines, mobileTitleLines, text, inverse = false }) {
   return (
     <header className={`section-heading ${inverse ? 'section-heading--inverse' : ''}`}>
-      <p className="eyebrow section-label">Sección {index} · {section}</p>
+      {pilotBlockLabels ? <PineauBlockLabel sectionId={sectionId} className="section-label" /> : <p className="eyebrow section-label">Sección {index} · {section}</p>}
       <h2 aria-label={title}>
         {titleLines ? (
           <span className="section-title-fixed">
@@ -327,13 +333,16 @@ function TopBar({ progress, active }) {
   );
 }
 
-function Hero({ soundOn, setSoundOn }) {
+function Hero({ soundOn, setSoundOn, pilotBlockLabels }) {
   return (
     <section id="inicio" className="hero tracked-section">
       <div className="hero-radiance" aria-hidden="true" />
       <div className="hero-grid page-shell">
         <div className="hero-copy">
-          <a className="work-library-link" href={LIBRARY_HOME_URL}>← Volver a la biblioteca</a>
+          {pilotBlockLabels ? <div className="pineau-entry-line">
+            <PineauBlockLabel sectionId="inicio" />
+            <a className="work-library-link" href={LIBRARY_HOME_URL}>← Volver a la biblioteca</a>
+          </div> : <a className="work-library-link" href={LIBRARY_HOME_URL}>← Volver a la biblioteca</a>}
           <p className="hero-kicker"><span>Provincia de Buenos Aires</span><span>1937</span></p>
           <h1>
             <span className="hero-title-line">La reforma educativa</span>
@@ -386,7 +395,7 @@ function Hero({ soundOn, setSoundOn }) {
   );
 }
 
-function AuthorSection() {
+function AuthorSection({ pilotBlockLabels }) {
   return (
     <section id="autor" className="author-section tracked-section">
       <div className="page-shell author-grid">
@@ -396,7 +405,7 @@ function AuthorSection() {
           <p className="image-credit">Fotografía: Facultad de Filosofía y Letras, UBA.</p>
         </div>
         <div className="author-copy">
-          <p className="eyebrow">El autor del texto</p>
+          {pilotBlockLabels ? <PineauBlockLabel sectionId="autor" /> : <p className="eyebrow">El autor del texto</p>}
           <h2>Pablo Pineau</h2>
           <p className="author-role">Historiador de la educación · Doctor en Educación</p>
           <p className="author-summary">
@@ -417,11 +426,13 @@ function AuthorSection() {
   );
 }
 
-function ContextSection() {
+function ContextSection({ pilotBlockLabels }) {
   return (
     <section id="contexto" className="context-section tracked-section">
       <div className="page-shell">
         <SectionHeading
+          sectionId="contexto"
+          pilotBlockLabels={pilotBlockLabels}
           index="01"
           section="Contexto histórico"
           title="Situar la reforma educativa en su contexto histórico (1930-1943)"
@@ -528,11 +539,13 @@ function ContextSection() {
   );
 }
 
-function ReadingSection({ showToast }) {
+function ReadingSection({ showToast, pilotBlockLabels }) {
   return (
     <section id="lectura" className="reading-section tracked-section">
       <div className="page-shell">
         <SectionHeading
+          sectionId="lectura"
+          pilotBlockLabels={pilotBlockLabels}
           index="02"
           section="Lectura"
           title="El texto en el centro de los procesos de enseñanza y aprendizaje"
@@ -543,7 +556,7 @@ function ReadingSection({ showToast }) {
         <article className="reading-synopsis" aria-labelledby="reading-synopsis-title">
           <div className="reading-synopsis__label" aria-hidden="true">
             <span>Antes de abrir el texto</span>
-            <b>01</b>
+            {pilotBlockLabels ? <FileText className="pineau-synopsis-icon" strokeWidth={1.2} /> : <b>01</b>}
           </div>
           <div className="reading-synopsis__copy">
             <p className="eyebrow">Una entrada a la trama</p>
@@ -573,7 +586,7 @@ function ReadingSection({ showToast }) {
   );
 }
 
-function Footer() {
+function Footer({ pilotBlockLabels }) {
   return (
     <footer id="creditos" className="site-footer credits-section tracked-section" aria-labelledby="credits-title">
       <div className="footer-salamone" aria-hidden="true">
@@ -584,7 +597,7 @@ function Footer() {
       </div>
       <div className="page-shell footer-grid">
         <div>
-          <p className="eyebrow credits-label">Sección 03 · Créditos</p>
+          {pilotBlockLabels ? <PineauBlockLabel sectionId="creditos" className="credits-label" /> : <p className="eyebrow credits-label">Sección 03 · Créditos</p>}
           <h2 id="credits-title">Leer el pasado para intervenir en el presente.</h2>
           <p>
             Este cierre reconoce los textos, archivos, instituciones y aportes que hicieron posible el
@@ -631,7 +644,7 @@ function Footer() {
   );
 }
 
-export default function App() {
+export default function App({ pilotBlockLabels = true } = {}) {
   const [soundOn, setSoundOn] = useState(true);
   const [toast, setToast] = useState('');
   const { progress, active } = useJourneyNavigation();
@@ -649,12 +662,12 @@ export default function App() {
     <>
       <TopBar progress={progress} active={active} />
       <main>
-        <Hero soundOn={soundOn} setSoundOn={setSoundOn} />
-        <AuthorSection />
-        <ContextSection />
-        <ReadingSection showToast={showToast} />
+        <Hero soundOn={soundOn} setSoundOn={setSoundOn} pilotBlockLabels={pilotBlockLabels} />
+        <AuthorSection pilotBlockLabels={pilotBlockLabels} />
+        <ContextSection pilotBlockLabels={pilotBlockLabels} />
+        <ReadingSection showToast={showToast} pilotBlockLabels={pilotBlockLabels} />
       </main>
-      <Footer />
+      <Footer pilotBlockLabels={pilotBlockLabels} />
       <div className={`toast ${toast ? 'show' : ''}`} role="status" aria-live="polite">
         <CheckCircle2 size={18} /> {toast}
       </div>
