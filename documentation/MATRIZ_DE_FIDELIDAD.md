@@ -105,3 +105,7 @@ Por solicitud explícita se incorpora el tercer recorrido de autor, contexto y l
 ## Parámetros comunes de los recorridos del 28/10/2026
 
 Por solicitud explícita se aplican a Orbuch y Hobsbawm las directrices acordadas en el documento editorial: alturas de Pineau para los cinco bloques y una ficha de autor con Bebas Neue 400, Archivo 400/700, retrato en blanco y negro y resumen cercano a 60 palabras. La implementación y las comprobaciones se detallan en `PARAMETROS_COMUNES_2026.md`. No se modifican los componentes, estilos, textos, tiempos o recursos originales de Pineau ni el motor del lector. Se conserva el retrato anterior de Hobsbawm y se añade un retrato de procedencia documentada con encuadre de rostro.
+
+## Eliminación de barras internas del 28/10/2026
+
+Por solicitud explícita se corrige la implementación de alturas comunes que había introducido desplazamiento dentro de los bloques de Orbuch y Hobsbawm. La nueva regla D11 del acuerdo editorial establece una única barra vertical para el recorrido principal. Las alturas de Pineau pasan a ser mínimos de referencia; los bloques crecen cuando lo necesita su contenido. Se modifican los estilos compartidos y se retira el foco artificial de los contenedores. El contenido, las tipografías, los retratos y el lector compartido se conservan.
