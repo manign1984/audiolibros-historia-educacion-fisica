@@ -1,0 +1,43 @@
+import assert from 'node:assert/strict';
+import { readFile, access } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { buildHobsbawmReadingDocument } from '../src/hobsbawm/buildReadingDocument.js';
+import { hobsbawmReaderConfig, pineauReaderConfig, orbuchReaderConfig } from '../src/readerConfigs.js';
+import { catalog, filterCatalog } from '../src/biblioteca/catalog.js';
+const read = (p) => readFile(new URL(p, import.meta.url), 'utf8');
+const source = await read('../src/hobsbawm/hobsbawm-source.txt');
+const timings = JSON.parse(await read('../src/hobsbawm/timings.json'));
+const report = JSON.parse(await read('../../data/hobsbawm-alignment-report.json'));
+const document = buildHobsbawmReadingDocument(source, timings);
+assert.equal(await read('../public/assets/hobsbawm-texto-accesible.txt'), source);
+assert.equal(createHash('sha256').update(source).digest('hex'), report.textSha256);
+assert.deepEqual(document.sections.map((s) => s.id), ['testimonios', 'memoria', 'triptico', 'transformaciones']);
+assert.equal(document.sections[0].paragraphs.length, 12, 'Conservar los doce testimonios.');
+const units = [...document.frontMatter, ...document.sections.flatMap((s) => s.paragraphs.flatMap((p) => p.sentences))];
+assert.equal(new Set(units.map((s) => s.id)).size, units.length);
+assert.equal(units.length, 241);
+assert.equal(units.filter((s) => s.audioUnavailable).length, 6, 'Los fragmentos omitidos por el audio deben conservarse sin tiempos inventados.');
+assert.ok(report.matchedTokenRatio > .96);
+let previous = -1;
+for (const unit of units) {
+  if (unit.audioUnavailable) { assert.equal(unit.start, undefined); assert.equal(unit.end, undefined); continue; }
+  assert.ok(Number.isFinite(unit.start) && Number.isFinite(unit.end));
+  assert.ok(unit.start >= previous && unit.end > unit.start && unit.end <= document.duration);
+  previous = unit.start;
+}
+assert.ok(document.sections.at(-1).paragraphs.at(-1).sentences.at(-1).text.includes('no ha terminado bien'));
+assert.equal(units.at(-1).end, 2941.68);
+assert.equal(hobsbawmReaderConfig.sync.status, 'ready');
+assert.equal(new Set([hobsbawmReaderConfig, pineauReaderConfig, orbuchReaderConfig].map((c) => c.storage.notesKey)).size, 3);
+assert.equal(new Set([hobsbawmReaderConfig, pineauReaderConfig, orbuchReaderConfig].map((c) => c.storage.stateKey)).size, 3);
+const entry = catalog.find((e) => e.id === 'hobsbawm-historia-siglo-xx');
+assert.equal(entry.status, 'available');
+assert.equal(entry.duration, document.duration);
+assert.equal(filterCatalog(catalog, 'hobsbawn siglo')[0].id, entry.id);
+const app = await read('../src/hobsbawm/HobsbawmApp.jsx');
+assert.match(app, /import IntegratedReader from '\.\.\/IntegratedReader\.jsx'/);
+for (const id of ['inicio', 'autor', 'contexto', 'lectura', 'creditos']) assert.ok(app.includes(`id="${id}"`));
+for (const name of ['hobsbawm-audiolibro.mp3', 'hobsbawm-vista-panoramica.pdf', 'hobsbawm-texto-accesible.txt', 'hobsbawm-retrato.jpg', 'hobsbawm-alineacion.srt']) await access(new URL(`../public/assets/${name}`, import.meta.url));
+const srt = await read('../public/assets/hobsbawm-alineacion.srt');
+assert.equal((srt.match(/ --> /g) || []).length, report.spokenUnits);
+console.log('Hobsbawm: cuatro capítulos, 235 unidades temporizadas, seis pasajes sin audio conservados, recursos y lector compartido verificados.');

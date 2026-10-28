@@ -1,0 +1,11 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import '@fontsource/bebas-neue/latin-400.css';
+import '@fontsource/manrope/latin-400.css';
+import '@fontsource/manrope/latin-500.css';
+import '@fontsource/manrope/latin-600.css';
+import '@fontsource/manrope/latin-700.css';
+import HobsbawmApp from './HobsbawmApp.jsx';
+import '../reader.css';
+import './hobsbawm.css';
+ReactDOM.createRoot(document.getElementById('root')).render(<React.StrictMode><HobsbawmApp /></React.StrictMode>);

@@ -1,0 +1,1951 @@
+{
+  "method": "ASR word timestamps + monotone lexical alignment to the provided text",
+  "engine": "faster-whisper 1.2.1",
+  "model": "Systran/faster-whisper-small",
+  "sourceAudioSha256": "a000a05ad399a944bddc46c3707baf796ca439a387cc2efa6218c3b63605983b",
+  "textSha256": "8e00ad772f0c61e8a75b652020d69644b2a052846360ad34b3ab732fc14ee4a9",
+  "units": 241,
+  "spokenUnits": 235,
+  "omittedUnits": [
+    "memoria-p5-s10",
+    "memoria-p5-s11",
+    "memoria-p5-s7",
+    "memoria-p5-s8",
+    "memoria-p5-s9",
+    "triptico-p8-s6"
+  ],
+  "matchedTokenRatio": 0.96882,
+  "reviewedBoundaries": [
+    0,
+    7.3,
+    704.38,
+    705.86,
+    1341.02,
+    1342,
+    2941.68
+  ],
+  "sentences": [
+    {
+      "id": "hobs-title",
+      "matched": 4,
+      "tokens": 4,
+      "coverage": 1.0,
+      "start": 0.0,
+      "end": 1.44
+    },
+    {
+      "id": "hobs-author",
+      "matched": 2,
+      "tokens": 2,
+      "coverage": 1.0,
+      "start": 2.0,
+      "end": 3.22
+    },
+    {
+      "id": "hobs-subtitle",
+      "matched": 7,
+      "tokens": 7,
+      "coverage": 1.0,
+      "start": 4.16,
+      "end": 7.3
+    },
+    {
+      "id": "testimonios-p1-s1",
+      "matched": 21,
+      "tokens": 21,
+      "coverage": 1.0,
+      "start": 8.9,
+      "end": 19.58
+    },
+    {
+      "id": "testimonios-p1-s2",
+      "matched": 11,
+      "tokens": 11,
+      "coverage": 1.0,
+      "start": 20.08,
+      "end": 22.82
+    },
+    {
+      "id": "testimonios-p2-s1",
+      "matched": 44,
+      "tokens": 44,
+      "coverage": 1.0,
+      "start": 24.2,
+      "end": 43.92
+    },
+    {
+      "id": "testimonios-p3-s1",
+      "matched": 16,
+      "tokens": 16,
+      "coverage": 1.0,
+      "start": 44.74,
+      "end": 53.04
+    },
+    {
+      "id": "testimonios-p3-s2",
+      "matched": 33,
+      "tokens": 33,
+      "coverage": 1.0,
+      "start": 53.52,
+      "end": 64.96
+    },
+    {
+      "id": "testimonios-p3-s3",
+      "matched": 12,
+      "tokens": 12,
+      "coverage": 1.0,
+      "start": 65.76,
+      "end": 71.08
+    },
+    {
+      "id": "testimonios-p3-s4",
+      "matched": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "start": 71.76,
+      "end": 78.44
+    },
+    {
+      "id": "testimonios-p3-s5",
+      "matched": 16,
+      "tokens": 16,
+      "coverage": 1.0,
+      "start": 79.2,
+      "end": 84.9
+    },
+    {
+      "id": "testimonios-p4-s1",
+      "matched": 13,
+      "tokens": 14,
+      "coverage": 0.9286,
+      "start": 86.24,
+      "end": 92.88
+    },
+    {
+      "id": "testimonios-p5-s1",
+      "matched": 34,
+      "tokens": 34,
+      "coverage": 1.0,
+      "start": 93.86,
+      "end": 106.6
+    },
+    {
+      "id": "testimonios-p6-s1",
+      "matched": 23,
+      "tokens": 23,
+      "coverage": 1.0,
+      "start": 107.36,
+      "end": 116.32
+    },
+    {
+      "id": "testimonios-p7-s1",
+      "matched": 21,
+      "tokens": 21,
+      "coverage": 1.0,
+      "start": 117.28,
+      "end": 126.76
+    },
+    {
+      "id": "testimonios-p7-s2",
+      "matched": 10,
+      "tokens": 10,
+      "coverage": 1.0,
+      "start": 127.24,
+      "end": 130.9
+    },
+    {
+      "id": "testimonios-p8-s1",
+      "matched": 31,
+      "tokens": 31,
+      "coverage": 1.0,
+      "start": 132.4,
+      "end": 144.78
+    },
+    {
+      "id": "testimonios-p9-s1",
+      "matched": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "start": 145.8,
+      "end": 154.54
+    },
+    {
+      "id": "testimonios-p9-s2",
+      "matched": 7,
+      "tokens": 8,
+      "coverage": 0.875,
+      "start": 155.16,
+      "end": 156.92
+    },
+    {
+      "id": "testimonios-p10-s1",
+      "matched": 53,
+      "tokens": 53,
+      "coverage": 1.0,
+      "start": 158.28,
+      "end": 178.72
+    },
+    {
+      "id": "testimonios-p11-s1",
+      "matched": 32,
+      "tokens": 36,
+      "coverage": 0.8889,
+      "start": 184.16,
+      "end": 195.04
+    },
+    {
+      "id": "testimonios-p11-s2",
+      "matched": 11,
+      "tokens": 11,
+      "coverage": 1.0,
+      "start": 195.94,
+      "end": 199.98
+    },
+    {
+      "id": "testimonios-p12-s1",
+      "matched": 8,
+      "tokens": 12,
+      "coverage": 0.6667,
+      "start": 204.12,
+      "end": 206.96
+    },
+    {
+      "id": "testimonios-p12-s2",
+      "matched": 13,
+      "tokens": 13,
+      "coverage": 1.0,
+      "start": 207.68,
+      "end": 212.14
+    },
+    {
+      "id": "memoria-p1-s1",
+      "matched": 45,
+      "tokens": 46,
+      "coverage": 0.9783,
+      "start": 215.2,
+      "end": 232.56
+    },
+    {
+      "id": "memoria-p1-s2",
+      "matched": 15,
+      "tokens": 16,
+      "coverage": 0.9375,
+      "start": 233.08,
+      "end": 237.5
+    },
+    {
+      "id": "memoria-p1-s3",
+      "matched": 32,
+      "tokens": 32,
+      "coverage": 1.0,
+      "start": 237.5,
+      "end": 249.08
+    },
+    {
+      "id": "memoria-p1-s4",
+      "matched": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "start": 249.58,
+      "end": 258.6
+    },
+    {
+      "id": "memoria-p1-s5",
+      "matched": 13,
+      "tokens": 14,
+      "coverage": 0.9286,
+      "start": 259.58,
+      "end": 262.86
+    },
+    {
+      "id": "memoria-p1-s6",
+      "matched": 30,
+      "tokens": 34,
+      "coverage": 0.8824,
+      "start": 264.44,
+      "end": 278.2
+    },
+    {
+      "id": "memoria-p1-s7",
+      "matched": 35,
+      "tokens": 35,
+      "coverage": 1.0,
+      "start": 278.92,
+      "end": 290.94
+    },
+    {
+      "id": "memoria-p1-s8",
+      "matched": 22,
+      "tokens": 22,
+      "coverage": 1.0,
+      "start": 290.94,
+      "end": 298.82
+    },
+    {
+      "id": "memoria-p1-s9",
+      "matched": 16,
+      "tokens": 16,
+      "coverage": 1.0,
+      "start": 299.76,
+      "end": 306.46
+    },
+    {
+      "id": "memoria-p1-s10",
+      "matched": 7,
+      "tokens": 7,
+      "coverage": 1.0,
+      "start": 307.06,
+      "end": 309.16
+    },
+    {
+      "id": "memoria-p2-s1",
+      "matched": 35,
+      "tokens": 38,
+      "coverage": 0.9211,
+      "start": 309.74,
+      "end": 323.32
+    },
+    {
+      "id": "memoria-p2-s2",
+      "matched": 34,
+      "tokens": 34,
+      "coverage": 1.0,
+      "start": 324.14,
+      "end": 334.66
+    },
+    {
+      "id": "memoria-p2-s3",
+      "matched": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "start": 335.18,
+      "end": 345.04
+    },
+    {
+      "id": "memoria-p2-s4",
+      "matched": 25,
+      "tokens": 25,
+      "coverage": 1.0,
+      "start": 345.04,
+      "end": 353.32
+    },
+    {
+      "id": "memoria-p2-s5",
+      "matched": 45,
+      "tokens": 45,
+      "coverage": 1.0,
+      "start": 354.14,
+      "end": 371.34
+    },
+    {
+      "id": "memoria-p2-s6",
+      "matched": 68,
+      "tokens": 70,
+      "coverage": 0.9714,
+      "start": 371.34,
+      "end": 397.28
+    },
+    {
+      "id": "memoria-p2-s7",
+      "matched": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "start": 397.28,
+      "end": 405.34
+    },
+    {
+      "id": "memoria-p2-s8",
+      "matched": 39,
+      "tokens": 39,
+      "coverage": 1.0,
+      "start": 406.14,
+      "end": 420.02
+    },
+    {
+      "id": "memoria-p2-s9",
+      "matched": 21,
+      "tokens": 21,
+      "coverage": 1.0,
+      "start": 420.9,
+      "end": 427.54
+    },
+    {
+      "id": "memoria-p2-s10",
+      "matched": 40,
+      "tokens": 42,
+      "coverage": 0.9524,
+      "start": 427.54,
+      "end": 442.8
+    },
+    {
+      "id": "memoria-p2-s11",
+      "matched": 10,
+      "tokens": 10,
+      "coverage": 1.0,
+      "start": 443.5,
+      "end": 446.02
+    },
+    {
+      "id": "memoria-p2-s12",
+      "matched": 42,
+      "tokens": 42,
+      "coverage": 1.0,
+      "start": 446.64,
+      "end": 459.32
+    },
+    {
+      "id": "memoria-p3-s1",
+      "matched": 93,
+      "tokens": 97,
+      "coverage": 0.9588,
+      "start": 460.06,
+      "end": 491.6
+    },
+    {
+      "id": "memoria-p3-s2",
+      "matched": 24,
+      "tokens": 24,
+      "coverage": 1.0,
+      "start": 491.84,
+      "end": 500.96
+    },
+    {
+      "id": "memoria-p3-s3",
+      "matched": 75,
+      "tokens": 77,
+      "coverage": 0.974,
+      "start": 501.74,
+      "end": 527.06
+    },
+    {
+      "id": "memoria-p3-s4",
+      "matched": 7,
+      "tokens": 7,
+      "coverage": 1.0,
+      "start": 527.74,
+      "end": 529.38
+    },
+    {
+      "id": "memoria-p4-s1",
+      "matched": 18,
+      "tokens": 18,
+      "coverage": 1.0,
+      "start": 529.92,
+      "end": 535.12
+    },
+    {
+      "id": "memoria-p4-s2",
+      "matched": 44,
+      "tokens": 45,
+      "coverage": 0.9778,
+      "start": 535.12,
+      "end": 551.88
+    },
+    {
+      "id": "memoria-p4-s3",
+      "matched": 25,
+      "tokens": 26,
+      "coverage": 0.9615,
+      "start": 552.64,
+      "end": 561.9
+    },
+    {
+      "id": "memoria-p4-s4",
+      "matched": 34,
+      "tokens": 34,
+      "coverage": 1.0,
+      "start": 562.98,
+      "end": 577.22
+    },
+    {
+      "id": "memoria-p4-s5",
+      "matched": 24,
+      "tokens": 24,
+      "coverage": 1.0,
+      "start": 578.16,
+      "end": 585.94
+    },
+    {
+      "id": "memoria-p4-s6",
+      "matched": 24,
+      "tokens": 25,
+      "coverage": 0.96,
+      "start": 587.24,
+      "end": 596.66
+    },
+    {
+      "id": "memoria-p4-s7",
+      "matched": 79,
+      "tokens": 80,
+      "coverage": 0.9875,
+      "start": 597.12,
+      "end": 627.32
+    },
+    {
+      "id": "memoria-p5-s1",
+      "matched": 47,
+      "tokens": 47,
+      "coverage": 1.0,
+      "start": 628.04,
+      "end": 643.12
+    },
+    {
+      "id": "memoria-p5-s2",
+      "matched": 42,
+      "tokens": 42,
+      "coverage": 1.0,
+      "start": 643.62,
+      "end": 658.4
+    },
+    {
+      "id": "memoria-p5-s3",
+      "matched": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "start": 659.42,
+      "end": 667.88
+    },
+    {
+      "id": "memoria-p5-s4",
+      "matched": 22,
+      "tokens": 22,
+      "coverage": 1.0,
+      "start": 668.8,
+      "end": 675.7
+    },
+    {
+      "id": "memoria-p5-s5",
+      "matched": 30,
+      "tokens": 30,
+      "coverage": 1.0,
+      "start": 676.6,
+      "end": 688.56
+    },
+    {
+      "id": "memoria-p5-s6",
+      "matched": 38,
+      "tokens": 39,
+      "coverage": 0.9744,
+      "start": 689.2,
+      "end": 704.02
+    },
+    {
+      "id": "memoria-p5-s7",
+      "matched": 0,
+      "tokens": 21,
+      "coverage": 0.0,
+      "audioUnavailable": true
+    },
+    {
+      "id": "memoria-p5-s8",
+      "matched": 0,
+      "tokens": 31,
+      "coverage": 0.0,
+      "audioUnavailable": true
+    },
+    {
+      "id": "memoria-p5-s9",
+      "matched": 0,
+      "tokens": 21,
+      "coverage": 0.0,
+      "audioUnavailable": true
+    },
+    {
+      "id": "memoria-p5-s10",
+      "matched": 0,
+      "tokens": 20,
+      "coverage": 0.0,
+      "audioUnavailable": true
+    },
+    {
+      "id": "memoria-p5-s11",
+      "matched": 0,
+      "tokens": 5,
+      "coverage": 0.0,
+      "audioUnavailable": true
+    },
+    {
+      "id": "triptico-p1-s1",
+      "matched": 42,
+      "tokens": 42,
+      "coverage": 1.0,
+      "start": 705.86,
+      "end": 721.5
+    },
+    {
+      "id": "triptico-p1-s2",
+      "matched": 26,
+      "tokens": 26,
+      "coverage": 1.0,
+      "start": 721.96,
+      "end": 729.56
+    },
+    {
+      "id": "triptico-p1-s3",
+      "matched": 34,
+      "tokens": 34,
+      "coverage": 1.0,
+      "start": 730.12,
+      "end": 741.98
+    },
+    {
+      "id": "triptico-p1-s4",
+      "matched": 43,
+      "tokens": 43,
+      "coverage": 1.0,
+      "start": 742.36,
+      "end": 756.58
+    },
+    {
+      "id": "triptico-p1-s5",
+      "matched": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "start": 757.06,
+      "end": 764.36
+    },
+    {
+      "id": "triptico-p1-s6",
+      "matched": 43,
+      "tokens": 45,
+      "coverage": 0.9556,
+      "start": 764.96,
+      "end": 782.82
+    },
+    {
+      "id": "triptico-p1-s7",
+      "matched": 15,
+      "tokens": 15,
+      "coverage": 1.0,
+      "start": 783.52,
+      "end": 788.36
+    },
+    {
+      "id": "triptico-p2-s1",
+      "matched": 11,
+      "tokens": 11,
+      "coverage": 1.0,
+      "start": 788.94,
+      "end": 792.8
+    },
+    {
+      "id": "triptico-p2-s2",
+      "matched": 47,
+      "tokens": 48,
+      "coverage": 0.9792,
+      "start": 793.56,
+      "end": 810.76
+    },
+    {
+      "id": "triptico-p2-s3",
+      "matched": 24,
+      "tokens": 25,
+      "coverage": 0.96,
+      "start": 811.9,
+      "end": 820.8
+    },
+    {
+      "id": "triptico-p2-s4",
+      "matched": 32,
+      "tokens": 35,
+      "coverage": 0.9143,
+      "start": 822.56,
+      "end": 836.14
+    },
+    {
+      "id": "triptico-p2-s5",
+      "matched": 31,
+      "tokens": 32,
+      "coverage": 0.9688,
+      "start": 836.7,
+      "end": 849.12
+    },
+    {
+      "id": "triptico-p2-s6",
+      "matched": 37,
+      "tokens": 38,
+      "coverage": 0.9737,
+      "start": 849.94,
+      "end": 863.02
+    },
+    {
+      "id": "triptico-p2-s7",
+      "matched": 24,
+      "tokens": 25,
+      "coverage": 0.96,
+      "start": 863.68,
+      "end": 873.1
+    },
+    {
+      "id": "triptico-p2-s8",
+      "matched": 18,
+      "tokens": 19,
+      "coverage": 0.9474,
+      "start": 873.84,
+      "end": 880.1
+    },
+    {
+      "id": "triptico-p3-s1",
+      "matched": 18,
+      "tokens": 18,
+      "coverage": 1.0,
+      "start": 880.68,
+      "end": 885.88
+    },
+    {
+      "id": "triptico-p3-s2",
+      "matched": 17,
+      "tokens": 17,
+      "coverage": 1.0,
+      "start": 886.54,
+      "end": 892.92
+    },
+    {
+      "id": "triptico-p3-s3",
+      "matched": 50,
+      "tokens": 50,
+      "coverage": 1.0,
+      "start": 893.64,
+      "end": 911.84
+    },
+    {
+      "id": "triptico-p3-s4",
+      "matched": 71,
+      "tokens": 74,
+      "coverage": 0.9595,
+      "start": 912.7,
+      "end": 943.98
+    },
+    {
+      "id": "triptico-p4-s1",
+      "matched": 34,
+      "tokens": 35,
+      "coverage": 0.9714,
+      "start": 944.48,
+      "end": 957.7
+    },
+    {
+      "id": "triptico-p4-s2",
+      "matched": 14,
+      "tokens": 14,
+      "coverage": 1.0,
+      "start": 957.7,
+      "end": 964.06
+    },
+    {
+      "id": "triptico-p4-s3",
+      "matched": 68,
+      "tokens": 68,
+      "coverage": 1.0,
+      "start": 964.64,
+      "end": 988.66
+    },
+    {
+      "id": "triptico-p4-s4",
+      "matched": 22,
+      "tokens": 22,
+      "coverage": 1.0,
+      "start": 989.34,
+      "end": 997.24
+    },
+    {
+      "id": "triptico-p4-s5",
+      "matched": 42,
+      "tokens": 42,
+      "coverage": 1.0,
+      "start": 997.96,
+      "end": 1013.12
+    },
+    {
+      "id": "triptico-p5-s1",
+      "matched": 7,
+      "tokens": 7,
+      "coverage": 1.0,
+      "start": 1013.12,
+      "end": 1016.3
+    },
+    {
+      "id": "triptico-p5-s2",
+      "matched": 48,
+      "tokens": 48,
+      "coverage": 1.0,
+      "start": 1016.58,
+      "end": 1034.2
+    },
+    {
+      "id": "triptico-p5-s3",
+      "matched": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "start": 1034.8,
+      "end": 1041.76
+    },
+    {
+      "id": "triptico-p5-s4",
+      "matched": 49,
+      "tokens": 49,
+      "coverage": 1.0,
+      "start": 1042.46,
+      "end": 1064.94
+    },
+    {
+      "id": "triptico-p6-s1",
+      "matched": 43,
+      "tokens": 43,
+      "coverage": 1.0,
+      "start": 1065.6,
+      "end": 1082.66
+    },
+    {
+      "id": "triptico-p6-s2",
+      "matched": 37,
+      "tokens": 37,
+      "coverage": 1.0,
+      "start": 1083.16,
+      "end": 1098.72
+    },
+    {
+      "id": "triptico-p6-s3",
+      "matched": 35,
+      "tokens": 35,
+      "coverage": 1.0,
+      "start": 1099.78,
+      "end": 1114.52
+    },
+    {
+      "id": "triptico-p6-s4",
+      "matched": 52,
+      "tokens": 52,
+      "coverage": 1.0,
+      "start": 1115.24,
+      "end": 1132.0
+    },
+    {
+      "id": "triptico-p6-s5",
+      "matched": 31,
+      "tokens": 32,
+      "coverage": 0.9688,
+      "start": 1133.2,
+      "end": 1145.64
+    },
+    {
+      "id": "triptico-p6-s6",
+      "matched": 83,
+      "tokens": 85,
+      "coverage": 0.9765,
+      "start": 1146.28,
+      "end": 1176.18
+    },
+    {
+      "id": "triptico-p7-s1",
+      "matched": 58,
+      "tokens": 58,
+      "coverage": 1.0,
+      "start": 1176.54,
+      "end": 1196.32
+    },
+    {
+      "id": "triptico-p7-s2",
+      "matched": 28,
+      "tokens": 28,
+      "coverage": 1.0,
+      "start": 1196.72,
+      "end": 1206.88
+    },
+    {
+      "id": "triptico-p7-s3",
+      "matched": 25,
+      "tokens": 26,
+      "coverage": 0.9615,
+      "start": 1207.6,
+      "end": 1216.96
+    },
+    {
+      "id": "triptico-p7-s4",
+      "matched": 40,
+      "tokens": 41,
+      "coverage": 0.9756,
+      "start": 1217.62,
+      "end": 1233.3
+    },
+    {
+      "id": "triptico-p7-s5",
+      "matched": 77,
+      "tokens": 77,
+      "coverage": 1.0,
+      "start": 1233.74,
+      "end": 1260.88
+    },
+    {
+      "id": "triptico-p7-s6",
+      "matched": 52,
+      "tokens": 53,
+      "coverage": 0.9811,
+      "start": 1261.62,
+      "end": 1279.92
+    },
+    {
+      "id": "triptico-p8-s1",
+      "matched": 43,
+      "tokens": 43,
+      "coverage": 1.0,
+      "start": 1280.48,
+      "end": 1297.52
+    },
+    {
+      "id": "triptico-p8-s2",
+      "matched": 15,
+      "tokens": 15,
+      "coverage": 1.0,
+      "start": 1298.12,
+      "end": 1302.9
+    },
+    {
+      "id": "triptico-p8-s3",
+      "matched": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "start": 1304.02,
+      "end": 1313.48
+    },
+    {
+      "id": "triptico-p8-s4",
+      "matched": 32,
+      "tokens": 32,
+      "coverage": 1.0,
+      "start": 1314.44,
+      "end": 1324.22
+    },
+    {
+      "id": "triptico-p8-s5",
+      "matched": 45,
+      "tokens": 46,
+      "coverage": 0.9783,
+      "start": 1324.8,
+      "end": 1341.02
+    },
+    {
+      "id": "triptico-p8-s6",
+      "matched": 0,
+      "tokens": 14,
+      "coverage": 0.0,
+      "audioUnavailable": true
+    },
+    {
+      "id": "triptico-p8-s7",
+      "matched": 44,
+      "tokens": 45,
+      "coverage": 0.9778,
+      "start": 1342.0,
+      "end": 1358.46
+    },
+    {
+      "id": "triptico-p8-s8",
+      "matched": 7,
+      "tokens": 7,
+      "coverage": 1.0,
+      "start": 1359.22,
+      "end": 1362.58
+    },
+    {
+      "id": "triptico-p8-s9",
+      "matched": 21,
+      "tokens": 21,
+      "coverage": 1.0,
+      "start": 1363.2,
+      "end": 1370.72
+    },
+    {
+      "id": "triptico-p8-s10",
+      "matched": 60,
+      "tokens": 60,
+      "coverage": 1.0,
+      "start": 1371.54,
+      "end": 1392.48
+    },
+    {
+      "id": "triptico-p9-s1",
+      "matched": 60,
+      "tokens": 62,
+      "coverage": 0.9677,
+      "start": 1392.62,
+      "end": 1413.92
+    },
+    {
+      "id": "triptico-p9-s2",
+      "matched": 42,
+      "tokens": 42,
+      "coverage": 1.0,
+      "start": 1414.92,
+      "end": 1428.58
+    },
+    {
+      "id": "triptico-p9-s3",
+      "matched": 27,
+      "tokens": 27,
+      "coverage": 1.0,
+      "start": 1429.32,
+      "end": 1441.46
+    },
+    {
+      "id": "triptico-p9-s4",
+      "matched": 33,
+      "tokens": 33,
+      "coverage": 1.0,
+      "start": 1441.94,
+      "end": 1454.64
+    },
+    {
+      "id": "triptico-p9-s5",
+      "matched": 14,
+      "tokens": 14,
+      "coverage": 1.0,
+      "start": 1455.18,
+      "end": 1459.34
+    },
+    {
+      "id": "triptico-p9-s6",
+      "matched": 26,
+      "tokens": 27,
+      "coverage": 0.963,
+      "start": 1459.88,
+      "end": 1471.8
+    },
+    {
+      "id": "triptico-p9-s7",
+      "matched": 60,
+      "tokens": 62,
+      "coverage": 0.9677,
+      "start": 1472.58,
+      "end": 1497.24
+    },
+    {
+      "id": "triptico-p9-s8",
+      "matched": 30,
+      "tokens": 30,
+      "coverage": 1.0,
+      "start": 1497.92,
+      "end": 1510.42
+    },
+    {
+      "id": "triptico-p10-s1",
+      "matched": 41,
+      "tokens": 42,
+      "coverage": 0.9762,
+      "start": 1510.42,
+      "end": 1527.62
+    },
+    {
+      "id": "triptico-p10-s2",
+      "matched": 68,
+      "tokens": 68,
+      "coverage": 1.0,
+      "start": 1528.3,
+      "end": 1554.62
+    },
+    {
+      "id": "triptico-p10-s3",
+      "matched": 16,
+      "tokens": 16,
+      "coverage": 1.0,
+      "start": 1554.62,
+      "end": 1562.16
+    },
+    {
+      "id": "triptico-p10-s4",
+      "matched": 37,
+      "tokens": 38,
+      "coverage": 0.9737,
+      "start": 1563.16,
+      "end": 1575.46
+    },
+    {
+      "id": "triptico-p10-s5",
+      "matched": 63,
+      "tokens": 63,
+      "coverage": 1.0,
+      "start": 1575.46,
+      "end": 1600.36
+    },
+    {
+      "id": "triptico-p10-s6",
+      "matched": 13,
+      "tokens": 15,
+      "coverage": 0.8667,
+      "start": 1600.86,
+      "end": 1605.68
+    },
+    {
+      "id": "triptico-p10-s7",
+      "matched": 69,
+      "tokens": 71,
+      "coverage": 0.9718,
+      "start": 1606.54,
+      "end": 1633.38
+    },
+    {
+      "id": "triptico-p10-s8",
+      "matched": 28,
+      "tokens": 28,
+      "coverage": 1.0,
+      "start": 1633.38,
+      "end": 1644.16
+    },
+    {
+      "id": "triptico-p10-s9",
+      "matched": 21,
+      "tokens": 21,
+      "coverage": 1.0,
+      "start": 1644.16,
+      "end": 1651.36
+    },
+    {
+      "id": "triptico-p10-s10",
+      "matched": 8,
+      "tokens": 8,
+      "coverage": 1.0,
+      "start": 1651.36,
+      "end": 1654.22
+    },
+    {
+      "id": "triptico-p11-s1",
+      "matched": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "start": 1654.22,
+      "end": 1662.32
+    },
+    {
+      "id": "triptico-p11-s2",
+      "matched": 14,
+      "tokens": 14,
+      "coverage": 1.0,
+      "start": 1662.32,
+      "end": 1667.4
+    },
+    {
+      "id": "triptico-p11-s3",
+      "matched": 30,
+      "tokens": 32,
+      "coverage": 0.9375,
+      "start": 1667.4,
+      "end": 1677.54
+    },
+    {
+      "id": "triptico-p11-s4",
+      "matched": 63,
+      "tokens": 65,
+      "coverage": 0.9692,
+      "start": 1677.54,
+      "end": 1702.98
+    },
+    {
+      "id": "triptico-p11-s5",
+      "matched": 31,
+      "tokens": 33,
+      "coverage": 0.9394,
+      "start": 1702.98,
+      "end": 1717.24
+    },
+    {
+      "id": "triptico-p11-s6",
+      "matched": 11,
+      "tokens": 11,
+      "coverage": 1.0,
+      "start": 1717.24,
+      "end": 1721.34
+    },
+    {
+      "id": "triptico-p11-s7",
+      "matched": 40,
+      "tokens": 41,
+      "coverage": 0.9756,
+      "start": 1721.34,
+      "end": 1740.18
+    },
+    {
+      "id": "triptico-p11-s8",
+      "matched": 21,
+      "tokens": 23,
+      "coverage": 0.913,
+      "start": 1740.96,
+      "end": 1750.16
+    },
+    {
+      "id": "triptico-p11-s9",
+      "matched": 17,
+      "tokens": 17,
+      "coverage": 1.0,
+      "start": 1750.16,
+      "end": 1756.28
+    },
+    {
+      "id": "triptico-p12-s1",
+      "matched": 40,
+      "tokens": 40,
+      "coverage": 1.0,
+      "start": 1756.28,
+      "end": 1772.12
+    },
+    {
+      "id": "triptico-p12-s2",
+      "matched": 65,
+      "tokens": 68,
+      "coverage": 0.9559,
+      "start": 1772.12,
+      "end": 1796.54
+    },
+    {
+      "id": "triptico-p12-s3",
+      "matched": 26,
+      "tokens": 27,
+      "coverage": 0.963,
+      "start": 1796.54,
+      "end": 1808.76
+    },
+    {
+      "id": "triptico-p13-s1",
+      "matched": 10,
+      "tokens": 10,
+      "coverage": 1.0,
+      "start": 1808.76,
+      "end": 1812.62
+    },
+    {
+      "id": "triptico-p13-s2",
+      "matched": 17,
+      "tokens": 17,
+      "coverage": 1.0,
+      "start": 1812.62,
+      "end": 1819.26
+    },
+    {
+      "id": "triptico-p13-s3",
+      "matched": 32,
+      "tokens": 32,
+      "coverage": 1.0,
+      "start": 1819.26,
+      "end": 1832.46
+    },
+    {
+      "id": "triptico-p13-s4",
+      "matched": 17,
+      "tokens": 17,
+      "coverage": 1.0,
+      "start": 1832.46,
+      "end": 1839.94
+    },
+    {
+      "id": "triptico-p13-s5",
+      "matched": 7,
+      "tokens": 7,
+      "coverage": 1.0,
+      "start": 1839.94,
+      "end": 1843.48
+    },
+    {
+      "id": "triptico-p14-s1",
+      "matched": 52,
+      "tokens": 54,
+      "coverage": 0.963,
+      "start": 1845.58,
+      "end": 1865.32
+    },
+    {
+      "id": "triptico-p15-s1",
+      "matched": 47,
+      "tokens": 47,
+      "coverage": 1.0,
+      "start": 1866.12,
+      "end": 1883.58
+    },
+    {
+      "id": "triptico-p15-s2",
+      "matched": 18,
+      "tokens": 18,
+      "coverage": 1.0,
+      "start": 1883.58,
+      "end": 1890.32
+    },
+    {
+      "id": "triptico-p15-s3",
+      "matched": 27,
+      "tokens": 27,
+      "coverage": 1.0,
+      "start": 1890.32,
+      "end": 1901.62
+    },
+    {
+      "id": "triptico-p15-s4",
+      "matched": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "start": 1901.62,
+      "end": 1909.88
+    },
+    {
+      "id": "triptico-p15-s5",
+      "matched": 18,
+      "tokens": 18,
+      "coverage": 1.0,
+      "start": 1909.88,
+      "end": 1916.28
+    },
+    {
+      "id": "triptico-p16-s1",
+      "matched": 4,
+      "tokens": 4,
+      "coverage": 1.0,
+      "start": 1916.84,
+      "end": 1918.4
+    },
+    {
+      "id": "triptico-p16-s2",
+      "matched": 1,
+      "tokens": 1,
+      "coverage": 1.0,
+      "start": 1918.4,
+      "end": 1918.64
+    },
+    {
+      "id": "triptico-p16-s3",
+      "matched": 18,
+      "tokens": 18,
+      "coverage": 1.0,
+      "start": 1918.72,
+      "end": 1924.68
+    },
+    {
+      "id": "triptico-p16-s4",
+      "matched": 10,
+      "tokens": 10,
+      "coverage": 1.0,
+      "start": 1925.58,
+      "end": 1929.02
+    },
+    {
+      "id": "transformaciones-p1-s1",
+      "matched": 14,
+      "tokens": 15,
+      "coverage": 0.9333,
+      "start": 1930.86,
+      "end": 1935.12
+    },
+    {
+      "id": "transformaciones-p1-s2",
+      "matched": 55,
+      "tokens": 57,
+      "coverage": 0.9649,
+      "start": 1936.14,
+      "end": 1952.7
+    },
+    {
+      "id": "transformaciones-p1-s3",
+      "matched": 32,
+      "tokens": 34,
+      "coverage": 0.9412,
+      "start": 1953.4,
+      "end": 1967.04
+    },
+    {
+      "id": "transformaciones-p1-s4",
+      "matched": 56,
+      "tokens": 58,
+      "coverage": 0.9655,
+      "start": 1967.76,
+      "end": 1986.64
+    },
+    {
+      "id": "transformaciones-p1-s5",
+      "matched": 33,
+      "tokens": 33,
+      "coverage": 1.0,
+      "start": 1986.64,
+      "end": 1996.46
+    },
+    {
+      "id": "transformaciones-p1-s6",
+      "matched": 26,
+      "tokens": 26,
+      "coverage": 1.0,
+      "start": 1997.04,
+      "end": 2006.3
+    },
+    {
+      "id": "transformaciones-p1-s7",
+      "matched": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "start": 2006.3,
+      "end": 2017.38
+    },
+    {
+      "id": "transformaciones-p1-s8",
+      "matched": 48,
+      "tokens": 49,
+      "coverage": 0.9796,
+      "start": 2017.38,
+      "end": 2036.68
+    },
+    {
+      "id": "transformaciones-p1-s9",
+      "matched": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "start": 2036.68,
+      "end": 2045.26
+    },
+    {
+      "id": "transformaciones-p1-s10",
+      "matched": 9,
+      "tokens": 9,
+      "coverage": 1.0,
+      "start": 2045.26,
+      "end": 2049.34
+    },
+    {
+      "id": "transformaciones-p1-s11",
+      "matched": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "start": 2050.2,
+      "end": 2060.7
+    },
+    {
+      "id": "transformaciones-p1-s12",
+      "matched": 68,
+      "tokens": 68,
+      "coverage": 1.0,
+      "start": 2061.34,
+      "end": 2085.38
+    },
+    {
+      "id": "transformaciones-p2-s1",
+      "matched": 33,
+      "tokens": 33,
+      "coverage": 1.0,
+      "start": 2085.38,
+      "end": 2098.16
+    },
+    {
+      "id": "transformaciones-p2-s2",
+      "matched": 30,
+      "tokens": 30,
+      "coverage": 1.0,
+      "start": 2098.16,
+      "end": 2108.9
+    },
+    {
+      "id": "transformaciones-p2-s3",
+      "matched": 37,
+      "tokens": 37,
+      "coverage": 1.0,
+      "start": 2109.46,
+      "end": 2122.86
+    },
+    {
+      "id": "transformaciones-p2-s4",
+      "matched": 30,
+      "tokens": 30,
+      "coverage": 1.0,
+      "start": 2123.64,
+      "end": 2135.24
+    },
+    {
+      "id": "transformaciones-p3-s1",
+      "matched": 21,
+      "tokens": 22,
+      "coverage": 0.9545,
+      "start": 2136.22,
+      "end": 2144.3
+    },
+    {
+      "id": "transformaciones-p3-s2",
+      "matched": 21,
+      "tokens": 30,
+      "coverage": 0.7,
+      "start": 2145.06,
+      "end": 2152.7
+    },
+    {
+      "id": "transformaciones-p3-s3",
+      "matched": 61,
+      "tokens": 65,
+      "coverage": 0.9385,
+      "start": 2153.46,
+      "end": 2175.3
+    },
+    {
+      "id": "transformaciones-p3-s4",
+      "matched": 78,
+      "tokens": 80,
+      "coverage": 0.975,
+      "start": 2175.3,
+      "end": 2205.9
+    },
+    {
+      "id": "transformaciones-p3-s5",
+      "matched": 51,
+      "tokens": 52,
+      "coverage": 0.9808,
+      "start": 2205.9,
+      "end": 2226.84
+    },
+    {
+      "id": "transformaciones-p3-s6",
+      "matched": 43,
+      "tokens": 45,
+      "coverage": 0.9556,
+      "start": 2226.84,
+      "end": 2243.98
+    },
+    {
+      "id": "transformaciones-p3-s7",
+      "matched": 55,
+      "tokens": 55,
+      "coverage": 1.0,
+      "start": 2243.98,
+      "end": 2265.28
+    },
+    {
+      "id": "transformaciones-p3-s8",
+      "matched": 60,
+      "tokens": 60,
+      "coverage": 1.0,
+      "start": 2265.28,
+      "end": 2287.62
+    },
+    {
+      "id": "transformaciones-p3-s9",
+      "matched": 18,
+      "tokens": 18,
+      "coverage": 1.0,
+      "start": 2288.76,
+      "end": 2294.86
+    },
+    {
+      "id": "transformaciones-p3-s10",
+      "matched": 26,
+      "tokens": 26,
+      "coverage": 1.0,
+      "start": 2295.9,
+      "end": 2304.48
+    },
+    {
+      "id": "transformaciones-p3-s11",
+      "matched": 25,
+      "tokens": 25,
+      "coverage": 1.0,
+      "start": 2305.08,
+      "end": 2313.04
+    },
+    {
+      "id": "transformaciones-p3-s12",
+      "matched": 50,
+      "tokens": 50,
+      "coverage": 1.0,
+      "start": 2313.04,
+      "end": 2334.14
+    },
+    {
+      "id": "transformaciones-p3-s13",
+      "matched": 15,
+      "tokens": 15,
+      "coverage": 1.0,
+      "start": 2334.14,
+      "end": 2340.54
+    },
+    {
+      "id": "transformaciones-p4-s1",
+      "matched": 68,
+      "tokens": 68,
+      "coverage": 1.0,
+      "start": 2344.42,
+      "end": 2371.14
+    },
+    {
+      "id": "transformaciones-p5-s1",
+      "matched": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "start": 2371.14,
+      "end": 2380.92
+    },
+    {
+      "id": "transformaciones-p5-s2",
+      "matched": 10,
+      "tokens": 10,
+      "coverage": 1.0,
+      "start": 2380.92,
+      "end": 2385.38
+    },
+    {
+      "id": "transformaciones-p6-s1",
+      "matched": 7,
+      "tokens": 7,
+      "coverage": 1.0,
+      "start": 2385.38,
+      "end": 2387.46
+    },
+    {
+      "id": "transformaciones-p6-s2",
+      "matched": 35,
+      "tokens": 35,
+      "coverage": 1.0,
+      "start": 2387.46,
+      "end": 2399.44
+    },
+    {
+      "id": "transformaciones-p6-s3",
+      "matched": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "start": 2399.44,
+      "end": 2406.36
+    },
+    {
+      "id": "transformaciones-p6-s4",
+      "matched": 57,
+      "tokens": 57,
+      "coverage": 1.0,
+      "start": 2407.03,
+      "end": 2426.0
+    },
+    {
+      "id": "transformaciones-p6-s5",
+      "matched": 36,
+      "tokens": 36,
+      "coverage": 1.0,
+      "start": 2426.0,
+      "end": 2439.22
+    },
+    {
+      "id": "transformaciones-p6-s6",
+      "matched": 25,
+      "tokens": 26,
+      "coverage": 0.9615,
+      "start": 2440.08,
+      "end": 2450.26
+    },
+    {
+      "id": "transformaciones-p6-s7",
+      "matched": 36,
+      "tokens": 36,
+      "coverage": 1.0,
+      "start": 2450.26,
+      "end": 2465.44
+    },
+    {
+      "id": "transformaciones-p6-s8",
+      "matched": 37,
+      "tokens": 38,
+      "coverage": 0.9737,
+      "start": 2465.44,
+      "end": 2480.84
+    },
+    {
+      "id": "transformaciones-p7-s1",
+      "matched": 12,
+      "tokens": 12,
+      "coverage": 1.0,
+      "start": 2480.84,
+      "end": 2485.7
+    },
+    {
+      "id": "transformaciones-p7-s2",
+      "matched": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "start": 2485.7,
+      "end": 2493.46
+    },
+    {
+      "id": "transformaciones-p7-s3",
+      "matched": 35,
+      "tokens": 35,
+      "coverage": 1.0,
+      "start": 2493.46,
+      "end": 2508.22
+    },
+    {
+      "id": "transformaciones-p7-s4",
+      "matched": 27,
+      "tokens": 27,
+      "coverage": 1.0,
+      "start": 2508.22,
+      "end": 2520.32
+    },
+    {
+      "id": "transformaciones-p7-s5",
+      "matched": 36,
+      "tokens": 37,
+      "coverage": 0.973,
+      "start": 2521.32,
+      "end": 2534.52
+    },
+    {
+      "id": "transformaciones-p7-s6",
+      "matched": 41,
+      "tokens": 42,
+      "coverage": 0.9762,
+      "start": 2534.52,
+      "end": 2550.54
+    },
+    {
+      "id": "transformaciones-p7-s7",
+      "matched": 21,
+      "tokens": 21,
+      "coverage": 1.0,
+      "start": 2550.54,
+      "end": 2559.26
+    },
+    {
+      "id": "transformaciones-p7-s8",
+      "matched": 16,
+      "tokens": 18,
+      "coverage": 0.8889,
+      "start": 2559.26,
+      "end": 2566.42
+    },
+    {
+      "id": "transformaciones-p8-s1",
+      "matched": 6,
+      "tokens": 6,
+      "coverage": 1.0,
+      "start": 2566.42,
+      "end": 2568.72
+    },
+    {
+      "id": "transformaciones-p8-s2",
+      "matched": 32,
+      "tokens": 32,
+      "coverage": 1.0,
+      "start": 2568.72,
+      "end": 2583.22
+    },
+    {
+      "id": "transformaciones-p8-s3",
+      "matched": 46,
+      "tokens": 46,
+      "coverage": 1.0,
+      "start": 2583.22,
+      "end": 2602.8
+    },
+    {
+      "id": "transformaciones-p8-s4",
+      "matched": 76,
+      "tokens": 77,
+      "coverage": 0.987,
+      "start": 2602.8,
+      "end": 2631.02
+    },
+    {
+      "id": "transformaciones-p8-s5",
+      "matched": 38,
+      "tokens": 38,
+      "coverage": 1.0,
+      "start": 2631.84,
+      "end": 2645.72
+    },
+    {
+      "id": "transformaciones-p8-s6",
+      "matched": 31,
+      "tokens": 32,
+      "coverage": 0.9688,
+      "start": 2646.52,
+      "end": 2659.0
+    },
+    {
+      "id": "transformaciones-p9-s1",
+      "matched": 48,
+      "tokens": 48,
+      "coverage": 1.0,
+      "start": 2659.0,
+      "end": 2676.5
+    },
+    {
+      "id": "transformaciones-p9-s2",
+      "matched": 44,
+      "tokens": 45,
+      "coverage": 0.9778,
+      "start": 2677.14,
+      "end": 2696.24
+    },
+    {
+      "id": "transformaciones-p9-s3",
+      "matched": 32,
+      "tokens": 32,
+      "coverage": 1.0,
+      "start": 2696.24,
+      "end": 2709.76
+    },
+    {
+      "id": "transformaciones-p10-s1",
+      "matched": 44,
+      "tokens": 44,
+      "coverage": 1.0,
+      "start": 2709.76,
+      "end": 2728.94
+    },
+    {
+      "id": "transformaciones-p10-s2",
+      "matched": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "start": 2729.58,
+      "end": 2740.6
+    },
+    {
+      "id": "transformaciones-p10-s3",
+      "matched": 51,
+      "tokens": 52,
+      "coverage": 0.9808,
+      "start": 2741.3,
+      "end": 2761.22
+    },
+    {
+      "id": "transformaciones-p10-s4",
+      "matched": 15,
+      "tokens": 15,
+      "coverage": 1.0,
+      "start": 2761.22,
+      "end": 2767.66
+    },
+    {
+      "id": "transformaciones-p11-s1",
+      "matched": 23,
+      "tokens": 23,
+      "coverage": 1.0,
+      "start": 2767.66,
+      "end": 2775.3
+    },
+    {
+      "id": "transformaciones-p11-s2",
+      "matched": 60,
+      "tokens": 60,
+      "coverage": 1.0,
+      "start": 2775.3,
+      "end": 2798.42
+    },
+    {
+      "id": "transformaciones-p11-s3",
+      "matched": 67,
+      "tokens": 67,
+      "coverage": 1.0,
+      "start": 2798.42,
+      "end": 2821.3
+    },
+    {
+      "id": "transformaciones-p12-s1",
+      "matched": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "start": 2822.12,
+      "end": 2829.72
+    },
+    {
+      "id": "transformaciones-p12-s2",
+      "matched": 9,
+      "tokens": 9,
+      "coverage": 1.0,
+      "start": 2829.72,
+      "end": 2834.94
+    },
+    {
+      "id": "transformaciones-p12-s3",
+      "matched": 22,
+      "tokens": 22,
+      "coverage": 1.0,
+      "start": 2834.94,
+      "end": 2845.0
+    },
+    {
+      "id": "transformaciones-p12-s4",
+      "matched": 14,
+      "tokens": 14,
+      "coverage": 1.0,
+      "start": 2845.0,
+      "end": 2849.3
+    },
+    {
+      "id": "transformaciones-p12-s5",
+      "matched": 11,
+      "tokens": 11,
+      "coverage": 1.0,
+      "start": 2849.74,
+      "end": 2852.46
+    },
+    {
+      "id": "transformaciones-p12-s6",
+      "matched": 45,
+      "tokens": 45,
+      "coverage": 1.0,
+      "start": 2853.04,
+      "end": 2869.34
+    },
+    {
+      "id": "transformaciones-p12-s7",
+      "matched": 70,
+      "tokens": 71,
+      "coverage": 0.9859,
+      "start": 2869.34,
+      "end": 2893.26
+    },
+    {
+      "id": "transformaciones-p12-s8",
+      "matched": 15,
+      "tokens": 17,
+      "coverage": 0.8824,
+      "start": 2894.0,
+      "end": 2899.72
+    },
+    {
+      "id": "transformaciones-p13-s1",
+      "matched": 24,
+      "tokens": 24,
+      "coverage": 1.0,
+      "start": 2899.72,
+      "end": 2905.92
+    },
+    {
+      "id": "transformaciones-p13-s2",
+      "matched": 18,
+      "tokens": 18,
+      "coverage": 1.0,
+      "start": 2905.92,
+      "end": 2912.92
+    },
+    {
+      "id": "transformaciones-p13-s3",
+      "matched": 27,
+      "tokens": 27,
+      "coverage": 1.0,
+      "start": 2912.92,
+      "end": 2920.9
+    },
+    {
+      "id": "transformaciones-p13-s4",
+      "matched": 28,
+      "tokens": 32,
+      "coverage": 0.875,
+      "start": 2922.06,
+      "end": 2932.98
+    },
+    {
+      "id": "transformaciones-p13-s5",
+      "matched": 15,
+      "tokens": 15,
+      "coverage": 1.0,
+      "start": 2934.4,
+      "end": 2939.46
+    },
+    {
+      "id": "transformaciones-p13-s6",
+      "matched": 7,
+      "tokens": 7,
+      "coverage": 1.0,
+      "start": 2939.46,
+      "end": 2941.68
+    }
+  ]
+}

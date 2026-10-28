@@ -38,6 +38,9 @@ jobs:
       - name: Test shared reader and two works
         run: npm run test:two-works
 
+      - name: Test Hobsbawm resources and synchronization
+        run: npm run test:hobsbawm
+
       - name: Build static site
         run: npm run build
 

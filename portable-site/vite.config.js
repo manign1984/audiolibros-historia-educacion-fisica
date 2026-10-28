@@ -41,6 +41,7 @@ export default defineConfig({
         biblioteca: fileURLToPath(new URL('./index.html', import.meta.url)),
         orbuchEducarAlCuerpo: fileURLToPath(new URL('./textos/orbuch-educar-al-cuerpo/index.html', import.meta.url)),
         pineauFrescoNoble: fileURLToPath(new URL('./textos/pineau-fresco-noble/index.html', import.meta.url)),
+        hobsbawmHistoriaSigloXX: fileURLToPath(new URL('./textos/hobsbawm-historia-siglo-xx/index.html', import.meta.url)),
         ...Object.fromEntries(catalog.filter((entry) => entry.status === 'preparation').map((entry) => [entry.id, fileURLToPath(new URL(`./${entry.path}index.html`, import.meta.url))])),
       },
     },

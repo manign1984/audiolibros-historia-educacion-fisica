@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { access, readdir, readFile, stat } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { pineauReaderConfig, orbuchReaderConfig } from '../src/readerConfigs.js';
 
 const root = resolve(import.meta.dirname, '..');
 const src = resolve(root, 'src');
@@ -62,7 +63,8 @@ for (const capability of [
 
 assert.match(reader, /audioTimeSource: 'playback-position-at-annotation'/);
 assert.match(reader, /sin alineación oración–audio/);
-assert.equal((configSource.match(/status: 'ready'/g) || []).length, 2, 'Ambas obras deben activar la sincronización real.');
+assert.equal(pineauReaderConfig.sync.status, 'ready', 'Pineau debe conservar la sincronización.');
+assert.equal(orbuchReaderConfig.sync.status, 'ready', 'Orbuch debe conservar la sincronización.');
 assert.match(configSource, /fresco-noble-reader-notes-v1/);
 assert.match(configSource, /orbuch-educar-cuerpo-reader-notes-v1/);
 assert.match(reader, /\[0\.75, 0\.9, 1, 1\.1, 1\.25, 1\.5, 2\]/);

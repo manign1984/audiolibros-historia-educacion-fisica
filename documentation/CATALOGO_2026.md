@@ -46,3 +46,7 @@ npm run verify:build
 GITHUB_PAGES_BASE=/audiolibros-historia-educacion-fisica/ npm run build
 GITHUB_PAGES_BASE=/audiolibros-historia-educacion-fisica/ npm run verify:build
 ```
+
+## Actualización del 28/10/2026
+
+La incorporación del recorrido de Hobsbawm lleva el catálogo a tres experiencias disponibles y 26 fichas en preparación, manteniendo sus 29 identificadores y URLs. Su entrada identifica la selección «Vista panorámica del siglo XX», la edición de 1999 indicada por el material aportado y la duración real de la grabación. La portada principal puede destacar cualquiera de los tres recorridos. Véase `HOBSBAWM_2026.md` para fuentes, sincronización y validación.
