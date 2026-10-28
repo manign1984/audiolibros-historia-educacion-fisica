@@ -33,6 +33,8 @@ Se midieron las tres páginas en marcos de un navegador Chrome, con fuentes carg
 
 La corrección posterior elimina la igualdad forzada de alturas: los bloques igualan o superan su referencia según su contenido. Las biografías y los materiales completos permanecen en el desplazamiento general, sin barras verticales internas. Son pruebas de marcos de navegador, no de dispositivos físicos.
 
+Esta medición describe la primera corrección. La excepción posterior para las secciones breves de Hobsbawm se detalla a continuación y prevalece sobre sus mínimos importados.
+
 Se verificaron las familias y pesos calculados de la biografía, ausencia de desbordamiento horizontal, apertura del lector de Orbuch a 320 px, y reproducción, pausa y cambio al segundo apartado de Hobsbawm (audio aproximadamente en el segundo 706). El retrato se inspeccionó visualmente. La batería del catálogo, lector compartido y sincronización, además de las compilaciones y comprobaciones de recursos en raíz y subruta, debe pasar antes de integrar.
 
 ## Corrección de barras internas · 28/10/2026
@@ -40,3 +42,13 @@ Se verificaron las familias y pesos calculados de la biografía, ausencia de des
 La regla editorial D11 prohíbe añadir barras internas en los cinco bloques. Tiene prioridad sobre la coincidencia exacta de alturas. Se sustituye `height` por `min-height`, se permite el crecimiento natural con `height: auto` y `overflow: visible`, y se retira el foco artificial de las secciones que antes tenían desplazamiento propio. No se ocultan barras ni se recorta texto para simular la corrección. El lector a pantalla completa conserva su espacio de lectura independiente.
 
 Verificación de la corrección: inspección de Orbuch y Hobsbawm en Chrome a 1363×936, 768×1024, 390×844 y 320×740. No se encontraron contenedores visibles de contenido con `overflow-y: auto/scroll` y desbordamiento vertical dentro del recorrido principal, ni desbordamiento horizontal de la página. Los cinco bloques tienen `overflow: visible`; Contexto y Créditos de Orbuch crecen y su contenido permanece en el flujo general. Se comprobó visualmente la barra única y la apertura/cierre del lector independiente. Pasaron las pruebas existentes y la compilación con verificación de recursos en raíz y en la base de GitHub Pages.
+
+## Recomposición de Hobsbawm sin espacios vacíos · 28/10/2026
+
+Por solicitud de recuperar la composición previa, se comparó el recorrido inicial de Hobsbawm del commit `9b46951667c394ead5e5339b5e03482d963d0dc1` (PR #18) con las PR #19 y #20. Contexto y Lectura conservan sus contenidos; la clave de lectura solo había pasado de Autor a Contexto al normalizar la biografía. Los grandes espacios se debían al mínimo de Pineau aplicado a secciones cuyo contenido es más breve.
+
+Se registra una excepción acotada: **Contexto, Lectura y Créditos de Hobsbawm recuperan su altura natural**, con sus márgenes originales y sin un mínimo tomado de otra obra. Se elimina también el reparto vertical artificial de sus contenedores. Inicio y Autor conservan las referencias de Pineau y la ficha biográfica común. La regla de no añadir barras internas sigue vigente. No se reducen fuentes, recortan textos ni añaden materiales para rellenar espacio. La excepción no modifica Orbuch o Pineau.
+
+La inspección visual detecta además que la «clave de lectura», trasladada de Autor a Contexto, había heredado texto claro sobre su fondo crema. Se restituye el color de tinta oscuro del diseño original para que el contenido vuelva a leerse con claridad.
+
+En Chrome a 1363×936, Contexto pasa de 2783,25 a 1599,53 px, Lectura de 1841,36 a 1285,59 px y Créditos de 711,86 a 678,50 px. En los marcos de 768×1024, 390×844 y 320×740, estas tres secciones se ajustan igualmente al contenido. La diferencia entre cada sección y su contenedor equivale solo al relleno previsto: 180 px en Contexto/Lectura de escritorio y tableta, 110 px en celular, y 120 px en Créditos. No quedan alturas vacías añadidas debajo del contenido, desbordamiento horizontal ni contenedores de contenido con desplazamiento vertical interno.
