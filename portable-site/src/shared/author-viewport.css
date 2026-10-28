@@ -1,0 +1,16 @@
+/* Each biography occupies at least the viewport below the shared header.
+   Content remains in the page flow and can grow on narrow screens or zoom. */
+body:has(.journey-header) #autor {
+  box-sizing:border-box;
+  min-height:calc(100svh - var(--journey-header-height,80px));
+  height:auto;
+  max-height:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:visible;
+}
+
+@media print {
+  body:has(.journey-header) #autor { min-height:0; }
+}
