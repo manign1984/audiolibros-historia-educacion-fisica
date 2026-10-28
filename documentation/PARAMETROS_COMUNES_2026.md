@@ -51,4 +51,12 @@ Se registra una excepción acotada: **Contexto, Lectura y Créditos de Hobsbawm 
 
 La inspección visual detecta además que la «clave de lectura», trasladada de Autor a Contexto, había heredado texto claro sobre su fondo crema. Se restituye el color de tinta oscuro del diseño original para que el contenido vuelva a leerse con claridad.
 
+## Fondo plano de las biografías · 28/10/2026
+
+El bloque Autor utiliza un color de fondo plano, opaco y uniforme, sin figuras decorativas, rayos, tramas, texturas, imágenes ni degradados. El color puede responder a la identidad de cada obra y debe sostener el contraste con los textos. Los marcos puntuales del retrato, la inicial y la jerarquía tipográfica de la ficha se conservan; la regla se refiere al fondo de la sección.
+
+La implementación retira `orbuch-author::after` de las reglas que generaban la figura radial en escritorio y celular. Se mantiene el azul `#2f78a6`. Hobsbawm utiliza el crema `#eee3cb` opaco, que cubre la trama del fondo general; Pineau conserva su rojo plano `#a84434` sin cambios de código. Los fondos de Contexto, Lectura y los demás bloques quedan fuera de esta modificación.
+
+Se verificó en Chrome a 1363, 768, 390 y 320 px que los tres bloques Autor tienen color opaco, `background-image: none` y ningún pseudoelemento de fondo. Se inspeccionó visualmente Orbuch en escritorio y celular. La regla se incorporó a D10, al detalle del bloque Autor y a la salvedad sobre texturas del documento editorial, preservando sus demás párrafos.
+
 En Chrome a 1363×936, Contexto pasa de 2783,25 a 1599,53 px, Lectura de 1841,36 a 1285,59 px y Créditos de 711,86 a 678,50 px. En los marcos de 768×1024, 390×844 y 320×740, estas tres secciones se ajustan igualmente al contenido. La diferencia entre cada sección y su contenedor equivale solo al relleno previsto: 180 px en Contexto/Lectura de escritorio y tableta, 110 px en celular, y 120 px en Créditos. No quedan alturas vacías añadidas debajo del contenido, desbordamiento horizontal ni contenedores de contenido con desplazamiento vertical interno.

@@ -236,7 +236,6 @@ img { display: block; max-width: 100%; }
 .orbuch-continue-link { display: flex; width: fit-content; align-items: center; gap: 22px; margin: 62px 0 0 auto; padding: 14px 18px; color: var(--orbuch-navy); border: 2px solid var(--orbuch-navy); border-radius: 3px 18px 3px 18px; background: rgba(255, 246, 220, 0.86); box-shadow: 5px 5px 0 var(--section-accent); font-family: var(--orbuch-display); font-size: 0.84rem; font-weight: 900; letter-spacing: 0.06em; text-decoration: none; text-transform: uppercase; }
 .orbuch-continue-link:hover svg { transform: translateX(5px); }
 
-.orbuch-author::after,
 .orbuch-context::after,
 .orbuch-reading::after { position: absolute; z-index: 0; top: 45px; right: -150px; width: 520px; aspect-ratio: 1; border-radius: 50%; content: ''; opacity: 0.13; background: repeating-conic-gradient(from -12deg, var(--section-accent) 0deg 7deg, transparent 7deg 15deg); pointer-events: none; }
 .orbuch-section > .orbuch-shell { position: relative; z-index: 1; }
@@ -426,7 +425,6 @@ img { display: block; max-width: 100%; }
   .orbuch-hero-operations { width: calc(100% + 28px); height: 76px; margin: 0 -14px; padding: 0 5px; }
   .orbuch-hero-operations li { gap: 6px; font-size: 0.6rem; letter-spacing: 0.06em; }
   .orbuch-hero-operations b { width: 25px; height: 25px; font-size: 0.65rem; }
-  .orbuch-author::after,
   .orbuch-context::after,
   .orbuch-reading::after { top: 30px; right: -165px; width: 360px; }
   .orbuch-section-heading { grid-template-columns: 47px minmax(0, 1fr); gap: 11px; }
