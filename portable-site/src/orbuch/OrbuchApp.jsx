@@ -244,12 +244,6 @@ function Hero() {
           <div className="orbuch-folder__tab">Oficina · 1950</div>
         </article>
       </div>
-
-      <ol className="orbuch-hero-operations" aria-label="Tres operaciones que organizan el recorrido">
-        <li><b>1</b><span>Prescripción</span></li>
-        <li><b>2</b><span>Implementación</span></li>
-        <li><b>3</b><span>Tensiones</span></li>
-      </ol>
     </section>
   );
 }

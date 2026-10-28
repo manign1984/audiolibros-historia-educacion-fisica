@@ -59,4 +59,12 @@ La implementación retira `orbuch-author::after` de las reglas que generaban la 
 
 Se verificó en Chrome a 1363, 768, 390 y 320 px que los tres bloques Autor tienen color opaco, `background-image: none` y ningún pseudoelemento de fondo. Se inspeccionó visualmente Orbuch en escritorio y celular. La regla se incorporó a D10, al detalle del bloque Autor y a la salvedad sobre texturas del documento editorial, preservando sus demás párrafos.
 
+## Continuidad directa entre Inicio y Autor · 28/10/2026
+
+Inicio debe dar paso directamente a la biografía del bloque Autor. Entre ambos no se intercalan franjas, separadores, menús, tarjetas, consignas ni otros elementos. Los materiales complementarios se integran en el bloque que corresponda y no ocupan esa transición. El cambio de color entre los dos bloques y sus espacios internos forman parte de la composición de cada sección.
+
+La aplicación a Orbuch retira la franja «Prescripción · Implementación · Tensiones» del componente de Inicio y sus estilos exclusivos, incluidos los ajustes responsive. Los conceptos desarrollados en Contexto, la biografía y el lector se conservan. Se actualizan las comprobaciones antiguas que obligaban a mantener la franja, ya retirada por decisión editorial.
+
+La revisión en Chrome a 1363, 768, 390 y 320 px confirma que Autor sigue inmediatamente a Inicio, con cero píxeles entre los límites de ambos bloques, sin la franja ni bordes separadores añadidos y sin desbordamiento horizontal. Se conservan el fondo azul plano y la biografía completa. El documento editorial se verificó tras actualizar D4 e Inicio, sin cambios en sus demás párrafos.
+
 En Chrome a 1363×936, Contexto pasa de 2783,25 a 1599,53 px, Lectura de 1841,36 a 1285,59 px y Créditos de 711,86 a 678,50 px. En los marcos de 768×1024, 390×844 y 320×740, estas tres secciones se ajustan igualmente al contenido. La diferencia entre cada sección y su contenedor equivale solo al relleno previsto: 180 px en Contexto/Lectura de escritorio y tableta, 110 px en celular, y 120 px en Créditos. No quedan alturas vacías añadidas debajo del contenido, desbordamiento horizontal ni contenedores de contenido con desplazamiento vertical interno.
