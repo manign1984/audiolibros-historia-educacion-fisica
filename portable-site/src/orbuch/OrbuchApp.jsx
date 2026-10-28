@@ -11,16 +11,9 @@ import {
 } from 'lucide-react';
 import IntegratedReader from '../IntegratedReader.jsx';
 import { AuthorBiography, PineauLayoutReference } from '../shared/CanonicalLayout.jsx';
+import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import { orbuchReaderConfig } from '../readerConfigs.js';
 import { orbuchReadingDocument } from './orbuchReadingDocument.js';
-
-const NAV_ITEMS = [
-  ['inicio', 'Inicio'],
-  ['autor', 'Autor'],
-  ['contexto', 'Contexto'],
-  ['lectura', 'Lectura'],
-  ['creditos', 'Créditos'],
-];
 
 const CONTEXT_EVENTS = [
   {
@@ -114,35 +107,6 @@ const DOSSIERS = [
   },
 ];
 
-function useScrollState() {
-  const [active, setActive] = useState('inicio');
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const update = () => {
-      const maximum = document.documentElement.scrollHeight - window.innerHeight;
-      setProgress(maximum > 0 ? Math.min(100, (window.scrollY / maximum) * 100) : 0);
-      const readingLine = Math.min(Math.max(window.innerHeight * 0.2, 86), 150);
-      let current = NAV_ITEMS[0][0];
-      NAV_ITEMS.forEach(([id]) => {
-        const section = document.getElementById(id);
-        if (section && section.getBoundingClientRect().top <= readingLine) current = id;
-      });
-      setActive(current);
-    };
-
-    update();
-    window.addEventListener('scroll', update, { passive: true });
-    window.addEventListener('resize', update);
-    return () => {
-      window.removeEventListener('scroll', update);
-      window.removeEventListener('resize', update);
-    };
-  }, []);
-
-  return { active, progress };
-}
-
 function SectionHeader({ number, eyebrow, title, text }) {
   return (
     <header className="orbuch-section-heading">
@@ -152,43 +116,6 @@ function SectionHeader({ number, eyebrow, title, text }) {
         <h2>{title}</h2>
         {text && <div className="orbuch-section-intro">{text}</div>}
       </div>
-    </header>
-  );
-}
-
-function SiteHeader({ active, progress }) {
-  const activeIndex = Math.max(0, NAV_ITEMS.findIndex(([id]) => id === active));
-
-  return (
-    <header className="orbuch-header" data-section={active}>
-      <div className="orbuch-header__inner">
-        <a className="orbuch-library-link" href={import.meta.env.BASE_URL} aria-label="Volver a la biblioteca">
-          <ArrowLeft size={16} aria-hidden="true" />
-          <span>Biblioteca</span>
-        </a>
-        <div className="orbuch-section-counter" aria-live="polite">
-          <span>{String(activeIndex + 1).padStart(2, '0')} / {String(NAV_ITEMS.length).padStart(2, '0')}</span>
-          <strong>{NAV_ITEMS[activeIndex]?.[1]}</strong>
-        </div>
-        <div
-          className="orbuch-progress-track"
-          role="progressbar"
-          aria-label="Progreso del recorrido"
-          aria-valuemin="0"
-          aria-valuemax="100"
-          aria-valuenow={Math.round(progress)}
-        >
-          <i style={{ width: `${progress}%` }} />
-        </div>
-        <nav aria-label="Secciones del recorrido">
-          {NAV_ITEMS.map(([id, label]) => (
-            <a key={id} href={`#${id}`} aria-current={active === id ? 'location' : undefined}>
-              {label}
-            </a>
-          ))}
-        </nav>
-      </div>
-      <div className="orbuch-mobile-progress" aria-hidden="true"><i style={{ width: `${progress}%` }} /></div>
     </header>
   );
 }
@@ -448,12 +375,12 @@ function CreditsSection() {
 }
 
 export default function OrbuchApp() {
-  const { active, progress } = useScrollState();
+  const { active, progress } = useJourneyNavigation();
 
   return (
     <div className="orbuch-page canonical-page">
       <PineauLayoutReference />
-      <SiteHeader active={active} progress={progress} />
+      <JourneyHeader author="Orbuch" title="Educar al cuerpo" active={active} progress={progress} />
       <main>
         <Hero />
         <AuthorSection />
