@@ -100,8 +100,6 @@ for (const fidelityMarker of [
   'Cuatro movimientos del argumento',
   'Subtítulos SRT',
   'Prescripción',
-  'Implementación',
-  'Tensiones',
 ]) {
   assert.ok(orbuchApp.includes(fidelityMarker), `Debe conservarse la pieza editorial “${fidelityMarker}”.`);
 }
@@ -129,7 +127,6 @@ for (const breakpoint of ['1040px', '780px', '520px']) assert.ok(orbuchStyles.in
 for (const breakpoint of ['1220px', '900px', '640px']) assert.ok(readerStyles.includes(`max-width: ${breakpoint}`));
 assert.match(orbuchStyles, /min-height:\s*max\(920px, 100svh\)/);
 assert.match(orbuchStyles, /text-shadow:\s*3px 3px 0/);
-assert.match(orbuchStyles, /\.orbuch-hero-operations/);
 assert.match(orbuchStyles, /\.orbuch-folder--aula/);
 assert.match(orbuchStyles, /prefers-reduced-motion: reduce/);
 assert.match(readerStyles, /prefers-reduced-motion: reduce/);

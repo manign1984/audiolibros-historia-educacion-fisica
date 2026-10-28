@@ -51,7 +51,6 @@
   .canonical-page .orbuch-hero__veil { background:linear-gradient(90deg,#071b35e8,#071b35ad); }
   .canonical-page .orbuch-archive-stage { display:none; }
   .canonical-page .orbuch-use-note { display:flex; gap:8px 16px; }
-  .canonical-page .orbuch-hero-operations { margin-top:20px; }
 }
 @media(max-width:640px) { .canonical-author-grid { width:calc(100% - 24px); grid-template-columns:1fr; gap:2rem; } .canonical-author-photo { width:min(100%,330px); } .canonical-author-copy h2 { font-size:clamp(3.15rem,14vw,4.6rem); overflow-wrap:anywhere; } .canonical-page .hb-credits .hb-section-heading h2 { font-size:48px; } }
 @media(max-width:360px) { .canonical-page #autor { padding-block:60px; } .canonical-author-grid { gap:24px; } }

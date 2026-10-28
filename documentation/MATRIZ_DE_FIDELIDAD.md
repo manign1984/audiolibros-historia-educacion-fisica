@@ -117,3 +117,7 @@ La solicitud posterior de recuperar la composición anterior se contrasta con el
 ## Fondo plano de las biografías del 28/10/2026
 
 Por solicitud explícita se retira la figura radial situada detrás de la biografía de Orbuch, tanto en escritorio como en celulares. El bloque Autor conserva su azul plano. Hobsbawm recibe un fondo crema opaco para que la textura del fondo general no atraviese su biografía. Pineau ya emplea un color plano. La regla común queda asentada en el documento editorial y en `PARAMETROS_COMUNES_2026.md`: el fondo de las biografías es un color plano y uniforme, sin figuras, rayos, tramas, texturas, imágenes ni degradados. Puede variar el color entre obras; se conservan los marcos del retrato y la composición de la ficha. Los demás bloques, los contenidos y el lector compartido no cambian.
+
+## Continuidad directa de Inicio a Autor del 28/10/2026
+
+Por solicitud explícita se elimina de Orbuch la franja «Prescripción · Implementación · Tensiones» situada al pie de Inicio. Se retiran su lista y los estilos exclusivos de escritorio y celular. Inicio continúa directamente con Autor; se conservan la composición de portada, la biografía y los contenidos de Contexto. El documento editorial incorpora esta continuidad como regla común en D4 y en el detalle de Inicio. La prueba de fidelidad deja de exigir los rótulos y los estilos de la franja retirada; los demás controles siguen vigentes.

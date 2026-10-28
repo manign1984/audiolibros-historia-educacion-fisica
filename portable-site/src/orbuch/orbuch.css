@@ -162,8 +162,7 @@ img { display: block; max-width: 100%; }
 .orbuch-hero-period,
 .orbuch-primary-action,
 .orbuch-use-note,
-.orbuch-folder__tab,
-.orbuch-hero-operations {
+.orbuch-folder__tab {
   font-family: var(--orbuch-display);
   font-weight: 800;
   letter-spacing: 0.11em;
@@ -222,10 +221,6 @@ img { display: block; max-width: 100%; }
 .orbuch-folder__tab { position: absolute; inset: auto 0 0; width: 100%; height: 34px; padding: 10px 7px 0; color: var(--orbuch-navy-deep); border-top: 2px solid var(--orbuch-navy-deep); background: var(--orbuch-paper-light); font-size: 0.62rem; letter-spacing: 0.09em; }
 .orbuch-folder--aula .orbuch-folder__tab { border-bottom: 6px solid var(--orbuch-sky); }
 .orbuch-folder--oficina .orbuch-folder__tab { border-bottom: 6px solid var(--orbuch-red); }
-.orbuch-hero-operations { position: absolute; z-index: 5; inset: auto 0 0; display: grid; height: 82px; margin: 0; padding: 0 max(5vw, calc((100vw - 1500px) / 2)); color: var(--orbuch-paper-light); border-top: 6px solid var(--orbuch-gold); background: rgba(7, 27, 53, 0.97); list-style: none; grid-template-columns: repeat(3, 1fr); }
-.orbuch-hero-operations li { display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 0.85rem; letter-spacing: 0.12em; }
-.orbuch-hero-operations li + li { border-left: 2px solid rgba(255, 225, 106, 0.42); }
-.orbuch-hero-operations b { display: grid; width: 31px; height: 31px; place-items: center; color: var(--orbuch-paper-light); border: 2px solid var(--orbuch-gold-light); border-radius: 50%; font-size: 0.75rem; }
 
 /* Sistema de títulos y enlaces de continuidad. */
 .orbuch-section-heading { position: relative; display: grid; max-width: 1240px; align-items: start; grid-template-columns: 122px minmax(0, 1fr); gap: 34px; }
@@ -378,7 +373,6 @@ img { display: block; max-width: 100%; }
   .orbuch-folder { width: min(39vw, 158px); }
   .orbuch-folder--aula { top: 0; left: 4%; }
   .orbuch-folder--oficina { right: 4%; bottom: 0; }
-  .orbuch-hero-operations { position: relative; width: calc(100% + 44px); height: 82px; margin: 0 -22px; padding: 0 16px; }
   .orbuch-section-heading { grid-template-columns: 62px minmax(0, 1fr); gap: 17px; }
   .orbuch-section-heading > span { padding: 8px 7px 7px; font-size: 2.55rem; }
 }
@@ -422,9 +416,6 @@ img { display: block; max-width: 100%; }
   .orbuch-folder__tab { height: 32px; padding-top: 9px; font-size: 0.58rem; }
   .orbuch-folder--aula { left: 2%; }
   .orbuch-folder--oficina { right: 2%; }
-  .orbuch-hero-operations { width: calc(100% + 28px); height: 76px; margin: 0 -14px; padding: 0 5px; }
-  .orbuch-hero-operations li { gap: 6px; font-size: 0.6rem; letter-spacing: 0.06em; }
-  .orbuch-hero-operations b { width: 25px; height: 25px; font-size: 0.65rem; }
   .orbuch-context::after,
   .orbuch-reading::after { top: 30px; right: -165px; width: 360px; }
   .orbuch-section-heading { grid-template-columns: 47px minmax(0, 1fr); gap: 11px; }
@@ -469,7 +460,6 @@ img { display: block; max-width: 100%; }
 @media (max-width: 360px) {
   .orbuch-hero__copy { padding-inline: 2px; }
   .orbuch-hero h1 { font-size: 10.5vw; }
-  .orbuch-hero-operations li { display: grid; align-content: center; justify-items: center; gap: 4px; text-align: center; }
   .orbuch-section-counter strong { max-width: 78px; }
 }
 
