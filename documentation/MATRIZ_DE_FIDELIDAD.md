@@ -93,3 +93,7 @@ Por pedido explícito, el encabezado de la biblioteca y las fichas muestra “Hi
 ## Portadas de Pineau y Hobsbawm del 27/10/2026
 
 Por solicitud del proyecto se incorporan las imágenes adjuntas como portadas de «Renovación, represión, cooptación» de Pablo Pineau y «Historia del siglo XX» de Eric Hobsbawm. `portada-pineau-fresco-noble.png` y `portada-hobsbawm-historia-siglo-xx.png` conservan byte a byte los PNG originales. Se muestran en las tarjetas del catálogo, búsquedas y lista personal; Pineau también usa su nueva imagen en el destacado de inicio y Hobsbawm en su ficha bibliográfica. No se alteran los recursos originales, las experiencias de lectura, el contenido bibliográfico ni el estado de disponibilidad.
+
+## Portada de Eduardo Galak del 27/10/2026
+
+Por solicitud del proyecto, «Del dicho al hecho» incorpora como portada la imagen adjunta «Collage vintage de educación física.png». El recurso `portada-galak-del-dicho-al-hecho.png` conserva byte a byte el PNG aportado y se utiliza en las tarjetas del catálogo, las búsquedas, la lista personal y la ficha bibliográfica, con el formato horizontal ya disponible. El estado de disponibilidad y el contenido bibliográfico se conservan.
