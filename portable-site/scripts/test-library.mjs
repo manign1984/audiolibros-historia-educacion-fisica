@@ -22,7 +22,7 @@ const orbuchReadingDocument = buildOrbuchReadingDocument(orbuchAccessibleText);
 const expectedOrbuchCitation = 'Orbuch, I. P. (2020). Educar al cuerpo dentro y fuera del aula. Análisis de dos experiencias en la Nueva Argentina de Perón. History of Education in Latin America, 3, e21435.';
 const expectedPineauCitation = 'Pineau, P. (1999). Renovación, represión, cooptación: Las estrategias de la Reforma Fresco–Noble (Provincia de Buenos Aires, década del 30). En A. Ascolani (Comp.), La educación en Argentina: Estudios de historia (pp. 223–239). Ediciones del Arca.';
 
-assert.equal(catalog.length, 2, 'La biblioteca debe contener exactamente las dos obras reales integradas.');
+assert.equal(catalog.length, 3, 'La biblioteca debe contener las tres obras integradas.');
 assert.equal(new Set(catalog.map((entry) => entry.id)).size, catalog.length, 'Los identificadores deben ser únicos.');
 assert.ok(orbuch && pineau, 'Las dos obras deben estar identificadas en el catálogo.');
 assert.equal(citationAsPlainText(orbuch), expectedOrbuchCitation, 'La referencia APA de Orbuch no debe alterarse.');
@@ -30,7 +30,7 @@ assert.equal(citationAsPlainText(pineau), expectedPineauCitation, 'La referencia
 assert.equal(alphabeticGroup(orbuch), 'O');
 assert.equal(alphabeticGroup(pineau), 'P');
 assert.equal(normalizeForSearch('Renovación – COOPTACIÓN'), 'renovacion cooptacion');
-assert.deepEqual(sortCatalog(catalog).map((entry) => entry.id), ['orbuch-educar-al-cuerpo', 'pineau-fresco-noble']);
+assert.deepEqual(sortCatalog(catalog).map((entry) => entry.id), ['hobsbawm-historia-siglo-xx', 'orbuch-educar-al-cuerpo', 'pineau-fresco-noble']);
 
 for (const query of [
   'Pineau',
@@ -63,7 +63,7 @@ for (const query of [
 }
 
 assert.equal(filterCatalog(catalog, 'Sarmiento civilización').length, 0, 'Una búsqueda ajena no debe devolver resultados.');
-assert.deepEqual(filterCatalog(catalog, '').map((entry) => entry.id), ['orbuch-educar-al-cuerpo', 'pineau-fresco-noble'], 'Sin consulta se conserva el catálogo ordenado.');
+assert.deepEqual(filterCatalog(catalog, '').map((entry) => entry.id), ['hobsbawm-historia-siglo-xx', 'orbuch-educar-al-cuerpo', 'pineau-fresco-noble'], 'Sin consulta se conserva el catálogo ordenado.');
 
 const mockEntries = [
   { ...pineau, id: 'z', sortAuthor: 'Zeta, Ana', title: 'B' },
@@ -147,4 +147,4 @@ const blocked = { getItem() { throw new Error('Blocked'); }, setItem() { throw n
 assert.deepEqual(readList(blocked, ids), []);
 assert.equal(saveList(blocked, ids), false);
 assert.equal(readProgress(blocked, pineau), 0);
-console.log('Biblioteca: 29 fichas, 2 recorridos completos, búsqueda, APA, rutas, lista, progreso y sincronización verificados.');
+console.log('Biblioteca: 29 fichas, 3 recorridos, búsqueda, APA, rutas, lista y progreso verificados.');

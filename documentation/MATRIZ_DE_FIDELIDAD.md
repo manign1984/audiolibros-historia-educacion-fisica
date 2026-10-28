@@ -97,3 +97,7 @@ Por solicitud del proyecto se incorporan las imágenes adjuntas como portadas de
 ## Portada de Eduardo Galak del 27/10/2026
 
 Por solicitud del proyecto, «Del dicho al hecho» incorpora como portada la imagen adjunta «Collage vintage de educación física.png». El recurso `portada-galak-del-dicho-al-hecho.png` conserva byte a byte el PNG aportado y se utiliza en las tarjetas del catálogo, las búsquedas, la lista personal y la ficha bibliográfica, con el formato horizontal ya disponible. El estado de disponibilidad y el contenido bibliográfico se conservan.
+
+## Integración de Hobsbawm del 28/10/2026
+
+Por solicitud explícita se incorpora el tercer recorrido de autor, contexto y lectura con audio. La procedencia, el alcance de la selección, los hashes de los recursos, el procedimiento de alineación automática y las seis omisiones verificadas del audiolibro se documentan en `HOBSBAWM_2026.md`. Se añaden `src/hobsbawm/`, sus recursos, configuración y entrada multipágina. La biblioteca pasa a tres recorridos y 26 fichas en preparación. `IntegratedReader.jsx` conserva el motor común y añade indicadores para fragmentos sin audio y nombres accesibles de controles móviles; los textos, tiempos y recursos de Pineau y Orbuch se conservan. El workflow de validación incorpora la prueba de Hobsbawm.

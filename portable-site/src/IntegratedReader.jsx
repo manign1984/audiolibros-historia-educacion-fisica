@@ -625,11 +625,13 @@ export default function IntegratedReader({ showToast, readingDocument, config })
       <span
         key={sentence.id}
         data-reader-sentence={sentence.id}
+        data-audio-unavailable={sentence.audioUnavailable || undefined}
+        title={sentence.audioUnavailable ? 'Este fragmento no se lee en la grabación.' : undefined}
         className={`reader-sentence ${active ? 'is-active' : ''} ${selected ? 'is-selected' : ''} ${count ? 'has-note' : ''}`}
         role="button"
         tabIndex={0}
         aria-current={active ? 'true' : undefined}
-        aria-label={`${sentence.text}${count ? `. ${count} ${count === 1 ? 'nota' : 'notas'}.` : ''}`}
+        aria-label={`${sentence.text}${sentence.audioUnavailable ? ' Fragmento sin audio.' : ''}${count ? `. ${count} ${count === 1 ? 'nota' : 'notas'}.` : ''}`}
         onClick={() => setSelectedSentenceId(sentence.id)}
         onKeyDown={(event) => {
           if (event.key === 'Enter' || event.key === ' ') {
@@ -707,7 +709,7 @@ export default function IntegratedReader({ showToast, readingDocument, config })
                 <button type="button" onClick={() => setFontScale((value) => Math.min(1.32, +(value + 0.08).toFixed(2)))} aria-label="Aumentar tamaño del texto">A <Plus size={15} /></button>
               </div>
 
-              <button className="reader-header-button" type="button" onClick={() => setDrawerOpen(true)}>
+              <button className="reader-header-button" type="button" aria-label="Abrir cuaderno" onClick={() => setDrawerOpen(true)}>
                 <NotebookPen size={17} /> <span>Cuaderno</span><b>{notes.length}</b>
               </button>
               <a className="reader-header-button reader-header-button--link" href={config.pdfUrl} target="_blank" rel="noreferrer">
@@ -808,7 +810,7 @@ export default function IntegratedReader({ showToast, readingDocument, config })
             )}
 
             <div className="reader-player__context">
-              <span>{selectedSentence ? 'Oración elegida' : config.sync.status === 'ready' ? 'Oración activa' : 'Texto listo para anotar'}</span>
+              <span>{selectedSentence?.audioUnavailable ? 'Fragmento sin audio' : selectedSentence ? 'Oración elegida' : config.sync.status === 'ready' ? 'Oración activa' : 'Texto listo para anotar'}</span>
               <q>{excerpt(annotationTarget?.text, 118)}</q>
               {selectedSentence && Number.isFinite(selectedSentence.start) && (
                 <button type="button" onClick={() => { seekTo(selectedSentence.start, true); setSelectedSentenceId(null); }}>
@@ -854,12 +856,12 @@ export default function IntegratedReader({ showToast, readingDocument, config })
               </div>
 
               {config.sync.status === 'ready' && (
-                <button className={`reader-player__follow ${followText ? 'is-active' : ''}`} type="button" aria-pressed={followText} onClick={() => setFollowText((value) => !value)}>
+                <button className={`reader-player__follow ${followText ? 'is-active' : ''}`} type="button" aria-label={followText ? 'Dejar de seguir el texto' : 'Seguir el texto'} aria-pressed={followText} onClick={() => setFollowText((value) => !value)}>
                   <List size={17} /> <span>{followText ? 'Siguiendo texto' : 'Seguir texto'}</span>
                 </button>
               )}
 
-              <button className="reader-player__annotate" type="button" onClick={() => openNoteEditor(annotationTarget?.id)}>
+              <button className="reader-player__annotate" type="button" aria-label="Anotar" onClick={() => openNoteEditor(annotationTarget?.id)}>
                 <BookmarkPlus size={18} /> <span>Anotar</span>
               </button>
             </div>

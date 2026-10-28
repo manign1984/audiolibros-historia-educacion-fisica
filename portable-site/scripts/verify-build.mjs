@@ -9,6 +9,9 @@ const normalizedBase = expectedBase.endsWith('/') ? expectedBase : `${expectedBa
 const libraryHtmlPath = resolve(dist, 'index.html');
 const orbuchHtmlPath = resolve(dist, 'textos/orbuch-educar-al-cuerpo/index.html');
 const pineauHtmlPath = resolve(dist, 'textos/pineau-fresco-noble/index.html');
+const hobsbawmHtml = await readFile(resolve(dist, 'textos/hobsbawm-historia-siglo-xx/index.html'), 'utf8');
+assert.match(hobsbawmHtml, /Historia del siglo XX · Eric Hobsbawm/);
+assert.ok(hobsbawmHtml.includes(`src="${normalizedBase}assets/`));
 
 const [libraryHtml, orbuchHtml, pineauHtml] = await Promise.all([
   readFile(libraryHtmlPath, 'utf8'),
@@ -27,6 +30,8 @@ const assetNames = await readdir(resolve(dist, 'assets'));
 const libraryBundleName = assetNames.find((name) => /^(?:biblioteca|main)-.*\.js$/.test(name) && libraryHtml.includes(name));
 const orbuchBundleName = assetNames.find((name) => /^orbuchEducarAlCuerpo-.*\.js$/.test(name));
 const pineauBundleName = assetNames.find((name) => /^pineauFrescoNoble-.*\.js$/.test(name));
+const hobsbawmBundleName = assetNames.find((name) => /^hobsbawmHistoriaSigloXX-.*\.js$/.test(name));
+assert.ok(hobsbawmBundleName, 'Debe existir el bundle independiente de Hobsbawm.');
 const readerBundleNames = assetNames.filter((name) => /^reader-.*\.js$/.test(name));
 assert.ok(libraryBundleName, 'Debe existir el bundle independiente de la biblioteca.');
 assert.ok(orbuchBundleName, 'Debe existir el bundle independiente de Orbuch.');
@@ -44,6 +49,10 @@ const allJavaScript = (await Promise.all(
 
 assert.ok(orbuchBundle.includes(`./${readerBundleNames[0]}`), 'Orbuch debe importar el bundle compartido del lector.');
 assert.ok(pineauBundle.includes(`./${readerBundleNames[0]}`), 'Pineau debe importar el bundle compartido del lector.');
+const hobsbawmBundle = await readFile(resolve(dist, 'assets', hobsbawmBundleName), 'utf8');
+assert.ok(hobsbawmBundle.includes(`./${readerBundleNames[0]}`), 'Hobsbawm debe compartir el mismo lector.');
+assert.ok(allJavaScript.includes(`${normalizedBase}assets/hobsbawm-audiolibro.mp3`));
+for (const path of ['hobsbawm-audiolibro.mp3', 'hobsbawm-vista-panoramica.pdf', 'hobsbawm-texto-accesible.txt', 'hobsbawm-retrato.jpg']) await access(resolve(dist, 'assets', path));
 
 assert.ok(
   libraryBundle.includes(normalizedBase)

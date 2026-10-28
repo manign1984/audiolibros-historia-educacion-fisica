@@ -65,6 +65,24 @@ const publishedWorks = [
     },
     path: 'textos/pineau-fresco-noble/',
   },
+  {
+    id: 'hobsbawm-historia-siglo-xx',
+    status: 'available',
+    author: 'Eric Hobsbawm',
+    shortTitle: 'Historia del siglo XX',
+    title: 'Historia del siglo XX. Vista panorámica del siglo XX',
+    collection: 'miradas',
+    year: '1999',
+    duration: 2942.197551,
+    stateKey: 'hobsbawm-siglo-xx-reader-state-v1',
+    artwork: 'assets/portada-hobsbawm-historia-siglo-xx.png',
+    description: 'Doce testimonios y una vista panorámica del siglo corto: catástrofes, crecimiento y crisis entre 1914 y 1991. Una lectura sobre la memoria y las transformaciones del mundo contemporáneo.',
+    authorDisplay: 'Hobsbawm, E.',
+    authorSearch: ['Eric Hobsbawm', 'Hobsbawm, Eric', 'Hobsbawn', 'Hobsbawm, E.'],
+    sortAuthor: 'Hobsbawm, Eric',
+    reference: 'Hobsbawm, E. (1999). Vista panorámica del siglo XX. En Historia del siglo XX. Crítica.',
+    path: 'textos/hobsbawm-historia-siglo-xx/',
+  },
 ];
 
 export const catalog = [...publishedWorks, ...plannedWorks];

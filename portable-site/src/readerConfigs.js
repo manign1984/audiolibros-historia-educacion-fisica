@@ -53,3 +53,31 @@ export const orbuchReaderConfig = {
     coverMessage: 'El resaltado acompaña la oración que se está escuchando.',
   },
 };
+
+export const hobsbawmReaderConfig = {
+  workId: 'hobsbawm-historia-siglo-xx',
+  mark: 'XX',
+  shortTitle: 'Historia del siglo XX',
+  authorAndTitle: 'Eric Hobsbawm · Vista panorámica del siglo XX',
+  experienceName: 'Historia del siglo XX',
+  audiobookUrl: '/assets/hobsbawm-audiolibro.mp3',
+  audiobookExternalUrl: 'https://drive.google.com/file/d/1-6LoX2kQ48lU-api_8N4PzsV2Ueycb41/view?usp=drivesdk',
+  pdfUrl: '/assets/hobsbawm-vista-panoramica.pdf',
+  storage: {
+    notesKey: 'hobsbawm-siglo-xx-reader-notes-v1',
+    stateKey: 'hobsbawm-siglo-xx-reader-state-v1',
+  },
+  export: {
+    jsonFileName: 'notas-hobsbawm-siglo-xx.json',
+    textFileName: 'cuaderno-hobsbawm-siglo-xx.txt',
+    shareTitle: 'Cuaderno de lectura · Eric Hobsbawm',
+  },
+  sync: {
+    status: 'ready',
+    launcherTitle: 'Leé, escuchá y construí tu cuaderno',
+    launcherDescription: 'El texto acompaña el audio oración por oración. Podés elegir capítulos, escuchar desde un pasaje y construir tu cuaderno de lectura.',
+    featureTitle: 'Oración activa',
+    featureDescription: 'El resaltado sigue los pasajes presentes en la grabación.',
+    coverMessage: 'El resaltado sigue la voz. El subrayado punteado señala los fragmentos sin audio.',
+  },
+};
