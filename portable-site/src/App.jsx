@@ -20,59 +20,11 @@ import { timeline } from './data.js';
 import IntegratedReader from './IntegratedReader.jsx';
 import { pineauReaderConfig } from './readerConfigs.js';
 import { readingDocument } from './readingDocument.js';
+import JourneyHeader, { JOURNEY_SECTIONS as NAV_ITEMS, useJourneyNavigation } from './shared/JourneyHeader.jsx';
 
 const AUDIOBOOK_DRIVE_ID = '17w1Pw25aGLXu_cR9mRBZgIOnCG2qNAEm';
 const AUDIOBOOK_DRIVE_URL = `https://drive.google.com/file/d/${AUDIOBOOK_DRIVE_ID}/view`;
 const LIBRARY_HOME_URL = import.meta.env.BASE_URL;
-
-const NAV_ITEMS = [
-  ['inicio', 'Inicio'],
-  ['autor', 'Autor'],
-  ['contexto', 'Contexto'],
-  ['lectura', 'Lectura'],
-  ['creditos', 'Créditos'],
-];
-
-function useScrollState() {
-  const [progress, setProgress] = useState(0);
-  const [active, setActive] = useState('inicio');
-
-  useEffect(() => {
-    const updateScrollState = () => {
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      setProgress(max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0);
-
-      const readingLine = Math.min(Math.max(window.innerHeight * 0.18, 86), 160);
-      let currentSection = NAV_ITEMS[0][0];
-
-      NAV_ITEMS.forEach(([id]) => {
-        const section = document.getElementById(id);
-        if (section && section.getBoundingClientRect().top <= readingLine) currentSection = id;
-      });
-
-      const creditsSection = document.getElementById('creditos');
-      const creditsThreshold = Math.max(readingLine, window.innerHeight * 0.55);
-      if (creditsSection && creditsSection.getBoundingClientRect().top <= creditsThreshold) {
-        currentSection = NAV_ITEMS[NAV_ITEMS.length - 1][0];
-      }
-
-      setActive(currentSection);
-    };
-
-    updateScrollState();
-    window.addEventListener('scroll', updateScrollState, { passive: true });
-    window.addEventListener('resize', updateScrollState);
-    window.visualViewport?.addEventListener('resize', updateScrollState);
-
-    return () => {
-      window.removeEventListener('scroll', updateScrollState);
-      window.removeEventListener('resize', updateScrollState);
-      window.visualViewport?.removeEventListener('resize', updateScrollState);
-    };
-  }, []);
-
-  return { progress, active };
-}
 
 function SectionHeading({ index, section, title, titleLines, mobileTitleLines, text, inverse = false }) {
   return (
@@ -347,61 +299,13 @@ function HistoricalCarousel() {
   );
 }
 
-function TopBar({ soundOn, setSoundOn, progress, active }) {
+function TopBar({ progress, active }) {
   const roundedProgress = Math.round(progress);
   const activeLabel = NAV_ITEMS.find(([id]) => id === active)?.[1] || 'Inicio';
 
   return (
     <>
-      <div className="reading-progress" aria-hidden="true">
-        <span style={{ width: `${progress}%` }} />
-      </div>
-      <header className="topbar">
-        <a className="brand" href="#inicio" aria-label="Ir al inicio">
-          <span className="brand-mark" aria-hidden="true">
-            <i />
-            <i />
-            <i />
-          </span>
-          <span>
-            <strong>1937</strong>
-            <small>Reforma Fresco–Noble</small>
-          </span>
-        </a>
-        <nav className="topnav topnav--desktop" aria-label="Secciones del recorrido">
-          {NAV_ITEMS.map(([id, label]) => {
-            const isActive = id === active;
-
-            return (
-              <a
-                key={id}
-                className={`topnav-link ${isActive ? 'is-active' : ''}`}
-                href={`#${id}`}
-                aria-current={isActive ? 'location' : undefined}
-              >
-                {label}
-              </a>
-            );
-          })}
-        </nav>
-        <div
-          className="topnav topnav--linear topnav--mobile"
-          role="status"
-          aria-live="polite"
-          aria-label={`Sección actual: ${activeLabel}`}
-        >
-          <span className="topnav-current">{activeLabel}</span>
-        </div>
-        <button
-          className="icon-button sound-button"
-          type="button"
-          onClick={() => setSoundOn((value) => !value)}
-          aria-label={soundOn ? 'Desactivar sonidos' : 'Activar sonidos'}
-          title={soundOn ? 'Sonidos activados' : 'Sonidos desactivados'}
-        >
-          {soundOn ? <Volume2 size={19} /> : <VolumeX size={19} />}
-        </button>
-      </header>
+      <JourneyHeader author="Pineau" title="Reforma Fresco–Noble" active={active} progress={progress} />
       <aside
         className="journey-progress"
         role="progressbar"
@@ -423,7 +327,7 @@ function TopBar({ soundOn, setSoundOn, progress, active }) {
   );
 }
 
-function Hero() {
+function Hero({ soundOn, setSoundOn }) {
   return (
     <section id="inicio" className="hero tracked-section">
       <div className="hero-radiance" aria-hidden="true" />
@@ -447,7 +351,9 @@ function Hero() {
           <div className="hero-meta" aria-label="Características de la experiencia">
             <span><Clock3 size={16} /> 35–50 min</span>
             <span><ShieldCheck size={16} /> Sin registro</span>
-            <span><Volume2 size={16} /> Sonido opcional</span>
+            <button className="hero-sound-control" type="button" onClick={() => setSoundOn(value => !value)} aria-pressed={soundOn} aria-label={soundOn ? 'Desactivar sonidos' : 'Activar sonidos'}>
+              {soundOn ? <Volume2 size={16} /> : <VolumeX size={16} />} Sonido opcional: {soundOn ? 'activado' : 'desactivado'}
+            </button>
           </div>
         </div>
         <figure className="hero-monument">
@@ -728,7 +634,7 @@ function Footer() {
 export default function App() {
   const [soundOn, setSoundOn] = useState(true);
   const [toast, setToast] = useState('');
-  const { progress, active } = useScrollState();
+  const { progress, active } = useJourneyNavigation();
   const toastTimer = useRef(null);
 
   const showToast = useCallback((message) => {
@@ -741,9 +647,9 @@ export default function App() {
 
   return (
     <>
-      <TopBar soundOn={soundOn} setSoundOn={setSoundOn} progress={progress} active={active} />
+      <TopBar progress={progress} active={active} />
       <main>
-        <Hero />
+        <Hero soundOn={soundOn} setSoundOn={setSoundOn} />
         <AuthorSection />
         <ContextSection />
         <ReadingSection showToast={showToast} />

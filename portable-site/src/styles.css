@@ -887,6 +887,19 @@ summary:focus-visible {
 }
 
 /* Author */
+.hero-sound-control {
+  display:inline-flex;
+  align-items:center;
+  gap:.4rem;
+  padding:8px 10px;
+  color:inherit;
+  border:1px solid currentColor;
+  background:transparent;
+  font:inherit;
+  cursor:pointer;
+}
+.hero-sound-control:focus-visible { outline:2px solid var(--mustard); outline-offset:3px; }
+
 .author-section {
   padding: 7rem 0;
   color: var(--paper-light);

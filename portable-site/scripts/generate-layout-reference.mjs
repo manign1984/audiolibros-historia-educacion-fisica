@@ -30,7 +30,7 @@ try {
       fonts += css;
     }
   }
-  const styles = (await Promise.all(['src/styles.css', 'src/reader.css'].map(p => readFile(p, 'utf8')))).join('\n').replaceAll('/assets/', '../assets/');
+  const styles = (await Promise.all(['src/styles.css', 'src/reader.css', 'src/shared/journey-header.css'].map(p => readFile(p, 'utf8')))).join('\n').replaceAll('/assets/', '../assets/');
   await writeFile(resolve(output, 'pineau-reference.css'), fonts + '\n' + styles);
   await writeFile(resolve(output, 'pineau-reference.html'), `<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="robots" content="noindex"><title>Referencia estructural de Pineau</title><link rel="stylesheet" href="./pineau-reference.css"></head><body inert>${markup}</body></html>`);
   console.log('Referencia estructural generada desde los componentes y estilos de Pineau.');

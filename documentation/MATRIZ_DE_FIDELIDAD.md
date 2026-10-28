@@ -121,3 +121,9 @@ Por solicitud explícita se retira la figura radial situada detrás de la biogra
 ## Continuidad directa de Inicio a Autor del 28/10/2026
 
 Por solicitud explícita se elimina de Orbuch la franja «Prescripción · Implementación · Tensiones» situada al pie de Inicio. Se retiran su lista y los estilos exclusivos de escritorio y celular. Inicio continúa directamente con Autor; se conservan la composición de portada, la biografía y los contenidos de Contexto. El documento editorial incorpora esta continuidad como regla común en D4 y en el detalle de Inicio. La prueba de fidelidad deja de exigir los rótulos y los estilos de la franja retirada; los demás controles siguen vigentes.
+
+## Encabezado común de los tres recorridos del 28/10/2026
+
+Por aceptación explícita de la propuesta editorial, Pineau, Orbuch y Hobsbawm utilizan `shared/JourneyHeader.jsx`: acceso «← Biblioteca», apellido y título breve, las cinco opciones en el mismo orden, Archivo 600/700, fondo grafito, texto claro y verde lima. El encabezado mide como mínimo 80 px desde 1024 px de ancho y 112 px por debajo, incluida su barra de progreso de 2 px. El diseño permite crecer al ampliar texto y conserva las cinco opciones visibles sin barras internas.
+
+Se unifican la indicación de sección activa y el avance, con un cálculo que contempla el alto real del encabezado y el final de la página. Los enlaces a secciones descuentan ese alto. Pineau conserva su indicador lateral y traslada el control de sonidos a Inicio, junto a «Sonido opcional». Esta solicitud autoriza expresamente los cambios acotados de `App.jsx` y `styles.css`; se preservan sus materiales y el lector. La referencia inerte de Pineau incorpora la hoja común para reflejar las mismas condiciones al medir. El acuerdo queda en la sección 2.2 y en D12 del documento editorial.

@@ -19,7 +19,6 @@
 .canonical-author-role { margin:0 0 1.4rem; color:var(--mustard); font:700 .82rem/1.62 'Archivo',sans-serif; letter-spacing:.07em; text-transform:uppercase; }
 .canonical-author-summary { max-width:820px; margin:0 0 1.5rem; font:400 1.05rem/1.72 'Archivo',sans-serif; }
 .canonical-author-link { display:inline-flex; gap:.4rem; align-items:center; margin-top:0; border-bottom:1px solid currentColor; font:700 .78rem/1.62 'Archivo',sans-serif; letter-spacing:.05em; text-transform:uppercase; text-decoration:none; }
-.canonical-page .hb-header { position:fixed; width:100%; }
 .canonical-page .hb-hero { padding-top:118px; }
 .canonical-page .hb-author-photo { transform:none; }
 .canonical-page .hb-author { --paper-light:#17242c; --mustard:#a93828; background:#eee3cb; }
@@ -37,11 +36,6 @@
 .canonical-page .orbuch-credits .orbuch-credits__grid { gap:1.5rem 2rem; }
 @media(max-width:1120px) { .canonical-author-grid { grid-template-columns:minmax(230px,.65fr) 1fr; } }
 @media(max-width:1040px) {
-  .canonical-page .orbuch-header { height:108px; }
-  .canonical-page .orbuch-header__inner { grid-template-columns:1fr 1fr; grid-template-rows:46px 50px; gap:0; padding-inline:16px; }
-  .canonical-page .orbuch-section-counter { justify-self:end; }
-  .canonical-page .orbuch-header nav { display:flex; grid-column:1/-1; width:100%; justify-content:space-between; gap:8px; }
-  .canonical-page .orbuch-header nav a { display:flex; align-items:center; min-height:42px; font:700 .65rem/1.4 'Archivo',sans-serif; letter-spacing:.02em; }
   .canonical-page .orbuch-hero { padding-top:126px; }
 }
 @media(max-width:900px) { .canonical-page #autor { padding:6rem 0; } .canonical-author-grid { width:min(760px,calc(100% - 32px)); grid-template-columns:minmax(190px,.45fr) minmax(0,1fr); gap:2rem; } }

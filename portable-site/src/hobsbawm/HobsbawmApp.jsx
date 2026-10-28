@@ -2,29 +2,15 @@ import { useEffect, useState } from 'react';
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight, BookOpen, Clock3, Download, ExternalLink, Headphones } from 'lucide-react';
 import IntegratedReader from '../IntegratedReader.jsx';
 import { AuthorBiography, PineauLayoutReference } from '../shared/CanonicalLayout.jsx';
+import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import { hobsbawmReaderConfig } from '../readerConfigs.js';
 import { hobsbawmReadingDocument } from './hobsbawmReadingDocument.js';
 
-const NAV = [['inicio', 'Inicio'], ['autor', 'Autor'], ['contexto', 'Contexto'], ['lectura', 'Lectura'], ['creditos', 'Créditos']];
 const PERIODS = [
   { years: '1914—1945', number: '01', title: 'La era de las catástrofes', kicker: 'Guerra · revolución · crisis', text: 'Dos guerras mundiales, la revolución rusa, la crisis económica y el ascenso de los fascismos desarticulan el mundo del siglo XIX. El progreso deja de parecer una promesa segura.', question: '¿Cómo comprender una época que combina transformación social y destrucción masiva?', events: [['1914', 'La Primera Guerra Mundial abre el siglo corto.'], ['1917', 'La Revolución de Octubre plantea una alternativa al capitalismo.'], ['1929', 'La Gran Depresión sacude la economía mundial.'], ['1945', 'El fin de la guerra reorganiza las relaciones de poder.']], position: '10% 50%', color: 'red' },
   { years: '1947—1973', number: '02', title: 'La edad de oro', kicker: 'Crecimiento · cambios sociales · Guerra Fría', text: 'Una expansión económica sin precedentes transforma el trabajo, la vida cotidiana y las relaciones sociales. El enfrentamiento entre Estados Unidos y la Unión Soviética convive con profundas transformaciones en todo el mundo.', question: '¿Por qué Hobsbawm considera decisiva la velocidad de estos cambios?', events: [['Posguerra', 'El capitalismo inicia una expansión que sorprende a sus contemporáneos.'], ['Transformación', 'La urbanización y los cambios del trabajo modifican la vida social.'], ['Mundo bipolar', 'Las superpotencias ordenan el conflicto político internacional.'], ['1973', 'Se cierra el gran ciclo de crecimiento de la posguerra.']], position: '50% 45%', color: 'gold' },
   { years: '1973—1991', number: '03', title: 'El derrumbamiento', kicker: 'Incertidumbre · desigualdad · fin de un orden', text: 'Las crisis económicas, sociales y políticas afectan a países de distintos sistemas. La disolución de la Unión Soviética cierra el siglo corto y deja un futuro sin mapas seguros.', question: '¿Qué termina en 1991 y qué problemas siguen abiertos?', events: [['Crisis', 'El desempleo y la desigualdad vuelven al centro de la escena.'], ['Interdependencia', 'Una economía cada vez más integrada atraviesa las fronteras.'], ['1989—1991', 'Se desmorona el bloque soviético.'], ['Después', 'El cierre del siglo abre preguntas sobre el futuro.']], position: '90% 50%', color: 'blue' },
 ];
-
-function useJourney() {
-  const [state, setState] = useState({ active: 'inicio', progress: 0 });
-  useEffect(() => {
-    const update = () => {
-      const active = [...NAV].reverse().find(([id]) => document.getElementById(id)?.getBoundingClientRect().top <= 160)?.[0] || 'inicio';
-      const height = document.documentElement.scrollHeight - window.innerHeight;
-      setState({ active, progress: height > 0 ? Math.min(100, window.scrollY / height * 100) : 0 });
-    };
-    update(); window.addEventListener('scroll', update, { passive: true }); window.addEventListener('resize', update);
-    return () => { window.removeEventListener('scroll', update); window.removeEventListener('resize', update); };
-  }, []);
-  return state;
-}
 
 function Heading({ number, label, title, children }) {
   return <div className="hb-section-heading"><span className="hb-section-number">{number}</span><div><p className="hb-eyebrow">{label}</p><h2>{title}</h2>{children && <p className="hb-section-lead">{children}</p>}</div></div>;
@@ -44,13 +30,13 @@ function ContextCarousel() {
 }
 
 export default function HobsbawmApp() {
-  const { active, progress } = useJourney();
+  const { active, progress } = useJourneyNavigation();
   const [toast, setToast] = useState('');
   useEffect(() => { if (!toast) return; const timer = setTimeout(() => setToast(''), 3500); return () => clearTimeout(timer); }, [toast]);
   return <div className="hobsbawm-page canonical-page">
     <PineauLayoutReference />
     <a className="hb-skip" href="#lectura">Saltar a la lectura</a>
-    <header className="hb-header"><div className="hb-header-inner"><a className="hb-library-link" href={import.meta.env.BASE_URL}><ArrowLeft size={17} /><span>Biblioteca</span></a><span className="hb-header-title">HOBSBAWM <i>/</i> SIGLO XX</span><nav aria-label="Secciones del recorrido">{NAV.map(([id, label]) => <a key={id} href={`#${id}`} aria-current={active === id ? 'location' : undefined}>{label}</a>)}</nav><span className="hb-section-count">{String(NAV.findIndex(([id]) => id === active) + 1).padStart(2, '0')} / 05</span></div><div className="hb-progress" role="progressbar" aria-label="Progreso del recorrido" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress)}><i style={{ width: `${progress}%` }} /></div></header>
+    <JourneyHeader author="Hobsbawm" title="Historia del siglo XX" active={active} progress={progress} />
     <main>
       <section id="inicio" className="hb-hero"><img className="hb-hero-art" src="/assets/portada-hobsbawm-historia-siglo-xx.png" alt="Collage de guerras, industria, movilizaciones y exploración espacial que representa las tensiones del siglo XX" fetchPriority="high" /><div className="hb-hero-veil" /><div className="hb-hero-copy"><p className="hb-eyebrow">Eric Hobsbawm · leer la historia</p><span className="hb-hero-stamp">1914—1991 / EL SIGLO CORTO</span><h1>Historia del<br /><span>siglo XX.</span></h1><p className="hb-hero-subtitle">Vista panorámica del siglo XX</p><p className="hb-hero-question">¿Cómo se cuenta un siglo que transformó el mundo?</p><p className="hb-hero-intro">Doce miradas, tres tiempos y una pregunta por nuestro vínculo con el pasado. Un recorrido para situar al autor, reconstruir su época y leer con el audiolibro.</p><div className="hb-hero-actions"><a className="hb-button" href="#autor">Comenzar el recorrido <ArrowRight size={18} /></a><a className="hb-hero-listen" href="#lectura"><Headphones size={18} /> Ir a la lectura</a></div><div className="hb-hero-meta"><span><Clock3 size={15} /> Audio 49:02</span><span>Texto + contexto</span><span>Sin registro</span></div></div><p className="hb-hero-caption">Una historia de contrastes.<br /><span>Catástrofes, crecimiento e incertidumbre.</span></p></section>
       <section id="autor" className="hb-section hb-author">
