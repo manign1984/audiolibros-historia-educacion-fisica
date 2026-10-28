@@ -22,7 +22,7 @@
 .canonical-page .hb-header { position:fixed; width:100%; }
 .canonical-page .hb-hero { padding-top:118px; }
 .canonical-page .hb-author-photo { transform:none; }
-.canonical-page .hb-author { --paper-light:#17242c; --mustard:#a93828; }
+.canonical-page .hb-author { --paper-light:#17242c; --mustard:#a93828; background:#eee3cb; }
 .canonical-page .hb-author .canonical-author-photo img { object-position:center top; transform:scale(1.42); transform-origin:50% 0; }
 /* Hobsbawm: keep shorter sections in their original content-driven flow. */
 .canonical-page.hobsbawm-page :is(#contexto,#lectura,#creditos) { min-height:0; }
