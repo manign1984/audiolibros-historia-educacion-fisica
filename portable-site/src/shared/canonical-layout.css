@@ -24,8 +24,9 @@
 .canonical-page .hb-author-photo { transform:none; }
 .canonical-page .hb-author { --paper-light:#17242c; --mustard:#a93828; }
 .canonical-page .hb-author .canonical-author-photo img { object-position:center top; transform:scale(1.42); transform-origin:50% 0; }
-.canonical-page .hb-section:is(#contexto,#lectura) > .hb-shell { min-height:100%; display:flex; flex-direction:column; justify-content:space-between; }
-.canonical-page .hb-author-lens { margin-bottom:2rem; }
+/* Hobsbawm: keep shorter sections in their original content-driven flow. */
+.canonical-page.hobsbawm-page :is(#contexto,#lectura,#creditos) { min-height:0; }
+.canonical-page .hb-context .hb-author-lens { margin-bottom:2rem; color:var(--ink); }
 .canonical-page .hb-credits { padding-block:60px; }
 .canonical-page .hb-credits .hb-section-heading { margin-bottom:32px; }
 .canonical-page .hb-credits .hb-section-heading h2 { font-size:64px; }
@@ -52,6 +53,6 @@
   .canonical-page .orbuch-use-note { display:flex; gap:8px 16px; }
   .canonical-page .orbuch-hero-operations { margin-top:20px; }
 }
-@media(max-width:640px) { .canonical-author-grid { width:calc(100% - 24px); grid-template-columns:1fr; gap:2rem; } .canonical-author-photo { width:min(100%,330px); } .canonical-author-copy h2 { font-size:clamp(3.15rem,14vw,4.6rem); overflow-wrap:anywhere; } .canonical-page .hb-section:is(#contexto,#lectura) > .hb-shell { display:block; } .canonical-page .hb-credits .hb-section-heading h2 { font-size:48px; } }
+@media(max-width:640px) { .canonical-author-grid { width:calc(100% - 24px); grid-template-columns:1fr; gap:2rem; } .canonical-author-photo { width:min(100%,330px); } .canonical-author-copy h2 { font-size:clamp(3.15rem,14vw,4.6rem); overflow-wrap:anywhere; } .canonical-page .hb-credits .hb-section-heading h2 { font-size:48px; } }
 @media(max-width:360px) { .canonical-page #autor { padding-block:60px; } .canonical-author-grid { gap:24px; } }
 @media print { .canonical-layout-reference { display:none; } .canonical-page :is(#inicio,#autor,#contexto,#lectura,#creditos) { height:auto; overflow:visible; } }

@@ -109,3 +109,7 @@ Por solicitud explícita se aplican a Orbuch y Hobsbawm las directrices acordada
 ## Eliminación de barras internas del 28/10/2026
 
 Por solicitud explícita se corrige la implementación de alturas comunes que había introducido desplazamiento dentro de los bloques de Orbuch y Hobsbawm. La nueva regla D11 del acuerdo editorial establece una única barra vertical para el recorrido principal. Las alturas de Pineau pasan a ser mínimos de referencia; los bloques crecen cuando lo necesita su contenido. Se modifican los estilos compartidos y se retira el foco artificial de los contenedores. El contenido, las tipografías, los retratos y el lector compartido se conservan.
+
+## Recomposición del espaciado de Hobsbawm del 28/10/2026
+
+La solicitud posterior de recuperar la composición anterior se contrasta con el recorrido inicial de Hobsbawm (`9b46951667c394ead5e5339b5e03482d963d0dc1`, PR #18) y los ajustes de las PR #19 y #20. No faltan materiales en Contexto o Lectura: las alturas mínimas importadas de Pineau prolongaban artificialmente secciones más breves. Se recupera el flujo original de sus contenidos y se retira el mínimo importado únicamente de Contexto, Lectura y Créditos de Hobsbawm. Inicio y Autor mantienen la referencia común; se conservan la biografía normalizada, el retrato nuevo, los tres períodos, la clave de lectura, Sarajevo, el lector y todos los recursos. La excepción y las medidas se registran en `PARAMETROS_COMUNES_2026.md`. Pineau y Orbuch no cambian.
