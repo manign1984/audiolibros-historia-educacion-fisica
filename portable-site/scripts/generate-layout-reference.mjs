@@ -12,7 +12,8 @@ const server = await createServer({ server: { middlewareMode: true, watch: null 
 try {
   const { default: App } = await server.ssrLoadModule('/src/App.jsx');
   await server.watcher.close();
-  let markup = renderToStaticMarkup(React.createElement(App));
+  // Keep other works on the approved layout while Pineau trials block labels.
+  let markup = renderToStaticMarkup(React.createElement(App, { pilotBlockLabels: false }));
   markup = markup.replaceAll(`${server.config.base}assets/`, '../assets/');
   markup = markup.replace(/<link\b[^>]*>/g, '').replace(/<dialog\b[\s\S]*?<\/dialog>/g, '');
   markup = markup.replace(/<iframe\b[^>]*>/g, tag => tag.replace(/\ssrc="[^"]*"/g, ''));
