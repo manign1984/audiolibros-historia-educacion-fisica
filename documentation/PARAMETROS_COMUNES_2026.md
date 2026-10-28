@@ -33,7 +33,7 @@ Se midieron las tres páginas en marcos de un navegador Chrome, con fuentes carg
 
 La corrección posterior elimina la igualdad forzada de alturas: los bloques igualan o superan su referencia según su contenido. Las biografías y los materiales completos permanecen en el desplazamiento general, sin barras verticales internas. Son pruebas de marcos de navegador, no de dispositivos físicos.
 
-Esta medición describe la primera corrección. La excepción posterior para las secciones breves de Hobsbawm se detalla a continuación y prevalece sobre sus mínimos importados.
+Esta medición describe la primera corrección. La excepción posterior para las secciones breves de Hobsbawm y el nuevo cálculo de Inicio se detallan a continuación y prevalecen sobre sus mínimos anteriores. Los valores de Inicio de esta tabla son históricos.
 
 Se verificaron las familias y pesos calculados de la biografía, ausencia de desbordamiento horizontal, apertura del lector de Orbuch a 320 px, y reproducción, pausa y cambio al segundo apartado de Hobsbawm (audio aproximadamente en el segundo 706). El retrato se inspeccionó visualmente. La batería del catálogo, lector compartido y sincronización, además de las compilaciones y comprobaciones de recursos en raíz y subruta, debe pasar antes de integrar.
 
@@ -80,3 +80,15 @@ La revisión en Chrome confirma la igualdad de alturas, familias, pesos, colores
 Se comprueban además el acceso a Créditos, el progreso del 100 % al llegar al final y el regreso a Biblioteca. Pasan las pruebas existentes y las compilaciones limpias con verificación de recursos en raíz y en la base pública de GitHub Pages.
 
 En Chrome a 1363×936, Contexto pasa de 2783,25 a 1599,53 px, Lectura de 1841,36 a 1285,59 px y Créditos de 711,86 a 678,50 px. En los marcos de 768×1024, 390×844 y 320×740, estas tres secciones se ajustan igualmente al contenido. La diferencia entre cada sección y su contenedor equivale solo al relleno previsto: 180 px en Contexto/Lectura de escritorio y tableta, 110 px en celular, y 120 px en Créditos. No quedan alturas vacías añadidas debajo del contenido, desbordamiento horizontal ni contenedores de contenido con desplazamiento vertical interno.
+
+## Inicio completo en la primera vista · 28/10/2026
+
+Por solicitud explícita, las tres portadas muestran su contenido completo al ingresar al comienzo del recorrido. La altura disponible es el alto visible del navegador menos el alto real del encabezado común. Se cuenta ese encabezado una sola vez: con una ventana de 1363×936 y encabezado de 80 px, Inicio dispone de 856 px. Este criterio reemplaza para Inicio las alturas mínimas anteriores, incluido el mínimo de 100svh de Pineau; los demás bloques conservan sus criterios y excepciones vigentes.
+
+`shared/hero-viewport.css`, importada por el encabezado común, adapta la composición al ancho y al alto disponibles. Se ajustan espacios, títulos e imagen de Pineau; banderines, título, pregunta y acciones de Orbuch; y título, presentación y controles de Hobsbawm. Se conservan los textos, imágenes fuente, familias tipográficas, paletas e identidad de cada obra. No se aplica zoom o transformación global ni se ocultan textos o controles para simular el ajuste. Las miniaturas decorativas de documentos de Orbuch se omiten bajo 1024 px y la foto monumental de Pineau se omite en ese mismo umbral; los documentos completos de Orbuch siguen en Contexto y las imágenes fuente permanecen intactas.
+
+Las secciones mantienen altura automática y pueden crecer ante ampliación de texto o ventanas excepcionalmente pequeñas o bajas: prevalecen la legibilidad y el acceso completo al contenido. No se añaden barras internas ni se recorta material. La página completa conserva el desplazamiento general y el paso directo de Inicio a Autor. La referencia estructural inerte incluye la nueva hoja para medir bajo las mismas condiciones.
+
+Se comprobó en Chrome, con fuentes cargadas y lector cerrado, que encabezado más Inicio terminan en el borde visible, con todos los textos y controles dentro de la ventana y sin desbordamiento horizontal. Se revisaron las tres obras en marcos de 1707×773, 1536×695, 1366×768, 1366×600, 1920×870, 1024×768, 768×1024, 390×844, 320×740 y 320×568. Son áreas de navegador en px CSS, no pruebas en dispositivos físicos ni un requisito de zoom del 90 %. Se inspeccionó la composición visual en escritorio y se verificaron a 320×568 la transición sin espacio añadido a Autor, los enlaces con margen de 16 px debajo del encabezado y la apertura/cierre de los tres lectores.
+
+El documento editorial incorpora la sección 2.3 y D13, actualiza la fila de Inicio a 856 px para la referencia 1363×936 y elimina la indicación anterior de 100svh sin descontar el encabezado. Se verificó la conservación de todos los párrafos ajenos al cambio. Pasaron las pruebas del catálogo, las dos obras y Hobsbawm, y las compilaciones limpias con verificación de recursos en raíz y en la base pública de GitHub Pages.
