@@ -2,14 +2,14 @@
 
 ## Alcance autorizado
 
-Aplicación a Orbuch y Hobsbawm de los parámetros acordados en [Directrices para crear nuevos recorridos de lectura](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM): cinco alturas de Pineau, tipografías de su biografía, foto en blanco y negro y síntesis próxima a sesenta palabras. Sustitución del retrato de Hobsbawm por uno anterior y con encuadre cercano.
+Aplicación a Orbuch y Hobsbawm de los parámetros acordados en [Directrices para crear nuevos recorridos de lectura](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM): cinco alturas de Pineau como referencias mínimas, tipografías de su biografía, foto en blanco y negro y síntesis próxima a sesenta palabras. Sustitución del retrato de Hobsbawm por uno anterior y con encuadre cercano.
 
 ## Infraestructura y fidelidad
 
 - `AuthorBiography` comparte la presentación entre las dos obras: nombre en Bebas Neue 400, resumen en Archivo 400, rótulos y enlace en Archivo 700. Se conservan los resúmenes completos: Orbuch, 60 palabras; Hobsbawm, 61. El nombre de Hobsbawm pasa a ser el encabezado principal de Autor; la clave de lectura se traslada a Contexto.
 - `generate-layout-reference.mjs` renderiza los componentes actuales de Pineau con React en el servidor antes de cada desarrollo/compilación. Produce una referencia inerte y sin JavaScript, diálogo de lectura, audio ni video activo. Copia sus estilos y fuentes locales; los recursos usan direcciones relativas compatibles con la raíz y GitHub Pages.
-- Un marco inaccesible a la navegación, sin permisos para ejecutar scripts, mide esa referencia al mismo ancho y alto de ventana. `ResizeObserver` actualiza las cinco alturas tras cargar las fuentes y al cambiar de pantalla. No se montan dos lectores ni se leen notas/progreso desde el marco. Así se evita aproximar alturas con interpolaciones o convertir el dato de escritorio en una constante para todos los celulares.
-- Las dos obras conservan sus contenidos y su identidad cromática. Los bloques que exceden la altura acordada admiten desplazamiento interno; en Orbuch reciben nombre accesible y foco de teclado. Se conserva la navegación de cinco bloques en el encabezado móvil. Las miniaturas decorativas de expedientes se omiten en Inicio móvil; los documentos y reproducciones completos permanecen en Contexto.
+- Un marco inaccesible a la navegación, sin permisos para ejecutar scripts, mide esa referencia al mismo ancho y alto de ventana. `ResizeObserver` actualiza las cinco alturas mínimas tras cargar las fuentes y al cambiar de pantalla. No se montan dos lectores ni se leen notas/progreso desde el marco. Así se evita aproximar alturas con interpolaciones o convertir el dato de escritorio en una constante para todos los celulares.
+- Las dos obras conservan sus contenidos y su identidad cromática. Desde la corrección solicitada posteriormente el 28/10/2026, los bloques usan altura automática, mínimo de referencia y desbordamiento visible: si el contenido necesita más espacio, crecen en el flujo general. No añaden áreas con desplazamiento interno ni paradas de tabulación destinadas a recorrerlas. Se conserva la navegación de cinco bloques en el encabezado móvil. Las miniaturas decorativas de expedientes se omiten en Inicio móvil; los documentos y reproducciones completos permanecen en Contexto.
 - Pineau, `IntegratedReader.jsx`, los documentos temporizados, los MP3, PDF, subtítulos, identificadores y claves de almacenamiento no cambian. Los archivos generados y la página temporal de QA no se versionan.
 
 ## Retrato de Hobsbawm
@@ -22,7 +22,7 @@ Aplicación a Orbuch y Hobsbawm de los parámetros acordados en [Directrices par
 
 ## Comprobaciones
 
-Se midieron las tres páginas en marcos de un navegador Chrome, con fuentes cargadas y lector cerrado. Estos son los valores comunes obtenidos para Pineau, Orbuch y Hobsbawm, en px CSS (redondeados a dos decimales):
+Se midieron las tres páginas en marcos de un navegador Chrome, con fuentes cargadas y lector cerrado. Estos son los valores medidos en Pineau que se utilizan como mínimos de referencia en Orbuch y Hobsbawm, en px CSS (redondeados a dos decimales):
 
 | Área de visualización | Inicio | Autor | Contexto | Lectura | Créditos |
 |---|---:|---:|---:|---:|---:|
@@ -31,6 +31,12 @@ Se midieron las tres páginas en marcos de un navegador Chrome, con fuentes carg
 | 390 × 844 | 774,00 | 1127,20 | 4299,56 | 2123,05 | 1548,78 |
 | 320 × 740 | 760,00 | 1123,70 | 4350,66 | 2218,50 | 1634,64 |
 
-La comparación no detectó diferencias entre los cinco altos de las tres obras. La redistribución interna mantiene las biografías completas; el contenido más extenso de Orbuch puede requerir desplazarse dentro de su bloque, especialmente en Contexto y Créditos. Son pruebas de marcos de navegador, no de dispositivos físicos.
+La corrección posterior elimina la igualdad forzada de alturas: los bloques igualan o superan su referencia según su contenido. Las biografías y los materiales completos permanecen en el desplazamiento general, sin barras verticales internas. Son pruebas de marcos de navegador, no de dispositivos físicos.
 
 Se verificaron las familias y pesos calculados de la biografía, ausencia de desbordamiento horizontal, apertura del lector de Orbuch a 320 px, y reproducción, pausa y cambio al segundo apartado de Hobsbawm (audio aproximadamente en el segundo 706). El retrato se inspeccionó visualmente. La batería del catálogo, lector compartido y sincronización, además de las compilaciones y comprobaciones de recursos en raíz y subruta, debe pasar antes de integrar.
+
+## Corrección de barras internas · 28/10/2026
+
+La regla editorial D11 prohíbe añadir barras internas en los cinco bloques. Tiene prioridad sobre la coincidencia exacta de alturas. Se sustituye `height` por `min-height`, se permite el crecimiento natural con `height: auto` y `overflow: visible`, y se retira el foco artificial de las secciones que antes tenían desplazamiento propio. No se ocultan barras ni se recorta texto para simular la corrección. El lector a pantalla completa conserva su espacio de lectura independiente.
+
+Verificación de la corrección: inspección de Orbuch y Hobsbawm en Chrome a 1363×936, 768×1024, 390×844 y 320×740. No se encontraron contenedores visibles de contenido con `overflow-y: auto/scroll` y desbordamiento vertical dentro del recorrido principal, ni desbordamiento horizontal de la página. Los cinco bloques tienen `overflow: visible`; Contexto y Créditos de Orbuch crecen y su contenido permanece en el flujo general. Se comprobó visualmente la barra única y la apertura/cierre del lector independiente. Pasaron las pruebas existentes y la compilación con verificación de recursos en raíz y en la base de GitHub Pages.

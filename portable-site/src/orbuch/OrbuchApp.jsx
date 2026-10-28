@@ -195,7 +195,7 @@ function SiteHeader({ active, progress }) {
 
 function Hero() {
   return (
-    <section id="inicio" tabIndex={0} aria-label="Inicio del recorrido" className="orbuch-hero">
+    <section id="inicio" aria-label="Inicio del recorrido" className="orbuch-hero">
       <picture className="orbuch-hero__mural">
         <source media="(max-width: 700px)" srcSet="/assets/orbuch-hero-mural-mobile.webp" />
         <img
@@ -306,7 +306,7 @@ function Dossier({ source }) {
 
 function ContextSection() {
   return (
-    <section id="contexto" tabIndex={0} aria-label="Contexto histórico" className="orbuch-context orbuch-section">
+    <section id="contexto" aria-label="Contexto histórico" className="orbuch-context orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
           number="03"
@@ -372,7 +372,7 @@ function ContextSection() {
 
 function ReadingSection() {
   return (
-    <section id="lectura" tabIndex={0} aria-label="Lectura y audiolibro" className="orbuch-reading orbuch-section">
+    <section id="lectura" aria-label="Lectura y audiolibro" className="orbuch-reading orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
           number="04"
@@ -401,7 +401,7 @@ function ReadingSection() {
 
 function CreditsSection() {
   return (
-    <footer id="creditos" tabIndex={0} aria-label="Créditos y fuentes" className="orbuch-credits orbuch-section">
+    <footer id="creditos" aria-label="Créditos y fuentes" className="orbuch-credits orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
           number="05"

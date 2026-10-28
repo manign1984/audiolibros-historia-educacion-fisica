@@ -1,12 +1,11 @@
 .canonical-layout-reference { position: fixed; left: -30000px; top: 0; border: 0; visibility: hidden; pointer-events: none; }
 .canonical-page { --height-inicio:100svh; --height-autor:582.703125px; --height-contexto:2783.25px; --height-lectura:1841.359375px; --height-creditos:711.859375px; }
-.canonical-page :is(#inicio,#autor,#contexto,#lectura,#creditos) { box-sizing:border-box; min-height:0; max-height:none; overflow-y:auto; overflow-x:clip; overscroll-behavior-y:auto; }
-.canonical-page #inicio { height:var(--height-inicio); }
-.canonical-page #autor { height:var(--height-autor); }
-.canonical-page #contexto { height:var(--height-contexto); }
-.canonical-page #lectura { height:var(--height-lectura); }
-.canonical-page #creditos { height:var(--height-creditos); }
-.canonical-page :is(#contexto,#lectura,#creditos):focus-visible { outline:3px solid var(--mustard); outline-offset:-5px; }
+.canonical-page :is(#inicio,#autor,#contexto,#lectura,#creditos) { box-sizing:border-box; height:auto; max-height:none; overflow:visible; }
+.canonical-page #inicio { min-height:var(--height-inicio); }
+.canonical-page #autor { min-height:var(--height-autor); }
+.canonical-page #contexto { min-height:var(--height-contexto); }
+.canonical-page #lectura { min-height:var(--height-lectura); }
+.canonical-page #creditos { min-height:var(--height-creditos); }
 .canonical-page #autor { display:flex; align-items:center; padding:7rem 0; }
 .canonical-author-grid { display:grid; align-items:center; grid-template-columns:minmax(270px,.72fr) minmax(0,1.7fr); gap:clamp(2rem,5vw,5rem); width:min(1240px,calc(100% - 48px)); margin:auto; font-family:'Archivo',sans-serif; color:var(--paper-light); }
 .canonical-author-photo { position:relative; margin:0; padding:1rem 1rem 0 0; }
