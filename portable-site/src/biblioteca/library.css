@@ -52,3 +52,6 @@
   .project-logo--unahur{width:clamp(112px,34vw,144px)}
   .project-logo--tec{width:84px;margin-right:2px}
 }
+
+/* Three available works need visible shelf controls on desktop too. */
+.shelf--featured .shelf-arrows{display:flex}
