@@ -112,7 +112,7 @@ for (const authorMarker of [
   'Historiador de la educación · Doctor en Educación',
   'Ver biografía académica',
 ]) {
-  assert.ok(orbuchApp.includes(authorMarker), `La ficha de autor debe conservar “${authorMarker}”.`);
+  assert.ok((orbuchApp + await text('src/shared/CanonicalLayout.jsx')).includes(authorMarker), `La ficha de autor debe conservar “${authorMarker}”.`);
 }
 const referencedAssets = [...new Set(orbuchApp.match(/\/assets\/orbuch-[A-Za-z0-9._-]+/g) || [])];
 for (const resource of referencedAssets) {

@@ -101,3 +101,7 @@ Por solicitud del proyecto, «Del dicho al hecho» incorpora como portada la ima
 ## Integración de Hobsbawm del 28/10/2026
 
 Por solicitud explícita se incorpora el tercer recorrido de autor, contexto y lectura con audio. La procedencia, el alcance de la selección, los hashes de los recursos, el procedimiento de alineación automática y las seis omisiones verificadas del audiolibro se documentan en `HOBSBAWM_2026.md`. Se añaden `src/hobsbawm/`, sus recursos, configuración y entrada multipágina. La biblioteca pasa a tres recorridos y 26 fichas en preparación. `IntegratedReader.jsx` conserva el motor común y añade indicadores para fragmentos sin audio y nombres accesibles de controles móviles; los textos, tiempos y recursos de Pineau y Orbuch se conservan. El workflow de validación incorpora la prueba de Hobsbawm.
+
+## Parámetros comunes de los recorridos del 28/10/2026
+
+Por solicitud explícita se aplican a Orbuch y Hobsbawm las directrices acordadas en el documento editorial: alturas de Pineau para los cinco bloques y una ficha de autor con Bebas Neue 400, Archivo 400/700, retrato en blanco y negro y resumen cercano a 60 palabras. La implementación y las comprobaciones se detallan en `PARAMETROS_COMUNES_2026.md`. No se modifican los componentes, estilos, textos, tiempos o recursos originales de Pineau ni el motor del lector. Se conserva el retrato anterior de Hobsbawm y se añade un retrato de procedencia documentada con encuadre de rostro.

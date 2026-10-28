@@ -37,7 +37,7 @@ assert.equal(filterCatalog(catalog, 'hobsbawn siglo')[0].id, entry.id);
 const app = await read('../src/hobsbawm/HobsbawmApp.jsx');
 assert.match(app, /import IntegratedReader from '\.\.\/IntegratedReader\.jsx'/);
 for (const id of ['inicio', 'autor', 'contexto', 'lectura', 'creditos']) assert.ok(app.includes(`id="${id}"`));
-for (const name of ['hobsbawm-audiolibro.mp3', 'hobsbawm-vista-panoramica.pdf', 'hobsbawm-texto-accesible.txt', 'hobsbawm-retrato.jpg', 'hobsbawm-alineacion.srt']) await access(new URL(`../public/assets/${name}`, import.meta.url));
+for (const name of ['hobsbawm-audiolibro.mp3', 'hobsbawm-vista-panoramica.pdf', 'hobsbawm-texto-accesible.txt', 'hobsbawm-retrato.jpg', 'hobsbawm-retrato-joven.jpg', 'hobsbawm-alineacion.srt']) await access(new URL(`../public/assets/${name}`, import.meta.url));
 const srt = await read('../public/assets/hobsbawm-alineacion.srt');
 assert.equal((srt.match(/ --> /g) || []).length, report.spokenUnits);
 console.log('Hobsbawm: cuatro capítulos, 235 unidades temporizadas, seis pasajes sin audio conservados, recursos y lector compartido verificados.');

@@ -10,6 +10,7 @@ import {
   School,
 } from 'lucide-react';
 import IntegratedReader from '../IntegratedReader.jsx';
+import { AuthorBiography, PineauLayoutReference } from '../shared/CanonicalLayout.jsx';
 import { orbuchReaderConfig } from '../readerConfigs.js';
 import { orbuchReadingDocument } from './orbuchReadingDocument.js';
 
@@ -194,7 +195,7 @@ function SiteHeader({ active, progress }) {
 
 function Hero() {
   return (
-    <section id="inicio" className="orbuch-hero">
+    <section id="inicio" tabIndex={0} aria-label="Inicio del recorrido" className="orbuch-hero">
       <picture className="orbuch-hero__mural">
         <source media="(max-width: 700px)" srcSet="/assets/orbuch-hero-mural-mobile.webp" />
         <img
@@ -263,32 +264,13 @@ function ContinueLink({ href, children }) {
 }
 
 function AuthorSection() {
-  return (
-    <section id="autor" className="orbuch-author orbuch-section">
-      <div className="orbuch-shell orbuch-author__grid">
-        <figure className="orbuch-author__portrait-wrap">
-          <div className="orbuch-author__initial" aria-hidden="true">I</div>
-          <img
-            className="orbuch-author__portrait"
-            src="/assets/orbuch-ivan-orbuch.webp"
-            alt="Retrato de Iván Pablo Orbuch"
-          />
-          <figcaption>Fotografía: Universidad Nacional de Hurlingham (UNAHUR), 2020.</figcaption>
-        </figure>
-        <div className="orbuch-author__copy">
-          <p className="orbuch-author__eyebrow">El autor del texto</p>
-          <h2>Iván Pablo Orbuch</h2>
-          <p className="orbuch-author__role">Historiador de la educación · Doctor en Educación</p>
-          <p className="orbuch-author__summary">
-            Iván Pablo Orbuch es profesor de Historia, magíster en Ciencias Sociales y doctor en Educación. Docente e investigador de la Universidad Nacional de Hurlingham, estudia los vínculos entre educación, cultura física, ciudadanía y Estado. Sus trabajos reconstruyen políticas del primer peronismo y atienden especialmente a sus organismos, lenguajes, destinatarios, mediaciones y dificultades de implementación, tanto en espacios escolares como extraescolares.
-          </p>
-          <a className="orbuch-author__link" href="https://aulaabierta.unahur.edu.ar/index.php/2020/01/08/investigacion-sub-40-ivan-orbuch/" target="_blank" rel="noreferrer">
-            Ver biografía académica <ExternalLink size={15} />
-          </a>
-        </div>
-      </div>
-    </section>
-  );
+  return <section id="autor" className="orbuch-author orbuch-section">
+    <AuthorBiography name="Iván Pablo Orbuch" initial="I" role="Historiador de la educación · Doctor en Educación"
+      summary="Iván Pablo Orbuch es profesor de Historia, magíster en Ciencias Sociales y doctor en Educación. Docente e investigador de la Universidad Nacional de Hurlingham, estudia los vínculos entre educación, cultura física, ciudadanía y Estado. Sus trabajos reconstruyen políticas del primer peronismo y atienden especialmente a sus organismos, lenguajes, destinatarios, mediaciones y dificultades de implementación, tanto en espacios escolares como extraescolares."
+      image="/assets/orbuch-ivan-orbuch.webp" imageAlt="Retrato de Iván Pablo Orbuch"
+      credit="Fotografía: Universidad Nacional de Hurlingham (UNAHUR), 2020."
+      biographyUrl="https://aulaabierta.unahur.edu.ar/index.php/2020/01/08/investigacion-sub-40-ivan-orbuch/" />
+  </section>;
 }
 
 function Dossier({ source }) {
@@ -324,7 +306,7 @@ function Dossier({ source }) {
 
 function ContextSection() {
   return (
-    <section id="contexto" className="orbuch-context orbuch-section">
+    <section id="contexto" tabIndex={0} aria-label="Contexto histórico" className="orbuch-context orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
           number="03"
@@ -390,7 +372,7 @@ function ContextSection() {
 
 function ReadingSection() {
   return (
-    <section id="lectura" className="orbuch-reading orbuch-section">
+    <section id="lectura" tabIndex={0} aria-label="Lectura y audiolibro" className="orbuch-reading orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
           number="04"
@@ -419,7 +401,7 @@ function ReadingSection() {
 
 function CreditsSection() {
   return (
-    <footer id="creditos" className="orbuch-credits orbuch-section">
+    <footer id="creditos" tabIndex={0} aria-label="Créditos y fuentes" className="orbuch-credits orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
           number="05"
@@ -475,7 +457,8 @@ export default function OrbuchApp() {
   const { active, progress } = useScrollState();
 
   return (
-    <div className="orbuch-page">
+    <div className="orbuch-page canonical-page">
+      <PineauLayoutReference />
       <SiteHeader active={active} progress={progress} />
       <main>
         <Hero />

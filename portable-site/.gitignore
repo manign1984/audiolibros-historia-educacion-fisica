@@ -2,3 +2,7 @@ node_modules/
 dist/
 .DS_Store
 *.log
+
+# Generated from the original Pineau components before dev/build.
+public/layout/
+public/layout-qa.html

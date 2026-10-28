@@ -119,3 +119,12 @@ await Promise.all([
 ]);
 
 console.log(`Build multipágina verificado para base ${normalizedBase}`);
+
+// The common structural measure must be present in every published build.
+const referenceHtml = await readFile(resolve(dist, 'layout/pineau-reference.html'), 'utf8');
+assert.doesNotMatch(referenceHtml, /<script\b|<audio\b|<dialog\b/i);
+assert.doesNotMatch(referenceHtml, /<iframe[^>]+\ssrc=/i);
+for (const id of ['inicio', 'autor', 'contexto', 'lectura', 'creditos']) assert.ok(referenceHtml.includes(`id="${id}"`));
+await access(resolve(dist, 'layout/pineau-reference.css'));
+await access(resolve(dist, 'assets/hobsbawm-retrato-joven.jpg'));
+assert.ok(referenceHtml.includes('../assets/manuel-fresco.webp'), 'La referencia debe usar recursos relativos válidos en cualquier base pública.');

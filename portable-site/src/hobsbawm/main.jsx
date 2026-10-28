@@ -1,3 +1,5 @@
+import '@fontsource/archivo/latin-400.css';
+import '@fontsource/archivo/latin-700.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '@fontsource/bebas-neue/latin-400.css';
