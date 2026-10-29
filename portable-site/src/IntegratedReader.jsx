@@ -1,5 +1,7 @@
 'use client';
 
+import ReaderLauncher from './ReaderLauncher.jsx';
+
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   BookOpen,
@@ -21,7 +23,6 @@ import {
   Plus,
   Rewind,
   Share2,
-  SkipForward,
   Trash2,
   Volume2,
   VolumeX,
@@ -143,56 +144,6 @@ function NoteCard({ note, sentence, onGo, onEdit, onDelete, compact = false }) {
         </button>
       </footer>
     </article>
-  );
-}
-
-function ReaderLauncher({ onOpen, progress, noteCount, readingDocument, config }) {
-  const hasProgress = progress.currentTime > 3;
-  const progressPercent = Math.min(100, (progress.currentTime / readingDocument.duration) * 100);
-
-  return (
-    <aside className="reader-launcher" aria-labelledby="reader-launcher-title">
-      <div className="reader-launcher__masthead">
-        <div className="reader-launcher__stamp" aria-hidden="true">
-          <Headphones size={31} />
-          <BookOpen size={25} />
-        </div>
-        <div className="reader-launcher__copy">
-          <p className="eyebrow">Lector integrado · texto + audiolibro</p>
-          <h3 id="reader-launcher-title">{config.sync.launcherTitle}</h3>
-          <p>{config.sync.launcherDescription}</p>
-        </div>
-      </div>
-
-      <ul className="reader-launcher__features" aria-label="Funciones del lector">
-        <li><span>01</span><strong>{config.sync.featureTitle}</strong><small>{config.sync.featureDescription}</small></li>
-        <li><span>02</span><strong>Anotaciones propias</strong><small>Se guardan solamente en este dispositivo.</small></li>
-        <li><span>03</span><strong>Cuaderno portátil</strong><small>Descargá todo o compartilo con las aplicaciones instaladas.</small></li>
-      </ul>
-
-      <div className="reader-launcher__footer">
-        <div className="reader-launcher__resume" aria-label={hasProgress ? `Lectura guardada en ${formatTime(progress.currentTime)}` : 'Lectura lista para comenzar'}>
-          <div><span>{hasProgress ? 'Tu último punto' : 'Punto de partida'}</span><strong>{formatTime(progress.currentTime)}</strong></div>
-          <div className="reader-launcher__progress"><i style={{ width: `${progressPercent}%` }} /></div>
-          <span>{noteCount} {noteCount === 1 ? 'nota' : 'notas'}</span>
-        </div>
-
-        <div className="reader-launcher__actions">
-          <button className="button button--dark" type="button" onClick={onOpen}>
-            {hasProgress ? <SkipForward size={18} /> : <BookOpen size={18} />}
-            {hasProgress ? `Continuar desde ${formatTime(progress.currentTime)}` : 'Entrar al lector integrado'}
-          </button>
-          <nav aria-label="Abrir los recursos originales">
-            <a href={config.pdfUrl} target="_blank" rel="noreferrer">PDF <ExternalLink size={13} /></a>
-            <a href={config.audiobookExternalUrl} target="_blank" rel="noreferrer">Audio <ExternalLink size={13} /></a>
-          </nav>
-        </div>
-      </div>
-
-      <p className="reader-launcher__privacy">
-        <Check size={14} aria-hidden="true" /> No pide datos personales ni envía tus notas a ningún servidor.
-      </p>
-    </aside>
   );
 }
 
