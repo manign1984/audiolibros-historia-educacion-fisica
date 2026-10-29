@@ -1,5 +1,6 @@
 export const pineauReaderConfig = {
   workId: 'pineau-fresco-noble',
+  launcher: { variant: 'editorial', author: 'Pablo Pineau' },
   mark: 'FN',
   shortTitle: 'Renovación, represión, cooptación',
   authorAndTitle: 'Pablo Pineau · Renovación, represión, cooptación',
@@ -28,6 +29,7 @@ export const pineauReaderConfig = {
 
 export const orbuchReaderConfig = {
   workId: 'orbuch-educar-al-cuerpo',
+  launcher: { variant: 'desk', author: 'Iván Pablo Orbuch' },
   mark: 'IO',
   shortTitle: 'Educar al cuerpo dentro y fuera del aula',
   authorAndTitle: 'Iván Pablo Orbuch · Educar al cuerpo dentro y fuera del aula',
@@ -56,6 +58,7 @@ export const orbuchReaderConfig = {
 
 export const hobsbawmReaderConfig = {
   workId: 'hobsbawm-historia-siglo-xx',
+  launcher: { variant: 'portal', author: 'Eric Hobsbawm' },
   mark: 'XX',
   shortTitle: 'Historia del siglo XX',
   authorAndTitle: 'Eric Hobsbawm · Vista panorámica del siglo XX',
