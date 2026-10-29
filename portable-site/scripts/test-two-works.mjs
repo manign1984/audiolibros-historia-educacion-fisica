@@ -94,7 +94,6 @@ for (const sectionId of ['inicio', 'autor', 'contexto', 'lectura', 'creditos']) 
 }
 assert.doesNotMatch(orbuchApp, /id="(?:problema|archivo)"/, 'Orbuch debe tener exactamente los cinco bloques solicitados.');
 for (const fidelityMarker of [
-  'Recorrido documental e interactivo',
   'Pregunta que organiza el recorrido',
   'Dos expedientes históricos',
   'Cuatro movimientos del argumento',
@@ -106,7 +105,6 @@ for (const fidelityMarker of [
 for (const authorMarker of [
   'orbuch-ivan-orbuch.webp',
   'Retrato de Iván Pablo Orbuch',
-  'El autor del texto',
   'Historiador de la educación · Doctor en Educación',
   'Ver biografía académica',
 ]) {

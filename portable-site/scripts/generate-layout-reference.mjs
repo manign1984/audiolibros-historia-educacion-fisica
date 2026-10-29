@@ -12,8 +12,7 @@ const server = await createServer({ server: { middlewareMode: true, watch: null 
 try {
   const { default: App } = await server.ssrLoadModule('/src/App.jsx');
   await server.watcher.close();
-  // Keep other works on the approved layout while Pineau trials block labels.
-  let markup = renderToStaticMarkup(React.createElement(App, { pilotBlockLabels: false }));
+  let markup = renderToStaticMarkup(React.createElement(App));
   markup = markup.replaceAll(`${server.config.base}assets/`, '../assets/');
   markup = markup.replace(/<link\b[^>]*>/g, '').replace(/<dialog\b[\s\S]*?<\/dialog>/g, '');
   markup = markup.replace(/<iframe\b[^>]*>/g, tag => tag.replace(/\ssrc="[^"]*"/g, ''));
@@ -31,7 +30,7 @@ try {
       fonts += css;
     }
   }
-  const styles = (await Promise.all(['src/styles.css', 'src/reader.css', 'src/shared/journey-header.css', 'src/shared/hero-viewport.css', 'src/shared/author-viewport.css'].map(p => readFile(p, 'utf8')))).join('\n').replaceAll('/assets/', '../assets/');
+  const styles = (await Promise.all(['src/styles.css', 'src/reader.css', 'src/shared/journey-header.css', 'src/shared/hero-viewport.css', 'src/shared/author-viewport.css', 'src/shared/journey-block-labels.css', 'src/pineau-block-labels.css'].map(p => readFile(p, 'utf8')))).join('\n').replaceAll('/assets/', '../assets/');
   await writeFile(resolve(output, 'pineau-reference.css'), fonts + '\n' + styles);
   await writeFile(resolve(output, 'pineau-reference.html'), `<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="robots" content="noindex"><title>Referencia estructural de Pineau</title><link rel="stylesheet" href="./pineau-reference.css"></head><body inert>${markup}</body></html>`);
   console.log('Referencia estructural generada desde los componentes y estilos de Pineau.');

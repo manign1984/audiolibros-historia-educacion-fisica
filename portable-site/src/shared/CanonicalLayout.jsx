@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ExternalLink } from 'lucide-react';
+import JourneyBlockLabel from './JourneyBlockLabel.jsx';
 import './canonical-layout.css';
 
 const BLOCKS = ['inicio', 'autor', 'contexto', 'lectura', 'creditos'];
@@ -57,7 +58,7 @@ export function AuthorBiography({ name, initial, role, summary, image, imageAlt,
       <figcaption>{credit}</figcaption>
     </figure>
     <div className="canonical-author-copy">
-      <p className="canonical-author-label">El autor del texto</p>
+      <JourneyBlockLabel sectionId="autor" />
       <h2>{name}</h2>
       <p className="canonical-author-role">{role}</p>
       <p className="canonical-author-summary">{summary}</p>

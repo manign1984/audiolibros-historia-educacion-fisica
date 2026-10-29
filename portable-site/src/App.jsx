@@ -21,21 +21,17 @@ import IntegratedReader from './IntegratedReader.jsx';
 import { pineauReaderConfig } from './readerConfigs.js';
 import { readingDocument } from './readingDocument.js';
 import JourneyHeader, { JOURNEY_SECTIONS as NAV_ITEMS, useJourneyNavigation } from './shared/JourneyHeader.jsx';
+import JourneyBlockLabel from './shared/JourneyBlockLabel.jsx';
 import './pineau-block-labels.css';
 
 const AUDIOBOOK_DRIVE_ID = '17w1Pw25aGLXu_cR9mRBZgIOnCG2qNAEm';
 const AUDIOBOOK_DRIVE_URL = `https://drive.google.com/file/d/${AUDIOBOOK_DRIVE_ID}/view`;
 const LIBRARY_HOME_URL = import.meta.env.BASE_URL;
 
-function PineauBlockLabel({ sectionId, className = '' }) {
-  const index = NAV_ITEMS.findIndex(([id]) => id === sectionId);
-  return <p className={`pineau-block-label ${className}`}>{String(index + 1).padStart(2, '0')} · {NAV_ITEMS[index][1]}</p>;
-}
-
-function SectionHeading({ index, section, sectionId, pilotBlockLabels, title, titleLines, mobileTitleLines, text, inverse = false }) {
+function SectionHeading({ sectionId, title, titleLines, mobileTitleLines, text, inverse = false }) {
   return (
     <header className={`section-heading ${inverse ? 'section-heading--inverse' : ''}`}>
-      {pilotBlockLabels ? <PineauBlockLabel sectionId={sectionId} className="section-label" /> : <p className="eyebrow section-label">Sección {index} · {section}</p>}
+      <JourneyBlockLabel sectionId={sectionId} className="section-label" />
       <h2 aria-label={title}>
         {titleLines ? (
           <span className="section-title-fixed">
@@ -333,16 +329,16 @@ function TopBar({ progress, active }) {
   );
 }
 
-function Hero({ soundOn, setSoundOn, pilotBlockLabels }) {
+function Hero({ soundOn, setSoundOn }) {
   return (
     <section id="inicio" className="hero tracked-section">
       <div className="hero-radiance" aria-hidden="true" />
       <div className="hero-grid page-shell">
         <div className="hero-copy">
-          {pilotBlockLabels ? <div className="pineau-entry-line">
-            <PineauBlockLabel sectionId="inicio" />
+          <div className="pineau-entry-line">
+            <JourneyBlockLabel sectionId="inicio" />
             <a className="work-library-link" href={LIBRARY_HOME_URL}>← Volver a la biblioteca</a>
-          </div> : <a className="work-library-link" href={LIBRARY_HOME_URL}>← Volver a la biblioteca</a>}
+          </div>
           <p className="hero-kicker"><span>Provincia de Buenos Aires</span><span>1937</span></p>
           <h1>
             <span className="hero-title-line">La reforma educativa</span>
@@ -395,7 +391,7 @@ function Hero({ soundOn, setSoundOn, pilotBlockLabels }) {
   );
 }
 
-function AuthorSection({ pilotBlockLabels }) {
+function AuthorSection() {
   return (
     <section id="autor" className="author-section tracked-section">
       <div className="page-shell author-grid">
@@ -405,7 +401,7 @@ function AuthorSection({ pilotBlockLabels }) {
           <p className="image-credit">Fotografía: Facultad de Filosofía y Letras, UBA.</p>
         </div>
         <div className="author-copy">
-          {pilotBlockLabels ? <PineauBlockLabel sectionId="autor" /> : <p className="eyebrow">El autor del texto</p>}
+          <JourneyBlockLabel sectionId="autor" />
           <h2>Pablo Pineau</h2>
           <p className="author-role">Historiador de la educación · Doctor en Educación</p>
           <p className="author-summary">
@@ -426,15 +422,12 @@ function AuthorSection({ pilotBlockLabels }) {
   );
 }
 
-function ContextSection({ pilotBlockLabels }) {
+function ContextSection() {
   return (
     <section id="contexto" className="context-section tracked-section">
       <div className="page-shell">
         <SectionHeading
           sectionId="contexto"
-          pilotBlockLabels={pilotBlockLabels}
-          index="01"
-          section="Contexto histórico"
           title="Situar la reforma educativa en su contexto histórico (1930-1943)"
           mobileTitleLines={['Situar la reforma', 'educativa en su', 'contexto histórico', '(1930-1943)']}
           text="La Reforma se inscribe en la restauración conservadora argentina y en un mundo de entreguerras. Para comprenderla, la política se cruza aquí con la economía, la vida cotidiana, la cultura, la ciencia y la tecnología."
@@ -539,15 +532,12 @@ function ContextSection({ pilotBlockLabels }) {
   );
 }
 
-function ReadingSection({ showToast, pilotBlockLabels }) {
+function ReadingSection({ showToast }) {
   return (
     <section id="lectura" className="reading-section tracked-section">
       <div className="page-shell">
         <SectionHeading
           sectionId="lectura"
-          pilotBlockLabels={pilotBlockLabels}
-          index="02"
-          section="Lectura"
           title="El texto en el centro de los procesos de enseñanza y aprendizaje"
           titleLines={['El texto en el centro de', 'los procesos de', 'enseñanza y aprendizaje']}
           text="Leé el texto con la siguiente pregunta en mente: ¿cómo una reforma educativa nacida desde un gobierno conservador logra presentarse como la fundación de una pedagogía renovadora y reunir apoyos desde diferentes sectores de la comunidad educativa?"
@@ -556,7 +546,7 @@ function ReadingSection({ showToast, pilotBlockLabels }) {
         <article className="reading-synopsis" aria-labelledby="reading-synopsis-title">
           <div className="reading-synopsis__label" aria-hidden="true">
             <span>Antes de abrir el texto</span>
-            {pilotBlockLabels ? <FileText className="pineau-synopsis-icon" strokeWidth={1.2} /> : <b>01</b>}
+            <FileText className="pineau-synopsis-icon" strokeWidth={1.2} />
           </div>
           <div className="reading-synopsis__copy">
             <p className="eyebrow">Una entrada a la trama</p>
@@ -586,7 +576,7 @@ function ReadingSection({ showToast, pilotBlockLabels }) {
   );
 }
 
-function Footer({ pilotBlockLabels }) {
+function Footer() {
   return (
     <footer id="creditos" className="site-footer credits-section tracked-section" aria-labelledby="credits-title">
       <div className="footer-salamone" aria-hidden="true">
@@ -597,7 +587,7 @@ function Footer({ pilotBlockLabels }) {
       </div>
       <div className="page-shell footer-grid">
         <div>
-          {pilotBlockLabels ? <PineauBlockLabel sectionId="creditos" className="credits-label" /> : <p className="eyebrow credits-label">Sección 03 · Créditos</p>}
+          <JourneyBlockLabel sectionId="creditos" className="credits-label" />
           <h2 id="credits-title">Leer el pasado para intervenir en el presente.</h2>
           <p>
             Este cierre reconoce los textos, archivos, instituciones y aportes que hicieron posible el
@@ -644,7 +634,7 @@ function Footer({ pilotBlockLabels }) {
   );
 }
 
-export default function App({ pilotBlockLabels = true } = {}) {
+export default function App() {
   const [soundOn, setSoundOn] = useState(true);
   const [toast, setToast] = useState('');
   const { progress, active } = useJourneyNavigation();
@@ -662,12 +652,12 @@ export default function App({ pilotBlockLabels = true } = {}) {
     <>
       <TopBar progress={progress} active={active} />
       <main>
-        <Hero soundOn={soundOn} setSoundOn={setSoundOn} pilotBlockLabels={pilotBlockLabels} />
-        <AuthorSection pilotBlockLabels={pilotBlockLabels} />
-        <ContextSection pilotBlockLabels={pilotBlockLabels} />
-        <ReadingSection showToast={showToast} pilotBlockLabels={pilotBlockLabels} />
+        <Hero soundOn={soundOn} setSoundOn={setSoundOn} />
+        <AuthorSection />
+        <ContextSection />
+        <ReadingSection showToast={showToast} />
       </main>
-      <Footer pilotBlockLabels={pilotBlockLabels} />
+      <Footer />
       <div className={`toast ${toast ? 'show' : ''}`} role="status" aria-live="polite">
         <CheckCircle2 size={18} /> {toast}
       </div>

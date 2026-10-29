@@ -1,0 +1,18 @@
+/* Common structural label; editorial titles retain each work's identity. */
+:is(#inicio,#autor,#contexto,#lectura,#creditos) p.journey-block-label {
+  margin:0 0 12px;
+  padding:0;
+  background:none;
+  color:var(--journey-label-color,currentColor);
+  font:700 12px/1.4 'Archivo',sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.orbuch-page { --journey-label-color:var(--orbuch-navy); }
+.orbuch-page :is(#inicio,#autor,#creditos) { --journey-label-color:var(--orbuch-paper-light); }
+.hobsbawm-page { --journey-label-color:var(--ink); }
+.hobsbawm-page :is(#inicio,#contexto,#creditos) { --journey-label-color:var(--paper-light); }
+
+.orbuch-section-heading.journey-section-heading,
+.hb-section-heading.journey-section-heading { display:block; }
