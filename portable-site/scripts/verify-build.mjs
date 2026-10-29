@@ -76,7 +76,6 @@ assert.ok(allJavaScript.includes('orbuch-educar-cuerpo-reader-notes-v1'));
 assert.ok(allJavaScript.includes('El resaltado y el desplazamiento acompañan el momento real del audio.'));
 assert.ok(allJavaScript.includes('.75,.9,1,1.1,1.25,1.5,2'), 'El bundle compartido debe incluir 0,9× y 1,1×.');
 for (const restoredOrbuchMarker of [
-  'Recorrido documental e interactivo',
   'Pregunta que organiza el recorrido',
   'Dos expedientes históricos',
   'Subtítulos SRT',

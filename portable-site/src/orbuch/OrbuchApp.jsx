@@ -12,6 +12,7 @@ import {
 import IntegratedReader from '../IntegratedReader.jsx';
 import { AuthorBiography, PineauLayoutReference } from '../shared/CanonicalLayout.jsx';
 import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
+import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import { orbuchReaderConfig } from '../readerConfigs.js';
 import { orbuchReadingDocument } from './orbuchReadingDocument.js';
 
@@ -107,12 +108,11 @@ const DOSSIERS = [
   },
 ];
 
-function SectionHeader({ number, eyebrow, title, text }) {
+function SectionHeader({ sectionId, title, text }) {
   return (
-    <header className="orbuch-section-heading">
-      <span>{number}</span>
+    <header className="orbuch-section-heading journey-section-heading">
       <div>
-        <p>{eyebrow}</p>
+        <JourneyBlockLabel sectionId={sectionId} />
         <h2>{title}</h2>
         {text && <div className="orbuch-section-intro">{text}</div>}
       </div>
@@ -132,7 +132,7 @@ function Hero() {
       </picture>
       <div className="orbuch-hero__veil" aria-hidden="true" />
       <div className="orbuch-hero__copy">
-        <p className="orbuch-eyebrow">Recorrido documental e interactivo</p>
+        <JourneyBlockLabel sectionId="inicio" />
         <p className="orbuch-hero-period">Argentina · 1946–1950</p>
         <h1>
           <span>Educar el cuerpo</span>
@@ -230,8 +230,7 @@ function ContextSection() {
     <section id="contexto" aria-label="Contexto histórico" className="orbuch-context orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
-          number="03"
-          eyebrow="Contexto histórico y documental"
+          sectionId="contexto"
           title="Un Estado que busca ampliar su radio de acción"
           text="La pregunta, la cronología y las fuentes primarias reúnen los elementos necesarios para comprender la aparición de ambos cuadernillos y las tensiones que los atraviesan."
         />
@@ -296,8 +295,7 @@ function ReadingSection() {
     <section id="lectura" aria-label="Lectura y audiolibro" className="orbuch-reading orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
-          number="04"
-          eyebrow="Mesa de lectura"
+          sectionId="lectura"
           title="Leer con una pregunta y el texto completo"
           text="El artículo académico sigue siendo el centro. El lector reúne texto accesible, audiolibro y anotaciones, y ahora acompaña la narración oración por oración."
         />
@@ -325,8 +323,7 @@ function CreditsSection() {
     <footer id="creditos" aria-label="Créditos y fuentes" className="orbuch-credits orbuch-section">
       <div className="orbuch-shell">
         <SectionHeader
-          number="05"
-          eyebrow="Créditos y procedencias"
+          sectionId="creditos"
           title="Cada recurso conserva su historia"
           text="Las referencias siguen APA 7. Los documentos primarios se publican para uso educativo con la procedencia disponible y sin atribuirles una licencia no consignada."
         />

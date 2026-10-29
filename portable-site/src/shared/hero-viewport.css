@@ -141,9 +141,9 @@ body:has(.journey-header) #inicio.hb-hero { display:flex; align-items:center; }
   #inicio.orbuch-hero .orbuch-use-note { margin-top:8px; padding-top:5px; row-gap:5px; }
 
   #inicio.hb-hero .hb-eyebrow { margin-bottom:8px; }
-  #inicio.hb-hero .hb-hero-stamp { margin-bottom:10px; }
+  #inicio.hb-hero .hb-hero-stamp { margin-bottom:6px; }
   #inicio.hb-hero h1, #inicio.hb-hero .hb-hero-subtitle { margin-bottom:10px; }
-  #inicio.hb-hero .hb-hero-intro { margin-bottom:12px; }
+  #inicio.hb-hero .hb-hero-intro { margin-bottom:8px; }
   #inicio.hb-hero .hb-hero-actions { gap:10px; }
   #inicio.hb-hero .hb-hero-meta { margin-top:12px; }
 }

@@ -1,16 +1,7 @@
-/* Pilot for Pineau only. Editorial headings retain each work's typography. */
-p.pineau-block-label,
-.section-heading p.pineau-block-label,
-.footer-grid > div:first-child > p.pineau-block-label {
-  margin:0 0 12px;
-  color:var(--mustard);
-  font:700 12px/1.4 'Archivo',sans-serif;
-  letter-spacing:.12em;
-  text-transform:uppercase;
-}
-
-#autor p.pineau-block-label { color:var(--paper-light); }
-#lectura .section-heading p.pineau-block-label { color:var(--ink); }
+/* Pineau retains the presentation approved in the pilot. */
+.hero, .context-section, .credits-section { --journey-label-color:var(--mustard); }
+.author-section { --journey-label-color:var(--paper-light); }
+.reading-section { --journey-label-color:var(--ink); }
 
 #inicio.hero .pineau-entry-line {
   display:flex;
@@ -20,7 +11,7 @@ p.pineau-block-label,
   gap:8px 12px;
   margin-bottom:12px;
 }
-#inicio.hero .pineau-entry-line > .pineau-block-label,
+#inicio.hero .pineau-entry-line > .journey-block-label,
 #inicio.hero .pineau-entry-line > .work-library-link { margin:0; }
 
 .reading-synopsis__label .pineau-synopsis-icon {
