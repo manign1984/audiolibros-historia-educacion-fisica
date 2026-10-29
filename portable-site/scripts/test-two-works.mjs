@@ -89,8 +89,9 @@ assert.equal(await sha256('public/assets/orbuch-educar-al-cuerpo.pdf'), '726b877
 assert.equal(await sha256('public/assets/orbuch-gimnasia-compensatoria-1949.pdf'), 'c16511428cd149dd4454981b85647dc2dc4be2a2bc417becb6e72edd271ebef2');
 assert.equal(await sha256('public/assets/orbuch-gimnasia-oficinas-1950.pdf'), '52828ca1f89422f0dba788e32566402718a99238a676efdf53087539ef0f5aa2');
 
+const sharedCredits = await text('src/shared/JourneyCredits.jsx');
 for (const sectionId of ['inicio', 'autor', 'contexto', 'lectura', 'creditos']) {
-  assert.match(orbuchApp, new RegExp(`id="${sectionId}"`), `Falta la sección ${sectionId}.`);
+  assert.match(sectionId === 'creditos' ? sharedCredits : orbuchApp, new RegExp(`id="${sectionId}"`), `Falta la sección ${sectionId}.`);
 }
 assert.doesNotMatch(orbuchApp, /id="(?:problema|archivo)"/, 'Orbuch debe tener exactamente los cinco bloques solicitados.');
 for (const fidelityMarker of [

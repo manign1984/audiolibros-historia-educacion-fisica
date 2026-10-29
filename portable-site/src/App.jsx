@@ -22,6 +22,7 @@ import { pineauReaderConfig } from './readerConfigs.js';
 import { readingDocument } from './readingDocument.js';
 import JourneyHeader, { JOURNEY_SECTIONS as NAV_ITEMS, useJourneyNavigation } from './shared/JourneyHeader.jsx';
 import JourneyBlockLabel from './shared/JourneyBlockLabel.jsx';
+import JourneyCredits from './shared/JourneyCredits.jsx';
 import './pineau-block-labels.css';
 
 const AUDIOBOOK_DRIVE_ID = '17w1Pw25aGLXu_cR9mRBZgIOnCG2qNAEm';
@@ -576,64 +577,6 @@ function ReadingSection({ showToast }) {
   );
 }
 
-function Footer() {
-  return (
-    <footer id="creditos" className="site-footer credits-section tracked-section" aria-labelledby="credits-title">
-      <div className="footer-salamone" aria-hidden="true">
-        <img className="footer-salamone__inri" src="/assets/salamone-cementerio-inri.png" alt="" loading="lazy" decoding="async" />
-        <img className="footer-salamone__frontal" src="/assets/salamone-dormitorio-frontal.png" alt="" loading="lazy" decoding="async" />
-        <img className="footer-salamone__lateral" src="/assets/salamone-dormitorio-lateral.png" alt="" loading="lazy" decoding="async" />
-        <img className="footer-salamone__matadero" src="/assets/salamone-matadero.png" alt="" loading="lazy" decoding="async" />
-      </div>
-      <div className="page-shell footer-grid">
-        <div>
-          <JourneyBlockLabel sectionId="creditos" className="credits-label" />
-          <h2 id="credits-title">Leer el pasado para intervenir en el presente.</h2>
-          <p>
-            Este cierre reconoce los textos, archivos, instituciones y aportes que hicieron posible el
-            recorrido. Las referencias siguen criterios de APA 7 y los créditos visuales conservan la
-            procedencia y la licencia informadas por cada fuente.
-          </p>
-          <p className="footer-privacy">
-            Experiencia educativa autónoma: no solicita datos personales ni envía respuestas.
-          </p>
-        </div>
-        <div className="footer-links">
-          <h3>Referencias bibliográficas y fuentes</h3>
-          <a href="/assets/pineau-renovacion-represion-cooptacion.pdf" target="_blank" rel="noreferrer"><span>Pineau, P. (1999). Renovación, represión, cooptación: Las estrategias de la Reforma Fresco–Noble (Provincia de Buenos Aires, década del 30). En A. Ascolani (Comp.), <em>La educación en Argentina: Estudios de historia</em> (pp. 223–239). Ediciones del Arca.</span><FileText size={14} /></a>
-          <a href={AUDIOBOOK_DRIVE_URL} target="_blank" rel="noreferrer"><span>Pineau, P. (1999). <em>Renovación, represión, cooptación</em> [Audiolibro].</span><Headphones size={14} /></a>
-          <a href="https://revistas.unal.edu.co/index.php/hisysoc/article/view/28146" target="_blank" rel="noreferrer"><span>Cataño Balseiro, C. L. (2011). Jörn Rüsen y la conciencia histórica. <em>Historia y Sociedad</em>, (21), 223–245.</span><ExternalLink size={14} /></a>
-          <a href="https://www.educ.ar/recursos/127077/1930-1943-la-decada-infame" target="_blank" rel="noreferrer"><span>Educ.ar. (2015). <em>1930–1943: La década infame</em> [Video].</span><ExternalLink size={14} /></a>
-          <a href="https://posgrado.filo.uba.ar/pineau-pablo" target="_blank" rel="noreferrer"><span>Universidad de Buenos Aires, Facultad de Filosofía y Letras. (s. f.). <em>Pablo Pineau</em>.</span><ExternalLink size={14} /></a>
-          <a href="https://history.state.gov/milestones/1921-1936/great-depression" target="_blank" rel="noreferrer"><span>Office of the Historian. (s. f.). <em>The Great Depression and U.S. foreign policy</em>.</span><ExternalLink size={14} /></a>
-          <a href="https://encyclopedia.ushmm.org/content/en/article/the-nazi-rise-to-power" target="_blank" rel="noreferrer"><span>United States Holocaust Memorial Museum. (s. f.). <em>The Nazi rise to power</em>.</span><ExternalLink size={14} /></a>
-          <a href="https://www.youtube.com/watch?v=cbrqOu1pQU0" target="_blank" rel="noreferrer"><span>Canal Encuentro. (s. f.). <em>Manuel Fresco</em> [Video].</span><ExternalLink size={14} /></a>
-          <a href="https://ir.grupoclarin.com/historia/" target="_blank" rel="noreferrer"><span>Grupo Clarín. (s. f.). <em>Historia</em>.</span><ExternalLink size={14} /></a>
-        </div>
-        <div className="footer-credits">
-          <h3>Derechos y agradecimientos</h3>
-          <p>Cancha, banderas y jugadores: imágenes desarrolladas para la dinámica pedagógica original.</p>
-          <p>Portal del Cementerio de Saldungaray: Marcelo G. Morales, CC BY-SA 3.0, Wikimedia Commons.</p>
-          <p>Imágenes de la línea de tiempo: créditos y licencias indicados en cada hito.</p>
-          <p>Portada de <em>La educación física: una innovación de mi gobierno</em> (1940): ejemplar aportado al proyecto.</p>
-          <p>Manuel Fresco: Cámara de Diputados de la Nación, dominio público.</p>
-          <p>Roberto Noble: Diario Clarín, 1945; dominio público en Argentina, vía Wikimedia Commons.</p>
-          <p>Pablo Pineau: perfil académico de FFyL-UBA.</p>
-          <p>Obras de Francisco Salamone en líneas: imágenes aportadas al proyecto para esta composición final.</p>
-          <p>Agradecemos a quienes compartieron documentos, registros e imágenes para enriquecer esta experiencia pedagógica.</p>
-        </div>
-      </div>
-      <div className="footer-bottom page-shell">
-        <span>Diseño inspirado en la geometría monumental de Francisco Salamone.</span>
-        <nav className="footer-bottom__links" aria-label="Enlaces de cierre">
-          <a href={LIBRARY_HOME_URL}>← Volver a la biblioteca</a>
-          <a href="#inicio">Volver arriba ↑</a>
-        </nav>
-      </div>
-    </footer>
-  );
-}
-
 export default function App() {
   const [soundOn, setSoundOn] = useState(true);
   const [toast, setToast] = useState('');
@@ -657,7 +600,7 @@ export default function App() {
         <ContextSection />
         <ReadingSection showToast={showToast} />
       </main>
-      <Footer />
+      <JourneyCredits workId="pineau" />
       <div className={`toast ${toast ? 'show' : ''}`} role="status" aria-live="polite">
         <CheckCircle2 size={18} /> {toast}
       </div>

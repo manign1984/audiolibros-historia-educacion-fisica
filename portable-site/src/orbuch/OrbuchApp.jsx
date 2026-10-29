@@ -13,6 +13,7 @@ import IntegratedReader from '../IntegratedReader.jsx';
 import { AuthorBiography, PineauLayoutReference } from '../shared/CanonicalLayout.jsx';
 import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
+import JourneyCredits from '../shared/JourneyCredits.jsx';
 import { orbuchReaderConfig } from '../readerConfigs.js';
 import { orbuchReadingDocument } from './orbuchReadingDocument.js';
 
@@ -318,59 +319,6 @@ function ReadingSection() {
   );
 }
 
-function CreditsSection() {
-  return (
-    <footer id="creditos" aria-label="Créditos y fuentes" className="orbuch-credits orbuch-section">
-      <div className="orbuch-shell">
-        <SectionHeader
-          sectionId="creditos"
-          title="Cada recurso conserva su historia"
-          text="Las referencias siguen APA 7. Los documentos primarios se publican para uso educativo con la procedencia disponible y sin atribuirles una licencia no consignada."
-        />
-        <div className="orbuch-credits__grid">
-          <article>
-            <h3>Texto académico</h3>
-            <p className="orbuch-citation">Orbuch, I. P. (2020). Educar al cuerpo dentro y fuera del aula. Análisis de dos experiencias en la Nueva Argentina de Perón. <em>History of Education in Latin America, 3</em>, e21435.</p>
-            <a href="https://periodicos.ufrn.br/histela/article/view/21435" target="_blank" rel="noreferrer">Publicación original <ExternalLink size={13} /></a>
-          </article>
-          <article>
-            <h3>Fuente primaria · 1949</h3>
-            <p><em>Gimnasia compensatoria en el aula</em>. Consejo Nacional de Educación Física. Autor atribuido: Alejandro Amavet. Copia digital completa aportada a las fuentes del proyecto.</p>
-            <p>Licencia no consignada en el ejemplar digital.</p>
-          </article>
-          <article>
-            <h3>Fuente primaria · 1950</h3>
-            <p><em>Gimnasia de oficinas</em>. Consejo Nacional de Educación Física. Procedencia: Biblioteca César Vázquez; copia digital completa aportada a las fuentes del proyecto.</p>
-            <p>Licencia no consignada en el ejemplar digital.</p>
-          </article>
-          <article>
-            <h3>Contexto historiográfico</h3>
-            <p>Torre, J. C., &amp; Pastoriza, E. (2002). La democratización del bienestar. En J. C. Torre (Dir.), <em>Los años peronistas (1943–1955)</em> (pp. 257–312). Sudamericana.</p>
-          </article>
-          <article>
-            <h3>Audio y subtítulos</h3>
-            <p>El audiolibro definitivo y el archivo SRT fueron aportados por el proyecto. Sus 410 cues coinciden íntegramente con el guion accesible; las marcas se normalizan a la duración técnica del MP3 para evitar deriva durante la escucha.</p>
-          </article>
-          <article>
-            <h3>Identidad visual</h3>
-            <p>El mural cívico-popular fue creado para el Site original. Evoca la cultura gráfica institucional del primer peronismo; no reproduce un afiche histórico ni representa personas identificables.</p>
-            <p>Retrato de Iván Pablo Orbuch: Universidad Nacional de Hurlingham, perfil institucional <em>Investigación Sub 40</em> (2020).</p>
-            <a href="https://aulaabierta.unahur.edu.ar/index.php/2020/01/08/investigacion-sub-40-ivan-orbuch/" target="_blank" rel="noreferrer">Fuente de la fotografía <ExternalLink size={13} /></a>
-          </article>
-          <article>
-            <h3>Datos y privacidad</h3>
-            <p>No se solicitan datos personales ni se envían notas a un servidor. El progreso y el cuaderno de esta obra permanecen en este navegador, separados de los de Pineau.</p>
-          </article>
-        </div>
-        <div className="orbuch-credits__bottom">
-          <a href={import.meta.env.BASE_URL}><ArrowLeft size={16} /> Volver a la biblioteca</a>
-          <p>Fuente Primaria · Historia de la Educación y de la Educación Física</p>
-        </div>
-      </div>
-    </footer>
-  );
-}
-
 export default function OrbuchApp() {
   const { active, progress } = useJourneyNavigation();
 
@@ -384,7 +332,7 @@ export default function OrbuchApp() {
         <ContextSection />
         <ReadingSection />
       </main>
-      <CreditsSection />
+      <JourneyCredits workId="orbuch" />
     </div>
   );
 }
