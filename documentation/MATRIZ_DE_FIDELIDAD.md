@@ -172,3 +172,18 @@ Se conservan los documentos, tiempos, archivos, claves de almacenamiento, restau
 El indicador flotante de Pineau se oculta mientras Lectura está activa para no superponerse al panel; el encabezado común mantiene el progreso. Los enlaces directos `#lector` se alinean al panel tras cargar la página y sus fuentes. En celular, la acción de Orbuch también precede a la lista de funciones.
 
 Validación: las tres entradas abren y cierran el lector existente; una nota y el punto de lectura de Pineau persisten después de recargar y no aparecen en Hobsbawm. Los paneles y sus botones no presentan desbordamiento horizontal a 360 y 768 px, con revisión visual adicional en escritorio. Pasan `test:library`, `test:two-works`, `test:hobsbawm` y las compilaciones verificadas tanto para la raíz como para la base de GitHub Pages.
+
+
+## 2026-10-30 · Piloto de Lectura como composición única (Hobsbawm)
+
+Pedido: rehacer solamente el bloque 04 de Hobsbawm; el propio bloque constituye el contenedor visual. Se retiran el portal interior, los encabezados superpuestos, la ruta previa y la pregunta orientadora.
+
+- Título común propuesto: «El texto en el centro de los procesos de enseñanza y aprendizaje».
+- Sinopsis breve de invitación al texto y botón destacado «Abrir lector integrado», integrados sobre un fondo crema plano. Bebas Neue para el título y Archivo para texto y controles.
+- PDF, audio original y texto accesible como enlaces secundarios; se conserva la advertencia de los seis pasajes sin audio.
+- Altura mínima: ventana visible menos el encabezado; espaciado y tamaño tipográfico adaptados también a la altura. Sin recortes ni barras internas. Se permite crecimiento natural en condiciones excepcionales de ampliación de texto.
+- IntegratedReader admite un componente Launcher opcional, conservando su entrada predeterminada en Pineau y Orbuch. El motor, las fuentes, sincronización, notas y almacenamiento no cambian.
+- Verificación visual: 1363×936, 1280×720, 768×1024, 390×844, 360×780 y 360×640. En la ventana compacta el bloque mide 528 px, debajo del encabezado de 112 px. Sin desbordamiento horizontal.
+- Verificación funcional: abrir/cerrar lector, seleccionar capítulo, crear nota y recuperar posición y nota tras recargar. Pruebas library, two-works y hobsbawm aprobadas; compilación y verificación tanto en raíz como en la base de GitHub Pages.
+
+Esta propuesta permanece como piloto en Hobsbawm; no se extiende aún a las demás páginas ni se establece como directriz definitiva en Google Docs.

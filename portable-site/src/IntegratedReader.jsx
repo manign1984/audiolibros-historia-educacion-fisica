@@ -147,7 +147,7 @@ function NoteCard({ note, sentence, onGo, onEdit, onDelete, compact = false }) {
   );
 }
 
-export default function IntegratedReader({ showToast, readingDocument, config }) {
+export default function IntegratedReader({ showToast, readingDocument, config, Launcher = ReaderLauncher }) {
   const dialogRef = useRef(null);
   const audioRef = useRef(null);
   const textScrollRef = useRef(null);
@@ -603,7 +603,7 @@ export default function IntegratedReader({ showToast, readingDocument, config })
 
   return (
     <>
-      <ReaderLauncher
+      <Launcher
         onOpen={() => setOpen(true)}
         progress={readerProgress}
         noteCount={notes.length}
