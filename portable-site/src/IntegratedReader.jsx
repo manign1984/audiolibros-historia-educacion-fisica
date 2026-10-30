@@ -1,6 +1,6 @@
 'use client';
 
-import ReaderLauncher from './ReaderLauncher.jsx';
+import JourneyReadingEntry from './shared/JourneyReadingEntry.jsx';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
@@ -147,7 +147,7 @@ function NoteCard({ note, sentence, onGo, onEdit, onDelete, compact = false }) {
   );
 }
 
-export default function IntegratedReader({ showToast, readingDocument, config, Launcher = ReaderLauncher }) {
+export default function IntegratedReader({ showToast, readingDocument, config, Launcher = JourneyReadingEntry }) {
   const dialogRef = useRef(null);
   const audioRef = useRef(null);
   const textScrollRef = useRef(null);

@@ -4,8 +4,6 @@ import {
   BookOpen,
   Building2,
   ExternalLink,
-  FileText,
-  Headphones,
   Landmark,
   School,
 } from 'lucide-react';
@@ -293,28 +291,8 @@ function ContextSection() {
 
 function ReadingSection() {
   return (
-    <section id="lectura" aria-label="Lectura y audiolibro" className="orbuch-reading orbuch-section">
-      <div className="orbuch-shell">
-        <SectionHeader
-          sectionId="lectura"
-          title="Leer con una pregunta y el texto completo"
-          text="El artículo académico sigue siendo el centro. El lector reúne texto accesible, audiolibro y anotaciones, y ahora acompaña la narración oración por oración."
-        />
-        <aside className="orbuch-reading-question">
-          <span>Pregunta que acompaña la lectura</span>
-          <p>¿Cómo intentó el Consejo Nacional de Educación Física extender la educación corporal a toda la población y qué tensiones aparecen entre las prescripciones estatales y su implementación?</p>
-        </aside>
-        <div className="orbuch-reader-stage">
-          <IntegratedReader readingDocument={orbuchReadingDocument} config={orbuchReaderConfig} />
-        </div>
-        <div className="orbuch-resource-strip" aria-label="Recursos de lectura y escucha">
-          <a href="/assets/orbuch-educar-al-cuerpo.pdf" target="_blank" rel="noreferrer"><FileText size={19} /><span>Artículo académico</span><ExternalLink size={13} /></a>
-          <a href="/assets/orbuch-texto-accesible.txt" target="_blank" rel="noreferrer"><BookOpen size={19} /><span>Texto accesible</span><ExternalLink size={13} /></a>
-          <a href="/assets/orbuch-audiolibro.mp3" target="_blank" rel="noreferrer"><Headphones size={19} /><span>MP3 · 27:53</span><ExternalLink size={13} /></a>
-          <a href="/assets/orbuch-subtitulos.srt" target="_blank" rel="noreferrer"><FileText size={19} /><span>Subtítulos SRT</span><ExternalLink size={13} /></a>
-        </div>
-        <ContinueLink href="#creditos">Consultar créditos y procedencias</ContinueLink>
-      </div>
+    <section id="lectura" className="journey-reading" aria-labelledby="journey-reading-title">
+      <IntegratedReader readingDocument={orbuchReadingDocument} config={orbuchReaderConfig} />
     </section>
   );
 }

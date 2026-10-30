@@ -187,3 +187,14 @@ Pedido: rehacer solamente el bloque 04 de Hobsbawm; el propio bloque constituye 
 - Verificación funcional: abrir/cerrar lector, seleccionar capítulo, crear nota y recuperar posición y nota tras recargar. Pruebas library, two-works y hobsbawm aprobadas; compilación y verificación tanto en raíz como en la base de GitHub Pages.
 
 Esta propuesta permanece como piloto en Hobsbawm; no se extiende aún a las demás páginas ni se establece como directriz definitiva en Google Docs.
+
+
+## Formato común de Lectura aprobado el 30/10/2026
+
+Por aprobación explícita del piloto de Hobsbawm se generaliza el bloque 04 a Pineau y Orbuch. `shared/JourneyReadingEntry.jsx` y `shared/journey-reading.css` contienen la única composición: título «El texto en el centro de los procesos de enseñanza y aprendizaje», sinopsis propia, botón destacado y materiales secundarios sobre fondo crema plano. El bloque es el contenedor; se retiran los paneles anidados, la pregunta orientadora obligatoria y los encabezados previos. Hobsbawm conserva su presentación aprobada mediante el componente común.
+
+`readerConfigs.js` reúne las sinopsis y enlaces por obra, sin modificar las claves de almacenamiento, los textos ni los tiempos. Pineau conserva sus originales PDF/audio; Orbuch conserva además texto accesible y SRT. Hobsbawm conserva la advertencia de los seis pasajes sin audio. El motor de IntegratedReader no cambia; solo se sustituye su entrada predeterminada. La referencia inerte incorpora la hoja compartida y la prueba de fidelidad verifica el rótulo SRT en el nuevo componente.
+
+El documento editorial de Google incorpora 2.8 y D17, actualiza Lectura a 856 px en la referencia 1363×936 y resuelve las menciones antiguas de su altura y composición. El conjunto calcula la ventana visible menos el encabezado y crece naturalmente ante ampliaciones excepcionales, sin recortes ni barras internas.
+
+Validación: pruebas library, two-works y hobsbawm; compilación y verificación en raíz y base de Pages. Revisión de Pineau y Orbuch en escritorio, 1280×720, tablet 768×1024 y celular 360×640; apertura/cierre del lector en ambas obras y nota local en Orbuch. Bloques de 856, 640, 912 y 528 px según ventana y encabezado; sin desbordamiento horizontal. Se conserva el progreso en el encabezado y se oculta el indicador flotante de Pineau mientras Lectura está activa.

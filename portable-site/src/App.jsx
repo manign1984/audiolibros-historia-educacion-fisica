@@ -8,8 +8,6 @@ import {
   ChevronRight,
   Clock3,
   ExternalLink,
-  FileText,
-  Headphones,
   History,
   Landmark,
   ShieldCheck,
@@ -535,44 +533,8 @@ function ContextSection() {
 
 function ReadingSection({ showToast }) {
   return (
-    <section id="lectura" className="reading-section tracked-section">
-      <div className="page-shell">
-        <SectionHeading
-          sectionId="lectura"
-          title="El texto en el centro de los procesos de enseñanza y aprendizaje"
-          titleLines={['El texto en el centro de', 'los procesos de', 'enseñanza y aprendizaje']}
-          text="Leé el texto con la siguiente pregunta en mente: ¿cómo una reforma educativa nacida desde un gobierno conservador logra presentarse como la fundación de una pedagogía renovadora y reunir apoyos desde diferentes sectores de la comunidad educativa?"
-        />
-
-        <article className="reading-synopsis" aria-labelledby="reading-synopsis-title">
-          <div className="reading-synopsis__label" aria-hidden="true">
-            <span>Antes de abrir el texto</span>
-            <FileText className="pineau-synopsis-icon" strokeWidth={1.2} />
-          </div>
-          <div className="reading-synopsis__copy">
-            <p className="eyebrow">Una entrada a la trama</p>
-            <h3 id="reading-synopsis-title">Una promesa de renovación. Una disputa por el sentido de la escuela.</h3>
-            <p>
-              Una escuela acusada de haber olvidado el alma y el cuerpo del niño, de vivir de
-              espaldas al trabajo y a la comunidad. Un gobierno conservador que promete fundarla de
-              nuevo. Nuevas prácticas, apoyos inesperados y silencios impuestos entran en la escena
-              de finales de la década del 30. Pineau reconstruye esa trama proponiendo abordar la
-              reforma a partir de tres estrategias de acción complementarias: Renovar, Reprimir y
-              Cooptar. Cada página obliga a mirar qué se renovó, quiénes fueron los “disciplinados” y
-              cómo una combinación, que pareciera por momentos contradictoria, consiguió presentarse
-              como sentido común y lograr una continuidad histórica con la cual actualmente convivimos.
-            </p>
-          </div>
-        </article>
-
-        <div className="reading-reader-stage">
-          <IntegratedReader
-            showToast={showToast}
-            readingDocument={readingDocument}
-            config={pineauReaderConfig}
-          />
-        </div>
-      </div>
+    <section id="lectura" className="journey-reading tracked-section" aria-labelledby="journey-reading-title">
+      <IntegratedReader showToast={showToast} readingDocument={readingDocument} config={pineauReaderConfig} />
     </section>
   );
 }

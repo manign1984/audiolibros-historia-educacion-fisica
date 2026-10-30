@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, Clock3, Headphones } from 'lucide-react';
 import IntegratedReader from '../IntegratedReader.jsx';
-import HobsbawmReadingEntry from './HobsbawmReadingEntry.jsx';
 import { AuthorBiography, PineauLayoutReference } from '../shared/CanonicalLayout.jsx';
 import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
@@ -50,8 +49,8 @@ export default function HobsbawmApp() {
           biographyUrl="https://www.bbk.ac.uk/about-us/obituaries/eric-hobsbawm-magnificent-historian-and-colleague" />
       </section>
       <section id="contexto" className="hb-section hb-context"><div className="hb-shell"><Heading sectionId="contexto" title={<>Un siglo.<br />Tres tiempos.</>}>El siglo corto comienza en 1914 y termina en 1991. Sus límites no siguen el calendario: señalan rupturas históricas.</Heading><ContextCarousel /><div className="hb-author-lens"><span>Una clave de lectura</span><h4>La experiencia personal también tiene historia.</h4><p>Hobsbawm escribe como investigador y como testigo de su tiempo. Reconocer ese lugar ayuda a leer sus preguntas, sus decisiones y su interpretación del pasado.</p></div><aside className="hb-memory-note"><span>1914 <i>↔</i> 1992</span><div><h3>Una fecha, dos Sarajevos.</h3><p>La introducción enlaza el atentado de 1914 con la visita de François Mitterrand a Sarajevo el 28 de junio de 1992. La alusión que muchos no reconocen abre la pregunta del texto: ¿qué sucede cuando se debilitan los vínculos entre presente y pasado?</p><small>Síntesis didáctica a partir de «Vista panorámica del siglo XX».</small></div></aside></div></section>
-      <section id="lectura" className="hb-section hb-reading" aria-labelledby="hb-reading-title">
-        <IntegratedReader readingDocument={hobsbawmReadingDocument} config={hobsbawmReaderConfig} showToast={setToast} Launcher={HobsbawmReadingEntry} />
+      <section id="lectura" className="journey-reading" aria-labelledby="journey-reading-title">
+        <IntegratedReader readingDocument={hobsbawmReadingDocument} config={hobsbawmReaderConfig} showToast={setToast} />
       </section>
       <JourneyCredits workId="hobsbawm" />
     </main><div className={`hb-toast ${toast ? 'is-visible' : ''}`} role="status" aria-live="polite">{toast}</div>
