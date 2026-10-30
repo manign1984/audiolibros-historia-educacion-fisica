@@ -1,6 +1,11 @@
 export const pineauReaderConfig = {
   workId: 'pineau-fresco-noble',
-  launcher: { variant: 'editorial', author: 'Pablo Pineau' },
+  readingEntry: {
+    "author": "Pablo Pineau",
+    "title": "Renovación, represión, cooptación",
+    "audioMinutes": 50,
+    "synopsis": "Una escuela cuestionada y un gobierno conservador que promete renovarla. Pineau reconstruye la reforma Fresco–Noble a través de tres estrategias: renovar, reprimir y cooptar. Una trama de prácticas, apoyos y silencios que invita a descubrir cómo se disputó el sentido de la escuela y qué huellas dejó en nuestra educación."
+  },
   mark: 'FN',
   shortTitle: 'Renovación, represión, cooptación',
   authorAndTitle: 'Pablo Pineau · Renovación, represión, cooptación',
@@ -29,7 +34,14 @@ export const pineauReaderConfig = {
 
 export const orbuchReaderConfig = {
   workId: 'orbuch-educar-al-cuerpo',
-  launcher: { variant: 'desk', author: 'Iván Pablo Orbuch' },
+  readingEntry: {
+    "author": "Iván Pablo Orbuch",
+    "title": "Educar al cuerpo dentro y fuera del aula",
+    "audioMinutes": 28,
+    "textUrl": "/assets/orbuch-texto-accesible.txt",
+    "synopsis": "La educación corporal desborda el aula y llega a las oficinas. Orbuch sigue dos experiencias del primer peronismo para reconstruir la distancia entre los proyectos del Estado y su puesta en práctica. Documentos, propuestas y tensiones revelan cómo se intentó transformar la vida cotidiana a través del movimiento.",
+    "srtUrl": "/assets/orbuch-subtitulos.srt"
+  },
   mark: 'IO',
   shortTitle: 'Educar al cuerpo dentro y fuera del aula',
   authorAndTitle: 'Iván Pablo Orbuch · Educar al cuerpo dentro y fuera del aula',
@@ -58,7 +70,14 @@ export const orbuchReaderConfig = {
 
 export const hobsbawmReaderConfig = {
   workId: 'hobsbawm-historia-siglo-xx',
-  launcher: { variant: 'portal', author: 'Eric Hobsbawm' },
+  readingEntry: {
+    "author": "Eric Hobsbawm",
+    "title": "Vista panorámica del siglo XX",
+    "audioMinutes": 49,
+    "textUrl": "/assets/hobsbawm-texto-accesible.txt",
+    "synopsis": "Guerras y revoluciones, prosperidad y catástrofes: el siglo XX transformó la vida como nunca antes. Hobsbawm cruza las voces de quienes lo vivieron con la mirada del historiador para reconstruir ese mundo y descubrir cuánto de aquel pasado sigue latiendo en nuestro presente.",
+    "notice": "El audio omite seis pasajes: están conservados y señalados en el lector."
+  },
   mark: 'XX',
   shortTitle: 'Historia del siglo XX',
   authorAndTitle: 'Eric Hobsbawm · Vista panorámica del siglo XX',

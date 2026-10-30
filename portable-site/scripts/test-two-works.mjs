@@ -90,6 +90,7 @@ assert.equal(await sha256('public/assets/orbuch-gimnasia-compensatoria-1949.pdf'
 assert.equal(await sha256('public/assets/orbuch-gimnasia-oficinas-1950.pdf'), '52828ca1f89422f0dba788e32566402718a99238a676efdf53087539ef0f5aa2');
 
 const sharedCredits = await text('src/shared/JourneyCredits.jsx');
+const sharedReadingEntry = await text('src/shared/JourneyReadingEntry.jsx');
 for (const sectionId of ['inicio', 'autor', 'contexto', 'lectura', 'creditos']) {
   assert.match(sectionId === 'creditos' ? sharedCredits : orbuchApp, new RegExp(`id="${sectionId}"`), `Falta la sección ${sectionId}.`);
 }
@@ -101,7 +102,7 @@ for (const fidelityMarker of [
   'Subtítulos SRT',
   'Prescripción',
 ]) {
-  assert.ok(orbuchApp.includes(fidelityMarker), `Debe conservarse la pieza editorial “${fidelityMarker}”.`);
+  assert.ok((orbuchApp + sharedReadingEntry).includes(fidelityMarker), `Debe conservarse la pieza editorial “${fidelityMarker}”.`);
 }
 for (const authorMarker of [
   'orbuch-ivan-orbuch.webp',
