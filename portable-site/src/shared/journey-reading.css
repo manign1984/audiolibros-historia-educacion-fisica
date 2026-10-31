@@ -1,6 +1,5 @@
 /* The header retains progress while the reading composition stays unobstructed. */
 body:has(.journey-header__link[href="#lectura"][aria-current="location"]) .journey-progress { visibility: hidden; }
-/* One reading composition, sized to the same visible room as Inicio. */
 body:has(.journey-header) #lectura.journey-reading {
   --reading-room: calc(100svh - var(--journey-header-height, 80px));
   box-sizing: border-box;
@@ -20,86 +19,95 @@ body:has(.journey-header) #lectura.journey-reading {
   margin: 0 auto;
   text-align: left;
   display: grid;
-  gap: clamp(24px, 4svh, 42px);
+  grid-template-columns: minmax(0, 1.55fr) minmax(320px, 1fr);
+  gap: clamp(24px, 3.5svh, 36px) clamp(36px, 5vw, 76px);
 }
+.journey-reading-heading { grid-column: 1; }
 .journey-reading-heading h2 {
   max-width: 23ch;
   margin: 0;
-  font: 400 clamp(44px, min(6.4vw, calc(var(--reading-room) / 8.5)), 86px)/.98 'Bebas Neue', sans-serif;
+  font: 400 clamp(42px, min(5.5vw, calc(var(--reading-room) / 10)), 74px)/.98 'Bebas Neue', sans-serif;
   letter-spacing: 0;
   text-transform: uppercase;
   text-wrap: balance;
 }
-.journey-reading-invitation {
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(300px, .9fr);
-  align-items: center;
-  gap: clamp(32px, 5vw, 76px);
-}
-.journey-reading-work {
-  margin: 0 0 14px;
+.journey-reading-invitation { display: contents; }
+.journey-reading-story { grid-column: 1; }
+.journey-reading-work { margin: 0 0 16px; }
+.journey-reading-author {
+  margin: 0 0 6px;
   color: #9c3226;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.5;
+  font: 700 12px/1.4 'Archivo', sans-serif;
   letter-spacing: .08em;
   text-transform: uppercase;
 }
-.journey-reading-work span { padding-inline: 4px; }
+.journey-reading-work h3 {
+  margin: 0;
+  color: #172b3f;
+  font: 700 clamp(20px, 1.85vw, 25px)/1.2 'Archivo', sans-serif;
+  letter-spacing: -.025em;
+  text-transform: none;
+}
 .journey-reading-synopsis { margin: 0; font-size: clamp(17px, 1.4vw, 20px); line-height: 1.65; }
+.journey-reading-access { grid-column: 2; grid-row: 1 / span 2; align-self: center; text-align: center; padding-bottom: 12px; }
+.journey-reading-motif { display: block; width: min(100%, 300px); height: auto; margin: 0 auto 22px; color: #172b3f; }
 .journey-reading-open {
   display: flex;
   width: 100%;
-  min-height: 88px;
+  min-height: 98px;
   align-items: center;
   gap: 14px;
-  padding: 22px;
-  border: 0;
-  border-radius: 0;
-  background: #172b3f;
+  padding: 23px 26px;
+  border: 1px solid #486275;
+  border-radius: 999px;
+  background: linear-gradient(165deg, #294358 0%, #172b3f 55%, #122334 100%);
   color: #fff5df;
+  box-shadow: inset 0 2px 1px #ffffff30, inset 0 -3px 2px #08172599, 0 4px 0 #0c1c29, 0 10px 16px -7px #14263875;
   font: 700 clamp(17px, 1.5vw, 21px)/1.3 'Archivo', sans-serif;
   text-align: left;
   cursor: pointer;
-  transition: background .15s;
+  transition: transform .15s, box-shadow .15s;
 }
-.journey-reading-open > svg { width: 25px; height: 25px; flex-shrink: 0; }
+.journey-reading-open > svg { width: 27px; height: 27px; flex-shrink: 0; }
 .journey-reading-open > svg:last-child { margin-left: auto; color: #f2c45e; }
-.journey-reading-open:hover { background: #234a63; }
-.journey-reading-open:focus-visible { outline: 3px solid #9c3226; outline-offset: 5px; }
-.journey-reading-help, .journey-reading-resume { margin: 12px 0 0; font-size: 13px; line-height: 1.5; }
-.journey-reading-resume { font-weight: 700; }
-.journey-reading-foot { border-top: 1px solid #172b3f40; padding-top: 18px; }
+.journey-reading-open:hover { transform: translateY(-2px); box-shadow: inset 0 2px 1px #ffffff40, inset 0 -3px 2px #08172599, 0 4px 0 #0c1c29, 0 12px 18px -7px #14263875; }
+.journey-reading-open:active { transform: translateY(2px); box-shadow: inset 0 2px 4px #08172555, 0 1px 0 #0c1c29, 0 5px 10px -6px #14263875; }
+.journey-reading-open:focus-visible { outline: 3px solid #9c3226; outline-offset: 6px; }
+.journey-reading-help, .journey-reading-resume { margin: 18px 0 0; font-size: 13px; line-height: 1.5; }
+.journey-reading-resume { margin-top: 7px; font-weight: 700; }
+.journey-reading-foot { grid-column: 1 / -1; border-top: 1px solid #172b3f40; padding-top: 16px; }
 .journey-reading-foot nav { display: flex; flex-wrap: wrap; gap: 4px 26px; }
 .journey-reading-foot a { display: inline-flex; align-items: center; min-height: 36px; font-size: 13px; text-underline-offset: 4px; }
 .journey-reading-foot p { margin: 8px 0 0; font-size: 12px; line-height: 1.5; color: #49515a; }
-
 @media (max-width: 1023.98px) {
-  .journey-reading-content { width: calc(100% - 64px); }
-  .journey-reading-invitation { grid-template-columns: 1fr; gap: 22px; }
+  .journey-reading-content { width: calc(100% - 64px); grid-template-columns: 1fr; gap: 22px; }
+  .journey-reading-heading h2 { font-size: clamp(40px, 6.5vw, 60px); }
   .journey-reading-synopsis { max-width: 65ch; }
-  .journey-reading-access { max-width: 520px; }
-  .journey-reading-heading h2 { font-size: clamp(42px, 7.5vw, 70px); }
+  .journey-reading-access { grid-column: 1; grid-row: auto; width: min(100%, 520px); justify-self: center; padding: 0; }
+  .journey-reading-motif { display: none; }
 }
 @media (min-width: 641px) and (max-height: 720px) {
   body:has(.journey-header) #lectura.journey-reading { padding-block: 20px; }
-  .journey-reading-content { gap: 20px; }
-  .journey-reading-heading h2 { font-size: clamp(38px, min(5.8vw, calc(var(--reading-room) / 9.5)), 66px); }
+  .journey-reading-content { gap: 20px 40px; }
+  .journey-reading-heading h2 { font-size: clamp(38px, min(5vw, calc(var(--reading-room) / 11)), 60px); }
   .journey-reading-synopsis { font-size: 16px; line-height: 1.5; }
-  .journey-reading-work { margin-bottom: 10px; }
-  .journey-reading-open { min-height: 74px; padding: 18px; }
+  .journey-reading-work { margin-bottom: 12px; }
+  .journey-reading-motif { width: 220px; margin-bottom: 14px; }
+  .journey-reading-open { min-height: 82px; padding: 18px 22px; }
   .journey-reading-foot { padding-top: 10px; }
 }
 @media (max-width: 640px) {
-  body:has(.journey-header) #lectura.journey-reading { padding-block: 20px; }
-  .journey-reading-content { width: calc(100% - 36px); gap: 19px; }
-  .journey-reading-heading h2 { font-size: clamp(35px, min(10.4vw, calc(var(--reading-room) / 17)), 50px); line-height: 1; }
-  .journey-reading-invitation { gap: 18px; }
-  .journey-reading-work { margin-bottom: 9px; font-size: 10px; letter-spacing: .04em; }
+  body:has(.journey-header) #lectura.journey-reading { padding-block: 18px; }
+  .journey-reading-content { width: calc(100% - 36px); gap: 16px; }
+  .journey-reading-heading h2 { font-size: clamp(31px, min(9.2vw, calc(var(--reading-room) / 19)), 44px); line-height: 1; }
+  .journey-reading-work { margin-bottom: 10px; }
+  .journey-reading-author { font-size: 10px; margin-bottom: 4px; letter-spacing: .05em; }
+  .journey-reading-work h3 { font-size: 19px; line-height: 1.2; }
   .journey-reading-synopsis { font-size: 16px; line-height: 1.45; }
-  .journey-reading-open { min-height: 64px; padding: 16px; gap: 12px; font-size: 17px; }
-  .journey-reading-open > svg { width: 22px; height: 22px; }
-  .journey-reading-help, .journey-reading-resume { margin-top: 8px; font-size: 12px; }
+  .journey-reading-open { min-height: 66px; padding: 16px 20px; gap: 12px; font-size: 17px; }
+  .journey-reading-open > svg { width: 24px; height: 24px; }
+  .journey-reading-help, .journey-reading-resume { margin-top: 12px; font-size: 12px; }
+  .journey-reading-resume { margin-top: 5px; }
   .journey-reading-foot { padding-top: 10px; }
   .journey-reading-foot nav { justify-content: space-between; gap: 4px 12px; }
   .journey-reading-foot a { min-height: 36px; font-size: 12px; }
@@ -107,14 +115,18 @@ body:has(.journey-header) #lectura.journey-reading {
 }
 @media (max-width: 640px) and (max-height: 700px) {
   body:has(.journey-header) #lectura.journey-reading { padding-block: 10px; }
-  .journey-reading-content, .journey-reading-invitation { gap: 8px; }
-  .journey-reading-heading h2 { font-size: 32px; }
+  .journey-reading-content { gap: 8px; }
+  .journey-reading-heading h2 { font-size: 28px; }
+  #lectura .journey-reading-heading .journey-block-label { margin-bottom: 6px; }
   .journey-reading-synopsis { font-size: 15px; line-height: 1.4; }
-  #lectura .journey-reading-heading .journey-block-label { margin-bottom: 8px; }
-  .journey-reading-work { margin-bottom: 6px; }
-  .journey-reading-help, .journey-reading-resume { margin-top: 6px; }
-  .journey-reading-foot { padding-top: 8px; }
+  .journey-reading-work { margin-bottom: 7px; }
+  .journey-reading-work h3 { font-size: 17px; line-height: 1.15; }
+  .journey-reading-author { margin-bottom: 3px; }
+  .journey-reading-open { min-height: 62px; padding-block: 13px; }
+  .journey-reading-help { margin-top: 10px; }
+  .journey-reading-foot { padding-top: 6px; }
   .journey-reading-foot a { min-height: 28px; }
 }
-@media (prefers-reduced-motion: reduce) { .journey-reading-open { transition: none; } }
-@media print { body:has(.journey-header) #lectura.journey-reading { min-height: 0; padding-block: 24px; } }
+@media (prefers-reduced-motion: reduce) { .journey-reading-open { transition: none; transform: none; } }
+@media (forced-colors: active) { .journey-reading-open { border: 2px solid ButtonText; box-shadow: none; } }
+@media print { body:has(.journey-header) #lectura.journey-reading { min-height: 0; padding-block: 24px; } .journey-reading-motif { display: none; } }
