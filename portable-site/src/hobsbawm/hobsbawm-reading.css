@@ -298,3 +298,62 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading {
   .hb-material-title { text-shadow: none; }
   .hb-material-copy, .hb-material-concept { box-shadow: none; }
 }
+
+
+/* 2026-10-31 · Correcciones solicitadas del bloque 04: tipografía, coordenadas y CTA. */
+.hobsbawm-page .hb-material-title {
+  /* Recupera la fuente condensada y el azul plano del título anterior. */
+  color: #172b3f;
+  font: 400 clamp(86px, 7.1vw, 128px)/.9 'Bebas Neue', sans-serif;
+  letter-spacing: .005em;
+  text-shadow: none;
+}
+.hobsbawm-page .hb-material-title > span {
+  display: block;
+  transform: none;
+  white-space: nowrap;
+}
+.hobsbawm-page .hb-material-concept {
+  /* Desplazamiento respecto de los ejes marcados en la captura: +46 x, +28 y. */
+  margin: 28px 0 81px 46px;
+}
+.hobsbawm-page .hb-material-open > span {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: clamp(15px, 1.3vw, 20px);
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: .015em;
+}
+.hobsbawm-page .hb-material-open > svg:last-child {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  stroke-width: 3.1;
+  filter: drop-shadow(0 0 5px #ffca3166);
+  animation: hb-arrow-pulse 1.35s ease-in-out infinite;
+}
+@keyframes hb-arrow-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .34; transform: scale(1.08); }
+}
+@media (max-width: 1023.98px) {
+  .hobsbawm-page .hb-material-title { font-size: clamp(82px, 12vw, 122px); }
+  .hobsbawm-page .hb-material-concept { margin: 20px 0 62px 34px; }
+}
+@media (max-width: 640px) {
+  .hobsbawm-page .hb-material-title {
+    font-size: clamp(56px, 16vw, 92px);
+    letter-spacing: .005em;
+    line-height: .92;
+  }
+  .hobsbawm-page .hb-material-concept { margin: 16px 0 48px 18px; }
+  .hobsbawm-page .hb-material-open > span { font-size: clamp(13px, 3.8vw, 16px); }
+  .hobsbawm-page .hb-material-open > svg:last-child { width: 36px; height: 36px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hobsbawm-page .hb-material-open > svg:last-child { animation: none; }
+}
+@media (forced-colors: active), print {
+  .hobsbawm-page .hb-material-open > svg:last-child { animation: none; filter: none; }
+}
