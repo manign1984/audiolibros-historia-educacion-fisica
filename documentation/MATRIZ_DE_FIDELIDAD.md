@@ -198,3 +198,14 @@ Por aprobación explícita del piloto de Hobsbawm se generaliza el bloque 04 a P
 El documento editorial de Google incorpora 2.8 y D17, actualiza Lectura a 856 px en la referencia 1363×936 y resuelve las menciones antiguas de su altura y composición. El conjunto calcula la ventana visible menos el encabezado y crece naturalmente ante ampliaciones excepcionales, sin recortes ni barras internas.
 
 Validación: pruebas library, two-works y hobsbawm; compilación y verificación en raíz y base de Pages. Revisión de Pineau y Orbuch en escritorio, 1280×720, tablet 768×1024 y celular 360×640; apertura/cierre del lector en ambas obras y nota local en Orbuch. Bloques de 856, 640, 912 y 528 px según ventana y encabezado; sin desbordamiento horizontal. Se conserva el progreso en el encabezado y se oculta el indicador flotante de Pineau mientras Lectura está activa.
+
+
+## Afinación visual de Lectura del 31/10/2026
+
+Por aprobación de los seis ajustes propuestos a partir de la maqueta editorial se afina el componente común del bloque 04 en las tres obras. El botón adopta una cápsula azul con relieve moderado y sombra corta; no lleva una envolvente ni un panel adicional. Un único motivo vectorial de páginas y onda sonora acompaña el acceso en escritorio. En tablet y celular se simplifica al icono de libro y audio del botón, sin ocupar altura adicional. El motivo es decorativo y no representa controles activos.
+
+Se reduce moderadamente el título común y se separa la autoría del título de la obra, ahora en Archivo 700 de mayor tamaño. Título, identificación y sinopsis ocupan la columna izquierda; motivo y acción ocupan la derecha. Se conserva la frase «Leé, escuchá y anotá · Audio de … min» y el aviso de progreso/notas. Se añaden estados táctiles y de teclado, movimiento reducido y compatibilidad con colores forzados. El fondo sigue plano y la identificación se mantiene como 04 · Lectura; el menú conserva Contexto.
+
+Se preservan las sinopsis, fuentes, duración configurada de cada obra, omisiones del audio de Hobsbawm, almacenamiento y motor de IntegratedReader. La actualización editorial queda en 2.8 y D17 del documento de directrices.
+
+Validación: test:library, test:two-works y test:hobsbawm; compilación verificada en raíz y en la base de Pages. Revisión visual en escritorio 1363×936, portátil 1280×720, tablet 768×1024 y móvil 360×640. Los bloques conservan 856, 640, 912 y 528 px respectivamente; sin desbordamiento horizontal. Apertura del lector en las tres obras, apertura por teclado en Hobsbawm, cierre y recuperación del foco, y nota de Orbuch persistente tras recargar. La vista móvil de Orbuch con nota guardada conserva todos sus elementos visibles.

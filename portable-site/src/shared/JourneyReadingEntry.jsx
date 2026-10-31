@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ArrowRight, Headphones } from 'lucide-react';
+import { ArrowRight, BookAudio } from 'lucide-react';
 import JourneyBlockLabel from './JourneyBlockLabel.jsx';
 import './journey-reading.css';
 
@@ -29,14 +29,27 @@ export default function JourneyReadingEntry({ onOpen, progress, noteCount, confi
 
     <div className="journey-reading-invitation">
       <div className="journey-reading-story">
-        <p className="journey-reading-work">{entry.author} <span>·</span> {entry.title}</p>
+        <div className="journey-reading-work">
+          <p className="journey-reading-author">{entry.author}</p>
+          <h3>{entry.title}</h3>
+        </div>
         <p className="journey-reading-synopsis">{entry.synopsis}</p>
       </div>
       <div className="journey-reading-access">
+        <svg className="journey-reading-motif" viewBox="0 0 300 160" fill="none" aria-hidden="true" focusable="false">
+          <g stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M28 38c27-8 51-5 75 10v86c-24-15-48-18-75-10V38Z" />
+            <path d="M103 48c22-15 45-18 67-10v86c-22-8-45-5-67 10" />
+            <path d="M40 27c24-4 45 0 63 12 18-12 38-16 56-13" opacity=".35" />
+            <path d="M43 61c15-2 28 0 44 7M43 79c15-2 28 0 44 7M43 97c15-2 28 0 44 7" opacity=".5" />
+            <path d="M119 65c12-4 23-5 35-3M119 83c12-4 23-5 35-3M119 101c12-4 23-5 35-3" opacity=".5" />
+          </g>
+          <path d="M174 84h18m12-13v26m14-43v60m14-77v94m14-65v36m14-50v66m14-41v16" stroke="#b68b38" strokeWidth="4" strokeLinecap="round" />
+        </svg>
         <button className="journey-reading-open" type="button" onClick={onOpen} aria-haspopup="dialog">
-          <Headphones aria-hidden="true" /><span>Abrir lector integrado</span><ArrowRight aria-hidden="true" />
+          <BookAudio aria-hidden="true" /><span>Abrir lector integrado</span><ArrowRight aria-hidden="true" />
         </button>
-        <p className="journey-reading-help">Leé, escuchá y anotá. Audio de {entry.audioMinutes} minutos.</p>
+        <p className="journey-reading-help">Leé, escuchá y anotá · Audio de {entry.audioMinutes} min</p>
         {(hasProgress || noteCount > 0) && <p className="journey-reading-resume">
           {hasProgress ? `Retomá desde ${time}.` : 'Tu cuaderno está guardado.'}{noteCount > 0 && ` ${noteCount} ${noteCount === 1 ? 'nota guardada' : 'notas guardadas'}.`}
         </p>}
