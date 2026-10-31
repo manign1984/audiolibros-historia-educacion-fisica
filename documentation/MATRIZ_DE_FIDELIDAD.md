@@ -209,3 +209,12 @@ Se reduce moderadamente el título común y se separa la autoría del título de
 Se preservan las sinopsis, fuentes, duración configurada de cada obra, omisiones del audio de Hobsbawm, almacenamiento y motor de IntegratedReader. La actualización editorial queda en 2.8 y D17 del documento de directrices.
 
 Validación: test:library, test:two-works y test:hobsbawm; compilación verificada en raíz y en la base de Pages. Revisión visual en escritorio 1363×936, portátil 1280×720, tablet 768×1024 y móvil 360×640. Los bloques conservan 856, 640, 912 y 528 px respectivamente; sin desbordamiento horizontal. Apertura del lector en las tres obras, apertura por teclado en Hobsbawm, cierre y recuperación del foco, y nota de Orbuch persistente tras recargar. La vista móvil de Orbuch con nota guardada conserva todos sus elementos visibles.
+
+
+## Nueva prueba de profundidad tipográfica del 31/10/2026
+
+Por solicitud explícita posterior a la revisión de la primera afinación, el acceso común de Pineau, Orbuch y Hobsbawm reemplaza el dibujo del libro y la onda por «Leé / escuchá / anotá», en tres líneas. Georgia cursiva y tonos ocre complementan el título azul en Bebas Neue. Tamaño, posición y sombras progresivos sugieren distancia sin dibujar una escalera, plataformas ni un panel interior. El botón ocupa el plano más cercano: cápsula azul, doble borde, relieve y sombra más marcada siguiendo la nueva referencia, con auriculares blancos y flecha dorada. La duración y la continuidad se conservan debajo; se evita repetir la misma invitación.
+
+La versión compacta reduce la escala de las palabras y agrupa duración y notas para conservar el bloque visible. Se preservan contenidos, recursos, sincronización y almacenamiento del lector. Esta revisión se registra como prueba visual solicitada; no se convierte aún en una nueva directriz definitiva de Google Docs.
+
+Validación: pruebas library, two-works y hobsbawm; compilaciones verificadas para raíz y base de GitHub Pages. Revisión en escritorio, portátil 1280×720, tablet 768×1024 y móvil 360×640; los tres accesos caben en la ventana móvil, incluyendo Orbuch con una nota guardada. Apertura por teclado y cierre en Hobsbawm, y apertura/cierre en Pineau.
