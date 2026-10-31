@@ -46,7 +46,7 @@ export default function HobsbawmReadingEntry({ onOpen, progress, noteCount, conf
       <p className="hb-material-concept">El texto en el centro<br />de los procesos<br />de enseñanza y aprendizaje</p>
       <button className="hb-material-open" type="button" onClick={onOpen} aria-haspopup="dialog">
         <Headphones aria-hidden="true" />
-        <span>Abrir lector integrado</span>
+        <span>ABRIR EL LECTOR INTEGRADO</span>
         <ArrowRight aria-hidden="true" />
       </button>
       {(hasProgress || noteCount > 0) && <p className="hb-material-resume">
