@@ -1,139 +1,100 @@
 /* +TEC UNAHUR · Hobsbawm · Bloque 04 LECTURA
-   Nueva composición basada en la maqueta de CorelDRAW aprobada (31/10/2026).
-   Solamente presentación: sin cambios en el lector, audios ni almacenamiento. */
+   Referencia: mitad izquierda de «Sin títuloO-1.png», 1015 px de ancho.
+   Las distancias se expresan en unidades de esa maqueta; fuentes y paleta
+   conservadas. Ver documentation/HOBSBAWM_COREL_MEDIDAS_2026-11-01.md. */
 
 body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading {
   --material-paper: #f4e9d3;
   --material-ink: #172b3f;
   --material-rust: #aa4128;
   position: relative;
+  container-type: inline-size;
+  align-items: flex-start;
   color: var(--material-ink);
   background: var(--material-paper);
-  padding: clamp(46px, 6.6svh, 78px) 0 clamp(44px, 6svh, 70px);
+  padding: 0;
   overflow: hidden;
 }
-
-/* Hormigón cálido y apenas visible fuera de las áreas de texto. */
-body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  opacity: .14;
-  pointer-events: none;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.026 .06' numOctaves='3' seed='29' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='360' height='360' filter='url(%23c)' opacity='.48'/%3E%3C/svg%3E");
-}
+/* El fondo de la maqueta es uniforme; no lleva el velo de ruido anterior. */
+body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { content: none; }
 .hobsbawm-page .hb-material-content {
+  --hb-unit: calc(min(100cqw, 2000px) / 1015);
   position: relative;
-  width: min(1900px, calc(100% - 110px));
+  width: min(100%, 2000px);
   margin-inline: auto;
+  padding-block: calc(29 * var(--hb-unit)) calc(28 * var(--hb-unit));
   display: flex;
   flex-direction: column;
   align-items: stretch;
   font-family: 'Archivo', sans-serif;
 }
-.hobsbawm-page .hb-material-hero {
-  position: relative;
-  width: 100%;
-  min-width: 0;
-}
+.hobsbawm-page .hb-material-hero { position: relative; width: 100%; min-width: 0; }
 .hobsbawm-page .hb-material-hero > .journey-block-label {
-  position: relative;
+  position: absolute;
   z-index: 2;
-  margin-bottom: 8px;
+  top: calc(-7 * var(--hb-unit));
+  left: calc(38 * var(--hb-unit));
+  margin: 0;
+  font-size: calc(13 * var(--hb-unit));
 }
-
-/* Tres verbos como un único título. LEÉ se coloca en el centro y se
-   destaca por tamaño, sin desplazar la importancia de las otras acciones. */
+/* Cajas tipográficas: x = 194 / 445 / 624. Los contornos de las letras
+   comienzan aproximadamente en x = 197 / 450 / 625 en la referencia. */
 .hobsbawm-page .hb-material-title {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: clamp(48px, 7.9vw, 152px);
-  width: min(1600px, 100%);
-  margin: -20px auto 0;
-  padding: 0 0 7px;
+  display: grid;
+  grid-template-columns: calc(251 * var(--hb-unit)) calc(179 * var(--hb-unit)) 1fr;
+  align-items: start;
+  width: calc(575 * var(--hb-unit));
+  margin: 0 0 0 calc(194 * var(--hb-unit));
+  padding: 0;
   color: var(--material-ink);
-  font: 400 70px/.88 'Bebas Neue', sans-serif;
-  letter-spacing: .005em;
-  text-align: center;
+  font: 400 calc(74 * var(--hb-unit))/1 'Bebas Neue', sans-serif;
+  letter-spacing: 0;
+  text-align: left;
   text-transform: uppercase;
   text-shadow: none;
 }
-.hobsbawm-page .hb-material-word {
-  display: block;
-  flex: 0 0 auto;
-  width: auto;
-  max-width: none;
-  white-space: nowrap;
-  transform: none;
-}
-.hobsbawm-page .hb-material-word--listen,
-.hobsbawm-page .hb-material-word--note {
-  font-size: clamp(78px, 6.35vw, 122px);
-}
-.hobsbawm-page .hb-material-word--read {
-  font-size: clamp(126px, 10.35vw, 204px);
-}
-
-/* Botón centrado, único objeto material que sobresale del plano de fondo. */
+.hobsbawm-page .hb-material-word { display: block; min-width: 0; white-space: nowrap; }
+.hobsbawm-page .hb-material-word--listen { font-size: calc(74 * var(--hb-unit)); transform: translateY(calc(24 * var(--hb-unit))); }
+.hobsbawm-page .hb-material-word--read { font-size: calc(120 * var(--hb-unit)); }
+.hobsbawm-page .hb-material-word--note { font-size: calc(72 * var(--hb-unit)); transform: translateY(calc(24 * var(--hb-unit))); }
 .hobsbawm-page .hb-material-access {
   position: relative;
   isolation: isolate;
-  /* Corel: el botón ocupa aproximadamente el 50,4 % del ancho de la página.
-     El límite inferior mantiene el espacio para texto e íconos en tabletas. */
-  width: min(900px, max(620px, 50.4%));
-  container-type: inline-size;
+  width: calc(488 * var(--hb-unit));
   min-width: 0;
-  margin: 36px auto 0;
-  padding: 0 10px 18px;
-  align-self: center;
+  container-type: inline-size;
+  margin: 0 0 0 calc(261 * var(--hb-unit));
+  padding: 0;
 }
-.hobsbawm-page .hb-material-geometry {
-  position: absolute;
-  z-index: -1;
-  inset: -22px -15px 0;
-  pointer-events: none;
-}
-.hobsbawm-page .hb-material-geometry > span {
+.hobsbawm-page .hb-material-geometry { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.hobsbawm-page .hb-material-dots {
   position: absolute;
   display: block;
-}
-.hobsbawm-page .hb-material-plate {
-  inset: 0 14px 10px;
-  border: 1px solid rgba(255, 250, 240, .42);
-  border-radius: 110px;
-  background: linear-gradient(145deg, rgba(255, 251, 240, .18), rgba(204, 188, 167, .12));
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
-}
-.hobsbawm-page .hb-material-dots {
-  right: 0;
-  bottom: -8px;
-  width: 72px;
-  height: 86px;
+  right: calc(-12 * var(--hb-unit));
+  bottom: calc(-14 * var(--hb-unit));
+  width: calc(40 * var(--hb-unit));
+  height: calc(86 * var(--hb-unit));
   opacity: .3;
   background: radial-gradient(circle at 4px 4px, #8f826b88 0 1.6px, transparent 2px) 0 0 / 17px 17px;
 }
+/* El contenedor tiene su propia unidad: los cqw internos del botón se
+   refieren a su ancho, mientras las posiciones usan la retícula exterior. */
 .hobsbawm-page .hb-material-open {
   position: relative;
   z-index: 2;
   display: flex;
   align-items: center;
   width: 100%;
-  /* Medición real de la captura CorelDRAW: 24 × 5,115 cm. */
-  aspect-ratio: 24 / 5.115;
+  aspect-ratio: 488 / 104;
   min-height: 0;
   margin: 0;
-  padding: 30px clamp(42px, 4vw, 64px);
-  gap: clamp(15px, 2cqw, 27px);
+  padding: 0 6.5574cqw;
+  gap: 5.123cqw;
   border: 1.6px solid rgba(120, 154, 176, .72);
   border-right-color: rgba(18, 48, 69, .92);
   border-bottom-color: rgba(4, 22, 36, .98);
   border-radius: 999px;
   overflow: hidden;
-  /* Azul opaco: el único 10 % de transparencia se aplica al texto. */
   background: linear-gradient(156deg, #34586e 0%, #173c53 43%, #0b273a 100%);
   color: #fffdf9;
   box-shadow:
@@ -143,10 +104,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before {
     1px 5px 0 #082133,
     7px 18px 20px -7px rgba(42, 36, 28, .55),
     14px 30px 26px -12px rgba(61, 48, 35, .34);
-  /* Corel: 60,633 pt ≈ 80,84 CSS px al máximo de referencia.
-     Relación de fuente calculada sobre el ANCHO DEL BOTÓN, no el viewport:
-     texto 14 × 1,7 cm, botón 24 × 5,115 cm. */
-  font: 900 clamp(34px, 9.7cqw, 80.84px)/1.05 'Geometr706 BlkCn BT', 'Geometric706BT-BlackCondensedB', 'Bebas Neue', 'Archivo', sans-serif;
+  font: 900 8.6cqw/1.05 'Geometr706 BlkCn BT', 'Geometric706BT-BlackCondensedB', 'Bebas Neue', 'Archivo', sans-serif;
   text-align: left;
   cursor: pointer;
   transition: transform .16s ease, filter .16s ease;
@@ -160,7 +118,6 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before {
   border-radius: inherit;
   pointer-events: none;
 }
-
 .hobsbawm-page .hb-material-open > span {
   flex: 1 1 auto;
   min-width: 0;
@@ -170,111 +127,66 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before {
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
-  opacity: .9; /* CorelDRAW: 10 % de transparencia, solo en las letras. */
+  opacity: .9;
 }
-.hobsbawm-page .hb-material-open > svg {
-  position: relative;
-  z-index: 1;
-  flex: 0 0 auto;
-  width: 52px;
-  height: 52px;
-  stroke-width: 1.9;
-}
+.hobsbawm-page .hb-material-open > svg { position: relative; z-index: 1; flex: 0 0 auto; width: 6.1475cqw; height: 6.1475cqw; stroke-width: 1.9; }
 .hobsbawm-page .hb-material-open > svg:last-child {
-  width: 62px;
-  height: 62px;
+  width: 7.377cqw;
+  height: 7.377cqw;
   margin-left: auto;
   color: #d1b23a;
   stroke-width: 3.4;
   filter: drop-shadow(0 0 5px rgba(209, 178, 58, .28));
   animation: hb-cta-arrow 1.5s ease-in-out infinite;
 }
-@keyframes hb-cta-arrow {
-  0%, 100% { opacity: .92; transform: translateX(0); }
-  50% { opacity: .42; transform: translateX(4px); }
-}
-.hobsbawm-page .hb-material-open:hover {
-  transform: translate(-1px, -2px);
-  filter: brightness(1.08);
-}
-.hobsbawm-page .hb-material-open:active {
-  transform: translate(1px, 3px);
-  filter: brightness(.97);
-}
-.hobsbawm-page .hb-material-open:focus-visible {
-  outline: 3px solid var(--material-rust);
-  outline-offset: 7px;
-}
-.hobsbawm-page .hb-material-resume {
-  position: relative;
-  z-index: 2;
-  width: fit-content;
-  margin: 24px auto 0;
-  padding: 2px 8px;
-  background: var(--material-paper);
-  box-shadow: 0 0 10px 8px var(--material-paper);
-  color: var(--material-ink);
-  font: 400 13px/1.5 'Archivo', sans-serif;
-  text-align: center;
-}
-
-/* Ficha unificada: autor + obra + presentación, sin dispersar los metadatos. */
+@keyframes hb-cta-arrow { 0%,100% { opacity: .92; transform: translateX(0); } 50% { opacity: .42; transform: translateX(4px); } }
+.hobsbawm-page .hb-material-open:hover { transform: translate(-1px, -2px); filter: brightness(1.08); }
+.hobsbawm-page .hb-material-open:active { transform: translate(1px, 3px); filter: brightness(.97); }
+.hobsbawm-page .hb-material-open:focus-visible { outline: 3px solid var(--material-rust); outline-offset: 7px; }
+/* La continuidad se mantiene en el nombre accesible, sin alterar la maqueta
+   cuando existe progreso. El lector conserva sus controles y estado. */
+.hobsbawm-page .hb-material-resume { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .hobsbawm-page .hb-material-copy {
-  width: min(1200px, calc(100% - 56px));
+  width: calc(470 * var(--hb-unit));
   min-width: 0;
-  margin: 22px auto 0;
+  margin: calc(24 * var(--hb-unit)) 0 0 calc(197 * var(--hb-unit));
   color: var(--material-ink);
-  background: var(--material-paper);
-  box-shadow: 0 0 25px 22px var(--material-paper);
   text-align: left;
 }
-.hobsbawm-page .hb-material-work { margin: 0 0 19px; }
-.hobsbawm-page .hb-material-author {
-  margin: 0 0 7px;
-  color: var(--material-rust);
-  font: 700 13px/1.35 'Archivo', sans-serif;
-  letter-spacing: .065em;
-  text-transform: uppercase;
-}
-.hobsbawm-page .hb-material-work h3 {
-  margin: 0;
-  color: var(--material-ink);
-  font: 700 clamp(22px, 2.1vw, 27px)/1.25 'Archivo', sans-serif;
-  letter-spacing: -.02em;
-  text-transform: none;
-}
-.hobsbawm-page .hb-material-synopsis {
-  max-width: 72ch;
-  margin: 0;
-  color: #18354a;
-  font: 400 clamp(17px, 1.3vw, 19px)/1.64 'Archivo', sans-serif;
-  letter-spacing: 0;
-  text-align: left;
-}
-.hobsbawm-page .hb-material-rule {
-  width: 100%;
-  height: 1px;
-  margin-top: 42px;
-  background: #80735d36;
-}
+.hobsbawm-page .hb-material-work { margin: 0 0 calc(12 * var(--hb-unit)); }
+.hobsbawm-page .hb-material-author { margin: 0 0 calc(7 * var(--hb-unit)); color: var(--material-rust); font: 700 calc(10 * var(--hb-unit))/1.35 'Archivo', sans-serif; letter-spacing: .065em; text-transform: uppercase; }
+.hobsbawm-page .hb-material-work h3 { margin: 0; color: var(--material-ink); font: 700 calc(18 * var(--hb-unit))/1.25 'Archivo', sans-serif; letter-spacing: -.02em; text-transform: none; }
+.hobsbawm-page .hb-material-synopsis { max-width: none; margin: 0; color: #18354a; font: 400 calc(12.8 * var(--hb-unit))/1.5 'Archivo', sans-serif; letter-spacing: 0; text-align: left; }
+.hobsbawm-page .hb-material-synopsis-line { display: block; text-align: justify; text-align-last: justify; white-space: nowrap; }
+.hobsbawm-page .hb-material-synopsis-line:nth-child(1) { letter-spacing: .16em; }
+.hobsbawm-page .hb-material-synopsis-line:nth-child(2) { letter-spacing: .12em; }
+.hobsbawm-page .hb-material-synopsis-line:nth-child(3) { letter-spacing: .1em; }
+.hobsbawm-page .hb-material-synopsis-line:last-child { letter-spacing: 0; text-align: left; text-align-last: left; white-space: normal; }
+.hobsbawm-page .hb-material-rule { display: none; }
 
-/* Pantallas intermedias: preserve the three-word composition. */
-@media (max-width: 1040px) {
-  .hobsbawm-page .hb-material-content { width: calc(100% - 66px); }
-  .hobsbawm-page .hb-material-title { gap: clamp(30px, 6.3vw, 76px); }
-  .hobsbawm-page .hb-material-word--listen,
-  .hobsbawm-page .hb-material-word--note { font-size: clamp(60px, 7.4vw, 88px); }
-  .hobsbawm-page .hb-material-word--read { font-size: clamp(100px, 12.5vw, 152px); }
+/* En tablet la misma retícula conserva proporciones y texto legible. */
+@media (min-width: 741px) and (max-width: 1040px) {
+  .hobsbawm-page .hb-material-content { padding-bottom: 36px; }
+  .hobsbawm-page .hb-material-hero > .journey-block-label { font-size: 12px; }
+  .hobsbawm-page .hb-material-copy { width: 70%; margin-left: 19.4089%; }
+  .hobsbawm-page .hb-material-author { font-size: 10px; }
+  .hobsbawm-page .hb-material-work h3 { font-size: 18px; }
+  .hobsbawm-page .hb-material-synopsis { font-size: 16px; }
+  .hobsbawm-page .hb-material-synopsis-line { display: contents; white-space: normal; letter-spacing: 0; }
 }
 
 /* Móvil: LEÉ conserva el centro y la escala; las otras dos acciones
    flanquean una segunda fila sin desbordar la pantalla. */
 @media (max-width: 740px) {
   body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading { padding-block: 36px 52px; }
-  .hobsbawm-page .hb-material-content { width: calc(100% - 40px); }
+  .hobsbawm-page .hb-material-content { width: calc(100% - 40px); padding: 0; }
+  .hobsbawm-page .hb-material-hero > .journey-block-label { position: static; font-size: 12px; }
   .hobsbawm-page .hb-material-hero > .journey-block-label { margin-bottom: 24px; }
   .hobsbawm-page .hb-material-title {
     display: grid;
+    width: 100%;
+    margin: 0;
+    text-align: center;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "read read" "listen note";
     justify-items: center;
@@ -288,15 +200,17 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before {
   }
   .hobsbawm-page .hb-material-word--listen {
     grid-area: listen;
+    transform: none;
     font-size: clamp(43px, 10vw, 67px);
   }
   .hobsbawm-page .hb-material-word--note {
     grid-area: note;
+    transform: none;
     font-size: clamp(43px, 10vw, 67px);
   }
   .hobsbawm-page .hb-material-access {
     width: min(100%, 540px);
-    margin-top: 27px;
+    margin: 27px auto 0;
     padding-inline: 3px;
   }
   .hobsbawm-page .hb-material-open {
@@ -314,7 +228,10 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before {
     width: 40px;
     height: 40px;
   }
-  .hobsbawm-page .hb-material-copy { margin-top: 34px; }
+  .hobsbawm-page .hb-material-copy { width: 100%; margin: 34px 0 0; }
+  .hobsbawm-page .hb-material-author { font-size: 11px; margin-bottom: 7px; }
+  .hobsbawm-page .hb-material-work { margin-bottom: 16px; }
+  .hobsbawm-page .hb-material-synopsis-line { display: contents; white-space: normal; letter-spacing: 0; }
   .hobsbawm-page .hb-material-work h3 { font-size: 23px; }
   .hobsbawm-page .hb-material-synopsis { font-size: 17px; line-height: 1.58; }
   .hobsbawm-page .hb-material-rule { margin-top: 34px; }
@@ -351,40 +268,4 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before {
   .hobsbawm-page .hb-material-open { box-shadow: none; }
   .hobsbawm-page .hb-material-content { width: 100%; }
   .hobsbawm-page .hb-material-copy { box-shadow: none; }
-}
-
-/* Revisión comparativa CorelDRAW: no se incrusta la tipografía comercial.
-   En los equipos que tengan Geometr706 instalada se usa la original. */
-.hobsbawm-page .hb-material-open > span {
-  font-family: 'Geometr706 BlkCn BT', 'Geometric706BT-BlackCondensedB', 'Bebas Neue', 'Archivo', sans-serif;
-  font-weight: 900;
-}
-@media (min-width: 1041px) and (max-height: 850px) {
-  .hobsbawm-page .hb-material-title { margin-top: -27px; }
-  .hobsbawm-page .hb-material-access { margin-top: 26px; }
-  .hobsbawm-page .hb-material-copy { margin-top: 15px; }
-}
-/* Entre 741 y 1040 px se mantiene la escala proporcional sin comprimir los textos. */
-@media (min-width: 741px) and (max-width: 1040px) {
-  .hobsbawm-page .hb-material-title { margin-top: -10px; }
-  .hobsbawm-page .hb-material-open {
-    aspect-ratio: 24 / 5.115;
-    min-height: 132px;
-    padding: 24px 30px;
-    gap: 18px;
-    font-size: clamp(42px, 9.7cqw, 68px);
-  }
-  .hobsbawm-page .hb-material-open > svg {
-    width: 38px;
-    height: 38px;
-  }
-  .hobsbawm-page .hb-material-open > svg:last-child {
-    width: 44px;
-    height: 44px;
-  }
-}
-@media (max-width: 740px) {
-  .hobsbawm-page .hb-material-title { margin-top: 0; }
-  .hobsbawm-page .hb-material-copy { width: 100%; }
-  .hobsbawm-page .hb-material-open > span { letter-spacing: -.01em; }
 }

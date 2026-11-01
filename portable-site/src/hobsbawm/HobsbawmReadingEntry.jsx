@@ -20,6 +20,7 @@ export default function HobsbawmReadingEntry({ onOpen, progress, noteCount, conf
   }, []);
 
   const entry = config.readingEntry;
+  const synopsisLines = entry.synopsis.split(/ (?=transformó la vida|de quienes lo vivieron|ese mundo y descubrir)/);
   const hasProgress = progress.currentTime > 3;
   const time = `${Math.floor(progress.currentTime / 60)}:${String(Math.floor(progress.currentTime % 60)).padStart(2, '0')}`;
 
@@ -33,15 +34,14 @@ export default function HobsbawmReadingEntry({ onOpen, progress, noteCount, conf
       </h2>
       <div className="hb-material-access">
         <div className="hb-material-geometry" aria-hidden="true">
-          <span className="hb-material-plate" />
           <span className="hb-material-dots" />
         </div>
-        <button className="hb-material-open" type="button" onClick={onOpen} aria-haspopup="dialog" aria-label="Abrir lector integrado">
+        <button className="hb-material-open" type="button" onClick={onOpen} aria-haspopup="dialog" aria-label="Abrir lector integrado" aria-describedby={hasProgress || noteCount > 0 ? "hb-material-resume" : undefined}>
           <Headphones aria-hidden="true" />
           <span aria-hidden="true">ABRIR EL LECTOR</span>
           <ArrowRight aria-hidden="true" />
         </button>
-      {(hasProgress || noteCount > 0) && <p className="hb-material-resume">
+      {(hasProgress || noteCount > 0) && <p id="hb-material-resume" className="hb-material-resume">
         {hasProgress ? `Retomá desde ${time}.` : ''}{noteCount > 0 && ` ${noteCount} ${noteCount === 1 ? 'nota guardada' : 'notas guardadas'}.`}
       </p>}
       </div>
@@ -52,7 +52,7 @@ export default function HobsbawmReadingEntry({ onOpen, progress, noteCount, conf
         <p className="hb-material-author">{entry.author}</p>
         <h3>{entry.title}</h3>
       </div>
-      <p className="hb-material-synopsis">{entry.synopsis}</p>
+      <p className="hb-material-synopsis">{synopsisLines.map((line, index) => <span className="hb-material-synopsis-line" key={line}>{line}{index < synopsisLines.length - 1 ? ' ' : ''}</span>)}</p>
     </div>
     <div className="hb-material-rule" aria-hidden="true" />
   </div>;
