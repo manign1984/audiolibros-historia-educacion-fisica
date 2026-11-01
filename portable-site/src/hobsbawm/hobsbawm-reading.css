@@ -172,7 +172,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
   .hobsbawm-page .hb-material-author { font-size: 10px; }
   .hobsbawm-page .hb-material-work h3 { font-size: 18px; }
   .hobsbawm-page .hb-material-synopsis { font-size: 16px; }
-  .hobsbawm-page .hb-material-synopsis-line { display: contents; white-space: normal; letter-spacing: 0; }
+  .hobsbawm-page .hb-material-synopsis-line:nth-child(n) { display: contents; white-space: normal; letter-spacing: 0; }
 }
 
 /* Móvil: LEÉ conserva el centro y la escala; las otras dos acciones
@@ -231,7 +231,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
   .hobsbawm-page .hb-material-copy { width: 100%; margin: 34px 0 0; }
   .hobsbawm-page .hb-material-author { font-size: 11px; margin-bottom: 7px; }
   .hobsbawm-page .hb-material-work { margin-bottom: 16px; }
-  .hobsbawm-page .hb-material-synopsis-line { display: contents; white-space: normal; letter-spacing: 0; }
+  .hobsbawm-page .hb-material-synopsis-line:nth-child(n) { display: contents; white-space: normal; letter-spacing: 0; }
   .hobsbawm-page .hb-material-work h3 { font-size: 23px; }
   .hobsbawm-page .hb-material-synopsis { font-size: 17px; line-height: 1.58; }
   .hobsbawm-page .hb-material-rule { margin-top: 34px; }
