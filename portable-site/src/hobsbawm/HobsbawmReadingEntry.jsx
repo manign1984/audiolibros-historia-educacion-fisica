@@ -24,34 +24,35 @@ export default function HobsbawmReadingEntry({ onOpen, progress, noteCount, conf
   const time = `${Math.floor(progress.currentTime / 60)}:${String(Math.floor(progress.currentTime % 60)).padStart(2, '0')}`;
 
   return <div ref={content} id="lector" className="hb-material-content">
-    <div className="hb-material-copy">
+    <div className="hb-material-hero">
       <JourneyBlockLabel sectionId="lectura" />
-      <h2 id="journey-reading-title" className="hb-material-title">
-        <span>LEÉ</span>{' '}<span>ESCUCHÁ</span>{' '}<span>ANOTÁ</span>
+      <h2 id="journey-reading-title" className="hb-material-title" aria-label="Leé, escuchá y anotá">
+        <span className="hb-material-word hb-material-word--listen" aria-hidden="true">ESCUCHÁ</span>
+        <span className="hb-material-word hb-material-word--read" aria-hidden="true">LEÉ</span>
+        <span className="hb-material-word hb-material-word--note" aria-hidden="true">ANOTÁ</span>
       </h2>
+      <div className="hb-material-access">
+        <div className="hb-material-geometry" aria-hidden="true">
+          <span className="hb-material-plate" />
+          <span className="hb-material-dots" />
+        </div>
+        <button className="hb-material-open" type="button" onClick={onOpen} aria-haspopup="dialog" aria-label="Abrir lector integrado">
+          <Headphones aria-hidden="true" />
+          <span aria-hidden="true">ABRIR EL LECTOR</span>
+          <ArrowRight aria-hidden="true" />
+        </button>
+      {(hasProgress || noteCount > 0) && <p className="hb-material-resume">
+        {hasProgress ? `Retomá desde ${time}.` : ''}{noteCount > 0 && ` ${noteCount} ${noteCount === 1 ? 'nota guardada' : 'notas guardadas'}.`}
+      </p>}
+      </div>
+    </div>
+
+    <div className="hb-material-copy">
       <div className="hb-material-work">
         <p className="hb-material-author">{entry.author}</p>
         <h3>{entry.title}</h3>
       </div>
       <p className="hb-material-synopsis">{entry.synopsis}</p>
-    </div>
-
-    <div className="hb-material-access">
-      <div className="hb-material-geometry" aria-hidden="true">
-        <span className="hb-material-quadrant" />
-        <span className="hb-material-lines" />
-        <span className="hb-material-plate" />
-        <span className="hb-material-dots" />
-      </div>
-      <p className="hb-material-concept">El texto en el centro<br />de los procesos<br />de enseñanza y aprendizaje</p>
-      <button className="hb-material-open" type="button" onClick={onOpen} aria-haspopup="dialog">
-        <Headphones aria-hidden="true" />
-        <span>ABRIR EL LECTOR INTEGRADO</span>
-        <ArrowRight aria-hidden="true" />
-      </button>
-      {(hasProgress || noteCount > 0) && <p className="hb-material-resume">
-        {hasProgress ? `Retomá desde ${time}.` : ''}{noteCount > 0 && ` ${noteCount} ${noteCount === 1 ? 'nota guardada' : 'notas guardadas'}.`}
-      </p>}
     </div>
     <div className="hb-material-rule" aria-hidden="true" />
   </div>;
