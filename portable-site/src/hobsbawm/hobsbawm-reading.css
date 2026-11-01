@@ -29,7 +29,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
   font-family: 'Archivo', sans-serif;
 }
 .hobsbawm-page .hb-material-hero { position: relative; width: 100%; min-width: 0; }
-.hobsbawm-page .hb-material-hero > .journey-block-label {
+.hobsbawm-page #lectura .hb-material-hero > .journey-block-label {
   position: absolute;
   z-index: 2;
   top: calc(-7 * var(--hb-unit));
@@ -167,7 +167,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
 /* En tablet la misma retícula conserva proporciones y texto legible. */
 @media (min-width: 741px) and (max-width: 1040px) {
   .hobsbawm-page .hb-material-content { padding-bottom: 36px; }
-  .hobsbawm-page .hb-material-hero > .journey-block-label { font-size: 12px; }
+  .hobsbawm-page #lectura .hb-material-hero > .journey-block-label { font-size: 12px; }
   .hobsbawm-page .hb-material-copy { width: 70%; margin-left: 19.4089%; }
   .hobsbawm-page .hb-material-author { font-size: 10px; }
   .hobsbawm-page .hb-material-work h3 { font-size: 18px; }
@@ -180,8 +180,8 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
 @media (max-width: 740px) {
   body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading { padding-block: 36px 52px; }
   .hobsbawm-page .hb-material-content { width: calc(100% - 40px); padding: 0; }
-  .hobsbawm-page .hb-material-hero > .journey-block-label { position: static; font-size: 12px; }
-  .hobsbawm-page .hb-material-hero > .journey-block-label { margin-bottom: 24px; }
+  .hobsbawm-page #lectura .hb-material-hero > .journey-block-label { position: static; font-size: 12px; }
+  .hobsbawm-page #lectura .hb-material-hero > .journey-block-label { margin-bottom: 24px; }
   .hobsbawm-page .hb-material-title {
     display: grid;
     width: 100%;
