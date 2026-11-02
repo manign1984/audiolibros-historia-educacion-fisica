@@ -1,6 +1,7 @@
 /* Calibración editorial 02/11/2026: sólo sección 04 de Hobsbawm.
    Los demás bloques y el lector integrado se mantienen intactos.
-   Pantalla completa bajo el encabezado; centrado de composición sin cambiar escalas. */
+   Pantalla completa bajo el encabezado; centrado de composición sin cambiar escalas.
+   02/11: ritmo vertical ampliado entre verbos, botón y sinopsis. */
 /* +TEC UNAHUR · Hobsbawm · Bloque 04 LECTURA
    Referencia: mitad izquierda de «Sin títuloO-1.png», 1015 px de ancho.
    Las distancias se expresan en unidades de esa maqueta; fuentes y paleta
@@ -71,7 +72,8 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
   width: calc(488 * var(--hb-unit));
   min-width: 0;
   container-type: inline-size;
-  margin: 0 0 0 calc(261 * var(--hb-unit) + var(--hb-group-shift));
+  /* Más aire entre el título de tres acciones y el botón, sin alterar sus tamaños. */
+  margin: calc(30 * var(--hb-unit)) 0 0 calc(261 * var(--hb-unit) + var(--hb-group-shift));
   padding: 0;
 }
 .hobsbawm-page .hb-material-geometry { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
@@ -157,7 +159,8 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
 .hobsbawm-page .hb-material-copy {
   width: calc(470 * var(--hb-unit));
   min-width: 0;
-  margin: calc(24 * var(--hb-unit)) 0 0 calc(225 * var(--hb-unit) + var(--hb-group-shift));
+  /* La ficha respira bajo el relieve del botón, manteniendo el conjunto centrado. */
+  margin: calc(52 * var(--hb-unit)) 0 0 calc(225 * var(--hb-unit) + var(--hb-group-shift));
   color: var(--material-ink);
   text-align: left;
 }
@@ -214,7 +217,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
   }
   .hobsbawm-page .hb-material-access {
     width: min(100%, 356px);
-    margin: 16px auto 0;
+    margin: 24px auto 0;
     padding-inline: 0;
   }
   .hobsbawm-page .hb-material-open {
@@ -232,7 +235,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
     width: clamp(25px, 4.4vw, 33px);
     height: clamp(25px, 4.4vw, 33px);
   }
-  .hobsbawm-page .hb-material-copy { width: 100%; margin: 24px 0 0; }
+  .hobsbawm-page .hb-material-copy { width: 100%; margin: 32px 0 0; }
   .hobsbawm-page .hb-material-author { font-size: 11px; margin-bottom: 7px; }
   .hobsbawm-page .hb-material-work { margin-bottom: 16px; }
   .hobsbawm-page .hb-material-synopsis-line:nth-child(n) { display: contents; white-space: normal; letter-spacing: 0; }
