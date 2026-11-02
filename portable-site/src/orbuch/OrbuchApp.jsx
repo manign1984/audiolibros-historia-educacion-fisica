@@ -8,6 +8,7 @@ import {
   School,
 } from 'lucide-react';
 import IntegratedReader from '../IntegratedReader.jsx';
+import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
 import { AuthorBiography, PineauLayoutReference } from '../shared/CanonicalLayout.jsx';
 import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
@@ -291,8 +292,8 @@ function ContextSection() {
 
 function ReadingSection() {
   return (
-    <section id="lectura" className="journey-reading" aria-labelledby="journey-reading-title">
-      <IntegratedReader readingDocument={orbuchReadingDocument} config={orbuchReaderConfig} />
+    <section id="lectura" className="journey-reading hb-material-reading" aria-labelledby="journey-reading-title">
+      <IntegratedReader readingDocument={orbuchReadingDocument} config={orbuchReaderConfig} Launcher={CanonicalReadingEntry} />
     </section>
   );
 }

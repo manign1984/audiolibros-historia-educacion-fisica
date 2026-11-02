@@ -30,6 +30,27 @@ const [reader, pineauApp, orbuchApp, orbuchStyles, readerStyles, configSource, a
 ]);
 const timingData = JSON.parse(timingSource);
 
+// El diseño canónico de Lectura se comparte: únicamente cambian los colores y los datos.
+const canonicalEntry = await text('src/shared/CanonicalReadingEntry.jsx');
+const canonicalStyles = await text('src/shared/canonical-reading.css');
+const hobsbawmEntry = await text('src/hobsbawm/HobsbawmReadingEntry.jsx');
+const hobsbawmApp = await text('src/hobsbawm/HobsbawmApp.jsx');
+assert.match(hobsbawmEntry, /shared\/CanonicalReadingEntry\.jsx/);
+assert.match(hobsbawmApp, /Launcher=\{HobsbawmReadingEntry\}/);
+assert.match(orbuchApp, /Launcher=\{CanonicalReadingEntry\}/);
+assert.match(orbuchApp, /className="journey-reading hb-material-reading"/);
+assert.match(canonicalEntry, /ESCUCHÁ/);
+assert.match(canonicalEntry, /LEÉ/);
+assert.match(canonicalEntry, /ANOTÁ/);
+assert.match(canonicalEntry, /ABRIR EL LECTOR/);
+assert.match(canonicalStyles, /min-height: var\(--reading-room/);
+assert.match(canonicalStyles, /margin: calc\(30 \* var\(--hb-unit\)\)/);
+assert.match(canonicalStyles, /margin: calc\(52 \* var\(--hb-unit\)\)/);
+assert.match(canonicalStyles, /#d7ebf4/);
+assert.match(canonicalStyles, /#f0bb2d/);
+assert.match(canonicalStyles, /\.orbuch-page #lectura\.hb-material-reading/);
+assert.doesNotMatch(orbuchApp, /El texto en el centro de los procesos de enseñanza/);
+
 assert.match(pineauApp, /import IntegratedReader from '\.\/IntegratedReader\.jsx'/);
 assert.match(orbuchApp, /import IntegratedReader from '\.\.\/IntegratedReader\.jsx'/);
 assert.equal(
