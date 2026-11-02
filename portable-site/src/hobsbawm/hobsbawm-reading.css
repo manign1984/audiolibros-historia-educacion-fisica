@@ -1,5 +1,6 @@
 /* Calibración editorial 02/11/2026: sólo sección 04 de Hobsbawm.
-   Los demás bloques y el lector integrado se mantienen intactos. */
+   Los demás bloques y el lector integrado se mantienen intactos.
+   Pantalla completa bajo el encabezado; centrado de composición sin cambiar escalas. */
 /* +TEC UNAHUR · Hobsbawm · Bloque 04 LECTURA
    Referencia: mitad izquierda de «Sin títuloO-1.png», 1015 px de ancho.
    Las distancias se expresan en unidades de esa maqueta; fuentes y paleta
@@ -11,11 +12,12 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading {
   --material-rust: #aa4128;
   position: relative;
   container-type: inline-size;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   color: var(--material-ink);
   background: var(--material-paper);
   padding: 0;
-  min-height: 0;
+  min-height: var(--reading-room, calc(100svh - var(--journey-header-height, 80px)));
   height: auto;
   overflow: visible;
 }
@@ -23,6 +25,8 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading {
 body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { content: none; }
 .hobsbawm-page .hb-material-content {
   --hb-unit: calc(min(100cqw, 1140px) / 1015);
+  /* Centrado óptico de los tres elementos principales sin mover el rótulo 04. */
+  --hb-group-shift: calc(max(0px, 50cqw - 570px) + 26 * var(--hb-unit));
   position: relative;
   width: min(100%, 2000px);
   margin-inline: auto;
@@ -48,7 +52,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
   grid-template-columns: calc(251 * var(--hb-unit)) calc(179 * var(--hb-unit)) 1fr;
   align-items: start;
   width: calc(575 * var(--hb-unit));
-  margin: 0 0 0 calc(194 * var(--hb-unit));
+  margin: 0 0 0 calc(194 * var(--hb-unit) + var(--hb-group-shift));
   padding: 0;
   color: var(--material-ink);
   font: 400 min(calc(74 * var(--hb-unit)), 84px)/1 'Bebas Neue', sans-serif;
@@ -67,7 +71,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
   width: calc(488 * var(--hb-unit));
   min-width: 0;
   container-type: inline-size;
-  margin: 0 0 0 calc(261 * var(--hb-unit));
+  margin: 0 0 0 calc(261 * var(--hb-unit) + var(--hb-group-shift));
   padding: 0;
 }
 .hobsbawm-page .hb-material-geometry { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
@@ -153,7 +157,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
 .hobsbawm-page .hb-material-copy {
   width: calc(470 * var(--hb-unit));
   min-width: 0;
-  margin: calc(24 * var(--hb-unit)) 0 0 calc(225 * var(--hb-unit));
+  margin: calc(24 * var(--hb-unit)) 0 0 calc(225 * var(--hb-unit) + var(--hb-group-shift));
   color: var(--material-ink);
   text-align: left;
 }
@@ -168,7 +172,7 @@ body:has(.journey-header) .hobsbawm-page #lectura.hb-material-reading::before { 
 @media (min-width: 741px) and (max-width: 1040px) {
   .hobsbawm-page .hb-material-content { padding-bottom: 36px; }
   .hobsbawm-page #lectura .hb-material-hero > .journey-block-label { font-size: 12px; }
-  .hobsbawm-page .hb-material-copy { width: 70%; margin-left: 22.1675%; }
+  .hobsbawm-page .hb-material-copy { width: 70%; margin-left: calc(22.1675% + var(--hb-group-shift)); }
   .hobsbawm-page .hb-material-author { font-size: 10px; }
   .hobsbawm-page .hb-material-work h3 { font-size: clamp(18px, 2.1vw, 22px); }
   .hobsbawm-page .hb-material-synopsis { font-size: 16px; }
