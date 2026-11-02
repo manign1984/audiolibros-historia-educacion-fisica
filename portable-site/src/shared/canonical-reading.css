@@ -178,7 +178,7 @@ body:has(.journey-header) :is(.hobsbawm-page, .orbuch-page) #lectura.hb-material
 body:has(.journey-header) .orbuch-page #lectura.hb-material-reading {
   --material-paper: #d7ebf4;
   --material-ink: #0b2e59;
-  --material-rust: #c83d2c;
+  --material-rust: #8f291f;
 }
 .orbuch-page .hb-material-dots {
   background: radial-gradient(circle at 4px 4px, rgba(11, 46, 89, .38) 0 1.6px, transparent 2px) 0 0 / 17px 17px;
@@ -188,7 +188,7 @@ body:has(.journey-header) .orbuch-page #lectura.hb-material-reading {
   border-color: rgba(114, 181, 214, .76);
   border-right-color: rgba(7, 27, 53, .92);
   border-bottom-color: rgba(5, 19, 36, .98);
-  background: linear-gradient(156deg, #397da2 0%, #1b557c 43%, #092c4d 100%);
+  background: linear-gradient(156deg, #306e94 0%, #1b557c 43%, #092c4d 100%);
   box-shadow:
     inset 2px 3px 2px rgba(219, 243, 255, .42),
     inset 7px 0 8px rgba(114, 181, 214, .18),
