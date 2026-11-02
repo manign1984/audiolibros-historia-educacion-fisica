@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { timeline } from './data.js';
 import IntegratedReader from './IntegratedReader.jsx';
+import CanonicalReadingEntry from './shared/CanonicalReadingEntry.jsx';
 import { pineauReaderConfig } from './readerConfigs.js';
 import { readingDocument } from './readingDocument.js';
 import JourneyHeader, { JOURNEY_SECTIONS as NAV_ITEMS, useJourneyNavigation } from './shared/JourneyHeader.jsx';
@@ -533,8 +534,8 @@ function ContextSection() {
 
 function ReadingSection({ showToast }) {
   return (
-    <section id="lectura" className="journey-reading tracked-section" aria-labelledby="journey-reading-title">
-      <IntegratedReader showToast={showToast} readingDocument={readingDocument} config={pineauReaderConfig} />
+    <section id="lectura" className="journey-reading tracked-section hb-material-reading" aria-labelledby="journey-reading-title">
+      <IntegratedReader showToast={showToast} readingDocument={readingDocument} config={pineauReaderConfig} Launcher={CanonicalReadingEntry} />
     </section>
   );
 }
@@ -556,7 +557,7 @@ export default function App() {
   return (
     <>
       <TopBar progress={progress} active={active} />
-      <main>
+      <main className="pineau-page">
         <Hero soundOn={soundOn} setSoundOn={setSoundOn} />
         <AuthorSection />
         <ContextSection />
