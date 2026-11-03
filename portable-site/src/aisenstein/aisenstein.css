@@ -76,11 +76,11 @@
 /* Lectura: mismo dispositivo editorial aprobado para las otras obras. */
 .aisenstein-sections #lectura.aisenstein-reading {
   --material-paper:#efe6d6;--material-ink:#243846;--material-rust:#915336;
-  --reading-room:calc(100svh - 80px);
+  --reading-room:calc(100svh - var(--journey-header-height, 80px));
 }
 .aisenstein-sections #lectura .hb-material-content {--material-paper:#efe6d6;--material-ink:#243846;--material-rust:#915336;}
 .aisenstein-sections #creditos.journey-credits {
-  box-sizing:border-box;min-height:calc(100svh - 80px);height:auto;
+  box-sizing:border-box;min-height:calc(100svh - var(--journey-header-height, 80px));height:auto;
   display:flex;align-items:center;padding:20px 0;color:#f4eddf;background:#202f3a;
   font:400 14px/1.5 'Archivo',sans-serif;
 }
@@ -109,7 +109,7 @@
   .aisenstein-context__panel h3 {font-size:clamp(36px,9vw,54px);}
   .aisenstein-context__panel > p:not(.aisenstein-context__panel-tag) {font-size:14px;}
   .aisenstein-context__reflection {margin-top:65px;}
-  .aisenstein-sections #creditos.journey-credits {min-height:calc(100svh - 72px);}
+  .aisenstein-sections #creditos.journey-credits {min-height:calc(100svh - var(--journey-header-height, 112px));}
 }
 @media(prefers-reduced-motion:reduce) {.aisenstein-sections * {animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
@@ -119,10 +119,10 @@
    exploración de tres lentes historiográficos y no la cronología de Pineau.
    Las alturas se calculan para ESTA obra; no se aplican a otras páginas. */
 .aisenstein-sections.canonical-page {
-  --height-autor: calc(100svh - 80px);
+  --height-autor: calc(100svh - var(--journey-header-height, 80px));
   --height-contexto: 0px;
-  --height-lectura: calc(100svh - 80px);
-  --height-creditos: calc(100svh - 80px);
+  --height-lectura: calc(100svh - var(--journey-header-height, 80px));
+  --height-creditos: calc(100svh - var(--journey-header-height, 80px));
 }
 .aisenstein-sections.canonical-page #autor.aisenstein-author {
   min-height: var(--height-autor);
@@ -209,9 +209,9 @@
 
 /* 04: un espacio de lectura tan protagonista como la portada, sin rediseñar
    el botón canónico del proyecto ni modificar la mecánica del lector. */
-body:has(.aisenstein-preview__header) .aisenstein-sections.canonical-page #lectura.aisenstein-reading {
+body:has(.journey-header) .aisenstein-sections.canonical-page #lectura.aisenstein-reading {
   box-sizing: border-box;
-  min-height: calc(100svh - 80px);
+  min-height: calc(100svh - var(--journey-header-height, 80px));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,7 +283,7 @@ body:has(.aisenstein-preview__header) .aisenstein-sections.canonical-page #lectu
   .aisenstein-sections.canonical-page #creditos.journey-credits {min-height: auto;}
 }
 @media (max-width: 740px) {
-  body:has(.aisenstein-preview__header) .aisenstein-sections.canonical-page #lectura.aisenstein-reading {
+  body:has(.journey-header) .aisenstein-sections.canonical-page #lectura.aisenstein-reading {
     min-height: auto;
     padding: 58px 0 72px;
   }

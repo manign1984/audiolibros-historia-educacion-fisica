@@ -52,5 +52,21 @@ const cover = await load('src/aisenstein/InicioPreview.jsx');
 assert.doesNotMatch(page, /PineauLayoutReference/, 'Aisenstein no debe adoptar las alturas de la cronología de Pineau.');
 assert.match(style, /--height-contexto:\s*0px;/, 'Contexto debe ajustar su altura al contenido.');
 assert.match(style, /#contexto\.aisenstein-context\s*\{[\s\S]*?min-height:\s*0/, 'Contexto no debe dejar una gran franja vacía.');
-assert.match(style, /#lectura\.aisenstein-reading\s*\{[\s\S]*?min-height:\s*calc\(100svh - 80px\)/, 'Lectura debe recuperar un espacio editorial propio.');
+assert.match(style, /#lectura\.aisenstein-reading\s*\{[\s\S]*?min-height:\s*calc\(100svh - var\(--journey-header-height, 80px\)\)/, 'Lectura debe recuperar un espacio editorial propio bajo el encabezado medido.');
 assert.match(cover, /Conocer a la autora/, 'El botón de portada debe indicar su destino.');
+
+const coverCss = await load('src/aisenstein/inicio-preview.css');
+const sharedHeader = await load('src/shared/JourneyHeader.jsx');
+const headerCss = await load('src/shared/journey-header.css');
+assert.match(cover, /<JourneyHeader/, 'Aisenstein debe adoptar el encabezado compartido.');
+assert.match(cover, /useJourneyNavigation\(\)/, 'Aisenstein debe mostrar sección activa y progreso de lectura.');
+assert.doesNotMatch(cover, /aisenstein-preview__header/, 'No duplicar encabezado local.');
+assert.match(headerCss, /#0c0e15/, 'El encabezado común debe conservar el fondo grafito.');
+for (const item of ['Inicio', 'Autor', 'Contexto', 'Lectura', 'Créditos']) {
+  assert.ok(sharedHeader.includes("'" + item + "'"), 'Falta la navegación común: ' + item);
+}
+assert.match(coverCss, /height:\s*var\(--hero-room/, 'Inicio debe usar el alto de pantalla menos encabezado.');
+assert.match(coverCss, /min-height:\s*var\(--hero-room/, 'Inicio debe conservar un mínimo de pantalla.');
+assert.match(coverCss, /max-height:\s*none/, 'No truncar el contenido de Inicio.');
+assert.match(coverCss, /max-height:\s*580px/, 'Inicio debe crecer en ventanas excepcionalmente bajas.');
+assert.match(coverCss, /margin:\s*0;/, 'La página no debe conservar los márgenes por defecto del navegador.');
