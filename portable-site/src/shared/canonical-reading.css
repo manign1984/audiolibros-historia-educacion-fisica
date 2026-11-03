@@ -160,15 +160,15 @@ body:has(.journey-header, .aisenstein-preview__header) :is(.hobsbawm-page, .orbu
   width: calc(470 * var(--hb-unit));
   min-width: 0;
   /* La ficha respira bajo el relieve del botón, manteniendo el conjunto centrado. */
-  margin: calc(52 * var(--hb-unit)) 0 0 calc(225 * var(--hb-unit) + var(--hb-group-shift));
+  margin: calc(52 * var(--hb-unit)) auto 0;
   color: var(--material-ink);
   text-align: left;
 }
 :is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-work { margin: 0 0 calc(12 * var(--hb-unit)); }
 :is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-author { margin: 0 0 calc(7 * var(--hb-unit)); color: var(--material-rust); font: 700 calc(10 * var(--hb-unit))/1.35 'Archivo', sans-serif; letter-spacing: .065em; text-transform: uppercase; }
-:is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-work h3 { margin: 0; color: var(--material-ink); font: 700 clamp(18px, calc(19.5 * var(--hb-unit)), 23px)/1.25 'Archivo', sans-serif; letter-spacing: -.02em; text-transform: none; text-align: justify; text-align-last: justify; text-justify: inter-word; }
-:is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-synopsis { max-width: none; margin: 0; color: #18354a; font: 400 clamp(15px, calc(14.5 * var(--hb-unit)), 18px)/1.5 'Archivo', sans-serif; letter-spacing: 0; text-align: justify; text-align-last: justify; text-justify: inter-word; }
-:is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-synopsis-line { display: block; text-align: justify; text-align-last: justify; text-justify: inter-word; white-space: normal; letter-spacing: normal; }
+:is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-work h3 { margin: 0; color: var(--material-ink); font: 700 clamp(18px, calc(19.5 * var(--hb-unit)), 23px)/1.25 'Archivo', sans-serif; letter-spacing: -.02em; text-transform: none; text-align: justify; text-align-last: start; text-justify: inter-word; }
+:is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-synopsis { max-width: none; margin: 0; color: #18354a; font: 400 clamp(15px, calc(14.5 * var(--hb-unit)), 18px)/1.5 'Archivo', sans-serif; letter-spacing: 0; text-align: justify; text-align-last: start; text-justify: inter-word; }
+:is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-synopsis-line { display: block; text-align: justify; text-align-last: start; text-justify: inter-word; white-space: normal; letter-spacing: normal; }
 :is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-rule { display: none; }
 
 
@@ -243,15 +243,16 @@ body:has(.journey-header, .aisenstein-preview__header) .pineau-page #lectura.hb-
 }
 .pineau-page .hb-material-synopsis { color: #274c4a; }
 
-/* Título y sinopsis: justificación forzada de todas las líneas, incluso
-   la última. Se modifica el tratamiento de párrafo del modelo común,
-   sin alinear al centro ni cambiar el ancho/posición de la ficha. */
+/* Título y sinopsis: justificación editorial de líneas completas.
+   La última línea conserva sus espacios naturales y queda al inicio.
+   La ficha se centra como caja dentro de la sección; el texto no se
+   centra por renglones. Regla común para todas las obras. */
 
 /* En tablet la misma retícula conserva proporciones y texto legible. */
 @media (min-width: 741px) and (max-width: 1040px) {
   :is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-content { padding-bottom: 36px; }
   :is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) #lectura .hb-material-hero > .journey-block-label { font-size: 12px; }
-  :is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-copy { width: 70%; margin-left: calc(22.1675% + var(--hb-group-shift)); }
+  :is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-copy { width: 70%; margin-inline: auto; }
   :is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-author { font-size: 10px; }
   :is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-work h3 { font-size: clamp(18px, 2.1vw, 22px); }
   :is(.hobsbawm-page, .orbuch-page, .pineau-page, .aisenstein-preview) .hb-material-synopsis { font-size: 16px; }
