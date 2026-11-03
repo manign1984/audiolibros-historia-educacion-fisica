@@ -124,8 +124,8 @@ assert.doesNotMatch(style, /#lectura\.aisenstein-reading\s*\{[^}]*padding:/, 'El
 assert.doesNotMatch(style, /#lectura\.aisenstein-reading\s*\{[^}]*justify-content:/, 'El centrado pertenece al componente compartido.');
 
 
-// Tipografía canónica revisada: justificación forzada del título y sinopsis,
-// incluida la última línea, en todas las obras (sin anchos locales nuevos).
+// Tipografía canónica: justificar líneas completas, dejar natural la última,
+// y centrar la caja bibliográfica sin variar la geometría general del bloque.
 for (const selector of [
   'hb-material-work h3',
   'hb-material-synopsis',
@@ -134,6 +134,21 @@ for (const selector of [
   const cssRule = canonicalReadingCss.split('\n').find((line) => line.includes('.' + selector + ' {'));
   assert.ok(cssRule, 'Falta regla compartida de ' + selector);
   assert.match(cssRule, /text-align:\s*justify;/, 'Justificación completa requerida: ' + selector);
-  assert.match(cssRule, /text-align-last:\s*justify;/, 'La última línea debe justificarse: ' + selector);
+  assert.match(cssRule, /text-align-last:\s*start;/, 'La última línea debe conservar su espaciado natural: ' + selector);
 }
 assert.doesNotMatch(style, /#lectura\s+\.hb-material-(?:synopsis|work h3)\s*\{[^}]*text-align:/, 'Aisenstein no puede alterar la justificación canónica.');
+
+
+// Lectura: la caja bibliográfica se centra, pero los renglones no.
+const readingCopyRule = canonicalReadingCss.match(/\.hb-material-copy\s*\{([\s\S]*?)\}/);
+assert.ok(readingCopyRule, 'Debe existir la ficha común.');
+assert.match(readingCopyRule[1], /margin:\s*calc\(52 \* var\(--hb-unit\)\) auto 0;/, 'Centrar la ficha bibliográfica como bloque.');
+assert.doesNotMatch(readingCopyRule[1], /var\(--hb-group-shift\)/, 'La ficha no debe heredar el desplazamiento de las acciones tipográficas.');
+assert.match(canonicalReadingCss, /\.hb-material-copy\s*\{\s*width:\s*70%;\s*margin-inline:\s*auto;/, 'Mantener centrado en tabletas.');
+// Créditos: Aisenstein no debe extender la altura y separación de la unidad
+// canónica compartida con overrides de tipografía, ancho o padding.
+const canonicalCreditsCss = await load('src/shared/journey-credits.css');
+assert.match(canonicalCreditsCss, /min-height:calc\(100svh - var\(--journey-header-height,80px\)\)/, 'Créditos calculados desde el viewport útil.');
+assert.doesNotMatch(style, /\.aisenstein-sections(?:\.canonical-page)?\s+#creditos/, 'No introducir métricas locales que desborden el cierre común.');
+assert.match(canonicalCreditsCss, /@media\(min-width:1024px\) and \(max-height:720px\)/, 'Créditos compartidos se adaptan a ventanas de poca altura.');
+assert.match(canonicalCreditsCss, /@media\(max-width:640px\)/, 'Créditos conservan la distribución móvil accesible.');
