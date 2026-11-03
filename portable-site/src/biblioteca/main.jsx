@@ -9,11 +9,12 @@ import '@fontsource/sora/latin-500.css';
 import '@fontsource/sora/latin-600.css';
 import '@fontsource/sora/latin-700.css';
 import LibraryHome, { WorkPage } from './LibraryHome.jsx';
+import AisensteinInicioPreview from '../aisenstein/InicioPreview.jsx';
 import { catalog } from './catalog.js';
 import './library.css';
 
 const slug = window.location.pathname.replace(/\/index\.html$/, '/').split('/').filter(Boolean).at(-1);
 const entry = catalog.find((item) => item.id === slug && item.status === 'preparation');
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>{entry ? <WorkPage entry={entry} /> : <LibraryHome />}</React.StrictMode>,
+  <React.StrictMode>{entry?.id === 'aisenstein-tabla-rasa' ? <AisensteinInicioPreview /> : entry ? <WorkPage entry={entry} /> : <LibraryHome />}</React.StrictMode>,
 );
