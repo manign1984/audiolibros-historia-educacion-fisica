@@ -3,7 +3,7 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import AisensteinInicioPreview from './InicioPreview.jsx';
 import IntegratedReader from '../IntegratedReader.jsx';
 import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
-import { AuthorBiography, PineauLayoutReference } from '../shared/CanonicalLayout.jsx';
+import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import { aisensteinReaderConfig } from '../readerConfigs.js';
@@ -83,7 +83,6 @@ export default function AisensteinApp() {
   useEffect(() => { if (!toast) return undefined; const timer = window.setTimeout(() => setToast(''), 3200); return () => window.clearTimeout(timer); }, [toast]);
   return <AisensteinInicioPreview>
     <div className="aisenstein-sections canonical-page">
-      <PineauLayoutReference />
       <section id="autor" className="aisenstein-author tracked-section">
         <AuthorBiography
           name="Ángela Aisenstein" initial="A"
