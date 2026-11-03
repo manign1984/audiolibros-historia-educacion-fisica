@@ -270,11 +270,16 @@
 }
 
 /* Lectura: mismo dispositivo editorial aprobado para las otras obras. */
-.aisenstein-sections #lectura.aisenstein-reading {
-  --material-paper:#efe6d6;--material-ink:#243846;--material-rust:#915336;
+/* Solo paleta propia: geometría, tipografía y centrado pertenecen
+   íntegramente al bloque 04 canónico compartido con Hobsbawm. */
+body:has(.journey-header) .aisenstein-preview .aisenstein-sections #lectura.hb-material-reading {
+  --material-paper:#efe6d6;
+  --material-ink:#243846;
+  --material-rust:#915336;
   --reading-room:calc(100svh - var(--journey-header-height, 80px));
+  background:var(--material-paper);
+  color:var(--material-ink);
 }
-.aisenstein-sections #lectura .hb-material-content {--material-paper:#efe6d6;--material-ink:#243846;--material-rust:#915336;}
 .aisenstein-sections #creditos.journey-credits {
   box-sizing:border-box;min-height:calc(100svh - var(--journey-header-height, 80px));height:auto;
   display:flex;align-items:center;padding:20px 0;color:#f4eddf;background:#202f3a;
@@ -350,29 +355,9 @@
   overflow: visible;
 }
 
-/* 04: un espacio de lectura tan protagonista como la portada, sin rediseñar
-   el botón canónico del proyecto ni modificar la mecánica del lector. */
-body:has(.journey-header) .aisenstein-sections.canonical-page #lectura.aisenstein-reading {
-  box-sizing: border-box;
-  min-height: calc(100svh - var(--journey-header-height, 80px));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: clamp(58px, 7vw, 94px) 0;
-  background: #efe6d6;
-}
-.aisenstein-preview #lectura .hb-material-content {width: min(100%, 1250px);}
-@media (min-width: 1041px) {
-  .aisenstein-preview #lectura .hb-material-copy {width: calc(530 * var(--hb-unit));}
-}
-.aisenstein-preview #lectura .hb-material-work h3 {
-  font-size: clamp(21px, 1.9vw, 27px);
-  line-height: 1.3;
-}
-.aisenstein-preview #lectura .hb-material-synopsis {
-  font-size: clamp(16px, 1.3vw, 19px);
-  line-height: 1.65;
-}
+/* 04 · LECTURA: sin reglas locales de ancho, márgenes, posiciones, alturas,
+   fuentes ni separaciones. Conserva exactamente la retícula de Hobsbawm
+   definida en shared/canonical-reading.css. */
 
 /* 05: restitución de la jerarquía tipográfica y del aire entre columnas. */
 .aisenstein-sections.canonical-page #creditos.journey-credits {
@@ -422,12 +407,6 @@ body:has(.journey-header) .aisenstein-sections.canonical-page #lectura.aisenstei
   .aisenstein-sections.canonical-page #creditos.journey-credits {min-height: auto;}
 }
 @media (max-width: 740px) {
-  body:has(.journey-header) .aisenstein-sections.canonical-page #lectura.aisenstein-reading {
-    min-height: auto;
-    padding: 58px 0 72px;
-  }
-  .aisenstein-preview #lectura .hb-material-content {width: calc(100% - 40px);}
-  .aisenstein-preview #lectura .hb-material-copy {width: 100%;}
   .aisenstein-sections #creditos .journey-credits__inner {
     width: calc(100% - 40px);
   }
