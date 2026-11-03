@@ -1,11 +1,11 @@
 /* 05 · CRÉDITOS — cierre editorial común, revisión 03/11/2026.
    Escritorio: lema | referencias | derechos en tres columnas.
    El pie institucional atraviesa el ancho inferior y conserva los logos.
-   El fondo es grafito neutro opaco; no se añaden imágenes ni degradados.
+   El fondo replica exactamente el encabezado compartido (negro azulado #0C0E15); no se añaden imágenes ni degradados.
    La altura de una pantalla es el objetivo, nunca motivo para cortar texto. */
 body:has(.journey-header) #creditos.journey-credits {
   --journey-label-color:#d4b27d;
-  --credits-surface:#1c1e20;
+  --credits-surface:var(--journey-header-surface,#0c0e15);
   --credits-ink:#f1ede5;
   --credits-accent:#d4b27d;
   box-sizing:border-box;
