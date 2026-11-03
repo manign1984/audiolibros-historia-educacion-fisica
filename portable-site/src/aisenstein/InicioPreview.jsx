@@ -1,4 +1,3 @@
-import { ArrowRight } from 'lucide-react';
 import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import './inicio-preview.css';
 
@@ -26,10 +25,12 @@ export default function AisensteinInicioPreview({ children }) {
             <h1 id="aisenstein-hero-title">¿Hacemos<br />tabla rasa<br /><em>del pasado?</em></h1>
             <p className="aisenstein-preview__subtitle">El saber histórico en la formación docente en Educación Física</p>
             <p className="aisenstein-preview__question">¿Para qué me sirve estudiar historia en el profesorado?</p>
-            <a className="aisenstein-preview__action" href="#autor">
-              Conocer a la autora <ArrowRight size={18} aria-hidden="true" />
-            </a>
+
           </div>
+          <p className="aisenstein-preview__source-note">
+            <span className="aisenstein-preview__source-label">Una imagen, una historia · 1793</span>
+            <span>Esta composición retoma el <a href="https://wellcomecollection.org/works/wxnc8jhk" target="_blank" rel="noreferrer">frontispicio de <cite>Gymnastik für die Jugend</cite></a>, de J. C. F. GutsMuths. La figura es <strong>Higía</strong>, diosa griega de la salud, cuyo nombre dio origen a «higiene».</span>
+          </p>
         </section>
         {children}
       </main>
