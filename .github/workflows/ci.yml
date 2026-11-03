@@ -41,6 +41,9 @@ jobs:
       - name: Test Hobsbawm resources and synchronization
         run: npm run test:hobsbawm
 
+      - name: Test Aisenstein assets and reading
+        run: npm run test:aisenstein
+
       - name: Build static site
         run: npm run build
 
