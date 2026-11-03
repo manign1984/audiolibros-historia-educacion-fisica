@@ -40,11 +40,10 @@ function ContextLenses() {
         <div className="aisenstein-context__heading">
           <div className="aisenstein-context__heading-primary">
             <JourneyBlockLabel sectionId="contexto" />
-            <p className="aisenstein-context__kicker">Primera mirada · Los objetos de investigación</p>
-            <h2 id="aisenstein-context-title">Tres objetos.<br /><em>Una historia por interrogar.</em></h2>
+            <p className="aisenstein-context__kicker">Primera mirada · Objetos de investigación</p>
+            <h2 id="aisenstein-context-title">Tres objetos<br /><em>de investigación.</em></h2>
           </div>
           <div className="aisenstein-context__heading-secondary">
-            <span className="aisenstein-context__screen-count">01 / 02</span>
             <p>Aisenstein propone tres objetos para investigar históricamente la Educación Física. Cada uno permite formular preguntas diferentes sobre las prácticas, los saberes y la escuela.</p>
           </div>
         </div>
@@ -69,11 +68,10 @@ function ContextLenses() {
       <div className="aisenstein-context__screen-inner">
         <div className="aisenstein-context__conscience-top">
           <div>
-            <p className="aisenstein-context__kicker">03 · Contexto / Segunda mirada</p>
+            <p className="aisenstein-context__kicker">Segunda mirada · Conciencia histórica</p>
             <h2 id="aisenstein-conscience-title">Conciencia<br /><em>histórica.</em></h2>
           </div>
           <div className="aisenstein-context__conscience-intro">
-            <span className="aisenstein-context__screen-count">02 / 02</span>
             <p>Aprender historia no consiste solamente en acumular datos del pasado. Aisenstein retoma la noción de conciencia histórica para pensar cómo interpretamos las experiencias anteriores, comprendemos el presente y nos orientamos hacia el futuro.</p>
           </div>
         </div>
