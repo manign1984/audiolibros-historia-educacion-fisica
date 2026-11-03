@@ -6,7 +6,7 @@
   min-height:80px;
   padding-bottom:2px;
   color:#f5f5f8;
-  background:#0c0e15;
+  background:var(--journey-header-surface,#0c0e15);
   font:600 14px/1.4 'Archivo',sans-serif;
   letter-spacing:0;
   text-transform:none;
@@ -61,7 +61,7 @@
 .journey-header .journey-header__library:focus-visible { outline:2px solid #c2f973; outline-offset:2px; }
 .journey-header .journey-header__progress { position:absolute; inset:auto 0 0; height:2px; background:#ffffff24; pointer-events:none; }
 .journey-header .journey-header__progress > span { display:block; height:100%; background:#c2f973; }
-html:has(.journey-header) { --journey-header-height:80px; scroll-padding-top:calc(var(--journey-header-height,80px) + 16px); }
+html:has(.journey-header) { --journey-header-surface:#0c0e15; --journey-header-height:80px; scroll-padding-top:calc(var(--journey-header-height,80px) + 16px); }
 body:has(.journey-header) :is(#inicio,#autor,#contexto,#lectura,#creditos) { scroll-margin-top:0; }
 @media(max-width:1023.98px) {
   html:has(.journey-header) { --journey-header-height:112px; }
