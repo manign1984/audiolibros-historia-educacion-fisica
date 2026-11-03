@@ -9,6 +9,7 @@ export default function JourneyCredits({ workId }) {
   const { references, rights } = creditsContent[workId];
   return <footer id="creditos" className="journey-credits tracked-section" aria-labelledby="journey-credits-title">
     <div className="journey-credits__inner">
+      <div className="journey-credits__main">
       <header className="journey-credits__heading">
         <JourneyBlockLabel sectionId="creditos" />
         <h2 id="journey-credits-title"><span>Estudiar el pasado</span><span>Soñar futuros</span><span>Accionar en presente.</span></h2>
@@ -22,6 +23,7 @@ export default function JourneyCredits({ workId }) {
           <h3 id="credits-rights-title">Derechos y agradecimientos</h3>
           <ul>{rights.map((text, index) => <li key={index}>{text}</li>)}</ul>
         </section>
+      </div>
       </div>
       <div className="journey-credits__bottom">
         <div className="journey-credits__logos" aria-label="Proyecto +TEC · UNAHUR">

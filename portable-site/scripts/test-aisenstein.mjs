@@ -152,3 +152,23 @@ assert.match(canonicalCreditsCss, /min-height:calc\(100svh - var\(--journey-head
 assert.doesNotMatch(style, /\.aisenstein-sections(?:\.canonical-page)?\s+#creditos/, 'No introducir métricas locales que desborden el cierre común.');
 assert.match(canonicalCreditsCss, /@media\(min-width:1024px\) and \(max-height:720px\)/, 'Créditos compartidos se adaptan a ventanas de poca altura.');
 assert.match(canonicalCreditsCss, /@media\(max-width:640px\)/, 'Créditos conservan la distribución móvil accesible.');
+
+
+// Prueba editorial 03/11/2026: cierre compartido en tres columnas con
+// lema a la izquierda, bibliografía al centro y derechos a la derecha.
+const creditsComponent = await load('src/shared/JourneyCredits.jsx');
+assert.match(creditsComponent, /className="journey-credits__main"/, 'Los tres componentes deben pertenecer a la misma retícula.');
+const order = [
+  creditsComponent.indexOf('className="journey-credits__heading"'),
+  creditsComponent.indexOf('id="credits-references-title"'),
+  creditsComponent.indexOf('id="credits-rights-title"'),
+  creditsComponent.indexOf('className="journey-credits__bottom"')
+];
+assert.ok(order.every((x) => x > 0) && order.every((x, i) => i === 0 || x > order[i - 1]), 'Orden: lema, bibliografía, derechos y pie institucional.');
+assert.match(canonicalCreditsCss, /--credits-surface:#1c1e20;/, 'Créditos debe utilizar el grafito neutro de la prueba.');
+assert.match(canonicalCreditsCss, /\.journey-credits__main\s*\{[\s\S]*?grid-template-columns:minmax\(0,1\.03fr\) minmax\(0,1\.34fr\) minmax\(0,1\.26fr\)/, 'Retícula de tres columnas obligatoria en escritorio.');
+assert.match(canonicalCreditsCss, /\.journey-credits__columns\s*\{display:contents;\}/, 'Las dos secciones deben ocupar las columnas segunda y tercera.');
+assert.match(canonicalCreditsCss, /@media\(max-width:1100px\)/, 'La retícula debe reorganizarse en tableta.');
+assert.match(canonicalCreditsCss, /@media\(max-width:640px\)/, 'Las tres secciones deben apilarse en celular.');
+assert.match(canonicalCreditsCss, /\.journey-credits__bottom\s*\{[\s\S]*?border-top:/, 'Los logos y enlaces se ubican en un pie de ancho completo.');
+assert.doesNotMatch(style, /\.aisenstein-sections(?:\.canonical-page)?\s+#creditos/, 'No se deben restituir overrides que alteren el diseño común de Créditos.');
