@@ -95,3 +95,16 @@ assert.doesNotMatch(page, /Imagen en blanco y negro por presentación CSS\./, 'N
 assert.doesNotMatch(credits, /mediante CSS|escala de grises mediante CSS/, 'Los créditos públicos no deben describir filtros CSS.');
 assert.match(coverCss, /\.aisenstein-preview #inicio \.aisenstein-preview__source-note\s*\{[\s\S]*?right:clamp\(26px,5vw,88px\)/, 'Nota histórica al extremo inferior derecho.');
 assert.match(coverCss, /\.aisenstein-preview #inicio \.aisenstein-preview__source-note\s*\{[\s\S]*?background:rgba\(9,29,40,\.83\)/, 'La nota sobre la imagen debe conservar un fondo de contraste.');
+
+
+// Revisión proporcional del 03/11/2026: dos unidades visibles en escritorio
+// con crecimiento accesible en celulares y portátiles de altura reducida.
+assert.match(page, /Tres objetos<br \/><em>de investigación\.<\/em>/, 'El título de la primera unidad debe ser breve.');
+assert.doesNotMatch(page, /01 \/ 02|02 \/ 02/, 'No duplicar las numeraciones de los objetos con contadores de pantalla.');
+assert.match(style, /\.aisenstein-context__screen\s*\{[\s\S]*?min-height:var\(--aisenstein-context-room\)/, 'Ambas unidades deben conservar el alto visible como mínimo.');
+assert.match(style, /\.aisenstein-context__objects\s*\{[\s\S]*?grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/, 'Las tres tarjetas deben aparecer en paralelo en escritorio.');
+assert.match(style, /@media\(min-width:1121px\) and \(max-height:760px\)/, 'Debe existir una variante para portátiles de escasa altura.');
+assert.match(style, /@media\(max-width:600px\)[\s\S]*?\.aisenstein-context__objects \{grid-template-columns:1fr;/, 'El contenido debe apilarse sin recorte en celular.');
+assert.doesNotMatch(style, /padding:\s*68px 26px 88px/, 'El contenedor padre no debe sumar espacio vertical redundante en móvil.');
+assert.match(page, /Conciencia<br \/><em>histórica\.<\/em>/, 'La segunda unidad conserva el concepto central.');
+assert.match(page, /¿Qué ideas sobre la Educación Física consideramos naturales porque olvidamos cómo llegaron a construirse\?/, 'Preservar íntegra la pregunta de lectura.');
