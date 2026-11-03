@@ -44,3 +44,13 @@ for (let n = 1; n <= 16; n += 1) {
 }
 assert.equal(total, 35966683, 'Los 16 fragmentos deben conservar exactamente el tamaño del MP3 definitivo.');
 console.log('Aisenstein: 320 VTT, fuente, entrada, lector y 16 fragmentos MP3 verificados.');
+
+
+const page = await load('src/aisenstein/AisensteinApp.jsx');
+const style = await load('src/aisenstein/aisenstein.css');
+const cover = await load('src/aisenstein/InicioPreview.jsx');
+assert.doesNotMatch(page, /PineauLayoutReference/, 'Aisenstein no debe adoptar las alturas de la cronología de Pineau.');
+assert.match(style, /--height-contexto:\s*0px;/, 'Contexto debe ajustar su altura al contenido.');
+assert.match(style, /#contexto\.aisenstein-context\s*\{[\s\S]*?min-height:\s*0/, 'Contexto no debe dejar una gran franja vacía.');
+assert.match(style, /#lectura\.aisenstein-reading\s*\{[\s\S]*?min-height:\s*calc\(100svh - 80px\)/, 'Lectura debe recuperar un espacio editorial propio.');
+assert.match(cover, /Conocer a la autora/, 'El botón de portada debe indicar su destino.');
