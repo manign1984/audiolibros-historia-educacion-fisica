@@ -165,7 +165,10 @@ const order = [
   creditsComponent.indexOf('className="journey-credits__bottom"')
 ];
 assert.ok(order.every((x) => x > 0) && order.every((x, i) => i === 0 || x > order[i - 1]), 'Orden: lema, bibliografía, derechos y pie institucional.');
-assert.match(canonicalCreditsCss, /--credits-surface:#1c1e20;/, 'Créditos debe utilizar el grafito neutro de la prueba.');
+assert.match(canonicalCreditsCss, /--credits-surface:var\(--journey-header-surface,#0c0e15\);/, 'Créditos debe obtener su fondo directamente del encabezado compartido.');
+assert.match(headerCss, /--journey-header-surface:#0c0e15;/, 'El negro azulado del encabezado es el color canónico de ambos bloques.');
+assert.match(headerCss, /background:var\(--journey-header-surface,#0c0e15\);/, 'El encabezado debe consumir la misma variable de fondo.');
+assert.doesNotMatch(canonicalCreditsCss, /--credits-surface:#1c1e20;/, 'No volver al grafito experimental anterior.');
 assert.match(canonicalCreditsCss, /\.journey-credits__main\s*\{[\s\S]*?grid-template-columns:minmax\(0,1\.03fr\) minmax\(0,1\.34fr\) minmax\(0,1\.26fr\)/, 'Retícula de tres columnas obligatoria en escritorio.');
 assert.match(canonicalCreditsCss, /\.journey-credits__columns\s*\{display:contents;\}/, 'Las dos secciones deben ocupar las columnas segunda y tercera.');
 assert.match(canonicalCreditsCss, /@media\(max-width:1100px\)/, 'La retícula debe reorganizarse en tableta.');
