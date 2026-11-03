@@ -73,7 +73,6 @@ function ContextLenses() {
         <p>Aprender historia no consiste solamente en acumular datos del pasado. Aisenstein retoma la noción de conciencia histórica para pensar cómo interpretamos las experiencias anteriores, comprendemos el presente y nos orientamos hacia el futuro.</p>
         <p className="aisenstein-context__reflection-question">¿Qué ideas sobre la Educación Física consideramos naturales porque olvidamos cómo llegaron a construirse?</p>
       </div>
-      <a className="aisenstein-context__continue" href="#lectura">Pasar al texto y al audiolibro <ArrowRight size={19} aria-hidden="true" /></a>
     </div>
   </section>;
 }
