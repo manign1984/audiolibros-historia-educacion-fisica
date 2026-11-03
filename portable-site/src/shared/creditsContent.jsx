@@ -7,11 +7,12 @@ export const creditsContent = {
       link('https://udesa.edu.ar/cuerpo-docente/angela-aisenstein', <>Universidad de San Andrés. <em>Ángela Aisenstein</em>. Perfil y fotografía académica.</>),
       <>Audiolibro y 320 subtítulos corregidos aportados al proyecto +TEC UNAHUR para esta lectura.</>,
       <>La sección Contexto adapta didácticamente las tres perspectivas de investigación histórica tratadas en el capítulo; no constituye una cita textual.</>,
+      link('https://wellcomecollection.org/works/wxnc8jhk', <>GutsMuths, J. C. F. (1793). <em>Gymnastik für die Jugend</em>. Frontispicio de la primera edición. Wellcome Collection.</>),
     ],
     rights: [
       <>Texto académico y grabación aportados para el trabajo didáctico de la cátedra; no se declara una licencia abierta para su redistribución.</>,
       <>Los tiempos de inicio de oración fueron interpolados desde el VTT aportado; requieren una última revisión editorial respecto del audio.</>,
-      <>Imagen del bloque Inicio: material pictórico aportado al proyecto, reproducido sin alteraciones.</>,
+      <>Composición visual del bloque Inicio: incorpora un detalle del frontispicio de <em>Gymnastik für die Jugend</em> (1793), de Johann Christoph Friedrich GutsMuths. La figura central representa a Higía, diosa griega de la salud.</>,
       <>Retrato de la autora: Universidad de San Andrés; se presenta en escala de grises mediante CSS.</>,
       <>Proyecto +TEC · UNAHUR. Historia de la Educación Física: lectura accesible y trabajo autónomo.</>,
     ],
