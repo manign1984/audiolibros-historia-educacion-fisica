@@ -5,16 +5,6 @@
 }
 .aisenstein-preview__skip {position:fixed;left:16px;top:-80px;z-index:40;padding:10px 15px;background:#fff;color:#0b2330}
 .aisenstein-preview__skip:focus {top:8px}
-.aisenstein-preview__header {
-  height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;
-  padding-inline:clamp(22px,4.8vw,82px);background:#f7f5f0;color:#122b35;border-bottom:1px solid #beb7a7;
-}
-.aisenstein-preview__identity {display:flex;align-items:center;gap:17px;font-size:clamp(14px,1.35vw,19px);font-weight:800;letter-spacing:-.025em}
-.aisenstein-preview__back {display:grid;place-items:center;width:39px;height:39px;border:1px solid #b6aa9a;border-radius:50%;transition:background .2s}
-.aisenstein-preview__back:hover {background:#e6ded1}
-.aisenstein-preview__logos {display:flex;gap:18px;align-items:center;justify-content:flex-end;flex-shrink:0}
-.aisenstein-preview__logos img:first-child {height:37px;width:auto;max-width:135px;object-fit:contain}
-.aisenstein-preview__logos img:last-child {height:34px;width:auto;max-width:88px;object-fit:contain}
 .aisenstein-preview #inicio.aisenstein-preview__hero {
   position:relative;isolation:isolate;min-height:calc(100svh - 80px);height:auto;
   display:flex;align-items:center;overflow:hidden;padding:40px clamp(26px,6.3vw,112px);
@@ -57,12 +47,6 @@
   .aisenstein-preview__veil {background:linear-gradient(90deg,#081e2af5 0%,#081e2aeb 29%,#0b2430a0 58%,#0b243022 88%)}
 }
 @media(max-width:700px) {
-  .aisenstein-preview__header {height:72px;padding-inline:16px;gap:12px}
-  .aisenstein-preview__identity {gap:9px;font-size:13px;line-height:1.2;max-width:58%}
-  .aisenstein-preview__back {width:34px;height:34px;flex-shrink:0}
-  .aisenstein-preview__logos {gap:8px}
-  .aisenstein-preview__logos img:first-child {height:27px;max-width:87px}
-  .aisenstein-preview__logos img:last-child {height:25px;max-width:55px}
   .aisenstein-preview #inicio.aisenstein-preview__hero {
     min-height:calc(100svh - 72px);justify-content:flex-end;align-items:flex-end;
     padding:0 24px clamp(22px,4svh,38px);
@@ -80,11 +64,82 @@
   .aisenstein-preview__development p:not(.aisenstein-preview__development-label) {font-size:13px}
 }
 @media(max-width:380px) {
-  .aisenstein-preview__header {padding-inline:10px}
-  .aisenstein-preview__identity {font-size:12px}
-  .aisenstein-preview__logos img:first-child {max-width:76px}
-  .aisenstein-preview__logos img:last-child {max-width:47px}
   .aisenstein-preview #inicio.aisenstein-preview__hero {padding-inline:19px}
   .aisenstein-preview__hero h1 {font-size:clamp(37px,11vw,45px)}
 }
 @media(prefers-reduced-motion:reduce) {.aisenstein-preview *, .aisenstein-preview *::before, .aisenstein-preview *::after {transition:none!important;scroll-behavior:auto!important}}
+
+
+/* Bloques 01 y encabezado según las directrices del proyecto (2.2 y 2.3).
+   El componente JourneyHeader define la altura real mediante ResizeObserver.
+   No repetimos encabezados, logos ni alturas constantes en esta hoja. */
+html:has(.aisenstein-preview), body:has(.aisenstein-preview) {
+  margin: 0;
+  width: 100%;
+}
+.aisenstein-preview {
+  width: 100%;
+  min-width: 0;
+}
+.aisenstein-preview__skip { z-index: 130; }
+body:has(.journey-header) .aisenstein-preview > main {
+  padding-top: var(--journey-header-height, 80px);
+}
+body:has(.journey-header) .aisenstein-preview #inicio.aisenstein-preview__hero {
+  box-sizing: border-box;
+  /* En pantallas usuales el bloque termina exactamente en la primera vista. */
+  height: var(--hero-room, calc(100svh - var(--journey-header-height, 80px)));
+  min-height: var(--hero-room, calc(100svh - var(--journey-header-height, 80px)));
+  max-height: none;
+  padding: clamp(16px, 2.8svh, 34px) clamp(26px, 6.3vw, 112px);
+  display: flex;
+  align-items: center;
+}
+.aisenstein-preview #inicio .aisenstein-preview__eyebrow { margin-bottom: clamp(10px, 2svh, 22px); }
+.aisenstein-preview #inicio .aisenstein-preview__year { margin-bottom: clamp(8px, 1.7svh, 15px); }
+.aisenstein-preview #inicio h1 {
+  font-size: clamp(43px, min(5.65vw, calc(var(--hero-room, 700px) / 8.5)), 91px);
+  margin-bottom: clamp(12px, 2.3svh, 24px);
+}
+.aisenstein-preview #inicio .aisenstein-preview__subtitle { margin-bottom: clamp(10px, 1.8svh, 16px); }
+.aisenstein-preview #inicio .aisenstein-preview__question { margin-bottom: clamp(13px, 2.2svh, 25px); }
+
+/* Al bajar de 1024 px el encabezado canónico tiene dos filas (112 px).
+   Se mantiene la obra en la misma pantalla siempre que la legibilidad lo permita. */
+@media (max-width: 700px) {
+  body:has(.journey-header) .aisenstein-preview #inicio.aisenstein-preview__hero {
+    height: var(--hero-room);
+    min-height: var(--hero-room);
+    padding: 14px 24px clamp(18px, 3svh, 34px);
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .aisenstein-preview #inicio h1 {
+    font-size: clamp(38px, min(11.5vw, calc(var(--hero-room, 600px) / 8.5)), 65px);
+    margin-bottom: clamp(10px, 1.5svh, 16px);
+  }
+  .aisenstein-preview #inicio .aisenstein-preview__eyebrow { margin-bottom: 10px; }
+  .aisenstein-preview #inicio .aisenstein-preview__year { margin-bottom: 8px; }
+  .aisenstein-preview #inicio .aisenstein-preview__subtitle { margin-bottom: 9px; }
+  .aisenstein-preview #inicio .aisenstein-preview__question { margin-bottom: 13px; }
+}
+@media (max-width: 380px) {
+  body:has(.journey-header) .aisenstein-preview #inicio.aisenstein-preview__hero {padding-inline: 19px;}
+}
+
+/* Ventanas excepcionalmente bajas, zoom o ampliación: nunca recortar la
+   información para forzar una altura fija; crece el documento, no el scroll interno. */
+@media (max-height: 580px) {
+  body:has(.journey-header) .aisenstein-preview #inicio.aisenstein-preview__hero {
+    height: auto;
+    min-height: var(--hero-room);
+    padding-block: 22px;
+  }
+  .aisenstein-preview #inicio h1 {
+    font-size: clamp(38px, min(5.2vw, calc(var(--hero-room, 480px) / 7.8)), 67px);
+  }
+}
+@media print {
+  body:has(.journey-header) .aisenstein-preview > main {padding-top:0;}
+  body:has(.journey-header) .aisenstein-preview #inicio.aisenstein-preview__hero {height:auto;min-height:0;}
+}
