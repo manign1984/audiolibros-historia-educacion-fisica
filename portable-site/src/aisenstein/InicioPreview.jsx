@@ -32,7 +32,7 @@ export default function AisensteinInicioPreview({ children }) {
             <p className="aisenstein-preview__subtitle">El saber histórico en la formación docente en Educación Física</p>
             <p className="aisenstein-preview__question">¿Para qué me sirve estudiar historia en el profesorado?</p>
             <a className="aisenstein-preview__action" href="#autor">
-              Conocer el enfoque <ArrowRight size={18} aria-hidden="true" />
+              Conocer a la autora <ArrowRight size={18} aria-hidden="true" />
             </a>
           </div>
         </section>
