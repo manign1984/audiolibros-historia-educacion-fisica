@@ -286,28 +286,8 @@
 .aisenstein-toast {position:fixed;right:20px;bottom:20px;z-index:60;background:#f0e3c9;color:#1d3441;padding:13px 18px;box-shadow:0 8px 30px #0003;opacity:0;pointer-events:none;transform:translateY(10px);transition:.2s;}
 .aisenstein-toast.is-visible {opacity:1;transform:none;}
 
-@media(max-width:850px) {
-  .aisenstein-context {min-height:auto;}
-  .aisenstein-context__stage {grid-template-columns:1fr;}
-  .aisenstein-context__tabs {grid-template-columns:repeat(3,1fr);}
-  .aisenstein-context__tabs button {grid-template-columns:1fr;gap:10px;padding:16px;}
-  .aisenstein-context__tabs button svg {display:none;}
-  .aisenstein-context__tabs button strong {font-size:13px;}
-  .aisenstein-context__tabs button.is-active {transform:none;}
-  .aisenstein-context__reflection {grid-template-columns:1fr;}
-  .aisenstein-context__reflection .aisenstein-context__reflection-question {grid-column:1;}
-}
 @media(max-width:600px) {
   .aisenstein-sections #autor.aisenstein-author {padding:70px 0;}
-  .aisenstein-context {padding:60px 20px;}
-  .aisenstein-context__heading {margin-bottom:36px;}
-  .aisenstein-context__heading h2 {font-size:clamp(46px,12.5vw,72px);}
-  .aisenstein-context__tabs button span {font-size:30px;}
-  .aisenstein-context__tabs button strong {font-size:11px;}
-  .aisenstein-context__panel {padding:27px;min-height:600px;}
-  .aisenstein-context__panel h3 {font-size:clamp(36px,9vw,54px);}
-  .aisenstein-context__panel > p:not(.aisenstein-context__panel-tag) {font-size:14px;}
-  .aisenstein-context__reflection {margin-top:65px;}
   .aisenstein-sections #creditos.journey-credits {min-height:calc(100svh - var(--journey-header-height, 112px));}
 }
 @media(prefers-reduced-motion:reduce) {.aisenstein-sections * {animation:none!important;transition:none!important;scroll-behavior:auto!important}}
@@ -315,7 +295,7 @@
 
 /* Revisión editorial 03/11/2026.
    Aisenstein conserva la gramática de cinco bloques, pero su contexto es una
-   exploración de tres lentes historiográficos y no la cronología de Pineau.
+   doble pantalla temática y no la cronología de Pineau.
    Las alturas se calculan para ESTA obra; no se aplican a otras páginas. */
 .aisenstein-sections.canonical-page {
   --height-autor: calc(100svh - var(--journey-header-height, 80px));
