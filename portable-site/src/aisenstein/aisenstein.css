@@ -425,7 +425,6 @@ body:has(.journey-header) .aisenstein-sections.canonical-page #lectura.aisenstei
   .aisenstein-sections.canonical-page #contexto.aisenstein-context {
     padding: 68px 26px 88px;
   }
-  .aisenstein-sections #contexto .aisenstein-context__panel {min-height: 0;}
   .aisenstein-sections.canonical-page #creditos.journey-credits {min-height: auto;}
 }
 @media (max-width: 740px) {
