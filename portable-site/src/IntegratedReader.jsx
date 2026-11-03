@@ -232,13 +232,24 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
 
     const prepareSeekableAudio = async () => {
       try {
-        const response = await fetch(config.audiobookUrl, {
-          cache: 'force-cache',
-          signal: controller.signal,
-        });
-        if (!response.ok) throw new Error(`No se pudo cargar el audio (${response.status})`);
-
-        const blob = await response.blob();
+        // Recursos largos: los fragmentos forman partes consecutivas del mismo
+        // MP3 binario. Se reconstruyen en memoria, sin alterar sus bytes.
+        let blob;
+        if (config.audiobookParts?.length) {
+          const parts = await Promise.all(config.audiobookParts.map(async (url) => {
+            const response = await fetch(url, { cache: 'force-cache', signal: controller.signal });
+            if (!response.ok) throw new Error('No se pudo cargar un fragmento del audio (' + response.status + ')');
+            return response.arrayBuffer();
+          }));
+          blob = new Blob(parts, { type: 'audio/mpeg' });
+        } else {
+          const response = await fetch(config.audiobookUrl, {
+            cache: 'force-cache',
+            signal: controller.signal,
+          });
+          if (!response.ok) throw new Error(`No se pudo cargar el audio (${response.status})`);
+          blob = await response.blob();
+        }
         if (controller.signal.aborted) return;
 
         const objectUrl = URL.createObjectURL(blob);
@@ -253,7 +264,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
 
     prepareSeekableAudio();
     return () => controller.abort();
-  }, [audioSource, config.audiobookUrl, open]);
+  }, [audioSource, config.audiobookUrl, config.audiobookParts, open]);
 
   useEffect(() => () => {
     if (audioObjectUrlRef.current) URL.revokeObjectURL(audioObjectUrlRef.current);
@@ -663,9 +674,9 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
               <button className="reader-header-button" type="button" aria-label="Abrir cuaderno" onClick={() => setDrawerOpen(true)}>
                 <NotebookPen size={17} /> <span>Cuaderno</span><b>{notes.length}</b>
               </button>
-              <a className="reader-header-button reader-header-button--link" href={config.pdfUrl} target="_blank" rel="noreferrer">
+              {config.pdfUrl && <a className="reader-header-button reader-header-button--link" href={config.pdfUrl} target="_blank" rel="noreferrer">
                 <FileText size={17} /> <span>PDF</span>
-              </a>
+              </a>}
               <button className="reader-close" type="button" onClick={closeReader} aria-label="Cerrar modo lectura"><X size={22} /></button>
             </div>
           </header>
@@ -756,7 +767,8 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
             )}
             {audioError && (
               <div className="reader-player__error" role="alert">
-                El navegador no pudo cargar el audio. Podés seguir leyendo y anotando, o <a href={config.audiobookExternalUrl} target="_blank" rel="noreferrer">abrir el audiolibro aparte</a>.
+                El navegador no pudo cargar el audio. Podés seguir leyendo y anotando.
+                {config.audiobookExternalUrl && <> También podés <a href={config.audiobookExternalUrl} target="_blank" rel="noreferrer">abrir el audiolibro aparte</a>.</>}
               </div>
             )}
 
