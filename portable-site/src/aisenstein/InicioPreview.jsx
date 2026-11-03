@@ -1,24 +1,19 @@
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import './inicio-preview.css';
 
 // Portada aprobada: mantenemos estructura, imagen y estilos originales.
 export default function AisensteinInicioPreview({ children }) {
-  const libraryUrl = import.meta.env.BASE_URL;
+  const { active, progress } = useJourneyNavigation();
   return (
     <div className="aisenstein-preview">
       <a className="aisenstein-preview__skip" href="#inicio">Saltar al inicio</a>
-      <header className="aisenstein-preview__header">
-        <div className="aisenstein-preview__identity">
-          <a className="aisenstein-preview__back" href={libraryUrl} aria-label="Volver a la biblioteca">
-            <ArrowLeft size={18} aria-hidden="true" />
-          </a>
-          <span>Historia de la Educación Física</span>
-        </div>
-        <div className="aisenstein-preview__logos" aria-label="UNAHUR y +TEC">
-          <img src="/assets/logo-unahur-oscuro.svg" alt="Universidad Nacional de Hurlingham" />
-          <img src="/assets/logo-mas-tec-oscuro.svg" alt="+TEC" />
-        </div>
-      </header>
+      <JourneyHeader
+        author="Aisenstein"
+        title="¿Hacemos tabla rasa del pasado?"
+        active={active}
+        progress={progress}
+      />
       <main>
         <section id="inicio" className="aisenstein-preview__hero" aria-labelledby="aisenstein-hero-title">
           <img className="aisenstein-preview__art" src="/assets/aisenstein-inicio-prueba.png"
