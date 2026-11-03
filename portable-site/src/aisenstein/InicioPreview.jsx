@@ -15,8 +15,8 @@ export default function AisensteinInicioPreview() {
           <span>Historia de la Educación Física</span>
         </div>
         <div className="aisenstein-preview__logos" aria-label="UNAHUR y +TEC">
-          <img src="/assets/logo-unahur.png" alt="Universidad Nacional de Hurlingham" />
-          <img src="/assets/logo-mas-tec.png" alt="+TEC" />
+          <img src="/assets/logo-unahur-oscuro.svg" alt="Universidad Nacional de Hurlingham" />
+          <img src="/assets/logo-mas-tec-oscuro.svg" alt="+TEC" />
         </div>
       </header>
       <main>
