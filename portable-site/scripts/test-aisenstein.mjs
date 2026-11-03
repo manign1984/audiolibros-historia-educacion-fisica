@@ -122,3 +122,18 @@ assert.doesNotMatch(style, /#lectura\s+\.hb-material-copy\s*\{[^}]*width:/, 'No 
 assert.doesNotMatch(style, /#lectura\s+\.hb-material-(?:work h3|synopsis)\s*\{/, 'La tipografía bibliográfica proviene del componente canónico.');
 assert.doesNotMatch(style, /#lectura\.aisenstein-reading\s*\{[^}]*padding:/, 'El bloque canónico no debe agregar relleno vertical local.');
 assert.doesNotMatch(style, /#lectura\.aisenstein-reading\s*\{[^}]*justify-content:/, 'El centrado pertenece al componente compartido.');
+
+
+// Tipografía canónica revisada: justificación forzada del título y sinopsis,
+// incluida la última línea, en todas las obras (sin anchos locales nuevos).
+for (const selector of [
+  'hb-material-work h3',
+  'hb-material-synopsis',
+  'hb-material-synopsis-line'
+]) {
+  const cssRule = canonicalReadingCss.split('\n').find((line) => line.includes('.' + selector + ' {'));
+  assert.ok(cssRule, 'Falta regla compartida de ' + selector);
+  assert.match(cssRule, /text-align:\s*justify;/, 'Justificación completa requerida: ' + selector);
+  assert.match(cssRule, /text-align-last:\s*justify;/, 'La última línea debe justificarse: ' + selector);
+}
+assert.doesNotMatch(style, /#lectura\s+\.hb-material-(?:synopsis|work h3)\s*\{[^}]*text-align:/, 'Aisenstein no puede alterar la justificación canónica.');
