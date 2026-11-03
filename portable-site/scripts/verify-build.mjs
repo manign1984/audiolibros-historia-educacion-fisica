@@ -89,7 +89,7 @@ for (const removedSection of [
   'Ejercicios de calentamiento',
   'Conciencia histórica',
 ]) {
-  assert.ok(!allJavaScript.includes(removedSection), `No debe reaparecer la sección eliminada: ${removedSection}`);
+  assert.ok(!orbuchBundle.includes(removedSection), `Orbuch no debe recuperar la sección eliminada: ${removedSection}`);
 }
 
 for (const forbiddenOrbuchActivity of [
@@ -97,7 +97,7 @@ for (const forbiddenOrbuchActivity of [
   'Producción final',
   'Clasificá cada enunciado',
 ]) {
-  assert.ok(!allJavaScript.includes(forbiddenOrbuchActivity), `Orbuch no debe publicar actividades: ${forbiddenOrbuchActivity}`);
+  assert.ok(!orbuchBundle.includes(forbiddenOrbuchActivity), `Orbuch no debe publicar actividades: ${forbiddenOrbuchActivity}`);
 }
 
 await Promise.all([

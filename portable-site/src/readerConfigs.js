@@ -103,3 +103,52 @@ export const hobsbawmReaderConfig = {
     coverMessage: 'El resaltado sigue la voz. El subrayado punteado señala los fragmentos sin audio.',
   },
 };
+
+export const aisensteinReaderConfig = {
+  workId: 'aisenstein-tabla-rasa',
+  mark: 'AA',
+  shortTitle: '¿Hacemos tabla rasa del pasado?',
+  authorAndTitle: 'Ángela Aisenstein · ¿Hacemos tabla rasa del pasado?',
+  experienceName: '¿Hacemos tabla rasa del pasado?',
+  readingEntry: {
+    author: 'Ángela Aisenstein',
+    title: '¿Hacemos tabla rasa del pasado? El saber histórico en la formación docente en Educación Física',
+    audioMinutes: 25,
+    synopsis: '¿Para qué estudiar historia en el profesorado? Aisenstein propone tres caminos para investigar el pasado de las prácticas corporales, de la Educación Física como disciplina y de la asignatura escolar. La conciencia histórica ayuda a poner en cuestión las certezas del presente y a pensar otros futuros.',
+  },
+  audiobookParts: [
+    '/assets/aisenstein-audio-01.part',
+    '/assets/aisenstein-audio-02.part',
+    '/assets/aisenstein-audio-03.part',
+    '/assets/aisenstein-audio-04.part',
+    '/assets/aisenstein-audio-05.part',
+    '/assets/aisenstein-audio-06.part',
+    '/assets/aisenstein-audio-07.part',
+    '/assets/aisenstein-audio-08.part',
+    '/assets/aisenstein-audio-09.part',
+    '/assets/aisenstein-audio-10.part',
+    '/assets/aisenstein-audio-11.part',
+    '/assets/aisenstein-audio-12.part',
+    '/assets/aisenstein-audio-13.part',
+    '/assets/aisenstein-audio-14.part',
+    '/assets/aisenstein-audio-15.part',
+    '/assets/aisenstein-audio-16.part',
+  ],
+  storage: {
+    notesKey: 'aisenstein-tabla-rasa-reader-notes-v1',
+    stateKey: 'aisenstein-tabla-rasa-reader-state-v1',
+  },
+  export: {
+    jsonFileName: 'notas-aisenstein-tabla-rasa.json',
+    textFileName: 'cuaderno-lectura-aisenstein.txt',
+    shareTitle: 'Cuaderno de lectura · Ángela Aisenstein',
+  },
+  sync: {
+    status: 'ready',
+    launcherTitle: 'Leé, escuchá y anotá',
+    launcherDescription: 'Seguí la lectura con el audiolibro, elegí un pasaje y creá tu cuaderno de notas.',
+    featureTitle: 'Lectura sincronizada',
+    featureDescription: 'Los tiempos de oración se interpolan de los 320 subtítulos corregidos.',
+    coverMessage: 'El resaltado sigue los subtítulos; queda pendiente la verificación fina de oraciones.',
+  },
+};

@@ -1,0 +1,114 @@
+/* Aisenstein · bloques 02–05. La portada original se preserva en inicio-preview.css. */
+.aisenstein-sections {
+  --paper-light:#253947; --mustard:#c48d58;
+  --aisenstein-parchment:#f0e9dc; --aisenstein-navy:#112b39; --aisenstein-rust:#935d40;
+  font-family:'Archivo',sans-serif; color:#233440; background:#f1ece2;
+}
+.aisenstein-sections :is(button,a):focus-visible {outline:3px solid #b47945;outline-offset:5px}
+.aisenstein-sections #autor.aisenstein-author {
+  min-height:var(--height-autor,680px); color:#253947;
+  background:#e8dfd0; position:relative; isolation:isolate;
+  background-image:linear-gradient(115deg,#ede5d9 0%,#e4d9c8 75%);
+}
+.aisenstein-sections #autor .canonical-author-grid {--paper-light:#263b48;--mustard:#ae7651;}
+.aisenstein-sections #autor .canonical-author-role {color:#8e5339}
+.aisenstein-sections #autor .canonical-author-copy {max-width:720px;}
+.aisenstein-sections #autor .canonical-author-initial {color:transparent}
+.aisenstein-sections #autor .canonical-author-image {background:#ded5c7;}
+.aisenstein-sections #autor .canonical-author-image img {object-position:50% 24%;}
+
+/* El bloque 03 estudia la argumentación del texto, no simula una cronología. */
+.aisenstein-context {
+  min-height:var(--height-contexto,1200px); display:flex; align-items:center;
+  padding:clamp(74px,8vw,140px) clamp(24px,5vw,86px);
+  background:#142c38; color:#f3ede1;
+}
+.aisenstein-context__inner {width:min(1320px,100%); margin:auto;}
+.aisenstein-context__heading {max-width:1000px; margin-bottom:clamp(46px,6vw,92px);}
+.aisenstein-context__heading .journey-block-label {color:#e7bd85}
+.aisenstein-context__kicker {font:700 12px/1.5 'Archivo',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#d2a073;margin:30px 0 13px;}
+.aisenstein-context__heading h2 {font:400 clamp(64px,8vw,116px)/.94 'Bebas Neue',sans-serif;letter-spacing:.008em;text-transform:uppercase;margin:0 0 26px;}
+.aisenstein-context__heading h2 em {font-style:normal;color:#d5a87c;}
+.aisenstein-context__heading > p:last-child {font:400 clamp(16px,1.7vw,22px)/1.7 'Archivo',sans-serif;max-width:770px;margin:0;color:#ecded0;}
+.aisenstein-context__stage {display:grid;grid-template-columns:minmax(250px,.38fr) minmax(0,1fr);gap:clamp(28px,4vw,65px);}
+.aisenstein-context__tabs {display:grid;align-content:start;gap:12px;}
+.aisenstein-context__tabs button {
+  display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;
+  width:100%;padding:23px 19px;border:1px solid #dfcfb94a;
+  background:#26414c;color:#f2e9da;text-align:left;cursor:pointer;
+  font-family:'Archivo',sans-serif;transition:background .18s,border-color .18s,transform .18s;
+}
+.aisenstein-context__tabs button span {font:400 40px/.9 'Bebas Neue',sans-serif;color:#d7a778;}
+.aisenstein-context__tabs button strong {font:700 clamp(15px,1.25vw,18px)/1.35 'Archivo',sans-serif;}
+.aisenstein-context__tabs button svg {opacity:.65;}
+.aisenstein-context__tabs button.is-active {background:#f0e7d8;color:#253949;border-color:#f3dfb7;transform:translateX(4px);}
+.aisenstein-context__tabs button.is-active span {color:#9e6545;}
+.aisenstein-context__tabs button:hover:not(.is-active) {background:#33505c;}
+.aisenstein-context__panel {
+  position:relative;min-height:595px;display:flex;flex-direction:column;
+  padding:clamp(30px,5vw,70px);border:1px solid #ddc8a6;
+  background:linear-gradient(140deg,#f5efe3,#e8ddca);color:#283845;overflow:hidden;
+}
+.aisenstein-context__panel-index {
+  position:absolute;right:22px;top:-35px;font:400 clamp(155px,22vw,300px)/1 'Bebas Neue',sans-serif;
+  color:#cab99e32;user-select:none;pointer-events:none;
+}
+.aisenstein-context__panel-tag {position:relative;z-index:1;font:800 11px/1.4 'Archivo',sans-serif;letter-spacing:.17em;text-transform:uppercase;color:#995c3d;margin:0 0 38px;}
+.aisenstein-context__panel h3 {position:relative;z-index:1;max-width:680px;font:400 clamp(38px,4vw,70px)/1.02 'Bebas Neue',sans-serif;text-transform:uppercase;margin:0 0 26px;}
+.aisenstein-context__panel > p:not(.aisenstein-context__panel-tag) {position:relative;font:400 16px/1.75 'Archivo',sans-serif;max-width:650px;margin:0 0 27px;}
+.aisenstein-context__question {max-width:650px;margin-top:6px;padding:22px 0;border-top:1px solid #bd9771;border-bottom:1px solid #bd9771;}
+.aisenstein-context__question small {display:block;margin-bottom:10px;font:800 11px/1.3 'Archivo',sans-serif;text-transform:uppercase;letter-spacing:.16em;color:#9b5839}
+.aisenstein-context__question strong {display:block;font:600 clamp(17px,1.7vw,22px)/1.45 'Archivo',sans-serif;}
+.aisenstein-context__panel ul {display:flex;flex-wrap:wrap;gap:9px;margin:24px 0 0;padding:0;list-style:none;}
+.aisenstein-context__panel li {padding:8px 12px;border:1px solid #ad967e;color:#4d5660;font-size:12px;}
+.aisenstein-context__switch {display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:auto;padding-top:36px;font:800 12px 'Archivo',sans-serif;}
+.aisenstein-context__switch > div {display:flex;gap:8px;}
+.aisenstein-context__switch button {display:grid;place-items:center;width:42px;height:42px;border:1px solid #bcae99;color:#213745;background:transparent;cursor:pointer;}
+.aisenstein-context__switch button:disabled {opacity:.3;cursor:not-allowed;}
+.aisenstein-context__reflection {margin:clamp(70px,8vw,132px) 0 48px;padding:38px 0;border-top:1px solid #cbb99580;border-bottom:1px solid #cbb99580;display:grid;grid-template-columns:.7fr 1.3fr;gap:20px 70px;}
+.aisenstein-context__reflection span {font:800 11px/1.4 'Archivo',sans-serif;text-transform:uppercase;letter-spacing:.16em;color:#dcb37c;}
+.aisenstein-context__reflection h3 {font:400 clamp(40px,5vw,72px)/1 'Bebas Neue',sans-serif;text-transform:uppercase;margin:12px 0 0;color:#fff5e5;}
+.aisenstein-context__reflection p {font:400 clamp(16px,1.7vw,21px)/1.65 'Archivo',sans-serif;max-width:740px;margin:0;color:#e1d6c8;}
+.aisenstein-context__reflection .aisenstein-context__reflection-question {grid-column:2;font-style:italic;color:#edc695;}
+.aisenstein-context__continue {display:inline-flex;align-items:center;gap:18px;padding:16px 24px;border:1px solid #d5a778;color:#f4e9d5;font-weight:800;text-decoration:none;}
+.aisenstein-context__continue:hover {background:#ffffff14;}
+
+/* Lectura: mismo dispositivo editorial aprobado para las otras obras. */
+.aisenstein-sections #lectura.aisenstein-reading {
+  --material-paper:#efe6d6;--material-ink:#243846;--material-rust:#915336;
+  --reading-room:calc(100svh - 80px);
+}
+.aisenstein-sections #lectura .hb-material-content {--material-paper:#efe6d6;--material-ink:#243846;--material-rust:#915336;}
+.aisenstein-sections #creditos.journey-credits {
+  box-sizing:border-box;min-height:calc(100svh - 80px);height:auto;
+  display:flex;align-items:center;padding:20px 0;color:#f4eddf;background:#202f3a;
+  font:400 14px/1.5 'Archivo',sans-serif;
+}
+.aisenstein-toast {position:fixed;right:20px;bottom:20px;z-index:60;background:#f0e3c9;color:#1d3441;padding:13px 18px;box-shadow:0 8px 30px #0003;opacity:0;pointer-events:none;transform:translateY(10px);transition:.2s;}
+.aisenstein-toast.is-visible {opacity:1;transform:none;}
+
+@media(max-width:850px) {
+  .aisenstein-context {min-height:auto;}
+  .aisenstein-context__stage {grid-template-columns:1fr;}
+  .aisenstein-context__tabs {grid-template-columns:repeat(3,1fr);}
+  .aisenstein-context__tabs button {grid-template-columns:1fr;gap:10px;padding:16px;}
+  .aisenstein-context__tabs button svg {display:none;}
+  .aisenstein-context__tabs button strong {font-size:13px;}
+  .aisenstein-context__tabs button.is-active {transform:none;}
+  .aisenstein-context__reflection {grid-template-columns:1fr;}
+  .aisenstein-context__reflection .aisenstein-context__reflection-question {grid-column:1;}
+}
+@media(max-width:600px) {
+  .aisenstein-sections #autor.aisenstein-author {padding:70px 0;}
+  .aisenstein-context {padding:60px 20px;}
+  .aisenstein-context__heading {margin-bottom:36px;}
+  .aisenstein-context__heading h2 {font-size:clamp(46px,12.5vw,72px);}
+  .aisenstein-context__tabs button span {font-size:30px;}
+  .aisenstein-context__tabs button strong {font-size:11px;}
+  .aisenstein-context__panel {padding:27px;min-height:600px;}
+  .aisenstein-context__panel h3 {font-size:clamp(36px,9vw,54px);}
+  .aisenstein-context__panel > p:not(.aisenstein-context__panel-tag) {font-size:14px;}
+  .aisenstein-context__reflection {margin-top:65px;}
+  .aisenstein-sections #creditos.journey-credits {min-height:calc(100svh - 72px);}
+}
+@media(prefers-reduced-motion:reduce) {.aisenstein-sections * {animation:none!important;transition:none!important;scroll-behavior:auto!important}}

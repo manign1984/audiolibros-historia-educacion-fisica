@@ -9,6 +9,24 @@ export const LIBRARY_CONFIG = {
 
 const publishedWorks = [
   {
+    id: 'aisenstein-tabla-rasa',
+    status: 'available',
+    author: 'Ángela Aisenstein',
+    shortTitle: '¿Hacemos tabla rasa del pasado?',
+    title: '¿Hacemos tabla rasa del pasado? El saber histórico en la formación docente en Educación Física',
+    collection: 'miradas',
+    year: '2006',
+    duration: 1493.19,
+    stateKey: 'aisenstein-tabla-rasa-reader-state-v1',
+    artwork: 'assets/aisenstein-inicio-prueba.png',
+    description: 'Tres formas de investigar el pasado de la Educación Física y una pregunta sobre la conciencia histórica y la formación de docentes.',
+    authorDisplay: 'Aisenstein, Á.',
+    authorSearch: ['Ángela Aisenstein', 'Angela Aisenstein', 'Aisenstein, Ángela', 'Aisenstein, A.'],
+    sortAuthor: 'Aisenstein, Ángela',
+    reference: 'Aisenstein, Á. (2006). ¿Hacemos tabla rasa del pasado? El saber histórico en la formación docente en Educación Física. En Á. Aisenstein y P. Scharagrodsky (coords.), Tras las huellas de la Educación Física escolar argentina. Cuerpo, género y pedagogía, 1880–1950 (pp. 237–246). Prometeo.',
+    path: 'textos/aisenstein-tabla-rasa/',
+  },
+  {
     id: 'orbuch-educar-al-cuerpo',
     status: 'available',
     author: 'Iván Pablo Orbuch',
@@ -85,7 +103,7 @@ const publishedWorks = [
   },
 ];
 
-export const catalog = [...publishedWorks, ...plannedWorks];
+export const catalog = [...publishedWorks, ...plannedWorks.filter((entry) => entry.id !== 'aisenstein-tabla-rasa')];
 
 export function normalizeForSearch(value = '') {
   return String(value)
