@@ -52,7 +52,7 @@ const cover = await load('src/aisenstein/InicioPreview.jsx');
 assert.doesNotMatch(page, /PineauLayoutReference/, 'Aisenstein no debe adoptar las alturas de la cronología de Pineau.');
 assert.match(style, /--height-contexto:\s*0px;/, 'Contexto debe ajustar su altura al contenido.');
 assert.match(style, /#contexto\.aisenstein-context\s*\{[\s\S]*?min-height:\s*0/, 'Contexto no debe dejar una gran franja vacía.');
-assert.match(style, /#lectura\.aisenstein-reading\s*\{[\s\S]*?min-height:\s*calc\(100svh - var\(--journey-header-height, 80px\)\)/, 'Lectura debe recuperar un espacio editorial propio bajo el encabezado medido.');
+assert.match(style, /--height-lectura:\s*calc\(100svh - var\(--journey-header-height, 80px\)\)/, 'La altura mínima del bloque Lectura debe descontar el encabezado medido.');
 assert.doesNotMatch(cover, /Conocer a la autora|href="#autor"/, 'La portada no debe incluir un botón de avance al bloque siguiente.');
 assert.doesNotMatch(page, /aisenstein-context__continue|Pasar al texto y al audiolibro/, 'Contexto no debe duplicar el menú común con un botón hacia Lectura.');
 assert.match(cover, /Una imagen, una historia/, 'La portada debe identificar su fuente histórica.');
@@ -108,3 +108,17 @@ assert.match(style, /@media\(max-width:600px\)[\s\S]*?\.aisenstein-context__obje
 assert.doesNotMatch(style, /padding:\s*68px 26px 88px/, 'El contenedor padre no debe sumar espacio vertical redundante en móvil.');
 assert.match(page, /Conciencia<br \/><em>histórica\.<\/em>/, 'La segunda unidad conserva el concepto central.');
 assert.match(page, /¿Qué ideas sobre la Educación Física consideramos naturales porque olvidamos cómo llegaron a construirse\?/, 'Preservar íntegra la pregunta de lectura.');
+
+
+// Fidelidad al modelo canónico Hobsbawm: Aisenstein solo define colores,
+// sin sobreescribir retícula, anchos, tamaños, márgenes o separación vertical.
+const canonicalReadingCss = await load('src/shared/canonical-reading.css');
+assert.match(canonicalReadingCss, /--hb-group-shift:/, 'El centrado óptico debe seguir definido en el componente canónico.');
+assert.match(canonicalReadingCss, /width:\s*min\(100%,\s*2000px\)/, 'La composición común debe aprovechar el ancho del contenedor para calcular el centrado.');
+assert.match(canonicalReadingCss, /margin:\s*calc\(30 \* var\(--hb-unit\)\)/, 'El botón conserva la separación vertical aprobada.');
+assert.match(style, /#lectura\.hb-material-reading\s*\{[\s\S]*?--material-paper:#efe6d6;[\s\S]*?--material-ink:#243846;[\s\S]*?--material-rust:#915336;/, 'Aisenstein puede conservar su paleta propia.');
+assert.doesNotMatch(style, /#lectura\s+\.hb-material-content\s*\{[^}]*width:/, 'No se debe limitar el ancho de la retícula común desde Aisenstein.');
+assert.doesNotMatch(style, /#lectura\s+\.hb-material-copy\s*\{[^}]*width:/, 'No se deben imponer anchos de la ficha bibliográfica por obra.');
+assert.doesNotMatch(style, /#lectura\s+\.hb-material-(?:work h3|synopsis)\s*\{/, 'La tipografía bibliográfica proviene del componente canónico.');
+assert.doesNotMatch(style, /#lectura\.aisenstein-reading\s*\{[^}]*padding:/, 'El bloque canónico no debe agregar relleno vertical local.');
+assert.doesNotMatch(style, /#lectura\.aisenstein-reading\s*\{[^}]*justify-content:/, 'El centrado pertenece al componente compartido.');
