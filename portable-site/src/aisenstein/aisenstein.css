@@ -70,9 +70,6 @@
 .aisenstein-context__reflection h3 {font:400 clamp(40px,5vw,72px)/1 'Bebas Neue',sans-serif;text-transform:uppercase;margin:12px 0 0;color:#fff5e5;}
 .aisenstein-context__reflection p {font:400 clamp(16px,1.7vw,21px)/1.65 'Archivo',sans-serif;max-width:740px;margin:0;color:#e1d6c8;}
 .aisenstein-context__reflection .aisenstein-context__reflection-question {grid-column:2;font-style:italic;color:#edc695;}
-.aisenstein-context__continue {display:inline-flex;align-items:center;gap:18px;padding:16px 24px;border:1px solid #d5a778;color:#f4e9d5;font-weight:800;text-decoration:none;}
-.aisenstein-context__continue:hover {background:#ffffff14;}
-
 /* Lectura: mismo dispositivo editorial aprobado para las otras obras. */
 .aisenstein-sections #lectura.aisenstein-reading {
   --material-paper:#efe6d6;--material-ink:#243846;--material-rust:#915336;

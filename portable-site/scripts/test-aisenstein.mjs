@@ -53,7 +53,12 @@ assert.doesNotMatch(page, /PineauLayoutReference/, 'Aisenstein no debe adoptar l
 assert.match(style, /--height-contexto:\s*0px;/, 'Contexto debe ajustar su altura al contenido.');
 assert.match(style, /#contexto\.aisenstein-context\s*\{[\s\S]*?min-height:\s*0/, 'Contexto no debe dejar una gran franja vacía.');
 assert.match(style, /#lectura\.aisenstein-reading\s*\{[\s\S]*?min-height:\s*calc\(100svh - var\(--journey-header-height, 80px\)\)/, 'Lectura debe recuperar un espacio editorial propio bajo el encabezado medido.');
-assert.match(cover, /Conocer a la autora/, 'El botón de portada debe indicar su destino.');
+assert.doesNotMatch(cover, /Conocer a la autora|href="#autor"/, 'La portada no debe incluir un botón de avance al bloque siguiente.');
+assert.doesNotMatch(page, /aisenstein-context__continue|Pasar al texto y al audiolibro/, 'Contexto no debe duplicar el menú común con un botón hacia Lectura.');
+assert.match(cover, /Una imagen, una historia/, 'La portada debe identificar su fuente histórica.');
+assert.match(cover, /Gymnastik für die Jugend/, 'La portada debe identificar la obra de GutsMuths.');
+assert.match(cover, /Higía/, 'La portada debe explicar la figura representada.');
+
 
 const coverCss = await load('src/aisenstein/inicio-preview.css');
 const sharedHeader = await load('src/shared/JourneyHeader.jsx');
@@ -70,3 +75,9 @@ assert.match(coverCss, /min-height:\s*var\(--hero-room/, 'Inicio debe conservar 
 assert.match(coverCss, /max-height:\s*none/, 'No truncar el contenido de Inicio.');
 assert.match(coverCss, /max-height:\s*580px/, 'Inicio debe crecer en ventanas excepcionalmente bajas.');
 assert.match(coverCss, /margin:\s*0;/, 'La página no debe conservar los márgenes por defecto del navegador.');
+
+assert.match(coverCss, /__source-note/, 'La nota histórica debe disponer de estilos propios.');
+assert.match(headerCss, /box-sizing:border-box;\s*width:min\(1680px,100%\)/, 'El padding del encabezado no debe sumar ancho exterior.');
+assert.match(headerCss, /@media\(max-width:420px\)/, 'Los cinco enlaces deben ajustarse también en celulares angostos.');
+const credits = await load('src/shared/creditsContent.jsx');
+assert.match(credits, /frontispicio de <em>Gymnastik für die Jugend<\/em>/, 'Los créditos deben identificar el frontispicio histórico.');

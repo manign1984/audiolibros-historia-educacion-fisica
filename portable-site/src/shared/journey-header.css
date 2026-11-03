@@ -16,7 +16,10 @@
   grid-template-columns:auto minmax(0,1fr) auto;
   align-items:center;
   gap:24px;
+  /* Padding interior: nunca aumentar el ancho exterior del encabezado. */
+  box-sizing:border-box;
   width:min(1680px,100%);
+  max-width:100%;
   min-height:78px;
   margin-inline:auto;
   padding-inline:24px;
@@ -31,11 +34,13 @@
   text-decoration:none;
   white-space:nowrap;
 }
-.journey-header .journey-header__identity { display:flex; flex-wrap:wrap; align-items:baseline; gap:0 7px; min-width:0; }
+.journey-header .journey-header__identity { display:flex; flex-wrap:nowrap; align-items:baseline; gap:0 7px; min-width:0; overflow:hidden; }
+.journey-header .journey-header__author { white-space:nowrap; }
+.journey-header .journey-header__title { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .journey-header .journey-header__author { font-weight:700; }
 .journey-header .journey-header__separator { color:#a6aab8; }
 .journey-header .journey-header__title { color:#c6cad5; }
-.journey-header .journey-header__nav { display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:0 12px; }
+.journey-header .journey-header__nav { display:flex; flex-wrap:nowrap; align-items:center; justify-content:flex-end; gap:0 12px; min-width:0; }
 .journey-header .journey-header__link {
   position:relative;
   display:inline-flex;
@@ -68,6 +73,13 @@ body:has(.journey-header) :is(#inicio,#autor,#contexto,#lectura,#creditos) { scr
   .journey-header .journey-header__nav { grid-column:1/-1; justify-content:space-between; gap:0 2px; min-height:56px; }
   .journey-header .journey-header__link { padding-inline:4px; font-size:13px; }
   .journey-header .journey-header__link[aria-current]::after { right:4px; left:4px; }
+}
+/* En celulares muy estrechos se reduce el espacio entre opciones, sin ocultarlas. */
+@media(max-width:420px) {
+  .journey-header .journey-header__inner {padding-inline:10px;}
+  .journey-header .journey-header__nav {gap:0;}
+  .journey-header .journey-header__link {padding-inline:2px;font-size:12px;white-space:nowrap;}
+  .journey-header .journey-header__link[aria-current]::after {left:2px;right:2px;}
 }
 @media(max-width:900px) {
   #root:has(> .journey-header) > main { padding-top:var(--journey-header-height,112px); }
