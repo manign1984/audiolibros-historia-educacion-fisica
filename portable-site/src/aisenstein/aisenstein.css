@@ -17,59 +17,261 @@
 .aisenstein-sections #autor .canonical-author-image {background:#ded5c7;}
 .aisenstein-sections #autor .canonical-author-image img {object-position:50% 24%;}
 
-/* El bloque 03 estudia la argumentación del texto, no simula una cronología. */
+/* 03 · CONTEXTO. Dos unidades editoriales de una pantalla cada una:
+   A) los tres objetos de investigación (visibles juntos);
+   B) conciencia histórica. Ambas permanecen dentro de un único bloque
+   #contexto y comparten la navegación global; si falta alto, el contenido
+   crece en el documento, sin barras internas ni recortes. */
 .aisenstein-context {
-  min-height:var(--height-contexto,1200px); display:flex; align-items:center;
-  padding:clamp(74px,8vw,140px) clamp(24px,5vw,86px);
-  background:#142c38; color:#f3ede1;
+  --aisenstein-context-room: calc(100svh - var(--journey-header-height, 80px));
+  background: #142c38;
+  color: #f3ede1;
 }
-.aisenstein-context__inner {width:min(1320px,100%); margin:auto;}
-.aisenstein-context__heading {max-width:1000px; margin-bottom:clamp(46px,6vw,92px);}
+.aisenstein-context__screen {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: var(--aisenstein-context-room);
+  display: flex;
+  align-items: center;
+  padding: clamp(34px, 5svh, 58px) clamp(26px, 5vw, 86px);
+}
+.aisenstein-context__screen-inner {
+  box-sizing: border-box;
+  width: min(1300px, 100%);
+  min-width: 0;
+  margin: auto;
+}
+.aisenstein-context__kicker {
+  font: 700 12px/1.5 'Archivo',sans-serif;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: #ddb37d;
+  margin: 20px 0 12px;
+}
+.aisenstein-context__screen-count {
+  display: inline-block;
+  font: 400 clamp(25px, 3vw, 43px)/1 'Bebas Neue',sans-serif;
+  color: #d8af83;
+  letter-spacing: .06em;
+}
+.aisenstein-context__heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(270px, .7fr);
+  align-items: end;
+  column-gap: clamp(36px, 6vw, 90px);
+  margin-bottom: clamp(24px, 4svh, 42px);
+}
 .aisenstein-context__heading .journey-block-label {color:#e7bd85}
-.aisenstein-context__kicker {font:700 12px/1.5 'Archivo',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#d2a073;margin:30px 0 13px;}
-.aisenstein-context__heading h2 {font:400 clamp(64px,8vw,116px)/.94 'Bebas Neue',sans-serif;letter-spacing:.008em;text-transform:uppercase;margin:0 0 26px;}
-.aisenstein-context__heading h2 em {font-style:normal;color:#d5a87c;}
-.aisenstein-context__heading > p:last-child {font:400 clamp(16px,1.7vw,22px)/1.7 'Archivo',sans-serif;max-width:770px;margin:0;color:#ecded0;}
-.aisenstein-context__stage {display:grid;grid-template-columns:minmax(250px,.38fr) minmax(0,1fr);gap:clamp(28px,4vw,65px);}
-.aisenstein-context__tabs {display:grid;align-content:start;gap:12px;}
-.aisenstein-context__tabs button {
-  display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;
-  width:100%;padding:23px 19px;border:1px solid #dfcfb94a;
-  background:#26414c;color:#f2e9da;text-align:left;cursor:pointer;
-  font-family:'Archivo',sans-serif;transition:background .18s,border-color .18s,transform .18s;
+.aisenstein-context__heading h2,
+.aisenstein-context__conscience-top h2 {
+  margin: 0;
+  font: 400 clamp(47px, 5.5vw, 88px)/.94 'Bebas Neue',sans-serif;
+  letter-spacing: .006em;
+  text-transform: uppercase;
+  color: #f3ede1;
 }
-.aisenstein-context__tabs button span {font:400 40px/.9 'Bebas Neue',sans-serif;color:#d7a778;}
-.aisenstein-context__tabs button strong {font:700 clamp(15px,1.25vw,18px)/1.35 'Archivo',sans-serif;}
-.aisenstein-context__tabs button svg {opacity:.65;}
-.aisenstein-context__tabs button.is-active {background:#f0e7d8;color:#253949;border-color:#f3dfb7;transform:translateX(4px);}
-.aisenstein-context__tabs button.is-active span {color:#9e6545;}
-.aisenstein-context__tabs button:hover:not(.is-active) {background:#33505c;}
-.aisenstein-context__panel {
-  position:relative;min-height:595px;display:flex;flex-direction:column;
-  padding:clamp(30px,5vw,70px);border:1px solid #ddc8a6;
-  background:linear-gradient(140deg,#f5efe3,#e8ddca);color:#283845;overflow:hidden;
+.aisenstein-context__heading h2 em,
+.aisenstein-context__conscience-top h2 em {
+  color: #d5a87c;
+  font-style: normal;
 }
-.aisenstein-context__panel-index {
-  position:absolute;right:22px;top:-35px;font:400 clamp(155px,22vw,300px)/1 'Bebas Neue',sans-serif;
-  color:#cab99e32;user-select:none;pointer-events:none;
+.aisenstein-context__heading-secondary p {
+  margin: 16px 0 2px;
+  max-width: 460px;
+  font: 400 clamp(15px, 1.1vw, 17px)/1.65 'Archivo',sans-serif;
+  color: #ece0d0;
 }
-.aisenstein-context__panel-tag {position:relative;z-index:1;font:800 11px/1.4 'Archivo',sans-serif;letter-spacing:.17em;text-transform:uppercase;color:#995c3d;margin:0 0 38px;}
-.aisenstein-context__panel h3 {position:relative;z-index:1;max-width:680px;font:400 clamp(38px,4vw,70px)/1.02 'Bebas Neue',sans-serif;text-transform:uppercase;margin:0 0 26px;}
-.aisenstein-context__panel > p:not(.aisenstein-context__panel-tag) {position:relative;font:400 16px/1.75 'Archivo',sans-serif;max-width:650px;margin:0 0 27px;}
-.aisenstein-context__question {max-width:650px;margin-top:6px;padding:22px 0;border-top:1px solid #bd9771;border-bottom:1px solid #bd9771;}
-.aisenstein-context__question small {display:block;margin-bottom:10px;font:800 11px/1.3 'Archivo',sans-serif;text-transform:uppercase;letter-spacing:.16em;color:#9b5839}
-.aisenstein-context__question strong {display:block;font:600 clamp(17px,1.7vw,22px)/1.45 'Archivo',sans-serif;}
-.aisenstein-context__panel ul {display:flex;flex-wrap:wrap;gap:9px;margin:24px 0 0;padding:0;list-style:none;}
-.aisenstein-context__panel li {padding:8px 12px;border:1px solid #ad967e;color:#4d5660;font-size:12px;}
-.aisenstein-context__switch {display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:auto;padding-top:36px;font:800 12px 'Archivo',sans-serif;}
-.aisenstein-context__switch > div {display:flex;gap:8px;}
-.aisenstein-context__switch button {display:grid;place-items:center;width:42px;height:42px;border:1px solid #bcae99;color:#213745;background:transparent;cursor:pointer;}
-.aisenstein-context__switch button:disabled {opacity:.3;cursor:not-allowed;}
-.aisenstein-context__reflection {margin:clamp(70px,8vw,132px) 0 48px;padding:38px 0;border-top:1px solid #cbb99580;border-bottom:1px solid #cbb99580;display:grid;grid-template-columns:.7fr 1.3fr;gap:20px 70px;}
-.aisenstein-context__reflection span {font:800 11px/1.4 'Archivo',sans-serif;text-transform:uppercase;letter-spacing:.16em;color:#dcb37c;}
-.aisenstein-context__reflection h3 {font:400 clamp(40px,5vw,72px)/1 'Bebas Neue',sans-serif;text-transform:uppercase;margin:12px 0 0;color:#fff5e5;}
-.aisenstein-context__reflection p {font:400 clamp(16px,1.7vw,21px)/1.65 'Archivo',sans-serif;max-width:740px;margin:0;color:#e1d6c8;}
-.aisenstein-context__reflection .aisenstein-context__reflection-question {grid-column:2;font-style:italic;color:#edc695;}
+.aisenstein-context__objects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: clamp(14px, 2vw, 26px);
+}
+.aisenstein-context__object {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 430px;
+  padding: clamp(22px, 2.1vw, 33px);
+  color: #283845;
+  background: linear-gradient(148deg, #f5eee1, #e6dbc8);
+  border: 1px solid #d7c19c;
+}
+.aisenstein-context__object-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  padding-bottom: clamp(16px, 2svh, 28px);
+}
+.aisenstein-context__object-number {
+  font: 400 clamp(49px, 5vw, 75px)/.85 'Bebas Neue',sans-serif;
+  color: #a46b47;
+}
+.aisenstein-context__object-tag {
+  font: 800 10px/1.45 'Archivo',sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #8d5b40;
+}
+.aisenstein-context__object-name {
+  margin: 0 0 9px;
+  font: 700 12px/1.4 'Archivo',sans-serif;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: #935f42;
+}
+.aisenstein-context__object h3 {
+  margin: 0 0 17px;
+  font: 400 clamp(32px, 3vw, 49px)/1.04 'Bebas Neue',sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+  color: #273d4a;
+}
+.aisenstein-context__object-detail {
+  margin: 0 0 20px;
+  font: 400 clamp(13px, 1.02vw, 16px)/1.55 'Archivo',sans-serif;
+}
+.aisenstein-context__object-question {
+  border-top: 1px solid #ae9079;
+  margin-top: auto;
+  padding-top: 18px;
+}
+.aisenstein-context__object-question span {
+  display: block;
+  margin-bottom: 8px;
+  font: 800 10px/1.4 'Archivo',sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: #965739;
+}
+.aisenstein-context__object-question p {
+  margin: 0;
+  font: 600 clamp(13px, 1.04vw, 16px)/1.5 'Archivo',sans-serif;
+}
+
+/* La segunda pantalla mantiene el mismo bloque de navegación pero
+   adquiere una pausa editorial propia y desarrolla conciencia histórica. */
+.aisenstein-context__screen--conscience {
+  background: #203945;
+  border-top: 1px solid #e4bb7f45;
+}
+.aisenstein-context__conscience-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, .75fr);
+  align-items: end;
+  gap: clamp(36px, 6vw, 95px);
+  margin-bottom: clamp(40px, 6svh, 67px);
+}
+.aisenstein-context__conscience-top h2 {
+  font-size: clamp(76px, 9.6vw, 155px);
+  line-height: .86;
+}
+.aisenstein-context__conscience-intro p {
+  margin: 22px 0 0;
+  max-width: 490px;
+  font: 400 clamp(17px, 1.4vw, 21px)/1.65 'Archivo',sans-serif;
+  color: #f0e5d6;
+}
+.aisenstein-context__time-axes {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: clamp(20px, 3vw, 48px);
+  border-top: 1px solid #caa37e99;
+  border-bottom: 1px solid #caa37e99;
+  padding: clamp(23px, 3.6svh, 40px) 0;
+}
+.aisenstein-context__time-axes > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 2px 14px;
+}
+.aisenstein-context__time-axes span {
+  grid-row: 1 / 3;
+  font: 400 38px/.98 'Bebas Neue',sans-serif;
+  color: #d6a578;
+}
+.aisenstein-context__time-axes h3 {
+  margin:0;
+  font:400 clamp(30px, 3vw, 43px)/1 'Bebas Neue',sans-serif;
+  text-transform: uppercase;
+}
+.aisenstein-context__time-axes p {
+  margin: 8px 0 0;
+  font: 400 clamp(13px, 1.04vw, 16px)/1.55 'Archivo',sans-serif;
+  color: #e9dac9;
+}
+.aisenstein-context__conscience-question {
+  display: grid;
+  grid-template-columns: minmax(170px, .38fr) minmax(0, 1fr);
+  column-gap: 30px;
+  margin-top: clamp(36px, 6svh, 64px);
+  align-items: start;
+}
+.aisenstein-context__conscience-question > p {
+  margin: 0;
+  font: 800 12px/1.55 'Archivo',sans-serif;
+  color: #d7b28b;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+}
+.aisenstein-context__conscience-question blockquote {
+  margin: 0;
+  max-width: 850px;
+  font: 500 clamp(23px, 2.5vw, 38px)/1.35 'Archivo',sans-serif;
+  letter-spacing: -.025em;
+  color: #f5e3ce;
+}
+
+/* Unidades mínimas, no alturas rígidas: una ventana baja o una ampliación
+   del texto permite crecer al bloque en el flujo general. */
+@media (min-width: 901px) and (max-height: 740px) {
+  .aisenstein-context__screen {padding-block:22px;}
+  .aisenstein-context__heading {margin-bottom:20px;}
+  .aisenstein-context__heading h2 {font-size:clamp(40px,5vw,66px);}
+  .aisenstein-context__object {min-height:350px;padding:18px 22px;}
+  .aisenstein-context__object-top {padding-bottom:12px;}
+  .aisenstein-context__object h3 {font-size:clamp(29px,2.8vw,39px);margin-bottom:12px;}
+  .aisenstein-context__object-detail {font-size:13px;}
+  .aisenstein-context__conscience-top {margin-bottom:25px;}
+  .aisenstein-context__conscience-top h2 {font-size:clamp(68px,8.2vw,115px);}
+  .aisenstein-context__conscience-intro p {font-size:16px;line-height:1.5;}
+  .aisenstein-context__time-axes {padding-block:20px;}
+  .aisenstein-context__conscience-question {margin-top:28px;}
+}
+@media(max-width:900px) {
+  .aisenstein-context__screen {padding:60px 28px;min-height:var(--aisenstein-context-room);}
+  .aisenstein-context__heading,
+  .aisenstein-context__conscience-top {grid-template-columns:1fr;gap:25px;}
+  .aisenstein-context__heading {margin-bottom:32px;}
+  .aisenstein-context__heading-secondary {display:flex;align-items:start;gap:18px;}
+  .aisenstein-context__heading-secondary p {margin:0;max-width:680px;}
+  .aisenstein-context__objects {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .aisenstein-context__object:last-child {grid-column:1/-1;}
+  .aisenstein-context__conscience-top h2 {font-size:clamp(71px,13vw,125px);}
+}
+@media(max-width:600px) {
+  .aisenstein-context__screen {padding:48px 20px 54px;}
+  .aisenstein-context__heading h2 {font-size:clamp(46px,11vw,69px);}
+  .aisenstein-context__heading-secondary {display:block;}
+  .aisenstein-context__heading-secondary p {margin-top:10px;font-size:15px;}
+  .aisenstein-context__objects {grid-template-columns:1fr;}
+  .aisenstein-context__object, .aisenstein-context__object:last-child {
+    grid-column:auto;min-height:0;padding:24px;
+  }
+  .aisenstein-context__object h3 {font-size:clamp(35px,9vw,47px);}
+  .aisenstein-context__object-detail {font-size:15px;}
+  .aisenstein-context__conscience-top {gap:30px;}
+  .aisenstein-context__conscience-top h2 {font-size:clamp(64px,15vw,93px);}
+  .aisenstein-context__conscience-intro p {font-size:16px;}
+  .aisenstein-context__time-axes {grid-template-columns:1fr;gap:24px;}
+  .aisenstein-context__conscience-question {grid-template-columns:1fr;gap:16px;}
+  .aisenstein-context__conscience-question blockquote {font-size:clamp(23px,6vw,31px);}
+}
+
 /* Lectura: mismo dispositivo editorial aprobado para las otras obras. */
 .aisenstein-sections #lectura.aisenstein-reading {
   --material-paper:#efe6d6;--material-ink:#243846;--material-rust:#915336;
@@ -84,28 +286,8 @@
 .aisenstein-toast {position:fixed;right:20px;bottom:20px;z-index:60;background:#f0e3c9;color:#1d3441;padding:13px 18px;box-shadow:0 8px 30px #0003;opacity:0;pointer-events:none;transform:translateY(10px);transition:.2s;}
 .aisenstein-toast.is-visible {opacity:1;transform:none;}
 
-@media(max-width:850px) {
-  .aisenstein-context {min-height:auto;}
-  .aisenstein-context__stage {grid-template-columns:1fr;}
-  .aisenstein-context__tabs {grid-template-columns:repeat(3,1fr);}
-  .aisenstein-context__tabs button {grid-template-columns:1fr;gap:10px;padding:16px;}
-  .aisenstein-context__tabs button svg {display:none;}
-  .aisenstein-context__tabs button strong {font-size:13px;}
-  .aisenstein-context__tabs button.is-active {transform:none;}
-  .aisenstein-context__reflection {grid-template-columns:1fr;}
-  .aisenstein-context__reflection .aisenstein-context__reflection-question {grid-column:1;}
-}
 @media(max-width:600px) {
   .aisenstein-sections #autor.aisenstein-author {padding:70px 0;}
-  .aisenstein-context {padding:60px 20px;}
-  .aisenstein-context__heading {margin-bottom:36px;}
-  .aisenstein-context__heading h2 {font-size:clamp(46px,12.5vw,72px);}
-  .aisenstein-context__tabs button span {font-size:30px;}
-  .aisenstein-context__tabs button strong {font-size:11px;}
-  .aisenstein-context__panel {padding:27px;min-height:600px;}
-  .aisenstein-context__panel h3 {font-size:clamp(36px,9vw,54px);}
-  .aisenstein-context__panel > p:not(.aisenstein-context__panel-tag) {font-size:14px;}
-  .aisenstein-context__reflection {margin-top:65px;}
   .aisenstein-sections #creditos.journey-credits {min-height:calc(100svh - var(--journey-header-height, 112px));}
 }
 @media(prefers-reduced-motion:reduce) {.aisenstein-sections * {animation:none!important;transition:none!important;scroll-behavior:auto!important}}
@@ -113,7 +295,7 @@
 
 /* Revisión editorial 03/11/2026.
    Aisenstein conserva la gramática de cinco bloques, pero su contexto es una
-   exploración de tres lentes historiográficos y no la cronología de Pineau.
+   doble pantalla temática y no la cronología de Pineau.
    Las alturas se calculan para ESTA obra; no se aplican a otras páginas. */
 .aisenstein-sections.canonical-page {
   --height-autor: calc(100svh - var(--journey-header-height, 80px));
@@ -161,47 +343,14 @@
   line-height: 1.55;
 }
 
-/* 03: elimina las franjas sin contenido provocadas por la altura referencial. */
+/* Contexto utiliza dos unidades de alto visible; la regla heredada de Pineau
+   no debe imponer un alto combinado ni añadir espacios vacíos. */
 .aisenstein-sections.canonical-page #contexto.aisenstein-context {
+  box-sizing: border-box;
   min-height: 0;
+  padding: 0;
   display: block;
-  padding: clamp(72px, 7vw, 116px) clamp(26px, 5vw, 86px) clamp(84px, 8vw, 132px);
-}
-.aisenstein-sections #contexto .aisenstein-context__inner {width: min(1200px, 100%);}
-.aisenstein-sections #contexto .aisenstein-context__heading {
-  margin-bottom: clamp(38px, 5vw, 66px);
-}
-.aisenstein-sections #contexto .aisenstein-context__heading h2 {
-  font-size: clamp(60px, 6.7vw, 100px);
-}
-.aisenstein-sections #contexto .aisenstein-context__stage {
-  gap: clamp(24px, 3.5vw, 54px);
-}
-.aisenstein-sections #contexto .aisenstein-context__panel {
-  min-height: 500px;
-  padding: clamp(30px, 3.6vw, 58px);
-}
-.aisenstein-sections #contexto .aisenstein-context__panel-tag {
-  margin-bottom: 26px;
-}
-.aisenstein-sections #contexto .aisenstein-context__panel h3 {
-  font-size: clamp(40px, 3.55vw, 60px);
-  margin-bottom: 22px;
-}
-.aisenstein-sections #contexto .aisenstein-context__panel > p:not(.aisenstein-context__panel-tag) {
-  line-height: 1.65;
-  margin-bottom: 22px;
-}
-.aisenstein-sections #contexto .aisenstein-context__reflection {
-  margin: clamp(58px, 5vw, 78px) 0 32px;
-  padding: 32px 0;
-}
-.aisenstein-sections #contexto .aisenstein-context__reflection h3 {
-  font-size: clamp(42px, 4.6vw, 64px);
-}
-.aisenstein-sections #contexto .aisenstein-context__reflection p {
-  font-size: clamp(16px, 1.3vw, 19px);
-  line-height: 1.65;
+  overflow: visible;
 }
 
 /* 04: un espacio de lectura tan protagonista como la portada, sin rediseñar
@@ -276,7 +425,6 @@ body:has(.journey-header) .aisenstein-sections.canonical-page #lectura.aisenstei
   .aisenstein-sections.canonical-page #contexto.aisenstein-context {
     padding: 68px 26px 88px;
   }
-  .aisenstein-sections #contexto .aisenstein-context__panel {min-height: 0;}
   .aisenstein-sections.canonical-page #creditos.journey-credits {min-height: auto;}
 }
 @media (max-width: 740px) {

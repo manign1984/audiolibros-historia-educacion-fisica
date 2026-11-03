@@ -13,7 +13,7 @@ export const creditsContent = {
       <>Texto académico y grabación aportados para el trabajo didáctico de la cátedra; no se declara una licencia abierta para su redistribución.</>,
       <>Los tiempos de inicio de oración fueron interpolados desde el VTT aportado; requieren una última revisión editorial respecto del audio.</>,
       <>Composición visual del bloque Inicio: incorpora un detalle del frontispicio de <em>Gymnastik für die Jugend</em> (1793), de Johann Christoph Friedrich GutsMuths. La figura central representa a Higía, diosa griega de la salud.</>,
-      <>Retrato de la autora: Universidad de San Andrés; se presenta en escala de grises mediante CSS.</>,
+      <>Retrato de Ángela Aisenstein: Universidad de San Andrés, perfil académico.</>,
       <>Proyecto +TEC · UNAHUR. Historia de la Educación Física: lectura accesible y trabajo autónomo.</>,
     ],
   },
@@ -70,7 +70,7 @@ export const creditsContent = {
     rights: [
       <>Texto y audiolibro aportados por el proyecto. La grabación omite seis pasajes, conservados y señalados dentro del lector.</>,
       <>Portada ilustrada compartida por el proyecto; se conserva la imagen original.</>,
-      <>Retrato: autoría y fecha fotográfica no consignadas en la ficha. {link('https://creativecommons.org/licenses/by-sa/4.0/', 'CC BY-SA 4.0 según Wikimedia Commons')}. Presentación en blanco y negro y encuadre de rostro; se conserva el archivo de procedencia.</>,
+      <>Retrato: autoría y fecha fotográfica no consignadas en la ficha. {link('https://creativecommons.org/licenses/by-sa/4.0/', 'CC BY-SA 4.0 según Wikimedia Commons')}. Se conserva el archivo fotográfico de procedencia.</>,
       <>La línea de tiempo es una síntesis didáctica de la lectura.</>,
       <>Proyecto +TEC · UNAHUR. Historia de la Educación Física: un espacio para leer, escuchar y acompañar el trabajo autónomo.</>,
       <>Agradecemos a quienes aportaron el material de cátedra, el audio y las imágenes de este recorrido.</>,

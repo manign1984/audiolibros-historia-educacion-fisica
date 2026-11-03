@@ -81,3 +81,17 @@ assert.match(headerCss, /box-sizing:border-box;\s*width:min\(1680px,100%\)/, 'El
 assert.match(headerCss, /@media\(max-width:420px\)/, 'Los cinco enlaces deben ajustarse también en celulares angostos.');
 const credits = await load('src/shared/creditsContent.jsx');
 assert.match(credits, /frontispicio de <em>Gymnastik für die Jugend<\/em>/, 'Los créditos deben identificar el frontispicio histórico.');
+
+
+// Contexto se organiza en dos unidades de pantalla dentro del único bloque 03.
+assert.match(page, /className="aisenstein-context__screen aisenstein-context__screen--research"/, 'Debe existir la primera pantalla con los tres objetos.');
+assert.match(page, /className="aisenstein-context__screen aisenstein-context__screen--conscience"/, 'Debe existir la segunda pantalla de conciencia histórica.');
+assert.match(page, /LENSES\.map\(\(item\) => <article/, 'Los tres objetos deben mostrarse simultáneamente, sin ocultarse en pestañas.');
+assert.doesNotMatch(page, /role="tablist"|aria-selected=\{active === index\}/, 'Contexto no debe conservar el carrusel reemplazado.');
+assert.match(style, /--aisenstein-context-room:\s*calc\(100svh - var\(--journey-header-height, 80px\)\)/, 'Cada unidad debe usar el alto visible menos el encabezado.');
+assert.match(style, /\.aisenstein-context__screen\s*\{[\s\S]*?min-height:\s*var\(--aisenstein-context-room\)/, 'Ambas pantallas deben compartir una altura mínima de viewport.');
+assert.match(style, /@media\(max-width:600px\)[\s\S]*?\.aisenstein-context__objects \{grid-template-columns:1fr;/, 'Los objetos deben poder apilarse en celular.');
+assert.doesNotMatch(page, /Imagen en blanco y negro por presentación CSS\./, 'No publicar descripciones técnicas del retrato en Autoría.');
+assert.doesNotMatch(credits, /mediante CSS|escala de grises mediante CSS/, 'Los créditos públicos no deben describir filtros CSS.');
+assert.match(coverCss, /\.aisenstein-preview #inicio \.aisenstein-preview__source-note\s*\{[\s\S]*?right:clamp\(26px,5vw,88px\)/, 'Nota histórica al extremo inferior derecho.');
+assert.match(coverCss, /\.aisenstein-preview #inicio \.aisenstein-preview__source-note\s*\{[\s\S]*?background:rgba\(9,29,40,\.83\)/, 'La nota sobre la imagen debe conservar un fondo de contraste.');
