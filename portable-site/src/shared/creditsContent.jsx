@@ -1,6 +1,21 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  aisenstein: {
+    references: [
+      <>Aisenstein, Á. (2006). ¿Hacemos tabla rasa del pasado? El saber histórico en la formación docente en Educación Física. En Á. Aisenstein y P. Scharagrodsky (coords.), <em>Tras las huellas de la Educación Física escolar argentina. Cuerpo, género y pedagogía, 1880–1950</em> (pp. 237–246). Prometeo.</>,
+      link('https://udesa.edu.ar/cuerpo-docente/angela-aisenstein', <>Universidad de San Andrés. <em>Ángela Aisenstein</em>. Perfil y fotografía académica.</>),
+      <>Audiolibro y 320 subtítulos corregidos aportados al proyecto +TEC UNAHUR para esta lectura.</>,
+      <>La sección Contexto adapta didácticamente las tres perspectivas de investigación histórica tratadas en el capítulo; no constituye una cita textual.</>,
+    ],
+    rights: [
+      <>Texto académico y grabación aportados para el trabajo didáctico de la cátedra; no se declara una licencia abierta para su redistribución.</>,
+      <>Los tiempos de inicio de oración fueron interpolados desde el VTT aportado; requieren una última revisión editorial respecto del audio.</>,
+      <>Imagen del bloque Inicio: material pictórico aportado al proyecto, reproducido sin alteraciones.</>,
+      <>Retrato de la autora: Universidad de San Andrés; se presenta en escala de grises mediante CSS.</>,
+      <>Proyecto +TEC · UNAHUR. Historia de la Educación Física: lectura accesible y trabajo autónomo.</>,
+    ],
+  },
   pineau: {
     references: [
       link('/assets/pineau-renovacion-represion-cooptacion.pdf', <>Pineau, P. (1999). Renovación, represión, cooptación: Las estrategias de la Reforma Fresco–Noble (Provincia de Buenos Aires, década del 30). En A. Ascolani (Comp.), <em>La educación en Argentina: Estudios de historia</em> (pp. 223–239). Ediciones del Arca.</>),
