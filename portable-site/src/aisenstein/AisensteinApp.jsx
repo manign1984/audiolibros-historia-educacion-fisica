@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import AisensteinInicioPreview from './InicioPreview.jsx';
 import IntegratedReader from '../IntegratedReader.jsx';
 import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
@@ -35,43 +34,58 @@ const LENSES = [
 ];
 
 function ContextLenses() {
-  const [active, setActive] = useState(0);
-  const item = LENSES[active];
-  return <section id="contexto" className="aisenstein-context tracked-section" aria-labelledby="aisenstein-context-title">
-    <div className="aisenstein-context__inner">
-      <div className="aisenstein-context__heading">
-        <JourneyBlockLabel sectionId="contexto" />
-        <p className="aisenstein-context__kicker">Tres maneras de estudiar la historia</p>
-        <h2 id="aisenstein-context-title">El pasado no se borra.<br /><em>Se interroga.</em></h2>
-        <p>El texto no propone una sucesión de fechas: distingue objetos de investigación y plantea para qué sirve construir conocimiento histórico en la formación docente.</p>
-      </div>
-      <div className="aisenstein-context__stage">
-        <div className="aisenstein-context__tabs" role="tablist" aria-label="Perspectivas de investigación histórica">
-          {LENSES.map((lens, index) => <button key={lens.number} id={'aisenstein-tab-' + index} role="tab" type="button"
-            aria-selected={active === index} aria-controls="aisenstein-tab-panel"
-            className={active === index ? 'is-active' : undefined} onClick={() => setActive(index)}>
-            <span>{lens.number}</span><strong>{lens.label}</strong><ArrowRight size={17} aria-hidden="true" />
-          </button>)}
-        </div>
-        <article id="aisenstein-tab-panel" className="aisenstein-context__panel" role="tabpanel"
-          aria-labelledby={'aisenstein-tab-' + active} key={active}>
-          <span className="aisenstein-context__panel-index" aria-hidden="true">{item.number}</span>
-          <p className="aisenstein-context__panel-tag">{item.tag}</p>
-          <h3>{item.title}</h3>
-          <p>{item.detail}</p>
-          <div className="aisenstein-context__question"><small>Una pregunta para leer</small><strong>{item.question}</strong></div>
-          <ul>{item.clues.map((clue) => <li key={clue}>{clue}</li>)}</ul>
-          <div className="aisenstein-context__switch">
-            <span>Perspectiva {active + 1} de 3</span>
-            <div><button type="button" aria-label="Perspectiva anterior" disabled={active === 0} onClick={() => setActive((value) => value - 1)}><ChevronLeft size={20}/></button>
-            <button type="button" aria-label="Perspectiva siguiente" disabled={active === LENSES.length - 1} onClick={() => setActive((value) => value + 1)}><ChevronRight size={20}/></button></div>
+  return <section id="contexto" className="aisenstein-context tracked-section" aria-label="Contexto de la obra">
+    <div className="aisenstein-context__screen aisenstein-context__screen--research" aria-labelledby="aisenstein-context-title">
+      <div className="aisenstein-context__screen-inner">
+        <div className="aisenstein-context__heading">
+          <div className="aisenstein-context__heading-primary">
+            <JourneyBlockLabel sectionId="contexto" />
+            <p className="aisenstein-context__kicker">Primera mirada · Los objetos de investigación</p>
+            <h2 id="aisenstein-context-title">Tres objetos.<br /><em>Una historia por interrogar.</em></h2>
           </div>
-        </article>
+          <div className="aisenstein-context__heading-secondary">
+            <span className="aisenstein-context__screen-count">01 / 02</span>
+            <p>Aisenstein propone tres objetos para investigar históricamente la Educación Física. Cada uno permite formular preguntas diferentes sobre las prácticas, los saberes y la escuela.</p>
+          </div>
+        </div>
+        <div className="aisenstein-context__objects" aria-label="Tres objetos de investigación histórica">
+          {LENSES.map((item) => <article className="aisenstein-context__object" key={item.number}>
+            <div className="aisenstein-context__object-top">
+              <span className="aisenstein-context__object-number">{item.number}</span>
+              <span className="aisenstein-context__object-tag">{item.tag}</span>
+            </div>
+            <p className="aisenstein-context__object-name">{item.label}</p>
+            <h3>{item.title}</h3>
+            <p className="aisenstein-context__object-detail">{item.detail}</p>
+            <div className="aisenstein-context__object-question">
+              <span>Para pensar</span>
+              <p>{item.question}</p>
+            </div>
+          </article>)}
+        </div>
       </div>
-      <div className="aisenstein-context__reflection">
-        <div><span>Una idea para llevar a la lectura</span><h3>Conciencia histórica</h3></div>
-        <p>Aprender historia no consiste solamente en acumular datos del pasado. Aisenstein retoma la noción de conciencia histórica para pensar cómo interpretamos las experiencias anteriores, comprendemos el presente y nos orientamos hacia el futuro.</p>
-        <p className="aisenstein-context__reflection-question">¿Qué ideas sobre la Educación Física consideramos naturales porque olvidamos cómo llegaron a construirse?</p>
+    </div>
+    <div className="aisenstein-context__screen aisenstein-context__screen--conscience" aria-labelledby="aisenstein-conscience-title">
+      <div className="aisenstein-context__screen-inner">
+        <div className="aisenstein-context__conscience-top">
+          <div>
+            <p className="aisenstein-context__kicker">03 · Contexto / Segunda mirada</p>
+            <h2 id="aisenstein-conscience-title">Conciencia<br /><em>histórica.</em></h2>
+          </div>
+          <div className="aisenstein-context__conscience-intro">
+            <span className="aisenstein-context__screen-count">02 / 02</span>
+            <p>Aprender historia no consiste solamente en acumular datos del pasado. Aisenstein retoma la noción de conciencia histórica para pensar cómo interpretamos las experiencias anteriores, comprendemos el presente y nos orientamos hacia el futuro.</p>
+          </div>
+        </div>
+        <div className="aisenstein-context__time-axes" aria-label="Relación entre pasado, presente y futuro">
+          <div><span>01</span><h3>Pasado</h3><p>Interpretar experiencias y procesos históricos.</p></div>
+          <div><span>02</span><h3>Presente</h3><p>Interrogar lo que hoy consideramos natural.</p></div>
+          <div><span>03</span><h3>Futuro</h3><p>Reconocer posibilidades de transformación.</p></div>
+        </div>
+        <div className="aisenstein-context__conscience-question">
+          <p>Una pregunta para llevar a la lectura</p>
+          <blockquote>¿Qué ideas sobre la Educación Física consideramos naturales porque olvidamos cómo llegaron a construirse?</blockquote>
+        </div>
       </div>
     </div>
   </section>;
@@ -89,7 +103,7 @@ export default function AisensteinApp() {
           summary="Profesora de Educación Física y licenciada en Ciencias de la Educación por la UBA. Es magíster en Ciencias Sociales con orientación en Educación por FLACSO Argentina y doctora en Educación por la Universidad de San Andrés. Sus investigaciones abordan la historia de la Educación Física escolar, la construcción de sus saberes y la formación de docentes."
           image="https://images.udesa.edu.ar/sites/default/files/styles/square_l/public/migrated/professor/professor_aed0e000f1b9c21c4e29df193941dcd3.jpg?itok=5CPwhbRf"
           imageAlt="Retrato de Ángela Aisenstein, profesora e investigadora"
-          credit="Fotografía: perfil académico de la Universidad de San Andrés. Imagen en blanco y negro por presentación CSS."
+          credit="Fotografía: perfil académico de la Universidad de San Andrés."
           biographyUrl="https://udesa.edu.ar/cuerpo-docente/angela-aisenstein"
         />
       </section>
