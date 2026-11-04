@@ -12,6 +12,10 @@ assert.equal(doc.bibliography.length, 18, 'Conservar la bibliografía que omiten
 
 // Las notas de la edición editorial son un aparato textual, nunca pistas de audio.
 assert.equal(doc.endnotes.length, 10, 'Recuperar las diez llamadas numeradas de la edición original.');
+
+assert.equal(doc.sourceNote, undefined, 'No insertar bitácoras o justificaciones editoriales dentro del lector público.');
+assert.doesNotMatch(JSON.stringify(doc.endnotes), /La copia de cátedra trasladó|La bibliografía final emplea otra formulación/, 'El aparato de notas no debe explicar decisiones internas.');
+
 assert.deepEqual(doc.endnotes.map(n => n.number), [1,2,3,4,5,6,7,8,9,10]);
 const sentenceIds = new Set(sentences.map(s => s.id));
 for (const note of doc.endnotes) {
@@ -30,6 +34,9 @@ assert.match(sharedReaderSource, /reader-editorial-note-/, 'Las notas deben tene
 assert.match(sharedReaderSource, /endnotesDetailsRef\.current\.open = true/, 'Abrir las notas desde la referencia sin perder contexto.');
 assert.match(sharedReaderSource, /returnToEditorialReference/, 'Permitir regresar al pasaje correspondiente.');
 assert.match(sharedReaderSource, /Notas académicas de la edición · no narradas/, 'No atribuir las notas al audiolibro.');
+assert.doesNotMatch(sharedReaderSource, /sourceNote \|\| 'El audiolibro recorre el cuerpo principal/, 'No mostrar explicaciones de trabajo como texto predeterminado.');
+assert.match(sharedReaderSource, /readingDocument\.sourceNote && <p>/, 'Exponer notas de procedencia solo cuando sean necesarias y estén redactadas para estudiantes.');
+
 
 assert.equal(new Set(sentences.map(s => s.id)).size, sentences.length, 'Cada pasaje anotable tiene identidad estable.');
 assert.ok(sentences.every(s => !('start' in s) && !('end' in s)), 'No activar marcas temporales sin verificar.');
