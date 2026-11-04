@@ -53,7 +53,14 @@ function migrateStoredNotes(notes, readingDocument, paragraphMode = false) {
   // Mantener las anotaciones existentes sin pérdida de texto, asociándolas
   // al párrafo al que pertenecía su oración en la versión anterior.
   if (paragraphMode) {
+    const firstParagraphId = readingDocument.sections.flatMap((section) => section.paragraphs)[0]?.id;
+    for (const sentence of readingDocument.frontMatter || []) {
+      if (firstParagraphId) mapping[sentence.id] = firstParagraphId;
+    }
     for (const section of readingDocument.sections) {
+      if (section.headingSentence && section.paragraphs[0]) {
+        mapping[section.headingSentence.id] = section.paragraphs[0].id;
+      }
       for (const paragraph of section.paragraphs) {
         for (const sentence of paragraph.sentences) mapping[sentence.id] = paragraph.id;
       }
@@ -703,6 +710,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                 onKeyDown={index === 0 ? (event) => {
                   if (event.key === 'Enter' || event.key === ' ') {
                     event.preventDefault();
+                    event.stopPropagation();
                     choose();
                   }
                 } : undefined}
