@@ -93,3 +93,82 @@
   .library-page .hero-inner {padding-top:clamp(18px,3svh,32px);}
   .library-page .hero-bottom {padding-top:18px;padding-bottom:16px;}
 }
+
+
+/* Biblioteca · rotación de destacados. Las obras siguen siendo enlaces
+   funcionales y el inicio sigue midiendo una pantalla útil. El fundido dura
+   700 ms; el tiempo de exposición por portada es 10 s (sin autoplay cuando
+   el sistema solicita movimiento reducido). */
+.library-page .hero-art {
+  opacity:0;
+  transition:opacity var(--hero-fade-duration,700ms) ease-in-out;
+  pointer-events:none;
+}
+.library-page .hero-art.is-active {opacity:1;}
+.library-page .hero-content {
+  animation:hero-content-fade var(--hero-fade-duration,700ms) ease-out both;
+}
+@keyframes hero-content-fade {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+.library-page .hero-pagination {align-items:center;gap:clamp(8px,1vw,16px);}
+.library-page .hero-pagination button i {
+  position:relative;
+  display:block;
+  overflow:hidden;
+  flex-shrink:0;
+}
+.library-page .hero--autoplay .hero-pagination button[aria-pressed=true] i {
+  background:#ffffff3a;
+}
+.library-page .hero--autoplay .hero-pagination button[aria-pressed=true] i::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:var(--accent);
+  transform:scaleX(0);
+  transform-origin:left center;
+  animation:hero-rotation-progress var(--hero-rotation-duration,10000ms) linear both;
+}
+@keyframes hero-rotation-progress {
+  to {transform:scaleX(1);}
+}
+.library-page .hero-pagination .hero-rotation-toggle {
+  box-sizing:border-box;
+  display:grid;
+  place-items:center;
+  width:44px;
+  min-width:44px;
+  height:44px;
+  margin-left:clamp(2px,.7vw,10px);
+  padding:0;
+  border:1px solid #ffffff59;
+  border-radius:50%;
+  background:#0c0e15cf;
+  color:#f5f5f8;
+  transition:border-color .2s,background .2s;
+}
+.library-page .hero-pagination .hero-rotation-toggle:hover:not(:disabled) {
+  border-color:var(--accent);
+  background:#192119;
+  color:var(--accent);
+}
+.library-page .hero-pagination .hero-rotation-toggle:disabled {
+  opacity:.6;
+  cursor:not-allowed;
+}
+@media(max-width:760px) {
+  .library-page .hero-art.is-active {opacity:.85;}
+  .library-page .hero-bottom {flex-wrap:wrap;gap:10px;}
+  .library-page .hero-pagination {gap:9px;}
+  .library-page .hero-pagination .hero-rotation-toggle {
+    margin-left:4px;
+    width:40px;min-width:40px;height:40px;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .library-page .hero-art {transition:none!important;}
+  .library-page .hero-content {animation:none!important;}
+  .library-page .hero--autoplay .hero-pagination button[aria-pressed=true] i::after {animation:none!important;}
+}
