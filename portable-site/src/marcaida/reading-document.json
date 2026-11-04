@@ -821,7 +821,6 @@
     "Sábato, Jorge Federico, La clase dominante en la Argentina moderna. Formación y características, Buenos Aires, CISEA-GEL, 1988.",
     "Sábato, Jorge Federico y Roulet, Jorge Esteban, “Estado y administración pública en la Argentina, ¿frenos o motores del proceso de cambio social?”, Historia Integral Argentina, Buenos Aires, Centro Editor de América Latina, 1972"
   ],
-  "sourceNote": "Versión de cátedra: cuerpo y bibliografía tomados del TXT cotejado con el PDF. Se normalizaron espacios y se organizaron párrafos para la lectura; se conserva la puntuación del TXT. Las notas al pie del volumen editorial no están incluidas en esta copia. Un cotejo automático identifica el cierre del cuerpo en el tramo final del MP3. La bibliografía se conserva en texto y la sincronización fina con la voz sigue en revisión. El lector conserva diez referencias a las notas numeradas de la edición editorial, independientes del audio. Las notas explicativas se ofrecen como síntesis editoriales y remiten a la página original; la nota 2 ya aparece integrada en el cuerpo de la versión de cátedra.",
   "syncMetadata": {
     "status": "pending",
     "alignmentVerified": false,
@@ -843,7 +842,7 @@
       "number": 2,
       "page": 51,
       "sentenceId": "ms-apartado-1-p5-s2",
-      "text": "La copia de cátedra trasladó el contenido de esta nota al cuerpo del apartado 2. Se conserva allí sin reproducirlo por duplicado.",
+      "text": "Generación del 37: para ampliar la referencia histórica, consultá la edición editorial original.",
       "kind": "incorporada-al-cuerpo",
       "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=51"
     },
@@ -867,7 +866,7 @@
       "number": 5,
       "page": 57,
       "sentenceId": "ms-apartado-4-p2-s2",
-      "text": "Jorge F. Sábato, La formación de la clase dominante en la Argentina (CISEA-GEL, 1988). La bibliografía final emplea otra formulación del título; se conserva aquí la referencia de la nota.",
+      "text": "Jorge F. Sábato, La formación de la clase dominante en la Argentina (CISEA-GEL, 1988).",
       "kind": "bibliografica",
       "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=57"
     },
