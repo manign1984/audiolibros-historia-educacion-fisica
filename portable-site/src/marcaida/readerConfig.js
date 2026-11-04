@@ -1,3 +1,5 @@
+import { marcaidaParagraphTimings } from './paragraphSync.js';
+
 export const marcaidaReaderConfig = {
   workId: 'marcaida-scaltritti-estado-nacional',
   mark: 'M·S',
@@ -23,11 +25,13 @@ export const marcaidaReaderConfig = {
     shareTitle: 'Cuaderno de lectura · Marcaida y Scaltritti',
   },
   sync: {
-    status: 'pending',
-    coverMessage: 'Edición en revisión: podés leer, escuchar y anotar. El audio y el texto se recorren por separado; la sincronización con la voz todavía no está verificada.',
+    status: 'paragraph-preview',
+    unit: 'paragraph',
+    paragraphTimings: marcaidaParagraphTimings,
+    coverMessage: 'El seguimiento acompaña la lectura por párrafos. Podés volver a escuchar desde el comienzo de cada párrafo.',
     launcherTitle: 'Leé, escuchá y anotá',
-    launcherDescription: 'Lectura, audio y cuaderno propio. La sincronización por oración permanece en revisión.',
-    featureTitle: 'Lectura y anotaciones',
-    featureDescription: 'Elegí un pasaje y escribí una nota; el audio conserva sus controles independientes.',
+    launcherDescription: 'Seguí el texto por párrafos, retomá la escucha y guardá tus anotaciones.',
+    featureTitle: 'Párrafo activo',
+    featureDescription: 'Lectura acompañada por el audio y anotaciones vinculadas a párrafos completos.',
   },
 };
