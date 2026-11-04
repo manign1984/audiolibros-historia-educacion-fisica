@@ -10,8 +10,8 @@ import readingDocument from './reading-document.json';
 import './marcaida.css';
 
 const authors = [
-  { initials: 'EM', name: 'Elena Marcaida', field: 'Historia económica y social · Docencia universitaria', summary: 'Docente de Historia Económica y Social General y de Sociedad y Estado en el Ciclo Básico Común de la Universidad de Buenos Aires. Coordinó equipos de enseñanza y producción bibliográfica. Participó en obras sobre historia argentina y en Estudios de historia económica y social. Su trabajo aborda procesos económicos, relaciones sociales y construcción del poder político.', url: 'https://www.pagina12.com.ar/diario/universidad/10-195385-2012-06-01.html', source: 'Reseña de su trayectoria docente · Página/12, 2012' },
-  { initials: 'MS', name: 'Mabel Scaltritti', field: 'Historia y enseñanza de las ciencias sociales', summary: 'Su trayectoria reúne la docencia universitaria y la enseñanza de las ciencias sociales. Integró equipos del Ministerio de Educación dedicados a la producción curricular y la formación docente. Participó en la autoría, supervisión y coordinación de Cuadernos para el aula. Es coautora de trabajos sobre historia argentina y de propuestas para su enseñanza en distintos niveles educativos.', url: 'https://backend.educ.ar/refactor_resource/get-attachment/23382', source: 'Cuadernos para el aula · Ministerio de Educación, 2007, créditos' },
+  { initials: 'EM', name: 'Elena Marcaida', field: 'Historia económica y social · Docencia universitaria', summary: 'Profesora de Historia Económica y Social General y de Conocimiento de la Sociedad y el Estado en el Ciclo Básico Común de la UBA, donde desarrolló su actividad docente desde 1985. Coordinó equipos de enseñanza y participó en publicaciones de historia económica y social, incluida la coordinación de Estudios de historia económica y social.', url: 'https://www.pagina12.com.ar/diario/universidad/10-195385-2012-06-01.html', source: 'Reseña de su trayectoria docente · Página/12, 2012' },
+  { initials: 'MS', name: 'Mabel Scaltritti', field: 'Historia y enseñanza de las ciencias sociales', summary: 'Licenciada en Historia por la Universidad de París VII y docente del Ciclo Básico Común de la UBA. Integró el área de Ciencias Sociales del Ministerio de Educación, dedicada a la producción curricular y a la formación docente. Participó en la elaboración y supervisión pedagógica de Cuadernos para el aula y publicó trabajos sobre historia argentina.', url: 'https://centroderecursosnormal1.blogspot.com/2011/05/', source: 'Escuela Normal N.º 1 · Trayectoria académica, 2011' },
 ];
 
 const mechanisms = [
@@ -66,7 +66,6 @@ export default function MarcaidaApp() {
             <h2>{author.name}</h2><p className="ms-author-field">{author.field}</p><p className="ms-author-summary">{author.summary}</p>
             <a href={author.url} target="_blank" rel="noreferrer">Ver fuente biográfica <ExternalLink size={15} aria-hidden="true" /></a><p className="ms-source">{author.source}</p>
           </article>)}</div>
-          <p className="ms-portrait-note">Identificación tipográfica de las autoras. Retratos y atribuciones en revisión.</p>
         </div>
       </section>
 

@@ -70,9 +70,14 @@ assert.ok(
   'El catálogo debe enlazar a las dos rutas físicas.',
 );
 assert.ok(allJavaScript.includes('Volver a la biblioteca'));
-for (const entry of catalog.filter((item) => item.status === 'preparation')) {
+for (const entry of catalog.filter((item) => item.status !== 'available')) {
   const html = await readFile(resolve(dist, entry.path, 'index.html'), 'utf8');
-  assert.ok(html.includes('Recorrido en preparación.'), `${entry.id}: disponibilidad explícita en metadatos.`);
+  if (entry.status === 'review') {
+    assert.ok(html.includes('Edición en revisión'), `${entry.id}: distinguir lectura disponible de alineación pendiente.`);
+    assert.doesNotMatch(html, /Recorrido en preparación\./, `${entry.id}: no publicar como ficha sin recorrido.`);
+  } else {
+    assert.ok(html.includes('Recorrido en preparación.'), `${entry.id}: disponibilidad explícita en metadatos.`);
+  }
   assert.ok(html.includes(`src="${normalizedBase}assets/`), `${entry.id}: ruta refrescable en el base público.`);
   assert.ok(html.includes(`<title>${entry.shortTitle} · Biblioteca +TEC</title>`));
 }

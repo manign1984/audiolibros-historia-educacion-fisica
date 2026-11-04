@@ -2,7 +2,7 @@
 // Procedencia y alcance: documentation/CATALOGO_2026.md.
 export const collections = [
   { id: 'miradas', title: 'Pensar la historia', period: 'Conceptos y perspectivas', color: 'lilac', mark: '01', description: 'Herramientas para interrogar el pasado y nuestra formación docente.' },
-  { id: 'estado', title: 'Cuerpos, escuela y nación', period: 'Siglo XIX · 1880–1930', color: 'blue', mark: '02', description: 'La construcción del Estado, la escuela pública y la Educación Física.' },
+  { id: 'estado', title: 'Cuerpos, escuela y nación', period: '1852–1930 · Estado, escuela y nación', color: 'blue', mark: '02', description: 'La construcción del Estado, la escuela pública y la Educación Física.' },
   { id: 'conservadurismo', title: 'Formar cuerpos, formar docentes', period: 'Décadas de 1930 y 1940', color: 'coral', mark: '03', description: 'Reformas educativas, instituciones y disputas por la formación.' },
   { id: 'peronismo', title: 'La Nueva Argentina', period: '1946–1955', color: 'gold', mark: '04', description: 'Educación corporal, bienestar y políticas públicas en el primer peronismo.' },
   { id: 'dictadura', title: 'Educación y autoritarismo', period: '1955–1983', color: 'sage', mark: '05', description: 'Instituciones, formación docente y políticas educativas en contextos autoritarios.' },
@@ -39,6 +39,17 @@ const records = [
   ['vassiliades-politicas-docentes', 'Alejandro Vassiliades', 'Enseñanza y políticas docentes', 'Impugnaciones de la enseñanza y desplazamientos de la pedagogía: políticas docentes y discursos estandarizados en Argentina durante la presidencia de Mauricio Macri (2015–2019)', 'presente', '2020', 'Vassiliades, A. (2020). Impugnaciones de la enseñanza y desplazamientos de la pedagogía: políticas docentes y discursos estandarizados en Argentina durante la presidencia de Mauricio Macri (2015–2019). Espacios en Blanco. Revista de Educación, 30(2), 247–262.', 'programa'],
 ];
 
+// Obras con lectura y audio habilitados, pero sin alineación certificada.
+// Mantener un estado propio para no confundirlas con fichas futuras.
+const readingsInReview = {
+  'marcaida-scaltritti-estado-nacional': {
+    status: 'review',
+    duration: 2026.374625,
+    historicalPeriod: '1852–1880',
+    stateKey: 'marcaida-scaltritti-reader-state-v1',
+  },
+};
+
 export const plannedWorks = records.map(([id, author, shortTitle, title, collection, year, reference, source, artwork], index) => ({
   id, author, shortTitle, title, collection, year, reference, source, artwork,
   status: 'preparation',
@@ -47,4 +58,5 @@ export const plannedWorks = records.map(([id, author, shortTitle, title, collect
   sortAuthor: author.split(' · ')[0].split(' ').slice(-1).join(''),
   path: `textos/${id}/`,
   posterVariant: index % 3,
+  ...(readingsInReview[id] || {}),
 }));
