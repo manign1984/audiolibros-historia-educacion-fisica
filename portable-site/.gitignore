@@ -6,3 +6,7 @@ dist/
 # Generated from the original Pineau components before dev/build.
 public/layout/
 public/layout-qa.html
+
+# Exact binary copies materialized from public Drive originals, checked with SHA-256.
+public/assets/marcaida-audiolibro.mp3
+public/assets/*.download

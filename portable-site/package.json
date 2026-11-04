@@ -16,8 +16,9 @@
     "test:hobsbawm": "node scripts/test-hobsbawm.mjs",
     "test:aisenstein": "node scripts/test-aisenstein.mjs",
     "verify:build": "node scripts/verify-build.mjs",
-    "predev": "node scripts/generate-layout-reference.mjs",
-    "prebuild": "node scripts/generate-layout-reference.mjs"
+    "predev": "node scripts/prepare-marcaida-assets.mjs && node scripts/generate-layout-reference.mjs",
+    "prebuild": "node scripts/prepare-marcaida-assets.mjs && node scripts/generate-layout-reference.mjs",
+    "test:marcaida": "node scripts/prepare-marcaida-assets.mjs && node scripts/test-marcaida.mjs"
   },
   "dependencies": {
     "@fontsource/archivo": "5.2.8",

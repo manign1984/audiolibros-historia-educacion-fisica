@@ -1,0 +1,833 @@
+{
+  "title": "La construcción del Estado nacional argentino (1852–1880)",
+  "author": "Elena Marcaida y Mabel Scaltritti",
+  "duration": 2026.374625,
+  "versionLabel": "Versión de cátedra · Cuerpo y bibliografía",
+  "frontMatter": [
+    {
+      "id": "ms-title",
+      "text": "La construcción del Estado nacional argentino",
+      "role": "title"
+    },
+    {
+      "id": "ms-subtitle",
+      "text": "1852–1880",
+      "role": "subtitle"
+    },
+    {
+      "id": "ms-author",
+      "text": "Elena Marcaida y Mabel Scaltritti",
+      "role": "author"
+    }
+  ],
+  "sections": [
+    {
+      "id": "introduccion",
+      "title": "Introducción",
+      "shortTitle": "Introducción",
+      "paragraphs": [
+        {
+          "id": "ms-introduccion-p1",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-introduccion-p1-s1",
+              "text": "Luego de la Revolución de mayo de 1810, los intentos de sustitución del poder colonial por un Estado nacional bajo hegemonía porteña fracasaron."
+            },
+            {
+              "id": "ms-introduccion-p1-s2",
+              "text": "Los distintos gobiernos que se sucedieron durante la primera década revolucionaria no pudieron constituirse en la autoridad suprema de las poblaciones asentadas en el territorio del ex virreinato."
+            },
+            {
+              "id": "ms-introduccion-p1-s3",
+              "text": "En 1820 comenzó un nuevo ciclo, caracterizado por el triunfo de las tendencias secesionistas, la dispersión del poder, las guerras civiles y la polarización política entre unitarios y federales."
+            }
+          ]
+        },
+        {
+          "id": "ms-introduccion-p2",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-introduccion-p2-s1",
+              "text": "Un nuevo intento de organización nacional se inició en 1852, pero fracasó por las desinteligencias entre los sectores dominantes de Buenos Aires y Entre Ríos, las dos provincias que habían logrado mayor desarrollo económico-social."
+            },
+            {
+              "id": "ms-introduccion-p2-s2",
+              "text": "El conflicto se resolvió en 1861 y, desde entonces, bajo la dirección de las élites porteñas, comenzó la construcción del Estado nacional."
+            },
+            {
+              "id": "ms-introduccion-p2-s3",
+              "text": "Veinte años después, luego de un proceso complejo, el Estado nacional había adquirido sus principales atributos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apartado-1",
+      "title": "1. Un largo período de fragmentación política y económica",
+      "shortTitle": "1. Un largo período de fragmentación política y económica",
+      "paragraphs": [
+        {
+          "id": "ms-apartado-1-p1",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-1-p1-s1",
+              "text": "A mediados del siglo XIX, mientras Europa se colmaba de chimeneas, máquinas y rieles y el mundo tendía a una integración económica cada vez mayor, en el espacio rioplatense todavía no se había logrado construir una unidad política."
+            },
+            {
+              "id": "ms-apartado-1-p1-s2",
+              "text": "En su lugar, había un conjunto de provincias organizadas autónomamente, gobernadas por caudillos, unidas formalmente en una Confederación y enfrentadas en luchas facciosas."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-1-p2",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-1-p2-s1",
+              "text": "La economía –fundamentalmente ganadera– era rudimentaria, atrasada y marginal para el mercado mundial."
+            },
+            {
+              "id": "ms-apartado-1-p2-s2",
+              "text": "El territorio estaba despoblado y la precaria infraestructura de caminos y transportes se mantenía prácticamente como en la época colonial."
+            },
+            {
+              "id": "ms-apartado-1-p2-s3",
+              "text": "El predominio de los sentimientos localistas y la fragmentación política se correspondían con una desarticulación de las economías regionales, que presentaban, en muchos casos, mayor vinculación con otros mercados que entre sí."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-1-p3",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-1-p3-s1",
+              "text": "Entre los obstáculos que, desde 1810, conspiraban contra la unidad y la centralización del poder, pesaban –según Oscar Oszlak– más que las diferencias en cuanto a proyectos políticos, una serie de factores como el aislamiento geográfico, la heterogeneidad cultural y los diferentes intereses económicos locales, que impedían el desarrollo de vínculos materiales entre las distintas regiones de la Confederación."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-1-p4",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-1-p4-s1",
+              "text": "Precisamente, uno de los obstáculos mayores para la construcción de una unidad política y de un Estado nacional lo constituían los intereses de los sectores dominantes de Buenos Aires, encarnados en la figura de su gobernador, Juan Manuel de Rosas."
+            },
+            {
+              "id": "ms-apartado-1-p4-s2",
+              "text": "Rosas mantenía desde 1829 un poder omnímodo sobre Buenos Aires y había logrado extender su influencia sobre el resto de las provincias."
+            },
+            {
+              "id": "ms-apartado-1-p4-s3",
+              "text": "Representante de los intereses de los terratenientes y saladeristas de la provincia de Buenos Aires, Rosas se oponía a toda forma de unidad política."
+            },
+            {
+              "id": "ms-apartado-1-p4-s4",
+              "text": "Temía que esa búsqueda condujera a la reaparición de los conflictos y luchas civiles que habían caracterizado las dos primeras décadas de vida independiente y que, a la vez, frenara la expansión que la economía bonaerense venía manifestando desde 1820."
+            },
+            {
+              "id": "ms-apartado-1-p4-s5",
+              "text": "La oposición a la unidad, tanto de Rosas como del sector terrateniente-saladerista que él representaba, respondía también al interés de mantener, bajo la égida de Buenos Aires, el monopolio portuario y de la Aduana porteña, así como las riquezas y privilegios que de ello derivaban."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-1-p5",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-1-p5-s1",
+              "text": "Pero esta política de Rosas y de los grandes terratenientes bonaerenses comenzó a ser cuestionada por muchos sectores y sobre todo por intelectuales que, teniendo una conciencia clara sobre los cambios que estaban atravesando Europa y Estados Unidos, comenzaron a considerar que Rosas era una traba para la modernización económica, la inserción de la región en la economía internacional y la institucionalización del orden."
+            },
+            {
+              "id": "ms-apartado-1-p5-s2",
+              "text": "Es por eso que, desde fines de la década de 1840, se fue formando una amplia y compleja coalición antirrosista que incluía desde viejos unitarios y miembros de la Generación del 37 hasta federales que no compartían el centralismo del federalismo rosista."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-1-p6",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-1-p6-s1",
+              "text": "A tal coalición se agregó en 1851, además de tropas brasileñas y de la Banda Oriental, una figura determinante: la del gobernador de la provincia de Entre Ríos, Justo José de Urquiza."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-1-p7",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-1-p7-s1",
+              "text": "Urquiza rompió su alianza con Rosas a raíz de las contradicciones que su provincia y, particularmente, los terratenientes y saladeristas entrerrianos comenzaron a tener con las políticas exclusivistas de Buenos Aires."
+            },
+            {
+              "id": "ms-apartado-1-p7-s2",
+              "text": "Si bien éstos compartían con los sectores dominantes porteños el interés por el desarrollo de la ganadería y por el intercambio con los países industriales, reclamaban la libre navegabilidad de los ríos para comerciar directamente con ingleses y otros europeos sin la intermediación porteña."
+            },
+            {
+              "id": "ms-apartado-1-p7-s3",
+              "text": "Hacia 1850, los pujantes ganaderos entrerrianos, con un líder progresista y activo, emprendieron el camino de la rebelión."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apartado-2",
+      "title": "2. La década de desunión. La conformación de dos unidades políticas",
+      "shortTitle": "2. La década de desunión. La conformación de dos unidades políticas",
+      "paragraphs": [
+        {
+          "id": "ms-apartado-2-p1",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-2-p1-s1",
+              "text": "En 1852, en la batalla de Caseros, Rosas fue vencido y su derrocamiento pareció dejar libre el camino para la construcción de un Estado nacional, es decir, un poder centralizado capaz de ejercer monopólicamente la violencia, el control político y administrativo; apto para difundir los elementos simbólicos de la nacionalidad y para generar y garantizar las condiciones para el desarrollo de una economía capitalista, integrada al mundo y centrada en la agroexportación."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-2-p2",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-2-p2-s1",
+              "text": "Sobre todo ello, existía un extendido consenso que abarcaba no sólo a prestigiosos intelectuales y a los sectores dominantes del Litoral, sino también a los terratenientes de Buenos Aires, pronto pasados al campo de los vencedores."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-2-p3",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-2-p3-s1",
+              "text": "La “Generación del 37” estaba formada por hombres como Juan María Gutiérrez, Juan Bautista Alberdi, Esteban Echeverría y Domingo Faustino Sarmiento."
+            },
+            {
+              "id": "ms-apartado-2-p3-s2",
+              "text": "Conformaron un grupo preocupado por entender los enfrentamientos que, desde la Revolución de Mayo, habían impedido la organización del país."
+            },
+            {
+              "id": "ms-apartado-2-p3-s3",
+              "text": "A diferencia de los unitarios, el problema para ellos no radicaba en la persona de Rosas."
+            },
+            {
+              "id": "ms-apartado-2-p3-s4",
+              "text": "El verdadero problema residía en desentrañar el secreto de esa sociedad que los unitarios habían ignorado y que Rosas parecía interpretar fielmente."
+            },
+            {
+              "id": "ms-apartado-2-p3-s5",
+              "text": "Movidos por esa convicción, los hombres de la Generación de 1837 se lanzaron a indagar los caracteres de la realidad social rioplatense: los ámbitos en los que residían la “civilización” y la “barbarie”, el despoblamiento del país, la herencia hispana, etc."
+            },
+            {
+              "id": "ms-apartado-2-p3-s6",
+              "text": "En principio, trataron de influir sobre Rosas, aspirando a transformarse en su guía intelectual, pero no tuvieron éxito, sufriendo persecuciones, muerte y exilio."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-2-p4",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-2-p4-s1",
+              "text": "Para todos estos actores, la construcción del Estado era una condición indispensable para atraer los capitales y la mano de obra necesarios para expandir la ganadería, impulsar las actividades agrícolas y lograr una modernización de la infraestructura que permitiera incorporar más tierras a la producción e integrar los dispersos mercados regionales en un mercado nacional."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-2-p5",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-2-p5-s1",
+              "text": "El Estado debería además poner fin a la presencia indígena en la pampa y en vastos territorios de la Patagonia y el Chaco, una presencia inquietante que limitaba la ocupación productiva de tierras fértiles y creaba –por sus incursiones violentas– condiciones poco seguras para la producción."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-2-p6",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-2-p6-s1",
+              "text": "Paradójicamente, esos consensos básicos –que comenzaron a concretarse en 1853 con la sanción de la Constitución nacional– no impidieron que muy pronto volvieran a estallar los conflictos y las guerras civiles."
+            },
+            {
+              "id": "ms-apartado-2-p6-s2",
+              "text": "Como consecuencia de ello, el “país” quedó dividido en dos unidades políticas: por un lado, Buenos Aires y, por el otro, la Confederación, en la cual confluían el resto de las provincias bajo el liderazgo de Justo José de Urquiza."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-2-p7",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-2-p7-s1",
+              "text": "Durante casi una década, Buenos Aires y la Confederación lucharon por hegemonizar los rumbos del proceso de modernización, creando un clima político inestable que hacía peligrar el desarrollo de las actividades económicas, la iniciativa privada y hasta la misma vida."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apartado-3",
+      "title": "3. La construcción del Estado nacional",
+      "shortTitle": "3. La construcción del Estado nacional",
+      "paragraphs": [
+        {
+          "id": "ms-apartado-3-p1",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p1-s1",
+              "text": "Con la reiniciación de las luchas parecía que, una vez más, los intereses localistas se impondrían y que se perpetuaría una situación de empate entre las provincias, sin que ninguno de los sectores en pugna pudiera imponerse al conjunto."
+            },
+            {
+              "id": "ms-apartado-3-p1-s2",
+              "text": "Pero las cosas habían comenzado a cambiar."
+            },
+            {
+              "id": "ms-apartado-3-p1-s3",
+              "text": "Desde los últimos años del rosismo y sobre todo durante la década de 1850, se fueron gestando condiciones distintas a las prevalecientes desde 1810-1820."
+            },
+            {
+              "id": "ms-apartado-3-p1-s4",
+              "text": "La creciente integración de Buenos Aires y el Litoral al mercado mundial (con la exportación de lanas, cueros y otros productos pecuarios), las posibilidades que creaba la apertura al mundo y el aumento de los lazos económicos entre las regiones fueron creando un consenso antes inexistente sobre las necesidades de la unión."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p2",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p2-s1",
+              "text": "No obstante, Buenos Aires y la Confederación trataron de constituirse, cada una por su lado, en Estados modernos."
+            },
+            {
+              "id": "ms-apartado-3-p2-s2",
+              "text": "Los resultados fueron muy disímiles."
+            },
+            {
+              "id": "ms-apartado-3-p2-s3",
+              "text": "La Confederación fracasó en sus intentos de construir el aparato institucional estatal, fundamentalmente por la insuficiencia de sus recursos económicos."
+            },
+            {
+              "id": "ms-apartado-3-p2-s4",
+              "text": "Sin el concurso de Buenos Aires, cuyas instituciones prosperaban estimuladas por el crecimiento espectacular de su economía y por los lazos que la provincia había logrado tejer con las finanzas y el comercio internacionales, no se podría concretar el proyecto de unidad nacional."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p3",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p3-s1",
+              "text": "Ésa es la conclusión a la que aparentemente llegó Justo José de Urquiza, líder político y militar de la Confederación, quien, en Pavón, en 1861, se enfrentó a los ejércitos porteños y se retiró del campo de batalla prácticamente sin dar lucha."
+            },
+            {
+              "id": "ms-apartado-3-p3-s2",
+              "text": "Entendió, quizá, que la lucha debía darse en otros ámbitos y por otros medios, como los parlamentarios, ya que, en virtud de las prescripciones constitucionales, las provincias podrían tener mayoría en el Senado de la Nación y lograr –a través de negociaciones y consensos– lo que no se había podido alcanzar por otras vías."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p4",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p4-s1",
+              "text": "Luego de Pavón, los sectores dominantes porteños, encabezados por Bartolomé Mitre, iniciaron un nuevo intento organizador, que paulatinamente logró incluir a diversas fracciones burguesas del litoral fluvial y el interior del país."
+            },
+            {
+              "id": "ms-apartado-3-p4-s2",
+              "text": "Bajo el impulso de esta compleja e inestable alianza y sobre la base de ciertas instituciones bonaerenses y de los recursos financieros procedentes de Buenos Aires y de Londres, el Estado nacional comenzó a afirmar lentamente su presencia institucional y a ejercer una dominación creciente sobre la sociedad."
+            },
+            {
+              "id": "ms-apartado-3-p4-s3",
+              "text": "El proceso no fue simple ni armónico."
+            },
+            {
+              "id": "ms-apartado-3-p4-s4",
+              "text": "Siguiendo los análisis de Oscar Oszlak podríamos decir que el proceso de construcción del Estado nacional se caracterizó por una gran complejidad y por la magnitud de los recursos violentos puestos en juego."
+            },
+            {
+              "id": "ms-apartado-3-p4-s5",
+              "text": "Ello fue así por distintas razones:"
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p5",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p5-s1",
+              "text": "•Por un lado, el extendido consenso existente entre los sectores dirigentes sobre la necesidad de organizar el país no se tradujo en la eliminación o el aquietamiento de sus enfrentamientos políticos."
+            },
+            {
+              "id": "ms-apartado-3-p5-s2",
+              "text": "Sus luchas facciosas sólo declinaron en 1880, cuando lograron sellar un pacto de dominación estable."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p6",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p6-s1",
+              "text": "•Por otra parte, la construcción del Estado nacional, es decir, la instancia suprema de poder en una sociedad suponía expropiar a variados actores sociales de poderes y funciones que tradicionalmente ejercían."
+            },
+            {
+              "id": "ms-apartado-3-p6-s2",
+              "text": "Las tareas de construir un ejército nacional y un aparato recaudador de alcances nacionales, de lograr el monopolio de la emisión monetaria o el establecimiento de una justicia en última instancia enfrentaron al naciente Estado nacional con los gobiernos provinciales."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p7",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p7-s1",
+              "text": "Además, la necesidad de conocer y controlar a la sociedad que se estaba constituyendo, de regular las relaciones entre los individuos, de asegurar la previsibilidad en las transacciones, de uniformar ciertas prácticas, de imponer y legitimar la dominación y conformar una identidad nacional obligó al Estado a legislar, establecer códigos, registrar a los habitantes desde el nacimiento hasta la muerte y a tomar un rol decisivo en la educación."
+            },
+            {
+              "id": "ms-apartado-3-p7-s2",
+              "text": "Todo esto implicaba avances del Estado sobre normas establecidas por la costumbre y la tradición, y produjo enfrentamientos con la Iglesia y otras instituciones civiles."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p8",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p8-s1",
+              "text": "•La construcción del Estado implicaba además incursionar en áreas novedosas (como el relevamiento estadístico, la colonización, la instalación de ferrocarriles, la promoción de otras obras de infraestructura y comunicaciones) para responder a las necesidades regulatorias y de servicios de una sociedad y una economía en creciente expansión."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p9",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p9-s1",
+              "text": "Esta labor expropiadora, que intentaba legitimarse desde una pretendida identificación entre el Estado y el interés general, fue llevada a cabo entre 1862 y 1880, durante las presidencias de Bartolomé Mitre (1862-1868), Domingo Faustino Sarmiento (1868- 1874) y Nicolás Avellaneda (1874-1880)."
+            },
+            {
+              "id": "ms-apartado-3-p9-s2",
+              "text": "Requirió poner en juego estrategias represivas, pero también un complejo haz de recursos consensuales, ya que la experiencia acumulada desde 1810 demostraba que esta nueva construcción no podía fundarse sólo en la fuerza o en pactos endebles y efímeros."
+            },
+            {
+              "id": "ms-apartado-3-p9-s3",
+              "text": "Si la fuerza era necesaria para asegurar el monopolio de la violencia y el control territorial, la creación del consenso aparecía como un factor esencial en la consolidación del ensayo iniciado en 1862."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p10",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p10-s1",
+              "text": "La fuerza represiva del Ejército nacional fue utilizada en principio contra algunos caudillos del Interior y del Litoral."
+            },
+            {
+              "id": "ms-apartado-3-p10-s2",
+              "text": "Durante la década de 1860 y la siguiente, el Ejército nacional en formación ahogó en sangre la resistencia de algunas provincias al proyecto de organización nacional."
+            },
+            {
+              "id": "ms-apartado-3-p10-s3",
+              "text": "Es el caso de las sublevaciones de los caudillos Chacho Peñaloza en La Rioja, de Felipe Varela en la zona cuyana, La Rioja y Catamarca, de Ricardo López Jordán en Entre Ríos y de decenas de rebeliones más."
+            },
+            {
+              "id": "ms-apartado-3-p10-s4",
+              "text": "Para dominar esta situación e intervenir en favor de sus aliados locales, durante la década de 1870, el Estado nacional fue asentando regimientos en las distintas provincias."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p11",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p11-s1",
+              "text": "El instrumento represivo también fue ampliamente empleado contra los indígenas."
+            },
+            {
+              "id": "ms-apartado-3-p11-s2",
+              "text": "Para la época en que se estaba construyendo el Estado nacional, casi la mitad del territorio sobre el que Argentina reclamaba soberanía estaba en manos indígenas: la región del Chaco, la Patagonia y una franja central que, de este a oeste, incluía el sudoeste de la provincia de Buenos Aires, la actual provincia de La Pampa y zonas del sur de las provincias de Córdoba y Mendoza."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p12",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p12-s1",
+              "text": "En 1879 el Ejército nacional emprendió la conquista de las tierras indias de la pampa y la Patagonia."
+            },
+            {
+              "id": "ms-apartado-3-p12-s2",
+              "text": "En sólo dos años salió victorioso, aprovechando las ventajas que le otorgaban la posesión de rifles de repetición, el ferrocarril y el telégrafo."
+            },
+            {
+              "id": "ms-apartado-3-p12-s3",
+              "text": "La “conquista del desierto”, nombre dado a esta campaña por los vencedores, permitió el reparto de vastísimos territorios entre unos pocos y ricos terratenientes, provocó el exterminio de la mayor parte de la población indígena y condenó a la marginalidad a los sobrevivientes."
+            },
+            {
+              "id": "ms-apartado-3-p12-s4",
+              "text": "Muchos investigadores e intelectuales no dudan en caracterizarla como un genocidio."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p13",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p13-s1",
+              "text": "En la década de 1880 fueron sometidos los indígenas del Chaco."
+            },
+            {
+              "id": "ms-apartado-3-p13-s2",
+              "text": "Una vez más, los indígenas fueron expropiados y muertos en nombre de la “civilización”."
+            },
+            {
+              "id": "ms-apartado-3-p13-s3",
+              "text": "Los que sobrevivieron aportaron mano de obra barata para los ingenios y los obrajes madereros."
+            },
+            {
+              "id": "ms-apartado-3-p13-s4",
+              "text": "Para la élite dirigente, el indígena –así como el gaucho– era un sujeto no integrable al nuevo orden que se pretendía construir."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p14",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p14-s1",
+              "text": "Además de estas estrategias represivas, simultánea y combinadamente, fueron impulsadas otras estrategias consensuales, como la cooptación de ciertos sectores dirigentes del interior a través del otorgamiento de subsidios a los gobiernos provinciales, el acceso a puestos de dirección del Estado nacional, el empleo público o la intervención federal."
+            },
+            {
+              "id": "ms-apartado-3-p14-s2",
+              "text": "Todos estos recursos fueron utilizados selectivamente para favorecer a los aliados locales de los grupos que ejercían el gobierno nacional."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p15",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p15-s1",
+              "text": "Es de notar que muchas de esas élites locales, al aceptar la cooptación, se consolidaron a nivel local e incursionaron en la política nacional, pero al precio, en muchos casos, de condenar a su provincia al atraso y la marginación, ya que las políticas económicas impulsadas por el Estado nacional beneficiaban sobre todo al área pampeana."
+            },
+            {
+              "id": "ms-apartado-3-p15-s2",
+              "text": "También el Estado ganó un creciente consenso entre diversos sectores sociales a través, por ejemplo, del establecimiento de normas que introducían regularidad y previsibilidad en las actividades económicas, y la puesta en marcha de obras y servicios como los ferrocarriles y los telégrafos, que estimulaban la expansión de la economía y un aumento de la riqueza que no sólo beneficiaba a los sectores terratenientes."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p16",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p16-s1",
+              "text": "Por medio de recursos ideológicos vehiculizados sobre todo a través del aparato educativo, el Estado trató asimismo de afianzar un sistema de creencias, valores y normas de conducta que, a la vez que creaba sentimientos de pertenencia a la Nación, generaba consenso para el nuevo sistema de relaciones sociales y el esquema de dominación en vigencia."
+            },
+            {
+              "id": "ms-apartado-3-p16-s2",
+              "text": "La “penetración ideológica” se operó sobre todo a partir de la década de 1880, cuando el Estado dirimió en su favor la lucha contra la Iglesia, y puso bajo su dirección el área educativa."
+            },
+            {
+              "id": "ms-apartado-3-p16-s3",
+              "text": "En 1884 se sancionó la ley 1420 de Educación común, que estableció la enseñanza gratuita, laica y obligatoria."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p17",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p17-s1",
+              "text": "Hacia la misma época se privó a la Iglesia del manejo del registro de nacimientos y muertes, y se legisló el matrimonio civil, con lo que el Estado incorporó importantes áreas de la vida cotidiana que se hallaban bajo jurisdicción eclesial."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p18",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p18-s1",
+              "text": "Es importante insistir en dos aspectos centrales de este proceso: uno se relaciona con la nacionalización de una población compuesta ya en ese tiempo por una buena proporción de inmigrantes, y el otro tiene que ver con el control social, es decir, con la construcción de la legitimidad del propio Estado nacional."
+            },
+            {
+              "id": "ms-apartado-3-p18-s2",
+              "text": "El Estado en formación necesitaba construir su legitimidad, es decir, las condiciones para ser aceptado por la sociedad como autoridad suprema, indiscutida, legítima."
+            },
+            {
+              "id": "ms-apartado-3-p18-s3",
+              "text": "La acción de la escuela pública y luego la del servicio militar obligatorio fueron fundamentales en la creación de sentimientos de pertenencia a la Nación y en la imposición de normas y valores que hicieran posible el acatamiento de la autoridad estatal."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p19",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p19-s1",
+              "text": "En el transcurso de este proceso largo y conflictivo se constituyeron progresivamente las instituciones que fueron asegurando un ejercicio cada vez más efectivo de la autoridad, así como la reproducción material del Estado."
+            },
+            {
+              "id": "ms-apartado-3-p19-s2",
+              "text": "Ejemplos de ello son la construcción del Ejército nacional; la creación de la Corte Suprema de Justicia, de la Contaduría General de la Nación y de la Dirección General de Aduanas; la sanción de los códigos civil, penal y comercial y la creación del Registro Nacional de las Personas, de la administración central de cementerios, así como de los ministerios, de las secretarías de Estado y de los poderes legislativo y judicial."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p20",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p20-s1",
+              "text": "El proceso de construcción del Estado nacional argentino concluyó en 1880."
+            },
+            {
+              "id": "ms-apartado-3-p20-s2",
+              "text": "Para esos años, ya habían sido doblegadas las montoneras del Chacho Peñaloza, de Felipe Varela y Ricardo López Jordán, últimos exponentes –y quizá los más paradigmáticos– de la lucha del Interior y el Litoral contra el centralismo porteño."
+            },
+            {
+              "id": "ms-apartado-3-p20-s3",
+              "text": "También habían sucumbido los indígenas del Sur y, en el año 1880 precisamente, el Estado nacional logró vencer a los acérrimos defensores de la autonomía porteña, dando fin a la última y más difícil resistencia a su autoridad."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p21",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p21-s1",
+              "text": "En una situación aparentemente paradójica, la provincia que había alentado y defendido el centralismo fue la que resistió más tenazmente los avances del Estado nacional, para terminar, siendo sometida al poder que había contribuido a engendrar."
+            },
+            {
+              "id": "ms-apartado-3-p21-s2",
+              "text": "Efectivamente, la construcción del Estado nacional había sido impulsada por los sectores dirigentes de la provincia de Buenos Aires."
+            },
+            {
+              "id": "ms-apartado-3-p21-s3",
+              "text": "Ese Estado en formación fue afirmando su autoridad en un proceso simultáneo de concentración del poder y de expropiación de los poderes provinciales."
+            },
+            {
+              "id": "ms-apartado-3-p21-s4",
+              "text": "Pero, mientras el Estado iba concentrando poder, afirmaba su autoridad sobre sectores crecientes de la sociedad y crecían sus ámbitos de actuación, ciertas fracciones dirigentes de Buenos Aires, celosas de la autonomía porteña, comenzaron a resistir la pérdida de funciones y atribuciones de su provincia en manos de su retoño, el Estado nacional."
+            },
+            {
+              "id": "ms-apartado-3-p21-s5",
+              "text": "En 1880 tuvieron lugar los combates decisivos en los que el Ejército nacional venció a las tropas de Buenos Aires."
+            },
+            {
+              "id": "ms-apartado-3-p21-s6",
+              "text": "Como resultado de ello, la provincia de Buenos Aires tuvo que disolver sus cuerpos militares y aceptar la federalización de su capital, la ciudad de Buenos Aires."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-3-p22",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-3-p22-s1",
+              "text": "En 1880, entonces, el Estado nacional estaba constituido: en un doble proceso de centralización del poder y descentralización del control, había logrado afianzar su aparato institucional, ejercer una soberanía indisputada a nivel internacional e imponer su autoridad en todo el territorio nacional, respaldado en el monopolio de la violencia y en la posibilidad de crear consenso, en tanto se erigía en garante del “progreso” y aseguraba el desarrollo capitalista argentino."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apartado-4",
+      "title": "4. Una construcción particular",
+      "shortTitle": "4. Una construcción particular",
+      "paragraphs": [
+        {
+          "id": "ms-apartado-4-p1",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-4-p1-s1",
+              "text": "El Estado que se había consolidado en 1880, a diferencia de los arquetípicos casos inglés y francés, fue construido “de arriba hacia abajo”, siendo el artífice tanto de las clases y de la estructura social cuanto de la modernización económica."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-4-p2",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-4-p2-s1",
+              "text": "Distintos autores han reflexionado sobre este tópico."
+            },
+            {
+              "id": "ms-apartado-4-p2-s2",
+              "text": "Por ejemplo, Jorge Federico Sábato sostuvo que el Estado argentino fue más un elemento de un proyecto de sociedad futura que el producto de una sociedad existente."
+            },
+            {
+              "id": "ms-apartado-4-p2-s3",
+              "text": "Waldo Ansaldi –adaptando un concepto utilizado por Antonio Gramsci para la Italia del Risorgimento– caracterizó el proceso abierto con la Organización Nacional como una revolución pasiva."
+            },
+            {
+              "id": "ms-apartado-4-p2-s4",
+              "text": "Sostuvo que, en este tipo de revoluciones, el tránsito hacia la modernidad se realizó “desde arriba” y, por lo tanto, fue elitista y antipopular."
+            },
+            {
+              "id": "ms-apartado-4-p2-s5",
+              "text": "El Estado asumió un rol central en la dirección de las transformaciones, sustituyendo la acción de clases o fracciones de clase."
+            },
+            {
+              "id": "ms-apartado-4-p2-s6",
+              "text": "Daniel García Delgado sostuvo que una característica central de la relación Estado y sociedad en Argentina es que el Estado determinó fuertemente a la sociedad, apareciendo como modernizador, revolucionario, transformador o garante de un orden represivo, pero en todos los casos con una gran influencia sobre la sociedad."
+            },
+            {
+              "id": "ms-apartado-4-p2-s7",
+              "text": "Extendiendo tales consideraciones para el conjunto de América Latina, dijo que, a diferencia de otras situaciones consideradas paradigmáticas en las que una sociedad civil relativamente fuerte y homogénea se organizó en Estado nacional, en diversos países de la región, este último ha cumplido o cumple el papel de agente aglutinante de la sociedad civil."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-4-p3",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-4-p3-s1",
+              "text": "La estructuración social y política relativamente precaria de diversos países latinoamericanos encontró un apoyo indispensable en el Estado, que pasó a constituirse así en referente y participante obligado de una vasta gama de transacciones económicas, políticas y sociales, y en piedra de toque de las ideologías, posiciones políticas y estrategias de desarrollo."
+            },
+            {
+              "id": "ms-apartado-4-p3-s2",
+              "text": "En esta misma línea de razonamiento, Enzo Faletto sostuvo que, en América Latina, el Estado es no sólo la expresión política de la sociedad y del poder en ella existente, sino que además organiza al conjunto de la sociedad Barrington Moore, en sus análisis sobre la transición al capitalismo, observó que los países habían recorrido, básicamente, tres grandes vías en tal proceso."
+            },
+            {
+              "id": "ms-apartado-4-p3-s3",
+              "text": "La primera vía era la que habían recorrido países como Inglaterra, Francia o Estados Unidos, donde, con características propias en cada caso, habían tenido lugar revoluciones burguesas."
+            },
+            {
+              "id": "ms-apartado-4-p3-s4",
+              "text": "En estos procesos, un grupo social con base económica independiente destruyó los obstáculos que se oponían a la versión democrática del capitalismo."
+            },
+            {
+              "id": "ms-apartado-4-p3-s5",
+              "text": "Desarrollándose desde la dinámica social, pudo contar o no con el apoyo de las clases altas rurales según los casos, pero modificó profundamente las estructuras económicas anteriores."
+            },
+            {
+              "id": "ms-apartado-4-p3-s6",
+              "text": "La segunda vía también desarrolló el capitalismo, pero dio en lo político formas autoritarias."
+            },
+            {
+              "id": "ms-apartado-4-p3-s7",
+              "text": "Los casos alemán y japonés fueron los más obvios."
+            },
+            {
+              "id": "ms-apartado-4-p3-s8",
+              "text": "Representaron ambos (el Imperio alemán a fines del siglo XIX y el Japón de los Meiji luego de 1873) revoluciones “desde arriba”."
+            },
+            {
+              "id": "ms-apartado-4-p3-s9",
+              "text": "El Estado, manejado por las clases propietarias tradicionales, introdujo las reformas, fundamentalmente porque no existían allí los sectores burgueses capaces de generarlas."
+            },
+            {
+              "id": "ms-apartado-4-p3-s10",
+              "text": "No se modificaba en tales situaciones la propiedad de la tierra."
+            },
+            {
+              "id": "ms-apartado-4-p3-s11",
+              "text": "Finalmente, la tercera vía fue aquella que, como en los casos de Rusia y China, condujo al “comunismo”."
+            },
+            {
+              "id": "ms-apartado-4-p3-s12",
+              "text": "La importancia del trabajo de Barrington Moore se funda, entre otras cosas, en la relación que el autor estableció entre la profundidad y el carácter de los cambios sociales y económicos y la construcción de la democracia política."
+            }
+          ]
+        },
+        {
+          "id": "ms-apartado-4-p4",
+          "kind": "body",
+          "sentences": [
+            {
+              "id": "ms-apartado-4-p4-s1",
+              "text": "En Argentina, las consecuencias de una construcción realizada “desde arriba” fueron de fundamental importancia tanto en el nivel de la política como en el de la estructura y el funcionamiento que el mismo Estado fue adquiriendo."
+            },
+            {
+              "id": "ms-apartado-4-p4-s2",
+              "text": "Según Daniel García Delgado, el Estado nacional argentino mostró escasa autonomía respecto de la clase que le dio origen."
+            },
+            {
+              "id": "ms-apartado-4-p4-s3",
+              "text": "El gobierno se estructuraba y operaba como coto de caza cerrado y los asuntos nacionales eran tratados como problemas de redes de relación familiares para servir y satisfacer a un círculo restringido de intereses y de individuos privilegiados de la oligarquía."
+            },
+            {
+              "id": "ms-apartado-4-p4-s4",
+              "text": "El Estado –cautivo de esta clase– adoptó el rol de modernizador y portador de un progreso que se identificaba con el mundo cultural europeo occidental."
+            },
+            {
+              "id": "ms-apartado-4-p4-s5",
+              "text": "Los cambios alentados no eran tanto producto de un consenso nacional como del proyecto y voluntad de la élite, direccionalizados verticalmente y como negación de lo anterior, ya que pretendieron construir una Nación contra su pasado, más bien que a partir de él."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bibliography": [
+    "Allub, Leopoldo, Orígenes del autoritarismo en América Latina, México, Katún, 1983.",
+    "Ansaldi, Waldo, “Frívola y casquivana, mano de hierro en guante de seda. Una propuesta para conceptuar el término de oligarquía en América Latina”, Terceras Jornadas Interescuelas/ Departamentos de Historia de Universidades Nacionales, Facultad de Filosofía y Letras, UBA, septiembre de 1991.",
+    "Ansaldi, Waldo y Moreno, José Luis, Estado y sociedad en el pensamiento nacional, Buenos Aires, Cántaro, 1989.",
+    "Bobbio, Norberto, Estado, Gobierno y Sociedad, México, Fondo de Cultura Económica, 1989.",
+    "Bobbio, Norberto y Matteucci, Nicola, Diccionario de Política, México, Siglo XXI, 5a. ed., 1987.",
+    "Botana, Natalio, “El federalismo liberal en Argentina: 1852-1930”, en Carmagnani, Marcelo (comp.), Federalismos latinoamericanos: México/Brasil/Argentina, México, Fondo de Cultura Económica, 1993.",
+    "Botana, Natalio, El orden conservador, Buenos Aires, Sudamericana, 1985.",
+    "De Sagastizábal, Leandro, Marcaida, Elena, Scaltritti, Mabel y De Luque, Susana, Argentina 1880-1943. Sociedad y Estado. Aproximaciones a su estudio, Buenos Aires, C.E.L., 1995.",
+    "García Delgado, Daniel, Estado y Sociedad, Buenos Aires, Flacso, 1996.",
+    "García Delgado, Daniel, Estado & Sociedad, la nueva relación a partir del cambio estructural, Buenos Aires, Tesis-Norma, 1996.",
+    "Gorostiegui de Torres, Haydeé, Argentina. La organización nacional, Buenos Aires, Paidós, 1972.",
+    "Moore, Barrington, Los orígenes de la dictadura y la democracia, Barcelona, Península, 1976.",
+    "Oszlak, Oscar, La formación del Estado argentino, Buenos Aires, Ediciones de Belgrano, 1985.",
+    "Oszlak, Oscar, “Reflexiones sobre la formación del Estado y la construcción de la sociedad argentina”, Desarrollo Económico, Nº 47, vol. 21, enero-marzo de 1982.",
+    "Romero, José Luis, El desarrollo de las ideas en la sociedad argentina del siglo XX, Buenos Aires, Fondo de Cultura Económica, 1983.",
+    "Romero, José Luis, Las ideas políticas en la Argentina, Buenos Aires, Fondo de Cultura Económica, 1987.",
+    "Sábato, Jorge Federico, La clase dominante en la Argentina moderna. Formación y características, Buenos Aires, CISEA-GEL, 1988.",
+    "Sábato, Jorge Federico y Roulet, Jorge Esteban, “Estado y administración pública en la Argentina, ¿frenos o motores del proceso de cambio social?”, Historia Integral Argentina, Buenos Aires, Centro Editor de América Latina, 1972"
+  ],
+  "sourceNote": "Versión de cátedra: cuerpo y bibliografía tomados del TXT cotejado con el PDF. Se normalizaron espacios y se organizaron párrafos para la lectura; se conserva la puntuación del TXT. Las notas al pie del volumen editorial no están incluidas en esta copia. Un cotejo automático identifica el cierre del cuerpo en el tramo final del MP3. La bibliografía se conserva en texto y la sincronización fina con la voz sigue en revisión.",
+  "syncMetadata": {
+    "status": "pending",
+    "alignmentVerified": false,
+    "timeAssignments": 0,
+    "originalVttCues": 361,
+    "originalVttEnd": 1878.531,
+    "audioDuration": 2026.374625
+  }
+}

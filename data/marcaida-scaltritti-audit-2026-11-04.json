@@ -1,0 +1,63 @@
+{
+  "work_id": "marcaida-scaltritti-estado-nacional",
+  "audit_date": "2026-11-04",
+  "status": "INCIDENCIA_DE_INSUMOS",
+  "proposal_status": "pending_user_review",
+  "reference_commit": "997dba7fa130112833ccc365e7d83128c5694802",
+  "normative_document": "https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit",
+  "sources": [
+    {
+      "kind": "pdf",
+      "drive_file_id": "1S99Sc5eAUJ_q2TsyW43UAjRmUw_1_LRg",
+      "bytes": 445284,
+      "sha256": "9311da9f8094f07322e06c907409b03f6cbba4e9b69fd685a3457ab58490818c"
+    },
+    {
+      "kind": "audio",
+      "drive_file_id": "1OdJmzsqdlV-xaPx7uyYaej8PJBL6QZ9s",
+      "bytes": 64845012,
+      "sha256": "cc324ffa8999233c94a76521b097eb6c7e81d43182d9df5ef49a46413b76b5ba"
+    },
+    {
+      "kind": "subtitles",
+      "drive_file_id": "1iWYzkJiW54yj8FWekW7igBnSig2vRWPu",
+      "bytes": 52037,
+      "sha256": "a6f02913b9a5a8909595be9396161b322ae4a014d88490a3a075f4f465e3f8ba"
+    }
+  ],
+  "screens_proposed": {
+    "inicio": 1,
+    "autor": 1,
+    "contexto": 3,
+    "lectura": 1,
+    "creditos": 1
+  },
+  "audio": {
+    "duration_seconds": 2026.374625,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "decode_errors_reported": false,
+    "auditory_content_verified": false
+  },
+  "vtt": {
+    "cue_count": 361,
+    "first_start_seconds": 0,
+    "last_end_seconds": 1878.531,
+    "positive_duration_all": true,
+    "overlaps": 0,
+    "max_gap_seconds": 0.548,
+    "cues_with_ssml_residue": 7,
+    "duration_difference_seconds": 147.843625,
+    "alignment_to_voice_verified": false,
+    "bibliography_present": false
+  },
+  "pending": [
+    "auditory_alignment_and_audio_tail_identification",
+    "correct_vtt_against_chosen_text",
+    "edition_and_notes_collation",
+    "author_profiles_and_portraits",
+    "documented_usage_conditions",
+    "proposal_review",
+    "implementation_and_browser_QA"
+  ]
+}
