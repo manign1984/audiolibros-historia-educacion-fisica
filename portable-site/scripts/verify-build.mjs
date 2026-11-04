@@ -33,6 +33,8 @@ const pineauBundleName = assetNames.find((name) => /^pineauFrescoNoble-.*\.js$/.
 const hobsbawmBundleName = assetNames.find((name) => /^hobsbawmHistoriaSigloXX-.*\.js$/.test(name));
 assert.ok(hobsbawmBundleName, 'Debe existir el bundle independiente de Hobsbawm.');
 const readerBundleNames = assetNames.filter((name) => /^reader-.*\.js$/.test(name));
+const marcaidaBundleName = assetNames.find((name) => /^marcaida-scaltritti-estado-nacional-.*\.js$/.test(name));
+assert.ok(marcaidaBundleName, 'Marcaida/Scaltritti debe tener su recorrido independiente.');
 assert.ok(libraryBundleName, 'Debe existir el bundle independiente de la biblioteca.');
 assert.ok(orbuchBundleName, 'Debe existir el bundle independiente de Orbuch.');
 assert.ok(pineauBundleName, 'Debe existir el bundle independiente de Fresco–Noble.');
@@ -46,6 +48,13 @@ const [libraryBundle, orbuchBundle, pineauBundle] = await Promise.all([
 const allJavaScript = (await Promise.all(
   assetNames.filter((name) => name.endsWith('.js')).map((name) => readFile(resolve(dist, 'assets', name), 'utf8')),
 )).join('\n');
+
+const marcaidaBundle = await readFile(resolve(dist, 'assets', marcaidaBundleName), 'utf8');
+assert.ok(marcaidaBundle.includes(`./${readerBundleNames[0]}`), 'Marcaida/Scaltritti debe importar el lector compartido.');
+for (const name of ['marcaida-audiolibro.mp3', 'marcaida-scaltritti-estado-nacional.pdf', 'marcaida-texto-accesible.txt', 'marcaida-tramas.svg']) {
+  await access(resolve(dist, 'assets', name));
+  assert.ok(allJavaScript.includes(`${normalizedBase}assets/${name}`), `Marcaida/Scaltritti: recurso publicado en la base correcta: ${name}`);
+}
 
 assert.ok(orbuchBundle.includes(`./${readerBundleNames[0]}`), 'Orbuch debe importar el bundle compartido del lector.');
 assert.ok(pineauBundle.includes(`./${readerBundleNames[0]}`), 'Pineau debe importar el bundle compartido del lector.');

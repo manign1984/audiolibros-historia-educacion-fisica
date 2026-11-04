@@ -131,7 +131,7 @@ function NoteCard({ note, sentence, onGo, onEdit, onDelete, compact = false }) {
   return (
     <article className={`margin-note ${compact ? 'margin-note--compact' : ''}`}>
       <button className="margin-note__jump" type="button" onClick={() => onGo(note)}>
-        <span>{sentence?.sectionTitle || 'Texto'}{Number.isFinite(audioTime) ? ` · ${formatTime(audioTime)}` : ''}</span>
+        <span>{sentence?.sectionTitle || 'Texto'}{Number.isFinite(audioTime) ? ` · ${formatTime(audioTime)}${Number.isFinite(sentence?.start) ? '' : ' · audio al anotar'}` : ''}</span>
         <q>{excerpt(sentence?.text, compact ? 92 : 118)}</q>
       </button>
       <p>{note.text}</p>
@@ -703,7 +703,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
             >
               <article className="reader-document" aria-labelledby="reader-document-title">
                 <header className="reader-document__cover">
-                  <p>Texto completo · versión accesible</p>
+                  <p>{readingDocument.versionLabel || 'Texto completo · versión accesible'}</p>
                   <h1 id="reader-document-title">{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'title'))}</h1>
                   <h2>{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'subtitle'))}</h2>
                   <span>{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'author'))}</span>
@@ -762,7 +762,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
           <footer className="reader-player">
             {audioLoading && !audioReady && !audioError && (
               <div className="reader-player__loading" role="status">
-                Preparando el audio para habilitar saltos precisos…
+                {config.sync.status === 'ready' ? 'Preparando el audio para habilitar saltos precisos…' : 'Preparando el audio para escuchar…'}
               </div>
             )}
             {audioError && (

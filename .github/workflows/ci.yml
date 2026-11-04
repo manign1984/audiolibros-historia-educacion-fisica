@@ -44,6 +44,9 @@ jobs:
       - name: Test Aisenstein assets and reading
         run: npm run test:aisenstein
 
+      - name: Test Marcaida and Scaltritti materials
+        run: npm run test:marcaida
+
       - name: Build static site
         run: npm run build
 
