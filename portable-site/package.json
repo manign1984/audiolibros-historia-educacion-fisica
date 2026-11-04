@@ -18,7 +18,7 @@
     "verify:build": "node scripts/verify-build.mjs",
     "predev": "node scripts/prepare-marcaida-assets.mjs && node scripts/generate-layout-reference.mjs",
     "prebuild": "node scripts/prepare-marcaida-assets.mjs && node scripts/generate-layout-reference.mjs",
-    "test:marcaida": "node scripts/prepare-marcaida-assets.mjs && node scripts/test-marcaida.mjs"
+    "test:marcaida": "node scripts/prepare-marcaida-assets.mjs && node scripts/test-marcaida.mjs && node scripts/test-marcaida-sync-review.mjs"
   },
   "dependencies": {
     "@fontsource/archivo": "5.2.8",
