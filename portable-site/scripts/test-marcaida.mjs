@@ -9,6 +9,28 @@ const sentences = [...doc.frontMatter, ...doc.sections.flatMap(s => s.paragraphs
 const source = await readFile(new URL('../public/assets/marcaida-texto-accesible.txt', import.meta.url), 'utf8');
 assert.equal(doc.sections.length, 5, 'Introducción y cuatro apartados de la fuente.');
 assert.equal(doc.bibliography.length, 18, 'Conservar la bibliografía que omiten los Docs.');
+
+// Las notas de la edición editorial son un aparato textual, nunca pistas de audio.
+assert.equal(doc.endnotes.length, 10, 'Recuperar las diez llamadas numeradas de la edición original.');
+assert.deepEqual(doc.endnotes.map(n => n.number), [1,2,3,4,5,6,7,8,9,10]);
+const sentenceIds = new Set(sentences.map(s => s.id));
+for (const note of doc.endnotes) {
+  assert.ok(sentenceIds.has(note.sentenceId), `Nota ${note.number}: el pasaje vinculado debe existir.`);
+  assert.equal(typeof note.text, 'string');
+  assert.ok(note.text.length > 30, `Nota ${note.number} no puede ser una referencia vacía.`);
+  assert.equal(note.sourceUrl, `https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=${note.page}`);
+  assert.ok(!('start' in note) && !('end' in note), 'Las notas no llevan timestamps ni se sincronizan.');
+}
+assert.equal(doc.endnotes[1].kind, 'incorporada-al-cuerpo', 'La nota 2 está integrada en el cuerpo de la copia de cátedra: no duplicar.');
+assert.ok(sentences.some(s => s.text.startsWith('La “Generación del 37” estaba formada')), 'Conservar el contenido incorporado de la nota 2.');
+assert.equal(doc.endnotes.filter(n => n.kind === 'sintesis').length, 2, 'Las notas explicativas se identifican como síntesis, no como citas textuales.');
+const sharedReaderSource = await readFile(new URL('../src/IntegratedReader.jsx', import.meta.url), 'utf8');
+assert.match(sharedReaderSource, /reader-editorial-reference/, 'Los números de nota deben ser clicables desde el pasaje.');
+assert.match(sharedReaderSource, /reader-editorial-note-/, 'Las notas deben tener destino accesible en el lector.');
+assert.match(sharedReaderSource, /endnotesDetailsRef\.current\.open = true/, 'Abrir las notas desde la referencia sin perder contexto.');
+assert.match(sharedReaderSource, /returnToEditorialReference/, 'Permitir regresar al pasaje correspondiente.');
+assert.match(sharedReaderSource, /Notas académicas de la edición · no narradas/, 'No atribuir las notas al audiolibro.');
+
 assert.equal(new Set(sentences.map(s => s.id)).size, sentences.length, 'Cada pasaje anotable tiene identidad estable.');
 assert.ok(sentences.every(s => !('start' in s) && !('end' in s)), 'No activar marcas temporales sin verificar.');
 assert.equal(config.sync.status, 'pending');
