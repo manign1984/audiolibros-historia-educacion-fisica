@@ -100,7 +100,8 @@ for (const b of bounds) {
 assert.equal(proposal.status, 'REVIEW-ONLY / DO NOT LOAD INTO PUBLIC READER');
 assert.equal(proposal.activeInReader, false);
 assert.equal(proposal.humanAuditoryReview, false);
-assert.match(configSource, /status: 'pending'/);
+assert.match(configSource, /status: 'paragraph-preview'/);
+assert.match(configSource, /unit: 'paragraph'/);
 assert.equal(cues.length, proposal.summary.vttCueCount);
 assert.equal(sourceWords.length, proposal.summary.sourceTokens);
 assert.equal(vttWords.length, proposal.summary.vttTokens);
