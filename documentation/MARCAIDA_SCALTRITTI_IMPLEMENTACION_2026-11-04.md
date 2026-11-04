@@ -42,3 +42,18 @@ El recorrido público permanece «Edición en revisión», con estado de catálo
 ## Integración
 
 Trabajo iniciado sobre `research/marcaida-scaltritti-auditoria-2026-11-04` y recuperado tras la interrupción en `feat/marcaida-scaltritti-recorrido-20261104`, conservando los archivos originales. La integración se realiza mediante pull request después de los controles. GitHub Actions agrega la prueba específica de Marcaida/Scaltritti. El despliegue usa el flujo existente de GitHub Pages. La edición queda disponible para evaluar su aplicación real sin convertir la sincronización pendiente en una prestación aprobada.
+
+
+## Complemento editorial · Notas de la edición original (04/11/2026)
+
+Se incorporan las **diez llamadas numeradas** que aparecen en el capítulo de la primera edición, segunda reimpresión de 2013 (pp. 49–60), tomando como referencia [el ejemplar editorial de CEDINPE-UNSAM](https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf).
+
+- Las llamadas son números diferenciados de las anotaciones personales, con acceso por teclado. Al activarlas se abre el apartado de notas académicas del lector y se puede volver al pasaje original.
+- Cada nota incluye página impresa y enlace a la edición original, para cotejarla en su fuente.
+- Las **notas 1 y 4**, explicativas, se presentan como **síntesis editoriales**, no como transcripciones textuales de la edición.
+- La **nota 2** ya había sido incorporada al cuerpo del apartado 2 en el material de cátedra; se mantiene esa ubicación y su referencia informa del traslado, sin duplicar el contenido.
+- Las **notas 3 y 5–10** recuperan los datos bibliográficos correspondientes. La nota 5 conserva la variante de título del aparato original y advierte que la bibliografía final usa otra formulación.
+- Todas son **solo textuales**: no se agrega locución, no se asignan inicios o finales temporales y no se activa ninguna sincronización. El MP3, el documento fuente y las claves de notas personales conservan sus valores originales.
+- El aviso de los créditos identifica que el PDF de cátedra carece de las notas y que las referencias del lector se reconstruyen, con acceso al original.
+
+Esta mejora hace visible el aparato de notas sin modificar silenciosamente el cuerpo de la edición de cátedra. La decisión sobre una eventual restitución *literal* de todas las notas deberá tramitarse con el material y las autorizaciones editoriales correspondientes; las síntesis actuales no deben presentarse como transcripción fiel.

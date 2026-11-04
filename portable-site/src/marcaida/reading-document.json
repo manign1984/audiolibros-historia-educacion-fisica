@@ -821,7 +821,7 @@
     "Sábato, Jorge Federico, La clase dominante en la Argentina moderna. Formación y características, Buenos Aires, CISEA-GEL, 1988.",
     "Sábato, Jorge Federico y Roulet, Jorge Esteban, “Estado y administración pública en la Argentina, ¿frenos o motores del proceso de cambio social?”, Historia Integral Argentina, Buenos Aires, Centro Editor de América Latina, 1972"
   ],
-  "sourceNote": "Versión de cátedra: cuerpo y bibliografía tomados del TXT cotejado con el PDF. Se normalizaron espacios y se organizaron párrafos para la lectura; se conserva la puntuación del TXT. Las notas al pie del volumen editorial no están incluidas en esta copia. Un cotejo automático identifica el cierre del cuerpo en el tramo final del MP3. La bibliografía se conserva en texto y la sincronización fina con la voz sigue en revisión.",
+  "sourceNote": "Versión de cátedra: cuerpo y bibliografía tomados del TXT cotejado con el PDF. Se normalizaron espacios y se organizaron párrafos para la lectura; se conserva la puntuación del TXT. Las notas al pie del volumen editorial no están incluidas en esta copia. Un cotejo automático identifica el cierre del cuerpo en el tramo final del MP3. La bibliografía se conserva en texto y la sincronización fina con la voz sigue en revisión. El lector conserva diez referencias a las notas numeradas de la edición editorial, independientes del audio. Las notas explicativas se ofrecen como síntesis editoriales y remiten a la página original; la nota 2 ya aparece integrada en el cuerpo de la versión de cátedra.",
   "syncMetadata": {
     "status": "pending",
     "alignmentVerified": false,
@@ -829,5 +829,87 @@
     "originalVttCues": 361,
     "originalVttEnd": 1878.531,
     "audioDuration": 2026.374625
-  }
+  },
+  "endnotes": [
+    {
+      "number": 1,
+      "page": 50,
+      "sentenceId": "ms-apartado-1-p3-s1",
+      "text": "Síntesis editorial: Oszlak considera obstáculos sociales y económicos, además de las diferencias entre unitarios y federales. La nota remite asimismo a José Luis Romero para la dimensión cultural.",
+      "kind": "sintesis",
+      "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=50"
+    },
+    {
+      "number": 2,
+      "page": 51,
+      "sentenceId": "ms-apartado-1-p5-s2",
+      "text": "La copia de cátedra trasladó el contenido de esta nota al cuerpo del apartado 2. Se conserva allí sin reproducirlo por duplicado.",
+      "kind": "incorporada-al-cuerpo",
+      "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=51"
+    },
+    {
+      "number": 3,
+      "page": 53,
+      "sentenceId": "ms-apartado-3-p4-s4",
+      "text": "Referencia citada: Oscar Oszlak, La formación del Estado argentino (Ediciones de Belgrano, 1985).",
+      "kind": "bibliografica",
+      "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=53"
+    },
+    {
+      "number": 4,
+      "page": 55,
+      "sentenceId": "ms-apartado-3-p16-s3",
+      "text": "Síntesis editorial: el Estado amplió sus atribuciones mediante el registro civil de nacimientos y defunciones y la regulación del matrimonio, antes bajo jurisdicción de la Iglesia.",
+      "kind": "sintesis",
+      "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=55"
+    },
+    {
+      "number": 5,
+      "page": 57,
+      "sentenceId": "ms-apartado-4-p2-s2",
+      "text": "Jorge F. Sábato, La formación de la clase dominante en la Argentina (CISEA-GEL, 1988). La bibliografía final emplea otra formulación del título; se conserva aquí la referencia de la nota.",
+      "kind": "bibliografica",
+      "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=57"
+    },
+    {
+      "number": 6,
+      "page": 57,
+      "sentenceId": "ms-apartado-4-p2-s5",
+      "text": "Waldo Ansaldi, «Soñar con Rousseau y despertar con Hobbes», en Ansaldi y Moreno, Estado y sociedad en el pensamiento nacional (Cántaro, 1989).",
+      "kind": "bibliografica",
+      "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=57"
+    },
+    {
+      "number": 7,
+      "page": 58,
+      "sentenceId": "ms-apartado-4-p3-s1",
+      "text": "Daniel R. García Delgado, Estado & Sociedad, la nueva relación a partir del cambio estructural (Tesis-Norma, 1996).",
+      "kind": "bibliografica",
+      "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=58"
+    },
+    {
+      "number": 8,
+      "page": 58,
+      "sentenceId": "ms-apartado-4-p3-s2",
+      "text": "Enzo Faletto, «Especificidad del Estado en América Latina», CEPAL, p. 18; referencia indirecta a través de García Delgado.",
+      "kind": "bibliografica",
+      "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=58"
+    },
+    {
+      "number": 9,
+      "page": 58,
+      "sentenceId": "ms-apartado-4-p3-s12",
+      "text": "Barrington Moore, Los orígenes de la dictadura y la democracia (Península, 1976).",
+      "kind": "bibliografica",
+      "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=58"
+    },
+    {
+      "number": 10,
+      "page": 59,
+      "sentenceId": "ms-apartado-4-p4-s5",
+      "text": "Daniel García Delgado, obra citada en la nota 7, p. 45.",
+      "kind": "bibliografica",
+      "sourceUrl": "https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf#page=59"
+    }
+  ]
 }

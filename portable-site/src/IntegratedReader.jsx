@@ -2,7 +2,7 @@
 
 import JourneyReadingEntry from './shared/JourneyReadingEntry.jsx';
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   BookOpen,
   BookmarkPlus,
@@ -151,6 +151,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   const dialogRef = useRef(null);
   const audioRef = useRef(null);
   const textScrollRef = useRef(null);
+  const endnotesDetailsRef = useRef(null);
   const resumeAfterEditorRef = useRef(false);
   const statusTimerRef = useRef(null);
   const restoredRef = useRef(false);
@@ -192,6 +193,28 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   ]).map((sentence, order) => ({ ...sentence, order })), [readingDocument]);
 
   const sentenceMap = useMemo(() => new Map(sentences.map((sentence) => [sentence.id, sentence])), [sentences]);
+  // Referencias de la edición (no son notas personales ni pasajes del audio).
+  // Solo se muestra el enlace si la obra trae una ubicación editorial verificada.
+  const editorialFootnotes = useMemo(
+    () => new Map((readingDocument.endnotes || [])
+      .filter((note) => note.sentenceId && sentenceMap.has(note.sentenceId))
+      .map((note) => [note.sentenceId, note])),
+    [readingDocument, sentenceMap],
+  );
+  const showEditorialFootnote = (note) => {
+    if (!endnotesDetailsRef.current) return;
+    endnotesDetailsRef.current.open = true;
+    window.requestAnimationFrame(() => {
+      const target = document.getElementById(`reader-editorial-note-${note.number}`);
+      target?.scrollIntoView({ block: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+      target?.focus({ preventScroll: true });
+    });
+  };
+  const returnToEditorialReference = (note) => {
+    const target = textScrollRef.current?.querySelector(`[data-reader-sentence="${note.sentenceId}"]`);
+    target?.scrollIntoView({ block: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    target?.focus({ preventScroll: true });
+  };
   const timedSentences = useMemo(
     () => sentences.filter((sentence) => Number.isFinite(sentence.start)),
     [sentences],
@@ -583,32 +606,40 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     const count = noteCountFor(sentence.id);
     const active = activeSentence?.id === sentence.id;
     const selected = selectedSentenceId === sentence.id;
+    const editorialNote = editorialFootnotes.get(sentence.id);
     return (
-      <span
-        key={sentence.id}
-        data-reader-sentence={sentence.id}
-        data-audio-unavailable={sentence.audioUnavailable || undefined}
-        title={sentence.audioUnavailable ? 'Este fragmento no se lee en la grabación.' : undefined}
-        className={`reader-sentence ${active ? 'is-active' : ''} ${selected ? 'is-selected' : ''} ${count ? 'has-note' : ''}`}
-        role="button"
-        tabIndex={0}
-        aria-current={active ? 'true' : undefined}
-        aria-label={`${sentence.text}${sentence.audioUnavailable ? ' Fragmento sin audio.' : ''}${count ? `. ${count} ${count === 1 ? 'nota' : 'notas'}.` : ''}`}
-        onClick={() => setSelectedSentenceId(sentence.id)}
-        onKeyDown={(event) => {
-          if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            setSelectedSentenceId(sentence.id);
-          }
-        }}
-      >
-        {sentence.text}
-        {count > 0 && <> <sup title={`${count} ${count === 1 ? 'nota' : 'notas'}`}>{count}</sup></>}
+      <Fragment key={sentence.id}>
+        <span
+          data-reader-sentence={sentence.id}
+          data-audio-unavailable={sentence.audioUnavailable || undefined}
+          title={sentence.audioUnavailable ? 'Este fragmento no se lee en la grabación.' : undefined}
+          className={`reader-sentence ${active ? 'is-active' : ''} ${selected ? 'is-selected' : ''} ${count ? 'has-note' : ''}`}
+          role="button"
+          tabIndex={0}
+          aria-current={active ? 'true' : undefined}
+          aria-label={`${sentence.text}${sentence.audioUnavailable ? ' Fragmento sin audio.' : ''}${count ? `. ${count} ${count === 1 ? 'nota' : 'notas'} personales.` : ''}`}
+          onClick={() => setSelectedSentenceId(sentence.id)}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              setSelectedSentenceId(sentence.id);
+            }
+          }}
+        >
+          {sentence.text}
+          {count > 0 && <> <sup title={`${count} ${count === 1 ? 'nota personal' : 'notas personales'}`}>{count}</sup></>}
+        </span>
+        {editorialNote && <button
+          type="button"
+          className="reader-editorial-reference"
+          aria-label={`Consultar nota editorial ${editorialNote.number} de la edición de Marcaida y Scaltritti`}
+          onClick={() => showEditorialFootnote(editorialNote)}
+          title={`Nota académica ${editorialNote.number}, página ${editorialNote.page}; no forma parte del audiolibro`}
+        ><sup>{editorialNote.number}</sup></button>}
         {appendSpace ? ' ' : null}
-      </span>
+      </Fragment>
     );
   };
-
   const editorSentence = editor ? sentenceMap.get(editor.sentenceId) : null;
   const readerProgress = { currentTime, playbackRate, volume, followText, fontScale };
 
@@ -733,9 +764,19 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                     <h2 id="reader-apparatus-title">Notas y bibliografía</h2>
                     <p>{readingDocument.sourceNote || 'El audiolibro recorre el cuerpo principal del artículo. Las notas académicas y la bibliografía se conservan aquí para completar la versión textual.'}</p>
                     {(readingDocument.endnotes || []).length > 0 && (
-                      <details>
-                        <summary><span>Notas del texto</span><b>{readingDocument.endnotes.length}</b></summary>
-                        <ol>{readingDocument.endnotes.map((note) => <li key={note.number}><span>{note.number}</span><p>{note.text}</p></li>)}</ol>
+                      <details ref={endnotesDetailsRef}>
+                        <summary><span>Notas académicas de la edición · no narradas</span><b>{readingDocument.endnotes.length}</b></summary>
+                        <ol>{readingDocument.endnotes.map((note) => <li key={note.number} id={`reader-editorial-note-${note.number}`} tabIndex={-1}>
+                          <span aria-hidden="true">{note.number}</span>
+                          <div className="reader-editorial-note-body">
+                            <p>{note.text}</p>
+                            {note.kind && <small>{note.kind === 'sintesis' ? 'Síntesis editorial del contenido de la nota original' : note.kind === 'incorporada-al-cuerpo' ? 'Nota original ya incorporada al cuerpo de la versión de cátedra' : 'Referencia bibliográfica de la nota original'}</small>}
+                            <div className="reader-editorial-note-links">
+                              {note.sourceUrl && <a href={note.sourceUrl} target="_blank" rel="noreferrer" aria-label={`Consultar nota ${note.number} en página ${note.page} de la edición original`}>Ver original · p. {note.page}</a>}
+                              {note.sentenceId && <button type="button" onClick={() => returnToEditorialReference(note)}>Volver al pasaje</button>}
+                            </div>
+                          </div>
+                        </li>)}</ol>
                       </details>
                     )}
                     {(readingDocument.bibliography || []).length > 0 && (
