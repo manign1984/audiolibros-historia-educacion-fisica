@@ -179,3 +179,29 @@ assert.match(librarySource, /href="#catalogo">Descubrí la biblioteca/, 'El CTA 
 assert.match(librarySource, /className="library-shell catalog-area" id="catalogo"/, 'El catálogo continúa disponible tras Inicio.');
 assert.match(librarySource, /<select value=\{collection\}/, 'Conservar la exploración por colecciones mediante el filtro.');
 assert.match(librarySource, /\{collections\.map\(\(item\) => <Shelf/, 'Conservar estanterías temáticas y sus colecciones.');
+
+
+
+// Destacados: rotación moderada y controlable; no interferir con lectura,
+// interacciones, movimiento reducido ni pestañas ocultas.
+assert.match(librarySource, /const HERO_ROTATION_MS = 10_000;/, 'Cada portada debe permanecer visible 10 segundos.');
+assert.match(librarySource, /const HERO_CROSSFADE_MS = 700;/, 'El fundido de contenido debe durar 0,7 segundos.');
+assert.match(librarySource, /window\.setTimeout\([\s\S]*?HERO_ROTATION_MS/, 'El avance temporizado debe ser cancelable y reiniciarse al cambiar de portada.');
+assert.match(librarySource, /window\.clearTimeout\(timer\)/, 'La temporización debe limpiarse en desmontaje, pausa y cambio.');
+assert.match(librarySource, /onMouseEnter=\{\(\) => setHovering\(true\)\}/, 'Detener la rotación cuando la persona posiciona el cursor sobre la portada.');
+assert.match(librarySource, /onMouseLeave=\{\(\) => setHovering\(false\)\}/, 'Permitir continuar al salir el cursor, salvo pausa manual.');
+assert.match(librarySource, /onFocusCapture=\{onHeroFocus\}/, 'La interacción por teclado debe detener la rotación.');
+assert.match(librarySource, /if \(!event\.target\.closest\('\[data-rotation-toggle\]'\)\) setPausedByUser\(true\);/, 'El botón reanudar debe funcionar incluso con foco.');
+assert.match(librarySource, /setPausedByUser\(true\);\s*\};/, 'Elegir una portada manualmente debe detener el avance hasta reanudación explícita.');
+assert.match(librarySource, /prefers-reduced-motion: reduce/, 'No activar rotación si el navegador pide movimiento reducido.');
+assert.match(librarySource, /disabled=\{reducedMotion\}/, 'No forzar autoplay con movimiento reducido.');
+assert.match(librarySource, /visibilitychange/, 'Suspender el carrusel en pestañas ocultas.');
+assert.match(librarySource, /IntersectionObserver/, 'Suspender el carrusel cuando no está visible en la pantalla.');
+assert.match(librarySource, /aria-roledescription="carrusel"/, 'Identificar el componente para tecnologías de asistencia.');
+assert.match(librarySource, /aria-live=\{rotating \? 'off' : 'polite'\}/, 'Evitar anuncios espontáneos durante autoplay.');
+assert.match(librarySource, /aria-label=\{reducedMotion \? [\s\S]*?'Reanudar rotación automática' : 'Pausar rotación automática'\}/, 'La pausa debe ser un control accesible y reversible.');
+assert.match(librarySource, /onClick=\{\(\) => selectSlide\(i\)\}/, 'La selección manual conserva prioridad.');
+assert.match(libraryCss, /transition:opacity var\(--hero-fade-duration,700ms\)/, 'Las imágenes deben cambiar por fundido.');
+assert.match(libraryCss, /animation:hero-content-fade var\(--hero-fade-duration,700ms\)/, 'Los textos deben acompañar el fundido.');
+assert.match(libraryCss, /@media\(prefers-reduced-motion:reduce\)/, 'Debe existir variante sin animaciones.');
+assert.match(libraryCss, /\.library-page \.hero-pagination \.hero-rotation-toggle\s*\{[\s\S]*?width:44px;/, 'La pausa debe tener un objetivo táctil visible.');
