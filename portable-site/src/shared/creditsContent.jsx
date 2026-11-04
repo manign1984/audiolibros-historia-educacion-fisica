@@ -6,7 +6,7 @@ export const creditsContent = {
       <>Marcaida, E., &amp; Scaltritti, M. (2013). La construcción del Estado nacional argentino (1852–1880). En <em>Historia argentina contemporánea: Pasados presentes de la política, la economía y el conflicto social</em> (pp. 49–60). Dialektik. Primera edición, segunda reimpresión.</>,
       <>{link('/assets/marcaida-scaltritti-estado-nacional.pdf', 'PDF de cátedra')} · {link('/assets/marcaida-texto-accesible.txt', 'Texto accesible con bibliografía')} · {link('https://cedinpe.unsam.edu.ar/sites/default/files/pdfs/scaltritti-historia_reciente.pdf', 'Edición editorial original')}.</>,
       link('https://drive.google.com/file/d/1OdJmzsqdlV-xaPx7uyYaej8PJBL6QZ9s/view', 'Audiolibro aportado al proyecto · 33:46.'),
-      <>Trayectorias: {link('https://www.pagina12.com.ar/diario/universidad/10-195385-2012-06-01.html', 'reseña de Elena Marcaida')} y {link('https://centroderecursosnormal1.blogspot.com/2011/05/', 'trayectoria de Mabel Scaltritti (Escuela Normal N.º 1)') y {link('https://www.bnm.me.gov.ar/giga1/documentos/EL001102.pdf', 'Cuadernos para el aula, Ministerio de Educación')}}.</>,
+      <>Trayectorias: {link('https://www.pagina12.com.ar/diario/universidad/10-195385-2012-06-01.html', 'reseña de Elena Marcaida')} ; {link('https://centroderecursosnormal1.blogspot.com/2011/05/', 'trayectoria de Mabel Scaltritti (Escuela Normal N.º 1)')} y {link('https://www.bnm.me.gov.ar/giga1/documentos/EL001102.pdf', 'Cuadernos para el aula, Ministerio de Educación')}.</>,
     ],
     rights: [
       <>Edición en revisión. La sincronización entre voz y texto está en proceso de verificación. El audio se controla por separado; no están habilitados los saltos por oración.</>,
