@@ -6,6 +6,8 @@ import {
   collections,
   citationAsPlainText,
   filterCatalog,
+  canReadAndListen,
+  matchesAvailability,
   matchesCatalogEntry,
   normalizeForSearch,
   resolveSitePath,
@@ -124,13 +126,32 @@ assert.equal(new Set(allCatalog.map((entry) => entry.id)).size, allCatalog.lengt
 for (const entry of allCatalog) {
   assert.ok(collections.some((collection) => collection.id === entry.collection));
   assert.ok(citationAsPlainText(entry).length > 30);
-  assert.ok(['available', 'preparation'].includes(entry.status));
+  assert.ok(['available', 'review', 'preparation'].includes(entry.status));
   await access(new URL(`../${entry.path}index.html`, import.meta.url));
   if (entry.status === 'preparation') {
     assert.equal(entry.duration, undefined, 'No inventar duración para audios pendientes.');
     assert.equal(entry.stateKey, undefined, 'Una ficha sin audio no puede mostrar progreso.');
   }
 }
+
+const marcaida = allCatalog.find((entry) => entry.id === 'marcaida-scaltritti-estado-nacional');
+assert.ok(marcaida);
+assert.equal(marcaida.status, 'review');
+assert.equal(marcaida.duration, 2026.374625);
+assert.equal(marcaida.stateKey, 'marcaida-scaltritti-reader-state-v1');
+assert.equal(collections.find((item) => item.id === 'estado').period.startsWith('1852–1930'), true);
+assert.equal(canReadAndListen(marcaida), true, 'La edición en revisión tiene texto, audio y anotaciones.');
+assert.equal(matchesAvailability(marcaida, 'available'), true, 'Aparecer en filtro Leer y escuchar.');
+assert.equal(matchesAvailability(marcaida, 'review'), true, 'Aparecer en filtro Edición en revisión.');
+assert.equal(matchesAvailability(marcaida, 'preparation'), false, 'Nunca aparecer como ficha sin materiales.');
+assert.equal(matchesAvailability(orbuch, 'review'), false);
+assert.equal(matchesAvailability(orbuch, 'available'), true);
+assert.equal(matchesAvailability(allCatalog.find((entry) => entry.id === 'braudel-historia-duraciones'), 'preparation'), true);
+assert.equal(allCatalog.filter(canReadAndListen).length, 5, 'Cinco recorridos permiten leer y escuchar.');
+assert.match(libraryHome, /const readable = catalog\.filter\(canReadAndListen\)/, 'La estantería presenta todas las obras legibles.');
+assert.match(libraryHome, /entries=\{readable\}/, 'La estantería de lectura incluye Marcaida y Scaltritti.');
+assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
+assert.match(libraryHome, /const available = catalog\.filter\(\(entry\) => entry\.status === 'available'\)/, 'Conservar los cuatro destacados del carrusel automático.');
 assert.equal(filterCatalog(allCatalog, 'FEIGUÍN').length, 1);
 assert.equal(filterCatalog(allCatalog, 'galak dicho')[0].id, 'galak-del-dicho-al-hecho');
 assert.equal(filterCatalog(allCatalog, 'zzzinexistente').length, 0);
@@ -159,7 +180,7 @@ const blocked = { getItem() { throw new Error('Blocked'); }, setItem() { throw n
 assert.deepEqual(readList(blocked, ids), []);
 assert.equal(saveList(blocked, ids), false);
 assert.equal(readProgress(blocked, pineau), 0);
-console.log('Biblioteca: 29 fichas, 3 recorridos, búsqueda, APA, rutas, lista y progreso verificados.');
+console.log('Biblioteca: 29 fichas, 5 recorridos de lectura y audio (4 consolidados y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
 
 
 // Portada de la biblioteca = una pantalla útil bajo el encabezado real.
