@@ -45,6 +45,7 @@ const readingsInReview = {
   'marcaida-scaltritti-estado-nacional': {
     status: 'review',
     duration: 2026.374625,
+    historicalPeriod: '1852–1880',
     stateKey: 'marcaida-scaltritti-reader-state-v1',
   },
 };
