@@ -48,14 +48,14 @@ const paragraphs = doc.sections.flatMap(s => s.paragraphs);
 assert.equal(paragraphs.length, 42, '42 párrafos completos del cuerpo.');
 assert.equal(marcaidaParagraphTimings.length, paragraphs.length);
 assert.deepEqual(marcaidaParagraphTimings.map(p => p.id), paragraphs.map(p => p.id));
-assert.equal(marcaidaParagraphTimings.filter(p => p.verifiedByAudio).length, 36);
+assert.equal(marcaidaParagraphTimings.filter(p => p.asrBounded).length, 36);
 for (const [index, interval] of marcaidaParagraphTimings.entries()) {
   assert.ok(Number.isFinite(interval.start) && Number.isFinite(interval.end));
   assert.ok(interval.start < interval.end && interval.end <= doc.duration);
   if (index > 0) assert.ok(interval.start >= marcaidaParagraphTimings[index-1].end - 0.05, 'No solapar párrafos.');
 }
 assert.equal(marcaidaParagraphTimings.at(-1).end, 2020.14);
-assert.ok(sharedReaderSource.includes("paragraphMode ? renderParagraph(paragraph, Tag)"), 'Renderizar párrafos solo en esta modalidad.');
+assert.ok(/paragraphMode\s*\?\s*renderParagraph\(paragraph,\s*Tag\)/.test(sharedReaderSource), 'Renderizar párrafos solo en esta modalidad.');
 assert.ok(sharedReaderSource.includes("migrateStoredNotes(readStoredValue(config.storage.notesKey, []), readingDocument, paragraphMode)"), 'Migrar notas anteriores sin pérdida.');
 assert.ok(sharedReaderSource.includes("paragraphForSentence.get(note.sentenceId)"), 'Conservar navegación de las diez notas editoriales.');
 assert.ok(sharedReaderSource.includes("config.sync.status === 'ready' || (paragraphMode && config.sync.status === 'paragraph-preview')"), 'Mantener las otras obras en modalidad original.');
