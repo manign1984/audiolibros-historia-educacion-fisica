@@ -51,7 +51,9 @@ assert.ok(sentences.every(s => !s.text.includes('<break') && !s.text.includes('<
 for (const s of doc.sections.flatMap(s => s.paragraphs.flatMap(p => p.sentences))) assert.ok(source.includes(s.text), `El pasaje ${s.id} deriva literalmente del texto accesible.`);
 for (const entry of doc.bibliography) assert.ok(source.includes(entry));
 const entry = catalog.find(x => x.id === config.workId);
-assert.equal(entry.status, 'preparation', 'La edición en revisión no se anuncia como lectura sincronizada disponible.');
+assert.equal(entry.status, 'review', 'La obra ofrece lectura y audio, pero no sincronización certificada.');
+assert.equal(entry.duration, 2026.374625);
+assert.equal(entry.stateKey, config.storage.stateKey);
 assert.match(entry.title, /1852–1880/);
 assert.doesNotMatch(entry.reference, /1850–1880/);
 for (const [name, expected] of [
