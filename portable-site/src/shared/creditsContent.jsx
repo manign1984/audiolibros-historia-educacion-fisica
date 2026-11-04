@@ -4,7 +4,7 @@ export const creditsContent = {
   marcaida: {
     references: [
       <>Marcaida, E., &amp; Scaltritti, M. (2013). La construcción del Estado nacional argentino (1852–1880). En <em>Historia argentina contemporánea: Pasados presentes de la política, la economía y el conflicto social</em> (pp. 49–60). Dialektik. Primera edición, segunda reimpresión.</>,
-      <>{link('/assets/marcaida-scaltritti-estado-nacional.pdf', 'PDF de cátedra')} · {link('/assets/marcaida-texto-accesible.txt', 'Texto accesible con bibliografía')}. Copia remaquetada; no contiene las notas al pie del volumen editorial.</>,
+      <>{link('/assets/marcaida-scaltritti-estado-nacional.pdf', 'PDF de cátedra')} · {link('/assets/marcaida-texto-accesible.txt', 'Texto accesible con bibliografía')}. Copia remaquetada sin notas al pie. El lector incorpora diez referencias numeradas a la edición editorial; las notas explicativas se ofrecen como síntesis identificadas y enlazan al original.</>,
       link('https://drive.google.com/file/d/1OdJmzsqdlV-xaPx7uyYaej8PJBL6QZ9s/view', 'Audiolibro aportado al proyecto · 33:46.'),
       <>Trayectorias: {link('https://www.pagina12.com.ar/diario/universidad/10-195385-2012-06-01.html', 'reseña de Elena Marcaida')} y {link('https://backend.educ.ar/refactor_resource/get-attachment/23382', 'Cuadernos para el aula, créditos de Mabel Scaltritti')}.</>,
     ],
