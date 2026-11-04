@@ -3,13 +3,13 @@ import { readFile } from 'node:fs/promises';
 
 // Prueba de consistencia y reproducibilidad de la propuesta.
 // NO activa la sincronización del lector ni aprueba los tiempos obtenidos.
-const root = new URL('../', import.meta.url);
+const root = new URL('../../', import.meta.url);
 const read = async path => readFile(new URL(path, root), 'utf8');
 const [proposal, asr, text, configSource, vtt] = await Promise.all([
   read('data/marcaida-scaltritti-alineacion-propuesta-v2.json').then(JSON.parse),
   read('data/marcaida-scaltritti-alineacion-revision.json').then(JSON.parse),
-  read('src/marcaida/reading-document.json').then(JSON.parse),
-  read('src/marcaida/readerConfig.js'),
+  read('portable-site/src/marcaida/reading-document.json').then(JSON.parse),
+  read('portable-site/src/marcaida/readerConfig.js'),
   read('data/marcaida-scaltritti-original.vtt'),
 ]);
 
