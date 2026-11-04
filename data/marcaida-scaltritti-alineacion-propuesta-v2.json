@@ -1,0 +1,1599 @@
+{
+  "version": "2026-11-04-candidate-2",
+  "status": "REVIEW-ONLY / DO NOT LOAD INTO PUBLIC READER",
+  "activeInReader": false,
+  "humanAuditoryReview": false,
+  "sourceAudioSha256": "cc324ffa8999233c94a76521b097eb6c7e81d43182d9df5ef49a46413b76b5ba",
+  "audioDuration": 2026.374625,
+  "sourceVtt": "data/marcaida-scaltritti-original.vtt",
+  "sourceAsr": "data/marcaida-scaltritti-alineacion-revision.json",
+  "sourceDocument": "portable-site/src/marcaida/reading-document.json",
+  "method": "Exact ordered word alignment of reader text to 361 original VTT cues (dynamic edit-distance alignment). 110 ASR-derived sentence ranges from prior full-audio faster-whisper output; 13 unbounded sentences estimated by local VTT-to-MP3 mapping between adjacent ASR anchors. All 123 retain their existing sentence IDs; no changes to text or audio. Estimates are not audited playback timings.",
+  "summary": {
+    "vttCueCount": 361,
+    "sourceTokens": 3980,
+    "vttTokens": 4024,
+    "exactAlignedTokens": 3976,
+    "lexicalAgreement": 0.998995,
+    "asrTimed": 110,
+    "inferredFromVtt": 13,
+    "medianCrossValidationErrorSeconds": 0.385,
+    "p90CrossValidationErrorSeconds": 0.661,
+    "worstCrossValidationErrorSeconds": 4.431,
+    "crossValidationSamples": 216,
+    "overlapCount": 0,
+    "lastBodySentenceEnd": 2020.14,
+    "originalVttEnd": 1878.531,
+    "audioDuration": 2026.374625
+  },
+  "constraints": [
+    "No public highlighting / play-from-sentence until verified against audio.",
+    "Four source tokens not matched exactly in VTT; inspect before approval.",
+    "One VTT cue may span multiple reader sentences; cue boundaries are not sentence boundaries.",
+    "Time estimates for 13 sentences are interpolated between independent audio-derived ASR anchors; they are NOT directly measured speech boundaries.",
+    "Original PDF, reader text, note IDs, notes, chapter structure, VTT and MP3 remain unchanged."
+  ],
+  "overlapReview": [],
+  "worstCrossValidation": [
+    {
+      "id": "ms-apartado-3-p1-s4",
+      "bound": "Start",
+      "error": 4.431
+    },
+    {
+      "id": "ms-apartado-3-p22-s1",
+      "bound": "End",
+      "error": 2.347
+    },
+    {
+      "id": "ms-apartado-3-p1-s1",
+      "bound": "Start",
+      "error": 2.229
+    },
+    {
+      "id": "ms-apartado-4-p1-s1",
+      "bound": "Start",
+      "error": 2.224
+    },
+    {
+      "id": "ms-apartado-2-p7-s1",
+      "bound": "End",
+      "error": 2.204
+    },
+    {
+      "id": "ms-apartado-3-p15-s2",
+      "bound": "Start",
+      "error": 1.846
+    },
+    {
+      "id": "ms-apartado-3-p18-s3",
+      "bound": "Start",
+      "error": 1.734
+    },
+    {
+      "id": "ms-apartado-2-p5-s1",
+      "bound": "End",
+      "error": 1.402
+    },
+    {
+      "id": "ms-apartado-3-p18-s1",
+      "bound": "End",
+      "error": 1.338
+    },
+    {
+      "id": "ms-apartado-3-p9-s3",
+      "bound": "End",
+      "error": 1.253
+    },
+    {
+      "id": "ms-introduccion-p2-s2",
+      "bound": "End",
+      "error": 1.237
+    },
+    {
+      "id": "ms-apartado-2-p3-s6",
+      "bound": "Start",
+      "error": 1.226
+    },
+    {
+      "id": "ms-apartado-1-p1-s1",
+      "bound": "Start",
+      "error": 1.101
+    },
+    {
+      "id": "ms-apartado-3-p1-s2",
+      "bound": "End",
+      "error": 1.098
+    },
+    {
+      "id": "ms-apartado-3-p21-s4",
+      "bound": "Start",
+      "error": 0.888
+    }
+  ],
+  "sentences": [
+    {
+      "sentenceId": "ms-introduccion-p1-s1",
+      "start": 13.26,
+      "end": 26.1,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 23,
+      "sourceTokens": 23,
+      "matchedAsrTokens": 22,
+      "asrSourceTokens": 23,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-introduccion-p1-s2",
+      "start": 26.1,
+      "end": 40.866,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 28,
+      "sourceTokens": 28,
+      "anchors": {
+        "start": {
+          "left": "ms-introduccion-p1-s1",
+          "right": "ms-introduccion-p2-s1",
+          "spanSec": 29.8
+        },
+        "end": {
+          "left": "ms-introduccion-p1-s1",
+          "right": "ms-introduccion-p2-s1",
+          "spanSec": 29.8
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-introduccion-p1-s3",
+      "start": 40.866,
+      "end": 55.388,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 29,
+      "sourceTokens": 29,
+      "anchors": {
+        "start": {
+          "left": "ms-introduccion-p1-s1",
+          "right": "ms-introduccion-p2-s1",
+          "spanSec": 29.8
+        },
+        "end": {
+          "left": "ms-introduccion-p1-s1",
+          "right": "ms-introduccion-p2-s1",
+          "spanSec": 29.8
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-introduccion-p2-s1",
+      "start": 55.9,
+      "end": 72.7,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 35,
+      "sourceTokens": 35,
+      "matchedAsrTokens": 34,
+      "asrSourceTokens": 35,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-introduccion-p2-s2",
+      "start": 72.98,
+      "end": 84.02,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 22,
+      "sourceTokens": 22,
+      "matchedAsrTokens": 22,
+      "asrSourceTokens": 22,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-introduccion-p2-s3",
+      "start": 84.02,
+      "end": 91.56,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 16,
+      "sourceTokens": 16,
+      "anchors": {
+        "start": {
+          "left": "ms-introduccion-p2-s2",
+          "right": "ms-apartado-1-p1-s1",
+          "spanSec": 15.2
+        },
+        "end": {
+          "left": "ms-introduccion-p2-s2",
+          "right": "ms-apartado-1-p1-s1",
+          "spanSec": 15.2
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p1-s1",
+      "start": 99.22,
+      "end": 115.98,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 38,
+      "sourceTokens": 38,
+      "matchedAsrTokens": 37,
+      "asrSourceTokens": 38,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p1-s2",
+      "start": 116.48,
+      "end": 129.74,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 23,
+      "sourceTokens": 23,
+      "matchedAsrTokens": 23,
+      "asrSourceTokens": 23,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p2-s1",
+      "start": 130.08,
+      "end": 138.18,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 13,
+      "sourceTokens": 13,
+      "matchedAsrTokens": 13,
+      "asrSourceTokens": 13,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p2-s2",
+      "start": 138.18,
+      "end": 148.56,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 20,
+      "sourceTokens": 20,
+      "matchedAsrTokens": 20,
+      "asrSourceTokens": 20,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p2-s3",
+      "start": 149.08,
+      "end": 165.16,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 32,
+      "sourceTokens": 32,
+      "matchedAsrTokens": 32,
+      "asrSourceTokens": 32,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p3-s1",
+      "start": 165.16,
+      "end": 195.82,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 59,
+      "sourceTokens": 59,
+      "matchedAsrTokens": 58,
+      "asrSourceTokens": 59,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p4-s1",
+      "start": 196.48,
+      "end": 214.16,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 40,
+      "sourceTokens": 40,
+      "matchedAsrTokens": 40,
+      "asrSourceTokens": 40,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p4-s2",
+      "start": 214.56,
+      "end": 225.84,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 22,
+      "sourceTokens": 22,
+      "matchedAsrTokens": 22,
+      "asrSourceTokens": 22,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p4-s3",
+      "start": 226.3,
+      "end": 236.66,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 24,
+      "sourceTokens": 24,
+      "matchedAsrTokens": 23,
+      "asrSourceTokens": 24,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p4-s4",
+      "start": 236.98,
+      "end": 258.76,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 40,
+      "sourceTokens": 40,
+      "matchedAsrTokens": 38,
+      "asrSourceTokens": 40,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p4-s5",
+      "start": 259.36,
+      "end": 281.5,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 46,
+      "sourceTokens": 46,
+      "matchedAsrTokens": 43,
+      "asrSourceTokens": 46,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p5-s1",
+      "start": 281.9,
+      "end": 310.66,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 64,
+      "sourceTokens": 64,
+      "matchedAsrTokens": 63,
+      "asrSourceTokens": 64,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p5-s2",
+      "start": 311.1,
+      "end": 331.94,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 42,
+      "sourceTokens": 42,
+      "matchedAsrTokens": 42,
+      "asrSourceTokens": 42,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p6-s1",
+      "start": 332.44,
+      "end": 348.8,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 32,
+      "sourceTokens": 32,
+      "matchedAsrTokens": 30,
+      "asrSourceTokens": 32,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p7-s1",
+      "start": 349.26,
+      "end": 363.84,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 31,
+      "sourceTokens": 31,
+      "matchedAsrTokens": 30,
+      "asrSourceTokens": 31,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p7-s2",
+      "start": 364.34,
+      "end": 386.64,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 44,
+      "sourceTokens": 44,
+      "matchedAsrTokens": 43,
+      "asrSourceTokens": 44,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-1-p7-s3",
+      "start": 387,
+      "end": 397.44,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 18,
+      "sourceTokens": 18,
+      "matchedAsrTokens": 17,
+      "asrSourceTokens": 18,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p1-s1",
+      "start": 405.9,
+      "end": 444.1,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 72,
+      "sourceTokens": 72,
+      "matchedAsrTokens": 71,
+      "asrSourceTokens": 72,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p2-s1",
+      "start": 444.52,
+      "end": 460.36,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 36,
+      "sourceTokens": 36,
+      "matchedAsrTokens": 33,
+      "asrSourceTokens": 36,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p3-s1",
+      "start": 460.36,
+      "end": 472.1,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 21,
+      "sourceTokens": 21,
+      "matchedAsrTokens": 19,
+      "asrSourceTokens": 21,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p3-s2",
+      "start": 472.52,
+      "end": 482.26,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 20,
+      "sourceTokens": 20,
+      "matchedAsrTokens": 20,
+      "asrSourceTokens": 20,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p3-s3",
+      "start": 482.88,
+      "end": 489.34,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 16,
+      "sourceTokens": 16,
+      "matchedAsrTokens": 16,
+      "asrSourceTokens": 16,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p3-s4",
+      "start": 489.34,
+      "end": 501.14,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 22,
+      "sourceTokens": 22,
+      "matchedAsrTokens": 21,
+      "asrSourceTokens": 22,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p3-s5",
+      "start": 501.14,
+      "end": 522.3,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 41,
+      "sourceTokens": 41,
+      "anchors": {
+        "start": {
+          "left": "ms-apartado-2-p3-s4",
+          "right": "ms-apartado-2-p3-s6",
+          "spanSec": 21.16
+        },
+        "end": {
+          "left": "ms-apartado-2-p3-s6",
+          "right": "ms-apartado-2-p3-s6",
+          "spanSec": 11.96
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p3-s6",
+      "start": 522.3,
+      "end": 534.26,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 23,
+      "sourceTokens": 23,
+      "matchedAsrTokens": 23,
+      "asrSourceTokens": 23,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p4-s1",
+      "start": 534.62,
+      "end": 561.88,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 55,
+      "sourceTokens": 55,
+      "matchedAsrTokens": 55,
+      "asrSourceTokens": 55,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p5-s1",
+      "start": 562.36,
+      "end": 581.7,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 46,
+      "sourceTokens": 46,
+      "matchedAsrTokens": 45,
+      "asrSourceTokens": 46,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p6-s1",
+      "start": 582.086,
+      "end": 598.8,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 31,
+      "sourceTokens": 31,
+      "anchors": {
+        "start": {
+          "left": "ms-apartado-2-p5-s1",
+          "right": "ms-apartado-2-p6-s2",
+          "spanSec": 17.1
+        },
+        "end": {
+          "left": "ms-apartado-2-p6-s2",
+          "right": "ms-apartado-2-p6-s2",
+          "spanSec": 16.66
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p6-s2",
+      "start": 598.8,
+      "end": 615.46,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 39,
+      "sourceTokens": 40,
+      "matchedAsrTokens": 40,
+      "asrSourceTokens": 40,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-2-p7-s1",
+      "start": 615.94,
+      "end": 635.36,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 40,
+      "sourceTokens": 40,
+      "matchedAsrTokens": 38,
+      "asrSourceTokens": 40,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p1-s1",
+      "start": 639.54,
+      "end": 657.58,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 39,
+      "sourceTokens": 39,
+      "matchedAsrTokens": 37,
+      "asrSourceTokens": 39,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p1-s2",
+      "start": 658.26,
+      "end": 661.1,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 7,
+      "sourceTokens": 7,
+      "matchedAsrTokens": 7,
+      "asrSourceTokens": 7,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p1-s3",
+      "start": 661.1,
+      "end": 679.14,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 25,
+      "sourceTokens": 25,
+      "anchors": {
+        "start": {
+          "left": "ms-apartado-3-p1-s2",
+          "right": "ms-apartado-3-p1-s4",
+          "spanSec": 18.04
+        },
+        "end": {
+          "left": "ms-apartado-3-p1-s4",
+          "right": "ms-apartado-3-p1-s4",
+          "spanSec": 23.6
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p1-s4",
+      "start": 679.14,
+      "end": 702.74,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 52,
+      "sourceTokens": 52,
+      "matchedAsrTokens": 50,
+      "asrSourceTokens": 52,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p2-s1",
+      "start": 703.12,
+      "end": 711.72,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 18,
+      "sourceTokens": 18,
+      "matchedAsrTokens": 18,
+      "asrSourceTokens": 18,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p2-s2",
+      "start": 712.02,
+      "end": 714.18,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 5,
+      "sourceTokens": 5,
+      "matchedAsrTokens": 5,
+      "asrSourceTokens": 5,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p2-s3",
+      "start": 714.76,
+      "end": 725.2,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 20,
+      "sourceTokens": 20,
+      "matchedAsrTokens": 20,
+      "asrSourceTokens": 20,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p2-s4",
+      "start": 725.2,
+      "end": 744.86,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 43,
+      "sourceTokens": 43,
+      "matchedAsrTokens": 43,
+      "asrSourceTokens": 43,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p3-s1",
+      "start": 745.4,
+      "end": 764.14,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 42,
+      "sourceTokens": 42,
+      "matchedAsrTokens": 42,
+      "asrSourceTokens": 42,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p3-s2",
+      "start": 764.68,
+      "end": 788.02,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 54,
+      "sourceTokens": 54,
+      "matchedAsrTokens": 53,
+      "asrSourceTokens": 54,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p4-s1",
+      "start": 788.42,
+      "end": 804.46,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 32,
+      "sourceTokens": 32,
+      "matchedAsrTokens": 30,
+      "asrSourceTokens": 32,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p4-s2",
+      "start": 804.8,
+      "end": 827.52,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 48,
+      "sourceTokens": 48,
+      "matchedAsrTokens": 48,
+      "asrSourceTokens": 48,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p4-s3",
+      "start": 828.12,
+      "end": 831.44,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 7,
+      "sourceTokens": 7,
+      "matchedAsrTokens": 7,
+      "asrSourceTokens": 7,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p4-s4",
+      "start": 831.44,
+      "end": 846.52,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 33,
+      "sourceTokens": 33,
+      "matchedAsrTokens": 32,
+      "asrSourceTokens": 33,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p4-s5",
+      "start": 846.52,
+      "end": 849.619,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 6,
+      "sourceTokens": 6,
+      "anchors": {
+        "start": {
+          "left": "ms-apartado-3-p4-s4",
+          "right": "ms-apartado-3-p5-s1",
+          "spanSec": 3.74
+        },
+        "end": {
+          "left": "ms-apartado-3-p4-s4",
+          "right": "ms-apartado-3-p5-s1",
+          "spanSec": 3.74
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p5-s1",
+      "start": 850.26,
+      "end": 865.1,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 31,
+      "sourceTokens": 31,
+      "matchedAsrTokens": 31,
+      "asrSourceTokens": 31,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p5-s2",
+      "start": 865.58,
+      "end": 875.5,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 15,
+      "sourceTokens": 15,
+      "matchedAsrTokens": 15,
+      "asrSourceTokens": 15,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p6-s1",
+      "start": 876.02,
+      "end": 893.18,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 31,
+      "sourceTokens": 31,
+      "matchedAsrTokens": 28,
+      "asrSourceTokens": 31,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p6-s2",
+      "start": 893.66,
+      "end": 912.1,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 40,
+      "sourceTokens": 40,
+      "matchedAsrTokens": 39,
+      "asrSourceTokens": 40,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p7-s1",
+      "start": 912.2,
+      "end": 945.38,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 69,
+      "sourceTokens": 69,
+      "matchedAsrTokens": 67,
+      "asrSourceTokens": 69,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p7-s2",
+      "start": 945.82,
+      "end": 957.66,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 25,
+      "sourceTokens": 25,
+      "matchedAsrTokens": 25,
+      "asrSourceTokens": 25,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p8-s1",
+      "start": 958.14,
+      "end": 980.96,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 47,
+      "sourceTokens": 47,
+      "matchedAsrTokens": 47,
+      "asrSourceTokens": 47,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p9-s1",
+      "start": 981.28,
+      "end": 1018.12,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 43,
+      "sourceTokens": 43,
+      "matchedAsrTokens": 43,
+      "asrSourceTokens": 43,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p9-s2",
+      "start": 1018.64,
+      "end": 1039.92,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 38,
+      "sourceTokens": 39,
+      "matchedAsrTokens": 36,
+      "asrSourceTokens": 39,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p9-s3",
+      "start": 1040.28,
+      "end": 1056.1,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 33,
+      "sourceTokens": 33,
+      "matchedAsrTokens": 33,
+      "asrSourceTokens": 33,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p10-s1",
+      "start": 1056.511,
+      "end": 1065.84,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 18,
+      "sourceTokens": 18,
+      "anchors": {
+        "start": {
+          "left": "ms-apartado-3-p9-s3",
+          "right": "ms-apartado-3-p10-s2",
+          "spanSec": 9.74
+        },
+        "end": {
+          "left": "ms-apartado-3-p10-s2",
+          "right": "ms-apartado-3-p10-s2",
+          "spanSec": 13.76
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p10-s2",
+      "start": 1065.84,
+      "end": 1079.6,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 26,
+      "sourceTokens": 26,
+      "matchedAsrTokens": 25,
+      "asrSourceTokens": 26,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p10-s3",
+      "start": 1079.88,
+      "end": 1097.38,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 38,
+      "sourceTokens": 38,
+      "matchedAsrTokens": 37,
+      "asrSourceTokens": 38,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p10-s4",
+      "start": 1097.94,
+      "end": 1111.42,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 27,
+      "sourceTokens": 27,
+      "matchedAsrTokens": 26,
+      "asrSourceTokens": 27,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p11-s1",
+      "start": 1111.88,
+      "end": 1117.34,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 10,
+      "sourceTokens": 10,
+      "matchedAsrTokens": 10,
+      "asrSourceTokens": 10,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p11-s2",
+      "start": 1117.88,
+      "end": 1145.1,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 67,
+      "sourceTokens": 67,
+      "matchedAsrTokens": 66,
+      "asrSourceTokens": 67,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p12-s1",
+      "start": 1145.56,
+      "end": 1155.18,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 18,
+      "sourceTokens": 18,
+      "matchedAsrTokens": 18,
+      "asrSourceTokens": 18,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p12-s2",
+      "start": 1155.6,
+      "end": 1166.12,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 23,
+      "sourceTokens": 23,
+      "matchedAsrTokens": 23,
+      "asrSourceTokens": 23,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p12-s3",
+      "start": 1166.58,
+      "end": 1187.26,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 43,
+      "sourceTokens": 43,
+      "matchedAsrTokens": 42,
+      "asrSourceTokens": 43,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p12-s4",
+      "start": 1187.84,
+      "end": 1193.2,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 11,
+      "sourceTokens": 11,
+      "matchedAsrTokens": 11,
+      "asrSourceTokens": 11,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p13-s1",
+      "start": 1193.2,
+      "end": 1199.98,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 11,
+      "sourceTokens": 11,
+      "matchedAsrTokens": 11,
+      "asrSourceTokens": 11,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p13-s2",
+      "start": 1200.54,
+      "end": 1207.46,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 14,
+      "sourceTokens": 14,
+      "matchedAsrTokens": 14,
+      "asrSourceTokens": 14,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p13-s3",
+      "start": 1207.46,
+      "end": 1214.8,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 15,
+      "sourceTokens": 15,
+      "anchors": {
+        "start": {
+          "left": "ms-apartado-3-p13-s2",
+          "right": "ms-apartado-3-p13-s4",
+          "spanSec": 7.34
+        },
+        "end": {
+          "left": "ms-apartado-3-p13-s4",
+          "right": "ms-apartado-3-p13-s4",
+          "spanSec": 9.98
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p13-s4",
+      "start": 1214.8,
+      "end": 1224.78,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 22,
+      "sourceTokens": 22,
+      "matchedAsrTokens": 22,
+      "asrSourceTokens": 22,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p14-s1",
+      "start": 1225.32,
+      "end": 1250.44,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 48,
+      "sourceTokens": 48,
+      "matchedAsrTokens": 47,
+      "asrSourceTokens": 48,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p14-s2",
+      "start": 1250.98,
+      "end": 1260.4,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 20,
+      "sourceTokens": 20,
+      "matchedAsrTokens": 20,
+      "asrSourceTokens": 20,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p15-s1",
+      "start": 1260.783,
+      "end": 1286.72,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 56,
+      "sourceTokens": 56,
+      "anchors": {
+        "start": {
+          "left": "ms-apartado-3-p14-s2",
+          "right": "ms-apartado-3-p15-s2",
+          "spanSec": 26.32
+        },
+        "end": {
+          "left": "ms-apartado-3-p15-s2",
+          "right": "ms-apartado-3-p15-s2",
+          "spanSec": 28.52
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p15-s2",
+      "start": 1286.72,
+      "end": 1315.24,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 64,
+      "sourceTokens": 64,
+      "matchedAsrTokens": 64,
+      "asrSourceTokens": 64,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p16-s1",
+      "start": 1315.86,
+      "end": 1342.42,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 56,
+      "sourceTokens": 56,
+      "matchedAsrTokens": 54,
+      "asrSourceTokens": 56,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p16-s2",
+      "start": 1342.92,
+      "end": 1356.06,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 34,
+      "sourceTokens": 34,
+      "matchedAsrTokens": 33,
+      "asrSourceTokens": 34,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p16-s3",
+      "start": 1356.5,
+      "end": 1368.76,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 18,
+      "sourceTokens": 18,
+      "matchedAsrTokens": 18,
+      "asrSourceTokens": 18,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p17-s1",
+      "start": 1369.14,
+      "end": 1386.02,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 41,
+      "sourceTokens": 41,
+      "matchedAsrTokens": 41,
+      "asrSourceTokens": 41,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p18-s1",
+      "start": 1386.44,
+      "end": 1408.3,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 52,
+      "sourceTokens": 52,
+      "matchedAsrTokens": 52,
+      "asrSourceTokens": 52,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p18-s2",
+      "start": 1408.3,
+      "end": 1421.14,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 23,
+      "sourceTokens": 23,
+      "anchors": {
+        "start": {
+          "left": "ms-apartado-3-p18-s1",
+          "right": "ms-apartado-3-p18-s3",
+          "spanSec": 12.84
+        },
+        "end": {
+          "left": "ms-apartado-3-p18-s3",
+          "right": "ms-apartado-3-p18-s3",
+          "spanSec": 17.44
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p18-s3",
+      "start": 1421.14,
+      "end": 1438.58,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 42,
+      "sourceTokens": 42,
+      "matchedAsrTokens": 41,
+      "asrSourceTokens": 42,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p19-s1",
+      "start": 1438.76,
+      "end": 1454.16,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 33,
+      "sourceTokens": 33,
+      "matchedAsrTokens": 33,
+      "asrSourceTokens": 33,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p19-s2",
+      "start": 1454.56,
+      "end": 1484.9,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 72,
+      "sourceTokens": 72,
+      "matchedAsrTokens": 71,
+      "asrSourceTokens": 72,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p20-s1",
+      "start": 1485.46,
+      "end": 1491.48,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 11,
+      "sourceTokens": 11,
+      "matchedAsrTokens": 11,
+      "asrSourceTokens": 11,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p20-s2",
+      "start": 1492.06,
+      "end": 1509.48,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 38,
+      "sourceTokens": 38,
+      "matchedAsrTokens": 36,
+      "asrSourceTokens": 38,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p20-s3",
+      "start": 1509.76,
+      "end": 1528.38,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 37,
+      "sourceTokens": 38,
+      "matchedAsrTokens": 37,
+      "asrSourceTokens": 38,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p21-s1",
+      "start": 1528.38,
+      "end": 1546.42,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 36,
+      "sourceTokens": 36,
+      "matchedAsrTokens": 36,
+      "asrSourceTokens": 36,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p21-s2",
+      "start": 1546.78,
+      "end": 1555.56,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 19,
+      "sourceTokens": 19,
+      "matchedAsrTokens": 19,
+      "asrSourceTokens": 19,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p21-s3",
+      "start": 1555.56,
+      "end": 1567.18,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 23,
+      "sourceTokens": 23,
+      "anchors": {
+        "start": {
+          "left": "ms-apartado-3-p21-s2",
+          "right": "ms-apartado-3-p21-s4",
+          "spanSec": 11.62
+        },
+        "end": {
+          "left": "ms-apartado-3-p21-s4",
+          "right": "ms-apartado-3-p21-s4",
+          "spanSec": 24.78
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p21-s4",
+      "start": 1567.18,
+      "end": 1591.96,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 53,
+      "sourceTokens": 53,
+      "matchedAsrTokens": 51,
+      "asrSourceTokens": 53,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p21-s5",
+      "start": 1592.46,
+      "end": 1601.32,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 20,
+      "sourceTokens": 20,
+      "matchedAsrTokens": 20,
+      "asrSourceTokens": 20,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p21-s6",
+      "start": 1601.92,
+      "end": 1613.24,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 27,
+      "sourceTokens": 27,
+      "matchedAsrTokens": 27,
+      "asrSourceTokens": 27,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-3-p22-s1",
+      "start": 1613.8,
+      "end": 1649.3,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 70,
+      "sourceTokens": 70,
+      "matchedAsrTokens": 67,
+      "asrSourceTokens": 70,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p1-s1",
+      "start": 1652.76,
+      "end": 1672.6,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 40,
+      "sourceTokens": 40,
+      "matchedAsrTokens": 40,
+      "asrSourceTokens": 40,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p2-s1",
+      "start": 1673.02,
+      "end": 1676.68,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 7,
+      "sourceTokens": 7,
+      "matchedAsrTokens": 7,
+      "asrSourceTokens": 7,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p2-s2",
+      "start": 1677,
+      "end": 1688.74,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 27,
+      "sourceTokens": 27,
+      "matchedAsrTokens": 27,
+      "asrSourceTokens": 27,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p2-s3",
+      "start": 1688.74,
+      "end": 1703.46,
+      "method": "vtt-mapped-between-asr-anchors",
+      "matchedVttTokens": 26,
+      "sourceTokens": 26,
+      "anchors": {
+        "start": {
+          "left": "ms-apartado-4-p2-s2",
+          "right": "ms-apartado-4-p2-s4",
+          "spanSec": 14.72
+        },
+        "end": {
+          "left": "ms-apartado-4-p2-s4",
+          "right": "ms-apartado-4-p2-s4",
+          "spanSec": 11.34
+        }
+      },
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p2-s4",
+      "start": 1703.46,
+      "end": 1714.8,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 24,
+      "sourceTokens": 24,
+      "matchedAsrTokens": 24,
+      "asrSourceTokens": 24,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p2-s5",
+      "start": 1714.8,
+      "end": 1724.44,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 21,
+      "sourceTokens": 21,
+      "matchedAsrTokens": 21,
+      "asrSourceTokens": 21,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p2-s6",
+      "start": 1725,
+      "end": 1748.64,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 48,
+      "sourceTokens": 48,
+      "matchedAsrTokens": 48,
+      "asrSourceTokens": 48,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p2-s7",
+      "start": 1749.04,
+      "end": 1774.98,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 54,
+      "sourceTokens": 54,
+      "matchedAsrTokens": 54,
+      "asrSourceTokens": 54,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s1",
+      "start": 1775.5,
+      "end": 1804.36,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 52,
+      "sourceTokens": 52,
+      "matchedAsrTokens": 52,
+      "asrSourceTokens": 52,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s2",
+      "start": 1804.72,
+      "end": 1832.96,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 62,
+      "sourceTokens": 62,
+      "matchedAsrTokens": 60,
+      "asrSourceTokens": 62,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s3",
+      "start": 1833.32,
+      "end": 1845.96,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 27,
+      "sourceTokens": 27,
+      "matchedAsrTokens": 27,
+      "asrSourceTokens": 27,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s4",
+      "start": 1846.38,
+      "end": 1857,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 22,
+      "sourceTokens": 22,
+      "matchedAsrTokens": 22,
+      "asrSourceTokens": 22,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s5",
+      "start": 1857.6,
+      "end": 1871.74,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 27,
+      "sourceTokens": 27,
+      "matchedAsrTokens": 27,
+      "asrSourceTokens": 27,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s6",
+      "start": 1872.14,
+      "end": 1879.14,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 14,
+      "sourceTokens": 14,
+      "matchedAsrTokens": 14,
+      "asrSourceTokens": 14,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s7",
+      "start": 1879.5,
+      "end": 1883.06,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 9,
+      "sourceTokens": 9,
+      "matchedAsrTokens": 9,
+      "asrSourceTokens": 9,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s8",
+      "start": 1883.58,
+      "end": 1897.8,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 22,
+      "sourceTokens": 22,
+      "matchedAsrTokens": 21,
+      "asrSourceTokens": 22,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s9",
+      "start": 1898.52,
+      "end": 1912.44,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 22,
+      "sourceTokens": 22,
+      "matchedAsrTokens": 22,
+      "asrSourceTokens": 22,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s10",
+      "start": 1912.7,
+      "end": 1917.02,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 11,
+      "sourceTokens": 11,
+      "matchedAsrTokens": 11,
+      "asrSourceTokens": 11,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s11",
+      "start": 1917.4,
+      "end": 1925.24,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 17,
+      "sourceTokens": 18,
+      "matchedAsrTokens": 18,
+      "asrSourceTokens": 18,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p3-s12",
+      "start": 1925.46,
+      "end": 1942.5,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 38,
+      "sourceTokens": 38,
+      "matchedAsrTokens": 38,
+      "asrSourceTokens": 38,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p4-s1",
+      "start": 1942.92,
+      "end": 1959.52,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 36,
+      "sourceTokens": 36,
+      "matchedAsrTokens": 36,
+      "asrSourceTokens": 36,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p4-s2",
+      "start": 1959.78,
+      "end": 1969.62,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 19,
+      "sourceTokens": 19,
+      "matchedAsrTokens": 19,
+      "asrSourceTokens": 19,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p4-s3",
+      "start": 1969.88,
+      "end": 1989.96,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 41,
+      "sourceTokens": 41,
+      "matchedAsrTokens": 38,
+      "asrSourceTokens": 41,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p4-s4",
+      "start": 1990.38,
+      "end": 2002.18,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 25,
+      "sourceTokens": 25,
+      "matchedAsrTokens": 25,
+      "asrSourceTokens": 25,
+      "verification": "auditory-check-required"
+    },
+    {
+      "sentenceId": "ms-apartado-4-p4-s5",
+      "start": 2002.72,
+      "end": 2020.14,
+      "method": "asr-word-timestamps",
+      "matchedVttTokens": 43,
+      "sourceTokens": 43,
+      "matchedAsrTokens": 42,
+      "asrSourceTokens": 43,
+      "verification": "auditory-check-required"
+    }
+  ]
+}
