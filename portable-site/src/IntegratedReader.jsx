@@ -573,7 +573,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
           section: sentence?.sectionTitle || 'Texto',
           audioTime,
           audioTimeBasis: Number.isFinite(sentence?.start)
-            ? 'sentence-sync'
+            ? (paragraphMode ? 'paragraph-sync-preview' : 'sentence-sync')
             : Number.isFinite(note?.audioTime)
               ? 'playback-position-at-annotation'
               : 'unavailable',
@@ -677,6 +677,51 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
       </Fragment>
     );
   };
+  const renderParagraph = (paragraph, Tag) => {
+    const entry = sentenceMap.get(paragraph.id);
+    const active = activeSentence?.id === paragraph.id;
+    const selected = selectedSentenceId === paragraph.id;
+    const count = noteCountFor(paragraph.id);
+    const choose = () => setSelectedSentenceId(paragraph.id);
+    return (
+      <Tag
+        key={paragraph.id}
+        data-reader-sentence={paragraph.id}
+        className={`reader-paragraph-unit ${active ? 'is-active' : ''} ${selected ? 'is-selected' : ''} ${paragraph.kind === 'note' ? 'reader-document__note' : ''}`}
+        aria-current={active ? 'true' : undefined}
+      >
+        {paragraph.sentences.map((sentence, index) => {
+          const editorialNote = editorialFootnotes.get(sentence.id);
+          return (
+            <Fragment key={sentence.id}>
+              <span
+                className="reader-paragraph-unit__text"
+                role={index === 0 ? 'button' : undefined}
+                tabIndex={index === 0 ? 0 : undefined}
+                aria-label={index === 0 ? `Seleccionar párrafo: ${entry?.text || ''}` : undefined}
+                onClick={choose}
+                onKeyDown={index === 0 ? (event) => {
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    choose();
+                  }
+                } : undefined}
+              >{sentence.text}</span>
+              {editorialNote && <button
+                type="button"
+                className="reader-editorial-reference"
+                aria-label={`Consultar nota editorial ${editorialNote.number} de la edición de Marcaida y Scaltritti`}
+                onClick={() => showEditorialFootnote(editorialNote)}
+                title={`Nota académica ${editorialNote.number}, página ${editorialNote.page}; no forma parte del audiolibro`}
+              ><sup>{editorialNote.number}</sup></button>}
+              {' '}
+            </Fragment>
+          );
+        })}
+        {count > 0 && <sup className="reader-paragraph-unit__notes" title={`${count} ${count === 1 ? 'nota personal' : 'notas personales'}`}>{count}</sup>}
+      </Tag>
+    );
+  };
   const editorSentence = editor ? sentenceMap.get(editor.sentenceId) : null;
   const readerProgress = { currentTime, playbackRate, volume, followText, fontScale };
 
@@ -772,9 +817,9 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
               <article className="reader-document" aria-labelledby="reader-document-title">
                 <header className="reader-document__cover">
                   <p>{readingDocument.versionLabel || 'Texto completo · versión accesible'}</p>
-                  <h1 id="reader-document-title">{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'title'))}</h1>
-                  <h2>{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'subtitle'))}</h2>
-                  <span>{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'author'))}</span>
+                  <h1 id="reader-document-title">{paragraphMode ? readingDocument.frontMatter?.find((sentence) => sentence.role === 'title')?.text : renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'title'))}</h1>
+                  <h2>{paragraphMode ? readingDocument.frontMatter?.find((sentence) => sentence.role === 'subtitle')?.text : renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'subtitle'))}</h2>
+                  <span>{paragraphMode ? readingDocument.frontMatter?.find((sentence) => sentence.role === 'author')?.text : renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'author'))}</span>
                   <div>
                     <Headphones size={17} /> {config.sync.coverMessage}
                   </div>
@@ -782,14 +827,16 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
 
                 {readingDocument.sections.map((section) => (
                   <section key={section.id} id={`reader-section-${section.id}`} className="reader-document__section">
-                    {section.title && <h2>{section.headingSentence ? renderSentence(section.headingSentence) : section.title}</h2>}
+                    {section.title && <h2>{paragraphMode ? section.title : section.headingSentence ? renderSentence(section.headingSentence) : section.title}</h2>}
                     {section.paragraphs.map((paragraph) => {
                       const Tag = paragraph.kind === 'quote' ? 'blockquote' : 'p';
-                      return (
-                        <Tag key={paragraph.id} className={paragraph.kind === 'note' ? 'reader-document__note' : undefined}>
-                          {paragraph.sentences.map((sentence) => renderSentence(sentence, true))}
-                        </Tag>
-                      );
+                      return paragraphMode
+                        ? renderParagraph(paragraph, Tag)
+                        : (
+                          <Tag key={paragraph.id} className={paragraph.kind === 'note' ? 'reader-document__note' : undefined}>
+                            {paragraph.sentences.map((sentence) => renderSentence(sentence, true))}
+                          </Tag>
+                        );
                     })}
                   </section>
                 ))}
@@ -840,7 +887,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
           <footer className="reader-player">
             {audioLoading && !audioReady && !audioError && (
               <div className="reader-player__loading" role="status">
-                {config.sync.status === 'ready' ? 'Preparando el audio para habilitar saltos precisos…' : 'Preparando el audio para escuchar…'}
+                {syncInteractive ? (paragraphMode ? 'Preparando la lectura por párrafos…' : 'Preparando el audio para habilitar saltos precisos…') : 'Preparando el audio para escuchar…'}
               </div>
             )}
             {audioError && (
@@ -851,7 +898,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
             )}
 
             <div className="reader-player__context">
-              <span>{selectedSentence?.audioUnavailable ? 'Fragmento sin audio' : selectedSentence ? 'Oración elegida' : config.sync.status === 'ready' ? 'Oración activa' : 'Texto listo para anotar'}</span>
+              <span>{selectedSentence?.audioUnavailable ? 'Fragmento sin audio' : selectedSentence ? (paragraphMode ? 'Párrafo elegido' : 'Oración elegida') : syncInteractive ? (paragraphMode ? 'Párrafo activo' : 'Oración activa') : 'Texto listo para anotar'}</span>
               <q>{excerpt(annotationTarget?.text, 118)}</q>
               {selectedSentence && Number.isFinite(selectedSentence.start) && (
                 <button type="button" onClick={() => { seekTo(selectedSentence.start, true); setSelectedSentenceId(null); }}>
@@ -896,7 +943,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                 <input type="range" min="0" max="1" step="0.05" value={volume} onChange={(event) => changeVolume(Number(event.target.value))} aria-label="Volumen" />
               </div>
 
-              {config.sync.status === 'ready' && (
+              {syncInteractive && (
                 <button className={`reader-player__follow ${followText ? 'is-active' : ''}`} type="button" aria-label={followText ? 'Dejar de seguir el texto' : 'Seguir el texto'} aria-pressed={followText} onClick={() => setFollowText((value) => !value)}>
                   <List size={17} /> <span>{followText ? 'Siguiendo texto' : 'Seguir texto'}</span>
                 </button>
@@ -925,7 +972,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                   {sortedNotes.length ? sortedNotes.map((note) => (
                     <NoteCard key={note.id} compact note={note} sentence={sentenceMap.get(note.sentenceId)} onGo={goToNote} onEdit={editNote} onDelete={deleteNote} />
                   )) : (
-                    <div className="notes-drawer__empty"><NotebookPen size={34} /><strong>Tu cuaderno está listo</strong><p>Elegí una oración o reproducí el audio y tocá “Anotar”.</p></div>
+                    <div className="notes-drawer__empty"><NotebookPen size={34} /><strong>Tu cuaderno está listo</strong><p>{paragraphMode ? 'Elegí un párrafo o reproducí el audio y tocá “Anotar”.' : 'Elegí una oración o reproducí el audio y tocá “Anotar”.'}</p></div>
                   )}
                 </div>
               </aside>
@@ -951,7 +998,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                 </blockquote>
                 <label>
                   <span>Tu comentario</span>
-                  <textarea autoFocus rows="6" maxLength="3000" value={editorText} onChange={(event) => setEditorText(event.target.value)} placeholder="¿Qué te hace pensar esta oración? ¿Con qué concepto, fuente o experiencia la relacionás?" />
+                  <textarea autoFocus rows="6" maxLength="3000" value={editorText} onChange={(event) => setEditorText(event.target.value)} placeholder={paragraphMode ? "¿Qué te hace pensar este párrafo? ¿Con qué concepto, fuente o experiencia lo relacionás?" : "¿Qué te hace pensar esta oración? ¿Con qué concepto, fuente o experiencia la relacionás?"} />
                   <small>{editorText.length}/3000</small>
                 </label>
                 <footer>
