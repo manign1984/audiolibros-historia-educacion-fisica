@@ -658,3 +658,46 @@
 @media(prefers-reduced-motion:reduce) {
   .integrated-reader .reader-editorial-reference {transition:none;}
 }
+
+
+/* Seguimiento por párrafo: solo para obras que optan por esta unidad.
+   No modifica el resaltado por oración de los otros lectores. */
+.reader-document__section .reader-paragraph-unit {
+  padding: 0.4em 0.75em;
+  border-left: 3px solid transparent;
+  border-radius: 3px;
+  scroll-margin-top: 1.3rem;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+.reader-document__section .reader-paragraph-unit.is-active {
+  border-left-color: #ad5736;
+  background: rgba(215, 165, 31, 0.12);
+}
+.reader-document__section .reader-paragraph-unit.is-selected {
+  border-left-color: #8f4737;
+  background: rgba(182, 74, 54, 0.11);
+}
+.reader-document__section .reader-paragraph-unit.is-active.is-selected {
+  background: rgba(215, 165, 31, 0.19);
+}
+.reader-paragraph-unit__text {
+  cursor: pointer;
+  border-radius: 2px;
+}
+.reader-paragraph-unit__text:hover { text-decoration: underline; text-decoration-color: rgba(143,71,55,.4); text-underline-offset: .2em; }
+.reader-paragraph-unit__text:focus-visible { outline: 2px solid #8f4737; outline-offset: 3px; }
+.reader-paragraph-unit__notes {
+  display: inline-grid;
+  min-width: 1.15rem;
+  height: 1.15rem;
+  place-items: center;
+  margin-left: 0.18rem;
+  color: #f4eddf;
+  background: #b64a36;
+  border-radius: 50%;
+  font: 700 .58rem/1 Arial, sans-serif;
+  vertical-align: super;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reader-document__section .reader-paragraph-unit { transition: none; }
+}

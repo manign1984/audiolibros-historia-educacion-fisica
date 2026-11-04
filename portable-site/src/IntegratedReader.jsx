@@ -47,9 +47,25 @@ function readStoredValue(key, fallback) {
   }
 }
 
-function migrateStoredNotes(notes, readingDocument) {
+function migrateStoredNotes(notes, readingDocument, paragraphMode = false) {
   if (!Array.isArray(notes)) return [];
-  const mapping = readingDocument.legacySentenceMap || {};
+  const mapping = { ...(readingDocument.legacySentenceMap || {}) };
+  // Mantener las anotaciones existentes sin pérdida de texto, asociándolas
+  // al párrafo al que pertenecía su oración en la versión anterior.
+  if (paragraphMode) {
+    const firstParagraphId = readingDocument.sections.flatMap((section) => section.paragraphs)[0]?.id;
+    for (const sentence of readingDocument.frontMatter || []) {
+      if (firstParagraphId) mapping[sentence.id] = firstParagraphId;
+    }
+    for (const section of readingDocument.sections) {
+      if (section.headingSentence && section.paragraphs[0]) {
+        mapping[section.headingSentence.id] = section.paragraphs[0].id;
+      }
+      for (const paragraph of section.paragraphs) {
+        for (const sentence of paragraph.sentences) mapping[sentence.id] = paragraph.id;
+      }
+    }
+  }
 
   return notes.map((note) => {
     let sentenceId = note.sentenceId;
@@ -58,7 +74,7 @@ function migrateStoredNotes(notes, readingDocument) {
       visited.add(sentenceId);
       sentenceId = mapping[sentenceId];
     }
-    return sentenceId === note.sentenceId ? note : { ...note, sentenceId };
+    return sentenceId === note.sentenceId ? note : { ...note, sentenceId, originalSentenceId: note.originalSentenceId || note.sentenceId };
   });
 }
 
@@ -114,10 +130,12 @@ function buildNotesText(notes, sentenceMap, config) {
     } else {
       lines.push(`${index + 1}. ${sentence?.sectionTitle || 'Texto'}`);
       if (Number.isFinite(audioTime)) {
-        lines.push(`Momento real del audio al crear la nota (sin alineación oración–audio): ${formatTime(audioTime)}`);
+        lines.push(config.sync.unit === 'paragraph'
+          ? `Momento de reproducción al crear la nota: ${formatTime(audioTime)}`
+          : `Momento real del audio al crear la nota (sin alineación oración–audio): ${formatTime(audioTime)}`);
       }
     }
-    lines.push(`“${sentence?.text || 'Oración no disponible'}”`);
+    lines.push(`“${sentence?.text || (config.sync.unit === 'paragraph' ? 'Párrafo no disponible' : 'Oración no disponible')}”`);
     lines.push(note.text);
     lines.push('');
   });
@@ -148,6 +166,9 @@ function NoteCard({ note, sentence, onGo, onEdit, onDelete, compact = false }) {
 }
 
 export default function IntegratedReader({ showToast, readingDocument, config, Launcher = JourneyReadingEntry }) {
+  // Esta modalidad se activa solo para la obra que la solicita.
+  const paragraphMode = config.sync.unit === 'paragraph';
+  const syncInteractive = config.sync.status === 'ready' || (paragraphMode && config.sync.status === 'paragraph-preview');
   const dialogRef = useRef(null);
   const audioRef = useRef(null);
   const textScrollRef = useRef(null);
@@ -173,33 +194,56 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   const [followText, setFollowText] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).followText ?? true);
   const [fontScale, setFontScale] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).fontScale || 1);
   const [selectedSentenceId, setSelectedSentenceId] = useState(null);
-  const [notes, setNotes] = useState(() => migrateStoredNotes(readStoredValue(config.storage.notesKey, []), readingDocument));
+  const [notes, setNotes] = useState(() => migrateStoredNotes(readStoredValue(config.storage.notesKey, []), readingDocument, paragraphMode));
   const [editor, setEditor] = useState(null);
   const [editorText, setEditorText] = useState('');
   const [localStatus, setLocalStatus] = useState('');
 
-  const sentences = useMemo(() => ([
-    ...(readingDocument.frontMatter || []).map((sentence) => ({
-      ...sentence,
-      sectionId: 'frontmatter',
-      sectionTitle: 'Portada',
-    })),
-    ...readingDocument.sections.flatMap((section) => [
-      ...(section.headingSentence ? [{ ...section.headingSentence, sectionId: section.id, sectionTitle: section.title }] : []),
-      ...section.paragraphs.flatMap((paragraph) =>
-        paragraph.sentences.map((sentence) => ({ ...sentence, sectionId: section.id, sectionTitle: section.title })),
-      ),
-    ]),
-  ]).map((sentence, order) => ({ ...sentence, order })), [readingDocument]);
+  const sentences = useMemo(() => {
+    if (paragraphMode) {
+      const timings = new Map((config.sync.paragraphTimings || []).map((item) => [item.id, item]));
+      return readingDocument.sections.flatMap((section) =>
+        section.paragraphs.map((paragraph) => {
+          const timing = timings.get(paragraph.id);
+          return {
+            id: paragraph.id,
+            text: paragraph.sentences.map((sentence) => sentence.text).join(' '),
+            sectionId: section.id,
+            sectionTitle: section.title,
+            start: timing?.start,
+            end: timing?.end,
+          };
+        }),
+      ).map((paragraph, order) => ({ ...paragraph, order }));
+    }
+    return [
+      ...(readingDocument.frontMatter || []).map((sentence) => ({
+        ...sentence,
+        sectionId: 'frontmatter',
+        sectionTitle: 'Portada',
+      })),
+      ...readingDocument.sections.flatMap((section) => [
+        ...(section.headingSentence ? [{ ...section.headingSentence, sectionId: section.id, sectionTitle: section.title }] : []),
+        ...section.paragraphs.flatMap((paragraph) =>
+          paragraph.sentences.map((sentence) => ({ ...sentence, sectionId: section.id, sectionTitle: section.title })),
+        ),
+      ]),
+    ].map((sentence, order) => ({ ...sentence, order }));
+  }, [readingDocument, paragraphMode, config.sync.paragraphTimings]);
+  const paragraphForSentence = useMemo(() => new Map(
+    readingDocument.sections.flatMap((section) =>
+      section.paragraphs.flatMap((paragraph) => paragraph.sentences.map((sentence) => [sentence.id, paragraph.id])),
+    ),
+  ), [readingDocument]);
 
   const sentenceMap = useMemo(() => new Map(sentences.map((sentence) => [sentence.id, sentence])), [sentences]);
   // Referencias de la edición (no son notas personales ni pasajes del audio).
   // Solo se muestra el enlace si la obra trae una ubicación editorial verificada.
   const editorialFootnotes = useMemo(
     () => new Map((readingDocument.endnotes || [])
-      .filter((note) => note.sentenceId && sentenceMap.has(note.sentenceId))
+      .filter((note) => note.sentenceId && (paragraphMode ? paragraphForSentence.has(note.sentenceId) : sentenceMap.has(note.sentenceId)))
       .map((note) => [note.sentenceId, note])),
-    [readingDocument, sentenceMap],
+    [readingDocument, sentenceMap, paragraphForSentence, paragraphMode],
   );
   const showEditorialFootnote = (note) => {
     if (!endnotesDetailsRef.current) return;
@@ -211,7 +255,8 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     });
   };
   const returnToEditorialReference = (note) => {
-    const target = textScrollRef.current?.querySelector(`[data-reader-sentence="${note.sentenceId}"]`);
+    const targetId = paragraphMode ? paragraphForSentence.get(note.sentenceId) : note.sentenceId;
+    const target = textScrollRef.current?.querySelector(`[data-reader-sentence="${targetId}"]`);
     target?.scrollIntoView({ block: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
     target?.focus({ preventScroll: true });
   };
@@ -220,8 +265,9 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     [sentences],
   );
   const activeSentence = useMemo(
-    () => config.sync.status === 'ready' ? findActiveSentence(timedSentences, currentTime) : null,
-    [config.sync.status, currentTime, timedSentences],
+    () => syncInteractive && (!paragraphMode || (currentTime >= (timedSentences[0]?.start ?? Infinity) && currentTime <= (timedSentences.at(-1)?.end ?? -Infinity)))
+      ? findActiveSentence(timedSentences, currentTime) : null,
+    [syncInteractive, paragraphMode, currentTime, timedSentences],
   );
   const selectedSentence = sentenceMap.get(selectedSentenceId) || null;
   const annotationTarget = selectedSentence || activeSentence || sentences[0];
@@ -331,8 +377,8 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     const target = document.querySelector(`[data-reader-sentence="${activeSentence.id}"]`);
     if (!target) return;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'center' });
-  }, [activeSentence?.id, followText, open, playing]);
+    target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: paragraphMode ? 'start' : 'center' });
+  }, [activeSentence?.id, followText, open, playing, paragraphMode]);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -536,7 +582,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
           section: sentence?.sectionTitle || 'Texto',
           audioTime,
           audioTimeBasis: Number.isFinite(sentence?.start)
-            ? 'sentence-sync'
+            ? (paragraphMode ? 'paragraph-sync-preview' : 'sentence-sync')
             : Number.isFinite(note?.audioTime)
               ? 'playback-position-at-annotation'
               : 'unavailable',
@@ -640,6 +686,52 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
       </Fragment>
     );
   };
+  const renderParagraph = (paragraph, Tag) => {
+    const entry = sentenceMap.get(paragraph.id);
+    const active = activeSentence?.id === paragraph.id;
+    const selected = selectedSentenceId === paragraph.id;
+    const count = noteCountFor(paragraph.id);
+    const choose = () => setSelectedSentenceId(paragraph.id);
+    return (
+      <Tag
+        key={paragraph.id}
+        data-reader-sentence={paragraph.id}
+        className={`reader-paragraph-unit ${active ? 'is-active' : ''} ${selected ? 'is-selected' : ''} ${paragraph.kind === 'note' ? 'reader-document__note' : ''}`}
+        aria-current={active ? 'true' : undefined}
+      >
+        {paragraph.sentences.map((sentence, index) => {
+          const editorialNote = editorialFootnotes.get(sentence.id);
+          return (
+            <Fragment key={sentence.id}>
+              <span
+                className="reader-paragraph-unit__text"
+                role={index === 0 ? 'button' : undefined}
+                tabIndex={index === 0 ? 0 : undefined}
+                aria-label={index === 0 ? `Seleccionar párrafo: ${entry?.text || ''}` : undefined}
+                onClick={choose}
+                onKeyDown={index === 0 ? (event) => {
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    choose();
+                  }
+                } : undefined}
+              >{sentence.text}</span>
+              {editorialNote && <button
+                type="button"
+                className="reader-editorial-reference"
+                aria-label={`Consultar nota editorial ${editorialNote.number} de la edición de Marcaida y Scaltritti`}
+                onClick={() => showEditorialFootnote(editorialNote)}
+                title={`Nota académica ${editorialNote.number}, página ${editorialNote.page}; no forma parte del audiolibro`}
+              ><sup>{editorialNote.number}</sup></button>}
+              {' '}
+            </Fragment>
+          );
+        })}
+        {count > 0 && <sup className="reader-paragraph-unit__notes" title={`${count} ${count === 1 ? 'nota personal' : 'notas personales'}`}>{count}</sup>}
+      </Tag>
+    );
+  };
   const editorSentence = editor ? sentenceMap.get(editor.sentenceId) : null;
   const readerProgress = { currentTime, playbackRate, volume, followText, fontScale };
 
@@ -735,9 +827,9 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
               <article className="reader-document" aria-labelledby="reader-document-title">
                 <header className="reader-document__cover">
                   <p>{readingDocument.versionLabel || 'Texto completo · versión accesible'}</p>
-                  <h1 id="reader-document-title">{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'title'))}</h1>
-                  <h2>{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'subtitle'))}</h2>
-                  <span>{renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'author'))}</span>
+                  <h1 id="reader-document-title">{paragraphMode ? readingDocument.frontMatter?.find((sentence) => sentence.role === 'title')?.text : renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'title'))}</h1>
+                  <h2>{paragraphMode ? readingDocument.frontMatter?.find((sentence) => sentence.role === 'subtitle')?.text : renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'subtitle'))}</h2>
+                  <span>{paragraphMode ? readingDocument.frontMatter?.find((sentence) => sentence.role === 'author')?.text : renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'author'))}</span>
                   <div>
                     <Headphones size={17} /> {config.sync.coverMessage}
                   </div>
@@ -745,14 +837,16 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
 
                 {readingDocument.sections.map((section) => (
                   <section key={section.id} id={`reader-section-${section.id}`} className="reader-document__section">
-                    {section.title && <h2>{section.headingSentence ? renderSentence(section.headingSentence) : section.title}</h2>}
+                    {section.title && <h2>{paragraphMode ? section.title : section.headingSentence ? renderSentence(section.headingSentence) : section.title}</h2>}
                     {section.paragraphs.map((paragraph) => {
                       const Tag = paragraph.kind === 'quote' ? 'blockquote' : 'p';
-                      return (
-                        <Tag key={paragraph.id} className={paragraph.kind === 'note' ? 'reader-document__note' : undefined}>
-                          {paragraph.sentences.map((sentence) => renderSentence(sentence, true))}
-                        </Tag>
-                      );
+                      return paragraphMode
+                        ? renderParagraph(paragraph, Tag)
+                        : (
+                          <Tag key={paragraph.id} className={paragraph.kind === 'note' ? 'reader-document__note' : undefined}>
+                            {paragraph.sentences.map((sentence) => renderSentence(sentence, true))}
+                          </Tag>
+                        );
                     })}
                   </section>
                 ))}
@@ -803,7 +897,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
           <footer className="reader-player">
             {audioLoading && !audioReady && !audioError && (
               <div className="reader-player__loading" role="status">
-                {config.sync.status === 'ready' ? 'Preparando el audio para habilitar saltos precisos…' : 'Preparando el audio para escuchar…'}
+                {syncInteractive ? (paragraphMode ? 'Preparando la lectura por párrafos…' : 'Preparando el audio para habilitar saltos precisos…') : 'Preparando el audio para escuchar…'}
               </div>
             )}
             {audioError && (
@@ -814,7 +908,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
             )}
 
             <div className="reader-player__context">
-              <span>{selectedSentence?.audioUnavailable ? 'Fragmento sin audio' : selectedSentence ? 'Oración elegida' : config.sync.status === 'ready' ? 'Oración activa' : 'Texto listo para anotar'}</span>
+              <span>{selectedSentence?.audioUnavailable ? 'Fragmento sin audio' : selectedSentence ? (paragraphMode ? 'Párrafo elegido' : 'Oración elegida') : syncInteractive ? (paragraphMode ? 'Párrafo activo' : 'Oración activa') : 'Texto listo para anotar'}</span>
               <q>{excerpt(annotationTarget?.text, 118)}</q>
               {selectedSentence && Number.isFinite(selectedSentence.start) && (
                 <button type="button" onClick={() => { seekTo(selectedSentence.start, true); setSelectedSentenceId(null); }}>
@@ -859,7 +953,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                 <input type="range" min="0" max="1" step="0.05" value={volume} onChange={(event) => changeVolume(Number(event.target.value))} aria-label="Volumen" />
               </div>
 
-              {config.sync.status === 'ready' && (
+              {syncInteractive && (
                 <button className={`reader-player__follow ${followText ? 'is-active' : ''}`} type="button" aria-label={followText ? 'Dejar de seguir el texto' : 'Seguir el texto'} aria-pressed={followText} onClick={() => setFollowText((value) => !value)}>
                   <List size={17} /> <span>{followText ? 'Siguiendo texto' : 'Seguir texto'}</span>
                 </button>
@@ -888,7 +982,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                   {sortedNotes.length ? sortedNotes.map((note) => (
                     <NoteCard key={note.id} compact note={note} sentence={sentenceMap.get(note.sentenceId)} onGo={goToNote} onEdit={editNote} onDelete={deleteNote} />
                   )) : (
-                    <div className="notes-drawer__empty"><NotebookPen size={34} /><strong>Tu cuaderno está listo</strong><p>Elegí una oración o reproducí el audio y tocá “Anotar”.</p></div>
+                    <div className="notes-drawer__empty"><NotebookPen size={34} /><strong>Tu cuaderno está listo</strong><p>{paragraphMode ? 'Elegí un párrafo o reproducí el audio y tocá “Anotar”.' : 'Elegí una oración o reproducí el audio y tocá “Anotar”.'}</p></div>
                   )}
                 </div>
               </aside>
@@ -914,7 +1008,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                 </blockquote>
                 <label>
                   <span>Tu comentario</span>
-                  <textarea autoFocus rows="6" maxLength="3000" value={editorText} onChange={(event) => setEditorText(event.target.value)} placeholder="¿Qué te hace pensar esta oración? ¿Con qué concepto, fuente o experiencia la relacionás?" />
+                  <textarea autoFocus rows="6" maxLength="3000" value={editorText} onChange={(event) => setEditorText(event.target.value)} placeholder={paragraphMode ? "¿Qué te hace pensar este párrafo? ¿Con qué concepto, fuente o experiencia lo relacionás?" : "¿Qué te hace pensar esta oración? ¿Con qué concepto, fuente o experiencia la relacionás?"} />
                   <small>{editorText.length}/3000</small>
                 </label>
                 <footer>
