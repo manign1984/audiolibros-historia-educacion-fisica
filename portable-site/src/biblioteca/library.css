@@ -55,3 +55,41 @@
 
 /* Three available works need visible shelf controls on desktop too. */
 .shelf--featured .shelf-arrows{display:flex}
+
+
+/* Biblioteca: portada de una pantalla útil, coherente con la unidad rígida
+   de los recorridos. El alto disponible descuenta exactamente una vez el
+   encabezado real, medido en Header (una o dos filas según el ancho).
+   El catálogo comienza después de la pantalla de Inicio, nunca asoma debajo.
+   Ante ventanas bajas o zoom, el contenido puede crecer sin ser recortado. */
+.library-page .hero {
+  min-height:calc(100svh - var(--library-header-height, 88px));
+  display:flex;
+  flex-direction:column;
+}
+.library-page .hero-inner {
+  flex:1 0 auto;
+  display:flex;
+  flex-direction:column;
+  padding-top:clamp(28px,5.5svh,65px);
+}
+.library-page .hero-bottom {
+  margin-top:auto;
+  padding-top:clamp(20px,3.2svh,42px);
+  padding-bottom:clamp(18px,2.8svh,30px);
+}
+/* El descubrimiento continúa en búsqueda/filtros y estanterías; la fila de
+   tarjetas temáticas se retiró de Inicio, sin eliminar las colecciones. */
+.library-page #catalogo {scroll-margin-top:0;}
+@media(max-width:760px) {
+  .library-page .hero {
+    min-height:calc(100svh - var(--library-header-height, 100px));
+  }
+  .library-page .hero-inner {
+    padding-top:clamp(175px,25svh,205px);
+  }
+}
+@media(max-height:650px) and (min-width:761px) {
+  .library-page .hero-inner {padding-top:clamp(18px,3svh,32px);}
+  .library-page .hero-bottom {padding-top:18px;padding-bottom:16px;}
+}

@@ -160,3 +160,22 @@ assert.deepEqual(readList(blocked, ids), []);
 assert.equal(saveList(blocked, ids), false);
 assert.equal(readProgress(blocked, pineau), 0);
 console.log('Biblioteca: 29 fichas, 3 recorridos, búsqueda, APA, rutas, lista y progreso verificados.');
+
+
+// Portada de la biblioteca = una pantalla útil bajo el encabezado real.
+// Las seis tarjetas temáticas no deben ocupar espacio debajo del hero;
+// colecciones y filtros permanecen disponibles dentro del catálogo.
+const librarySource = await readFile(new URL('../src/biblioteca/LibraryHome.jsx', import.meta.url), 'utf8');
+const libraryCss = await readFile(new URL('../src/biblioteca/library.css', import.meta.url), 'utf8');
+assert.match(librarySource, /const headerRef = useRef\(null\)/, 'Medir el encabezado de la biblioteca sin presumir una altura fija.');
+assert.match(librarySource, /observer\.observe\(header\)/, 'Responder a cambios de altura del encabezado en tablet y móvil.');
+assert.match(librarySource, /--library-header-height/, 'Compartir la altura efectiva con la portada.');
+assert.match(libraryCss, /\.library-page \.hero\s*\{\s*min-height:calc\(100svh - var\(--library-header-height, 88px\)\);/, 'La portada ocupa el viewport útil de escritorio.');
+assert.match(libraryCss, /\.library-page \.hero-inner\s*\{[\s\S]*?flex-direction:column/, 'Distribuir el contenido de la portada verticalmente.');
+assert.match(libraryCss, /\.library-page \.hero-bottom\s*\{\s*margin-top:auto;/, 'Anclar descubrimiento y paginación al pie de Inicio.');
+assert.doesNotMatch(librarySource, /<section className="collections"/, 'Eliminar la fila de seis tarjetas temáticas del inicio.');
+assert.doesNotMatch(librarySource, /id="colecciones"/, 'No conservar un ancla a la fila eliminada.');
+assert.match(librarySource, /href="#catalogo">Descubrí la biblioteca/, 'El CTA de descubrimiento debe dirigirse al catálogo.');
+assert.match(librarySource, /className="library-shell catalog-area" id="catalogo"/, 'El catálogo continúa disponible tras Inicio.');
+assert.match(librarySource, /<select value=\{collection\}/, 'Conservar la exploración por colecciones mediante el filtro.');
+assert.match(librarySource, /\{collections\.map\(\(item\) => <Shelf/, 'Conservar estanterías temáticas y sus colecciones.');
