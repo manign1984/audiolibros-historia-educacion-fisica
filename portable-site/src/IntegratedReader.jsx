@@ -762,7 +762,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                   || readingDocument.sourceNote) && (
                   <section className="reader-document__apparatus" aria-labelledby="reader-apparatus-title">
                     <h2 id="reader-apparatus-title">Notas y bibliografía</h2>
-                    <p>{readingDocument.sourceNote || 'El audiolibro recorre el cuerpo principal del artículo. Las notas académicas y la bibliografía se conservan aquí para completar la versión textual.'}</p>
+                    {readingDocument.sourceNote && <p>{readingDocument.sourceNote}</p>}
                     {(readingDocument.endnotes || []).length > 0 && (
                       <details ref={endnotesDetailsRef}>
                         <summary><span>Notas académicas de la edición · no narradas</span><b>{readingDocument.endnotes.length}</b></summary>
@@ -770,7 +770,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                           <span aria-hidden="true">{note.number}</span>
                           <div className="reader-editorial-note-body">
                             <p>{note.text}</p>
-                            {note.kind && <small>{note.kind === 'sintesis' ? 'Síntesis editorial del contenido de la nota original' : note.kind === 'incorporada-al-cuerpo' ? 'Nota original ya incorporada al cuerpo de la versión de cátedra' : 'Referencia bibliográfica de la nota original'}</small>}
+                            {note.kind && <small>{note.kind === 'sintesis' ? 'Síntesis editorial del contenido de la nota original' : note.kind === 'incorporada-al-cuerpo' ? 'Referencia histórica' : 'Referencia bibliográfica de la nota original'}</small>}
                             <div className="reader-editorial-note-links">
                               {note.sourceUrl && <a href={note.sourceUrl} target="_blank" rel="noreferrer" aria-label={`Consultar nota ${note.number} en página ${note.page} de la edición original`}>Ver original · p. {note.page}</a>}
                               {note.sentenceId && <button type="button" onClick={() => returnToEditorialReference(note)}>Volver al pasaje</button>}
