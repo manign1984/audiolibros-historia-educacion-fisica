@@ -43,7 +43,7 @@ export default defineConfig({
         pineauFrescoNoble: fileURLToPath(new URL('./textos/pineau-fresco-noble/index.html', import.meta.url)),
         aisensteinTablaRasa: fileURLToPath(new URL('./textos/aisenstein-tabla-rasa/index.html', import.meta.url)),
         hobsbawmHistoriaSigloXX: fileURLToPath(new URL('./textos/hobsbawm-historia-siglo-xx/index.html', import.meta.url)),
-        ...Object.fromEntries(catalog.filter((entry) => entry.status === 'preparation').map((entry) => [entry.id, fileURLToPath(new URL(`./${entry.path}index.html`, import.meta.url))])),
+        ...Object.fromEntries(catalog.filter((entry) => entry.status !== 'available').map((entry) => [entry.id, fileURLToPath(new URL(`./${entry.path}index.html`, import.meta.url))])),
       },
     },
   },
