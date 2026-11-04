@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { marcaidaReaderConfig as config } from '../src/marcaida/readerConfig.js';
+import { marcaidaParagraphTimings } from '../src/marcaida/paragraphSync.js';
 import { catalog } from '../src/biblioteca/catalog.js';
 
 const doc = JSON.parse(await readFile(new URL('../src/marcaida/reading-document.json', import.meta.url), 'utf8'));
@@ -40,7 +41,24 @@ assert.match(sharedReaderSource, /readingDocument\.sourceNote && <p>/, 'Exponer 
 
 assert.equal(new Set(sentences.map(s => s.id)).size, sentences.length, 'Cada pasaje anotable tiene identidad estable.');
 assert.ok(sentences.every(s => !('start' in s) && !('end' in s)), 'No activar marcas temporales sin verificar.');
-assert.equal(config.sync.status, 'pending');
+assert.equal(config.sync.status, 'paragraph-preview', 'Seguimiento de Marcaida solo en modalidad por párrafo.');
+assert.equal(config.sync.unit, 'paragraph');
+assert.equal(config.sync.paragraphTimings, marcaidaParagraphTimings);
+const paragraphs = doc.sections.flatMap(s => s.paragraphs);
+assert.equal(paragraphs.length, 42, '42 párrafos completos del cuerpo.');
+assert.equal(marcaidaParagraphTimings.length, paragraphs.length);
+assert.deepEqual(marcaidaParagraphTimings.map(p => p.id), paragraphs.map(p => p.id));
+assert.equal(marcaidaParagraphTimings.filter(p => p.verifiedByAudio).length, 36);
+for (const [index, interval] of marcaidaParagraphTimings.entries()) {
+  assert.ok(Number.isFinite(interval.start) && Number.isFinite(interval.end));
+  assert.ok(interval.start < interval.end && interval.end <= doc.duration);
+  if (index > 0) assert.ok(interval.start >= marcaidaParagraphTimings[index-1].end - 0.05, 'No solapar párrafos.');
+}
+assert.equal(marcaidaParagraphTimings.at(-1).end, 2020.14);
+assert.ok(sharedReaderSource.includes("paragraphMode ? renderParagraph(paragraph, Tag)"), 'Renderizar párrafos solo en esta modalidad.');
+assert.ok(sharedReaderSource.includes("migrateStoredNotes(readStoredValue(config.storage.notesKey, []), readingDocument, paragraphMode)"), 'Migrar notas anteriores sin pérdida.');
+assert.ok(sharedReaderSource.includes("paragraphForSentence.get(note.sentenceId)"), 'Conservar navegación de las diez notas editoriales.');
+assert.ok(sharedReaderSource.includes("config.sync.status === 'ready' || (paragraphMode && config.sync.status === 'paragraph-preview')"), 'Mantener las otras obras en modalidad original.');
 assert.equal(doc.duration, 2026.374625);
 assert.equal(config.workId, 'marcaida-scaltritti-estado-nacional');
 assert.match(config.storage.notesKey, /^marcaida-scaltritti-/);
