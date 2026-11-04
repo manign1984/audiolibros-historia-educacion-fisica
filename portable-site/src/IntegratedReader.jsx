@@ -47,9 +47,18 @@ function readStoredValue(key, fallback) {
   }
 }
 
-function migrateStoredNotes(notes, readingDocument) {
+function migrateStoredNotes(notes, readingDocument, paragraphMode = false) {
   if (!Array.isArray(notes)) return [];
-  const mapping = readingDocument.legacySentenceMap || {};
+  const mapping = { ...(readingDocument.legacySentenceMap || {}) };
+  // Mantener las anotaciones existentes sin pérdida de texto, asociándolas
+  // al párrafo al que pertenecía su oración en la versión anterior.
+  if (paragraphMode) {
+    for (const section of readingDocument.sections) {
+      for (const paragraph of section.paragraphs) {
+        for (const sentence of paragraph.sentences) mapping[sentence.id] = paragraph.id;
+      }
+    }
+  }
 
   return notes.map((note) => {
     let sentenceId = note.sentenceId;
@@ -58,7 +67,7 @@ function migrateStoredNotes(notes, readingDocument) {
       visited.add(sentenceId);
       sentenceId = mapping[sentenceId];
     }
-    return sentenceId === note.sentenceId ? note : { ...note, sentenceId };
+    return sentenceId === note.sentenceId ? note : { ...note, sentenceId, originalSentenceId: note.originalSentenceId || note.sentenceId };
   });
 }
 
@@ -114,10 +123,10 @@ function buildNotesText(notes, sentenceMap, config) {
     } else {
       lines.push(`${index + 1}. ${sentence?.sectionTitle || 'Texto'}`);
       if (Number.isFinite(audioTime)) {
-        lines.push(`Momento real del audio al crear la nota (sin alineación oración–audio): ${formatTime(audioTime)}`);
+        lines.push(`Momento de reproducción al crear la nota: ${formatTime(audioTime)}`);
       }
     }
-    lines.push(`“${sentence?.text || 'Oración no disponible'}”`);
+    lines.push(`“${sentence?.text || (config.sync.unit === 'paragraph' ? 'Párrafo no disponible' : 'Oración no disponible')}”`);
     lines.push(note.text);
     lines.push('');
   });
@@ -148,6 +157,9 @@ function NoteCard({ note, sentence, onGo, onEdit, onDelete, compact = false }) {
 }
 
 export default function IntegratedReader({ showToast, readingDocument, config, Launcher = JourneyReadingEntry }) {
+  // Esta modalidad se activa solo para la obra que la solicita.
+  const paragraphMode = config.sync.unit === 'paragraph';
+  const syncInteractive = config.sync.status === 'ready' || (paragraphMode && config.sync.status === 'paragraph-preview');
   const dialogRef = useRef(null);
   const audioRef = useRef(null);
   const textScrollRef = useRef(null);
@@ -173,33 +185,56 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   const [followText, setFollowText] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).followText ?? true);
   const [fontScale, setFontScale] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).fontScale || 1);
   const [selectedSentenceId, setSelectedSentenceId] = useState(null);
-  const [notes, setNotes] = useState(() => migrateStoredNotes(readStoredValue(config.storage.notesKey, []), readingDocument));
+  const [notes, setNotes] = useState(() => migrateStoredNotes(readStoredValue(config.storage.notesKey, []), readingDocument, paragraphMode));
   const [editor, setEditor] = useState(null);
   const [editorText, setEditorText] = useState('');
   const [localStatus, setLocalStatus] = useState('');
 
-  const sentences = useMemo(() => ([
-    ...(readingDocument.frontMatter || []).map((sentence) => ({
-      ...sentence,
-      sectionId: 'frontmatter',
-      sectionTitle: 'Portada',
-    })),
-    ...readingDocument.sections.flatMap((section) => [
-      ...(section.headingSentence ? [{ ...section.headingSentence, sectionId: section.id, sectionTitle: section.title }] : []),
-      ...section.paragraphs.flatMap((paragraph) =>
-        paragraph.sentences.map((sentence) => ({ ...sentence, sectionId: section.id, sectionTitle: section.title })),
-      ),
-    ]),
-  ]).map((sentence, order) => ({ ...sentence, order })), [readingDocument]);
+  const sentences = useMemo(() => {
+    if (paragraphMode) {
+      const timings = new Map((config.sync.paragraphTimings || []).map((item) => [item.id, item]));
+      return readingDocument.sections.flatMap((section) =>
+        section.paragraphs.map((paragraph) => {
+          const timing = timings.get(paragraph.id);
+          return {
+            id: paragraph.id,
+            text: paragraph.sentences.map((sentence) => sentence.text).join(' '),
+            sectionId: section.id,
+            sectionTitle: section.title,
+            start: timing?.start,
+            end: timing?.end,
+          };
+        }),
+      ).map((paragraph, order) => ({ ...paragraph, order }));
+    }
+    return [
+      ...(readingDocument.frontMatter || []).map((sentence) => ({
+        ...sentence,
+        sectionId: 'frontmatter',
+        sectionTitle: 'Portada',
+      })),
+      ...readingDocument.sections.flatMap((section) => [
+        ...(section.headingSentence ? [{ ...section.headingSentence, sectionId: section.id, sectionTitle: section.title }] : []),
+        ...section.paragraphs.flatMap((paragraph) =>
+          paragraph.sentences.map((sentence) => ({ ...sentence, sectionId: section.id, sectionTitle: section.title })),
+        ),
+      ]),
+    ].map((sentence, order) => ({ ...sentence, order }));
+  }, [readingDocument, paragraphMode, config.sync.paragraphTimings]);
+  const paragraphForSentence = useMemo(() => new Map(
+    readingDocument.sections.flatMap((section) =>
+      section.paragraphs.flatMap((paragraph) => paragraph.sentences.map((sentence) => [sentence.id, paragraph.id])),
+    ),
+  ), [readingDocument]);
 
   const sentenceMap = useMemo(() => new Map(sentences.map((sentence) => [sentence.id, sentence])), [sentences]);
   // Referencias de la edición (no son notas personales ni pasajes del audio).
   // Solo se muestra el enlace si la obra trae una ubicación editorial verificada.
   const editorialFootnotes = useMemo(
     () => new Map((readingDocument.endnotes || [])
-      .filter((note) => note.sentenceId && sentenceMap.has(note.sentenceId))
+      .filter((note) => note.sentenceId && (paragraphMode ? paragraphForSentence.has(note.sentenceId) : sentenceMap.has(note.sentenceId)))
       .map((note) => [note.sentenceId, note])),
-    [readingDocument, sentenceMap],
+    [readingDocument, sentenceMap, paragraphForSentence, paragraphMode],
   );
   const showEditorialFootnote = (note) => {
     if (!endnotesDetailsRef.current) return;
@@ -211,7 +246,8 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     });
   };
   const returnToEditorialReference = (note) => {
-    const target = textScrollRef.current?.querySelector(`[data-reader-sentence="${note.sentenceId}"]`);
+    const targetId = paragraphMode ? paragraphForSentence.get(note.sentenceId) : note.sentenceId;
+    const target = textScrollRef.current?.querySelector(`[data-reader-sentence="${targetId}"]`);
     target?.scrollIntoView({ block: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
     target?.focus({ preventScroll: true });
   };
@@ -220,8 +256,9 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     [sentences],
   );
   const activeSentence = useMemo(
-    () => config.sync.status === 'ready' ? findActiveSentence(timedSentences, currentTime) : null,
-    [config.sync.status, currentTime, timedSentences],
+    () => syncInteractive && (!paragraphMode || (currentTime >= (timedSentences[0]?.start ?? Infinity) && currentTime <= (timedSentences.at(-1)?.end ?? -Infinity)))
+      ? findActiveSentence(timedSentences, currentTime) : null,
+    [syncInteractive, paragraphMode, currentTime, timedSentences],
   );
   const selectedSentence = sentenceMap.get(selectedSentenceId) || null;
   const annotationTarget = selectedSentence || activeSentence || sentences[0];
@@ -331,8 +368,8 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     const target = document.querySelector(`[data-reader-sentence="${activeSentence.id}"]`);
     if (!target) return;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'center' });
-  }, [activeSentence?.id, followText, open, playing]);
+    target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: paragraphMode ? 'start' : 'center' });
+  }, [activeSentence?.id, followText, open, playing, paragraphMode]);
 
   useEffect(() => {
     if (!open) return undefined;
