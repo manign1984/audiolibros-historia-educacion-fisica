@@ -105,6 +105,14 @@ const publishedWorks = [
 
 export const catalog = [...publishedWorks, ...plannedWorks.filter((entry) => entry.id !== 'aisenstein-tabla-rasa')];
 
+export const canReadAndListen = (entry) => entry.status === 'available' || entry.status === 'review';
+export function matchesAvailability(entry, selected = 'all') {
+  if (selected === 'all') return true;
+  // «Leer y escuchar» incluye la escucha no sincronizada declarada como tal.
+  if (selected === 'available') return canReadAndListen(entry);
+  return entry.status === selected;
+}
+
 export function normalizeForSearch(value = '') {
   return String(value)
     .normalize('NFD')
