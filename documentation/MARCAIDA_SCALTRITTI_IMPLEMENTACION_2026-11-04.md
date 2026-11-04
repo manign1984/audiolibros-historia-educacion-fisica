@@ -57,3 +57,16 @@ Se incorporan las **diez llamadas numeradas** que aparecen en el capítulo de la
 - El aviso de los créditos identifica que el PDF de cátedra carece de las notas y que las referencias del lector se reconstruyen, con acceso al original.
 
 Esta mejora hace visible el aparato de notas sin modificar silenciosamente el cuerpo de la edición de cátedra. La decisión sobre una eventual restitución *literal* de todas las notas deberá tramitarse con el material y las autorizaciones editoriales correspondientes; las síntesis actuales no deben presentarse como transcripción fiel.
+
+
+## Auditoría de autorías y catálogo (04/11/2026)
+
+**Retratos:** La búsqueda pública por nombres completos y variantes en catálogos bibliográficos, páginas académicas y educativas, repertorios y resultados de imágenes no proporcionó una pareja de fotografías cuya identidad personal y permiso de reproducción se puedan verificar. No se incorporan fotografías ajenas, ilustraciones antropomórficas generadas ni atribuciones supuestas. Se conservan los monogramas EM/MS como recurso tipográfico y se retira de la interfaz pública la nota sobre una búsqueda pendiente, según CAN-01.
+
+**Biografías:** Elena Marcaida: la reseña de [Página/12, 2012](https://www.pagina12.com.ar/diario/universidad/10-195385-2012-06-01.html) verifica su docencia y coordinación en el CBC desde 1985; [Dialnet](https://dialnet.unirioja.es/servlet/libro?codigo=4557) y catálogos documentan la coordinación de obras de historia económica y social. Mabel Scaltritti: la [Escuela Normal Nº 1, 2011](https://centroderecursosnormal1.blogspot.com/2011/05/) documenta su licenciatura en Historia (Université Paris VII), docencia en CBC y trabajo curricular; [Ministerio de Educación, Cuadernos para el aula](https://www.bnm.me.gov.ar/giga1/documentos/EL001102.pdf) acredita sus funciones de autoría/coordinación/supervisión. Ambos perfiles se reformulan sin inventar trayectorias personales.
+
+**Semántica de disponibilidad:** Marcaida/Scaltritti recibe estado `review`, distinto de `available` (destacados consolidados) y `preparation` (solo ficha bibliográfica). El filtro «Leer y escuchar» y la estantería correspondiente incluyen tanto `available` como `review`; hay también filtro exclusivo «Edición en revisión». La ficha declara audio 33:46, lectura y anotaciones, y sincronización pendiente. El carrusel de portada continúa limitado a cuatro obras `available`; la ficha de Marcaida sigue siendo accesible desde catálogo y la ruta física del sitio.
+
+**Cronología:** La colección «Cuerpos, escuela y nación» abarca ahora 1852–1930; la tarjeta de la obra precisa 1852–1880. Se evita asignar una obra de 1852–1880 a una estantería titulada exclusivamente 1880–1930.
+
+**Conservación:** Sin modificaciones en texto académico, audio, VTT, anotaciones ni alineación. Enlace, claves de almacenamiento y estructura de las cinco secciones estables. No declarar sincronización validada ni permisos fotográficos inexistentes.
