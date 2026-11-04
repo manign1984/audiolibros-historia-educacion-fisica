@@ -130,7 +130,9 @@ function buildNotesText(notes, sentenceMap, config) {
     } else {
       lines.push(`${index + 1}. ${sentence?.sectionTitle || 'Texto'}`);
       if (Number.isFinite(audioTime)) {
-        lines.push(`Momento de reproducción al crear la nota: ${formatTime(audioTime)}`);
+        lines.push(config.sync.unit === 'paragraph'
+          ? `Momento de reproducción al crear la nota: ${formatTime(audioTime)}`
+          : `Momento real del audio al crear la nota (sin alineación oración–audio): ${formatTime(audioTime)}`);
       }
     }
     lines.push(`“${sentence?.text || (config.sync.unit === 'paragraph' ? 'Párrafo no disponible' : 'Oración no disponible')}”`);
