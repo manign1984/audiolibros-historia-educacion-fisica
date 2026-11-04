@@ -23,6 +23,18 @@ const expectedOrbuchCitation = 'Orbuch, I. P. (2020). Educar al cuerpo dentro y 
 const expectedPineauCitation = 'Pineau, P. (1999). Renovación, represión, cooptación: Las estrategias de la Reforma Fresco–Noble (Provincia de Buenos Aires, década del 30). En A. Ascolani (Comp.), La educación en Argentina: Estudios de historia (pp. 223–239). Ediciones del Arca.';
 
 assert.equal(catalog.length, 4, 'La biblioteca debe contener las cuatro obras integradas.');
+
+const aisenstein = catalog.find((entry) => entry.id === 'aisenstein-tabla-rasa');
+const hobsbawm = catalog.find((entry) => entry.id === 'hobsbawm-historia-siglo-xx');
+assert.equal(aisenstein?.shortTitle, '¿Hacemos tabla rasa del pasado?', 'El título de Aisenstein debe ser propio y coincidir con su recorrido.');
+assert.equal(hobsbawm?.shortTitle, 'Historia del siglo XX', 'El título de Hobsbawm debe quedar asociado exclusivamente a su obra.');
+const libraryHome = await readFile(new URL('../src/biblioteca/LibraryHome.jsx', import.meta.url), 'utf8');
+const heroSection = libraryHome.slice(libraryHome.indexOf('function Hero({ saved, toggle })'), libraryHome.indexOf('export function ProjectFooter()'));
+assert.match(heroSection, /'aisenstein-tabla-rasa': <>¿Hacemos tabla<span>rasa del pasado\?<\/span><\/>/, 'El carrusel debe mostrar el título correcto de Aisenstein.');
+assert.match(heroSection, /'hobsbawm-historia-siglo-xx': <>Historia del<span>siglo XX\.<\/span><\/>/, 'La portada de Hobsbawm conserva su título.');
+assert.match(heroSection, /heroTitles\[entry\.id\] \?\? entry\.shortTitle/, 'Ninguna obra futura debe heredar el título de Hobsbawm.');
+assert.match(heroSection, /id="hero-title" aria-label=\{entry\.shortTitle\}/, 'El título accesible debe corresponder a la obra seleccionada.');
+
 assert.equal(new Set(catalog.map((entry) => entry.id)).size, catalog.length, 'Los identificadores deben ser únicos.');
 assert.ok(orbuch && pineau, 'Las dos obras deben estar identificadas en el catálogo.');
 assert.equal(citationAsPlainText(orbuch), expectedOrbuchCitation, 'La referencia APA de Orbuch no debe alterarse.');
