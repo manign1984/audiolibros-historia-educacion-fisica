@@ -40,9 +40,13 @@ Cinco cortes adicionales para comprobar mayores diferencias entre ambos métodos
 
 ## Revisión auditiva focalizada
 
-Se preparó, como archivo de entrega independiente del repositorio, **Marcaida_Scaltritti_revision_auditiva_18_pasajes.zip** (4,8 MB), con 18 recortes MP3 de control y tres segundos de contexto a cada lado. Contiene index.html con reproducción integrada, edición de tiempos y exportación CSV; también manifest.csv y manifest.json. No se versionaron los recortes en GitHub.
+Se preparó, como archivo de entrega independiente del repositorio, **Marcaida_Scaltritti_revision_auditiva_18_pasajes.zip** (4,8 MB), con 22 recortes MP3 de control y tres segundos de contexto a cada lado. Contiene index.html con reproducción integrada, edición de tiempos y exportación CSV; también manifest.csv y manifest.json. No se versionaron los recortes en GitHub.
 
-El siguiente control debe escuchar estos 18 pasajes y una muestra distribuida del resto de las 110 oraciones; verificar también comienzos/finales de apartados, portada y encabezados. La nota editorial número 2 aparece como contenido narrado en el cuerpo de la versión de cátedra; las diez notas editoriales, en tanto aparato separado, no tienen tiempos ni deben sincronizarse por sí mismas.
+El siguiente control debe escuchar estos 22 pasajes y una muestra distribuida del resto de las 110 oraciones; verificar también comienzos/finales de apartados, portada y encabezados. La nota editorial número 2 aparece como contenido narrado en el cuerpo de la versión de cátedra; las diez notas editoriales, en tanto aparato separado, no tienen tiempos ni deben sincronizarse por sí mismas.
+
+## Cuatro diferencias léxicas adicionales entre lector y VTT
+
+La alineación exacta detectó solo cuatro oraciones con una palabra sin coincidencia exacta en los subtítulos: ms-apartado-2-p6-s2, ms-apartado-3-p9-s2, ms-apartado-3-p20-s3 y ms-apartado-4-p3-s11. La última contiene «Rusia y China» en el texto académico, frente a «Europa y China» en el VTT. El reconocimiento automático anterior identifica «Rusia y China» en el MP3, pero **la confirmación auditiva sigue pendiente**. Se prepararon cuatro recortes adicionales T01–T04 para cotejarlas, sin modificar texto ni audio.
 
 ## Criterios de cierre
 
