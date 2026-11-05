@@ -51,7 +51,7 @@ const allJavaScript = (await Promise.all(
 
 const marcaidaBundle = await readFile(resolve(dist, 'assets', marcaidaBundleName), 'utf8');
 assert.ok(marcaidaBundle.includes(`./${readerBundleNames[0]}`), 'Marcaida/Scaltritti debe importar el lector compartido.');
-for (const name of ['marcaida-audiolibro.mp3', 'marcaida-scaltritti-estado-nacional.pdf', 'marcaida-texto-accesible.txt', 'marcaida-tramas.svg']) {
+for (const name of ['marcaida-audiolibro-2026-11.mp3', 'marcaida-scaltritti-estado-nacional.pdf', 'marcaida-texto-accesible.txt', 'marcaida-tramas.svg']) {
   await access(resolve(dist, 'assets', name));
   assert.ok(allJavaScript.includes(`${normalizedBase}assets/${name}`), `Marcaida/Scaltritti: recurso publicado en la base correcta: ${name}`);
 }
