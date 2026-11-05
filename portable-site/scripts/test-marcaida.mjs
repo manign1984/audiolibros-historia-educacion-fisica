@@ -48,18 +48,19 @@ const paragraphs = doc.sections.flatMap(s => s.paragraphs);
 assert.equal(paragraphs.length, 42, '42 párrafos completos del cuerpo.');
 assert.equal(marcaidaParagraphTimings.length, paragraphs.length);
 assert.deepEqual(marcaidaParagraphTimings.map(p => p.id), paragraphs.map(p => p.id));
-assert.equal(marcaidaParagraphTimings.filter(p => p.asrBounded).length, 36);
+assert.equal(marcaidaParagraphTimings.length, 42, 'Todos los párrafos conservan tiempos derivados del VTT de la grabación correcta.');
 for (const [index, interval] of marcaidaParagraphTimings.entries()) {
   assert.ok(Number.isFinite(interval.start) && Number.isFinite(interval.end));
   assert.ok(interval.start < interval.end && interval.end <= doc.duration);
   if (index > 0) assert.ok(interval.start >= marcaidaParagraphTimings[index-1].end - 0.05, 'No solapar párrafos.');
 }
-assert.equal(marcaidaParagraphTimings.at(-1).end, 2020.14);
+assert.equal(marcaidaParagraphTimings.at(-1).end, 1878.531);
+assert.ok(doc.duration - marcaidaParagraphTimings.at(-1).end < 0.5, 'El VTT original termina casi con el MP3 correcto.');
 assert.ok(/paragraphMode\s*\?\s*renderParagraph\(paragraph,\s*Tag\)/.test(sharedReaderSource), 'Renderizar párrafos solo en esta modalidad.');
 assert.ok(sharedReaderSource.includes("migrateStoredNotes(readStoredValue(config.storage.notesKey, []), readingDocument, paragraphMode)"), 'Migrar notas anteriores sin pérdida.');
 assert.ok(sharedReaderSource.includes("paragraphForSentence.get(note.sentenceId)"), 'Conservar navegación de las diez notas editoriales.');
 assert.ok(sharedReaderSource.includes("config.sync.status === 'ready' || (paragraphMode && config.sync.status === 'paragraph-preview')"), 'Mantener las otras obras en modalidad original.');
-assert.equal(doc.duration, 2026.374625);
+assert.equal(doc.duration, 1878.909388);
 assert.equal(config.workId, 'marcaida-scaltritti-estado-nacional');
 assert.match(config.storage.notesKey, /^marcaida-scaltritti-/);
 assert.match(config.storage.stateKey, /^marcaida-scaltritti-/);
@@ -70,12 +71,18 @@ for (const s of doc.sections.flatMap(s => s.paragraphs.flatMap(p => p.sentences)
 for (const entry of doc.bibliography) assert.ok(source.includes(entry));
 const entry = catalog.find(x => x.id === config.workId);
 assert.equal(entry.status, 'review', 'La obra ofrece lectura y audio, pero no sincronización certificada.');
-assert.equal(entry.duration, 2026.374625);
+assert.equal(entry.duration, 1878.909388);
 assert.equal(entry.stateKey, config.storage.stateKey);
 assert.match(entry.title, /1852–1880/);
 assert.doesNotMatch(entry.reference, /1850–1880/);
 for (const [name, expected] of [
-  ['marcaida-audiolibro.mp3', 'cc324ffa8999233c94a76521b097eb6c7e81d43182d9df5ef49a46413b76b5ba'],
+  ['marcaida-audiolibro-2026-11.mp3', 'e5b586268ac633f814e898003baf7e8de690fce605db7dd708954613267deedf'],
   ['marcaida-scaltritti-estado-nacional.pdf', '9311da9f8094f07322e06c907409b03f6cbba4e9b69fd685a3457ab58490818c'],
 ]) assert.equal(createHash('sha256').update(await readFile(new URL(`../public/assets/${name}`, import.meta.url))).digest('hex'), expected, 'Conservar los bytes de los materiales auditados.');
+
+assert.match(config.audiobookUrl, /marcaida-audiolibro-2026-11\.mp3$/);
+assert.equal(config.storage.stateKey, 'marcaida-scaltritti-reader-state-v2', 'Nueva reproducción, sin cambiar las notas existentes.');
+assert.equal(config.storage.notesKey, 'marcaida-scaltritti-reader-notes-v1', 'Conservar cuaderno previo.');
+assert.equal(config.readingEntry.audioMinutes, 31);
+
 console.log('Marcaida/Scaltritti: fuente y bibliografía conservadas, IDs únicos, audio/PDF íntegros, sin tiempos inventados y estado editorial explícito.');
