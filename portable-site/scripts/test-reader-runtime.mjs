@@ -44,7 +44,7 @@ window.HTMLElement.prototype.scrollTo = function ({ top }) { this.scrollTop = to
 window.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
 window.HTMLDialogElement.prototype.close = function () { this.open = false; };
 const audioStates = new WeakMap();
-let audioDuration = 2026.374625;
+let audioDuration = 1878.909388;
 Object.defineProperties(window.HTMLMediaElement.prototype, {
   readyState: { get: () => 4 },
   duration: { get: () => audioDuration },
@@ -118,7 +118,7 @@ for (const interval of config.sync.paragraphTimings) {
   await updateTime((interval.start + interval.end) / 2);
   assert.equal(document.querySelector('.reader-paragraph-unit.is-active')?.dataset.readerSentence, interval.id);
 }
-for (const time of [0, 13, 2021, doc.duration]) {
+for (const time of [0, 12, 1878.8, doc.duration]) {
   await updateTime(time);
   assert.equal(document.querySelectorAll('.reader-paragraph-unit.is-active').length, 0, 'Sin resaltar portada ni cola del audio');
 }
@@ -126,9 +126,9 @@ for (const interval of config.sync.paragraphTimings.filter(p => !p.asrBounded)) 
   await updateTime(interval.start);
   assert.equal(document.querySelector('.is-active[data-reader-sentence]')?.dataset.readerSentence, interval.id);
 }
-await updateTime(790);
+await updateTime(1700);
 let before = scrolls.length;
-await updateTime(800);
+await updateTime(1710);
 assert.equal(scrolls.length, before, 'No recentrar continuamente dentro de un párrafo largo');
 await click(byLabel('Dejar de seguir el texto'));
 before = scrolls.length;
@@ -144,7 +144,7 @@ const paragraph = document.querySelector('[data-reader-sentence="ms-apartado-4-p
 const paragraphText = doc.sections.at(-1).paragraphs[2].sentences.map(s => s.text).join(' ');
 await click(paragraph.querySelectorAll('.reader-paragraph-unit__text')[1]);
 await click(byText('button', 'Escuchar desde aquí'));
-assert.equal(document.querySelector('audio').currentTime, 1775.5);
+assert.equal(document.querySelector('audio').currentTime, 1655.396);
 assert.equal(document.querySelector('audio').paused, false);
 await click(byLabel('Anotar'));
 assert.equal(document.querySelector('audio').paused, true);
@@ -189,14 +189,14 @@ await click(byLabel('Anotar'));
 await cancelDialog();
 assert.equal(document.querySelector('.note-editor'), null, 'Escape cierra el editor');
 assert.equal(document.querySelector('.integrated-reader').open, true);
-await updateTime(1260.9);
+await updateTime(1180.9);
 await click(byLabel('Seguir el texto'));
 await click(byLabel('Cerrar modo lectura'));
 assert.equal(document.documentElement.style.overflow, '');
 await new Promise(resolve => window.setTimeout(resolve, 500));
 await unmount();
 await mount(config, doc);
-assert.equal(document.querySelector('audio').currentTime, 1260.9, 'Recuperar progreso tras remontar');
+assert.equal(document.querySelector('audio').currentTime, 1180.9, 'Recuperar progreso tras remontar');
 assert.equal(document.querySelector('audio').paused, true);
 assert.equal(document.querySelector('.reader-paragraph-unit.is-active').dataset.readerSentence, 'ms-apartado-3-p15');
 assert.equal(JSON.parse(window.localStorage.getItem(config.storage.notesKey)).length, 3);
