@@ -663,6 +663,8 @@
 /* Seguimiento por párrafo: solo para obras que optan por esta unidad.
    No modifica el resaltado por oración de los otros lectores. */
 .integrated-reader--paragraph { width: 100%; }
+.integrated-reader--paragraph .reader-document,
+.integrated-reader--paragraph .reader-document h2 { overflow-wrap: anywhere; }
 .integrated-reader--paragraph .note-editor {
   max-height: calc(100dvh - 2rem);
   overflow: auto;
