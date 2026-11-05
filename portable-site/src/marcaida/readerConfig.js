@@ -28,7 +28,7 @@ export const marcaidaReaderConfig = {
     status: 'paragraph-preview',
     unit: 'paragraph',
     paragraphTimings: marcaidaParagraphTimings,
-    coverMessage: 'El seguimiento acompaña la lectura por párrafos. Podés volver a escuchar desde el comienzo de cada párrafo.',
+    coverMessage: 'Seguimiento orientativo por párrafos. Podés escuchar desde el comienzo de cada párrafo.',
     launcherTitle: 'Leé, escuchá y anotá',
     launcherDescription: 'Seguí el texto por párrafos, retomá la escucha y guardá tus anotaciones.',
     featureTitle: 'Párrafo activo',

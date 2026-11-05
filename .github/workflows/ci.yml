@@ -38,6 +38,9 @@ jobs:
       - name: Test shared reader and two works
         run: npm run test:two-works
 
+      - name: Test paragraph reader interactions and sentence reader regressions
+        run: npm run test:reader-runtime
+
       - name: Test Hobsbawm resources and synchronization
         run: npm run test:hobsbawm
 

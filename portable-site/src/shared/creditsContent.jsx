@@ -9,7 +9,7 @@ export const creditsContent = {
       <>Trayectorias: {link('https://www.pagina12.com.ar/diario/universidad/10-195385-2012-06-01.html', 'Elena Marcaida · Página/12, 2012')} · {link('https://centroderecursosnormal1.blogspot.com/2011/05/', 'Mabel Scaltritti · Escuela Normal N.º 1, 2011')} · {link('https://www.bnm.me.gov.ar/giga1/documentos/EL001102.pdf', 'Cuadernos para el aula · Ministerio de Educación')}.</>,
     ],
     rights: [
-      <>Edición en revisión. La sincronización entre voz y texto está en proceso de verificación. El audio se controla por separado; no están habilitados los saltos por oración.</>,
+      <>Lectura, escucha y anotaciones por párrafo. El seguimiento del audio es orientativo.</>,
       <>Texto y audio aportados para el trabajo didáctico. No se declara una licencia abierta ni una autorización de redistribución no documentada.</>,
       <>Portada y diagramas de Contexto: elaboración editorial del proyecto. No son imágenes históricas, mapas territoriales ni citas textuales.</>,
       <>Proyecto +TEC · UNAHUR. Agradecemos a quienes compartieron los materiales para acompañar la lectura y el estudio autónomo.</>,

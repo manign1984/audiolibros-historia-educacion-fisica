@@ -194,6 +194,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   const [followText, setFollowText] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).followText ?? true);
   const [fontScale, setFontScale] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).fontScale || 1);
   const [selectedSentenceId, setSelectedSentenceId] = useState(null);
+  const [browsingCover, setBrowsingCover] = useState(false);
   const [notes, setNotes] = useState(() => migrateStoredNotes(readStoredValue(config.storage.notesKey, []), readingDocument, paragraphMode));
   const [editor, setEditor] = useState(null);
   const [editorText, setEditorText] = useState('');
@@ -247,6 +248,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   );
   const showEditorialFootnote = (note) => {
     if (!endnotesDetailsRef.current) return;
+    if (paragraphMode) setFollowText(false);
     endnotesDetailsRef.current.open = true;
     window.requestAnimationFrame(() => {
       const target = document.getElementById(`reader-editorial-note-${note.number}`);
@@ -258,7 +260,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     const targetId = paragraphMode ? paragraphForSentence.get(note.sentenceId) : note.sentenceId;
     const target = textScrollRef.current?.querySelector(`[data-reader-sentence="${targetId}"]`);
     target?.scrollIntoView({ block: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-    target?.focus({ preventScroll: true });
+    (paragraphMode ? target?.querySelector('[role="button"]') : target)?.focus({ preventScroll: true });
   };
   const timedSentences = useMemo(
     () => sentences.filter((sentence) => Number.isFinite(sentence.start)),
@@ -347,6 +349,40 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   }, [open]);
 
   useEffect(() => {
+    if (!paragraphMode || !open) return undefined;
+    const root = document.documentElement;
+    const previousOverflow = root.style.overflow;
+    root.style.overflow = 'hidden';
+    return () => { root.style.overflow = previousOverflow; };
+  }, [paragraphMode, open]);
+
+  useEffect(() => {
+    if (!paragraphMode || !open || (!editor && !drawerOpen)) return undefined;
+    const overlay = dialogRef.current?.querySelector(editor ? '.note-editor' : '.notes-drawer');
+    if (!overlay) return undefined;
+    const previousFocus = document.activeElement;
+    const controls = () => [...overlay.querySelectorAll('button:not(:disabled), textarea, a[href]')];
+    const frame = window.requestAnimationFrame(() => (overlay.querySelector('textarea') || controls()[0])?.focus());
+    const trapFocus = (event) => {
+      if (event.key !== 'Tab') return;
+      const items = controls();
+      const next = event.shiftKey ? items.at(-1) : items[0];
+      if (!overlay.contains(document.activeElement)
+        || (event.shiftKey && document.activeElement === items[0])
+        || (!event.shiftKey && document.activeElement === items.at(-1))) {
+        event.preventDefault();
+        next?.focus();
+      }
+    };
+    overlay.addEventListener('keydown', trapFocus);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      overlay.removeEventListener('keydown', trapFocus);
+      (previousFocus?.isConnected ? previousFocus : dialogRef.current?.querySelector('.reader-player__annotate'))?.focus();
+    };
+  }, [paragraphMode, open, Boolean(editor), drawerOpen]);
+
+  useEffect(() => {
     try {
       window.localStorage.setItem(config.storage.notesKey, JSON.stringify(notes));
     } catch {
@@ -373,12 +409,12 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   }, [config.storage.stateKey, currentTime, playbackRate, volume, followText, fontScale]);
 
   useEffect(() => {
-    if (!open || !playing || !followText || !activeSentence) return;
+    if (!open || (!playing && !paragraphMode) || !followText || !activeSentence || (paragraphMode && browsingCover)) return;
     const target = document.querySelector(`[data-reader-sentence="${activeSentence.id}"]`);
     if (!target) return;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: paragraphMode ? 'start' : 'center' });
-  }, [activeSentence?.id, followText, open, playing, paragraphMode]);
+  }, [activeSentence?.id, followText, open, playing, paragraphMode, browsingCover]);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -386,6 +422,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
       const target = event.target;
       const editing = target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target instanceof HTMLSelectElement;
       if (editing) return;
+      if (paragraphMode && (editor || drawerOpen || target.closest('button, a, [role="button"], summary'))) return;
       if (event.code === 'Space') {
         event.preventDefault();
         if (playing) audioRef.current?.pause();
@@ -541,6 +578,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   const goToNote = (note) => {
     const sentence = sentenceMap.get(note.sentenceId);
     if (!sentence) return;
+    if (paragraphMode) setBrowsingCover(false);
     setSelectedSentenceId(sentence.id);
     const audioTime = noteAudioTime(note, sentence);
     if (Number.isFinite(audioTime)) seekTo(audioTime);
@@ -551,6 +589,15 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   };
 
   const jumpToSection = (sectionId) => {
+    if (paragraphMode) {
+      setBrowsingCover(sectionId === 'frontmatter');
+      if (sectionId === 'frontmatter') {
+        setSelectedSentenceId(null);
+        setFollowText(false);
+        textScrollRef.current?.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+        return;
+      }
+    }
     const sentence = sentences.find((item) => item.sectionId === sectionId);
     if (!sentence) return;
     setSelectedSentenceId(sentence.id);
@@ -691,7 +738,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     const active = activeSentence?.id === paragraph.id;
     const selected = selectedSentenceId === paragraph.id;
     const count = noteCountFor(paragraph.id);
-    const choose = () => setSelectedSentenceId(paragraph.id);
+    const choose = () => { setBrowsingCover(false); setSelectedSentenceId(paragraph.id); };
     return (
       <Tag
         key={paragraph.id}
@@ -747,10 +794,15 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
 
       <dialog
         ref={dialogRef}
-        className="integrated-reader"
+        className={`integrated-reader${paragraphMode ? ' integrated-reader--paragraph' : ''}`}
         aria-label={`Lector integrado: ${config.shortTitle}`}
         onClose={() => setOpen(false)}
-        onCancel={(event) => { event.preventDefault(); closeReader(); }}
+        onCancel={(event) => {
+          event.preventDefault();
+          if (paragraphMode && editor) closeNoteEditor(true);
+          else if (paragraphMode && drawerOpen) setDrawerOpen(false);
+          else closeReader();
+        }}
       >
         <div className="reader-app" style={{ '--reader-font-scale': fontScale }}>
           <audio
@@ -779,7 +831,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
               <span><BookOpen size={13} aria-hidden="true" /> Capítulo</span>
               <select
                 aria-label="Elegir capítulo del texto"
-                value={selectedSentence?.sectionId || activeSentence?.sectionId || readingDocument.sections[0].id}
+                value={paragraphMode && browsingCover ? 'frontmatter' : selectedSentence?.sectionId || activeSentence?.sectionId || readingDocument.sections[0].id}
                 onChange={(event) => jumpToSection(event.target.value)}
               >
                 {(readingDocument.frontMatter || []).length > 0 && <option value="frontmatter">Portada</option>}
