@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-05",
+  "baselineCommit": "3b72722cbfd6249c061f471b792b9db1db3355ae",
+  "scope": "Integridad y contratos locales; no certifica fidelidad editorial, voz, diseño, derechos ni disponibilidad de enlaces externos.",
+  "sourceUnchanged": true,
+  "catalogEntries": 29,
+  "registeredWorks": 5,
+  "registeredMaterials": 38,
+  "sourceReferencesChecked": 96,
+  "pagesReferencesChecked": 529,
+  "errors": [],
+  "warnings": [
+    {
+      "code": "timeline-gaps",
+      "location": "hobsbawm-historia-siglo-xx",
+      "message": "1 hueco(s) mayor(es) a 5 s: revisar voz/encabezados, sin rellenar tiempos automáticamente."
+    },
+    {
+      "code": "duration-difference",
+      "location": "aisenstein-tabla-rasa",
+      "message": "0.491633 s: Diferencia preexistente entre el final de los subtítulos (1493.19 s) y el contenedor MP3 concatenado (1493.681633 s), medida con ffprobe. No se altera la sincronización ni se afirma que ese tramo sea silencio."
+    },
+    {
+      "code": "pdf-unavailable",
+      "location": "aisenstein-tabla-rasa",
+      "message": "No hay pdfUrl en este lector; se conserva el texto registrado. No se inventa un PDF."
+    },
+    {
+      "code": "sync-review",
+      "location": "aisenstein-tabla-rasa",
+      "message": "No hay PDF local ni pdfUrl. El documento se deriva del VTT corregido; la fuente académica TXT se conserva aparte. La interpolación de oraciones sigue pendiente de control auditivo fino."
+    },
+    {
+      "code": "timeline-gaps",
+      "location": "marcaida-scaltritti-estado-nacional",
+      "message": "2 hueco(s) mayor(es) a 5 s: revisar voz/encabezados, sin rellenar tiempos automáticamente."
+    },
+    {
+      "code": "sync-review",
+      "location": "marcaida-scaltritti-estado-nacional",
+      "message": "Excepción aprobada: párrafos como unidad de selección, seguimiento y anotación. Seis límites estimados; el contraste auditivo sigue pendiente. No cambiar las otras obras."
+    }
+  ],
+  "works": [
+    {
+      "id": "pineau-fresco-noble",
+      "duration": 3005.727,
+      "unit": "sentence",
+      "status": "ready",
+      "sections": 4,
+      "paragraphs": 62,
+      "units": 201,
+      "timed": 201,
+      "untimed": [],
+      "materials": 3,
+      "gapsOver5Seconds": []
+    },
+    {
+      "id": "orbuch-educar-al-cuerpo",
+      "duration": 1673.900408,
+      "unit": "sentence",
+      "status": "ready",
+      "sections": 4,
+      "paragraphs": 59,
+      "units": 154,
+      "timed": 154,
+      "untimed": [],
+      "materials": 6,
+      "gapsOver5Seconds": []
+    },
+    {
+      "id": "hobsbawm-historia-siglo-xx",
+      "duration": 2942.197551,
+      "unit": "sentence",
+      "status": "ready",
+      "sections": 4,
+      "paragraphs": 46,
+      "units": 241,
+      "timed": 235,
+      "untimed": [
+        "memoria-p5-s7",
+        "memoria-p5-s8",
+        "memoria-p5-s9",
+        "memoria-p5-s10",
+        "memoria-p5-s11",
+        "triptico-p8-s6"
+      ],
+      "materials": 6,
+      "gapsOver5Seconds": [
+        {
+          "from": "testimonios-p10-s1",
+          "to": "testimonios-p11-s1",
+          "seconds": 5.44
+        }
+      ]
+    },
+    {
+      "id": "aisenstein-tabla-rasa",
+      "duration": 1493.19,
+      "unit": "sentence",
+      "status": "ready",
+      "sections": 3,
+      "paragraphs": 29,
+      "units": 117,
+      "timed": 117,
+      "untimed": [],
+      "materials": 18,
+      "gapsOver5Seconds": []
+    },
+    {
+      "id": "marcaida-scaltritti-estado-nacional",
+      "duration": 2026.374625,
+      "unit": "paragraph",
+      "status": "paragraph-preview",
+      "sections": 5,
+      "paragraphs": 42,
+      "units": 42,
+      "timed": 42,
+      "untimed": [],
+      "materials": 5,
+      "gapsOver5Seconds": [
+        {
+          "from": "ms-introduccion-p2",
+          "to": "ms-apartado-1-p1",
+          "seconds": 7.66
+        },
+        {
+          "from": "ms-apartado-1-p7",
+          "to": "ms-apartado-2-p1",
+          "seconds": 8.46
+        }
+      ]
+    }
+  ],
+  "localChecks": {
+    "cleanInstall": "passed",
+    "legacySuites": "passed",
+    "readerRuntimeFiveWorks": "passed",
+    "validatorAdversarialCases": "passed",
+    "rootBuildAndRoutes": "passed",
+    "rootReferences": "passed",
+    "pagesBuildAndRoutes": "passed",
+    "pagesReferences": "passed"
+  },
+  "browserChecks": [
+    "Biblioteca pública abierta",
+    "Búsqueda Marcaida + filtro Leer y escuchar: 1 resultado",
+    "Acceso desde el catálogo al lector: 42 párrafos y clase específica"
+  ],
+  "notVerified": [
+    "Contraste perceptual de voz",
+    "Dispositivos físicos y aceptación visual completa de todas las obras",
+    "Enlaces externos, derechos y nueva colación académica"
+  ]
+}

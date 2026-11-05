@@ -1,5 +1,7 @@
 # Lector compartido
 
+> Documento histórico de la integración inicial de dos obras. El estado vigente de los cinco recorridos, sus modalidades y herramientas está en [CONSOLIDACION_TECNICA_2026-11-05.md](CONSOLIDACION_TECNICA_2026-11-05.md); para nuevas incorporaciones, usar [GUIA_INCORPORACION_OBRAS.md](GUIA_INCORPORACION_OBRAS.md). Las cantidades y recomendaciones que siguen pertenecen a aquella etapa.
+
 ## Regla de arquitectura
 
 `src/IntegratedReader.jsx` es la única implementación funcional del lector. Pineau lo importa desde `src/App.jsx` y Orbuch desde `src/orbuch/OrbuchApp.jsx`. No debe crearse una copia por obra.

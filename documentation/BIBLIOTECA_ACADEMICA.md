@@ -1,5 +1,7 @@
 # Biblioteca académica — arquitectura con dos obras
 
+> Documento histórico de la integración inicial de dos obras. El estado vigente de los cinco recorridos, sus modalidades y herramientas está en [CONSOLIDACION_TECNICA_2026-11-05.md](CONSOLIDACION_TECNICA_2026-11-05.md); para nuevas incorporaciones, usar [GUIA_INCORPORACION_OBRAS.md](GUIA_INCORPORACION_OBRAS.md). Las cantidades y recomendaciones que siguen pertenecen a aquella etapa.
+
 ## Propósito
 
 El repositorio contiene una biblioteca académica estática con dos obras reales: el recorrido dedicado al artículo de Iván Pablo Orbuch sobre educación corporal durante el primer peronismo y la experiencia sobre Pablo Pineau y la Reforma Fresco–Noble.
