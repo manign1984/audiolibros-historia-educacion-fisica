@@ -1,5 +1,11 @@
 # Matriz de fidelidad y procedencia
 
+## Validación del lector de Marcaida y Scaltritti · 04/11/2026
+
+Por solicitud explícita se audita el lector por párrafos de la PR 73. Los cambios de `IntegratedReader.jsx` están condicionados por la modalidad `paragraph`: regreso a Portada, recuperación visual al retomar el audio pausado, foco al volver de notas académicas, navegación de cuaderno/editor con teclado y bloqueo del desplazamiento de la página detrás del diálogo. `reader.css` limita los ajustes de tamaño del editor y ancho del diálogo a `.integrated-reader--paragraph`. Los avisos de Inicio, portada del lector y Créditos de Marcaida describen el seguimiento orientativo existente.
+
+No cambian texto académico, 42 intervalos, MP3, PDF, diez notas académicas, 18 referencias, IDs ni claves de guardado. Se incorpora una prueba de React con DOM simulado para notas, exportación, progreso y regresión de los cuatro lectores por oración; no equivale a revisión visual ni auditiva. La inspección del navegador se interrumpió después de las primeras comprobaciones en escritorio y celular. La revisión completa de tamaños y la escucha siguen pendientes; véase `MARCAIDA_SCALTRITTI_VALIDACION_LECTOR_2026-11-04.md`.
+
 ## Criterios
 
 - **Literal:** copiado byte a byte desde el commit publicado o extraído directamente de sus datos sin cambiar valores.

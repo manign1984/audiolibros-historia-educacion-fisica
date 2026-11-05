@@ -662,6 +662,20 @@
 
 /* Seguimiento por párrafo: solo para obras que optan por esta unidad.
    No modifica el resaltado por oración de los otros lectores. */
+.integrated-reader--paragraph { width: 100%; }
+.integrated-reader--paragraph .note-editor {
+  max-height: calc(100dvh - 2rem);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.integrated-reader--paragraph .note-editor blockquote {
+  max-height: min(25dvh, 12rem);
+  overflow: auto;
+}
+.integrated-reader--paragraph .note-editor textarea {
+  min-height: clamp(72px, 18dvh, 150px);
+  max-height: 24dvh;
+}
 .reader-document__section .reader-paragraph-unit {
   padding: 0.4em 0.75em;
   border-left: 3px solid transparent;

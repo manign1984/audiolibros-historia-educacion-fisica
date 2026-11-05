@@ -54,7 +54,7 @@ export default function MarcaidaApp() {
               <figcaption>Tramas de una construcción · Ilustración editorial del proyecto.</figcaption>
             </figure>
           </div>
-          <div className="ms-hero-bottom"><p><strong>1852–1880</strong><span>Capítulo académico · Cuatro apartados y bibliografía</span></p><p>Lectura y anotaciones disponibles.<br />Sincronización con la voz en revisión.</p></div>
+          <div className="ms-hero-bottom"><p><strong>1852–1880</strong><span>Capítulo académico · Cuatro apartados y bibliografía</span></p><p>Leé, escuchá y anotá por párrafos.<br />Seguimiento del audio orientativo.</p></div>
         </div>
       </section>
 
