@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "works": [
+    {
+      "id": "pineau-fresco-noble",
+      "config": {
+        "module": "src/readerConfigs.js",
+        "export": "pineauReaderConfig"
+      },
+      "document": {
+        "module": "src/readingDocument.js",
+        "export": "readingDocument"
+      },
+      "page": "src/App.jsx",
+      "main": "src/main.jsx",
+      "creditsKey": "pineau",
+      "storage": {
+        "notesKey": "fresco-noble-reader-notes-v1",
+        "stateKey": "fresco-noble-reader-state-v1"
+      },
+      "sync": {
+        "unit": "sentence",
+        "status": "ready",
+        "review": "Texto y tiempos integrados en readingDocument.js; el SRT original no está en el checkout. Se conserva la edición disponible."
+      },
+      "materials": [
+        {
+          "path": "src/readingDocument.js",
+          "kind": "text",
+          "bytes": 91926,
+          "sha256": "42743f60e54b7d247891ed49fe3271c9ebff1124fcdcbe45dd171fb63f152982"
+        },
+        {
+          "path": "public/assets/pineau-audiolibro.mp3",
+          "kind": "audio",
+          "bytes": 24046200,
+          "sha256": "46b19c38a1b0d15db4010ab1dd002f72a99939f1486116595d257286deeeae2c"
+        },
+        {
+          "path": "public/assets/pineau-renovacion-represion-cooptacion.pdf",
+          "kind": "pdf",
+          "bytes": 258622,
+          "sha256": "60879dbff540a7499612844a659d408ee0e3a3bcf1c8b557b582aa4e32e64b64"
+        }
+      ],
+      "audioDuration": 3005.727347,
+      "audioSha256": "46b19c38a1b0d15db4010ab1dd002f72a99939f1486116595d257286deeeae2c",
+      "documentSha256": "c43ec5ed27aba116f92b72c270fc78368a3cd5772f4ad2b350e015a0575f9063"
+    },
+    {
+      "id": "orbuch-educar-al-cuerpo",
+      "config": {
+        "module": "src/readerConfigs.js",
+        "export": "orbuchReaderConfig"
+      },
+      "document": {
+        "module": "src/orbuch/orbuchReadingDocument.js",
+        "export": "orbuchReadingDocument"
+      },
+      "page": "src/orbuch/OrbuchApp.jsx",
+      "main": "src/orbuch/main.jsx",
+      "creditsKey": "orbuch",
+      "storage": {
+        "notesKey": "orbuch-educar-cuerpo-reader-notes-v1",
+        "stateKey": "orbuch-educar-cuerpo-reader-state-v1"
+      },
+      "sync": {
+        "unit": "sentence",
+        "status": "ready",
+        "review": "Igualdad normalizada del texto y SRT; 154 unidades derivadas de 410 cues. Fuente y controles en src/orbuch/orbuch-timings.json."
+      },
+      "materials": [
+        {
+          "path": "src/orbuch/orbuch-texto-accesible.txt",
+          "kind": "text",
+          "bytes": 27826,
+          "sha256": "40257bd3e7aeff620cdb0dff1bcf7d51de7c00d134b92b1dda7c622bb7638f3e"
+        },
+        {
+          "path": "public/assets/orbuch-texto-accesible.txt",
+          "kind": "text",
+          "bytes": 27826,
+          "sha256": "40257bd3e7aeff620cdb0dff1bcf7d51de7c00d134b92b1dda7c622bb7638f3e"
+        },
+        {
+          "path": "src/orbuch/orbuch-timings.json",
+          "kind": "alignment",
+          "bytes": 13235,
+          "sha256": "4eb6cc431edcb946d4b53a1f57855fcab2017b8ae0e671e9bad101dd1588104c"
+        },
+        {
+          "path": "public/assets/orbuch-subtitulos.srt",
+          "kind": "subtitles",
+          "bytes": 42096,
+          "sha256": "682613e2319592787e38bb5fd426da21803085d20549f0f2c57bd81bed224d87"
+        },
+        {
+          "path": "public/assets/orbuch-audiolibro.mp3",
+          "kind": "audio",
+          "bytes": 40174404,
+          "sha256": "1ad70702ffd057916d20b17810713f0c8a26f1a076f4bd812a5bb327f5e2140c"
+        },
+        {
+          "path": "public/assets/orbuch-educar-al-cuerpo.pdf",
+          "kind": "pdf",
+          "bytes": 426457,
+          "sha256": "726b877620519d8b2ad3f2444dfcf04cfed7d68fedae91e4bbcb7a6671ad4ca2"
+        }
+      ],
+      "equalTextFiles": [
+        [
+          "src/orbuch/orbuch-texto-accesible.txt",
+          "public/assets/orbuch-texto-accesible.txt"
+        ]
+      ],
+      "audioDuration": 1673.900408,
+      "audioSha256": "1ad70702ffd057916d20b17810713f0c8a26f1a076f4bd812a5bb327f5e2140c",
+      "documentSha256": "9866a392bdf012056be66a70015def2a7f719d001c74f6b50d3ca810b1ec29aa"
+    },
+    {
+      "id": "hobsbawm-historia-siglo-xx",
+      "config": {
+        "module": "src/readerConfigs.js",
+        "export": "hobsbawmReaderConfig"
+      },
+      "document": {
+        "module": "src/hobsbawm/hobsbawmReadingDocument.js",
+        "export": "hobsbawmReadingDocument"
+      },
+      "page": "src/hobsbawm/HobsbawmApp.jsx",
+      "main": "src/hobsbawm/main.jsx",
+      "creditsKey": "hobsbawm",
+      "storage": {
+        "notesKey": "hobsbawm-siglo-xx-reader-notes-v1",
+        "stateKey": "hobsbawm-siglo-xx-reader-state-v1"
+      },
+      "sync": {
+        "unit": "sentence",
+        "status": "ready",
+        "review": "Seis oraciones sin audio conservadas y marcadas audioUnavailable; no asignarles tiempos."
+      },
+      "materials": [
+        {
+          "path": "src/hobsbawm/hobsbawm-source.txt",
+          "kind": "text",
+          "bytes": 48998,
+          "sha256": "8e00ad772f0c61e8a75b652020d69644b2a052846360ad34b3ab732fc14ee4a9"
+        },
+        {
+          "path": "public/assets/hobsbawm-texto-accesible.txt",
+          "kind": "text",
+          "bytes": 48998,
+          "sha256": "8e00ad772f0c61e8a75b652020d69644b2a052846360ad34b3ab732fc14ee4a9"
+        },
+        {
+          "path": "src/hobsbawm/timings.json",
+          "kind": "alignment",
+          "bytes": 16739,
+          "sha256": "a855df0b12753f6ae157bd3a0fa4e3ad4926d1d0da53b356a1f8738032a645ba"
+        },
+        {
+          "path": "public/assets/hobsbawm-alineacion.srt",
+          "kind": "subtitles",
+          "bytes": 55836,
+          "sha256": "1573ff22c47a23553e15226e2ce1b2560f097bcd701153c8cb53867776d9f3e0"
+        },
+        {
+          "path": "public/assets/hobsbawm-audiolibro.mp3",
+          "kind": "audio",
+          "bytes": 11769122,
+          "sha256": "2f2ccc6db4bab498b88431521179dc783f4411643706fd0db93aa3cd063bab49"
+        },
+        {
+          "path": "public/assets/hobsbawm-vista-panoramica.pdf",
+          "kind": "pdf",
+          "bytes": 247873,
+          "sha256": "4a626eeb8035bcaf6b90e9c18837eefbc3a6291a73283fd42d12d009c5db43d6"
+        }
+      ],
+      "equalTextFiles": [
+        [
+          "src/hobsbawm/hobsbawm-source.txt",
+          "public/assets/hobsbawm-texto-accesible.txt"
+        ]
+      ],
+      "audioDuration": 2942.223673,
+      "audioSha256": "2f2ccc6db4bab498b88431521179dc783f4411643706fd0db93aa3cd063bab49",
+      "documentSha256": "152b89f8197c95f663103f011d1246d549a4466f6b5738b893331f6a7b963a30"
+    },
+    {
+      "id": "aisenstein-tabla-rasa",
+      "config": {
+        "module": "src/readerConfigs.js",
+        "export": "aisensteinReaderConfig"
+      },
+      "document": {
+        "module": "src/aisenstein/aisensteinReadingDocument.js",
+        "export": "aisensteinReadingDocument"
+      },
+      "page": "src/aisenstein/AisensteinApp.jsx",
+      "main": "src/aisenstein/main.jsx",
+      "creditsKey": "aisenstein",
+      "storage": {
+        "notesKey": "aisenstein-tabla-rasa-reader-notes-v1",
+        "stateKey": "aisenstein-tabla-rasa-reader-state-v1"
+      },
+      "sync": {
+        "unit": "sentence",
+        "status": "ready",
+        "review": "No hay PDF local ni pdfUrl. El documento se deriva del VTT corregido; la fuente académica TXT se conserva aparte. La interpolación de oraciones sigue pendiente de control auditivo fino."
+      },
+      "materials": [
+        {
+          "path": "src/aisenstein/aisenstein_texto_fuente.txt",
+          "kind": "text",
+          "bytes": 26540,
+          "sha256": "8550864c41365a21178e3fa6b5e5a53d12cbe2c58897224808c70918e71e75c1"
+        },
+        {
+          "path": "src/aisenstein/aisenstein_subtitulos_verificados.vtt",
+          "kind": "subtitles",
+          "bytes": 32969,
+          "sha256": "992dfa42ce9107ea5fc07b2c7d55ab0ab2bb7ed3230b35c03aab832eba2aa8c4"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-01.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "2a138ae75b2cffdfe0ec9d42d547f9791113129365d9bd2da46e07916d568c6e"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-02.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "067ac78b15b31a93dd5309bef62148f07fd21aa23010b7d3ab53ceef4ded295b"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-03.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "753f2d81d5e201026cce314957f783880974cde5e1d9e502d549222b8b5cfc78"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-04.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "6ddcd04163183e5994b6fa01151e7865a2b86f70debf6ca3673b2d4bb31d9659"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-05.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "8e905b871df3c5042cb0588ec79e88c4ceb7ce4b61d5f21c2bdd1531a9fa73dd"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-06.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "451cd30341eaef4a549cc4fdc2692a9e4f931a8e630307f61df04272e1cb1d16"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-07.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "e82229efe6fb9bf7b572d657215c8820f1cdad1eb5e2a5ee663a7f86f503e6a6"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-08.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "9e8b1074df4ab2beb6f928934e4b6318b4ebeecfdefca7b4640387c5f405ba5d"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-09.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "b27f2fb58941a091e8638127f6ce04b3cea5cb3ed65dea3d0a6622f11d5d28af"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-10.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "85dae6c158ae7073c98c0daf743fe921ee8f17661cd71ce6de202f126279b519"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-11.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "7f03e733785ed1a9ba92d90fda3b5efe14814e7b022616955fd6969149af96c6"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-12.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "f82200eef15f2322443a63f3004a91f88a4b30973a9332f1c8eb645e6b721740"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-13.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "7d27d91ed3a12a7f6907368162d82f1123b03349d403185757ec3fd3f27287e9"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-14.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "7422fea622ae6111b6f164e4f6a8462030d594b810235400561ed91107cccb69"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-15.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "99bd7490c8b0a3d5f935122240c27e543203f2e0daae7076cdeb6a3482e43eef"
+        },
+        {
+          "path": "public/assets/aisenstein-audio-16.part",
+          "kind": "audio",
+          "bytes": 2216683,
+          "sha256": "c660edaf62c36ecbf991c2d186a99f5827c44e6f28b52faf411c1005b21defc1"
+        }
+      ],
+      "audioDuration": 1493.681633,
+      "audioSha256": "626c71e8f8821887f42d3981de367c2976e68142f66c10628e5c91de311df39c",
+      "documentSha256": "51cd305a05f84a877a88be8954b6ab0466c6b64e94ff7071e5e64001114516cc",
+      "durationDifference": {
+        "seconds": 0.491633,
+        "reason": "Diferencia preexistente entre el final de los subtítulos (1493.19 s) y el contenedor MP3 concatenado (1493.681633 s), medida con ffprobe. No se altera la sincronización ni se afirma que ese tramo sea silencio."
+      }
+    },
+    {
+      "id": "marcaida-scaltritti-estado-nacional",
+      "config": {
+        "module": "src/marcaida/readerConfig.js",
+        "export": "marcaidaReaderConfig"
+      },
+      "document": {
+        "module": "src/marcaida/reading-document.json",
+        "export": "default"
+      },
+      "page": "src/marcaida/MarcaidaApp.jsx",
+      "main": "src/marcaida/main.jsx",
+      "creditsKey": "marcaida",
+      "storage": {
+        "notesKey": "marcaida-scaltritti-reader-notes-v1",
+        "stateKey": "marcaida-scaltritti-reader-state-v1"
+      },
+      "sync": {
+        "unit": "paragraph",
+        "status": "paragraph-preview",
+        "review": "Excepción aprobada: párrafos como unidad de selección, seguimiento y anotación. Seis límites estimados; el contraste auditivo sigue pendiente. No cambiar las otras obras."
+      },
+      "materials": [
+        {
+          "path": "src/marcaida/reading-document.json",
+          "kind": "text",
+          "bytes": 51352,
+          "sha256": "6ece6664e767126435fced37f9f76e26ee4637b2cc49a306f867c6705d796007"
+        },
+        {
+          "path": "public/assets/marcaida-texto-accesible.txt",
+          "kind": "text",
+          "bytes": 29124,
+          "sha256": "0e06de1f7d7f329cc58ac5114ff3beca5d71f17b082b8a1e0ea3a6f2e813f1fd"
+        },
+        {
+          "path": "src/marcaida/paragraphSync.js",
+          "kind": "alignment",
+          "bytes": 4605,
+          "sha256": "3a9c1a0d7040aeaca1c36df9a05159f84b3fb7fc448bd9ad8fb1acc8cd84c440"
+        },
+        {
+          "path": "public/assets/marcaida-audiolibro.mp3",
+          "kind": "audio",
+          "bytes": 64845012,
+          "sha256": "cc324ffa8999233c94a76521b097eb6c7e81d43182d9df5ef49a46413b76b5ba"
+        },
+        {
+          "path": "public/assets/marcaida-scaltritti-estado-nacional.pdf",
+          "kind": "pdf",
+          "bytes": 445284,
+          "sha256": "9311da9f8094f07322e06c907409b03f6cbba4e9b69fd685a3457ab58490818c"
+        }
+      ],
+      "audioDuration": 2026.374625,
+      "audioSha256": "cc324ffa8999233c94a76521b097eb6c7e81d43182d9df5ef49a46413b76b5ba",
+      "documentSha256": "1114d1ab899e7f8ca4cd571daf68104a6058d0b15c664a8082eb0dffa77e24cc"
+    }
+  ],
+  "baseline": {
+    "commit": "3b72722cbfd6249c061f471b792b9db1db3355ae",
+    "date": "2026-11-05",
+    "meaning": "Identidad de archivos y documentos de main inspeccionado. No certifica fidelidad editorial ni auditiva."
+  }
+}

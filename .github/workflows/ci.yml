@@ -50,14 +50,26 @@ jobs:
       - name: Test Marcaida and Scaltritti materials
         run: npm run test:marcaida
 
+      - name: Test reusable validation against deliberate failures
+        run: npm run test:work-validation
+
+      - name: Validate every registered work and local source reference
+        run: npm run validate:works
+
       - name: Build static site
         run: npm run build
 
       - name: Verify root deployment
         run: npm run verify:build
 
+      - name: Validate emitted routes and references at root
+        run: npm run validate:works -- --dist dist
+
       - name: Build for GitHub Pages
         run: GITHUB_PAGES_BASE="/${GITHUB_REPOSITORY#*/}/" npm run build
 
       - name: Verify static routes and assets
         run: GITHUB_PAGES_BASE="/${GITHUB_REPOSITORY#*/}/" npm run verify:build
+
+      - name: Validate emitted routes and references for GitHub Pages
+        run: GITHUB_PAGES_BASE="/${GITHUB_REPOSITORY#*/}/" npm run validate:works -- --dist dist

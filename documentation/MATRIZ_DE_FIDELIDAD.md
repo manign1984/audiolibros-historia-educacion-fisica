@@ -1,5 +1,11 @@
 # Matriz de fidelidad y procedencia
 
+## Consolidación transversal · 05/11/2026
+
+Se añaden herramientas internas en `portable-site/scripts/`, el registro `validation/works.json`, pruebas adversas, una guía operativa y controles de CI/Pages. No se modifican `src/`, entradas HTML, textos, audio, PDF, alineaciones ni claves de almacenamiento. Los hashes registran el estado real de los cinco recorridos en `main` después de la PR 74; no certifican por sí solos la fidelidad editorial ni la voz.
+
+El estado actual tiene 29 fichas (4 `available`, 1 `review`, 24 `preparation`) y cinco recorridos accesibles. Los inventarios de dos obras que siguen documentan etapas previas; el diagnóstico vigente está en [CONSOLIDACION_TECNICA_2026-11-05.md](CONSOLIDACION_TECNICA_2026-11-05.md). Los seis intervalos estimados de Marcaida y el control fino de Aisenstein siguen pendientes de contraste auditivo. Las directrices no cambian.
+
 ## Validación del lector de Marcaida y Scaltritti · 04/11/2026
 
 Por solicitud explícita se audita el lector por párrafos de la PR 73. Los cambios de `IntegratedReader.jsx` están condicionados por la modalidad `paragraph`: regreso a Portada, recuperación visual al retomar el audio pausado, foco al volver de notas académicas, navegación de cuaderno/editor con teclado y bloqueo del desplazamiento de la página detrás del diálogo. `reader.css` limita los ajustes de tamaño del editor y ancho del diálogo a `.integrated-reader--paragraph`. Los avisos de Inicio, portada del lector y Créditos de Marcaida describen el seguimiento orientativo existente.
