@@ -137,9 +137,9 @@ for (const entry of allCatalog) {
 const marcaida = allCatalog.find((entry) => entry.id === 'marcaida-scaltritti-estado-nacional');
 assert.ok(marcaida);
 assert.equal(marcaida.status, 'review');
-assert.equal(marcaida.duration, 2026.374625);
+assert.equal(marcaida.duration, 1878.909388);
 assert.equal(marcaida.historicalPeriod, '1852–1880');
-assert.equal(marcaida.stateKey, 'marcaida-scaltritti-reader-state-v1');
+assert.equal(marcaida.stateKey, 'marcaida-scaltritti-reader-state-v2');
 assert.equal(collections.find((item) => item.id === 'estado').period.startsWith('1852–1930'), true);
 assert.equal(canReadAndListen(marcaida), true, 'La edición en revisión tiene texto, audio y anotaciones.');
 assert.equal(matchesAvailability(marcaida, 'available'), true, 'Aparecer en filtro Leer y escuchar.');

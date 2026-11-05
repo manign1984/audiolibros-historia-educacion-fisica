@@ -7,7 +7,7 @@ import { resolve } from 'node:path';
 // Public source files verified against the authenticated project originals.
 // Large binary originals stay in Drive. Builds materialize exact, hash-checked copies.
 export const marcaidaAssets = [
-  { name: 'marcaida-audiolibro.mp3', id: '1OdJmzsqdlV-xaPx7uyYaej8PJBL6QZ9s', bytes: 64845012, sha256: 'cc324ffa8999233c94a76521b097eb6c7e81d43182d9df5ef49a46413b76b5ba' },
+  { name: 'marcaida-audiolibro-2026-11.mp3', id: '1j-Y41ElgZfLe0Lkp5bdFWmOcx3ktGiEz', bytes: 45231840, sha256: 'e5b586268ac633f814e898003baf7e8de690fce605db7dd708954613267deedf' },
 ];
 
 const run = promisify(execFile);

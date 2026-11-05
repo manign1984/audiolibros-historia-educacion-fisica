@@ -342,19 +342,19 @@
       "creditsKey": "marcaida",
       "storage": {
         "notesKey": "marcaida-scaltritti-reader-notes-v1",
-        "stateKey": "marcaida-scaltritti-reader-state-v1"
+        "stateKey": "marcaida-scaltritti-reader-state-v2"
       },
       "sync": {
         "unit": "paragraph",
         "status": "paragraph-preview",
-        "review": "Excepción aprobada: párrafos como unidad de selección, seguimiento y anotación. Seis límites estimados; el contraste auditivo sigue pendiente. No cambiar las otras obras."
+        "review": "Audio corregido con la copia idéntica del MP3 de la carpeta AUDIOS (31:18,909). Los 42 párrafos se alinean con el VTT original de esa grabación; cuatro palabras del texto requieren cotejo, y no se declara verificación humana exhaustiva."
       },
       "materials": [
         {
           "path": "src/marcaida/reading-document.json",
           "kind": "text",
           "bytes": 51352,
-          "sha256": "6ece6664e767126435fced37f9f76e26ee4637b2cc49a306f867c6705d796007"
+          "sha256": "fd7e859311df63eaaa4f74cead7a6223d93d68dedf9b8cae79f602b44b78565a"
         },
         {
           "path": "public/assets/marcaida-texto-accesible.txt",
@@ -365,14 +365,14 @@
         {
           "path": "src/marcaida/paragraphSync.js",
           "kind": "alignment",
-          "bytes": 4605,
-          "sha256": "3a9c1a0d7040aeaca1c36df9a05159f84b3fb7fc448bd9ad8fb1acc8cd84c440"
+          "bytes": 3831,
+          "sha256": "1916fe4bc51e9c0909904cd7b5b5338810e338fc00be64a1e45636cf71229319"
         },
         {
-          "path": "public/assets/marcaida-audiolibro.mp3",
+          "path": "public/assets/marcaida-audiolibro-2026-11.mp3",
           "kind": "audio",
-          "bytes": 64845012,
-          "sha256": "cc324ffa8999233c94a76521b097eb6c7e81d43182d9df5ef49a46413b76b5ba"
+          "bytes": 45231840,
+          "sha256": "e5b586268ac633f814e898003baf7e8de690fce605db7dd708954613267deedf"
         },
         {
           "path": "public/assets/marcaida-scaltritti-estado-nacional.pdf",
@@ -381,9 +381,9 @@
           "sha256": "9311da9f8094f07322e06c907409b03f6cbba4e9b69fd685a3457ab58490818c"
         }
       ],
-      "audioDuration": 2026.374625,
-      "audioSha256": "cc324ffa8999233c94a76521b097eb6c7e81d43182d9df5ef49a46413b76b5ba",
-      "documentSha256": "1114d1ab899e7f8ca4cd571daf68104a6058d0b15c664a8082eb0dffa77e24cc"
+      "audioDuration": 1878.909388,
+      "audioSha256": "e5b586268ac633f814e898003baf7e8de690fce605db7dd708954613267deedf",
+      "documentSha256": "fbdf5fb19574afc9a678d83e366d61316bf83d4b9ba21648b3284c2f65e57640"
     }
   ],
   "baseline": {
