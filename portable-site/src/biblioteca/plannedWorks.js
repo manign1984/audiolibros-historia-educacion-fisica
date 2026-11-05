@@ -44,9 +44,9 @@ const records = [
 const readingsInReview = {
   'marcaida-scaltritti-estado-nacional': {
     status: 'review',
-    duration: 2026.374625,
+    duration: 1878.909388,
     historicalPeriod: '1852–1880',
-    stateKey: 'marcaida-scaltritti-reader-state-v1',
+    stateKey: 'marcaida-scaltritti-reader-state-v2',
   },
 };
 
