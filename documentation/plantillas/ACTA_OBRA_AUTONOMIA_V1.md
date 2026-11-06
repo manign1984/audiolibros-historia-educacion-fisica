@@ -4,6 +4,8 @@
 **Norma superior:** [Directrices 2.0](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit).  
 **Procedimiento:** [Protocolo operativo v1](../PROTOCOLO_AUTONOMIA_V1_2026-11-06.md).
 
+**Organización por etapas:** aplicar [producción en 2 o 3 Work](../PRODUCCION_POR_ETAPAS_2026-11-06.md). Al comenzar una nueva obra, crear desde [esta plantilla de estado](ESTADO_DE_TRABAJO.md) el archivo `documentation/obras/<slug>/ESTADO_DE_TRABAJO.md` en su rama de GitHub. La presente acta contiene el detalle; el estado contiene la última evidencia y la siguiente acción recuperable.
+
 ## A. Identidad, alcance y estado
 
 | Campo | Registro |
@@ -16,6 +18,9 @@
 | Responsable de implementación | PENDIENTE |
 | Responsable de control perceptivo | PENDIENTE |
 | Rama, último commit SHA y PR | PENDIENTE |
+| Modalidad de producción (2 o 3 Work) y motivo | PENDIENTE |
+| Work actual y corte siguiente previsto | PENDIENTE |
+| Ruta de ESTADO_DE_TRABAJO.md y último commit leído de vuelta | PENDIENTE |
 | Estado del expediente: INVENTARIO / INCIDENCIA_DE_INSUMOS / INSUMOS_VERIFICADOS / EN_IMPLEMENTACION / CANDIDATO_DE_ACEPTACION / PUBLICACION_PARCIAL_EXPRESA / PUBLICADO_VERIFICADO | INVENTARIO |
 | Estado técnico del lector y estado del catálogo (son distintos) | PENDIENTE |
 | Fecha de última verificación y estado | PENDIENTE |
@@ -142,7 +147,14 @@
 
 No borrar incidencias cerradas: registrar resolución, commit y fuente finalmente aceptada.
 
-## I. Checkpoint de reanudación (actualizar después de cada puerta)
+## I. Checkpoint de reanudación y corte entre Work
+
+**Archivo de estado:** `documentation/obras/<slug>/ESTADO_DE_TRABAJO.md` (creado desde plantilla, versionado y recuperable). **Este bloque registra lo esencial, pero no sustituye la lectura del archivo real.**
+
+**Plan:** 2 Work / 3 Work. **Work actual:** 1 / 2 / 3.  
+**Objetivo y producto exigible para el corte actual:** PENDIENTE.  
+**Condición para comenzar el siguiente Work:** PENDIENTE.
+
 
 **Fecha/hora:** PENDIENTE.  
 **Último hito aprobado:** G___.  
@@ -153,7 +165,10 @@ No borrar incidencias cerradas: registrar resolución, commit y fuente finalment
 **Comando/acción exacta para continuar:** PENDIENTE.  
 **No repetir / no sobrescribir:** PENDIENTE.  
 **Pendientes priorizados, en orden:** PENDIENTE.  
-**Fuente de evidencia para retomar:** PENDIENTE.
+**Fuente de evidencia para retomar:** PENDIENTE.  
+**Checkpoint en rama verificado por lectura de vuelta (ruta, SHA, fecha):** PENDIENTE.  
+**Texto de relevo corto para siguiente Work (sin reemplazar checkpoint):** PENDIENTE.  
+**Incidencias del corte o interrupciones recuperadas:** PENDIENTE.
 
 ## J. Acta de cierre
 
