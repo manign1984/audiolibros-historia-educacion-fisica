@@ -67,3 +67,19 @@ Código bajo prueba `0f49702dc9fcaac2c13ffe6eea709f3a92e4a820`. [pruebas-work3.j
 CI remota del mismo checkpoint: **42281356936, completed/success**. El ajuste posterior de `recognize_audio.py` agrega `--revision` para fijar los pesos registrados y rechaza reutilizar resultados de ventanas/revisión diferentes; sintaxis y ruta de reutilización comprobadas. No altera los resultados ASR ya guardados ni el código de interfaz probado.
 
 **Corte recuperable:** no se fusiona ni publica. Las condiciones de redistribución siguen sin acreditarse y G3/G7 no están cerradas. El siguiente paso no es recomenzar Work 1/2: es resolver esos pendientes con los materiales conservados.
+
+
+## Reanudación posterior · 06-11-2026
+
+Ingreso comprobado `3052aec06225e3cd9a8b5c94c1aa00868bd98d0c`; PR #79 abierta/draft, main `8c2bbe4…`. Entorno temporal reiniciado; ambos ZIP versión 1 recuperados con hashes idénticos, sin reconstruir el capítulo ni repetir Whisper. Originales recuperados y build candidato aprobado con controles de integridad.
+
+Se precisa la consulta I04 ante la pregunta del responsable: se busca conocer una condición de uso/autorización ya existente para publicación abierta, no una nueva aprobación de tareas ni un contrato con formato obligatorio. Son tres alcances distintos: capítulo y traducción; narración aportada por el proyecto; retrato institucional sin licencia individual consignada. La ausencia de un documento en el expediente no se presenta como prueba de que el proyecto carezca de permiso. No se cambian las condiciones por suposición ni se contacta a terceros.
+
+Se inicia un contraste acústico adicional mediante `torchaudio.pipelines.MMS_FA` (torch/torchaudio 2.8.0 CPU; API retirada en 2.9). Se utiliza el VTT fijado como transcripción de lo narrado; no se fuerza a pronunciar notas o referencias omitidas. El modelo aporta frames de tokens sobre la señal, en ventanas de cues con contexto y absorción lateral. No se interpola el tiempo de las palabras. La normalización de números y tildes opera solo en el análisis y queda registrada; ninguna fuente se modifica. Aún sin resultado final: mantener `pending`. Procedimiento: `tools/soares/force_align_audio.py`, con checkpoint privado por ventana.
+
+Fuentes primarias del procedimiento: [tutorial multilingüe de TorchAudio 2.8](https://docs.pytorch.org/audio/2.8/tutorials/forced_alignment_for_multilingual_data_tutorial.html) y [MMS_FA](https://docs.pytorch.org/audio/2.8/generated/torchaudio.pipelines.MMS_FA.html). Modelo usado para análisis local de este proyecto educativo; pesos no se incorporan al repositorio.
+
+Navegador recuperado: candidato carga y mantiene ancho 1348/1348. La interfaz nativa de Chromium se abrió pero la entrada falló por AT-SPI no disponible. El navegador remoto rechazó el acceso a su configuración interna por política de URL; no se intentó eludirla. Zoom real y emulación de movimiento reducido permanecen sin aprobar en esta reanudación.
+
+
+Piloto CTC: padding 0,8 s descartado por recorte de palabras en bordes. La comparación global de 6120 tokens coincidentes con Whisper mostró adelantos de hasta 2,39 s y finales hasta 3,948 s fuera del cue. Se amplía contexto a 4 s; no se conservan intervalos del piloto como candidatos aceptados. Checkpoint privado v2 (4/111 ventanas amplias) ya guardado con SHA `ed0c85bafdb9001bee9d9649b8301ce1921a7d126e744eb08b0799fc8cc01b8a`; no es un resultado completo.

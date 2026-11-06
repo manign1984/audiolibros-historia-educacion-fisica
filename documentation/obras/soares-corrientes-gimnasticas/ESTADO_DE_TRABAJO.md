@@ -69,3 +69,13 @@ La entrada ordinaria `portable-site/textos/soares-corrientes-gimnasticas/index.h
 ## Texto breve de reanudación
 
 > Continuemos el cierre del Work 3 de Soares en la rama existente y PR #79. Verificá HEAD y ESTADO_DE_TRABAJO.md. Recuperá el documento académico y el paquete acústico privados, ambos versión 1: ya están reconstruidos y guardados, no repetir ASR. El candidato visual y las regresiones están evaluados. Faltan revisar/registrar límites de los 40 extractos y la cobertura temporal restante, comprobar zoom/movimiento reducido y acreditar redistribución de texto/traducción, narración y retrato. No activar sincronización ni publicar hasta cerrar esas puertas.
+
+
+## Reanudación actual en curso
+
+Ingreso `3052aec…`, PR abierta/draft, fuentes y paquetes privados versión 1 recuperados por hash, candidato recompilado sin modificar aplicación. I04 se explica como consulta por condiciones de publicación ya existentes, no como exigencia de una nueva autorización de tareas ni de un contrato de formato específico. No se presume ausencia de permiso por ausencia de documentación.
+
+Siguiente operación: completar y guardar privadamente alineación CTC adicional contra el VTT narrado (`force_align_audio.py`), comparar los límites con la evidencia Whisper preservada y evaluar las alertas. No repetir reconstrucción ni Whisper. Todavía `pending`; no activar ni publicar. El acceso a configuración interna del navegador fue rechazado por política de URL; no se elude. Zoom/movimiento reducido siguen pendientes. Ver detalles de esta reanudación en WORK_3_VALIDACION.md.
+
+
+**Checkpoint privado actual de reanudación:** paquete acústico **versión 2**, 8076948 bytes, SHA `ed0c85bafdb9001bee9d9649b8301ce1921a7d126e744eb08b0799fc8cc01b8a`. Conserva todo lo de versión 1 y agrega CTC parcial (4/111 ventanas, padding 4 s). Las referencias de arriba a v1 describen la etapa anterior: para reanudar ahora usar v2. Recuperar `ctc.json` y ejecutar `force_align_audio.py` con los mismos argumentos para continuar; no empezar otra salida ni repetir Whisper. El checkpoint por ventana es atómico y hay bloqueo contra ejecuciones concurrentes.
