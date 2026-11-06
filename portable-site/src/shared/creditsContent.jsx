@@ -1,6 +1,20 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  scharagrodsky: {
+    references: [
+      <>Scharagrodsky, P. A. (2011). La constitución de la educación física escolar en la Argentina. Tensiones, conflictos y disputas con la matriz militar en las primeras décadas del siglo XX. En P. Scharagrodsky (Comp.), <em>La invención del homo gymnasticus: Fragmentos históricos sobre la educación de los cuerpos en movimiento en Occidente</em>. Prometeo.</>,
+      <>{link('/assets/scharagrodsky-constitucion-ef.pdf', 'PDF de cátedra · 18 páginas')} · {link('/assets/scharagrodsky-texto-academico.txt', 'Texto académico')} · {link('/assets/scharagrodsky-audiolibro.mp3', 'Audiolibro · 51:23')}.</>,
+      link('https://www.memoria.fahce.unlp.edu.ar/library?a=d&c=libros&d=Jpm3195', 'Memoria Académica, UNLP · Identificación del capítulo'),
+      link('https://agencia.unq.edu.ar/?p=8369', 'Agencia de Noticias Científicas de la UNQ (2022) · Biografía y retrato'),
+    ],
+    rights: [
+      <>Texto y audiolibro aportados al proyecto para el trabajo de la cátedra. No se declara una licencia abierta.</>,
+      <>La grabación no incluye los epígrafes, las notas ni la bibliografía y abrevia referencias entre paréntesis, conservadas en el texto.</>,
+      <>Retrato: Agencia de Noticias Científicas de la UNQ. Portada conceptual y síntesis de Contexto: elaboración didáctica del proyecto; no son documentos históricos ni citas literales.</>,
+      <>Proyecto +TEC · UNAHUR. Agradecemos a quienes compartieron los materiales para acompañar el estudio y la formación docente.</>,
+    ],
+  },
   marcaida: {
     references: [
       <>Marcaida, E., &amp; Scaltritti, M. (2013). La construcción del Estado nacional argentino (1852–1880). En <em>Historia argentina contemporánea: Pasados presentes de la política, la economía y el conflicto social</em> (pp. 49–60). Dialektik. Primera edición, segunda reimpresión.</>,

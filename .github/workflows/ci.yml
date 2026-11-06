@@ -53,6 +53,9 @@ jobs:
       - name: Test reusable validation against deliberate failures
         run: npm run test:work-validation
 
+      - name: Test Scharagrodsky academic edition and acoustic boundaries
+        run: npm run test:scharagrodsky
+
       - name: Validate every registered work and local source reference
         run: npm run validate:works
 

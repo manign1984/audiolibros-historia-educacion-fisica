@@ -19,6 +19,8 @@ await writeFile(entryPath, `
       export { orbuchReadingDocument as orbuchDocument } from ${JSON.stringify(`${rootPath}src/orbuch/orbuchReadingDocument.js`)};
       export { hobsbawmReadingDocument as hobsbawmDocument } from ${JSON.stringify(`${rootPath}src/hobsbawm/hobsbawmReadingDocument.js`)};
       export { aisensteinReadingDocument as aisensteinDocument } from ${JSON.stringify(`${rootPath}src/aisenstein/aisensteinReadingDocument.js`)};
+      export { scharagrodskyReadingDocument as scharagrodskyDocument } from ${JSON.stringify(`${rootPath}src/scharagrodsky/readingDocument.js`)};
+      export { scharagrodskyReaderConfig } from ${JSON.stringify(`${rootPath}src/scharagrodsky/readerConfig.js`)};
     `);
 await build({
   configFile: false, root: rootPath, publicDir: false, logLevel: 'silent',
@@ -225,7 +227,52 @@ for (const work of ['pineau', 'orbuch', 'hobsbawm', 'aisenstein']) {
   assert.equal(JSON.parse(window.localStorage.getItem(config.storage.notesKey)).length, 3, 'Namespaces independientes');
   await unmount();
 }
+// Full academic edition: multiple footnotes, genuine omissions and isolated notes.
+const schConfig = fixture.scharagrodskyReaderConfig;
+const schDoc = fixture.scharagrodskyDocument;
+await mount(schConfig, schDoc);
+assert.equal(document.querySelector('audio').paused, true);
+assert.equal(document.documentElement.style.overflow, 'hidden');
+assert.equal(document.querySelectorAll('.reader-editorial-reference').length, 29);
+assert.equal(document.querySelectorAll('.reader-document__apparatus li').length, 115);
+for (const number of [1, 15, 16, 17, 25, 26, 29]) {
+  await click(byLabel(`Consultar nota editorial ${number} de la edición de Scharagrodsky`));
+  assert.equal(document.activeElement.id, `reader-editorial-note-${number}`);
+  await click(byText(`#reader-editorial-note-${number} button`, 'Volver al pasaje'));
+}
+const schUnits = [...schDoc.frontMatter, ...schDoc.sections.flatMap(s => [s.headingSentence, ...s.paragraphs.flatMap(p => p.sentences)])].filter(Boolean);
+for (const unit of schUnits.filter(s => Number.isFinite(s.start))) {
+  await updateTime((unit.start + unit.end) / 2);
+  assert.equal(document.querySelector('.reader-sentence.is-active')?.dataset.readerSentence, unit.id, unit.id);
+}
+const epigraph = schDoc.sections[0].paragraphs[0].sentences[0];
+await click(document.querySelector(`[data-reader-sentence="${epigraph.id}"]`));
+assert.ok(!byText('button', 'Escuchar desde aquí') || byText('button', 'Escuchar desde aquí').disabled, 'No inventar salto de audio al epígrafe');
+await click(byLabel('Anotar'));
+await typeComment('Nota de prueba Scharagrodsky sobre el epígrafe no narrado');
+assert.equal(document.activeElement.tagName, 'TEXTAREA');
+await click(byText('button', 'Guardar nota'));
+await click(byLabel('Abrir cuaderno'));
+await click(byText('button', 'Copia JSON'));
+await click(byText('button', 'Descargar TXT'));
+const schExport = JSON.parse(await downloads.at(-2).blob.text());
+assert.equal(schExport.workId, schConfig.workId);
+assert.equal(schExport.notes[0].sentenceId, epigraph.id);
+assert.match(await downloads.at(-1).blob.text(), /epígrafe no narrado/);
+assert.equal(JSON.parse(window.localStorage.getItem(config.storage.notesKey)).length, 3, 'Sigue independiente de Marcaida');
+await cancelDialog();
+assert.equal(document.querySelector('.notes-drawer'), null);
+assert.equal(document.querySelector('.integrated-reader').open, true, 'Escape cierra primero el cuaderno');
+await updateTime(1800);
+await click(byLabel('Cerrar modo lectura'));
+await new Promise(resolve => window.setTimeout(resolve, 500));
+await unmount();
+await mount(schConfig, schDoc);
+assert.equal(document.querySelector('audio').currentTime, 1800);
+assert.equal(document.querySelector('audio').paused, true);
+assert.equal(JSON.parse(window.localStorage.getItem(schConfig.storage.notesKey)).length, 1);
+await unmount();
 dom.window.close();
 await rm(outDir, { recursive: true, force: true });
 await rm(entryPath, { force: true });
-console.log('Runtime: 42 párrafos, seis límites aproximados (solo control lógico), migración, selección, seguimiento, notas CRUD/TXT/JSON, diez referencias, foco/teclado y recuperación de progreso. Regresión de cuatro lectores por oración aprobada. No prueba escucha ni responsive.');
+console.log('Runtime: Marcaida y cuatro lectores originales preservados; Scharagrodsky con 252 oraciones/encabezados temporizados, 29 llamadas (incluidas llamadas dobles), epígrafes sin salto ficticio, notas TXT/JSON y progreso independiente. No prueba escucha ni responsive.');

@@ -241,9 +241,14 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   // Referencias de la edición (no son notas personales ni pasajes del audio).
   // Solo se muestra el enlace si la obra trae una ubicación editorial verificada.
   const editorialFootnotes = useMemo(
-    () => new Map((readingDocument.endnotes || [])
-      .filter((note) => note.sentenceId && (paragraphMode ? paragraphForSentence.has(note.sentenceId) : sentenceMap.has(note.sentenceId)))
-      .map((note) => [note.sentenceId, note])),
+    () => {
+      const references = new Map();
+      for (const note of readingDocument.endnotes || []) {
+        if (!note.sentenceId || !(paragraphMode ? paragraphForSentence.has(note.sentenceId) : sentenceMap.has(note.sentenceId))) continue;
+        references.set(note.sentenceId, [...(references.get(note.sentenceId) || []), note]);
+      }
+      return references;
+    },
     [readingDocument, sentenceMap, paragraphForSentence, paragraphMode],
   );
   const showEditorialFootnote = (note) => {
@@ -349,15 +354,15 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   }, [open]);
 
   useEffect(() => {
-    if (!paragraphMode || !open) return undefined;
+    if (!(paragraphMode || config.modalAccessibility) || !open) return undefined;
     const root = document.documentElement;
     const previousOverflow = root.style.overflow;
     root.style.overflow = 'hidden';
     return () => { root.style.overflow = previousOverflow; };
-  }, [paragraphMode, open]);
+  }, [paragraphMode, config.modalAccessibility, open]);
 
   useEffect(() => {
-    if (!paragraphMode || !open || (!editor && !drawerOpen)) return undefined;
+    if (!(paragraphMode || config.modalAccessibility) || !open || (!editor && !drawerOpen)) return undefined;
     const overlay = dialogRef.current?.querySelector(editor ? '.note-editor' : '.notes-drawer');
     if (!overlay) return undefined;
     const previousFocus = document.activeElement;
@@ -380,7 +385,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
       overlay.removeEventListener('keydown', trapFocus);
       (previousFocus?.isConnected ? previousFocus : dialogRef.current?.querySelector('.reader-player__annotate'))?.focus();
     };
-  }, [paragraphMode, open, Boolean(editor), drawerOpen]);
+  }, [paragraphMode, config.modalAccessibility, open, Boolean(editor), drawerOpen]);
 
   useEffect(() => {
     try {
@@ -699,7 +704,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     const count = noteCountFor(sentence.id);
     const active = activeSentence?.id === sentence.id;
     const selected = selectedSentenceId === sentence.id;
-    const editorialNote = editorialFootnotes.get(sentence.id);
+    const editorialNotes = editorialFootnotes.get(sentence.id) || [];
     return (
       <Fragment key={sentence.id}>
         <span
@@ -722,13 +727,14 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
           {sentence.text}
           {count > 0 && <> <sup title={`${count} ${count === 1 ? 'nota personal' : 'notas personales'}`}>{count}</sup></>}
         </span>
-        {editorialNote && <button
+        {editorialNotes.map(editorialNote => <button
+          key={editorialNote.number}
           type="button"
           className="reader-editorial-reference"
-          aria-label={`Consultar nota editorial ${editorialNote.number} de la edición de Marcaida y Scaltritti`}
+          aria-label={`Consultar nota editorial ${editorialNote.number} ${config.editorialReferenceLabel || 'de la edición de Marcaida y Scaltritti'}`}
           onClick={() => showEditorialFootnote(editorialNote)}
           title={`Nota académica ${editorialNote.number}, página ${editorialNote.page}; no forma parte del audiolibro`}
-        ><sup>{editorialNote.number}</sup></button>}
+        ><sup>{editorialNote.number}</sup></button>)}
         {appendSpace ? ' ' : null}
       </Fragment>
     );
@@ -747,7 +753,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
         aria-current={active ? 'true' : undefined}
       >
         {paragraph.sentences.map((sentence, index) => {
-          const editorialNote = editorialFootnotes.get(sentence.id);
+          const editorialNotes = editorialFootnotes.get(sentence.id) || [];
           return (
             <Fragment key={sentence.id}>
               <span
@@ -764,13 +770,14 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                   }
                 } : undefined}
               >{sentence.text}</span>
-              {editorialNote && <button
+              {editorialNotes.map(editorialNote => <button
+                key={editorialNote.number}
                 type="button"
                 className="reader-editorial-reference"
                 aria-label={`Consultar nota editorial ${editorialNote.number} de la edición de Marcaida y Scaltritti`}
                 onClick={() => showEditorialFootnote(editorialNote)}
                 title={`Nota académica ${editorialNote.number}, página ${editorialNote.page}; no forma parte del audiolibro`}
-              ><sup>{editorialNote.number}</sup></button>}
+              ><sup>{editorialNote.number}</sup></button>)}
               {' '}
             </Fragment>
           );
@@ -799,8 +806,8 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
         onClose={() => setOpen(false)}
         onCancel={(event) => {
           event.preventDefault();
-          if (paragraphMode && editor) closeNoteEditor(true);
-          else if (paragraphMode && drawerOpen) setDrawerOpen(false);
+          if ((paragraphMode || config.modalAccessibility) && editor) closeNoteEditor(true);
+          else if ((paragraphMode || config.modalAccessibility) && drawerOpen) setDrawerOpen(false);
           else closeReader();
         }}
       >

@@ -9,6 +9,24 @@ export const LIBRARY_CONFIG = {
 
 const publishedWorks = [
   {
+    id: 'scharagrodsky-constitucion-ef',
+    status: 'available',
+    author: 'Pablo Ariel Scharagrodsky',
+    shortTitle: 'La constitución de la Educación Física escolar',
+    title: 'La constitución de la Educación Física escolar en la Argentina. Tensiones, conflictos y disputas con la matriz militar en las primeras décadas del siglo XX',
+    collection: 'estado',
+    year: '2011',
+    duration: 3083.755102,
+    stateKey: 'scharagrodsky-constitucion-ef-reader-state-v1',
+    artwork: 'assets/scharagrodsky-disputas.svg',
+    description: 'Las disputas entre el Sistema Argentino de Educación Física y la matriz militar: saberes, instituciones, disciplina y ciudadanía en las primeras décadas del siglo XX.',
+    authorDisplay: 'Scharagrodsky, P. A.',
+    authorSearch: ['Pablo Ariel Scharagrodsky', 'Scharagrodsky, Pablo', 'Scharagrodsky, P. A.'],
+    sortAuthor: 'Scharagrodsky, Pablo Ariel',
+    reference: 'Scharagrodsky, P. A. (2011). La constitución de la educación física escolar en la Argentina. Tensiones, conflictos y disputas con la matriz militar en las primeras décadas del siglo XX. En P. Scharagrodsky (Comp.), La invención del homo gymnasticus: Fragmentos históricos sobre la educación de los cuerpos en movimiento en Occidente. Prometeo.',
+    path: 'textos/scharagrodsky-constitucion-ef/',
+  },
+  {
     id: 'aisenstein-tabla-rasa',
     status: 'available',
     author: 'Ángela Aisenstein',
@@ -103,7 +121,7 @@ const publishedWorks = [
   },
 ];
 
-export const catalog = [...publishedWorks, ...plannedWorks.filter((entry) => entry.id !== 'aisenstein-tabla-rasa')];
+export const catalog = [...publishedWorks, ...plannedWorks.filter((entry) => !publishedWorks.some(work => work.id === entry.id))];
 
 export const canReadAndListen = (entry) => entry.status === 'available' || entry.status === 'review';
 export function matchesAvailability(entry, selected = 'all') {

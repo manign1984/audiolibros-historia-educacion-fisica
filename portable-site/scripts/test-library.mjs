@@ -16,7 +16,9 @@ import {
 import { orbuchReaderConfig, pineauReaderConfig } from '../src/readerConfigs.js';
 import { buildOrbuchReadingDocument } from '../src/orbuch/buildReadingDocument.js';
 
-const catalog = allCatalog.filter((entry) => entry.status === 'available');
+// Freeze the four legacy fixtures for their existing search/citation regressions.
+// Scharagrodsky has a dedicated document/catalog/runtime acceptance test.
+const catalog = allCatalog.filter((entry) => entry.status === 'available' && entry.id !== 'scharagrodsky-constitucion-ef');
 const orbuch = catalog.find((entry) => entry.id === 'orbuch-educar-al-cuerpo');
 const pineau = catalog.find((entry) => entry.id === 'pineau-fresco-noble');
 const orbuchAccessibleText = await readFile(new URL('../src/orbuch/orbuch-texto-accesible.txt', import.meta.url), 'utf8');
@@ -148,7 +150,7 @@ assert.equal(matchesAvailability(marcaida, 'preparation'), false, 'Nunca aparece
 assert.equal(matchesAvailability(orbuch, 'review'), false);
 assert.equal(matchesAvailability(orbuch, 'available'), true);
 assert.equal(matchesAvailability(allCatalog.find((entry) => entry.id === 'braudel-historia-duraciones'), 'preparation'), true);
-assert.equal(allCatalog.filter(canReadAndListen).length, 5, 'Cinco recorridos permiten leer y escuchar.');
+assert.equal(allCatalog.filter(canReadAndListen).length, 6, 'Seis recorridos permiten leer y escuchar.');
 assert.match(libraryHome, /const readable = catalog\.filter\(canReadAndListen\)/, 'La estantería presenta todas las obras legibles.');
 assert.match(libraryHome, /entries=\{readable\}/, 'La estantería de lectura incluye Marcaida y Scaltritti.');
 assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
@@ -181,7 +183,7 @@ const blocked = { getItem() { throw new Error('Blocked'); }, setItem() { throw n
 assert.deepEqual(readList(blocked, ids), []);
 assert.equal(saveList(blocked, ids), false);
 assert.equal(readProgress(blocked, pineau), 0);
-console.log('Biblioteca: 29 fichas, 5 recorridos de lectura y audio (4 consolidados y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
+console.log('Biblioteca: 29 fichas, 6 recorridos de lectura y audio (5 disponibles y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
 
 
 // Portada de la biblioteca = una pantalla útil bajo el encabezado real.
