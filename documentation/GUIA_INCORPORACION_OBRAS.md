@@ -2,6 +2,10 @@
 
 Esta guía aplica las Directrices canónicas 2.0 sin sustituirlas. No genera contenido, diseño ni sincronización. Los controles técnicos se ejecutan sobre una obra cuyos materiales se verificaron previamente.
 
+**Modalidad adoptada para nuevas páginas (06/11/2026):** realizar el proceso en [2 o 3 Work con cortes planificados](PRODUCCION_POR_ETAPAS_2026-11-06.md), según complejidad. En Work 1 crear la [acta por obra](plantillas/ACTA_OBRA_AUTONOMIA_V1.md) y un [ESTADO_DE_TRABAJO.md](plantillas/ESTADO_DE_TRABAJO.md) versionado en su rama. En cada corte verificar y registrar commit, puertas cerradas, pruebas, pendientes y primera acción del Work siguiente. No dependa exclusivamente del chat: al reanudar se inspecciona el estado real en GitHub.
+
+**Acuerdo de materiales ElevenLabs:** el responsable del proyecto confirma personalmente el **MP3 y VTT/SRT definitivos** emitidos por él antes de la nueva página. La IA acepta esa elección editorial, revisa integridad y sincronización técnica y solo solicita consulta si hay una discrepancia concreta; no busca versiones históricas por defecto.
+
 ## 1. Reunir y comprobar los insumos
 
 Identificar la edición y el alcance exactos: obra, capítulo o selección. Abrir el PDF y/o texto fiel; verificar legibilidad, orden, notas y bibliografía. Comprobar el audio completo con reproducción de comienzo, mitad, transiciones y final; medir su duración. Inspeccionar SRT/VTT o alineación: cantidad y orden, correspondencia con el texto y omisiones. Registrar procedencia de biografía, retratos, imágenes y derechos conocidos.
