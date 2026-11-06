@@ -152,5 +152,11 @@
   ],
   "activeRegistry": "validation/works.json remains byte-identical; candidate registered separately",
   "sourceCommitVerifiedRemotely": true,
-  "githubActions": "No associated run returned by head_sha query; local results only, remote CI pending"
+  "githubActions": {
+    "id": 42267000304,
+    "headSha": "6faa5b129fe2b76c1a51d193fc874cae4189a5e8",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/42267000304"
+  }
 }
