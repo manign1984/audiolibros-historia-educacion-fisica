@@ -1,0 +1,36 @@
+export const scharagrodskyReaderConfig = {
+  workId: 'scharagrodsky-constitucion-ef',
+  mark: 'PS',
+  shortTitle: 'La constitución de la Educación Física escolar',
+  authorAndTitle: 'Pablo Ariel Scharagrodsky · La constitución de la educación física escolar en la Argentina',
+  experienceName: 'Educación Física escolar y matriz militar',
+  audiobookExternalUrl: 'https://drive.google.com/file/d/10Nn5BwCtK86uKCaummpvHjGcpXcbMh3r/view',
+  audiobookUrl: '/assets/scharagrodsky-audiolibro.mp3',
+  pdfUrl: '/assets/scharagrodsky-constitucion-ef.pdf',
+  editorialReferenceLabel: 'de la edición de Scharagrodsky',
+  modalAccessibility: true,
+  readingEntry: {
+    author:'Pablo Ariel Scharagrodsky',
+    title:'La constitución de la educación física escolar en la Argentina',
+    audioMinutes:51,
+    synopsis:'A comienzos del siglo XX, distintas concepciones disputaron la enseñanza de los cuerpos en las escuelas argentinas. Scharagrodsky reconstruye los enfrentamientos entre el Sistema Argentino de Educación Física y la matriz militar. Un recorrido por saberes médicos, instituciones, modelos de ciudadanía y decisiones políticas que transformaron la asignatura.',
+    textUrl: '/assets/scharagrodsky-texto-academico.txt',
+  },
+  storage: {
+    notesKey:'scharagrodsky-constitucion-ef-reader-notes-v1',
+    stateKey:'scharagrodsky-constitucion-ef-reader-state-v1',
+  },
+  export: {
+    jsonFileName:'notas-scharagrodsky.json',
+    textFileName:'cuaderno-scharagrodsky.txt',
+    shareTitle:'Cuaderno de lectura · Scharagrodsky',
+  },
+  sync: {
+    status:'ready',
+    launcherTitle:'Escuchá, leé y anotá',
+    launcherDescription:'Lectura, escucha y anotaciones. Incluye las notas y la bibliografía del capítulo.',
+    featureTitle:'Lectura acompañada',
+    featureDescription:'Resaltado automático por oración y anotaciones vinculadas al texto académico.',
+    coverMessage:'Los epígrafes, las notas y la bibliografía no se narran. Las referencias entre paréntesis se abrevian en el audio.',
+  },
+};

@@ -1,5 +1,11 @@
 # Matriz de fidelidad y procedencia
 
+## Incorporación de Scharagrodsky · 06/11/2026
+
+Por solicitud explícita se completa la rama iniciada: capítulo íntegro con 29 notas y 86 referencias, MP3 original, alineación acústica sin interpolación, cinco bloques/seis pantallas y acceso desde catálogo. Procedencia, limitaciones y aceptación en [SCHARAGRODSKY_2026.md](SCHARAGRODSKY_2026.md). Se conservan los originales de Drive y los archivos previos de guion/VTT. Los cinco registros anteriores de `validation/works.json` permanecen idénticos.
+
+Cambios comunes acotados: notas académicas múltiples por oración, etiqueta accesible configurable y accesibilidad modal activada por configuración para la nueva obra. El CSS canónico agrega Scharagrodsky a sus selectores sin cambiar geometría ni valores de las obras anteriores. Regresión funcional de los seis lectores, compilación y validación transversal realizadas. La alineación automática documentada no equivale a escucha humana exhaustiva.
+
 ## Consolidación transversal · 05/11/2026
 
 Se añaden herramientas internas en `portable-site/scripts/`, el registro `validation/works.json`, pruebas adversas, una guía operativa y controles de CI/Pages. No se modifican `src/`, entradas HTML, textos, audio, PDF, alineaciones ni claves de almacenamiento. Los hashes registran el estado real de los cinco recorridos en `main` después de la PR 74; no certifican por sí solos la fidelidad editorial ni la voz.

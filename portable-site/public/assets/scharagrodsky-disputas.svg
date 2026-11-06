@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="640" viewBox="0 0 680 640" role="img" aria-labelledby="title desc">
+<title id="title">Un campo en disputa</title><desc id="desc">Composición conceptual: dos tramas se entrecruzan alrededor de la escuela. No es una imagen histórica.</desc>
+<rect width="680" height="640" fill="#e5e5dc"/>
+<g stroke="#264752" fill="none" stroke-width="2" opacity=".65">
+<path d="M60 60V580M120 60V580M180 60V580M240 60V580M300 60V580M360 60V580M420 60V580M480 60V580M540 60V580M600 60V580"/>
+<path d="M60 100H620M60 160H620M60 220H620M60 280H620M60 340H620M60 400H620M60 460H620M60 520H620M60 580H620"/>
+</g>
+<g stroke="#9c4432" fill="none" stroke-width="4">
+<path d="M30 520C170 500 130 90 340 95S490 490 650 400"/>
+<path d="M30 575C200 555 140 145 340 150S480 545 650 455"/>
+<path d="M30 630C210 610 150 200 340 205S470 600 650 510"/>
+</g>
+<path d="M190 260H490V392H190Z" fill="#f2eee4" stroke="#264752" stroke-width="2"/>
+<text x="340" y="339" text-anchor="middle" fill="#264752" font-size="41" font-family="sans-serif" font-weight="700" letter-spacing="4">ESCUELA</text>
+<g fill="#264752"><circle cx="120" cy="160" r="8"/><circle cx="540" cy="220" r="8"/><circle cx="180" cy="460" r="8"/><circle cx="480" cy="520" r="8"/></g>
+</svg>

@@ -1,0 +1,716 @@
+{
+  "title": "La constitución de la educación física escolar en la Argentina.",
+  "subtitle": "Tensiones, conflictos y disputas con la matriz militar en las primeras décadas del siglo XX",
+  "author": "Pablo Ariel Scharagrodsky",
+  "sections": [
+    {
+      "id": "epigrafes",
+      "title": "Epígrafes",
+      "paragraphs": [
+        {
+          "text": "“Si los padres y maestros se convencieran de estas cosas, y no se extraviaran abultándolas o exagerándolas con prejuicios erróneos, los batallones escolares resurgirían con ventajas para el niño, y con lucimiento para el país” (Eduardo Munilla, 1916: 86).",
+          "kind": "quote",
+          "page": 1
+        },
+        {
+          "text": "“La orientación militar de la cultura física, es un concepto unilateral y limitado que ya no puede ser admitido en nuestra época, ni higiénica, ni fisiológica, ni socialmente” (Enrique Romero Brest, 1914: 10).",
+          "kind": "quote",
+          "page": 1
+        },
+        {
+          "text": "“Militarizar la enseñanza de la educación física es […] imprimirle el pensamiento y el espíritu del soldado, que es de orden guerrero, en abierta oposición con los ideales y los sentimientos pacíficos que deben caracterizar la enseñanza civil” (Enrique Romero Brest, 1938: 231).",
+          "kind": "quote",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "introduccion",
+      "title": "Introducción",
+      "paragraphs": [
+        {
+          "text": "A fines del siglo XIX una serie de cambios en el campo pedagógico generaron un nuevo escenario en el complejo mapa de la ‘cultura física’ argentina. Si bien la preocupación de médicos, pedagogos, militares y políticos por el universo de las prácticas corporales (gimnasias, juegos, sports, rondas escolares, excursiones, colonias de vacaciones, ejercicios físicos activos, etc.) estaba presente en la legislación escolar, en los discursos de los ‘grandes’ educadores y en los médicos e higienistas más reconocidos de las últimas dos décadas del siglo XIX; el decreto de abril de 1898, propiciado por el ministro de Instrucción Pública Luis Beláustegui, siguiendo los consejos del prestigioso Inspector General Pablo Pizzurno, sería el fin de un proceso y el comienzo de otro con relación a la forma de problematizar el cuerpo en movimiento.",
+          "kind": "body",
+          "page": 1
+        },
+        {
+          "text": "Tres aspectos fuertemente interrelacionados, sobresalieron en dicho decreto dirigido a los Colegios Nacionales Argentinos. En primer lugar, el significativo espacio material y simbólico dedicado a esta disciplina escolar. Las cuatro horas por semana destinadas a esta materia y sus justificaciones sugirieron un nuevo prestigio disciplinar (Goodson, 1995, 2003) y, consecuentemente, un nuevo estatus, mayores recursos y la creación dos años después, de los primeros cursos de formación docente en la disciplina en cuestión. De hecho, el aumento de horas escolares destinadas a la práctica de los ejercicios físicos generó la disminución de la enseñanza en otras disciplinas escolares.En segundo lugar, se produjo un cambio en la episteme que legitimó a dicha práctica. Un nuevo régimen de saberes definió la forma en que funcionaban los cuerpos. Así es que emergió con fuerza, entre otras ramas de la medicina, los estudios de la fisiología del ejercicio, especialmente los provenientes de Francia y de Italia de la mano de ‘gigantes’ de la fisiología como Fernand Lagrange (1845-1909) y Angelo Mosso (1846-1910) (Rauch, 1985; Vigarello, 2003, 2005; Gleyse, 2007).En tercer lugar, se definió a la ‘otredad’. La nueva tradición en el campo de la ‘cultura física’ comenzó a cuestionar la enseñanza de la gimnasia militar y sus derivados en la escuela y propuso en nombre de la ‘ciencia’ médica y del higienismo reinante dos prácticas ‘modernas’: los juegos y los ejercicios físicos ‘racionales’.",
+          "kind": "body",
+          "page": 1
+        },
+        {
+          "text": "El encargado de darle forma al decreto y justificar la ‘nueva propuesta’ fue un joven estudiante de medicina llamado Enrique Romero Brest (1873-1958). El decreto de abril de 1898 no fue una disposición burocrática más en la historia legislativa escolar argentina. Más bien, delimitó formas diferentes de conceptualizar a la ‘cultura física’ y a los actores, instituciones y grupos sociales que estuvieron en pugna. Las disputas no fueron menores ya que pusieron en circulación, transmisión, producción y distribución una serie de significados y sentidos sobre la sociedad, la ciudadanía, la escuela, la disciplina, el docente y el alumno/a, entre otros tópicos.",
+          "kind": "body",
+          "page": 1
+        },
+        {
+          "text": "Teniendo en cuenta lo anterior, el siguiente artículo analiza los distintos tópicos anteriormente mencionados que se pusieron en circulación a partir de la definición de ciertos tipos de gimnasias, juegos, sports, etc., y a los distintos actores, instituciones y grupos sociales que intervinieron en dicho proceso. Si bien las disputas entre la propuesta ‘romerista’ y la educación física militarizada atravesaron las primeras tres décadas del siglo XX, nos centraremos en tres momentos de gran tensión para esta disciplina: el resurgimiento de los batallones escolares y otras prácticas marciales vinculadas con la conmemoración del centenario de la revolución argentina en 1910, los sucesos producidos por la creación de la ‘primera’ comisión designada por el ministro de Justicia e Instrucción Pública Antonio Sagarna, para estudiar los planes y la orientación educativa de la enseñanza de la educación física en el país en 1924 y la jubilación forzada, siendo director del Instituto Nacional Superior de Educación Física (INEF), de Enrique Romero Brest en 1931.",
+          "kind": "body",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "sistema",
+      "title": "El Sistema Argentino de Educación Física",
+      "paragraphs": [
+        {
+          "text": "Entre el decreto de 1898 –cuyos efectos se ampliaron lentamente años después a la escuela primaria– y el primer gran conflicto con los defensores de la educación física militarizada durante la conmemoración del centenario; Romero Brest fue consolidando su propuesta. La primera década del siglo XX fue central para que dicho proceso prospere tanto en el plano epistémico como en el institucional.",
+          "kind": "body",
+          "page": 2
+        },
+        {
+          "text": "La escritura de una tesis médica sobre el ejercicio físico en la escuela desde el punto de vista higiénico, fue un acontecimiento que lo ‘ungió’ como uno de los referentes autorizados a la hora de ‘hablar’ sobre dicha temática. La tesis fue el inicio de una enorme producción tanto de libros considerados ‘científicos’, como de obras didácticas dirigidas a la formación del magisterio e informes técnicos. Asimismo, parte de su producción ‘científica’ fue difundida a través de artículos de divulgación en periódicos de tirada nacional y en las revistas de circulación médica y pedagógica más conocidas de la época como el Monitor de la Educación Común, la Obra, la Semana Médica o el Boletín de Higiene Escolar.",
+          "kind": "body",
+          "page": 2
+        },
+        {
+          "text": "La tesis de Enrique Romero Brest, defendida en 1900 en la Facultad de Medicina de la Universidad de Buenos Aires, definió con el tiempo una particular forma de moverse, desplazarse y ejercitarse en las escuelas. Un nuevo sistema de ejercitación física estaba naciendo, al mismo tiempo que se cuestionaban otros sistemas de ejercitación corporales entre ellos a la gimnasia militar[[note:2]].",
+          "kind": "body",
+          "page": 2
+        },
+        {
+          "text": "Su tesis no fue la primera en mencionar la importancia de los ejercicios físicos como forma de regeneración física y moral[[note:3]] (Agüero, Iglesias y del Valle Milanino, 2009). Sin embargo, esta obra es central en la historia de las prácticas corporales argentinas ya que se convirtió, por un lado, en la primera tesis médica en incorporar sistemáticamente los avances de una nueva rama de la medicina como fue la fisiología del ejercicio en los años noventa del siglo XIX. Esta rama médica le permitió dar prioridad al trabajo sobre las funciones orgánicas a partir de ejercicios que generasen efectos generales, desestimando el trabajo sobre la forma a partir de ejercicios que produjesen efectos locales. Por otro lado, la tesis fue la primera en orientarse casi exclusivamente al ámbito escolar.",
+          "kind": "body",
+          "page": 2
+        },
+        {
+          "text": "La conservación de la salud y el desarrollo armónico del cuerpo. He aquí los objetivos principales, si no los únicos que debe proponerse todo sistema de ejercitación aplicable a la escuela (Romero Brest, 1900: 76). La gimnasia escolar debe ser ante todo eminentemente higiénica. Para entender ello es necesario distinguir dos clases de efectos que tiene el ejercicio sobre el organismo. Los efectos locales y los efectos generales (Romero Brest, 1900: 77). Los efectos generales del ejercicio se producen sobre las grandes funciones de la vida: la asimilación y la desasimilación (Romero Brest, 1900: 79). La fuerza no es salud. La fuerza es un atributo local, mientras que la salud es una cualidad de conjunto (Romero Brest, 1900: 81).",
+          "kind": "quote",
+          "page": 2
+        },
+        {
+          "text": "Es en la mayor circulación y oxigenación de la sangre provocada por los efectos generales del ejercicio en donde había que buscar el mecanismo del crecimiento y desarrollo de todas las funciones de la economía. De ello se desprende que 1) Es necesario dirigirse a los ejercicios que más fácilmente producen efectos generales. 2) Que es necesario dirigirse a los ejercicios que producen o facilitan la mayor circulación de la sangre (Romero Brest, 1900: 84).",
+          "kind": "quote",
+          "page": 3
+        },
+        {
+          "text": "Su autoridad en el campo de los ejercicios físicos se fue fortaleciendo a medida que su prestigio creció. Dos de las corporaciones más importantes de principios de siglo, vieron su figura como una de las pocas voces ‘científicamente’ autorizada. Tanto la corporación médica como la pedagógica, cuando hicieron referencia a esta disciplina, citaron sus principios, sus presupuestos y su sistema.",
+          "kind": "body",
+          "page": 3
+        },
+        {
+          "text": "Su propuesta terminó de legitimarse y convertirse en hegemónica en escuelas y colegios argentinos durante las primeras tres décadas del siglo XX a partir de tres acontecimientos. En primer lugar, creó el Sistema Argentino de Educación Física vigente en las escuelas y colegios argentinos desde principios de siglo hasta 1938. El mismo consistió básicamente en ejercicios sin aparatos y juegos en los grados superiores y juegos distribuidos y aplicados con un criterio fisiológico en los grados inferiores. Posteriormente se sumaron a este sistema otras prácticas corporales como las rondas escolares, las excursiones escolares y, con ciertos recaudos, determinados deportes. En segundo lugar, en esta primera década formó parte de la burocracia educativa, convirtiéndose en Inspector de Educación Física del Consejo Nacional de Educación entre 1904 a 1909, lo que le permitió ser el principal responsable a la hora de modificar los planes y programas escolares vigentes. En tercer lugar, fue el director y creador del primer curso normal temporario de educación física argentina en 1901. Pero para que esta propuesta corporal se instalara en el tiempo, fue necesario crear algo más que cursos temporarios de tres meses para maestros/as en las únicas tres escuelas normales existentes en la joven capital. Así fue como, desde 1901 y hasta 1912 se produjo un proceso de consolidación e institucionalización único en esta disciplina. En 1906 los cursos normales se convirtieron en definitivos; en 1909 se creó la Escuela Normal de Educación Física y en 1912 se alcanzó el grado de Instituto Nacional Superior de Educación Física[[note:4]]. Desde este centro de formación docente y a partir de los saberes provenientes de la fisiología[[note:5]], se cuestionó todo intento de militarizar a la educación física.",
+          "kind": "body",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "antecedentes",
+      "title": "Las disputas con la educación física militarizada: sus antecedentes",
+      "paragraphs": [
+        {
+          "text": "Los conflictos y tensiones por militarizar la enseñanza escolar de los ejercicios físicos no se iniciaron en 1898. Han sido preocupaciones decimonónicas europeas, las cuales se trasladaron rápidamente a la Argentina en formación. Vale decir, el interés por introducir a la gimnasia militar recorrió todo el siglo XIX, especialmente en Europa, y ha estado íntimamente vinculado con la organización militar de los estados naciones (Andrieu, 1990; Spivak, 1990; Arnaud, 1991; Soares, 2006). De hecho, el surgimiento de los nuevos Estados nacionales y los nacionalismos originó una nueva forma de organización militar que potenció, en gran medida, el desarrollo de la educación física. Como señala Mosse, la gimnasia militar se extendió durante todo el siglo XIX apoyada por los ideales nacionalistas y por la introducción del servicio militar universal, siendo la buena forma física de los reclutas y de los alumnos varones de los últimos años de los colegios un objeto de interés nacional (Mosse, 1996).",
+          "kind": "body",
+          "page": 3
+        },
+        {
+          "text": "En este contexto, la educación física se desarrolló y adquirió una gran visibilidad; favorecida y empujada por los nacionalismos en ascenso a finales del siglo XIX. Asimismo, el clima de rivalidad, los nuevos rumbos expansionistas y la fuerte competencia propia de la política internacional decimonónica entre las naciones, sirvió de escenario para instalar una educación física masculina militarizada cuyo ideal híper viril, guerrero y nacionalista se ubicó en el centro de la escena. Pero no todos los sectores sociales estuvieron de acuerdo con esta propuesta marcial de educación sobre el cuerpo.",
+          "kind": "body",
+          "page": 3
+        },
+        {
+          "text": "En la Argentina, este proceso se desarrolló en las dos últimas décadas del siglo XIX (Saraví Riviere, 1986, 1998; Aisenstein, 1999, 2006; Scharagrodsky, 2001, 2006). Múltiples iniciativas se crearon con el fin de alentar un nacionalismo excluyente, una híper-masculinidad y un fuerte disciplinamiento en las escuelas: introducción del tiro escolar en los colegios secundarios, formación de batallones escolares y enseñanza de gimnasia militar en las escuelas. Todo ello en el marco de un Estado y de un sistema educativo en formación (Puiggrós, 1990, 1996; Romero, 2002) y ante un clima militarista con latentes conflictos limítrofes con Chile, especialmente en la década de 1890 (Bertoni, 1996, 2001). Asimismo, se crearon algunas instituciones que alentaron estas iniciativas militaristas como el Club Gimnasia y Esgrima de Buenos Aires (GEBA) en 1880, la Escuela de Gimnasia y Esgrima del Ejército en 1897[[note:6]], la Sociedad Sportiva Argentina en 1899, o la Dirección General de Tiro y Gimnasia dependiente del Ministerio de Guerra en 1905. De las mismas surgieron o se vincularon figuras como Eugenio Pini, el barón Antonio De Marchi, Escipion A. Ferreto, Cliffton Goldney, Eduardo Munilla, Samuel Borghelli, Adolfo Arana, Horacio Levene o Arsenio Thamier, fuertemente enfrentados a Enrique Romero Brest.",
+          "kind": "body",
+          "page": 4
+        },
+        {
+          "text": "Pero los intentos de militarización de los cuerpos de finales del siglo XIX fueron contenidos por referentes prestigiosos de la corporación pedagógica (Alfredo Ferreira, José Benjamín Zubiaur, Pablo Pizzurno, Santiago Fitz Simon, etc.), por funcionarios del Estado (Ponciano Vivanco, Luis Beláustegui, Felipe Guasch Leguizamón, Juan Beltrán, Enrique de Vedia, Manuel Derqui, etc.) por sectores de la comunidad docente (maestros/as), por el mismísimo Consejo Nacional de Educación y, por parte de la comunidad científica representada por algunos médicos como el caso de Enrique Romero Brest. Todos ellos/as pensaron a la educación física de otra manera.",
+          "kind": "body",
+          "page": 4
+        },
+        {
+          "text": "En la primera década del siglo XX, al mismo tiempo que el Sistema Argentino de Educación Física ganó adeptos y se institucionalizó en el sistema de instrucción público como el más apropiado para la formación de los cuerpos en movimiento; los simpatizantes de la militarización encontraron ‘refugio’ y afinidades ideológicas y políticas en las escuelas particulares, especialmente las religiosas, desde donde resistieron a las críticas[[note:7]]. En este contexto, la consolidación del Sistema Argentino de Educación Física como el único posible se produjo a partir del rechazo al pasado militarista de la ‘cultura física’ decimonónica. Dicho rechazo tuvo, para la época, bases ‘científicamente’ sólidas: el discurso médico e higiénico sustentado en los nuevos aportes de la fisiología del ejercicio:",
+          "kind": "body",
+          "page": 4
+        },
+        {
+          "text": "En los Colegios Nacionales se mantenía aún (como) pro-fórmula el antiguo ejercicio de la palanqueta y una nueva plaga aparecida a raíz de quién sabe qué racha de sentimientos bélicos –los ejercicios militares– (Romero Brest, 1903b: 5).",
+          "kind": "quote",
+          "page": 4
+        },
+        {
+          "text": "[…] previendo los avances del militarismo en la escuela, aconsejó la proscripción absoluta de la gimnasia militar (Romero Brest, 1907: 12).",
+          "kind": "quote",
+          "page": 4
+        },
+        {
+          "text": "La gimnasia militar [que] fisiológicamente considerada […] aplicada a todos los alumnos de la escuela secundaria presentaría más bien inconvenientes serios de orden fisiológico que la invalidarían en absoluto y sería razón suficiente para ser rechazada de la manera más terminante (Romero Brest, 1907: 12-13).",
+          "kind": "quote",
+          "page": 4
+        },
+        {
+          "text": "Una vez desechada la tradición militar por ser considerada como empírica, pedagógicamente inadecuada y poco científica, la postura ‘romerista’ comenzó a fortalecerse en un contexto higienista y positivista (Kohn Loncarica y Agüero, 1985; Nouzeilles, 2000; Salvatore, 2001; Di Liscia, 2004). De esta manera, el Sistema Argentino de Educación Física emergió como la alternativa científica y racional a partir de principios comprobables y verificables; sustentado en conocimientos anatómicos, preceptos mecánicos y leyes fisiológicas sobre el organismo. Uno de los axiomas centrales de su sistema fue no ejercitar todos los músculos, sino ejercitar y educar todas las funciones. El valor de la ciencia médica amparó y legitimó su crítica. Pero la misma no sólo fue fisiológica sino, esencialmente, política.",
+          "kind": "body",
+          "page": 4
+        },
+        {
+          "text": "Lo concreto fue que en este contexto de recurrente crítica a la matriz militar y a sus actores principales, “la pretensión de usar la educación física para la formación militar de la niñez no había desaparecido. Con los festejos del Centenario se presentó la oportunidad para intentar la reinstalación de los batallones escolares” (Bertoni, 1996: 55). La década de 1910 renovó, de la mano de un nuevo fervor patriótico, el debate por la militarización de la enseñanza de la educación física escolar (Lionetti, 2007); sobresaliendo instituciones como la Sociedad Sportiva Argentina y la Dirección de Gimnasia y Esgrima del Ejército[[note:8]].",
+          "kind": "body",
+          "page": 5
+        },
+        {
+          "text": "Al mismo tiempo que la Revista de Tiro Nacional Argentino –homóloga de la francesa Le Tir National–, dependiente de la Dirección General de Tiro y Gimnasia creada en 1910, alentó la práctica de los batallones escolares y la gimnasia de tipo militar; la Revista de la Educación Física, dependiente del INEF bajo la dirección de Enrique Romero Brest, creada en 1909, desalentó permanentemente las prácticas militaristas en la educación física, incluidos los batallones escolares:",
+          "kind": "body",
+          "page": 5
+        },
+        {
+          "text": "Los batallonictos del centenario […] tienden a la formación de hombres viriles y fuertes, de segura utilidad para cuando la patria los necesite (Gimnasia, 1910: 56).",
+          "kind": "quote",
+          "page": 5
+        },
+        {
+          "text": "Los batallones escolares: […] malgastan las energías que pudieran ser nutrimiento oportuno, deprimen la salud porque representan cansancios que significan verdaderas intoxicaciones, comprometen el desarrollo normal porque distrae sus medios y peligra la salud porque se expone vulnerable. Su pedagogía falla: la dificultad es la repetición de la serie hasta la fatiga […]. Su disciplina excluye del niño la contribución formadora y anula el individuo, ahogado por la autoridad militar que es la peor para cimentar relaciones y la mejor para alimentar enconos (Arbo, 1912: 75).",
+          "kind": "quote",
+          "page": 5
+        },
+        {
+          "text": "En esa década, los maestros de gimnasia y esgrima del Ejército tuvieron un papel central en la difusión de prácticas militaristas en las escuelas. Escipion A. Ferreto –responsable de dirigir la primera nota al Jefe de Estado Mayor del Ejército, general Alberto Capdevilla con el fin de crear la Escuela de Gimnasia y Esgrima del Ejército–, fue uno de los más acérrimos defensores de los batallones escolares. Lo mismo se puede decir de Horacio Levene:",
+          "kind": "body",
+          "page": 5
+        },
+        {
+          "text": "En las fiestas del centenario de 1911, 1912 y 1913 en el stadium de Palermo y en cien ocasiones más hemos visto desfilar y evolucionar los batallones escolares en forma admirable, demostrando una preparación física soberbia sometida a una disciplina ejemplar[[note:9]] (Escipión Ferreto, 1927: 20).",
+          "kind": "quote",
+          "page": 5
+        },
+        {
+          "text": "[…] ante el error de los que pretenden que esos niños se militarizan, no cabe sino la indiferencia, por cuanto ellos todo lo ven en el uniforme que visten los pequeños educandos, y no comprenden, pues divagan en su prurito de intelectualidad excesiva, que esos niños gozan de todos los beneficios que se desprenden de ejercicios, ya de tendencias viriles, ya morales y algunos de subordinación, que entendemos sean estos últimos no menos útiles en la lucha por la vida que los eminentemente fisiológicos[[note:10]] (Levene, 1910: 119).",
+          "kind": "quote",
+          "page": 5
+        },
+        {
+          "text": "En la misma sintonía estuvieron el barón Antonio de Marchi y Eugenio Pini[[note:11]]. Este último, bajo el amparo de la Sociedad Sportiva, sostuvo que “el batallón escolar constituye una verdadera escuela de educación física” (citado en Romero Brest, 1914 b: 67). Distintos congresos se convirtieron en espacios de discusión a favor y en contra de estas particulares prácticas. Por ejemplo, en el Congreso del Niño reunido en Buenos Aires en 1913 se quiso imponer a los batallones escolares (combinando una pseudo gimnasia sueca y alemana). Sus defensores señalaron en sus conclusiones que “el batallón escolar debe constituirse en Escuela de educación física nacional”[[note:12]]. Sin embargo, la propuesta fue rechazada con apoyo de la comunidad escolar y valiéndose de argumentos expuestos por Romero Brest quien condenó a “los batallones escolares por ser peligrosos, inútiles y antipedagógicos” (Romero Brest, 1914 b: 61). El médico y pedagogo apeló a congresos ‘científicos’ realizados en Europa para desautorizarlos, acusando a la Sociedad Sportiva de ser la promotora de la propuesta marcial:",
+          "kind": "body",
+          "page": 6
+        },
+        {
+          "text": "[…] fueron rechazados por unanimidad siguiendo las conclusiones del Congreso Internacional de Educación Física de Bruselas de 1910” (Romero Brest, 1914 b: 62). “Dicen que no es militar sino que es una gimnasia ecléctica. Pero no debe uno dejarse seducir. La Sociedad Sportiva es la que propone esta militarización” (Romero Brest, 1914 b: 64).",
+          "kind": "quote",
+          "page": 6
+        },
+        {
+          "text": "En síntesis, a cada intento de militarización de la educación física y la gimnasia en la escuela, prevalecieron, en general, los rechazos y los cuestionamientos. Los mismos fueron responsabilidad de la ‘pericia’ retórica de Romero Brest, de gran parte de la comunidad escolar de la capital argentina, de educadores a favor del pacifismo[[note:13]] y de reconocidos pedagogos del Estado entre los que se destacó Pablo Pizzurno. Entre los argumentos de mayor peso, lo antifisiológico fue el más recurrente. Sin embargo, estas cuestiones se mezclaron con aspectos políticos e ideológicos.",
+          "kind": "body",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "fisiologia",
+      "title": "Hacia una fisiología ‘política’ del ejercicio. Consecuencias pedagógicas",
+      "paragraphs": [
+        {
+          "text": "Los saberes fisiológicos provenientes de las obras de Fernand Lagrange o Angelo Mosso[[note:14]], base científica del Sistema Argentino de Educación Física, rechazaron la militarización de la educación física. Entre sus argumentos figuraron los serios inconvenientes que este tipo de gimnasia generaba sobre el sistema óseo en formación, impidiendo el desarrollo de la cavidad torácica, perjudicando el sistema circulatorio e impidiendo el crecimiento ‘natural’ de los órganos. La fatiga y la repetición sin fundamento atentaban contra la ley de la economía del cuerpo, especialmente en los niños, y era contrario a las leyes del desarrollo ‘armónico’ del cuerpo.",
+          "kind": "body",
+          "page": 6
+        },
+        {
+          "text": "Pero detrás de estas críticas fisiológicas emergían aspectos pedagógicos y políticos referidos a la forma de conceptualizar la escuela, la disciplina y el tipo de sociedad deseada. Vale decir, no sólo se cuestionó un tipo de ejercicio físico con su correspondiente gradación, intensidad y seriación; sino las consecuencias pedagógicas y políticas que este tipo de educación generó.",
+          "kind": "body",
+          "page": 6
+        },
+        {
+          "text": "De esta manera, para Enrique Romero Brest, el Sistema Argentino de Educación Física debía formar parte de una verdadera escuela republicana y democrática en donde la solidaridad y el respeto a los derechos individuales fuesen la prioridad:",
+          "kind": "body",
+          "page": 7
+        },
+        {
+          "text": "El concepto de la escuela popular y ciudadana tiene que estar en desacuerdo con la aplicación y el desarrollo de ideas estrechas y particulares, como es el cultivo del militarismo en el sentimiento del niño. Lo que no quiere decir que el culto de la patria y de los sentimientos que le acompaña, que suele confundirse con el culto del ejército, no sea posible y racional buscarlo en la escuela, pero ha de ser el concepto de la patria como factor de la civilización y del derecho y no como agente de imposición de la fuerza y de la opresión por las armas, que destruyen y no convencen (Romero Brest, 1914 b: 8).",
+          "kind": "quote",
+          "page": 7
+        },
+        {
+          "text": "La escuela cuartel no educa a la niñez para la vida civil y en el espíritu de solidaridad de una democracia. En las asociaciones militares el más violento es el más capacitado para ser el jefe ideal. Las cualidades más preciadas son la violencia y la obediencia sumisa […] (Romero Brest, 1914 b: 20).",
+          "kind": "quote",
+          "page": 7
+        },
+        {
+          "text": "Es la escuela de la solidaridad y del derecho la que debe funcionar en una democracia y no la del predominio de la fuerza armada […] (Romero Brest, 1914 b: 24). La escuela debe propender a formar un espíritu de solidaridad, sentimiento de protección al más débil, respeto por los derechos de los demás, etc. que la educación física racional ha desarrollado en ellos […] (Romero Brest, 1914 b: 51).",
+          "kind": "quote",
+          "page": 7
+        },
+        {
+          "text": "Estas diferentes interpretaciones sobre la escuela, la patria y la ‘cultura física’ se edificaron a partir de una conceptualización diametralmente opuesta acerca de cómo debía ser considerada la relación entre el docente y el alumno. En Pedagogía de la educación física, uno de los libros de mayor circulación entre maestros y profesores de educación física y del magisterio en general, Brest diferenció claramente la disciplina escolar de la militar:",
+          "kind": "body",
+          "page": 7
+        },
+        {
+          "text": "Por disciplina en la clase de ejercicios físicos debe entenderse entonces, la tendencia y el hábito a la ejecución correcta y precisa de todos los movimientos, ya sean éstos metodizados, ya de juegos, así como el comportamiento regular del alumno como un individuo racional y libre, en la obediencia estricta a las órdenes del maestro, científico y pedagogo, y a las del esfuerzo en la actividad a que se entrega (Romero Brest, 1911a: 78-79). No se confundirá, sin embargo, con la disciplina militar, ni mucho menos con la idea de formar soldados. Se trata aquí de la obediencia y disciplina razonadas, que se deben a los principios científicos superiores que encarna la idea de la escuela, obediencia que debe asegurarse siempre por todos los medios legítimos de que dispone el educador (Romero Brest, 1911a: 79).",
+          "kind": "quote",
+          "page": 7
+        },
+        {
+          "text": "[Este tipo de disciplina es la más apropiada para] un ciudadano de un país republicano como el nuestro (Romero Brest, 1911a: 79), en el respeto racional a las leyes, hará valer sus derechos y exigirá lo mismo de los demás (Romero Brest, 1911a: 79).",
+          "kind": "quote",
+          "page": 7
+        },
+        {
+          "text": "Sin descuidar la disciplina en las clases de ejercicios físicos, la misma debía ser razonada y en función de principios científicos, alentando un tipo de ciudadanía republicana basada en el respeto a las leyes y a los derechos individuales. Por el contrario, el maestro militar, responsable de educar disciplinadamente a los cuerpos basaba su relación en la obediencia y en la jerarquía de tipo militar persiguiendo la formación de un soldado más que la de un ciudadano. Esta concepción fue minuciosamente objetada por Romero Brest para quien el concepto de disciplina militar estaba:",
+          "kind": "body",
+          "page": 7
+        },
+        {
+          "text": "basada en la obediencia ciega e irresponsable. Las órdenes no se discuten, el ‘superior’ no se equivoca. El soldado, léase el alumno, no es responsable de lo que ejecuta […] (Romero Brest, 1914 b: 17-18). El superior es un ser extrahumano cuyas órdenes son mandatos inexorables cuyo sentido oculto y cuya justicia escapa a toda discusión o consideración. El que se permite pensar de otra manera es un elemento pernicioso de disolución, que es necesario eliminar o reducir a toda costa (Romero Brest, 1914 b: 18).",
+          "kind": "quote",
+          "page": 7
+        },
+        {
+          "text": "La obediencia ciega […] es perniciosa en alto grado para la educación infantil de los futuros ciudadanos y hombres de ciencia. Estos no deben ser imbuidos de otros conceptos de la obediencia sino de los que resultan del control científico de la verdad y del derecho y de ninguna manera de la fuerza, ciega y tendenciosa (Romero Brest, 1914 b: 19). La disciplina que anula la personalidad es inferior […] porque enseña a renunciar un derecho en presencia de la injusticia […] (Romero Brest, 1914 b: 19). […] debemos propender más a crear Franklines que Napoleones (Romero Brest, 1914 b: 20).",
+          "kind": "quote",
+          "page": 8
+        },
+        {
+          "text": "La organización de los niños en forma de milicia simulada o parodiada, no contribuye así, a aumentar la disciplina sino más bien a estimular la pelea, como es fácil observar con los niños de los batallones escolares en los momentos que gozan de recreos: en lugar de organizarse para una partida de juego se desafían a golpes con los mismos instrumentos que les sirven de aparatos de gimnasia (Romero Brest, 1914 b: 39).",
+          "kind": "quote",
+          "page": 8
+        },
+        {
+          "text": "Lo que se puede afirmar es que la disciplina es buena en todos los establecimientos en los que los maestros son dignos de ella; es asunto de maestro, como bien lo saben todos los que se ocupan de estas cosas y gobiernan a los niños (Romero Brest, 1914 b: 41). […] en la escuela se trata de establecer las ideas educacionales de la responsabilidad individual y colectiva como base fundamental de la disciplina […] (Romero Brest, 1914 b: 42).",
+          "kind": "quote",
+          "page": 8
+        },
+        {
+          "text": "[La jerarquía militar] no es la más apropiada para los conceptos modernos de la sociabilidad en los países republicanos, los únicos que la escuela debe desarrollar (Romero Brest, 1914 b: 21).",
+          "kind": "quote",
+          "page": 8
+        },
+        {
+          "text": "Este tipo de disciplina militar jerárquica, violenta, brusca y que tendía a la obediencia ciega y a la heteronomía, anulaba la personalidad de los alumnos e impedía la formación de los futuros ciudadanos respetuosos de los derechos individuales y formados al amparo de la ciencia. El registro científico y el respeto a la ley fueron aspectos constitutivos del Sistema Argentino de Educación Física elaborado por Romero Brest.",
+          "kind": "body",
+          "page": 8
+        },
+        {
+          "text": "En conclusión para Romero Brest “[...] todo procedimiento militar repugna a la educación escolar” (Romero Brest, 1914 b: 25). Incluyó en esta afirmación cualquier práctica corporal militarizante: gimnasia militar, batallones escolares, marchas y evoluciones marciales, ejercicios militares sencillos, scautismo[[note:15]], prácticas de tiro escolar[[note:16]], etc.",
+          "kind": "body",
+          "page": 8
+        },
+        {
+          "text": "Estas consideraciones se volvieron recurrentes en los años siguientes. Ejemplos de ello fueron el discurso de colación de grado elaborado por Brest como director del INEF en 1915 denominado “relaciones de la educación física con la militar en la escuela” en donde discriminó “la formación de un ciudadano con aspiraciones humanas de libertad y de respeto por los derechos de todos y de los propios” y las de un “soldado condottiero”[[note:17]] (Romero Brest, 1915: 93); algunos conflictos manifestados en periódicos nacionales contra la matriz militar a finales de la segunda década del siglo XX, o su participación en el Congreso de Asociaciones Populares realizado en 1921. En este último, el Dr. Enrique Romero Brest hizo votar dos proposiciones de valor para la enseñanza de la educación física en las escuelas y fuera de ellas. Por un lado, “la supresión del artículo 6° de la ley de enseñanza primaria en la parte que ésta establece la obligación de enseñar a los alumnos varones ‘las marchas y evoluciones militares’ ”. Por el otro, el “rechazo del voto presentado por un subsecretario del congreso a favor del scoutismo escolar, difiriendo el estudio de la cuestión para otro congreso” (Romero Brest, 1938: 213-214).",
+          "kind": "body",
+          "page": 8
+        },
+        {
+          "text": "Pero como señala Aisenstein, los militares no fueron un “bloque homogéneo” (Aisenstein, 2006: 92). Las mayores tensiones se produjeron con cierto sector del Ejército, autoridades de la Dirección General de Tiro y Gimnasia, los maestros de gimnasia militar, los esgrimistas, los prebostes y algunos maestros de tiro escolar[[note:18]].",
+          "kind": "body",
+          "page": 9
+        },
+        {
+          "text": "A pesar de estas tensiones y disputas, la propuesta ‘romerista’ se mantuvo dominante, especialmente, en el escenario escolar. No obstante ello, tres años después sucedería un acontecimiento tan importante como las discusiones referidas al centenario y su relación con la implantación de los batallones escolares y de la gimnasia militar en las escuelas. Nuevamente “no faltaron empeños por reanimar la presencia de la gimnasia militar” (Armus, 2007: 92). En esta oportunidad las ‘presiones’ provendrían desde el mismo gobierno, apoyadas por referentes del Ejército y por algunas autoridades educativas conservadoras, y el punto de ataque sería el único Instituto de formación de maestros y profesores en educación física argentino.",
+          "kind": "body",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "inef",
+      "title": "El ‘combate’ por el Instituto Nacional de Educación Física",
+      "paragraphs": [
+        {
+          "text": "En febrero de 1924 el ministro de Justicia e Instrucción Pública Antonio Sagarna, ordenó por decreto del Poder Ejecutivo la constitución de una Comisión Técnica de Educación Física con el fin de asesorar al gobierno sobre el sistema, métodos y procedimientos de educación física más convenientes para el país. En sus considerandos quedaron plasmadas las inquietudes de su constitución. Se manifestaron críticas hacia el Instituto Nacional Superior de Educación Física por su falta de influencia en el amplio campo deportivo y por la falta de aprovechamiento de sus egresados en puestos del Estado. Asimismo, se instó a revisar la orientación en el plan de estudios, en los programas y en las prácticas docentes del Instituto (Arana, 1938a: 70-71).",
+          "kind": "body",
+          "page": 9
+        },
+        {
+          "text": "Pero esta medida no sólo puso en tela de juicio al Instituto, sus formas de enseñanza y sus propuestas escolares; sino que atacó a los actores involucrados en la misma y a los defensores y adeptos a ella. Debido a que el Instituto tenía un alto prestigio y una muy buena aceptación entre los intelectuales de la época[[note:19]]; la única forma de cuestionarlo fue a partir de la composición de la comisión. En sus ‘orígenes’ la misma fue pensada para ser integrada por mayoría de militares provenientes del Ejército y por partidarios de la militarización de la enseñanza de la educación física. De hecho, entre los militares se hallaba el mayor Horacio Levene, quien fuera un crítico de la propuesta ‘romerista’ durante todo el período. Este último, junto con reconocidos maestros de gimnasia y esgrima del Ejército como Escipion A. Ferreto o Arsenio Thamier[[note:20]], habían cuestionado muy seriamente al Instituto y a su director en 1924:",
+          "kind": "body",
+          "page": 9
+        },
+        {
+          "text": "[…] ha sido fácil a los técnicos notar la carencia absoluta del dominio indispensable para dirigir una institución de tanta importancia como el Instituto Nacional (Ferreto, 1927: 20).",
+          "kind": "quote",
+          "page": 10
+        },
+        {
+          "text": "El éxito de esa escuela se ha señalado únicamente por el número de sus egresados, 1400, en cuanto a los resultados profesionales, las prolíficas investigaciones que con toda imparcialidad y justicia hemos practicado, nos autorizan a afirmar que no merecen mención alguna. Un instituto de cultura física era necesario y hubiera respondido plenamente a los fines de su fundación, si el organizador y director omnipotente no hubiera prescindido de la colaboración de profesionales expertos cuya capacidad hubiera garantizado el éxito (Ferreto, 1927: 20-21).",
+          "kind": "quote",
+          "page": 10
+        },
+        {
+          "text": "Nuestra exposición debe llamar la atención al Señor Ministro de Instrucción Pública […] para que investigue la acción de aquellos estoicos que en la directiva del instituto superior de educación física han tenido el valor de engañar durante varios años a las autoridades correspondientes y a todo el mundo (Ferreto, 1927: 21).",
+          "kind": "quote",
+          "page": 10
+        },
+        {
+          "text": "[…] el anterior inspector de gimnasia y esgrima del ejército y director de plazas de ejercicios físicos, don Arsenio Thamier, en un informe técnico, fruto de un meditado y prolífico estudio, se expidió en forma severa y terminante sobre la insuficiencia de la organización del famoso instituto cuyos resultados apreció de cifras (Ferreto, 1927: 21).",
+          "kind": "quote",
+          "page": 10
+        },
+        {
+          "text": "A pesar de estas y otras críticas, la composición ‘originaria’ de la comisión se alteró gracias a los cuestionamientos públicos realizados por Romero Brest, por gran parte del plantel docente del INEF y por algunos reconocidos pedagogos de la época. De esta manera, la comisión, aunque mantuvo a algunos ‘enemigos’ de Brest incluyó, meses después, a varios ‘amigos’ y simpatizantes de su sistema y de su pensamiento político-pedagógico, entre los que se destacaron el profesor Valentín Mestroni, Inspector Técnico de Instrucción Primaria y ex egresado del INEF; el Dr. Tiburcio Padilla, Delegado del Departamento Nacional de Higiene y el Dr. Bernardo Houssay, profesor de Fisiología de la Facultad de Medicina de la Universidad de Buenos Aires quien no sólo avaló el Sistema Argentino de Educación Física como el mejor sistema de educación física escolar, sino que, también propuso que “llevara el nombre de su autor, como suele ser de práctica en las ciencias médicas con relación a los descubrimientos hechos por los experimentadores”[[note:21]] (Romero Brest, 1939: 118).",
+          "kind": "body",
+          "page": 10
+        },
+        {
+          "text": "Recuerda Romero Brest los difíciles momentos de la siguiente manera:",
+          "kind": "body",
+          "page": 10
+        },
+        {
+          "text": "Comienza el primer ataque a este establecimiento con el objeto de transformarlo en escuela militar de gimnasia, con el decreto del poder Ejecutivo de 1924, en el que se designa una comisión compuesta por dos militares y un civil, el entonces Director del Instituto, presidida por el Inspector General de Enseñanza Secundaria y Normal, para que asesore al Gobierno sobre el sistema, métodos y procedimientos que convenga adoptar, sobre la creación de estadios y plazas de deportes, etc. (Romero Brest, 1938: 225).",
+          "kind": "quote",
+          "page": 10
+        },
+        {
+          "text": "Solo en fecha posterior el ministro amplía la comisión, integrándola con mayor número de miembros, a solicitud del Director del Instituto. Esta ampliación impidió que se hiciera efectiva la militarización del Instituto, quebrando la mayoría militar de la Comisión primitiva (Romero Brest, 1938: 225).",
+          "kind": "quote",
+          "page": 11
+        },
+        {
+          "text": "La nueva composición[[note:22]] de la comisión cambió el enfoque y las preocupaciones por la educación física y por el Instituto. Seis meses después de ser nombrada la ‘primera’ comisión se elevó un informe el cual defendió al “Sistema Argentino de Educación Física” y distinguió claramente al Instituto Nacional Superior de Educación Física de la Escuela de Gimnasia y Esgrima, Naval y Militar. En el primer caso el objetivo del INEF era “la formación de profesores normales de educación física en la especialidad escolar” teniendo a “su cargo el estudio de los problemas científicos y sociales referentes a la enseñanza y evolución de la educación física”. Lo nuevo era la “formación de profesores normales en las especialidades del deporte”. En el segundo caso, el fin de la Escuela de Gimnasia y Esgrima, Naval y Militar era “otorgar diplomas de maestros de gimnasia naval y militar para la enseñanza en el ejército y en la armada” (Despacho de la Comisión Técnica de Educación Física, 1924: 5, 8).",
+          "kind": "body",
+          "page": 11
+        },
+        {
+          "text": "En consecuencia, como señaló Romero Brest, la comisión claramente “distinguió la educación física civil de la militar” y el “radio de acción […] para la escuela y para el ejército” (Romero Brest, 1938: 225-226). “La comisión […] propició la ampliación del Instituto y, de ninguna manera, su modificación esencial, ni mucho menos su aminoramiento en sus doctrinas y en sus capacidades y prácticas” (Romero Brest, 1938: 197). Para que no queden dudas al final del informe, se desestimó y desaprobó “el proyecto que oportunamente presentara el señor delegado del Ministerio de Guerra, Mayor don Horacio Levene” (Despacho de la Comisión Técnica de Educación Física, 1924: 37)[[note:23]].",
+          "kind": "body",
+          "page": 11
+        },
+        {
+          "text": "Esta victoria posibilitó la contención de los partidarios de la militarización de la educación física y sus consecuencias en el plano pedagógico y político. Sin embargo, también mostró la persistencia de ciertos actores e instituciones por disputar el campo de las prácticas corporales en las primeras décadas del siglo XX. De hecho, esta disputa tuvo consecuencias ‘menores’ a corto plazo como la incorporación ‘forzosa’ de los deportes como un contenido a ser enseñado[[note:24]]. Sin embargo, a mediano plazo las relaciones de fuerza variarían dramáticamente.",
+          "kind": "body",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "treinta",
+      "title": "Doble golpe: el golpe militar de 1930 y el golpe a la propuesta ‘romerista’",
+      "paragraphs": [
+        {
+          "text": "No fue sino hasta principios de los años treinta cuando cambios macropolíticos comenzaron a cuestionar fuertemente la propuesta corporal ‘romerista’. Con el golpe militar de 1930, en el ámbito educativo, se produjeron numerosas cesantías y jubilaciones compulsivas. Una de ellas recayó sobre Romero Brest, quien como director del INEF alertó sobre “su retiro forzado por parte de fuerzas reaccionarias” (Romero Brest, 1933: 32), las cuales lo jubilaron de oficio en el año 1931.",
+          "kind": "body",
+          "page": 11
+        },
+        {
+          "text": "Los cambios sociales y políticos vinculados con el golpe militar encabezado por el general José Félix Uriburu, configuraron un nuevo campo de disputa referido a la regulación y al control de los cuerpos. En esta nueva configuración de fuerzas, los profesores militares egresados de la Escuela de Gimnasia y Tiro del Ejército tuvieron un papel central. A mediados de la década de 1930 la disputa se definió a favor de estos últimos, no sólo por haber conseguido ser designados como profesores de educación física en establecimientos de enseñanza civil, sino por ejercer grandes cuotas de poder sobre todo lo relacionado con la ‘cultura física’ argentina, a través de las nuevas estructuras estatales de administración y control de los cuerpos, como la primera Dirección General de Educación Física y Cultura[[note:25]], creada en la Provincia de Buenos Aires en 1936 o el Consejo Nacional de Educación Física creado en 1937; ambos bajo la influencia de profesores y figuras militares entre los que se destacaron el general Adolfo Arana[[note:26]] y el mayor Horacio Levene. La Dirección General de Educación Física Nacional creada en 1938, bajo la dirección de César Vázquez, —un civil con simpatías golpistas y militaristas— también formó parte de este proceso. Estos acontecimientos pusieron en ‘jaque’ al Sistema Argentino de Educación Física, el cual fue derogado de las escuelas argentinas en 1938 (Scharagrodsky, 2006).",
+          "kind": "body",
+          "page": 11
+        },
+        {
+          "text": "Aunque ya sin plafón político ni inserción institucional en el INEF, Romero Brest se animó a cuestionar a los maestros militares y los cursos de capacitación que se ofrecieron en diferentes lugares del país. Entre ellos “los cursos de repetidores físicos para Maestros Normales en la provincia de Buenos Aires” (Fresco, 1937: 14, 22, 182, 291; 1940: 7-9, 35-63) en el marco de la importante Reforma educativa conocida como Reforma Fresco-Noble en 1936. Bajo el marco de esta Reforma educativa y acompañando la inclusión de la religión católica y la exaltación del ‘hacer frente al intelectualismo predominante’; la educación física se convirtió en uno de los tres pilares básicos perseguidos por esta Reforma. La misma estuvo atravesada por “prácticas militaristas” (Carli, 2002: 239), siendo la gimnasia metodizada (o sea el Reglamento Militar 45 del Ejército Argentino) uno de los máximos exponentes de esta visión. Entre las críticas a la propuesta de esta Reforma, Brest señaló que los repetidores físicos formados por oficiales del ejército[[note:27]] y apoyados por figuras como el mayor Horacio Levene:",
+          "kind": "body",
+          "page": 12
+        },
+        {
+          "text": "“sólo conocen empíricamente la manera cómo se ejecutan ciertos ejercicios gimnásticos o cómo se practican los deportes. Esto es insuficiente y hasta pernicioso, como único bagaje educativo de un profesor de educación física. Tales profesores sólo podrán modelar, una masa muscular, o preparar un sujeto ganador de pruebas de fuerza, de habilidad o de resistencia […] Pero, es evidente que estos maestros serán absolutamente incapaces de modelar un carácter o de dirigir un espíritu” (Romero Brest, 1938: 84-85).",
+          "kind": "quote",
+          "page": 12
+        },
+        {
+          "text": "Los maestros militares relacionados con el Ejército que impartieron los cursos y que tuvieron una cada vez mayor presencia en la educación física escolar civil no tenían, según Romero Brest, “ni la base ni el sentido del estudio científico como elemento absolutamente necesario” ya que eran “egresados de la escuela primaria, cuando más, y basan su valer en la habilidad deportiva o en las manifestaciones de las fuerzas musculares” (Romero Brest, 1938: 233). Sin embargo, lo más grave para el ex director del INEF fue la concepción pedagógica que tenían sobre la educación física, ya que ésta se encargaba de difundir principios como “la obediencia absoluta, la jerarquía, el trato militar, la disciplina marcial, el espíritu guerrero y la imposición por la fuerza” (Romero Brest, 1938: 231-232). Todos estos principios, estuvieron reñidos con los transmitidos por el Sistema Argentino de Educación Física que él pregonó.",
+          "kind": "body",
+          "page": 12
+        },
+        {
+          "text": "Nuevamente el formato escolar fue uno de los aspectos puestos en cuestión: la escuela cuartel enfrentada a la escuela democrática",
+          "kind": "body",
+          "page": 12
+        },
+        {
+          "text": "La jerarquía que impone el militar […] es la diferencia que existe entre el régimen del cuartel y el de la escuela […] La mentalidad militar impone la fuerza, y la obediencia absoluta al superior sólo porque es superior jerárquico, como última ratio. El civil se basa en el sentido del razonamiento y de la verdad como elemento de la superioridad jerárquica y como razón íntima de la obediencia […] La civilización de los pueblos, que nace en sus escuelas, y no en sus batallones, se ejerce por sus leyes, su ciencia y no por sus ejércitos […] El sentido de solidaridad civil es esencialmente humano en la escuela, esencialmente animaliano en el ejército (Romero Brest, 1938: 233).",
+          "kind": "quote",
+          "page": 13
+        },
+        {
+          "text": "La respuesta del general de brigada Adolfo Arana, siendo Presidente del Consejo Nacional de Educación Física, no se hizo esperar. Este importante militar fue, desde mediados de los años treinta, uno de los mayores enemigos de la propuesta educativo-corporal de Romero Brest a quien calificó de mantener “viejas ideas izquierdistas” y desprestigiar y “ofender gratuitamente a los profesores de educación física del Ejército” (Arana, 1938a: 60-61). Arana en uno de sus escritos afirmó:",
+          "kind": "body",
+          "page": 13
+        },
+        {
+          "text": "[...] le duele al ex director del Instituto que sea un militar con sus maestros de educación física, quienes a través de cuatro años de intensa labor […] sean los que han realizado una obra modesta pero cuya utilidad es reconocida por todos, mientras que él en 30 años no hizo otra cosa que vegetar en una acción anónima y negativa[[note:28]] (Arana, 1938a: 65).",
+          "kind": "quote",
+          "page": 13
+        },
+        {
+          "text": "Adolfo Arana —y también Horacio Levene— plantearon una propuesta corporal militarizante y nacionalista excluyente que, a mediados de aquella década, neutralizó totalmente la propuesta democrática y de raíz liberal de Romero Brest. Para este médico argentino “la desorientación social a que asistimos, en medio de luchas ideológicas de todas clases, ponen en tela de juicio los principios que han sido caros al siglo pasado: la democracia, el liberalismo [...] todo esto contribuye a prestigiar la fuerza como fundamento único del orden social” produciendo “como una consecuencia fatal el resurgimiento intenso de las fuerzas militares y su correspondiente psicología [...] conduciendo a la militarización escolar” (Romero Brest, 1938: 223). A pesar de sus críticas a la concepción militarista de estos cursos de educación física y de la pedagogía que transmitió; la década de 1930 volvió a instalar la militarización de los cuerpos en las escuelas y colegios y sus consecuencias político-pedagógicas.",
+          "kind": "body",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "id": "finales",
+      "title": "Consideraciones finales",
+      "paragraphs": [
+        {
+          "text": "Frente a los discursos y las prácticas vinculadas con la militarización de la educación física escolar de finales del siglo XIX, se constituyó una alternativa diferente en la educación de los cuerpos: el Sistema Argentino de Educación Física. Este sistema pensado y elaborado por el Dr. Enrique Romero Brest se implementó durante las primeras tres décadas del siglo XX en las escuelas y colegios argentinos, siendo el INEF el centro de difusión neural y, a la vez, soporte de los principios y presupuestos de dicho sistema.",
+          "kind": "body",
+          "page": 13
+        },
+        {
+          "text": "El Sistema Argentino de Educación Física no sólo combinó ejercicios sin aparatos y juegos aplicados con criterio científico y fisiológico, sino que transmitió y difundió una serie de valores y cualidades que excedieron el aspecto estrictamente higiénico. De esta manera, hizo circular junto con un ideal higienista de salud un conjunto de valores como “la solidaridad social, el respeto a las leyes y a los derechos”, “la libertad individual”, “la disciplina razonada”, “la cultura democrática” y “la educación ciudadana” (Romero Brest, 1911a: 266; Romero Brest, 1922: 9; Romero Brest, 1914 b: 20; Romero Brest, 1938: 13). Estos principios fueron la antítesis de los propuestos por la matriz militar, generando con mayor o menor intensidad, diferencias en la forma de conceptuar la sociedad, la ciudadanía, la escuela, la disciplina, el docente y el alumno/a.",
+          "kind": "body",
+          "page": 13
+        },
+        {
+          "text": "Las disputas por plasmar un tipo de educación física durante las primeras tres décadas del siglo XX —con picos de tensión en la década de 1910, a mediados de los años veinte y a principios de los treinta— delimitaron a los actores, grupos e instituciones sociales en pugna. De un lado, los herederos de la Sociedad Sportiva Argentina, los egresados de la Escuela de Gimnasia y Esgrima del Ejército, los responsables de la Dirección General de Tiro y Gimnasia, los funcionarios del Ministerio de Guerra y ciertos políticos y pedagogos tradicionales y conservadores. Del otro lado, importantes y respetados funcionarios del Consejo Nacional de Educación, destacados y democráticos pedagogos del Estado, gran parte de la comunidad docente (maestras/os) y miembros del INEF, representados por Enrique Romero Brest.",
+          "kind": "body",
+          "page": 13
+        },
+        {
+          "text": "Lo que se puso en juego fue algo más que un sistema de ejercitación física, determinados tipos de movimientos o ciertos desplazamientos ‘permitidos’, con su gradación, intensidad, seriación y clasificación correspondiente. La cuestión fue más bien la definición e imposición de concepciones absolutamente diferentes sobre la pedagogía y la política.",
+          "kind": "body",
+          "page": 14
+        },
+        {
+          "text": "Por un lado, el Sistema Argentino de Educación Física tuvo como fin formar parte de una escuela republicana y democrática en donde la solidaridad y el respeto a los derechos individuales fuesen la prioridad. Vale decir, el discurso ‘romerista’ proclamó la libertad individual y una educación para la vida civil, imbuida en el espíritu de solidaridad de una verdadera democracia. Asimismo, la disciplina escolar fue conceptualizada a partir de la razón y en función de principios científicos. La propuesta ‘romerista’, con ambivalencias y ciertas contradicciones, alentó un tipo de ciudadanía republicana basada en el respeto a las leyes y a los derechos individuales. En consecuencia, la crítica a la educación física militarizada, también implicó un fuerte rechazo a la disciplina de la obediencia y a la jerarquía como elementos vertebradores de las relaciones escolares y sociales. En algún punto, la oposición a la gimnasia militarizada o a los batallones escolares representó la defensa de la autonomía de los niños y el reconocimiento de los derechos del individuo frente al condicionamiento de la libertad individual ante un superior, por el mero hecho de serlo o la subordinación al colectivo ‘nacional’.",
+          "kind": "body",
+          "page": 14
+        },
+        {
+          "text": "Por el otro lado, la gimnasia militar escolar, las prácticas de tiro y los batallones escolares tuvieron como fin contribuir a la formación de una escuela tipo cuartel en donde la obediencia, la subordinación, el trato militar y la glorificación de la fuerza fuesen los pilares de la relación pedagógica. La organización social pensada por los defensores de la propuesta militar estuvo basada en la imposición de la fuerza más que en la razón y en la búsqueda de un tipo de organización social atravesada por la jerarquía. Asimismo, las prácticas militaristas difundieron un ideal de patria en donde no prevaleciera el derecho, la libertad individual o la ciencia; sino un ideal guerrero basado en un patriotismo exacerbado y de exclusión de lo ‘otro’, cuya consecuencia fuese la inevitable lucha entre distintos hombres o naciones. Ante ello Romero Brest recordaba lo siguiente: “la verdadera educación debe ser ante todo profundamente humana [...]” resaltando “la libertad y la justicia” y en donde “el hombre esté al lado del hombre y no contra el hombre” (Romero Brest, 1938: 243).",
+          "kind": "body",
+          "page": 14
+        },
+        {
+          "text": "A pesar de las tensiones, conflictos y disputas, la propuesta ‘romerista’ se mantuvo dominante, especialmente, en el escenario escolar en las primeras tres décadas del siglo XX. Sin embargo, este proceso de constantes disputas por monopolizar la educación de los cuerpos se quebró definitivamente a principios de la década de 1930. La balanza se inclinó definitivamente hacia aquellos maestros de gimnasia y esgrima provenientes del Ejército, de la Dirección General de Tiro y Gimnasia[[note:29]], así como a los grupos de pedagogos, funcionarios escolares y políticos que defendían esta concepción. En consecuencia, a partir del golpe de 1930, la corporación militar logró expulsar y jubilar de oficio a Romero Brest de la dirección del INEF y apropiarse de las nacientes estructuras estatales de administración y control de los cuerpos, como la primera Dirección General de Educación Física y Cultura o el Consejo Nacional de Educación Física. Y fue en esta década en donde, como nunca antes, bajo la reforma educativa de Fresco-Noble se prescribió nuevamente como obligatorio la práctica de tiro en la escuela y se volvió a militarizar la educación física.",
+          "kind": "body",
+          "page": 14
+        },
+        {
+          "text": "Paradojas del destino, la fuerza del Sistema Argentino de Educación Física elaborado por Enrique Romero Brest, se inició con la supresión de la gimnasia militar y su tradición concluyó abruptamente de la mano de aquellos herederos militares que había destituido treinta años atrás. Su ciclo se inició y concluyó ante las mismas “fuerzas reaccionarias” que él había combatido. No obstante ello, los ecos de la propuesta ‘romerista’ no se desvanecieron y se escucharon en décadas posteriores.",
+          "kind": "body",
+          "page": 14
+        }
+      ]
+    }
+  ],
+  "endnotes": [
+    {
+      "number": 1,
+      "page": 1,
+      "text": "Pablo Ariel Scharagrodsky es doctor en Ciencias Sociales y Humanas por la Universidad Nacional de Quilmes. Actualmente es docente-investigador en la Universidad Nacional de Quilmes y en la Universidad Nacional de La Plata, Argentina."
+    },
+    {
+      "number": 2,
+      "page": 2,
+      "text": "Además de la gimnasia militar, otros sistemas fueron impugnados: “he rechazado en mi enseñanza la aplicación en nuestras escuelas, del sistema francés de educación física por ser antifisiológico; del alemán por su carácter de fuerza y militar que no ha perdido desde su origen; del inglés por ser poco adaptable a la gradación y de difícil aplicación en nuestras escuelas por las condiciones locales; y del sueco, a pesar de su base eminentemente científica, por ser incompleto en lo que se refiere a la parte psicológica, por su metodismo riguroso que exige personal especial, condiciones locales apropiadas y tal vez condiciones de raza que no tenemos nosotros” (Romero Brest, 1903: 56-57; 1911a: 247-266)."
+    },
+    {
+      "number": 3,
+      "page": 2,
+      "text": "Previo a la tesis de Enrique Romero Brest, hubo una importante cantidad de tesis que identificaron a los ejercicios físicos y a la gimnasia como un campo de fuerte preocupación médico-social. Gran parte de las mismas son mencionadas y analizadas en clave de género en: (Scharagrodsky, 2008: 107-108)."
+    },
+    {
+      "number": 4,
+      "page": 3,
+      "text": "Los decretos de creación de los cursos, de la escuela y del Instituto así como los planes de estudio y programas pueden consultarse en: (Romero Brest, 1903: 17 y ss.; 1917: 11 y ss.; 1938: 146 y ss.)."
+    },
+    {
+      "number": 5,
+      "page": 3,
+      "text": "Para Romero Brest la fisiología develaba \"el secreto de las funciones orgánicas\" y era la máxima responsable de que la educación física tenga un \"proceder científico\" (Romero Brest, 1905a: 17-18; 1905b: 33 y ss.; 1909: 96; 1910: 791 y ss.; 1911b: 11-13; 1913: 11)."
+    },
+    {
+      "number": 6,
+      "page": 4,
+      "text": "La Escuela de Gimnasia y Esgrima del Ejército fue creada en 1897 y disuelta en 1903, siendo reabierta veintidós años después. Ver en: (Cristiani, 1967: 95-109). Esta institución sobresalió –junto con la Dirección General de Tiro y Gimnasia– ya que muchos de sus egresados fueron claves en la promoción y difusión de una educación física militar y se convirtieron en los máximos opositores a la propuesta ‘romerista’."
+    },
+    {
+      "number": 7,
+      "page": 4,
+      "text": "Muchos de los maestros de gimnasia y esgrima militares ejercieron la docencia en escuelas y colegios particulares y religiosos. En especial, a través de la enseñanza de la gimnasia militar y de la práctica de tiro escolar. La ligazón entre los maestros de gimnasia y esgrima y de tiro y la militarización de la gimnasia y la práctica de tiro –escolar y extraescolar– puede seguirse en las páginas de la Revista de Tiro Nacional Argentino de la Dirección General de Tiro y Gimnasia. Las escuelas pías fueron un buen ejemplo de la alianza entre las escuelas religiosas y la corporación militar. Ver en: (Scharagrodsky, 2009: 57-74)."
+    },
+    {
+      "number": 8,
+      "page": 5,
+      "text": "La Sociedad Sportiva Argentina fracasó varias veces en sus propuestas por instalar los batallones escolares y la gimnasia de tipo militar. Por ejemplo, auspiciado por la Sociedad Sportiva Argentina, en 1911 el diputado Dr. Manuel Carlés presentó ante la Cámara de Diputados de la Nación, un proyecto de ley que declaraba a la educación física en forma de Batallones Escolares. Nunca se aprobó. La Dirección de Gimnasia y Esgrima del Ejército tuvo mejor suerte a la hora de defender la propuesta de Carlés, la práctica de tiro escolar y los concursos de tiro escolares e, indirectamente, de apoyar el ingreso en las escuelas y colegios de maestros militares. Ver: (Saraví Riviere, 1998: 20-28; Munilla, 1916) y los artículos de la Revista de Tiro Nacional Argentino de la Dirección General de Tiro y Gimnasia citados en la Bibliografía."
+    },
+    {
+      "number": 9,
+      "page": 5,
+      "text": "Escipion A. Ferreto, como veremos más adelante, también participó de las críticas al Instituto y a la conducción del mismo en la década de 1920."
+    },
+    {
+      "number": 10,
+      "page": 5,
+      "text": "Horacio Levene fue Inspector y, posteriormente, Director de la Escuela de Tiro y Gimnasia del Ejército Argentino, destacándose por sus libros pro militaristas sobre el tema y por sus influencias, dos décadas después, en la primera Dirección General de Educación Física y Cultura del país, creada en la Provincia de Buenos Aires en 1936 durante el gobierno de Manuel Fresco. Algunos capítulos del “Manual de Normas y Clases Infantiles de Gimnasia Metodizada y Juegos” editado en 1938 con el fin de uniformar el método a emplearse en todas las escuelas de la Provincia de Buenos Aires en la materia de educación física fueron tomados textualmente de un libro de Levene. Ver en: (Levene, 1939)."
+    },
+    {
+      "number": 11,
+      "page": 6,
+      "text": "Eugenio Pini fue el primer director de la Escuela Militar de Esgrima y un eximio esgrimista reconocido internacionalmente. Organizó la escuela convocando a importantes maestros italianos de esgrima como Víctor Ponzoni, Escipion A. Ferreto, José Mari, Luis Scanzi, Juan Bay y Luculo Giovannini. Este último como profesor de gimnasia. Todos ellos fueron egresados de la Escuela Magistral de Roma (La Farnesina). Antonio De Marchi presidió la Sociedad Sportiva en varias oportunidades. Formó parte de la comisión que contrató a Eugenio Pini para dirigir la Escuela de Gimnasia y Esgrima del Ejército."
+    },
+    {
+      "number": 12,
+      "page": 6,
+      "text": "J. MORENO, “Batallones escolares. Su educación física y su importancia en la Higiene y Hominicultura”. Trabajo presentado al Primer Congreso Nacional del Niño celebrado en Buenos Aires el 12 de Octubre de 1913. En las conclusiones del mismo se señala que “el batallón escolar contribuye a la solución de los grandes problemas de la higiene social de diversas fases” y que “entre los medios adecuados para la utilización de aquellos factores y la ampliación de su influencia, figura la agrupación de los niños en batallones escolares, con los fines cuya prioridad corresponde haber sido establecido por la Sociedad Sportiva Argentina”."
+    },
+    {
+      "number": 13,
+      "page": 6,
+      "text": "Muchos/as de ellos eran socialistas, anarquistas, librepensadores o integraban las filas del feminismo. Estos grupos criticaron las marchas militares escolares, el patriotismo fetichista o la realización de actividades y juegos con tonos belicistas. Ver en: (Barrancos, 1997, 143-144; 1990: 82)."
+    },
+    {
+      "number": 14,
+      "page": 6,
+      "text": "Con matices, los gigantes de la fisiología del ejercicio de finales del siglo XIX estuvieron en contra de la gimnasia militar en los escolares. Por ejemplo, Fernand Lagrange estaba en contra del “aprendizaje de las maniobras militares” en los niños de edad escolar así como de la gimnasia basada \"en ejercicios a la voz de mando, en la fría disciplina, en la rigidez de la actitud corporal y en la obediencia pasiva\". Todo ello generaba una \"irracional severidad\" y \"un ridículo militarismo\" en la escuela. \"Se quería que los niños aprendiesen el manejo de las armas y las maniobras militares, porque llegaría un día en que será soldado. En una palabra, bajo el pretexto de formar a generaciones viriles, se trata de hacer de nuestros niños escolares pequeños hombres en pequeño. Hay en esto un exceso de peligro. El método de gimnasia del niño debe ser distinto al del adulto\" (Lagrange, 1894: 254, 130, 10, 130-131; 1895: 134; 1896: 366). Angelo Mosso también fue un fuerte opositor de la educación física militar \"en la tierna infancia\". \"Dejemos que otros y no militares se ocupen de hacer robustas las generaciones futuras\" (Mosso, 1894: 153-164, 215; 1893; 1892)."
+    },
+    {
+      "number": 15,
+      "page": 8,
+      "text": "Los conflictos y disputas entre los defensores del scautismo y los defensores del Sistema Argentino de Educación Física elaborado por Romero Brest recorren todo el período que estamos analizando. Ver en: (Romero Brest, 1914a: 1-4; 1914 b: 62; 1915: 92; 1907: 11-13; 1938: 230, 242, 214, 221-238)."
+    },
+    {
+      "number": 16,
+      "page": 8,
+      "text": "Al principio Romero Brest aceptó la práctica de tiro en los colegios secundarios—había una ley que los prescribía—aunque dejando claramente establecido que la clase de tiro y de gimnasia era diferente a la educación física en principios, presupuestos, objetivos y docentes a dictar. Entrada la década de 1910, Brest señaló la conveniencia “que los esfuerzos de la enseñanza deben converger hacia la enseñanza del tiro al blanco en el período de la conscripción” y no durante el período escolar (Romero Brest, 1907: 11; 1914 b: 52-53). Uno de los que enfrentó a Brest fue Eduardo Munilla, quien fue el primer director de la Dirección General de Tiro y Gimnasia y uno de los mayores promotores de los concursos de tiro escolar. Asimismo, integró como autoridad la Junta Central de la Liga Patriótica Argentina. Ver en: (Munilla, 1916; Munilla, y Portella, 1910)."
+    },
+    {
+      "number": 17,
+      "page": 8,
+      "text": "A partir de las críticas al discurso y la práctica militar de la educación física, Romero Brest intentó transmitir el estereotipo de una masculinidad más pacífica y más amable que dependiera de la solidaridad más que de la lucha, sin por ello dejar de lado el núcleo duro del estereotipo normativo de la masculinidad tradicional, el cual incluía el valor, el coraje, la fuerza y el autodomino. Brest propuso un tipo de masculinidad que no debía confundirse con la idea de formar soldados obedientes y sumisos, sino hombres viriles y trabajadores, pero a partir de una disciplina razonada con el fin de alcanzar la idea de ciudadanos de un país republicano. Un análisis en clave de género puede verse en: (Aisenstein y Scharagrodsky, 2006).",
+      "continuedOnPage": 9
+    },
+    {
+      "number": 18,
+      "page": 9,
+      "text": "Por ejemplo, en este período, Brest tuvo una buena relación con los máximos representantes de la Armada. En 1915, el general Allaria, a la sazón ministro de Guerra, dio una conferencia denominada “lo que el ejército espera de la escuela”, auspiciada por el INEF alabando y agradeciendo la labor del mismo. Asimismo, “durante varios años seguidos el Instituto dictó cursos prácticos de gimnasia fisiológica a los conscriptos de la Armada Nacional, en el período inicial de la incorporación de éstos. 15 a 20 profesores, durante varias horas por día, en forma ad honorem, prepararon a los conscriptos recién ingresados. Se dictaron cursos en el Arsenal Naval de esta capital, en Martín García, en puerto Belgrano, en las Baterías, en el Crucero Buenos Aires y en Río Santiago”. Según Romero Brest, estos cursos fueron muy bien recibidos y apreciados. Inclusive el Dr. Howard, cirujano de la Armada, presentó un proyecto para la organización de la Educación Física en la Armada, inspirado en el INEF. Ver en: (Romero Brest, 1938: 218, 209)"
+    },
+    {
+      "number": 19,
+      "page": 9,
+      "text": "Entre los innumerables intelectuales que apoyaron la propuesta ‘romerista’ podemos mencionar desde la corporación médica a dos de los fisiólogos argentinos más importantes de la época como Horacio Piñero (1869-1919) y Bernardo Houssay (1887-1971) quienes avalaron y respaldaron al Sistema Argentino de Educación Física. Así como Numerosos médicos como Gregorio Aráoz Alfaro, Juan Beltrán, Emilio Coni, Octavio Fernández, Miguel Sussini, etc. Lo mismo desde la corporación pedagógica, sobresaliendo Pablo Pizzurno, Joaquín V. González, Andrés Ferreira, Juan Mantovani o Víctor Mercante. Más allá de las diferencias entre todos ellos la propuesta ‘romerista’ fue vista como la más apropiada para la escuela y los colegios argentinos."
+    },
+    {
+      "number": 20,
+      "page": 10,
+      "text": "Escipion A. Ferreto fue profesor del club Gimnasia y Esgrima de Buenos Aires. Fue uno de los responsables de organizar la primera Escuela de Esgrima Militar en 1897 cuyo director fue Eugenio Pini. Fue secretario y ayudante de la Escuela así como un destacado profesor de esgrima. Arsenio Thamier fue egresado de la primera promoción de la Escuela Militar de Gimnasia y Esgrima. Fue Director de la Escuela de Tiro y Gimnasia del Ejército Argentino, siendo reemplazado en 1924 por su discípulo Horacio Levene. Además, fue el primer Director de la Dirección de Plazas y Ejercicios Físicos anexada a la Dirección General de Paseos Públicos de la capital Argentina."
+    },
+    {
+      "number": 21,
+      "page": 10,
+      "text": "En varias ocasiones públicas Bernardo Houssay se pronunció a favor de la propuesta de Romero Brest como, por ejemplo, en ocasión de celebrarse el II Congreso Sudamericano de Médicos del Deporte realizado en Buenos Aires. Durante el mismo pronunció un discurso inaugural remarcando la importancia de la educación física y del deporte “siendo en el terreno de la educación” producto “del esfuerzo de esclarecidos médicos, entre los que me place destacar la obra del Dr. Romero Brest” (Houssay, 1941: 12). Para una historia de la fisiología argentina y su relación con Bernardo Houssay, ver: (Buch, 2006)."
+    },
+    {
+      "number": 22,
+      "page": 11,
+      "text": "La nueva comisión estuvo integrada por las siguientes personas: como presidente el profesor Alfredo Villalba, Inspector General de Enseñanza Secundaria, Normal y Especial; el Dr. Jorge Howard, Delegado del Ministerio de Guerra; el profesor Valentín Mestroni, Delegado del Consejo Nacional de Educación; el Dr. Tiburcio Padilla, Delegado del Departamento Nacional de Higiene; el Dr. Benito Nazar Anchorena, Presidente de la Universidad Nacional de La Plata; el Dr. Enrique Pietranera, médico militar y profesor de kinesioterapia; el Dr. Bernardo Houssay, profesor de Fisiología de la Facultad de Medicina de la Universidad de Buenos Aires; el Sr. Arsenio Thamier, profesor de esgrima y Director de Plazas de Ejercicios Físicos de la Municipalidad de la Capital Argentina y el Dr. Enrique Romero Brest como Director del Instituto Nacional Superior de Educación Física de Buenos Aires (Despacho de la Comisión Técnica de Educación Física, 1924: 37)."
+    },
+    {
+      "number": 23,
+      "page": 11,
+      "text": "Esta comisión elaboró un anteproyecto de Ley Orgánica de la Educación Física Nacional. La misma fue elevada al Congreso aunque no tuvo respuesta de parte de los legisladores."
+    },
+    {
+      "number": 24,
+      "page": 11,
+      "text": "Romero Brest, al elaborar los primeros planes de educación física, descartó a los deportes por considerarlos vehículos de corrupción moral y de violencia corporal. Para Romero Brest, los deportes debían estimular “la solidaridad, la responsabilidad, la justicia, la belleza, el deber, la verdad y la colaboración”. Los peligros del deporte eran “la simple persecución y utilización de la victoria, los valores materiales perseguidos, la pelea contra otros, la indisciplina generalizada, el predominio de lo instintivo, su esencia competitiva, la formación de campeones, la falta de espiritualidad, la violencia deportiva, etc.”. Según su apreciación esto último era lo que predominaba en la práctica deportiva, alejándose de su ideal educativo. En realidad, su propuesta no descartó completamente al deporte o al atletismo, especialmente a partir de los años veinte, aunque en todos los casos debía estar “precedido por un sistema gimnástico racional como el nuestro y no al revés” (Romero Brest, 1938: 19, 24-25, 38, 64, 66, 100, 118, 190)."
+    },
+    {
+      "number": 25,
+      "page": 12,
+      "text": "El coronel Cliffton Goldney fue el primer director de la primera Dirección General de Educación Física y Cultura de Argentina y tuvo fuertes lazos con la Escuela Militar de Gimnasia y Esgrima."
+    },
+    {
+      "number": 26,
+      "page": 12,
+      "text": "Adolfo Arana fue un reconocido militar que participó representando al Ejército Argentino en torneos de tiro internacionales y, en virtud de sus relaciones con el general José Félix Uriburu, se transformó en uno de los máximos referentes de la educación física de los años treinta convirtiéndose en Director General de Tiro y Gimnasia y en Presidente del Consejo Nacional de Educación Física. Discursos de Adolfo Arana reivindicando una “patria fuerte, católica, respetuosa de las tradiciones” y con “el pueblo en armas simbolizado en sus soldados y en sus inmensas legiones de gimnastas de ambos sexos” aparecen en la Revista de Tiro y Gimnasia de todo el período analizado. Ver en: (Arana, 1938b: 7-10; 1938 c: 15-18; 1939A: 3-5; 1939 B: 12-15; 1939 C: 13-21; 1939: 19)."
+    },
+    {
+      "number": 27,
+      "page": 12,
+      "text": "Ver en: (Memorias del Ministerio de Guerra. 1937-1938, 1938: 67)."
+    },
+    {
+      "number": 28,
+      "page": 13,
+      "text": "Otras duras y fuertes críticas dirigidas a la propuesta de Romero Brest, fueron elaboradas por maestros militares vinculados con la Dirección General de Gimnasia y Tiro del Ejército y con la corporación militar. Ver, por ejemplo, (Borghelli, 1938: 55-59)."
+    },
+    {
+      "number": 29,
+      "page": 14,
+      "text": "Desde 1934 la Dirección General de Tiro y Gimnasia venía utilizando profesores de educación física del Ejército para la difusión de la Gimnasia Metodizada en la sociedad civil. Dicha acción obtuvo la colaboración de autoridades nacionales, provinciales y municipales. Sin duda el logro más importante de la militarización de los cuerpos fue la creación, en todo el país, de las Secciones Infantiles de Gimnasia Metodizada. Ver en: (Gimnasia Metodizada. Secciones Infantiles. 1934-1936, 1936)."
+    }
+  ],
+  "bibliography": [
+    "AGÜERO, A., IGLESIAS, S., y DEL VALLE MILANINO, A., (2009) “Enrique Romero Brest, y los inicios de la educación física escolar. Su tiempo, su vida, su pensamiento y su obra” En Revista digital Eä-Revista de Humanidades Médicas & Estudios Sociales de la Ciencia y la Tecnología, ISO-CYTE-Instituto de Estudios en Salud, Sociedad, Ciencia y Tecnología, Buenos Aires.",
+    "AISENSTEIN, A., (1999) “La Educación Física en la Escuela Primaria (1880-1930)”, en ASCOLANI, A., (comp.) La Educación en Argentina. Estudios de Historia. Rosario, Ed. del Arca, pp. 145-161.",
+    "AISENSTEIN, A., (2006) “Huellas de un doble alumbramiento. Historia de la asignatura y la ciencia en las páginas de la Revista de la Educación Física” En AISENSTEIN, A., y SCHARAGRODSKY, P., (org.) Tras las huellas de la Educación Física Escolar Argentina. Cuerpo, género y pedagogía. 1880-1950, Buenos Aires, Prometeo, pp. 73-101.",
+    "ANDRIEU, G., (1990) “Amorós, los militares, los médicos y la Educación Física en Francia en el siglo XIX y comienzos del XX” en Seminario Francisco Amorós. Su obra entre dos culturas. Madrid, INEF, pp. 147-174.",
+    "ARMUS, D., (2007) La ciudad impura. Salud, tuberculosis y cultura en Buenos Aires, 1870-1950. Buenos Aires, Edhasa.",
+    "ARNAUD, P., (1991) Le militaire, l’écolier, le gymnaste, Naissance de l’Education Physique en France, 1869-1889, Lyon, Presses Universitaires de Lyon.",
+    "BARRANCOS, D., (1997) “Socialistas y la suplementación de la escuela pública: la Asociación de Bibliotecas y Recreos infantiles (1913-1930)” en Mujeres en la Educación: género y docencia en la argentina 1870-1930, MORGADE,G., (comp), Buenos Aires, Miño y Dávila, pp. 130-150",
+    "BARRANCOS, D., (1990) Anarquismo, Educación y costumbres en la Argentina de primeros de siglo, Buenos Aires, Contrapunto.",
+    "BERTONI, L., (1996) “Soldados, gimnastas y escolares. La escuela y la formación de la nacionalidad a fines del siglo XIX”, en Boletín del Instituto de Historia Argentina y Americana “Dr. Emilio Ravignani”, 3ra. Serie, Nº 13, Buenos Aires, pp. 35-57.",
+    "BERTONI, L., (2001) Patriotas, cosmopolitas y nacionalistas. La construcción de la nacionalidad argentina a fines del siglo XIX. Buenos Aires, Fondo de Cultura Económica.",
+    "BUCH, A., (2006) Forma y función de un sujeto moderno. Bernardo Houssay y la fisiología argentina (1900-1943). Bernal, Editorial Universidad Nacional de Quilmes.",
+    "CARLI, S., (2002) Niñez, pedagogía y política. Transformaciones de los discursos acerca de la infancia en la historia de la educación argentina entre 1880-1955, Buenos Aires, Miño y Dávila.",
+    "CRISTIANI, R., (1967) Reseña histórica del cuerpo de Gimnasia y Esgrima del Ejército y su proyección en la vida nacional entre 1897-1960. Buenos Aires, Comando en Jefe del Ejército, Dirección de Estudios Históricos. Año III, Nº 3.",
+    "DI LISCIA, M., (2004) “Médicos y maestros. Higiene, eugenesia y educación en Argentina (1880-1940)” en DI LISCIA, M., y SALTO, G., (edits.) Higienismo, educación y discurso en la Argentina (1870-1940). Santa Rosa, Edit UNLPAM, pp. 37-64.",
+    "GLEYSE, J., (2007) “O diálogo das ciências humanas e das ciências da vida na educação física na França. Análise e perspectivas” en SOARES, C., (org.) Pesquisas sobre o corpo. Ciências Humanas e Educação, San Pablo, Autores Asociados, pp. 139-157.",
+    "GOODSON, I., (1995) Historia del Curriculum. La construcción social de las disciplinas escolares. Barcelona, Pomares-Corredor.",
+    "GOODSON, I., (2003) Estudio del currículum. Casos y métodos. Buenos Aires, Amorrortu Editores.",
+    "KOHN LONCARICA, A., y AGÜERO, A., (1985) “El contexto médico” En BIA-GINI, H., (comp.) El movimiento positivista argentino. Buenos Aires, Editorial de Belgrano.",
+    "LIONETTI, L., (2007) La misión política de la escuela pública. Formar a los ciudadanos de la república (1870-1916), Buenos Aires, Miño y Dávila.",
+    "MOSSE, G., (1996) The Image of Man: the Creation of Modern Masculinity. Oxford, Oxford University Press.",
+    "NOUZILLES, G., (2000) Ficciones somáticas. Naturalismo, nacionalismo y políticas médicas del cuerpo (Argentina 1880-1910). Rosario, Beatriz Viterbo.",
+    "PUIGGRÓS, A., (1990) Sujetos, disciplina y currículum (1885-1916). Buenos Aires, Galerna.",
+    "PUIGGRÓS, A., (1996) Qué pasó en la educación argentina. Desde la conquista al menemismo. Buenos Aires, Kapelusz.",
+    "RAUCH, A., (1985) El cuerpo en la Educación Física, Buenos Aires, Kapelusz.",
+    "ROMERO, L. A., (2002) Breve historia contemporánea de la Argentina. Buenos Aires, FCE.",
+    "SALVATORE, R., (2001) “Sobre el surgimiento del estado médico legal en Argentina (1890-1940)” En Estudios Sociales, Nº 20, Buenos Aires, pp. 81-114.",
+    "SARAVI RIVIERE, J., (1986) Historia de la Educación Física Argentina Siglo XIX. Buenos Aires, INEF.",
+    "SARAVI RIVIERE, J., (1998) Aportes para una historia de la Educación Física (1900-1945). Buenos Aires, IEF Nº 1.",
+    "SCHARAGRODSKY, P., (2001) “Cuerpo, Género y Poder en la escuela. El caso de la Educación Física Escolar Argentina (1880-1930)” en Revista Estudios Ibero-Americanos, PUCR, Vol. XXVII, Nº 2, Porto Alegre, pp. 121-151.",
+    "SCHARAGRODSKY, P., (2006) “Los ejercicios militares en la escuela argentina: modelando cuerpos masculinos y patriotas a fines del siglo XIX” En AISENSTEIN, A., y SCHARAGRODSKY, P., (org.) Tras las huellas de la Educación Física Escolar Argentina. Cuerpo, género y pedagogía. 1880-1950, Buenos Aires, Prometeo, pp. 105-133.",
+    "SCHARAGRODSKY, P., (2008) “Entre la maternidad y la histeria. Medicina, prácticas corporales y feminidad en el Buenos Aires del fin de siglo XIX”. En Gobernar es Ejercitar. Fragmentos para una historia de la Educación Física en Iberoamérica. Buenos Aires, Prometeo, pp. 105-135.",
+    "SCHARAGRODSKY, P., (2009) “En el nombre del Padre, del Hijo y del Espíritu Gimnástico. Prácticas corporales, masculinidades y religiosidad en los Exploradores de Don Bosco en la Argentina de principios de siglo XX”. En Educar em Revista, Nº 33, Universidad Federal de Paraná, Curitiba, pp. 57-74.",
+    "SOARES, C., (2006) “Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y permanencias”, en ROZENGARDT, R., (coord.) Apuntes de Historia para profesores de Educación Física, Buenos Aires, Miño y Dávila, pp. 223-242.",
+    "SPIVAK, M., (1990) “La preparación militar en Francia. Un fracaso del régimen republicano” en Seminario Francisco Amorós. Su obra entre dos culturas. Madrid, INEF, pp. 175-206.",
+    "VIGARELLO, G., (2003) “A invenção da ginástica no século XIX: movimentos novos, corpos novos” En Revista Brasileira de Ciências do Esporte, RBCE, V. 25, Nº 1, Campinas, pp. 9-21.",
+    "VIGARELLO, G., (2005) Corregir el cuerpo. Buenos Aires, Ediciones Nueva Visión.",
+    "ARBO, A., (1912) “Los Batallones Escolares”, en Revista de la Educación Física, Año IV, Nº 22, Buenos Aires.",
+    "ARANA, A., (1938a) Disertaciones, comentarios de prensa y conceptos sobre educación física. Buenos Aires, Publicación de la Dirección General de Tiro y Gimnasia. Ministerio de Guerra.",
+    "ARANA, A., (1938b) “Día del soldado y entrega de diplomas a los repetidores de educación física”, Revista de Tiro y Gimnasia, Dirección General de Tiro y Gimnasia, Nº 338, Buenos Aires, pp. 7-10.",
+    "ARANA, A., (1938 c) “Conferencia pronunciada por el Director General de Tiro y Gimnasia General Adolfo Arana”, Revista de Tiro y Gimnasia, Dirección General de Tiro y Gimnasia, Nº 337, Buenos Aires, pp. 15-18.",
+    "ARANA, A., (1939a) “Colocación de la piedra fundamental del futuro polígono de Pergamino”, Revista de Tiro y Gimnasia, Dirección General de Tiro y Gimnasia, Nº 344, Buenos Aires, pp. 13-21.",
+    "ARANA, A., (1939b) “General de División D. Adolfo Arana”, Revista de Tiro y Gimnasia, Dirección General de Tiro y Gimnasia, Nº 342, Buenos Aires, pp. 3-5.",
+    "ARANA, A., (1939 c) “La encuesta de ‘Crisol’. Responde el General de División D. Adolfo Arana”, Revista de Tiro y Gimnasia, Dirección General de Tiro y Gimnasia, Nº 343, Buenos Aires, pp. 12-15.",
+    "BORGHELLI, S., (1938) “Observaciones de carácter técnico que me han merecido el libro El sentido espiritual de la Educación Física del Dr. Enrique Romero Brest”, Revista de Tiro y Gimnasia, Dirección General de Tiro y Gimnasia, Nº 338, Buenos Aires, pp. 55-59.",
+    "MINISTERIO DE JUSTICIA E INSTRUCCIÓN PÚBLICA, (1924) Despacho de la Comisión Técnica de Educación Física, Buenos Aires, Publicaciones oficiales.",
+    "DIRECCIÓN GENERAL DE TIRO Y GIMNASIA, (1910) “Gimnasia”. Revista de Tiro Nacional Argentino. Buenos Aires.",
+    "DIRECCIÓN GENERAL DE TIRO Y GIMNASIA, (1911) “Tiro en los colegios”. Revista de Tiro Nacional Argentino. Buenos Aires.",
+    "DIRECCIÓN GENERAL DE TIRO Y GIMNASIA, (1912) “Campeonato escolar de tiro. Año 1912”. Revista de Tiro Nacional Argentino. Buenos Aires.",
+    "DIRECCIÓN GENERAL DE TIRO Y GIMNASIA, (1912) “Tiro escolar. Match entre dos colegios”. Revista de Tiro Nacional Argentino. Buenos Aires.",
+    "DIRECCIÓN GENERAL DE TIRO Y GIMNASIA, (1913) “Instrucción militar en los colegios”. Revista de Tiro Nacional Argentino. Buenos Aires.",
+    "DIRECCIÓN GENERAL DE TIRO Y GIMNASIA, (1913) “Sociedad de tiro 25 de Mayo. Concurso escolar”. Revista de Tiro Nacional Argentino. Buenos Aires",
+    "DIRECCIÓN GENERAL DE TIRO Y GIMNASIA, (1938) en Memorias del Ministerio de Guerra. 1937-1938. Talleres Gráficos del Instituto Geográfico Militar, Buenos Aires",
+    "DIRECCIÓN GENERAL DE TIRO Y GIMNASIA, (1936) Gimnasia Metodizada. Secciones Infantiles. 1934-1936. Talleres Gráficos de Cersosimo, Buenos Aires",
+    "FERRETO ESCIPIÓN, A., (1927) El arte de la esgrima. Buenos Aires, Escuela Tipográfica del Colegio León XIII.",
+    "FRESCO, M., (1937) La Reforma Educacional de Buenos Aires, La Plata, Talleres de Impresiones Oficiales.",
+    "FRESCO, M., (1940) La Educación Física. Una Innovación de mi Gobierno. Buenos Aires, Talleres Gráficos Damiano.",
+    "FRESCO, M., (1940) La Instrucción Primaria en mi Gobierno 1936-1940, Buenos Aires, Talleres Gráficos Damiano.",
+    "HOUSSAY, B., (1941) “II Congreso Sudamericano de Médicos del Deporte. Discurso del Profesor de Fisiología de la Universidad de Buenos Aires Dr. Bernardo A. Houssay”, en Revista de Medicina aplicada a los Deportes, Educación Física y Trabajo, Año VI, N° 18, Buenos Aires, pp. 11-13.",
+    "LAGRANGE, F., (1894) La Higiene del ejercicio en los niños y en los jóvenes, Madrid, Librería de José Jorro. (Traducción Ricardo Rubio)",
+    "LAGRANGE, F., (1895) Fisiología de los ejercicios corporales, Madrid, Imprenta Gregorio Juste. (Traducción Ricardo Rubio)",
+    "LAGRANGE, F., (1896) El ejercicio en los adultos, Madrid, Imprenta Gregorio Juste. (Traducción Ricardo Rubio)",
+    "LEVENE, H., (1910) “Gimnasia en las escuelas”. Revista de Tiro Nacional Argentino. Dirección General de Tiro y Gimnasia. N° 1, Buenos Aires",
+    "LEVENE, H., (1939) Gimnasia Metodizada. Método. Años 1924-1938. Buenos Aires, Orientación Integral Humana. SRL. Sección Editorial.",
+    "MORENO, J., (1913) “Batallones escolares. Su educación física y su importancia en la Higiene y Hominicultura”. Trabajo presentado al Primer Congreso Nacional del Niño celebrado en Buenos Aires el 12 de octubre de 1913.",
+    "MOSSO, A., (1892) El miedo, Madrid, Librería de José Jorro. (Versión castellana de Madrid Moreno)",
+    "MOSSO, A., (1893) La fatiga, Madrid, Librería de José Jorro. (Versión castellana de Madrid Moreno)",
+    "MOSSO, A., (1894) La Educación Física de la Juventud seguida de la Educación Física de la Mujer, Madrid, Librería de José Jorro. (Versión castellana de Madrid Moreno)",
+    "MUNILLA, E., y PORTELLA, (1910) “Monografía sobre Tiro”. Revista de Tiro Nacional Argentino. Dirección General de Tiro y Gimnasia. Buenos Aires",
+    "MUNILLA, E., (1916) La defensa nacional, Buenos Aires",
+    "ROMERO BREST, E., (1900) El Ejercicio Físico en la Escuela (del punto de vista higiénico). Tesis presentada para optar al grado de Doctor en Medicina, Buenos Aires, Compañía Sud-Americana de Billetes de Banco.",
+    "ROMERO BREST, E., (1903) Cursos Normales de Educación Física (sus resultados), Buenos Aires, Las Ciencias Librería y Casa editora de Nicolás Marana.",
+    "ROMERO BREST, E., (1905a) Curso Superior de Educación Física. Tomo I: bases fisiológicas de la Educación Física, Buenos Aires, Las Ciencias Librería y Casa editora de Nicolás Marana.",
+    "ROMERO BREST, E., (1905b) Curso Superior de Educación Física. Tomo II: pedagogía y práctica de la Educación Física, Buenos Aires, Las Ciencias Librería y Casa editora de Nicolás Marana.",
+    "ROMERO BREST, E., (1907) La Reforma de la Educación Física en la Escuela Secundaria, Buenos Aires, Establecimiento Tipográfico El Comercio.",
+    "ROMERO BREST, E., (1909) La Educación Física en la Escuela Primaria. Su organización y sus resultados, Buenos Aires, Imprenta de Obras de E. Spinelli.",
+    "ROMERO BREST, E., (1910) “Un programa de fisiología”, en El libro, Año IV, N° 19, Buenos Aires, pp. 791-806.",
+    "ROMERO BREST, E., (1911a) Pedagogía de la Educación Física, Buenos Aires, Edit. Cabaut y Cía.",
+    "ROMERO BREST, E., (1911b) “Evolución y consecuencias de las ideas doctrinarias en la Educación Física”, en Revista La Semana Médica, N° 15, Buenos Aires",
+    "ROMERO BREST, E., (1913) La Educación Física en el Congreso Internacional de París de 1913, Buenos Aires, Imprenta Europea Manuel A. Rosas.",
+    "ROMERO BREST, E., (1914a) “Un desacierto pedagógico”, en Revista de la Educación Física, Año VI, N° 1, Buenos Aires, pp. 1-4.",
+    "ROMERO BREST, E., (1914b) Los Batallones Escolares: orígenes, condiciones científicas y defectos, Buenos Aires, Imprenta Talleres gráficos de la Penitenciaría Nacional.",
+    "ROMERO BREST, E., (1915) “Relaciones de la Educación Física con la militar en la escuela”, en Revista de la Educación Física, Año VII, N° 36, Buenos Aires, pp. 89-95.",
+    "ROMERO BREST, E., (1917) El Instituto Nacional Superior de Educación Física. Antecedentes, organización y resultados, Buenos Aires, Edit. Cabaut y Cía.",
+    "ROMERO BREST, E., (1922) Concursos escolares de Educación Física, Buenos Aires, Edit. Cabaut y Cía.",
+    "ROMERO BREST, E., (1933) Algunos conceptos doctrinarios de la Educación Física. Tres conferencias del Dr. Enrique Romero Brest, Buenos Aires",
+    "ROMERO BREST, E., (1938) El Sentido Espiritual de la Educación Física, Buenos Aires, Librería del Colegio."
+  ]
+}

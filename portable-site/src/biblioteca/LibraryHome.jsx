@@ -153,6 +153,7 @@ function Hero({ saved, toggle }) {
   const entry = available[index];
   // Títulos propios de cada lectura. Nunca usar la obra anterior como fallback.
   const heroTitles = {
+    'scharagrodsky-constitucion-ef': <>La constitución de la<span>Educación Física escolar.</span></>,
     'aisenstein-tabla-rasa': <>¿Hacemos tabla<span>rasa del pasado?</span></>,
     'orbuch-educar-al-cuerpo': <>Educar al cuerpo<span>dentro y fuera del aula.</span></>,
     'pineau-fresco-noble': <>Renovación,<br />represión,<span>cooptación.</span></>,

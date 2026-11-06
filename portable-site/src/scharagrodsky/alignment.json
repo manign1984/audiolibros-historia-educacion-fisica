@@ -1,0 +1,1010 @@
+{
+  "sch-title": {
+    "start": 0.0,
+    "end": 2.92
+  },
+  "sch-subtitle": {
+    "start": 3.66,
+    "end": 9.22
+  },
+  "sch-author": {
+    "start": 11.08,
+    "end": 12.6
+  },
+  "sch-introduccion-heading": {
+    "start": 14.3,
+    "end": 14.7
+  },
+  "sch-introduccion-p1-s1": {
+    "start": 15.8,
+    "end": 24.24
+  },
+  "sch-introduccion-p1-s2": {
+    "start": 24.24,
+    "end": 66.26
+  },
+  "sch-introduccion-p2-s1": {
+    "start": 67.02,
+    "end": 73.54
+  },
+  "sch-introduccion-p2-s2": {
+    "start": 74.32,
+    "end": 79.74
+  },
+  "sch-introduccion-p2-s3": {
+    "start": 80.5,
+    "end": 98.4
+  },
+  "sch-introduccion-p2-s4": {
+    "start": 98.4,
+    "end": 112.8
+  },
+  "sch-introduccion-p2-s5": {
+    "start": 113.48,
+    "end": 116.96
+  },
+  "sch-introduccion-p2-s6": {
+    "start": 117.6,
+    "end": 131.76
+  },
+  "sch-introduccion-p2-s7": {
+    "start": 132.56,
+    "end": 134.42
+  },
+  "sch-introduccion-p2-s8": {
+    "start": 135.78,
+    "end": 152.68
+  },
+  "sch-introduccion-p3-s1": {
+    "start": 152.68,
+    "end": 160.86
+  },
+  "sch-introduccion-p3-s2": {
+    "start": 161.52,
+    "end": 170.04
+  },
+  "sch-introduccion-p3-s3": {
+    "start": 170.62,
+    "end": 179.92
+  },
+  "sch-introduccion-p3-s4": {
+    "start": 180.44,
+    "end": 198.2
+  },
+  "sch-introduccion-p4-s1": {
+    "start": 198.78,
+    "end": 215.7
+  },
+  "sch-introduccion-p4-s2": {
+    "start": 216.58,
+    "end": 262.4
+  },
+  "sch-sistema-heading": {
+    "start": 264.14,
+    "end": 266.02
+  },
+  "sch-sistema-p1-s1": {
+    "start": 267.12,
+    "end": 282.92
+  },
+  "sch-sistema-p1-s2": {
+    "start": 283.68,
+    "end": 291.36
+  },
+  "sch-sistema-p2-s1": {
+    "start": 292.28,
+    "end": 305.06
+  },
+  "sch-sistema-p2-s2": {
+    "start": 305.06,
+    "end": 315.54
+  },
+  "sch-sistema-p2-s3": {
+    "start": 316.3,
+    "end": 335.0
+  },
+  "sch-sistema-p3-s1": {
+    "start": 335.82,
+    "end": 347.66
+  },
+  "sch-sistema-p3-s2": {
+    "start": 348.1,
+    "end": 357.12
+  },
+  "sch-sistema-p4-s1": {
+    "start": 357.12,
+    "end": 365.06
+  },
+  "sch-sistema-p4-s2": {
+    "start": 365.84,
+    "end": 382.02
+  },
+  "sch-sistema-p4-s3": {
+    "start": 382.02,
+    "end": 395.28
+  },
+  "sch-sistema-p4-s4": {
+    "start": 395.88,
+    "end": 400.42
+  },
+  "sch-sistema-p5-s1": {
+    "start": 401.32,
+    "end": 404.6
+  },
+  "sch-sistema-p5-s2": {
+    "start": 404.6,
+    "end": 411.62
+  },
+  "sch-sistema-p5-s3": {
+    "start": 412.56,
+    "end": 416.48
+  },
+  "sch-sistema-p5-s4": {
+    "start": 417.24,
+    "end": 422.2
+  },
+  "sch-sistema-p5-s5": {
+    "start": 422.92,
+    "end": 425.44
+  },
+  "sch-sistema-p5-s6": {
+    "start": 426.18,
+    "end": 432.16
+  },
+  "sch-sistema-p5-s7": {
+    "start": 432.16,
+    "end": 433.96
+  },
+  "sch-sistema-p5-s8": {
+    "start": 434.56,
+    "end": 439.08
+  },
+  "sch-sistema-p6-s1": {
+    "start": 440.0,
+    "end": 452.18
+  },
+  "sch-sistema-p6-s2": {
+    "start": 452.66,
+    "end": 459.12
+  },
+  "sch-sistema-p6-s3": {
+    "start": 459.12,
+    "end": 466.76
+  },
+  "sch-sistema-p7-s1": {
+    "start": 467.34,
+    "end": 472.7
+  },
+  "sch-sistema-p7-s2": {
+    "start": 473.58,
+    "end": 481.92
+  },
+  "sch-sistema-p7-s3": {
+    "start": 482.76,
+    "end": 491.02
+  },
+  "sch-sistema-p8-s1": {
+    "start": 491.86,
+    "end": 502.96
+  },
+  "sch-sistema-p8-s2": {
+    "start": 503.8,
+    "end": 513.46
+  },
+  "sch-sistema-p8-s3": {
+    "start": 514.64,
+    "end": 526.02
+  },
+  "sch-sistema-p8-s4": {
+    "start": 526.72,
+    "end": 536.64
+  },
+  "sch-sistema-p8-s5": {
+    "start": 536.64,
+    "end": 554.82
+  },
+  "sch-sistema-p8-s6": {
+    "start": 555.66,
+    "end": 562.5
+  },
+  "sch-sistema-p8-s7": {
+    "start": 562.5,
+    "end": 574.44
+  },
+  "sch-sistema-p8-s8": {
+    "start": 575.4,
+    "end": 584.6
+  },
+  "sch-sistema-p8-s9": {
+    "start": 585.42,
+    "end": 600.04
+  },
+  "sch-sistema-p8-s10": {
+    "start": 600.3,
+    "end": 608.78
+  },
+  "sch-antecedentes-heading": {
+    "start": 610.44,
+    "end": 614.58
+  },
+  "sch-antecedentes-p1-s1": {
+    "start": 616.34,
+    "end": 624.18
+  },
+  "sch-antecedentes-p1-s2": {
+    "start": 625.08,
+    "end": 630.62
+  },
+  "sch-antecedentes-p1-s3": {
+    "start": 631.92,
+    "end": 643.36
+  },
+  "sch-antecedentes-p1-s4": {
+    "start": 643.36,
+    "end": 654.36
+  },
+  "sch-antecedentes-p1-s5": {
+    "start": 655.2,
+    "end": 673.06
+  },
+  "sch-antecedentes-p2-s1": {
+    "start": 673.88,
+    "end": 683.44
+  },
+  "sch-antecedentes-p2-s2": {
+    "start": 684.4,
+    "end": 703.9
+  },
+  "sch-antecedentes-p2-s3": {
+    "start": 704.68,
+    "end": 710.08
+  },
+  "sch-antecedentes-p3-s1": {
+    "start": 710.92,
+    "end": 715.6
+  },
+  "sch-antecedentes-p3-s2": {
+    "start": 716.4,
+    "end": 733.46
+  },
+  "sch-antecedentes-p3-s3": {
+    "start": 734.18,
+    "end": 744.86
+  },
+  "sch-antecedentes-p3-s4": {
+    "start": 746.92,
+    "end": 768.82
+  },
+  "sch-antecedentes-p3-s5": {
+    "start": 769.5,
+    "end": 787.012
+  },
+  "sch-antecedentes-p4-s1": {
+    "start": 787.492,
+    "end": 814.8
+  },
+  "sch-antecedentes-p4-s2": {
+    "start": 815.92,
+    "end": 818.54
+  },
+  "sch-antecedentes-p5-s1": {
+    "start": 819.32,
+    "end": 845.26
+  },
+  "sch-antecedentes-p5-s2": {
+    "start": 845.26,
+    "end": 855.98
+  },
+  "sch-antecedentes-p5-s3": {
+    "start": 858.02,
+    "end": 867.84
+  },
+  "sch-antecedentes-p6-s1": {
+    "start": 868.52,
+    "end": 881.8
+  },
+  "sch-antecedentes-p7-s1": {
+    "start": 882.8,
+    "end": 888.64
+  },
+  "sch-antecedentes-p8-s1": {
+    "start": 889.48,
+    "end": 906.24
+  },
+  "sch-antecedentes-p9-s1": {
+    "start": 907.36,
+    "end": 920.36
+  },
+  "sch-antecedentes-p9-s2": {
+    "start": 921.02,
+    "end": 936.34
+  },
+  "sch-antecedentes-p9-s3": {
+    "start": 937.88,
+    "end": 944.9
+  },
+  "sch-antecedentes-p9-s4": {
+    "start": 945.82,
+    "end": 948.98
+  },
+  "sch-antecedentes-p9-s5": {
+    "start": 949.82,
+    "end": 953.24
+  },
+  "sch-antecedentes-p10-s1": {
+    "start": 953.24,
+    "end": 965.38
+  },
+  "sch-antecedentes-p10-s2": {
+    "start": 965.82,
+    "end": 971.46
+  },
+  "sch-antecedentes-p10-s3": {
+    "start": 972.4,
+    "end": 989.0
+  },
+  "sch-antecedentes-p11-s1": {
+    "start": 989.7,
+    "end": 1017.78
+  },
+  "sch-antecedentes-p12-s1": {
+    "start": 1018.46,
+    "end": 1025.58
+  },
+  "sch-antecedentes-p13-s1": {
+    "start": 1026.82,
+    "end": 1044.0
+  },
+  "sch-antecedentes-p13-s2": {
+    "start": 1045.2,
+    "end": 1049.98
+  },
+  "sch-antecedentes-p13-s3": {
+    "start": 1050.76,
+    "end": 1062.82
+  },
+  "sch-antecedentes-p14-s1": {
+    "start": 1063.0,
+    "end": 1071.8
+  },
+  "sch-antecedentes-p14-s2": {
+    "start": 1072.36,
+    "end": 1087.98
+  },
+  "sch-antecedentes-p14-s3": {
+    "start": 1088.06,
+    "end": 1090.24
+  },
+  "sch-antecedentes-p15-s1": {
+    "start": 1091.42,
+    "end": 1108.34
+  },
+  "sch-antecedentes-p16-s1": {
+    "start": 1110.08,
+    "end": 1140.16
+  },
+  "sch-antecedentes-p17-s1": {
+    "start": 1141.54,
+    "end": 1146.58
+  },
+  "sch-antecedentes-p17-s2": {
+    "start": 1147.38,
+    "end": 1155.28
+  },
+  "sch-antecedentes-p17-s3": {
+    "start": 1155.96,
+    "end": 1162.86
+  },
+  "sch-antecedentes-p17-s4": {
+    "start": 1163.56,
+    "end": 1171.2
+  },
+  "sch-antecedentes-p17-s5": {
+    "start": 1171.84,
+    "end": 1178.78
+  },
+  "sch-antecedentes-p17-s6": {
+    "start": 1179.62,
+    "end": 1191.6
+  },
+  "sch-antecedentes-p17-s7": {
+    "start": 1192.66,
+    "end": 1202.823
+  },
+  "sch-antecedentes-p18-s1": {
+    "start": 1203.743,
+    "end": 1211.803
+  },
+  "sch-antecedentes-p18-s2": {
+    "start": 1213.003,
+    "end": 1216.203
+  },
+  "sch-antecedentes-p18-s3": {
+    "start": 1216.703,
+    "end": 1218.443
+  },
+  "sch-antecedentes-p18-s4": {
+    "start": 1218.923,
+    "end": 1223.24
+  },
+  "sch-antecedentes-p19-s1": {
+    "start": 1224.42,
+    "end": 1233.8
+  },
+  "sch-antecedentes-p19-s2": {
+    "start": 1234.46,
+    "end": 1247.22
+  },
+  "sch-antecedentes-p19-s3": {
+    "start": 1247.8,
+    "end": 1252.6
+  },
+  "sch-antecedentes-p19-s4": {
+    "start": 1253.08,
+    "end": 1257.34
+  },
+  "sch-fisiologia-heading": {
+    "start": 1257.72,
+    "end": 1262.9
+  },
+  "sch-fisiologia-p1-s1": {
+    "start": 1263.74,
+    "end": 1274.64
+  },
+  "sch-fisiologia-p1-s2": {
+    "start": 1275.16,
+    "end": 1292.46
+  },
+  "sch-fisiologia-p1-s3": {
+    "start": 1293.26,
+    "end": 1303.34
+  },
+  "sch-fisiologia-p2-s1": {
+    "start": 1303.34,
+    "end": 1314.22
+  },
+  "sch-fisiologia-p2-s2": {
+    "start": 1315.12,
+    "end": 1327.66
+  },
+  "sch-fisiologia-p3-s1": {
+    "start": 1327.94,
+    "end": 1342.76
+  },
+  "sch-fisiologia-p4-s1": {
+    "start": 1343.28,
+    "end": 1354.8
+  },
+  "sch-fisiologia-p4-s2": {
+    "start": 1354.8,
+    "end": 1376.5
+  },
+  "sch-fisiologia-p5-s1": {
+    "start": 1377.3,
+    "end": 1383.96
+  },
+  "sch-fisiologia-p5-s2": {
+    "start": 1384.54,
+    "end": 1390.38
+  },
+  "sch-fisiologia-p5-s3": {
+    "start": 1391.0,
+    "end": 1393.88
+  },
+  "sch-fisiologia-p6-s1": {
+    "start": 1395.32,
+    "end": 1401.76
+  },
+  "sch-fisiologia-p6-s2": {
+    "start": 1402.66,
+    "end": 1415.76
+  },
+  "sch-fisiologia-p7-s1": {
+    "start": 1416.48,
+    "end": 1430.336
+  },
+  "sch-fisiologia-p7-s2": {
+    "start": 1431.016,
+    "end": 1442.916
+  },
+  "sch-fisiologia-p8-s1": {
+    "start": 1443.556,
+    "end": 1469.66
+  },
+  "sch-fisiologia-p8-s2": {
+    "start": 1470.4,
+    "end": 1476.6
+  },
+  "sch-fisiologia-p8-s3": {
+    "start": 1477.58,
+    "end": 1491.5
+  },
+  "sch-fisiologia-p9-s1": {
+    "start": 1492.62,
+    "end": 1503.66
+  },
+  "sch-fisiologia-p10-s1": {
+    "start": 1505.18,
+    "end": 1518.6
+  },
+  "sch-fisiologia-p10-s2": {
+    "start": 1518.6,
+    "end": 1532.48
+  },
+  "sch-fisiologia-p10-s3": {
+    "start": 1533.0,
+    "end": 1538.76
+  },
+  "sch-fisiologia-p11-s1": {
+    "start": 1538.76,
+    "end": 1541.4
+  },
+  "sch-fisiologia-p11-s2": {
+    "start": 1542.9,
+    "end": 1546.66
+  },
+  "sch-fisiologia-p11-s3": {
+    "start": 1547.4,
+    "end": 1551.62
+  },
+  "sch-fisiologia-p11-s4": {
+    "start": 1552.44,
+    "end": 1562.06
+  },
+  "sch-fisiologia-p11-s5": {
+    "start": 1562.78,
+    "end": 1569.98
+  },
+  "sch-fisiologia-p12-s1": {
+    "start": 1570.66,
+    "end": 1577.58
+  },
+  "sch-fisiologia-p12-s2": {
+    "start": 1577.58,
+    "end": 1588.58
+  },
+  "sch-fisiologia-p12-s3": {
+    "start": 1589.8,
+    "end": 1600.08
+  },
+  "sch-fisiologia-p13-s1": {
+    "start": 1600.82,
+    "end": 1622.82
+  },
+  "sch-fisiologia-p14-s1": {
+    "start": 1623.48,
+    "end": 1643.38
+  },
+  "sch-fisiologia-p15-s1": {
+    "start": 1644.32,
+    "end": 1653.28
+  },
+  "sch-fisiologia-p16-s1": {
+    "start": 1655.46,
+    "end": 1672.76
+  },
+  "sch-fisiologia-p16-s2": {
+    "start": 1673.62,
+    "end": 1680.58
+  },
+  "sch-fisiologia-p17-s1": {
+    "start": 1681.58,
+    "end": 1686.64
+  },
+  "sch-fisiologia-p17-s2": {
+    "start": 1687.98,
+    "end": 1701.64
+  },
+  "sch-fisiologia-p18-s1": {
+    "start": 1702.72,
+    "end": 1705.48
+  },
+  "sch-fisiologia-p18-s2": {
+    "start": 1706.2,
+    "end": 1740.62
+  },
+  "sch-fisiologia-p18-s3": {
+    "start": 1741.4,
+    "end": 1750.54
+  },
+  "sch-fisiologia-p18-s4": {
+    "start": 1751.18,
+    "end": 1761.54
+  },
+  "sch-fisiologia-p18-s5": {
+    "start": 1762.52,
+    "end": 1771.86
+  },
+  "sch-fisiologia-p19-s1": {
+    "start": 1772.98,
+    "end": 1777.52
+  },
+  "sch-fisiologia-p19-s2": {
+    "start": 1778.44,
+    "end": 1791.56
+  },
+  "sch-fisiologia-p20-s1": {
+    "start": 1792.58,
+    "end": 1799.62
+  },
+  "sch-fisiologia-p20-s2": {
+    "start": 1800.72,
+    "end": 1814.32
+  },
+  "sch-fisiologia-p20-s3": {
+    "start": 1815.1,
+    "end": 1819.32
+  },
+  "sch-fisiologia-p20-s4": {
+    "start": 1820.26,
+    "end": 1834.54
+  },
+  "sch-inef-heading": {
+    "start": 1834.54,
+    "end": 1838.56
+  },
+  "sch-inef-p1-s1": {
+    "start": 1839.4,
+    "end": 1858.026
+  },
+  "sch-inef-p1-s2": {
+    "start": 1859.246,
+    "end": 1863.026
+  },
+  "sch-inef-p1-s3": {
+    "start": 1863.806,
+    "end": 1874.506
+  },
+  "sch-inef-p1-s4": {
+    "start": 1875.046,
+    "end": 1882.16
+  },
+  "sch-inef-p2-s1": {
+    "start": 1882.86,
+    "end": 1894.22
+  },
+  "sch-inef-p2-s2": {
+    "start": 1894.98,
+    "end": 1906.44
+  },
+  "sch-inef-p2-s3": {
+    "start": 1907.28,
+    "end": 1917.16
+  },
+  "sch-inef-p2-s4": {
+    "start": 1917.96,
+    "end": 1925.08
+  },
+  "sch-inef-p2-s5": {
+    "start": 1925.94,
+    "end": 1938.109
+  },
+  "sch-inef-p3-s1": {
+    "start": 1940.069,
+    "end": 1950.089
+  },
+  "sch-inef-p4-s1": {
+    "start": 1950.929,
+    "end": 1965.92
+  },
+  "sch-inef-p4-s2": {
+    "start": 1966.76,
+    "end": 1981.8
+  },
+  "sch-inef-p5-s1": {
+    "start": 1981.8,
+    "end": 1999.06
+  },
+  "sch-inef-p6-s1": {
+    "start": 1999.92,
+    "end": 2021.48
+  },
+  "sch-inef-p7-s1": {
+    "start": 2022.12,
+    "end": 2036.7
+  },
+  "sch-inef-p7-s2": {
+    "start": 2037.36,
+    "end": 2081.96
+  },
+  "sch-inef-p8-s1": {
+    "start": 2082.4,
+    "end": 2086.6
+  },
+  "sch-inef-p9-s1": {
+    "start": 2087.48,
+    "end": 2114.34
+  },
+  "sch-inef-p10-s1": {
+    "start": 2115.54,
+    "end": 2121.96
+  },
+  "sch-inef-p10-s2": {
+    "start": 2123.06,
+    "end": 2130.5
+  },
+  "sch-inef-p11-s1": {
+    "start": 2131.34,
+    "end": 2137.64
+  },
+  "sch-inef-p11-s2": {
+    "start": 2138.64,
+    "end": 2153.44
+  },
+  "sch-inef-p11-s3": {
+    "start": 2154.24,
+    "end": 2168.56
+  },
+  "sch-inef-p11-s4": {
+    "start": 2169.64,
+    "end": 2173.7
+  },
+  "sch-inef-p11-s5": {
+    "start": 2174.66,
+    "end": 2185.46
+  },
+  "sch-inef-p12-s1": {
+    "start": 2186.2,
+    "end": 2197.16
+  },
+  "sch-inef-p12-s2": {
+    "start": 2198.22,
+    "end": 2208.3
+  },
+  "sch-inef-p12-s3": {
+    "start": 2209.94,
+    "end": 2223.28
+  },
+  "sch-inef-p13-s1": {
+    "start": 2224.24,
+    "end": 2232.12
+  },
+  "sch-inef-p13-s2": {
+    "start": 2233.0,
+    "end": 2241.64
+  },
+  "sch-inef-p13-s3": {
+    "start": 2242.44,
+    "end": 2250.6
+  },
+  "sch-inef-p13-s4": {
+    "start": 2251.22,
+    "end": 2255.3
+  },
+  "sch-treinta-heading": {
+    "start": 2255.82,
+    "end": 2261.64
+  },
+  "sch-treinta-p1-s1": {
+    "start": 2262.24,
+    "end": 2269.98
+  },
+  "sch-treinta-p1-s2": {
+    "start": 2269.98,
+    "end": 2277.96
+  },
+  "sch-treinta-p1-s3": {
+    "start": 2278.78,
+    "end": 2291.26
+  },
+  "sch-treinta-p2-s1": {
+    "start": 2292.22,
+    "end": 2302.72
+  },
+  "sch-treinta-p2-s2": {
+    "start": 2303.54,
+    "end": 2312.72
+  },
+  "sch-treinta-p2-s3": {
+    "start": 2313.64,
+    "end": 2355.51
+  },
+  "sch-treinta-p2-s4": {
+    "start": 2356.95,
+    "end": 2369.91
+  },
+  "sch-treinta-p2-s5": {
+    "start": 2370.63,
+    "end": 2378.97
+  },
+  "sch-treinta-p3-s1": {
+    "start": 2378.97,
+    "end": 2391.95
+  },
+  "sch-treinta-p3-s2": {
+    "start": 2392.67,
+    "end": 2405.27
+  },
+  "sch-treinta-p3-s3": {
+    "start": 2406.1,
+    "end": 2421.79
+  },
+  "sch-treinta-p3-s4": {
+    "start": 2422.45,
+    "end": 2434.59
+  },
+  "sch-treinta-p3-s5": {
+    "start": 2434.59,
+    "end": 2444.97
+  },
+  "sch-treinta-p4-s1": {
+    "start": 2447.21,
+    "end": 2453.81
+  },
+  "sch-treinta-p4-s2": {
+    "start": 2454.79,
+    "end": 2461.47
+  },
+  "sch-treinta-p4-s3": {
+    "start": 2462.53,
+    "end": 2477.69
+  },
+  "sch-treinta-p5-s1": {
+    "start": 2478.65,
+    "end": 2504.59
+  },
+  "sch-treinta-p5-s2": {
+    "start": 2505.03,
+    "end": 2524.01
+  },
+  "sch-treinta-p5-s3": {
+    "start": 2525.13,
+    "end": 2531.35
+  },
+  "sch-treinta-p6-s1": {
+    "start": 2531.89,
+    "end": 2539.69
+  },
+  "sch-treinta-p7-s1": {
+    "start": 2540.15,
+    "end": 2553.85
+  },
+  "sch-treinta-p7-s2": {
+    "start": 2555.45,
+    "end": 2579.21
+  },
+  "sch-treinta-p8-s1": {
+    "start": 2580.63,
+    "end": 2588.23
+  },
+  "sch-treinta-p8-s2": {
+    "start": 2589.01,
+    "end": 2604.69
+  },
+  "sch-treinta-p8-s3": {
+    "start": 2605.67,
+    "end": 2607.97
+  },
+  "sch-treinta-p9-s1": {
+    "start": 2608.95,
+    "end": 2627.25
+  },
+  "sch-treinta-p10-s1": {
+    "start": 2628.77,
+    "end": 2641.89
+  },
+  "sch-treinta-p10-s2": {
+    "start": 2643.15,
+    "end": 2672.25
+  },
+  "sch-treinta-p10-s3": {
+    "start": 2673.37,
+    "end": 2688.38
+  },
+  "sch-finales-heading": {
+    "start": 2689.44,
+    "end": 2691.14
+  },
+  "sch-finales-p1-s1": {
+    "start": 2691.76,
+    "end": 2705.5
+  },
+  "sch-finales-p1-s2": {
+    "start": 2706.26,
+    "end": 2721.75
+  },
+  "sch-finales-p2-s1": {
+    "start": 2722.73,
+    "end": 2737.37
+  },
+  "sch-finales-p2-s2": {
+    "start": 2738.27,
+    "end": 2753.53
+  },
+  "sch-finales-p2-s3": {
+    "start": 2754.79,
+    "end": 2769.51
+  },
+  "sch-finales-p3-s1": {
+    "start": 2770.17,
+    "end": 2787.67
+  },
+  "sch-finales-p3-s2": {
+    "start": 2788.35,
+    "end": 2803.85
+  },
+  "sch-finales-p3-s3": {
+    "start": 2804.73,
+    "end": 2817.59
+  },
+  "sch-finales-p4-s1": {
+    "start": 2818.33,
+    "end": 2832.73
+  },
+  "sch-finales-p4-s2": {
+    "start": 2833.73,
+    "end": 2840.97
+  },
+  "sch-finales-p5-s1": {
+    "start": 2840.97,
+    "end": 2853.67
+  },
+  "sch-finales-p5-s2": {
+    "start": 2854.07,
+    "end": 2863.91
+  },
+  "sch-finales-p5-s3": {
+    "start": 2865.67,
+    "end": 2871.21
+  },
+  "sch-finales-p5-s4": {
+    "start": 2871.79,
+    "end": 2881.83
+  },
+  "sch-finales-p5-s5": {
+    "start": 2882.43,
+    "end": 2894.61
+  },
+  "sch-finales-p5-s6": {
+    "start": 2894.61,
+    "end": 2913.87
+  },
+  "sch-finales-p6-s1": {
+    "start": 2915.17,
+    "end": 2932.97
+  },
+  "sch-finales-p6-s2": {
+    "start": 2933.93,
+    "end": 2946.39
+  },
+  "sch-finales-p6-s3": {
+    "start": 2948.01,
+    "end": 2965.81
+  },
+  "sch-finales-p6-s4": {
+    "start": 2966.97,
+    "end": 2982.77
+  },
+  "sch-finales-p7-s1": {
+    "start": 2983.77,
+    "end": 2994.31
+  },
+  "sch-finales-p7-s2": {
+    "start": 2995.13,
+    "end": 3004.87
+  },
+  "sch-finales-p7-s3": {
+    "start": 3005.83,
+    "end": 3019.81
+  },
+  "sch-finales-p7-s4": {
+    "start": 3020.61,
+    "end": 3041.55
+  },
+  "sch-finales-p7-s5": {
+    "start": 3042.01,
+    "end": 3051.45
+  },
+  "sch-finales-p8-s1": {
+    "start": 3054.58,
+    "end": 3070.28
+  },
+  "sch-finales-p8-s2": {
+    "start": 3071.02,
+    "end": 3076.16
+  },
+  "sch-finales-p8-s3": {
+    "start": 3076.16,
+    "end": 3082.96
+  }
+}

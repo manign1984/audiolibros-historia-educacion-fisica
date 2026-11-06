@@ -384,6 +384,88 @@
       "audioDuration": 1878.909388,
       "audioSha256": "e5b586268ac633f814e898003baf7e8de690fce605db7dd708954613267deedf",
       "documentSha256": "fbdf5fb19574afc9a678d83e366d61316bf83d4b9ba21648b3284c2f65e57640"
+    },
+    {
+      "id": "scharagrodsky-constitucion-ef",
+      "config": {
+        "module": "src/scharagrodsky/readerConfig.js",
+        "export": "scharagrodskyReaderConfig"
+      },
+      "document": {
+        "module": "src/scharagrodsky/readingDocument.js",
+        "export": "scharagrodskyReadingDocument"
+      },
+      "page": "src/scharagrodsky/ScharagrodskyApp.jsx",
+      "main": "src/scharagrodsky/main.jsx",
+      "creditsKey": "scharagrodsky",
+      "storage": {
+        "notesKey": "scharagrodsky-constitucion-ef-reader-notes-v1",
+        "stateKey": "scharagrodsky-constitucion-ef-reader-state-v1"
+      },
+      "sync": {
+        "unit": "sentence",
+        "status": "ready",
+        "review": "252 intervalos de palabras reconocidas en el MP3; tres epígrafes sin audio. Alineación automática con 18 ventanas acústicas comprobadas por separado y resolución explícita de nombres propios y diferencias del VTT. Evidencia en data/scharagrodsky-alignment-audit.json; no certifica escucha humana exhaustiva."
+      },
+      "materials": [
+        {
+          "path": "src/scharagrodsky/academic-source.json",
+          "kind": "text",
+          "bytes": 96115,
+          "sha256": "c8a9f599e4ad82e26b20c4a68163e9328addf665b2cae93f6bbd024e16f73f42"
+        },
+        {
+          "path": "src/scharagrodsky/narration.txt",
+          "kind": "text",
+          "bytes": 51210,
+          "sha256": "d356c50be0a5e6be84ebe639e657a4c2eaec9fc6e6c4ba986adf4a514c46aa77"
+        },
+        {
+          "path": "public/assets/scharagrodsky-texto-academico.txt",
+          "kind": "text",
+          "bytes": 85296,
+          "sha256": "8170a57234ffb87bf21841d0567ae7656c1baf69f3a4eb26eac32a5ecc6bbdf8"
+        },
+        {
+          "path": "public/assets/scharagrodsky-audiolibro.mp3",
+          "kind": "audio",
+          "bytes": 74010901,
+          "sha256": "fa27212f084f2f080c1f095a5cc07595a88dc5f2a969eeef9ab4f0a18caf2afd"
+        },
+        {
+          "path": "public/assets/scharagrodsky-constitucion-ef.pdf",
+          "kind": "pdf",
+          "bytes": 470603,
+          "sha256": "288e4e903262bb47c224c5c4a1c0af7475bd5de767fcc72ae275e22923f43f62"
+        },
+        {
+          "path": "src/scharagrodsky/sync.vtt",
+          "kind": "subtitles",
+          "bytes": 101706,
+          "sha256": "cca99ff0da4c0c28abba0c2843a8b5b1e06ba43461cb844402b56831be6a1d13"
+        },
+        {
+          "path": "public/assets/scharagrodsky-subtitulos-originales.vtt",
+          "kind": "subtitles",
+          "bytes": 101706,
+          "sha256": "cca99ff0da4c0c28abba0c2843a8b5b1e06ba43461cb844402b56831be6a1d13"
+        },
+        {
+          "path": "src/scharagrodsky/alignment.json",
+          "kind": "alignment",
+          "bytes": 18116,
+          "sha256": "fd982c704b6a120332a2846a6aed3ce6d4d35709db875aa6e5683fcb39032347"
+        }
+      ],
+      "documentSha256": "efc4999fa5d4088c0d50f82cf3b83f2e0b946c3395d711733e802bdf9838194e",
+      "audioDuration": 3083.755102,
+      "audioSha256": "fa27212f084f2f080c1f095a5cc07595a88dc5f2a969eeef9ab4f0a18caf2afd",
+      "equalTextFiles": [
+        [
+          "src/scharagrodsky/sync.vtt",
+          "public/assets/scharagrodsky-subtitulos-originales.vtt"
+        ]
+      ]
     }
   ],
   "baseline": {
