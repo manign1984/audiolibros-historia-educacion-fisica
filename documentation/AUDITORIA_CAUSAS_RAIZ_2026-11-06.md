@@ -157,3 +157,18 @@ No concluimos que:
 **Aplicación:** [Protocolo de autonomía v1](PROTOCOLO_AUTONOMIA_V1_2026-11-06.md) y [plantilla de acta de obra](plantillas/ACTA_OBRA_AUTONOMIA_V1.md). Son instrumentos auxiliares. No alteran las normas, las obras ni el catálogo.
 
 **Fuentes principales:** [auditoría inicial](MARCAIDA_SCALTRITTI_AUDITORIA_PROPUESTA_2026-11-04.md), [validación del lector](MARCAIDA_SCALTRITTI_VALIDACION_LECTOR_2026-11-04.md), [corrección de voz](MARCAIDA_SCALTRITTI_CORRECCION_AUDIO_2026-11-05.md), [consolidación técnica](CONSOLIDACION_TECNICA_2026-11-05.md), [ficha de Scharagrodsky](SCHARAGRODSKY_2026.md), [registro de validación](../validation/README.md) y PR 66–77.
+
+
+## 9. Acuerdo posterior sobre reparto de responsabilidades · 06/11/2026
+
+Tras revisar el caso, el responsable del proyecto propuso **asumir personalmente la selección y confirmación del MP3 y del VTT/SRT definitivos, generados y emitidos mediante ElevenLabs, antes del comienzo de cada nueva página**. Se acepta esa distribución para reducir trabajo redundante de la IA y aprovechar el conocimiento directo de quien produce el audio.
+
+Esto **no modifica los hechos retrospectivos** de RCA-01 ni se interpreta como prueba de que el audio correcto estuviera disponible en el momento de la PR 66.
+
+En adelante:
+- **Responsable del proyecto:** identifica y confirma qué MP3 y subtítulos son los definitivos para la obra; los entrega o enlaza una vez, sin obligación de auditar versiones históricas.
+- **IA:** recibe esa selección como autoridad editorial; verifica integridad, acceso, duración, estructura temporal y correspondencia técnica con el texto; pregunta únicamente ante contradicción concreta y no elige por su cuenta otra voz.
+- **Limitación conservada:** selección editorial correcta no equivale a sincronización milimétrica verificada; las pruebas de G3/G6/G7 y la declaración honesta de cobertura siguen vigentes.
+- **Scharagrodsky:** se ratifica sin cambios el control de persistencia, checkpoints, transferencias grandes y reanudación idempotente como responsabilidad técnica de la IA.
+
+El detalle de esta decisión se incorpora en [Protocolo de autonomía v1](PROTOCOLO_AUTONOMIA_V1_2026-11-06.md) y su [acta reutilizable](plantillas/ACTA_OBRA_AUTONOMIA_V1.md). La norma superior continúa siendo Directrices canónicas 2.0.
