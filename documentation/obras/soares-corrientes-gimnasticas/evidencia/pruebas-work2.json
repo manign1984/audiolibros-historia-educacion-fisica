@@ -1,35 +1,156 @@
 {
-  "date":"2026-11-06","timezone":"America/Buenos_Aires",
-  "scope":"Work 2 local candidate; no deployment",
-  "sourceCommit":"commit containing this file; final checkpoint records the verified code SHA",
-  "automatic":[
-    {"command":"npm ci","exitCode":0},
-    {"command":"npm run test:library","exitCode":0},
-    {"command":"npm run test:two-works","exitCode":0},
-    {"command":"npm run test:reader-runtime","exitCode":0,"scope":"six existing readers; simulated DOM"},
-    {"command":"npm run test:hobsbawm","exitCode":0},
-    {"command":"npm run test:aisenstein","exitCode":0},
-    {"command":"npm run test:marcaida","exitCode":0},
-    {"command":"npm run test:scharagrodsky","exitCode":0},
-    {"command":"npm run test:work-validation","exitCode":0},
-    {"command":"npm run test:soares","exitCode":0,"scope":"real local document and synthetic CI fallback; notes, export, storage, no false seeks or highlighting"},
-    {"command":"npm run validate:works","exitCode":0,"works":6,"errors":0,"warnings":6},
-    {"command":"npm run build && npm run verify:build && npm run validate:works -- --dist dist","base":"/","exitCode":0,"privateMaterialsCopied":false},
-    {"command":"npm run build && npm run verify:build && npm run validate:works -- --dist dist","base":"/audiolibros-historia-educacion-fisica/","exitCode":0,"privateMaterialsCopied":false},
-    {"command":"SOARES_LOCAL_CANDIDATE=1 npm run build; verify:build; validate:works -- --dist dist","base":"/","exitCode":0,"privateMaterialsCopied":true,"publishAllowed":false},
-    {"command":"SOARES_LOCAL_CANDIDATE=1 npm run build; verify:build; validate:works -- --dist dist","base":"/audiolibros-historia-educacion-fisica/","exitCode":0,"privateMaterialsCopied":true,"publishAllowed":false},
-    {"command":"python tools/soares/audit_reconstruction.py PDF ACADEMIC DOCUMENT REPORT","exitCode":0},
-    {"command":"ffmpeg -i MP3 -af silencedetect=noise=-35dB:d=0.15 -f null -","exitCode":0,"silences":1053,"decodedSeconds":3113.331293},
-    {"command":"git diff --check","exitCode":0}
+  "date": "2026-11-06",
+  "timezone": "America/Buenos_Aires",
+  "scope": "Work 2 local candidate; no deployment",
+  "sourceCommit": "6faa5b129fe2b76c1a51d193fc874cae4189a5e8",
+  "automatic": [
+    {
+      "command": "npm ci",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test:library",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test:two-works",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test:reader-runtime",
+      "exitCode": 0,
+      "scope": "six existing readers; simulated DOM"
+    },
+    {
+      "command": "npm run test:hobsbawm",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test:aisenstein",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test:marcaida",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test:scharagrodsky",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test:work-validation",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test:soares",
+      "exitCode": 0,
+      "scope": "real local document and synthetic CI fallback; notes, export, storage, no false seeks or highlighting"
+    },
+    {
+      "command": "npm run validate:works",
+      "exitCode": 0,
+      "works": 6,
+      "errors": 0,
+      "warnings": 6
+    },
+    {
+      "command": "npm run build && npm run verify:build && npm run validate:works -- --dist dist",
+      "base": "/",
+      "exitCode": 0,
+      "privateMaterialsCopied": false
+    },
+    {
+      "command": "npm run build && npm run verify:build && npm run validate:works -- --dist dist",
+      "base": "/audiolibros-historia-educacion-fisica/",
+      "exitCode": 0,
+      "privateMaterialsCopied": false
+    },
+    {
+      "command": "SOARES_LOCAL_CANDIDATE=1 npm run build; verify:build; validate:works -- --dist dist",
+      "base": "/",
+      "exitCode": 0,
+      "privateMaterialsCopied": true,
+      "publishAllowed": false
+    },
+    {
+      "command": "SOARES_LOCAL_CANDIDATE=1 npm run build; verify:build; validate:works -- --dist dist",
+      "base": "/audiolibros-historia-educacion-fisica/",
+      "exitCode": 0,
+      "privateMaterialsCopied": true,
+      "publishAllowed": false
+    },
+    {
+      "command": "python tools/soares/audit_reconstruction.py PDF ACADEMIC DOCUMENT REPORT",
+      "exitCode": 0
+    },
+    {
+      "command": "ffmpeg -i MP3 -af silencedetect=noise=-35dB:d=0.15 -f null -",
+      "exitCode": 0,
+      "silences": 1053,
+      "decodedSeconds": 3113.331293
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
   ],
-  "browserInitialInspection":{
-    "viewport":[1363,936],"header":80,"blocks":[856,856,2568,856,856],"contextUnits":[856,856,856],
-    "horizontalOverflow":false,"imagesLoaded":4,"dialogOpenedAndClosed":true,"audioMetadataSeconds":3113.331293,"autoplay":false,"academicNotes":29,"highlightedSentences":0,
-    "scope":"initial local build; before final correction of source calls; CSS unchanged afterwards",
-    "notAcceptance":true,"remaining":["all screens visual/perceptive review","low height","320/390/768","zoom","reduced motion","keyboard sweep","audio-text listening"]
+  "browserInitialInspection": {
+    "viewport": [
+      1363,
+      936
+    ],
+    "header": 80,
+    "blocks": [
+      856,
+      856,
+      2568,
+      856,
+      856
+    ],
+    "contextUnits": [
+      856,
+      856,
+      856
+    ],
+    "horizontalOverflow": false,
+    "imagesLoaded": 4,
+    "dialogOpenedAndClosed": true,
+    "audioMetadataSeconds": 3113.331293,
+    "autoplay": false,
+    "academicNotes": 29,
+    "highlightedSentences": 0,
+    "scope": "initial local build; before final correction of source calls; CSS unchanged afterwards",
+    "notAcceptance": true,
+    "remaining": [
+      "all screens visual/perceptive review",
+      "low height",
+      "320/390/768",
+      "zoom",
+      "reduced motion",
+      "keyboard sweep",
+      "audio-text listening"
+    ]
   },
-  "perceptual":{"humanListening":false,"semanticAcousticAlignment":false,"waveformSilenceOnly":true},
-  "unchangedWarnings":["Hobsbawm timeline gap","Aisenstein duration delta","Aisenstein PDF absent","Aisenstein fine audio review","Marcaida timeline gaps","Marcaida fine audio review"],
-  "notTested":["public Soares media transport","public route acceptance","full visual regression of all existing works","mobile physical devices"],
-  "activeRegistry":"validation/works.json remains byte-identical; candidate registered separately"
+  "perceptual": {
+    "humanListening": false,
+    "semanticAcousticAlignment": false,
+    "waveformSilenceOnly": true
+  },
+  "unchangedWarnings": [
+    "Hobsbawm timeline gap",
+    "Aisenstein duration delta",
+    "Aisenstein PDF absent",
+    "Aisenstein fine audio review",
+    "Marcaida timeline gaps",
+    "Marcaida fine audio review"
+  ],
+  "notTested": [
+    "public Soares media transport",
+    "public route acceptance",
+    "full visual regression of all existing works",
+    "mobile physical devices"
+  ],
+  "activeRegistry": "validation/works.json remains byte-identical; candidate registered separately",
+  "sourceCommitVerifiedRemotely": true,
+  "githubActions": "No associated run returned by head_sha query; local results only, remote CI pending"
 }

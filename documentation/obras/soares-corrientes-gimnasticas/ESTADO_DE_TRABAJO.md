@@ -10,7 +10,8 @@ Actualización: **06-11-2026, Argentina**. **CANDIDATO LOCAL IMPLEMENTADO Y EVAL
 - Ingreso Work 2: HEAD remoto y local `715bc4cd7e5a52b87776b94366b68ff99e056a6e`; PR abierta/draft comprobada antes de editar.
 - Checkpoint de reconstrucción leído de vuelta: `51dedc248d9386302cbdb4ecab01e53c25b0134c`.
 - Checkpoint de candidato inicial leído de vuelta: `5b007d82d0ffb7c8c8592b9d773b71cec23ed2dd`.
-- Commit con correcciones finales y pruebas: el contenedor de este estado y su historial; se verifica remotamente después de escribirlo, sin inventar un SHA futuro. El cierre añade el SHA de código comprobado.
+- **Commit de código y correcciones finales comprobado:** [`6faa5b129fe2b76c1a51d193fc874cae4189a5e8`](https://github.com/manign1984/audiolibros-historia-educacion-fisica/commit/6faa5b129fe2b76c1a51d193fc874cae4189a5e8). Lectura remota del informe académico y HEAD de PR coincidentes. `test:soares` reejecutado sobre ese commit: código 0.
+- Commit de cierre documental: consultar el historial de este archivo y HEAD de la PR; contiene este estado y no cambia el código probado.
 - [Acta](ACTA_OBRA.md), [índice](README.md), [recuperación y pruebas detalladas](WORK_2_TECNICO.md).
 
 ## Entregado y estado de puertas
@@ -50,7 +51,7 @@ Enlaces completos en [auditoría](AUDITORIA_DOCUMENTAL.md). Duración del conten
 
 ## Pruebas y límites
 
-[Evidencia completa](evidencia/pruebas-work2.json). Ejecutados con código 0: `npm ci`, `test:library`, `test:two-works`, `test:reader-runtime`, `test:hobsbawm`, `test:aisenstein`, `test:marcaida`, `test:scharagrodsky`, `test:work-validation`, `test:soares`, `validate:works`, builds ordinarios y candidatos raíz/Pages con `verify:build` y validación de referencias. Soares comprobado con fuente real local y, aparte, con datos sintéticos sin materiales privados para CI. `git diff --check` aprobado.
+[Evidencia completa](evidencia/pruebas-work2.json). Ejecutados con código 0: `npm ci`, `test:library`, `test:two-works`, `test:reader-runtime`, `test:hobsbawm`, `test:aisenstein`, `test:marcaida`, `test:scharagrodsky`, `test:work-validation`, `test:soares`, `validate:works`, builds ordinarios y candidatos raíz/Pages con `verify:build` y validación de referencias. Soares comprobado con fuente real local y, aparte, con datos sintéticos sin materiales privados para CI. `git diff --check` aprobado. La consulta a GitHub Actions por SHA de código no devolvió ejecuciones asociadas; no se afirma CI remota aprobada. Queda comprobación remota para Work 3.
 
 La comprobación inicial de navegador observó encabezado 80 px, bloques 856/856/2568/856/856, Contexto 856/856/856, cuatro imágenes cargadas, sin overflow horizontal, lector abierto/cerrado, MP3 sin autoplay, 29 notas y cero resaltado. Fue anterior a la corrección final de llamadas; después se reejecutaron controles de fuente/runtime. No sustituye el cotejo visual/perceptivo final. No se declara escucha humana ni ASR. El análisis completo de pausas con ffmpeg detectó 1053 silencios; no prueba límites semánticos.
 
