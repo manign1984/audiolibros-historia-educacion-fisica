@@ -35,6 +35,32 @@ for(const r of acoustic.records){
 assert.equal(acoustic.comparedBoundaries,acoustic.records.reduce((n,r)=>n+Object.keys(r.boundaries).length,0));
 assert.equal(acoustic.disagreements,acoustic.records.flatMap(r=>Object.values(r.boundaries)).filter(b=>!b.agreementWithin450ms).length);
 assert.equal(acoustic.needsHumanReview,acoustic.records.filter(r=>r.needsHumanReview).length);
+const ctc=JSON.parse(await readFile('../documentation/obras/soares-corrientes-gimnasticas/evidencia/ctc-work3.json','utf8'));
+assert.equal(ctc.status,'candidate-not-activated');assert.equal(ctc.runtimeEnabled,false);assert.equal(ctc.humanListening,false);
+assert.equal(ctc.notesOrBibliographyTimed,false);assert.equal(ctc.thresholdsAreTriageOnly,true);
+assert.equal(ctc.audioSha256,manifest.localInputs.mp3Sha256);assert.equal(ctc.vttSha256,manifest.localInputs.vttSha256);
+assert.equal(ctc.modelWeights.sha256,'20ef12963ab4924bef49ac4fc7f58ad5da2ee43b2c11bc8c853c9b90ecdbc680');
+assert.equal(ctc.chunks,111);assert.equal(ctc.narratedVttWords,6390);assert.equal(ctc.settings.paddingSeconds,4);
+assert.equal(ctc.records.length,correspondence.units);assert.equal(new Set(ctc.records.map(r=>r.id)).size,ctc.records.length);
+for(const r of ctc.records){
+  assert.ok(r.id in correspondence.evidence);assert.equal(r.runtimeEnabled,false);
+  assert.ok(Number.isFinite(r.candidateStart)&&Number.isFinite(r.candidateEnd));
+  assert.ok(r.candidateStart>=0&&r.candidateStart<r.candidateEnd&&r.candidateEnd<=3113.331293);
+  for(const b of Object.values(r.sameTokenWhisperComparison)){
+    assert.ok(Math.abs((b.ctc-b.whisperTiny)-b.deltaSeconds)<.0000011);
+    assert.equal(b.within300ms,Math.abs(b.deltaSeconds)<=.3);
+  }
+  assert.equal(r.machineCorroboratedCandidate,r.flags.length===0&&r.ctcVsWhisperBothWithin300ms);
+  assert.equal(r.requiresReview,!r.machineCorroboratedCandidate);
+}
+assert.equal(ctc.machineCorroboratedCandidates,ctc.records.filter(r=>r.machineCorroboratedCandidate).length);
+assert.equal(ctc.requiresReview,ctc.records.filter(r=>r.requiresReview).length);
+for(const [flag,n] of Object.entries(ctc.flagCounts))assert.equal(n,ctc.records.filter(r=>r.flags.includes(flag)).length);
+const comparedCtcEdges=ctc.records.flatMap(r=>Object.values(r.sameTokenWhisperComparison));
+assert.equal(ctc.comparisonDiagnostics.comparedBoundaries,comparedCtcEdges.length);
+assert.equal(ctc.comparisonDiagnostics.within300ms,comparedCtcEdges.filter(b=>b.within300ms).length);
+assert.equal(ctc.comparisonDiagnostics.over450ms,comparedCtcEdges.filter(b=>Math.abs(b.deltaSeconds)>.45).length);
+assert.equal(ctc.comparisonDiagnostics.unitsWithoutBothWhisperBoundaries,ctc.records.filter(r=>Object.keys(r.sameTokenWhisperComparison).length<2).length);
 assert.deepEqual([...page.matchAll(/<section id="([a-z]+)"/g)].map(x=>x[1]),['inicio','autor','contexto','lectura']);
 assert.match(page,/<JourneyCredits workId="soares"/);assert.equal((page.match(/className="so-screen so-context/g)||[]).length,3);
 assert.match(await readFile('src/shared/canonical-reading.css','utf8'),/\.scharagrodsky-page, \.soares-page\)/);

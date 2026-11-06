@@ -35,4 +35,7 @@ Para reanudar prevalece ESTADO_DE_TRABAJO.md: siguiente etapa Work 3, con derech
 - [Validación integral, correcciones, métodos y límites](WORK_3_VALIDACION.md).
 - [Colación académica final](evidencia/colacion-work3.json), [comparación acústica sin activar](evidencia/acustica-work3.json) y [revisiones/hashes de modelos](evidencia/modelos-work3.json).
 - [Pruebas locales y CI](evidencia/pruebas-work3.json).
-- Recuperación de los dos paquetes privados versión 1 y próximo paso exacto en ESTADO_DE_TRABAJO.md. No repetir reconstrucción ni ASR conservados.
+- Recuperación del documento privado v1 y paquete acústico v4 y próximo paso exacto en ESTADO_DE_TRABAJO.md. No repetir reconstrucción ni ASR conservados.
+
+
+Reanudación actual: [CTC completo y contraste numérico](evidencia/ctc-work3.json), [controles](evidencia/controles-ctc-work3.json). 194 candidatos, 122 unidades corroboradas por la regla y 72 para revisión, sin activar tiempos. Paquete privado v4 con 80 extractos actuales y material histórico preservado. [Aclaración de condiciones de publicación](RECURSOS_Y_FUENTES.md).

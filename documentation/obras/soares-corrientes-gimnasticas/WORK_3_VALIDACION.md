@@ -83,3 +83,28 @@ Navegador recuperado: candidato carga y mantiene ancho 1348/1348. La interfaz na
 
 
 Piloto CTC: padding 0,8 s descartado por recorte de palabras en bordes. La comparación global de 6120 tokens coincidentes con Whisper mostró adelantos de hasta 2,39 s y finales hasta 3,948 s fuera del cue. Se amplía contexto a 4 s; no se conservan intervalos del piloto como candidatos aceptados. Checkpoint privado v2 (4/111 ventanas amplias) ya guardado con SHA `ed0c85bafdb9001bee9d9649b8301ce1921a7d126e744eb08b0799fc8cc01b8a`; no es un resultado completo.
+
+
+## Resultado completo de la reanudación · CTC
+
+**Cálculo completado: 111/111 ventanas, 6390 palabras del VTT y 194 intervalos candidatos de unidades académicas.** Modelo MMS_FA, pesos SHA-256 `20ef12963ab4924bef49ac4fc7f58ad5da2ee43b2c11bc8c853c9b90ecdbc680`; torch/torchaudio 2.8.0 CPU, NumPy 2.2.6, num2words 0.5.14. No se repitió Whisper ni se alteraron los originales. El procedimiento comprueba fuentes, versiones y pesos; conserva checkpoint atómico por ventana y rechaza escrituras concurrentes. La reanudación retuvo los resultados de las ventanas previas.
+
+[Informe numérico](evidencia/ctc-work3.json): se compararon **360 extremos de tokens idénticos** con Whisper tiny; **314** difieren a lo sumo 300 ms, mediana absoluta **0,1048035 s**; 35 difieren más de 450 ms. 27 unidades carecen de comparación Whisper en al menos un extremo. En **122 unidades** coinciden ambos extremos dentro de 300 ms y no hay alertas de la regla; **72 quedan para revisión** por falta de corroboración, diferencias temporales o alertas. No son 72 errores demostrados. Hay 10 unidades con puntuación de borde CTC menor a 0,5 y 2 con correspondencia académica/narrada menor a 0,75; no hubo intervalos inválidos, solapamientos superiores a 60 ms ni extremos próximos al recorte según los controles registrados.
+
+Los 35 casos señalados en la etapa anterior y estos 72 responden a coberturas/reglas diferentes: antes se contrastaron dos tamaños de Whisper solo en ventanas seleccionadas y ahora se evalúa la grabación completa con otro método y un umbral más estricto. No se restan esas cifras ni se presenta la nueva cifra como deterioro o resolución automática de todos los casos. Las puntuaciones y umbrales solo seleccionan revisión. **G3 sigue pendiente; `sync.status=pending`, cero tiempos activos.** No se declara escucha humana ni aceptación perceptiva.
+
+Se preservó una comparación privada por cada unidad entre texto académico y fragmento del VTT, con operaciones de diferencia literal. Las tildes/números se normalizan solo para el análisis; no se cambian el capítulo, sus llamadas, notas, bibliografía o la fecha fuente de Jahn. El VTT es la transcripción suministrada, no una declaración de escucha humana. El aparato de 29 notas y 47 referencias continúa sin tiempos.
+
+**Paquete privado actual:** [Soares_Work3_revision_acustica.zip](https://chatgpt.com/library?file_id=libfile_ba319db31dfc8191909a4b413edbfbc4&account_id=personal), **versión 4**, 26505697 bytes, SHA `d949093ed44df7fba86b353986cdfb1353b7ebf03174a337a635f3654161fd4c`. Sustituye los checkpoints parciales v2/v3 para recuperación. Incluye CTC completo, informe, `academic-vtt-differences.json` y **80 extractos actuales** (1713,86 s con contexto/repeticiones) en `revision-ctc/`; abrir `revision-ctc/ABRIR_REVISION.html`. Conserva también las transcripciones y los 40 extractos originales de v1 en `revision/`. Todos los registros de escucha permanecen `humanReviewed:false`; los casilleros HTML no guardan decisiones automáticamente. El ZIP pasa CRC y los 80 clips nuevos se decodifican sin error.
+
+Comandos desde la raíz, reutilizando las entradas privadas fijadas:
+
+```sh
+TORCH_HOME=MODELOS python tools/soares/force_align_audio.py --audio MP3 --vtt VTT --output CTC_JSON --model-dir MODELOS
+python tools/soares/evaluate_ctc.py DOCUMENT_JSON CTC_JSON TINY_JSON INFORME_CTC DIFERENCIAS_PRIVADAS_JSON
+python tools/soares/prepare_review.py --ctc DOCUMENT_JSON MP3 INFORME_CTC REVISION_PRIVADA
+```
+
+Una salida completa se reutiliza; no volver a calcularla al recuperar v4. El evaluador rechaza un CTC incompleto antes de escribir el informe. Un escritor concurrente fue rechazado por el bloqueo de salida. El informe numérico se regeneró byte a byte desde las entradas conservadas. Sintaxis Python y prueba específica Soares (fuente real, aparato, autonomía, guardado/exportación y ausencia de tiempos activos) aprobadas; se añaden contratos de integridad del informe CTC sin cambiar expectativas de otras obras. Validación activa de seis obras: 0 errores y 6 avisos anteriores. `npm ci` y build candidato con hashes también aprobados en este entorno recuperado. [Controles de esta reanudación](evidencia/controles-ctc-work3.json).
+
+**Estado editorial y de navegador:** I04 se mantiene como información no consignada, no como prohibición acreditada ni exigencia de contrato de formato determinado. La aclaración al responsable está en RECURSOS_Y_FUENTES.md. Zoom real/movimiento reducido permanecen pendientes por las limitaciones de interfaz descritas; no se intentó eludir la política de URL. No se cambió la aplicación, el lector compartido, el catálogo, sus claves o materiales anteriores. Sin merge ni publicación.

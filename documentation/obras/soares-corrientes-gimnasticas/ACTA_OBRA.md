@@ -160,3 +160,12 @@ Se completa la **preparación de Work 1**, no una nueva lectura disponible. Ning
 **M:** fuentes fijadas, redistribución sin acreditar. **T:** candidato local corregido, probado y recuperable. **P:** colación documental y evidencia ASR guardadas; escucha/tiempos finales pendientes. **U:** observación de navegador ampliada, dos controles pendientes, sin ruta pública habilitada. La autorización de avanzar a Work 3 no se interpreta como una licencia de terceros.
 
 Este checkpoint no declara concluido el Work 3 ni habilita merge. Próximo paso exacto y paquetes en ESTADO_DE_TRABAJO.md.
+
+
+## Reanudación de Work 3 · Cálculo CTC completo · 06-11-2026
+
+G3 incorpora otro método acústico: MMS_FA CTC, 111 ventanas, 6390 palabras del VTT y 194 intervalos candidatos. 360 extremos comparados con Whisper, 314 dentro de 300 ms; 122 unidades cumplen la regla de corroboración y 72 quedan para revisión. Las cifras no equivalen a errores ni aceptación perceptiva. 10 puntuaciones bajas de borde y 2 coberturas léxicas bajas; sin intervalos inválidos ni solapamientos >60 ms registrados. El piloto estrecho fue descartado. `pending`, cero tiempos activos, aparato académico sin tiempos.
+
+Evidencia preservada privadamente en paquete v4, SHA `d949093ed44df7fba86b353986cdfb1353b7ebf03174a337a635f3654161fd4c`: CTC completo, diferencias literales por unidad y 80 extractos nuevos; conserva Whisper y 40 extractos anteriores. No repetir esos cálculos. Sin escucha humana declarada. Informe público numérico ctc-work3.json; controles de salida incompleta, concurrencia, reproducción del informe, integridad, decodificación y prueba Soares aprobados. Validación activa: 0 errores y 6 avisos previos.
+
+G7 permanece parcial: limitaciones de entrada nativa y rechazo de URL de configuración interna impidieron validar zoom/movimiento reducido; no se eludieron. I04 se precisa como consulta por condiciones de publicación ya existentes: no hay exigencia de contrato de formato específico y ausencia de registro no se toma como ausencia de permiso. No se contactó a terceros. Aplicación/materiales/claves de otras obras conservados; PR en borrador, sin merge/publicación. Estado y recuperación vigentes en ESTADO_DE_TRABAJO.md.
