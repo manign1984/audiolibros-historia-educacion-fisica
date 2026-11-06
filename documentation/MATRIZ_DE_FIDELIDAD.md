@@ -1,5 +1,9 @@
 # Matriz de fidelidad y procedencia
 
+## Candidato local de Soares · Work 2 · 06/11/2026
+
+Por pedido explícito se implementa el recorrido de Soares en la rama de obra, con cinco bloques y siete pantallas. La ruta ordinaria permanece en preparación; el candidato con materiales académicos se compila solo mediante opt-in local, mientras no se acrediten las condiciones de redistribución. No se fusiona ni publica. Lector, claves y documentos anteriores sin modificaciones. Cambios comunes: únicamente nueva raíz en selectores de Lectura y nueva clave en créditos. Regresión funcional de las seis obras y builds raíz/Pages aprobados. El documento local conserva siete apartados, 29 notas y 47 referencias; sincronización pendiente. Alcance y recuperación en [obras/soares-corrientes-gimnasticas/ESTADO_DE_TRABAJO.md](obras/soares-corrientes-gimnasticas/ESTADO_DE_TRABAJO.md).
+
 ## Incorporación de Scharagrodsky · 06/11/2026
 
 Por solicitud explícita se completa la rama iniciada: capítulo íntegro con 29 notas y 86 referencias, MP3 original, alineación acústica sin interpolación, cinco bloques/seis pantallas y acceso desde catálogo. Procedencia, limitaciones y aceptación en [SCHARAGRODSKY_2026.md](SCHARAGRODSKY_2026.md). Se conservan los originales de Drive y los archivos previos de guion/VTT. Los cinco registros anteriores de `validation/works.json` permanecen idénticos.

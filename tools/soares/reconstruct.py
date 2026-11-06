@@ -11,17 +11,20 @@ pages=fitz.open(pdf)
 def clean(t):return re.sub(r'\s+',' ',t.replace('\xad','')).strip()
 rows=[];notes=[];bib=[];note=None
 for pi,p in enumerate(pages):
- lines=[l for b in p.get_text('dict')['blocks'] for l in b.get('lines',[])]
+ lines=[l for b in p.get_text('rawdict')['blocks'] for l in b.get('lines',[])]
+ for l in lines:
+  for span in l['spans']:span['text']=''.join(c['c'] for c in span['chars'])
  body=[];foot=[]
  for l in lines:
   spans=l['spans'];size=max(s['size'] for s in spans)
   if size>=10.9 or (pi==0 and l['bbox'][1]<260):
    text=''.join('[[note:'+s['text']+']]' if s['size']<8 and s['text'].isdigit() else s['text'] for s in sorted(spans,key=lambda s:s['bbox'][0]))
-   body.append({'y':min(s['bbox'][1] for s in spans if s['size']>=10.9 or (pi==0 and l['bbox'][1]<260)),'x':l['bbox'][0],'text':text,'size':size,'right':l['bbox'][2]})
+   pieces=[{'x':span['bbox'][0],'right':span['bbox'][2],'text':'[[note:'+span['text']+']]'} for span in spans if span['size']<8 and span['text'].isdigit()]+[{'x':c['bbox'][0],'right':c['bbox'][2],'text':c['c']} for span in spans if not(span['size']<8 and span['text'].isdigit()) for c in span['chars']]
+   body.append({'pieces':pieces,'y':min(s['bbox'][1] for s in spans if s['size']>=10.9 or (pi==0 and l['bbox'][1]<260)),'x':l['bbox'][0],'text':text,'size':size,'right':l['bbox'][2]})
   elif pi==9 and size<8 and ''.join(s['text'] for s in spans).strip()=='22' and l['bbox'][1]<650:
-   body.append({'y':l['bbox'][1],'x':l['bbox'][0],'text':'[[note:22]]','size':size,'right':l['bbox'][2]})
+   body.append({'pieces':[{'x':l['bbox'][0],'right':l['bbox'][2],'text':'[[note:22]]'}],'y':l['bbox'][1],'x':l['bbox'][0],'text':'[[note:22]]','size':size,'right':l['bbox'][2]})
   elif size<8 and ''.join(s['text'] for s in spans).strip().isdigit() and l['bbox'][1]<700:
-   body.append({'y':l['bbox'][1]+.5,'x':l['bbox'][0],'text':'[[note:'+''.join(s['text'] for s in spans).strip()+']]','size':size,'right':l['bbox'][2]})
+   body.append({'pieces':[{'x':l['bbox'][0],'right':l['bbox'][2],'text':'[[note:'+''.join(s['text'] for s in spans).strip()+']]'}],'y':l['bbox'][1]+.5,'x':l['bbox'][0],'text':'[[note:'+''.join(s['text'] for s in spans).strip()+']]','size':size,'right':l['bbox'][2]})
   else:foot.append(l)
  for l in sorted(foot,key=lambda l:(round(l['bbox'][1]),l['bbox'][0])):
   text=clean(''.join(s['text'] for s in l['spans']))
@@ -35,9 +38,15 @@ for pi,p in enumerate(pages):
  merged=[]
  for l in sorted(body,key=lambda l:(round(l['y']),l['x'])):
   if merged and abs(l['y']-merged[-1]['y'])<2:
-   merged[-1]['text']+=' '+l['text']
+   merged[-1]['pieces'].extend(l['pieces'])
   else:merged.append(l)
  for i,l in enumerate(merged):
+  ordered=sorted(l['pieces'],key=lambda piece:piece['x'])
+  line_text='';previous=None
+  for piece in ordered:
+   if previous and piece['x']-previous['right']>1.5 and line_text and not line_text[-1].isspace() and not piece['text'][0].isspace():line_text+=' '
+   line_text+=piece['text'];previous=piece
+  l['text']=line_text
   l['page']=pi+1;l['gap']=l['y']-merged[i-1]['y'] if i else 100
   rows.append(l)
 # Fixed seven headings, transcribed from this PDF, identified in order.

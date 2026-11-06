@@ -28,6 +28,7 @@ let document;
 try { document=JSON.parse(await readFile('.local/soares/reader-document.json','utf8')); }
 catch(e) { if(e.code!=='ENOENT')throw e; }
 if(document) {
+  const evidence=JSON.parse(await readFile('../documentation/obras/soares-corrientes-gimnasticas/evidencia/documento-work2.json','utf8'));assert.equal(createHash('sha256').update(await readFile('.local/soares/reader-document.json')).digest('hex'),evidence.documentSha256);
   assert.equal(document.sections.length,7);assert.equal(document.endnotes.length,29);assert.equal(document.bibliography.length,47);
   const units=[...document.frontMatter,...document.sections.flatMap(s=>[s.headingSentence,...s.paragraphs.flatMap(p=>p.sentences)])];
   assert.equal(document.sections.flatMap(s=>s.paragraphs.flatMap(p=>p.sentences)).length,185);
@@ -35,6 +36,8 @@ if(document) {
   for(const u of units){assert.ok(u.text.trim());assert.ok(!('start' in u));assert.ok(!('end' in u));}
   for(const n of document.endnotes){assert.ok(units.some(u=>u.id===n.sentenceId));assert.ok(n.text.trim());assert.ok(!('start' in n));}
   assert.match(units.map(u=>u.text).join(' '),/Jahn \(1778-1825\)/);assert.match(document.sourceNote,/Aclaración editorial/);
+  const note2=units.find(u=>u.id===document.endnotes.find(n=>n.number===2).sentenceId);assert.match(note2.text,/inexistentes/);assert.ok(!note2.text.includes('De este modo'));
+  assert.equal(document.endnotes.find(n=>n.number===9).sentenceId,'soa-sistematizacion-heading');assert.equal(document.endnotes.find(n=>n.number===22).sentenceId,'soa-minoritarios-heading');
   for(const [file,h] of Object.entries({'chapter.pdf':manifest.localInputs.pdfSha256,'audiobook.mp3':manifest.localInputs.mp3Sha256,'original.vtt':manifest.localInputs.vttSha256}))assert.equal(createHash('sha256').update(await readFile('.local/soares/'+file)).digest('hex'),h);
   console.log('Soares: fuente local comprobada (185 oraciones, 29 llamadas, 47 referencias, hashes, sin tiempos activos).');
 } else console.log('Soares: materiales privados ausentes; comprobación de fuente real OMITIDA.');

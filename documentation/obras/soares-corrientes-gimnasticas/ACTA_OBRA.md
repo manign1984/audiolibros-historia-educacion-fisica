@@ -1,5 +1,7 @@
 # Acta de obra · Carmen Lucia Soares
 
+**Estado vigente: corte Work 2 → Work 3; candidato local con derechos y sincronización pendientes.** Los apartados A–J preservan el acta histórica del Work 1; la actualización final figura al pie y en ESTADO_DE_TRABAJO.md.
+
 Creada desde `documentation/plantillas/ACTA_OBRA_AUTONOMIA_V1.md`; conserva sus apartados A–J. Work 1 de 3, 06-11-2026. Norma superior: Directrices canónicas 2.0. No constituye autorización de publicación ni acta de aceptación de una página implementada.
 
 ## A. Identidad, alcance y estado
@@ -129,3 +131,18 @@ Texto breve de relevo en el estado; comandos y alcance de pruebas en DISENO_Y_PL
 - **U:** experiencia de Soares no construida ni publicada; no evaluada.
 
 Se completa la **preparación de Work 1**, no una nueva lectura disponible. Ninguna incidencia se cierra por completar este formulario. Los pendientes tienen evidencia, efecto y siguiente acción; la documentación y sus checkpoints permiten continuar sin repetir la investigación.
+
+
+## Actualización de acta · Corte Work 2 → Work 3 · 06-11-2026
+
+- **G0/G1/G4:** decisiones y materiales del Work 1 preservados; hashes PDF/TXT/MP3/VTT recuperados idénticos.
+- **G2:** documento candidato con siete apartados, 70 párrafos, 185 oraciones del cuerpo, 29 llamadas/notas y 47 referencias. Censo de caracteres sin pérdidas/duplicados, fuente conservada, espacios de extracción y elipsis tratados expresamente. Jahn 1778–1825 preservado y aclaración editorial separada. Cotejo final de lectura reservado al Work 3.
+- **G3:** correspondencia reproducible de 194 unidades frente a 593 cues; 52 coinciden con límites de cues en ambos extremos. Silencios analizados en todo el MP3; ninguna frontera semántica se da por validada acústicamente. `pending`, cero tiempos activos. Sin escucha humana/ASR/alineación forzada; I02 sigue abierta.
+- **G5:** candidato local funcional en la misma rama/ruta; componentes comunes, claves exclusivas y registro candidato. I04 impide incorporar públicamente texto/audio/PDF/retrato; preservación privada y regeneradores disponibles. No se habilita catálogo.
+- **G6:** pruebas automáticas específicas y de regresión realizadas; builds ordinarios/candidatos raíz y Pages aprobados. Seis avisos anteriores no ocultados. Evidencia detallada en WORK_2_TECNICO.md y pruebas-work2.json.
+- **G7:** observación inicial de 1363×936 positiva para retícula/carga/modal, sin aceptación integral. Móvil, zoom, altura baja, recorrido de teclado, revisión visual completa y escucha pendientes de Work 3.
+- **G8:** no ejecutada. PR #79 continúa abierta en borrador; main y Pages no se modifican mediante este Work.
+
+**Incidencias:** I01 resuelta en el candidato académico; I03 implementada; I05 resuelta con extensión mínima y regresión funcional; I02 e I04 abiertas; I06 transporte público pendiente, MP3 entero probado localmente. No se declara una autorización que la documentación no contiene. No se contactó a terceros.
+
+**M:** identidad fijada, permisos públicos pendientes. **T:** candidato local probado, materiales originales privados. **P:** cotejo escrito/geométrico y pausas, sin aceptación semántica acústica. **U:** inspección local inicial, sin experiencia pública publicada. El archivo de estado sustituye las instrucciones de reanudación de Work 1.

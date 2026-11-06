@@ -1,94 +1,69 @@
-# Estado de trabajo · Soares · Corte Work 1 → Work 2
+# Estado de trabajo · Soares · Corte Work 2 → Work 3
 
-Basado en la plantilla oficial `documentation/plantillas/ESTADO_DE_TRABAJO.md`. Actualización: 06-11-2026 (Argentina). **WORK 1 CONCLUIDO: preparación documentada. Página sin implementar ni publicar.** Norma: Directrices canónicas 2.0 y protocolos de autonomía/producción por etapas.
+Actualización: **06-11-2026, Argentina**. **CANDIDATO LOCAL IMPLEMENTADO Y EVALUADO TÉCNICAMENTE. Sin fusionar ni publicar.** Derechos de redistribución y alineación acústica pendientes. Este estado sustituye el relevo de Work 1; no repetir su investigación.
 
-## Localización de la única versión de trabajo
+## Única versión de trabajo
 
-- **Obra / ID:** Carmen Lucia Soares, *Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y permanencias* / `soares-corrientes-gimnasticas`.
-- **Modalidad:** tres Work; siguiente: Work 2.
-- **Repositorio:** [manign1984/audiolibros-historia-educacion-fisica](https://github.com/manign1984/audiolibros-historia-educacion-fisica).
-- **Rama:** [feature/soares-corrientes-gimnasticas](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/soares-corrientes-gimnasticas).
-- **PR:** [#79](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/79), abierta en borrador; sin integrar.
-- **Base main:** `8c2bbe4fe3f95da0d79aa835738841fc8ef5fb53`.
-- **HEAD del dossier comprobado antes de este checkpoint:** [1990a177e83cc05f75e5a916f1a283d01ab134ee](https://github.com/manign1984/audiolibros-historia-educacion-fisica/commit/1990a177e83cc05f75e5a916f1a283d01ab134ee); acta leída de vuelta.
-- **Commit contenedor de este estado:** consultar HEAD/historial del archivo; se genera después de escribirlo y se verifica por lectura remota. El commit anterior identifica el dossier, no se lo presenta como SHA futuro del checkpoint.
-- **Acta:** [ACTA_OBRA.md](ACTA_OBRA.md). **Índice completo:** [README.md](README.md).
+- Obra / ID: Carmen Lucia Soares, *Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y permanencias* / `soares-corrientes-gimnasticas`.
+- [Rama feature/soares-corrientes-gimnasticas](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/soares-corrientes-gimnasticas).
+- [PR #79](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/79): abierta en borrador; no fusionar automáticamente.
+- Ingreso Work 2: HEAD remoto y local `715bc4cd7e5a52b87776b94366b68ff99e056a6e`; PR abierta/draft comprobada antes de editar.
+- Checkpoint de reconstrucción leído de vuelta: `51dedc248d9386302cbdb4ecab01e53c25b0134c`.
+- Checkpoint de candidato inicial leído de vuelta: `5b007d82d0ffb7c8c8592b9d773b71cec23ed2dd`.
+- Commit con correcciones finales y pruebas: el contenedor de este estado y su historial; se verifica remotamente después de escribirlo, sin inventar un SHA futuro. El cierre añade el SHA de código comprobado.
+- [Acta](ACTA_OBRA.md), [índice](README.md), [recuperación y pruebas detalladas](WORK_2_TECNICO.md).
 
-## Resultado verificable del Work 1
+## Entregado y estado de puertas
 
-| Puerta | Estado al corte | Evidencia / condición pendiente |
+| Puerta | Resultado real |
+| --- | --- |
+| G0/G1/G4 | Decisiones del dossier preservadas; fuentes recuperadas con hashes idénticos; cinco bloques 1/1/3/1/1 |
+| G2 | Documento candidato reconstruido desde PDF: siete apartados, 70 párrafos, 185 oraciones del cuerpo, 29 notas/llamadas, 47 referencias. Censo sin pérdidas/duplicados; corrección de posición de llamadas y segmentación. Cotejo final en Work 3 |
+| G3 | 194 unidades candidatas frente a 593 cues. Correspondencia de tokens y pausas reproducible; 52 unidades con ambos extremos en límites de cue. Todas conservan incertidumbre acústica. `pending`, cero `start/end` activos |
+| G5 | Página candidata local funcional, misma rama y misma ruta; componentes compartidos. Incorporación pública de materiales bloqueada por I04 |
+| G6 | Pruebas locales específicas, seis regresiones y builds raíz/Pages aprobados. Validación activa de seis obras: 0 errores, 6 avisos preexistentes. Soares tiene registro candidato separado |
+| G7 | Inspección inicial real 1363×936; no aceptación integral. Móvil/zoom/altura baja, teclado completo y percepción pendientes |
+| G8 | NO EJECUTADA. Sin merge ni despliegue. Catálogo y ruta ordinaria siguen en preparación |
+
+**Arquitectura candidata:** `portable-site/src/soares/{SoaresApp.jsx,soares.css,main.jsx,readerConfig.js,buildReadingDocument.js}`. Encabezado, biografía, entrada de Lectura, créditos y `IntegratedReader` comunes. CSS compartido solo agrega `.soares-page`, sin alterar valores. Nueva clave `soares` de créditos. Sin cambios a claves, documentos, tiempos o registro activo de otras obras.
+
+Contexto conserva: «El gesto se vuelve calculable», «Corrientes distintas, tensiones compartidas», «Otras formas de educar el cuerpo». Identidad «El gesto entre la norma y la expresión». Demeny 1906, dominio público, guardado en assets con hash verificado; retrato auténtico solo local.
+
+**Guardado independiente:** `soares-corrientes-gimnasticas-reader-notes-v1` / `soares-corrientes-gimnasticas-reader-state-v1`. Exportaciones JSON/TXT propias. Las 29 notas académicas no son anotaciones personales; no reciben tiempos ficticios. Jahn 1778–1825 se conserva y la aclaración BnF 1778–1852 aparece separada.
+
+## Materiales y recuperación sin pérdida
+
+| Insumo | Fuente estable | SHA-256 |
 | --- | --- | --- |
-| G0 | APROBADO | Capítulo 2006, copia recompuesta de cátedra de 16 páginas, alcance académico/narrado y tres Work definidos |
-| G1 | APROBADO para identidad/binarios | Pareja MP3/VTT entregada; acceso, hashes y decodificación completa |
-| G2 | PENDIENTE para lector; auditoría cerrada | Estructurar y comprobar documento con 29 notas y bibliografía en Work 2 |
-| G3 | PENDIENTE para resaltado por oración | Diagnóstico temporal cerrado; cotejo acústico y asignación de tiempos pendientes |
-| G4 | APROBADO como plan | Cinco bloques 1/1/3/1/1; tres funciones didácticas diferenciadas, paleta y fuentes; permisos no se dan por aprobados |
-| G5 | Persistencia documental APROBADA; desarrollo NO INICIADO | Rama, commits y dossier; página y assets web reservados al Work 2 |
-| G6 | PENDIENTE | Pruebas, regresión y builds de Work 2 |
-| G7 | PENDIENTE | Aceptación de Soares en navegador, Work 3 |
-| G8 | NO PUBLICAR en esta etapa | Sin integración ni despliegue; publicación reservada a Work 3 |
+| PDF de cátedra, 247142 bytes | Drive `1xOnn6jLmUI5wj72noq18J53oh5-nkyOT` | `c81a7c039eb231ef183697761ea6e01fd7e0d4715309aff65ed769b5c8d10b45` |
+| MP3 entero, 74721926 bytes | Drive `1KAthUKiHsNqHg8sYIwPqzvJNgbGGbkt-` | `f9c4226ec5794a959d77d6f97b523eabadb0dcdc272bbec9c9e1b04d9a019b37` |
+| VTT original, 85242 bytes | Drive `1r8olHRVt-zWY_HjLlz2KYcnOxnPXCZKK` | `ec0beaea889464cd05328c6e73fb80f36f3f8899ae99cc463fcefb82bc1e294f` |
+| TXT auxiliar, 54958 bytes | Drive `1ubCfCwnzbGZMSbMDxHUQhfJfcmLOHlFv` | `52f8ef8fe5b41624dc8f51f844d247f0c9f962e47f78ca19e8967b792d4d5dae` |
 
-**Guardado:** auditoría, análisis académico/Contexto, diseño/plan técnico, recursos/fuentes, acta, índice, estado y evidencia JSON/script; nueve archivos dentro de esta carpeta. Aplicación, catálogo y componentes sin modificaciones.
+Enlaces completos en [auditoría](AUDITORIA_DOCUMENTAL.md). Duración del contenedor 3113,377959 s; decodificación/Chrome 3113,331293 s; VTT termina en 3113,305 s. Archivos sin transcodificar ni fragmentar.
 
-**Controles ejecutados:** ffprobe; decodificación MP3 completa con ffmpeg (código 0, sin errores); extracción y lectura completa del PDF; render de su página inicial; parser de cues; colación A/B/VTT y PDF/TXT; huellas de originales y TXT idénticos; JSON válido, sintaxis Python, enlaces locales y diff de documentación. No se ejecutaron builds ni pruebas de una página inexistente.
+**Documento íntegro preservado privadamente:** [Soares_Work2_documento_academico.zip](https://chatgpt.com/library?file_id=libfile_31d84354c2b08191bec4d2f86fb3c122&account_id=personal), **versión 1**. SHA-256 ZIP `f8412679982ac1ea15d20e19909242bfffc378087a3d661c6e692a983041de0b`. Contiene academic.json y document.json corregidos. El documento académico tiene hash `291e552ae0348c77e1f15d60e8df046c7fe633a8942bdc75aa9f5a11f016adc1`; documento lector `7ae2eb3dc0384547ef1d03f4d441e8d1093587e07ed97d6c7929f359db5aa40b`. No depende de archivos temporales de este chat.
 
-**Navegador/escucha:** referencias publicadas de Scharagrodsky y Marcaida observadas con DOM/capturas a 1707×772; detalles en DISENO_Y_PLAN_TECNICO.md. No son aceptación de Soares. No hubo escucha humana adicional ni ASR.
+**Generadores públicos:** `tools/soares/reconstruct.py`, `audit_reconstruction.py`, `align.py`, `sample_evidence.py`, `prepare-local.mjs`. Consumen los originales verificados; no publican ni descargan voces nuevas. Procedimiento exacto en WORK_2_TECNICO.md. Datos privados a `.local/soares/`, excluidos de Git.
 
-## Materiales fijados
+**Ruta y build:** la entrada ordinaria `textos/soares-corrientes-gimnasticas/index.html` conserva la ficha de biblioteca. `SOARES_LOCAL_CANDIDATE=1 npm run build` sustituye la entrada de esa MISMA ruta y materializa el candidato. Comprueba hashes de PDF/MP3/VTT/retrato/documento. **No publicar ese dist mientras I04 siga abierta.** Builds ordinarios excluyen materiales privados. Registro de candidato: `validation/soares-candidate.json`; `validation/works.json` sin cambios porque todavía no hay audio público ni catálogo disponible.
 
-La entrega de Manuel en este Work identifica la pareja editorial autorizada. No volver a buscar voces históricas.
+## Pruebas y límites
 
-| Recurso | Drive ID | Bytes / SHA-256 |
-| --- | --- | --- |
-| PDF | `1xOnn6jLmUI5wj72noq18J53oh5-nkyOT` | 247142 / `c81a7c039eb231ef183697761ea6e01fd7e0d4715309aff65ed769b5c8d10b45` |
-| MP3 | `1KAthUKiHsNqHg8sYIwPqzvJNgbGGbkt-` | 74721926 / `f9c4226ec5794a959d77d6f97b523eabadb0dcdc272bbec9c9e1b04d9a019b37` |
-| VTT | `1r8olHRVt-zWY_HjLlz2KYcnOxnPXCZKK` | 85242 / `ec0beaea889464cd05328c6e73fb80f36f3f8899ae99cc463fcefb82bc1e294f` |
-| TXT 1 / 2 | `1ubCfCwnzbGZMSbMDxHUQhfJfcmLOHlFv` / `1kRRm8XiSHtO4chZ9sbAmvchgXTDHV7WX` | 54958 cada uno / `52f8ef8fe5b41624dc8f51f844d247f0c9f962e47f78ca19e8967b792d4d5dae` |
+[Evidencia completa](evidencia/pruebas-work2.json). Ejecutados con código 0: `npm ci`, `test:library`, `test:two-works`, `test:reader-runtime`, `test:hobsbawm`, `test:aisenstein`, `test:marcaida`, `test:scharagrodsky`, `test:work-validation`, `test:soares`, `validate:works`, builds ordinarios y candidatos raíz/Pages con `verify:build` y validación de referencias. Soares comprobado con fuente real local y, aparte, con datos sintéticos sin materiales privados para CI. `git diff --check` aprobado.
 
-Enlaces, editables A/B y diferencias: [AUDITORIA_DOCUMENTAL.md](AUDITORIA_DOCUMENTAL.md) y [evidencia/auditoria-insumos.json](evidencia/auditoria-insumos.json). MP3 **3113,377959 s**; VTT **593 cues**, último final **3113,305 s**; diferencia **0,072959 s**. Esos cues no equivalen a oraciones verificadas.
+La comprobación inicial de navegador observó encabezado 80 px, bloques 856/856/2568/856/856, Contexto 856/856/856, cuatro imágenes cargadas, sin overflow horizontal, lector abierto/cerrado, MP3 sin autoplay, 29 notas y cero resaltado. Fue anterior a la corrección final de llamadas; después se reejecutaron controles de fuente/runtime. No sustituye el cotejo visual/perceptivo final. No se declara escucha humana ni ASR. El análisis completo de pausas con ffmpeg detectó 1053 silencios; no prueba límites semánticos.
 
-Originales en Drive; imágenes en fuentes institucionales con referencias/huellas guardadas. No se transfirieron binarios a assets web. Descargas locales, PNG y textos temporales son reproducibles; no son el soporte exclusivo del trabajo. No usar URLs firmadas efímeras como origen.
+## Pendientes concretos de Work 3
 
-## Incidencias y precauciones
+1. **Primero:** comprobar HEAD/PR, leer este estado y recuperar checkpoint privado v1/originales; comparar hashes. No repetir investigación, diseño o reconstrucción ya fijados.
+2. **I04:** acreditar condiciones de redistribución del texto/traducción/audio y retrato. No constan en el expediente; disponibilidad en Drive no las demuestra. No enviar solicitudes a terceros sin instrucción. Continuar con revisión local si siguen pendientes.
+3. **I02/G3:** evaluar límites de oraciones contra voz, empezando por [muestras-work2.json](evidencia/muestras-work2.json), diferencias, encabezados, mitad y final. Los intervalos son envolventes de cues, no alineación forzada. No activar `ready` por la mera existencia del JSON; no adoptar la excepción por párrafos.
+4. **G2/G7:** cotejo académico final y revisión integral de las siete pantallas, lector/notas, 320/390/768, portátil bajo, zoom, movimiento reducido, teclado y foco; corregir lo observado y repetir solo pruebas afectadas.
+5. Si se resuelven derechos/sincronización/aceptación, preparar materiales públicos con hashes, promover catálogo conscientemente, sustituir entrada HTML y agregar entrada explícita Vite, crear registro activo y probar. **No basta cambiar disponibilidad en catálogo.** Después publicar solo conforme a la autorización de Work 3 y verificar el commit integrado/CI/Pages/ruta pública.
 
-- **I01/I02:** guion sin notas/bibliografía y cues que parten oraciones; restaurar aparato y comprobar acústica, sin tiempos ficticios.
-- **I03:** fecha Jahn 1778–1825 en fuente; BnF: 1778–1852. Conservar fuente con nota editorial diferenciada; no cambiar audio.
-- **I04:** documentar condiciones de redistribución del capítulo/audio y del retrato antes de publicar; la imagen Demeny sí está declarada dominio público.
-- **I05:** CSS de Lectura enumera raíces; extensión mínima para Soares con regresión de todas las obras.
-- **I06:** MP3 71,26 MiB; estrategia de archivo entero preferida y alternativas en plan técnico. Transporte no probado.
-- **I07 resuelta:** biografía en pasado tras información institucional de 2026.
-- **No repetir:** inventario y búsquedas concluidas, elección de voz, investigación o plan de tres pantallas, salvo cambio/contradicción.
-- **No sobrescribir:** originales ni notas, claves, hashes o tiempos de otras obras. No adoptar la excepción por párrafos de Marcaida.
-- **No certificar:** permisos, acústica, dispositivos o publicación todavía pendientes.
+I01 resuelta en documento candidato; I03 implementada; I05 resuelta técnicamente; I06 transporte público no ejecutado. No hay publicaciones que revertir. No tocar notas reales ni materiales anteriores.
 
-## Instrucción concreta para reanudar
+## Texto para iniciar Work 3
 
-**Work 2. Primera acción:** recuperar este estado desde GitHub, comprobar HEAD y PR #79, verificar los archivos del dossier y leer el acta. Prevalece lo remoto sobre la memoria del chat.
-
-1. Recuperar PDF/TXT/MP3/VTT y comprobar hashes. Si coinciden, no repetir inventario completo.
-2. Construir documento fiel: siete apartados, 29 notas enlazadas, citas y bibliografía. Registrar normalizaciones y separar narración.
-3. Comprobar inicio, mitad, encabezados, final y diferencias contra audio. Alinear oraciones con evidencia; aparato no narrado sin salto ficticio.
-4. Resolver condiciones de uso aplicables, preparar assets y ejecutar plan 1/1/3/1/1 con componentes compartidos.
-5. Registrar contrato, claves exclusivas, catálogo y entrada de build; probar Soares, regresión y raíz/Pages.
-6. Guardar candidato y pruebas en rama; actualizar estado. **No publicar en Work 2; G7/G8 quedan para Work 3.**
-
-**Cierre de Work 2:** implementación recuperable, pruebas técnicas y límites documentados. Comandos y riesgos: [DISENO_Y_PLAN_TECNICO.md](DISENO_Y_PLAN_TECNICO.md) y protocolo de autonomía.
-
-## Historial de checkpoints
-
-| Fecha | Hito | Commit comprobado |
-| --- | --- | --- |
-| 06-11-2026 | Inventario, estado leído de vuelta | `bcd37ca5759ea936344bd26ba6cd31a341d0bf5a` |
-| 06-11-2026 | G1/auditoría, estado leído de vuelta | `9797f23fcfa7cf5c91f0fdff1989f4265f8dffbd` |
-| 06-11-2026 | Dossier/G4, acta leída; PR borrador #79 | `1990a177e83cc05f75e5a916f1a283d01ab134ee` |
-| 06-11-2026 | Corte Work 1→2 | Commit contenedor de este estado, consultable en historial de la rama |
-
-### Texto breve de relevo
-
-> Continuemos el Work 2 de Carmen Lucia Soares. Recuperá `documentation/obras/soares-corrientes-gimnasticas/ESTADO_DE_TRABAJO.md` en `feature/soares-corrientes-gimnasticas` y verificá HEAD y PR #79. El Work 1 contiene auditoría, investigación, tres pantallas de Contexto y diseño. Retomá el texto fiel y el cotejo acústico de la pareja fijada; luego implementá y probá con componentes compartidos. No repitas tareas cerradas ni publiques en Work 2. Actualizá el checkpoint al finalizar.
-
-## Checkpoint en curso · Work 2
-
-Recuperación remota concluida sobre `715bc4c…`; PR #79 abierta en borrador. Fuentes recuperadas con hashes idénticos. Reconstrucción académica inicial: siete apartados, 29 notas y 47 entradas, censo de caracteres sin pérdidas ni duplicaciones. Generador y adaptador guardados en este commit; detalles en [WORK_2_TECNICO.md](WORK_2_TECNICO.md). Materiales completos solo locales mientras I04 siga sin acreditar. Próximo paso: validar segmentación y generar correspondencia reproducible VTT/oraciones, después construir candidato sin publicar materiales restringidos. Este apartado sustituirá el corte de Work 1 al cerrar Work 2; no declara G2/G3 finales.
-
-Checkpoint de correspondencia: 194 unidades candidatas (185 oraciones del cuerpo), evidencia por ID en `evidencia/correspondencia-work2.json`. Todos los tiempos candidatos permanecen fuera del lector activo; `sync.status=pending`. Texto íntegro preservado privadamente como `libfile_31d84354c2b08191bec4d2f86fb3c122`; recuperación y hashes en WORK_2_TECNICO.md. Implementación canónica escrita, ruta candidata local optativa; catálogo ordinario sigue en preparación. Próximo paso: pruebas específicas de Soares, regresión completa y builds ordinarios/candidatos. Sin publicar.
+> Retomemos el Work 3 de Carmen Lucia Soares en `feature/soares-corrientes-gimnasticas`, PR #79. Verificá HEAD y leé `documentation/obras/soares-corrientes-gimnasticas/ESTADO_DE_TRABAJO.md`. El candidato local está implementado y probado; recuperá el checkpoint privado versión 1 y los originales por sus hashes. Priorizá derechos de redistribución, alineación acústica por oración y auditoría visual/perceptiva integral. No repitas Work 1 ni reconstruyas el texto fijado. Mantené bloqueada la publicación y el resaltado hasta resolver sus pendientes; después completá integración y publicación autorizadas para Work 3.

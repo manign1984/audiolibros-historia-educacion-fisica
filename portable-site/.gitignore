@@ -12,4 +12,4 @@ public/assets/marcaida-audiolibro.mp3
 public/assets/*.download
 
 # Soares: materiales locales, hasta acreditar redistribución
-.local/soares/
+.local/

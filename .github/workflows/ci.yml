@@ -56,6 +56,9 @@ jobs:
       - name: Test Scharagrodsky academic edition and acoustic boundaries
         run: npm run test:scharagrodsky
 
+      - name: Test Soares candidate without publishing private materials
+        run: npm run test:soares
+
       - name: Validate every registered work and local source reference
         run: npm run validate:works
 
