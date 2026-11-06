@@ -13,7 +13,7 @@ sha=hashlib.sha256(audio.read_bytes()).hexdigest();assert sha=='f9c4226ec5794a95
 windows=json.loads(Path(a.windows).read_text()) if a.windows else [{'start':0,'end':3113.331293}]
 if out.exists():
  old=json.loads(out.read_text())
- if old.get('complete') and old['audioSha256']==sha and old['model']==a.model:print('REUSE',out);raise SystemExit(0)
+ if old.get('complete') and old['audioSha256']==sha and old['model']==a.model and [{'start':w['start'],'end':w['end']} for w in old['windows']]==windows:print('REUSE',out);raise SystemExit(0)
 print('LOAD',a.model,'windows',len(windows),flush=True)
 model=WhisperModel(a.model,device='cpu',compute_type='int8',cpu_threads=a.threads,download_root=a.model_dir)
 report={'complete':False,'audioSha256':sha,'model':a.model,'engine':{n:importlib.metadata.version(n) for n in ['faster-whisper','ctranslate2','huggingface-hub']},'decoding':'ffmpeg mono 16000 Hz float32','settings':{'language':'es','beam_size':5,'word_timestamps':True,'vad_filter':True,'condition_on_previous_text':False,'cpu_threads':a.threads},'windows':[],'words':[]}

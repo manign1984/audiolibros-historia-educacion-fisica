@@ -17,6 +17,24 @@ for(const e of Object.values(correspondence.evidence)) {
   if(e.status==='cue-envelope')assert.ok(e.candidateStart>=0&&e.candidateEnd<=3113.377959&&e.candidateEnd>e.candidateStart);
 }
 const page=await readFile('src/soares/SoaresApp.jsx','utf8');
+const acoustic=JSON.parse(await readFile('../documentation/obras/soares-corrientes-gimnasticas/evidencia/acustica-work3.json','utf8'));
+assert.equal(acoustic.status,'candidate-not-activated');assert.equal(acoustic.runtimeEnabled,false);assert.equal(acoustic.humanListening,false);
+assert.equal(acoustic.records.length,correspondence.units);
+assert.equal(new Set(acoustic.records.map(r=>r.id)).size,acoustic.records.length);
+for(const r of acoustic.records){
+  assert.ok(r.id in correspondence.evidence);
+  for(const [edge,b] of Object.entries(r.boundaries)){
+    assert.ok(['start','end'].includes(edge));
+    for(const t of [b.tiny,b.base])assert.ok(Number.isFinite(t)&&t>=0&&t<=3113.377959);
+    assert.ok(Math.abs((b.base-b.tiny)-b.delta)<.00011);
+    assert.equal(b.agreementWithin450ms,Math.abs(b.delta)<=.45);
+  }
+  assert.equal(r.bothCompared,Object.keys(r.boundaries).length===2);
+  assert.equal(r.needsHumanReview,Boolean(r.priorFlags.length)||Object.values(r.boundaries).some(b=>!b.agreementWithin450ms));
+}
+assert.equal(acoustic.comparedBoundaries,acoustic.records.reduce((n,r)=>n+Object.keys(r.boundaries).length,0));
+assert.equal(acoustic.disagreements,acoustic.records.flatMap(r=>Object.values(r.boundaries)).filter(b=>!b.agreementWithin450ms).length);
+assert.equal(acoustic.needsHumanReview,acoustic.records.filter(r=>r.needsHumanReview).length);
 assert.deepEqual([...page.matchAll(/<section id="([a-z]+)"/g)].map(x=>x[1]),['inicio','autor','contexto','lectura']);
 assert.match(page,/<JourneyCredits workId="soares"/);assert.equal((page.match(/className="so-screen so-context/g)||[]).length,3);
 assert.match(await readFile('src/shared/canonical-reading.css','utf8'),/\.scharagrodsky-page, \.soares-page\)/);

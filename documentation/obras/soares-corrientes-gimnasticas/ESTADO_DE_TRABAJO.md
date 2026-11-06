@@ -1,4 +1,4 @@
-# Estado de trabajo · Soares · Corte Work 2 → Work 3
+# Estado de trabajo · Soares · Work 3 en curso
 
 Actualización: **06-11-2026, Argentina**. **CANDIDATO LOCAL IMPLEMENTADO Y EVALUADO TÉCNICAMENTE. Sin fusionar ni publicar.** Derechos de redistribución y alineación acústica pendientes. Este estado sustituye el relevo de Work 1; no repetir su investigación.
 
@@ -72,3 +72,14 @@ I01 resuelta en documento candidato; I03 implementada; I05 resuelta técnicament
 ## Work 3 en curso · checkpoint de recuperación
 
 Se verificó ingreso `8575c53…` y PR abierta/draft. Se recuperaron las correcciones visuales ya observadas: contraste de cursivas de Créditos, filas de matriz, variable tipográfica del lector/desbordamiento y paleta del botón. Detalles en [WORK_3_VALIDACION.md](WORK_3_VALIDACION.md). Tras reinicio del entorno se restauró el ZIP privado v1; la evidencia acústica temporal se regenera, no se declara conservada. Procedimiento `tools/soares/recognize_audio.py`. Próximo paso: persistir ASR completo privado, evaluar fronteras contra VTT y terminar teclado/móvil/zoom. I04 y G3 aún bloquean la publicación; sin merge.
+
+
+## Checkpoint Work 3 · colación, ASR y lector móvil
+
+Código visual persistido: `b9945436159ea61e88daeaa146e950a8d17bfda0`. Colación académica final automática completada: cuerpo, 29 notas y bibliografía coinciden en secuencia léxica; censo PDF de Work 2 complementario. [WORK_3_VALIDACION.md](WORK_3_VALIDACION.md) detalla correcciones, comandos, medidas y límites.
+
+**Evidencia acústica ya preservada, no repetir ASR:** [Soares_Work3_revision_acustica.zip](https://chatgpt.com/library?file_id=libfile_ba319db31dfc8191909a4b413edbfbc4&account_id=personal), versión 1, SHA `f4b038751fe3ab6eb1eef941e4b5b5d81a60b0c6e4293bdc9b7fc7d13e804d06`. Tiny completo + base en 38 ventanas/806,471 s; 194 candidatos, 135 fronteras comparadas, 17 discrepancias >0,45 s y 35 unidades señaladas. El ZIP incluye 40 extractos y HTML/JSON de revisión privada. **No es sincronización plenamente verificada.** Notas/bibliografía siguen sin tiempos; `pending` sin resaltado.
+
+Móvil del lector comprobado en 320/390, capítulos, nota 20, comentario sintético recuperado tras recarga y eliminado. Sin overflow. Pendientes de G7: zoom real y preferencia de movimiento reducido emulada; inspección estática sí realizada. Escucha perceptiva del paquete pendiente.
+
+**Próximo paso exacto:** ejecutar/registar pruebas finales sobre este checkpoint; luego revisar los 40 extractos y confirmar/corregir límites con evidencia, completar zoom/movimiento reducido y resolver I04 con el responsable (texto/traducción, audio y retrato). No promover catálogo, integrar materiales privados, fusionar ni desplegar mientras esas puertas sigan abiertas. PR #79 abierta/draft comprobada nuevamente, HEAD `b994543…`, main `8c2bbe4…`.
