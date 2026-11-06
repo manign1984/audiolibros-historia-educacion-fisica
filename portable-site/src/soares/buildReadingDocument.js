@@ -20,9 +20,11 @@ export function buildSoaresDocument(academic) {
         }
         text += paragraph.text.slice(last);
         const parts = [];
-        for (const part of segmenter.segment(text)) {
+        // Ellipses are omissions inside quotations, not standalone sentences.
+        const segmentationText = text.replace(/\.{2,}/g, dots => '\uE000'.repeat(dots.length)).replace(/\[([\s.]+)\]/g, bracket => bracket.replaceAll('.', '\uE000'));
+        for (const part of segmenter.segment(segmentationText)) {
           const previous = parts.at(-1);
-          if (previous && (/(?:\b[A-ZÁÉÍÓÚ]\.|\b(?:Dr|Cf|vol|pp)\.)$/.test(previous.segment.trim()) || /^\([^)]*\d{4}[^)]*\)\.?$/.test(part.segment.trim()))) previous.segment += part.segment;
+          if (previous && (/(?:\b[A-ZÁÉÍÓÚ]\.|\b(?:Dr|Cf|vol|pp)\.)$/.test(previous.segment.trim()) || /^[^\p{L}\p{N}]*$/u.test(previous.segment.trim()) || /^[\"”]?\s*\([^)]*\d{4}[^)]*\)\.?$/.test(part.segment.trim()))) previous.segment += part.segment;
           else parts.push({ segment: part.segment, index: part.index });
         }
         const sentences = parts.map(({ segment, index }, si) => {
@@ -30,7 +32,7 @@ export function buildSoaresDocument(academic) {
           for (const ref of references.filter(ref => ref.position >= index && ref.position < index + segment.length)) endnotes.find(note => note.number === ref.number).sentenceId = sentenceId;
           // A call at the paragraph's end belongs to its last sentence.
           if (si === parts.length - 1) for (const ref of references.filter(ref => ref.position >= index + segment.length)) endnotes.find(note => note.number === ref.number).sentenceId = sentenceId;
-          return { id: sentenceId, text: segment.trim() };
+          return { id: sentenceId, text: segment.replaceAll('\uE000', '.').trim() };
         }).filter(sentence => sentence.text);
         return { id, kind: paragraph.kind, page: paragraph.page, sentences };
       }),
