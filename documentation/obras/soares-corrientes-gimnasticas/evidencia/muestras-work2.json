@@ -1,0 +1,458 @@
+{
+  "purpose": "Comienzo, encabezados, mitad, final y mayores diferencias textuales",
+  "listening": false,
+  "semanticAcousticVerification": false,
+  "samples": [
+    {
+      "id": "soa-title",
+      "status": "cue-envelope",
+      "cueFirst": 1,
+      "cueLast": 2,
+      "candidateStart": 0.0,
+      "candidateEnd": 6.734,
+      "matchedTokens": 13,
+      "tokens": 13,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          6.331656,
+          6.924218
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-author",
+      "status": "cue-envelope",
+      "cueFirst": 3,
+      "cueLast": 3,
+      "candidateStart": 6.767,
+      "candidateEnd": 10.25,
+      "matchedTokens": 2,
+      "tokens": 3,
+      "coverage": 0.6667,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          6.331656,
+          6.924218
+        ]
+      ],
+      "endSilences": [
+        [
+          8.593855,
+          10.41195
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-introduccion-heading",
+      "status": "cue-envelope",
+      "cueFirst": 4,
+      "cueLast": 4,
+      "candidateStart": 10.295,
+      "candidateEnd": 11.92,
+      "matchedTokens": 1,
+      "tokens": 1,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          8.593855,
+          10.41195
+        ]
+      ],
+      "endSilences": [
+        [
+          11.449547,
+          12.061701
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-sistematizacion-heading",
+      "status": "cue-envelope",
+      "cueFirst": 181,
+      "cueLast": 181,
+      "candidateStart": 913.763,
+      "candidateEnd": 919.104,
+      "matchedTokens": 9,
+      "tokens": 9,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          912.226191,
+          913.850658
+        ]
+      ],
+      "endSilences": [
+        [
+          918.449886,
+          919.274671
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-francesa-heading",
+      "status": "cue-envelope",
+      "cueFirst": 305,
+      "cueLast": 305,
+      "candidateStart": 1568.815,
+      "candidateEnd": 1571.137,
+      "matchedTokens": 3,
+      "tokens": 3,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1567.399206,
+          1568.887755
+        ]
+      ],
+      "endSilences": [
+        [
+          1570.359638,
+          1571.270794
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-sueca-heading",
+      "status": "cue-envelope",
+      "cueFirst": 363,
+      "cueLast": 363,
+      "candidateStart": 1877.442,
+      "candidateEnd": 1879.021,
+      "matchedTokens": 3,
+      "tokens": 3,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1875.900045,
+          1877.509501
+        ]
+      ],
+      "endSilences": [
+        [
+          1878.56034,
+          1879.175533
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-alemana-heading",
+      "status": "cue-envelope",
+      "cueFirst": 408,
+      "cueLast": 408,
+      "candidateStart": 2120.209,
+      "candidateEnd": 2122.624,
+      "matchedTokens": 3,
+      "tokens": 3,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2118.696418,
+          2120.276259
+        ]
+      ],
+      "endSilences": [
+        [
+          2121.787279,
+          2122.74288
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-minoritarios-heading",
+      "status": "cue-envelope",
+      "cueFirst": 476,
+      "cueLast": 476,
+      "candidateStart": 2492.108,
+      "candidateEnd": 2497.495,
+      "matchedTokens": 10,
+      "tokens": 10,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2490.598504,
+          2492.180499
+        ]
+      ],
+      "endSilences": [
+        [
+          2496.727052,
+          2497.679524
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-finales-heading",
+      "status": "cue-envelope",
+      "cueFirst": 511,
+      "cueLast": 511,
+      "candidateStart": 2688.246,
+      "candidateEnd": 2690.707,
+      "matchedTokens": 3,
+      "tokens": 3,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2686.526122,
+          2688.346553
+        ]
+      ],
+      "endSilences": [
+        [
+          2690.111225,
+          2690.890862
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-sistematizacion-p15-s1",
+      "status": "cue-envelope",
+      "cueFirst": 302,
+      "cueLast": 304,
+      "candidateStart": 1554.393,
+      "candidateEnd": 1567.721,
+      "matchedTokens": 30,
+      "tokens": 30,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1553.637346,
+          1554.446122
+        ]
+      ],
+      "endSilences": [
+        [
+          1567.399206,
+          1568.887755
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-finales-p12-s2",
+      "status": "cue-envelope",
+      "cueFirst": 592,
+      "cueLast": 593,
+      "candidateStart": 3105.656,
+      "candidateEnd": 3113.305,
+      "matchedTokens": 11,
+      "tokens": 11,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          3112.726554,
+          3113.331293
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-sistematizacion-p1-s2",
+      "status": "cue-envelope",
+      "cueFirst": 187,
+      "cueLast": 189,
+      "candidateStart": 945.177,
+      "candidateEnd": 956.065,
+      "matchedTokens": 20,
+      "tokens": 33,
+      "coverage": 0.6061,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          945.360839,
+          946.032154
+        ]
+      ],
+      "endSilences": [
+        [
+          955.496734,
+          956.193741
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-sistematizacion-p2-s1",
+      "status": "cue-envelope",
+      "cueFirst": 190,
+      "cueLast": 193,
+      "candidateStart": 956.111,
+      "candidateEnd": 983.716,
+      "matchedTokens": 45,
+      "tokens": 57,
+      "coverage": 0.7895,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          955.496734,
+          956.193741
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-sistematizacion-p2-s2",
+      "status": "cue-envelope",
+      "cueFirst": 193,
+      "cueLast": 196,
+      "candidateStart": 976.518,
+      "candidateEnd": 1001.39,
+      "matchedTokens": 28,
+      "tokens": 35,
+      "coverage": 0.8,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1000.62356,
+          1001.565986
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-finales-p11-s3",
+      "status": "cue-envelope",
+      "cueFirst": 588,
+      "cueLast": 589,
+      "candidateStart": 3087.759,
+      "candidateEnd": 3095.306,
+      "matchedTokens": 13,
+      "tokens": 16,
+      "coverage": 0.8125,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          3087.684218,
+          3088.321338
+        ]
+      ],
+      "endSilences": [
+        [
+          3094.696168,
+          3095.461134
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-sueca-p3-s2",
+      "status": "cue-envelope",
+      "cueFirst": 384,
+      "cueLast": 386,
+      "candidateStart": 1991.198,
+      "candidateEnd": 2008.432,
+      "matchedTokens": 16,
+      "tokens": 19,
+      "coverage": 0.8421,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-minoritarios-p4-s2",
+      "status": "cue-envelope",
+      "cueFirst": 506,
+      "cueLast": 510,
+      "candidateStart": 2664.929,
+      "candidateEnd": 2687.158,
+      "matchedTokens": 39,
+      "tokens": 46,
+      "coverage": 0.8478,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2686.526122,
+          2688.346553
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "soa-francesa-p6-s4",
+      "status": "cue-envelope",
+      "cueFirst": 352,
+      "cueLast": 355,
+      "candidateStart": 1818.584,
+      "candidateEnd": 1837.577,
+      "matchedTokens": 44,
+      "tokens": 51,
+      "coverage": 0.8627,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1817.834943,
+          1818.719796
+        ]
+      ],
+      "endSilences": [
+        [
+          1836.788027,
+          1837.771905
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    }
+  ]
+}

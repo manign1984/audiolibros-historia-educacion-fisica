@@ -1,0 +1,2469 @@
+{
+  "status": "candidate-not-activated",
+  "method": "Two ASR sizes, exact normalized VTT-token identity, measured endpoints; no interpolation",
+  "models": [
+    "tiny",
+    "base"
+  ],
+  "reviewWindows": 38,
+  "reviewSeconds": 806.471,
+  "audioSha256": "f9c4226ec5794a959d77d6f97b523eabadb0dcdc272bbec9c9e1b04d9a019b37",
+  "inputs": {
+    "document.json": "7ae2eb3dc0384547ef1d03f4d441e8d1093587e07ed97d6c7929f359db5aa40b",
+    "original.vtt": "ec0beaea889464cd05328c6e73fb80f36f3f8899ae99cc463fcefb82bc1e294f",
+    "tiny.json": "1cc53f5e5d3690985c703a84bd144bc15a8f7e8f5635ffc3d1a0cea8faae2d1b",
+    "base.json": "e6cde1ae7f94cbc0cd05ce8410ce2e53c477534f6fdc9254f92823b9b4123444",
+    "acoustic-audit.json": "a9bbf2ae3dd8032792501088416a60e79ac5a462fcf06a123f6131d0ebee6ef3"
+  },
+  "units": 194,
+  "comparedBoundaries": 135,
+  "bothCompared": 50,
+  "disagreements": 17,
+  "needsHumanReview": 35,
+  "humanListening": false,
+  "runtimeEnabled": false,
+  "records": [
+    {
+      "id": "soa-title",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 0.0,
+          "base": 0.0,
+          "delta": 0.0,
+          "baseProbability": 0.4206,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 6.38,
+          "base": 6.16,
+          "delta": -0.22,
+          "baseProbability": 0.9896,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-author",
+      "priorFlags": [
+        "low-coverage"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 7.3,
+          "base": 6.94,
+          "delta": -0.36,
+          "baseProbability": 0.9339,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 8.7,
+          "base": 8.34,
+          "delta": -0.36,
+          "baseProbability": 0.8552,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-introduccion-heading",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 10.64,
+          "base": 10.48,
+          "delta": -0.16,
+          "baseProbability": 0.796,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 11.58,
+          "base": 11.44,
+          "delta": -0.14,
+          "baseProbability": 0.796,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p1-s1",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 11.58,
+          "base": 11.68,
+          "delta": 0.1,
+          "baseProbability": 0.835,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 24.9,
+          "base": 24.8,
+          "delta": -0.1,
+          "baseProbability": 0.9863,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-introduccion-p1-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 24.9,
+          "base": 24.8,
+          "delta": -0.1,
+          "baseProbability": 0.6164,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p1-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p1-s4",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p1-s5",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p1-s6",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p2-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p2-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p3-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p3-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p3-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p3-s4",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p4-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p4-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p4-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p5-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p6-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p6-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p7-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 326.96,
+          "base": 326.86,
+          "delta": -0.1,
+          "baseProbability": 0.9991,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p7-s2",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 327.82,
+          "base": 327.6,
+          "delta": -0.22,
+          "baseProbability": 0.9374,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 342.72,
+          "base": 342.54,
+          "delta": -0.18,
+          "baseProbability": 0.7953,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-introduccion-p8-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 343.42,
+          "base": 343.2,
+          "delta": -0.22,
+          "baseProbability": 0.9605,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p8-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p8-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p9-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p10-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p10-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p10-s3",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 478.1,
+          "base": 477.98,
+          "delta": -0.12,
+          "baseProbability": 0.9968,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p11-s1",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 478.1,
+          "base": 478.8,
+          "delta": 0.7,
+          "baseProbability": 0.9565,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 503.86,
+          "base": 503.7,
+          "delta": -0.16,
+          "baseProbability": 0.9916,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-introduccion-p12-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 504.46,
+          "base": 504.92,
+          "delta": 0.46,
+          "baseProbability": 0.9916,
+          "agreementWithin450ms": false
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-introduccion-p12-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 532.84,
+          "base": 532.68,
+          "delta": -0.16,
+          "baseProbability": 0.7932,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p12-s3",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 533.32,
+          "base": 533.92,
+          "delta": 0.6,
+          "baseProbability": 0.9667,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 549.48,
+          "base": 549.34,
+          "delta": -0.14,
+          "baseProbability": 0.9705,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-introduccion-p13-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 550.24,
+          "base": 549.94,
+          "delta": -0.3,
+          "baseProbability": 0.9732,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 565.38,
+          "base": 565.28,
+          "delta": -0.1,
+          "baseProbability": 0.789,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p13-s2",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 566.92,
+          "base": 566.68,
+          "delta": -0.24,
+          "baseProbability": 0.9837,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 582.48,
+          "base": 582.42,
+          "delta": -0.06,
+          "baseProbability": 0.8,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-introduccion-p13-s3",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 583.8,
+          "base": 583.64,
+          "delta": -0.16,
+          "baseProbability": 0.9984,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p14-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p14-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p14-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p14-s4",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p14-s5",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p14-s6",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p14-s7",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p15-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p15-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p15-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p16-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p16-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p16-s3",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 761.96,
+          "base": 761.92,
+          "delta": -0.04,
+          "baseProbability": 0.989,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p16-s4",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 762.84,
+          "base": 762.7,
+          "delta": -0.14,
+          "baseProbability": 0.9833,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 766.98,
+          "base": 766.78,
+          "delta": -0.2,
+          "baseProbability": 0.9796,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p16-s5",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 766.98,
+          "base": 767.58,
+          "delta": 0.6,
+          "baseProbability": 0.9253,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 780.74,
+          "base": 780.54,
+          "delta": -0.2,
+          "baseProbability": 0.9959,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-introduccion-p16-s6",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 781.78,
+          "base": 781.18,
+          "delta": -0.6,
+          "baseProbability": 0.9658,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 793.04,
+          "base": 792.78,
+          "delta": -0.26,
+          "baseProbability": 0.9817,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-introduccion-p17-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 795.16,
+          "base": 794.84,
+          "delta": -0.32,
+          "baseProbability": 0.9649,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p17-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p18-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p19-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p19-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p19-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p19-s4",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p19-s5",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-introduccion-p19-s6",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 912.3,
+          "base": 912.16,
+          "delta": -0.14,
+          "baseProbability": 0.9246,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-heading",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 914.04,
+          "base": 913.86,
+          "delta": -0.18,
+          "baseProbability": 0.9375,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 918.46,
+          "base": 918.38,
+          "delta": -0.08,
+          "baseProbability": 0.9951,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p1-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 919.34,
+          "base": 919.16,
+          "delta": -0.18,
+          "baseProbability": 0.9957,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 945.52,
+          "base": 945.3,
+          "delta": -0.22,
+          "baseProbability": 0.9951,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p1-s2",
+      "priorFlags": [
+        "low-coverage"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 946.28,
+          "base": 946.1,
+          "delta": -0.18,
+          "baseProbability": 0.9126,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 955.52,
+          "base": 955.46,
+          "delta": -0.06,
+          "baseProbability": 0.9912,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-sistematizacion-p2-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 955.52,
+          "base": 955.46,
+          "delta": -0.06,
+          "baseProbability": 0.8216,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 982.84,
+          "base": 982.62,
+          "delta": -0.22,
+          "baseProbability": 0.8836,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p2-s2",
+      "priorFlags": [
+        "low-coverage"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 983.38,
+          "base": 983.18,
+          "delta": -0.2,
+          "baseProbability": 0.9637,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 1000.06,
+          "base": 999.9,
+          "delta": -0.16,
+          "baseProbability": 0.8898,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-sistematizacion-p3-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1001.58,
+          "base": 1001.42,
+          "delta": -0.16,
+          "baseProbability": 0.9543,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p3-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p4-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p4-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p5-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p6-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p6-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p6-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p7-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p7-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p8-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p8-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p8-s3",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 1293.38,
+          "base": 1293.16,
+          "delta": -0.22,
+          "baseProbability": 0.9942,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p9-s1",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 1294.18,
+          "base": 1293.96,
+          "delta": -0.22,
+          "baseProbability": 0.8882,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 1311.98,
+          "base": 1311.8,
+          "delta": -0.18,
+          "baseProbability": 0.9898,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-sistematizacion-p10-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1312.8,
+          "base": 1312.62,
+          "delta": -0.18,
+          "baseProbability": 0.969,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p10-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p10-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p11-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p11-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p11-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p11-s4",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 1415.08,
+          "base": 1414.82,
+          "delta": -0.26,
+          "baseProbability": 0.9673,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p11-s5",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 1415.86,
+          "base": 1415.64,
+          "delta": -0.22,
+          "baseProbability": 0.7786,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 1430.3,
+          "base": 1430.18,
+          "delta": -0.12,
+          "baseProbability": 0.8641,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-sistematizacion-p11-s6",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1431.08,
+          "base": 1430.86,
+          "delta": -0.22,
+          "baseProbability": 0.9783,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p12-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p13-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p14-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 1554.06,
+          "base": 1553.64,
+          "delta": -0.42,
+          "baseProbability": 0.9958,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sistematizacion-p15-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1554.56,
+          "base": 1554.44,
+          "delta": -0.12,
+          "baseProbability": 0.6661,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 1567.4,
+          "base": 1567.3,
+          "delta": -0.1,
+          "baseProbability": 0.9472,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-heading",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1568.06,
+          "base": 1567.86,
+          "delta": -0.2,
+          "baseProbability": 0.9698,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 1570.98,
+          "base": 1570.36,
+          "delta": -0.62,
+          "baseProbability": 0.9869,
+          "agreementWithin450ms": false
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-francesa-p1-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1571.5,
+          "base": 1571.26,
+          "delta": -0.24,
+          "baseProbability": 0.7938,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 1578.14,
+          "base": 1578.0,
+          "delta": -0.14,
+          "baseProbability": 0.9291,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p1-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1578.82,
+          "base": 1578.58,
+          "delta": -0.24,
+          "baseProbability": 0.8183,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p1-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p2-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p2-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p3-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p3-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p3-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p4-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p4-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p4-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p4-s4",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p4-s5",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p4-s6",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 1740.16,
+          "base": 1740.08,
+          "delta": -0.08,
+          "baseProbability": 0.9952,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p4-s7",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 1740.86,
+          "base": 1740.66,
+          "delta": -0.2,
+          "baseProbability": 0.9249,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 1747.92,
+          "base": 1747.7,
+          "delta": -0.22,
+          "baseProbability": 0.8322,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-francesa-p5-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1748.78,
+          "base": 1748.44,
+          "delta": -0.34,
+          "baseProbability": 0.8475,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p6-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 1792.02,
+          "base": 1791.88,
+          "delta": -0.14,
+          "baseProbability": 0.9209,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p6-s2",
+      "priorFlags": [
+        "prefix-unmatched"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 1793.42,
+          "base": 1793.34,
+          "delta": -0.08,
+          "baseProbability": 0.9947,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 1802.18,
+          "base": 1802.12,
+          "delta": -0.06,
+          "baseProbability": 0.9912,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-francesa-p6-s3",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1803.18,
+          "base": 1802.76,
+          "delta": -0.42,
+          "baseProbability": 0.9896,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p6-s4",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p7-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p7-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-francesa-p7-s3",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 1874.74,
+          "base": 1874.5,
+          "delta": -0.24,
+          "baseProbability": 0.979,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sueca-heading",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1876.86,
+          "base": 1877.5,
+          "delta": 0.64,
+          "baseProbability": 0.9414,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 1878.86,
+          "base": 1878.54,
+          "delta": -0.32,
+          "baseProbability": 0.794,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-sueca-p1-s1",
+      "priorFlags": [
+        "low-coverage"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 1879.38,
+          "base": 1879.16,
+          "delta": -0.22,
+          "baseProbability": 0.9694,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 1891.16,
+          "base": 1891.02,
+          "delta": -0.14,
+          "baseProbability": 0.8629,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-sueca-p1-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1893.24,
+          "base": 1893.08,
+          "delta": -0.16,
+          "baseProbability": 0.7211,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sueca-p1-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sueca-p2-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sueca-p2-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 1984.3,
+          "base": 1984.2,
+          "delta": -0.1,
+          "baseProbability": 0.9687,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sueca-p3-s1",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 1984.3,
+          "base": 1985.08,
+          "delta": 0.78,
+          "baseProbability": 0.9883,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 1996.44,
+          "base": 1996.18,
+          "delta": -0.26,
+          "baseProbability": 0.9946,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-sueca-p3-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 1997.36,
+          "base": 1997.02,
+          "delta": -0.34,
+          "baseProbability": 0.9721,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 2003.24,
+          "base": 2003.14,
+          "delta": -0.1,
+          "baseProbability": 0.8585,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sueca-p3-s3",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2004.16,
+          "base": 2004.04,
+          "delta": -0.12,
+          "baseProbability": 0.2806,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 2016.92,
+          "base": 2016.32,
+          "delta": -0.6,
+          "baseProbability": 0.9793,
+          "agreementWithin450ms": false
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-sueca-p3-s4",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 2017.36,
+          "base": 2016.98,
+          "delta": -0.38,
+          "baseProbability": 0.9837,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 2038.16,
+          "base": 2037.96,
+          "delta": -0.2,
+          "baseProbability": 0.7834,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-sueca-p3-s5",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2038.96,
+          "base": 2038.24,
+          "delta": -0.72,
+          "baseProbability": 0.9103,
+          "agreementWithin450ms": false
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-sueca-p4-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sueca-p4-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sueca-p5-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-sueca-p5-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 2117.16,
+          "base": 2117.0,
+          "delta": -0.16,
+          "baseProbability": 0.9699,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-heading",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2120.4,
+          "base": 2119.58,
+          "delta": -0.82,
+          "baseProbability": 0.8877,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 2121.88,
+          "base": 2121.72,
+          "delta": -0.16,
+          "baseProbability": 0.9153,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-alemana-p1-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2122.82,
+          "base": 2122.6,
+          "delta": -0.22,
+          "baseProbability": 0.9861,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p1-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p1-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p1-s4",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p1-s5",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p2-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p2-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p2-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p3-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p3-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p3-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p3-s4",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p3-s5",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p3-s6",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p3-s7",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p4-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p5-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 2389.23,
+          "base": 2389.07,
+          "delta": -0.16,
+          "baseProbability": 0.9479,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p6-s1",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 2389.99,
+          "base": 2389.75,
+          "delta": -0.24,
+          "baseProbability": 0.624,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 2404.03,
+          "base": 2403.85,
+          "delta": -0.18,
+          "baseProbability": 0.974,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-alemana-p6-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2404.81,
+          "base": 2404.67,
+          "delta": -0.14,
+          "baseProbability": 0.9685,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 2424.75,
+          "base": 2424.71,
+          "delta": -0.04,
+          "baseProbability": 0.9153,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p7-s1",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 2424.75,
+          "base": 2425.41,
+          "delta": 0.66,
+          "baseProbability": 0.9858,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 2457.15,
+          "base": 2457.07,
+          "delta": -0.08,
+          "baseProbability": 0.9828,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-alemana-p7-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2458.03,
+          "base": 2457.71,
+          "delta": -0.32,
+          "baseProbability": 0.9559,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-alemana-p8-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 2490.89,
+          "base": 2490.53,
+          "delta": -0.36,
+          "baseProbability": 0.9775,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-minoritarios-heading",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2492.43,
+          "base": 2491.51,
+          "delta": -0.92,
+          "baseProbability": 0.9452,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 2496.87,
+          "base": 2496.67,
+          "delta": -0.2,
+          "baseProbability": 0.9896,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-minoritarios-p1-s1",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 2496.87,
+          "base": 2497.39,
+          "delta": 0.52,
+          "baseProbability": 0.8648,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 2531.43,
+          "base": 2531.23,
+          "delta": -0.2,
+          "baseProbability": 0.9875,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-minoritarios-p1-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2532.25,
+          "base": 2531.81,
+          "delta": -0.44,
+          "baseProbability": 0.9918,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-minoritarios-p2-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-minoritarios-p2-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-minoritarios-p2-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-minoritarios-p3-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-minoritarios-p3-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-minoritarios-p4-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 2668.57,
+          "base": 2668.15,
+          "delta": -0.42,
+          "baseProbability": 0.9746,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-minoritarios-p4-s2",
+      "priorFlags": [
+        "low-coverage"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 2668.91,
+          "base": 2668.69,
+          "delta": -0.22,
+          "baseProbability": 0.9854,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 2685.53,
+          "base": 2685.35,
+          "delta": -0.18,
+          "baseProbability": 0.978,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-finales-heading",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2688.51,
+          "base": 2688.27,
+          "delta": -0.24,
+          "baseProbability": 0.8318,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 2690.59,
+          "base": 2690.13,
+          "delta": -0.46,
+          "baseProbability": 0.9297,
+          "agreementWithin450ms": false
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-finales-p1-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2691.05,
+          "base": 2690.77,
+          "delta": -0.28,
+          "baseProbability": 0.9888,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p1-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p2-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p2-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p3-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p3-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2753.09,
+          "base": 2752.65,
+          "delta": -0.44,
+          "baseProbability": 0.6781,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 2759.65,
+          "base": 2759.63,
+          "delta": -0.02,
+          "baseProbability": 0.9947,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p3-s3",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 2759.65,
+          "base": 2760.57,
+          "delta": 0.92,
+          "baseProbability": 0.9744,
+          "agreementWithin450ms": false
+        },
+        "end": {
+          "tiny": 2776.37,
+          "base": 2776.29,
+          "delta": -0.08,
+          "baseProbability": 0.9893,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-finales-p3-s4",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2777.17,
+          "base": 2776.95,
+          "delta": -0.22,
+          "baseProbability": 0.7111,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 2803.11,
+          "base": 2802.65,
+          "delta": -0.46,
+          "baseProbability": 0.9445,
+          "agreementWithin450ms": false
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-finales-p4-s1",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 2803.41,
+          "base": 2803.19,
+          "delta": -0.22,
+          "baseProbability": 0.9329,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 2827.13,
+          "base": 2827.03,
+          "delta": -0.1,
+          "baseProbability": 0.9433,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-finales-p4-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 2827.95,
+          "base": 2827.77,
+          "delta": -0.18,
+          "baseProbability": 0.9872,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p5-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p5-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p5-s3",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p6-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p6-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p7-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p8-s1",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p8-s2",
+      "priorFlags": [],
+      "boundaries": {},
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p8-s3",
+      "priorFlags": [],
+      "boundaries": {
+        "end": {
+          "tiny": 3011.46,
+          "base": 3011.38,
+          "delta": -0.08,
+          "baseProbability": 0.8768,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": false,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p8-s4",
+      "priorFlags": [
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 3012.22,
+          "base": 3011.92,
+          "delta": -0.3,
+          "baseProbability": 0.9887,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 3024.16,
+          "base": 3024.04,
+          "delta": -0.12,
+          "baseProbability": 0.9912,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-finales-p9-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 3025.76,
+          "base": 3025.56,
+          "delta": -0.2,
+          "baseProbability": 0.9955,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 3041.5,
+          "base": 3041.42,
+          "delta": -0.08,
+          "baseProbability": 0.9674,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p10-s1",
+      "priorFlags": [
+        "prefix-unmatched"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 3043.46,
+          "base": 3043.44,
+          "delta": -0.02,
+          "baseProbability": 0.9962,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 3058.32,
+          "base": 3058.24,
+          "delta": -0.08,
+          "baseProbability": 0.989,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-finales-p11-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 3059.76,
+          "base": 3059.6,
+          "delta": -0.16,
+          "baseProbability": 0.9505,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 3084.5,
+          "base": 3084.38,
+          "delta": -0.12,
+          "baseProbability": 0.9738,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p11-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 3084.5,
+          "base": 3084.92,
+          "delta": 0.42,
+          "baseProbability": 0.9908,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 3087.72,
+          "base": 3087.62,
+          "delta": -0.1,
+          "baseProbability": 0.9558,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p11-s3",
+      "priorFlags": [
+        "prefix-unmatched",
+        "low-coverage",
+        "low-boundary-probability"
+      ],
+      "boundaries": {
+        "start": {
+          "tiny": 3089.28,
+          "base": 3089.2,
+          "delta": -0.08,
+          "baseProbability": 0.9376,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 3094.78,
+          "base": 3094.6,
+          "delta": -0.18,
+          "baseProbability": 0.9988,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": true
+    },
+    {
+      "id": "soa-finales-p12-s1",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 3095.64,
+          "base": 3095.34,
+          "delta": -0.3,
+          "baseProbability": 0.9342,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 3107.36,
+          "base": 3107.22,
+          "delta": -0.14,
+          "baseProbability": 0.9993,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    },
+    {
+      "id": "soa-finales-p12-s2",
+      "priorFlags": [],
+      "boundaries": {
+        "start": {
+          "tiny": 3107.36,
+          "base": 3107.22,
+          "delta": -0.14,
+          "baseProbability": 0.3158,
+          "agreementWithin450ms": true
+        },
+        "end": {
+          "tiny": 3112.66,
+          "base": 3112.66,
+          "delta": 0.0,
+          "baseProbability": 0.991,
+          "agreementWithin450ms": true
+        }
+      },
+      "bothCompared": true,
+      "needsHumanReview": false
+    }
+  ]
+}

@@ -1,0 +1,4541 @@
+{
+  "sourceVttSha256": "ec0beaea889464cd05328c6e73fb80f36f3f8899ae99cc463fcefb82bc1e294f",
+  "documentSha256": "7ae2eb3dc0384547ef1d03f4d441e8d1093587e07ed97d6c7929f359db5aa40b",
+  "method": "normalized-token-sequence + cue envelopes + silence detection; no word-time interpolation",
+  "acousticMethod": "ffmpeg silencedetect -35dB / minimum 0.15 seconds; silence is not semantic confirmation",
+  "units": 194,
+  "cueCount": 593,
+  "matchedAcademicTokens": 6371,
+  "academicTokens": 6508,
+  "vttTokens": 6390,
+  "bothCueBoundaries": 52,
+  "uncertainUnits": 194,
+  "syncStatus": "pending",
+  "humanListening": false,
+  "forcedAlignment": false,
+  "silences": 1053,
+  "evidence": {
+    "soa-title": {
+      "status": "cue-envelope",
+      "cueFirst": 1,
+      "cueLast": 2,
+      "candidateStart": 0.0,
+      "candidateEnd": 6.734,
+      "matchedTokens": 13,
+      "tokens": 13,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          6.331656,
+          6.924218
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-author": {
+      "status": "cue-envelope",
+      "cueFirst": 3,
+      "cueLast": 3,
+      "candidateStart": 6.767,
+      "candidateEnd": 10.25,
+      "matchedTokens": 2,
+      "tokens": 3,
+      "coverage": 0.6667,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          6.331656,
+          6.924218
+        ]
+      ],
+      "endSilences": [
+        [
+          8.593855,
+          10.41195
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-heading": {
+      "status": "cue-envelope",
+      "cueFirst": 4,
+      "cueLast": 4,
+      "candidateStart": 10.295,
+      "candidateEnd": 11.92,
+      "matchedTokens": 1,
+      "tokens": 1,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          8.593855,
+          10.41195
+        ]
+      ],
+      "endSilences": [
+        [
+          11.449547,
+          12.061701
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p1-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 5,
+      "cueLast": 7,
+      "candidateStart": 11.968,
+      "candidateEnd": 28.447,
+      "matchedTokens": 26,
+      "tokens": 26,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          11.449547,
+          12.061701
+        ]
+      ],
+      "endSilences": [
+        [
+          28.331043,
+          28.864014
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p1-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 7,
+      "cueLast": 10,
+      "candidateStart": 22.462,
+      "candidateEnd": 44.615,
+      "matchedTokens": 38,
+      "tokens": 38,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          21.966916,
+          22.449365
+        ]
+      ],
+      "endSilences": [
+        [
+          44.118753,
+          44.717324
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p1-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 11,
+      "cueLast": 14,
+      "candidateStart": 44.649,
+      "candidateEnd": 66.321,
+      "matchedTokens": 45,
+      "tokens": 45,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          44.118753,
+          44.717324
+        ]
+      ],
+      "endSilences": [
+        [
+          65.85322,
+          66.102154
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p1-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 14,
+      "cueLast": 18,
+      "candidateStart": 60.828,
+      "candidateEnd": 87.467,
+      "matchedTokens": 45,
+      "tokens": 45,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          60.774694,
+          61.190794
+        ]
+      ],
+      "endSilences": [
+        [
+          86.811497,
+          87.63381
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p1-s5": {
+      "status": "cue-envelope",
+      "cueFirst": 19,
+      "cueLast": 21,
+      "candidateStart": 87.517,
+      "candidateEnd": 104.44200000000001,
+      "matchedTokens": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          86.811497,
+          87.63381
+        ]
+      ],
+      "endSilences": [
+        [
+          104.301157,
+          104.459683
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p1-s6": {
+      "status": "cue-envelope",
+      "cueFirst": 21,
+      "cueLast": 24,
+      "candidateStart": 98.75,
+      "candidateEnd": 116.124,
+      "matchedTokens": 35,
+      "tokens": 35,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          115.609592,
+          116.314172
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p2-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 25,
+      "cueLast": 27,
+      "candidateStart": 116.175,
+      "candidateEnd": 132.601,
+      "matchedTokens": 26,
+      "tokens": 26,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          115.609592,
+          116.314172
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p2-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 27,
+      "cueLast": 31,
+      "candidateStart": 127.1,
+      "candidateEnd": 152.77,
+      "matchedTokens": 47,
+      "tokens": 47,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          152.116235,
+          152.926054
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p3-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 32,
+      "cueLast": 35,
+      "candidateStart": 152.8,
+      "candidateEnd": 174.998,
+      "matchedTokens": 44,
+      "tokens": 44,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          152.116235,
+          152.926054
+        ]
+      ],
+      "endSilences": [
+        [
+          174.193832,
+          175.109501
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p3-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 36,
+      "cueLast": 37,
+      "candidateStart": 175.03199999999998,
+      "candidateEnd": 186.028,
+      "matchedTokens": 16,
+      "tokens": 16,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          174.193832,
+          175.109501
+        ]
+      ],
+      "endSilences": [
+        [
+          185.495329,
+          185.943152
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p3-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 37,
+      "cueLast": 41,
+      "candidateStart": 180.454,
+      "candidateEnd": 208.632,
+      "matchedTokens": 58,
+      "tokens": 58,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          208.318957,
+          209.000998
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p3-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 41,
+      "cueLast": 44,
+      "candidateStart": 202.599,
+      "candidateEnd": 221.84300000000002,
+      "matchedTokens": 32,
+      "tokens": 32,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          202.175465,
+          202.799501
+        ]
+      ],
+      "endSilences": [
+        [
+          221.087143,
+          221.99034
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p4-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 45,
+      "cueLast": 47,
+      "candidateStart": 221.871,
+      "candidateEnd": 239.546,
+      "matchedTokens": 30,
+      "tokens": 30,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          221.087143,
+          221.99034
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p4-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 47,
+      "cueLast": 49,
+      "candidateStart": 233.709,
+      "candidateEnd": 252.289,
+      "matchedTokens": 24,
+      "tokens": 24,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          251.738481,
+          252.459864
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p4-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 50,
+      "cueLast": 52,
+      "candidateStart": 252.331,
+      "candidateEnd": 265.148,
+      "matchedTokens": 30,
+      "tokens": 30,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          251.738481,
+          252.459864
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p5-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 53,
+      "cueLast": 59,
+      "candidateStart": 265.185,
+      "candidateEnd": 298.664,
+      "matchedTokens": 72,
+      "tokens": 73,
+      "coverage": 0.9863,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          297.92737,
+          298.791497
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p6-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 60,
+      "cueLast": 61,
+      "candidateStart": 298.703,
+      "candidateEnd": 309.802,
+      "matchedTokens": 22,
+      "tokens": 22,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          297.92737,
+          298.791497
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p6-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 61,
+      "cueLast": 63,
+      "candidateStart": 304.436,
+      "candidateEnd": 320.606,
+      "matchedTokens": 23,
+      "tokens": 23,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p7-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 63,
+      "cueLast": 65,
+      "candidateStart": 315.608,
+      "candidateEnd": 327.589,
+      "matchedTokens": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          326.973628,
+          327.709728
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p7-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 66,
+      "cueLast": 69,
+      "candidateStart": 327.622,
+      "candidateEnd": 343.253,
+      "matchedTokens": 37,
+      "tokens": 39,
+      "coverage": 0.9487,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          326.973628,
+          327.709728
+        ]
+      ],
+      "endSilences": [
+        [
+          342.639252,
+          343.416259
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p8-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 70,
+      "cueLast": 72,
+      "candidateStart": 343.298,
+      "candidateEnd": 360.607,
+      "matchedTokens": 30,
+      "tokens": 30,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          342.639252,
+          343.416259
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p8-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 72,
+      "cueLast": 76,
+      "candidateStart": 354.811,
+      "candidateEnd": 382.772,
+      "matchedTokens": 50,
+      "tokens": 50,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          382.034354,
+          382.93161
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p8-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 77,
+      "cueLast": 79,
+      "candidateStart": 382.823,
+      "candidateEnd": 395.037,
+      "matchedTokens": 32,
+      "tokens": 32,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          382.034354,
+          382.93161
+        ]
+      ],
+      "endSilences": [
+        [
+          394.425579,
+          395.205125
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p9-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 80,
+      "cueLast": 86,
+      "candidateStart": 395.076,
+      "candidateEnd": 429.999,
+      "matchedTokens": 79,
+      "tokens": 79,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          394.425579,
+          395.205125
+        ]
+      ],
+      "endSilences": [
+        [
+          429.303492,
+          430.061995
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p10-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 87,
+      "cueLast": 89,
+      "candidateStart": 430.029,
+      "candidateEnd": 447.172,
+      "matchedTokens": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          429.303492,
+          430.061995
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p10-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 89,
+      "cueLast": 92,
+      "candidateStart": 441.206,
+      "candidateEnd": 461.14300000000003,
+      "matchedTokens": 39,
+      "tokens": 39,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          460.514399,
+          461.315057
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p10-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 93,
+      "cueLast": 96,
+      "candidateStart": 461.194,
+      "candidateEnd": 478.841,
+      "matchedTokens": 40,
+      "tokens": 40,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          460.514399,
+          461.315057
+        ]
+      ],
+      "endSilences": [
+        [
+          478.160408,
+          478.957846
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p11-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 97,
+      "cueLast": 101,
+      "candidateStart": 478.88,
+      "candidateEnd": 504.979,
+      "matchedTokens": 51,
+      "tokens": 52,
+      "coverage": 0.9808,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          478.160408,
+          478.957846
+        ]
+      ],
+      "endSilences": [
+        [
+          504.302789,
+          505.101769
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p12-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 102,
+      "cueLast": 105,
+      "candidateStart": 505.03,
+      "candidateEnd": 523.559,
+      "matchedTokens": 37,
+      "tokens": 37,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          504.302789,
+          505.101769
+        ]
+      ],
+      "endSilences": [
+        [
+          522.724286,
+          523.710408
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p12-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 106,
+      "cueLast": 107,
+      "candidateStart": 523.604,
+      "candidateEnd": 534.501,
+      "matchedTokens": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          522.724286,
+          523.710408
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p12-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 107,
+      "cueLast": 110,
+      "candidateStart": 528.639,
+      "candidateEnd": 549.982,
+      "matchedTokens": 33,
+      "tokens": 34,
+      "coverage": 0.9706,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          528.489025,
+          528.75644
+        ]
+      ],
+      "endSilences": [
+        [
+          549.356304,
+          550.136372
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p13-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 111,
+      "cueLast": 113,
+      "candidateStart": 550.015,
+      "candidateEnd": 566.687,
+      "matchedTokens": 35,
+      "tokens": 37,
+      "coverage": 0.9459,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          549.356304,
+          550.136372
+        ]
+      ],
+      "endSilences": [
+        [
+          566.001882,
+          566.832222
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p13-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 114,
+      "cueLast": 116,
+      "candidateStart": 566.735,
+      "candidateEnd": 583.455,
+      "matchedTokens": 33,
+      "tokens": 33,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          566.001882,
+          566.832222
+        ]
+      ],
+      "endSilences": [
+        [
+          582.428163,
+          583.45102
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p13-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 116,
+      "cueLast": 118,
+      "candidateStart": 578.131,
+      "candidateEnd": 592.602,
+      "matchedTokens": 22,
+      "tokens": 22,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          592.051882,
+          592.903243
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p14-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 119,
+      "cueLast": 119,
+      "candidateStart": 592.65,
+      "candidateEnd": 598.547,
+      "matchedTokens": 7,
+      "tokens": 7,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          592.051882,
+          592.903243
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p14-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 119,
+      "cueLast": 121,
+      "candidateStart": 592.65,
+      "candidateEnd": 609.241,
+      "matchedTokens": 24,
+      "tokens": 24,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          592.051882,
+          592.903243
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p14-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 122,
+      "cueLast": 123,
+      "candidateStart": 609.241,
+      "candidateEnd": 619.306,
+      "matchedTokens": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          618.668322,
+          619.425283
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p14-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 124,
+      "cueLast": 125,
+      "candidateStart": 619.349,
+      "candidateEnd": 631.312,
+      "matchedTokens": 24,
+      "tokens": 24,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          618.668322,
+          619.425283
+        ]
+      ],
+      "endSilences": [
+        [
+          630.318911,
+          631.08229
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p14-s5": {
+      "status": "cue-envelope",
+      "cueFirst": 125,
+      "cueLast": 127,
+      "candidateStart": 625.02,
+      "candidateEnd": 642.499,
+      "matchedTokens": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p14-s6": {
+      "status": "cue-envelope",
+      "cueFirst": 127,
+      "cueLast": 129,
+      "candidateStart": 636.828,
+      "candidateEnd": 654.695,
+      "matchedTokens": 24,
+      "tokens": 24,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          636.761996,
+          637.133016
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p14-s7": {
+      "status": "cue-envelope",
+      "cueFirst": 129,
+      "cueLast": 131,
+      "candidateStart": 648.7909999999999,
+      "candidateEnd": 665.882,
+      "matchedTokens": 28,
+      "tokens": 31,
+      "coverage": 0.9032,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          665.318458,
+          666.049796
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p15-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 132,
+      "cueLast": 135,
+      "candidateStart": 665.927,
+      "candidateEnd": 685.478,
+      "matchedTokens": 44,
+      "tokens": 44,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          665.318458,
+          666.049796
+        ]
+      ],
+      "endSilences": [
+        [
+          684.71576,
+          685.648753
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p15-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 136,
+      "cueLast": 137,
+      "candidateStart": 685.52,
+      "candidateEnd": 697.771,
+      "matchedTokens": 28,
+      "tokens": 28,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          684.71576,
+          685.648753
+        ]
+      ],
+      "endSilences": [
+        [
+          697.784467,
+          698.567279
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p15-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 137,
+      "cueLast": 139,
+      "candidateStart": 691.607,
+      "candidateEnd": 709.483,
+      "matchedTokens": 26,
+      "tokens": 26,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          709.272336,
+          709.870454
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p16-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 140,
+      "cueLast": 143,
+      "candidateStart": 709.528,
+      "candidateEnd": 732.15,
+      "matchedTokens": 41,
+      "tokens": 41,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          709.272336,
+          709.870454
+        ]
+      ],
+      "endSilences": [
+        [
+          731.989252,
+          732.772381
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p16-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 145,
+      "cueLast": 147,
+      "candidateStart": 732.648,
+      "candidateEnd": 749.298,
+      "matchedTokens": 33,
+      "tokens": 34,
+      "coverage": 0.9706,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          731.989252,
+          732.772381
+        ]
+      ],
+      "endSilences": [
+        [
+          748.666145,
+          749.573923
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p16-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 147,
+      "cueLast": 150,
+      "candidateStart": 744.091,
+      "candidateEnd": 762.648,
+      "matchedTokens": 28,
+      "tokens": 28,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          762.038843,
+          762.812721
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p16-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 151,
+      "cueLast": 151,
+      "candidateStart": 762.69,
+      "candidateEnd": 768.624,
+      "matchedTokens": 10,
+      "tokens": 10,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          762.038843,
+          762.812721
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p16-s5": {
+      "status": "cue-envelope",
+      "cueFirst": 151,
+      "cueLast": 154,
+      "candidateStart": 762.69,
+      "candidateEnd": 785.425,
+      "matchedTokens": 23,
+      "tokens": 23,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          762.038843,
+          762.812721
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p16-s6": {
+      "status": "cue-envelope",
+      "cueFirst": 154,
+      "cueLast": 156,
+      "candidateStart": 779.568,
+      "candidateEnd": 794.827,
+      "matchedTokens": 23,
+      "tokens": 26,
+      "coverage": 0.8846,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          794.257551,
+          794.9878
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p17-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 157,
+      "cueLast": 159,
+      "candidateStart": 794.874,
+      "candidateEnd": 810.428,
+      "matchedTokens": 35,
+      "tokens": 36,
+      "coverage": 0.9722,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          794.257551,
+          794.9878
+        ]
+      ],
+      "endSilences": [
+        [
+          810.509184,
+          811.218345
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p17-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 160,
+      "cueLast": 163,
+      "candidateStart": 810.428,
+      "candidateEnd": 827.243,
+      "matchedTokens": 42,
+      "tokens": 42,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          810.509184,
+          811.218345
+        ]
+      ],
+      "endSilences": [
+        [
+          826.611451,
+          827.418367
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p18-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 164,
+      "cueLast": 167,
+      "candidateStart": 827.293,
+      "candidateEnd": 847.773,
+      "matchedTokens": 42,
+      "tokens": 42,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          826.611451,
+          827.418367
+        ]
+      ],
+      "endSilences": [
+        [
+          846.947392,
+          847.967868
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p19-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 168,
+      "cueLast": 170,
+      "candidateStart": 847.8,
+      "candidateEnd": 864.119,
+      "matchedTokens": 36,
+      "tokens": 36,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          846.947392,
+          847.967868
+        ]
+      ],
+      "endSilences": [
+        [
+          863.509683,
+          864.341338
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p19-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 171,
+      "cueLast": 172,
+      "candidateStart": 864.119,
+      "candidateEnd": 875.023,
+      "matchedTokens": 14,
+      "tokens": 14,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          863.509683,
+          864.341338
+        ]
+      ],
+      "endSilences": [
+        [
+          874.141043,
+          874.893741
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p19-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 172,
+      "cueLast": 174,
+      "candidateStart": 869.015,
+      "candidateEnd": 885.556,
+      "matchedTokens": 20,
+      "tokens": 21,
+      "coverage": 0.9524,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p19-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 174,
+      "cueLast": 174,
+      "candidateStart": 879.993,
+      "candidateEnd": 885.556,
+      "matchedTokens": 6,
+      "tokens": 6,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p19-s5": {
+      "status": "cue-envelope",
+      "cueFirst": 174,
+      "cueLast": 176,
+      "candidateStart": 879.993,
+      "candidateEnd": 891.639,
+      "matchedTokens": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          891.004603,
+          891.74619
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-introduccion-p19-s6": {
+      "status": "cue-envelope",
+      "cueFirst": 177,
+      "cueLast": 180,
+      "candidateStart": 891.687,
+      "candidateEnd": 912.678,
+      "matchedTokens": 44,
+      "tokens": 44,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          891.004603,
+          891.74619
+        ]
+      ],
+      "endSilences": [
+        [
+          912.226191,
+          913.850658
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-heading": {
+      "status": "cue-envelope",
+      "cueFirst": 181,
+      "cueLast": 181,
+      "candidateStart": 913.763,
+      "candidateEnd": 919.104,
+      "matchedTokens": 9,
+      "tokens": 9,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          912.226191,
+          913.850658
+        ]
+      ],
+      "endSilences": [
+        [
+          918.449886,
+          919.274671
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p1-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 182,
+      "cueLast": 186,
+      "candidateStart": 919.146,
+      "candidateEnd": 945.177,
+      "matchedTokens": 59,
+      "tokens": 59,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          918.449886,
+          919.274671
+        ]
+      ],
+      "endSilences": [
+        [
+          945.360839,
+          946.032154
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p1-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 187,
+      "cueLast": 189,
+      "candidateStart": 945.177,
+      "candidateEnd": 956.065,
+      "matchedTokens": 20,
+      "tokens": 33,
+      "coverage": 0.6061,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          945.360839,
+          946.032154
+        ]
+      ],
+      "endSilences": [
+        [
+          955.496734,
+          956.193741
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p2-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 190,
+      "cueLast": 193,
+      "candidateStart": 956.111,
+      "candidateEnd": 983.716,
+      "matchedTokens": 45,
+      "tokens": 57,
+      "coverage": 0.7895,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          955.496734,
+          956.193741
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p2-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 193,
+      "cueLast": 196,
+      "candidateStart": 976.518,
+      "candidateEnd": 1001.39,
+      "matchedTokens": 28,
+      "tokens": 35,
+      "coverage": 0.8,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1000.62356,
+          1001.565986
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p3-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 197,
+      "cueLast": 200,
+      "candidateStart": 1001.435,
+      "candidateEnd": 1022.89,
+      "matchedTokens": 47,
+      "tokens": 47,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1000.62356,
+          1001.565986
+        ]
+      ],
+      "endSilences": [
+        [
+          1022.265261,
+          1023.008776
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p3-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 201,
+      "cueLast": 205,
+      "candidateStart": 1022.935,
+      "candidateEnd": 1052.145,
+      "matchedTokens": 52,
+      "tokens": 59,
+      "coverage": 0.8814,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1022.265261,
+          1023.008776
+        ]
+      ],
+      "endSilences": [
+        [
+          1051.302381,
+          1052.285102
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p4-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 206,
+      "cueLast": 207,
+      "candidateStart": 1052.194,
+      "candidateEnd": 1064.597,
+      "matchedTokens": 26,
+      "tokens": 28,
+      "coverage": 0.9286,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1051.302381,
+          1052.285102
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p4-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 207,
+      "cueLast": 215,
+      "candidateStart": 1058.804,
+      "candidateEnd": 1109.315,
+      "matchedTokens": 84,
+      "tokens": 85,
+      "coverage": 0.9882,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1108.600793,
+          1109.434875
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p5-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 216,
+      "cueLast": 223,
+      "candidateStart": 1109.351,
+      "candidateEnd": 1149.801,
+      "matchedTokens": 87,
+      "tokens": 88,
+      "coverage": 0.9886,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1108.600793,
+          1109.434875
+        ]
+      ],
+      "endSilences": [
+        [
+          1149.147415,
+          1149.965737
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p6-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 224,
+      "cueLast": 227,
+      "candidateStart": 1149.842,
+      "candidateEnd": 1172.319,
+      "matchedTokens": 55,
+      "tokens": 55,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1149.147415,
+          1149.965737
+        ]
+      ],
+      "endSilences": [
+        [
+          1171.61898,
+          1172.489025
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p6-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 228,
+      "cueLast": 230,
+      "candidateStart": 1172.361,
+      "candidateEnd": 1189.301,
+      "matchedTokens": 23,
+      "tokens": 23,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1171.61898,
+          1172.489025
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p6-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 230,
+      "cueLast": 232,
+      "candidateStart": 1183.55,
+      "candidateEnd": 1199.946,
+      "matchedTokens": 37,
+      "tokens": 37,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1199.170907,
+          1200.103424
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p7-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 233,
+      "cueLast": 236,
+      "candidateStart": 1199.974,
+      "candidateEnd": 1219.479,
+      "matchedTokens": 42,
+      "tokens": 42,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1199.170907,
+          1200.103424
+        ]
+      ],
+      "endSilences": [
+        [
+          1218.914195,
+          1219.635918
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p7-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 237,
+      "cueLast": 241,
+      "candidateStart": 1219.515,
+      "candidateEnd": 1247.565,
+      "matchedTokens": 51,
+      "tokens": 54,
+      "coverage": 0.9444,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1218.914195,
+          1219.635918
+        ]
+      ],
+      "endSilences": [
+        [
+          1246.721043,
+          1247.742177
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p8-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 242,
+      "cueLast": 244,
+      "candidateStart": 1247.598,
+      "candidateEnd": 1264.652,
+      "matchedTokens": 24,
+      "tokens": 25,
+      "coverage": 0.96,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1246.721043,
+          1247.742177
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p8-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 244,
+      "cueLast": 246,
+      "candidateStart": 1258.968,
+      "candidateEnd": 1272.907,
+      "matchedTokens": 24,
+      "tokens": 24,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1272.127596,
+          1272.875079
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p8-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 247,
+      "cueLast": 250,
+      "candidateStart": 1272.938,
+      "candidateEnd": 1293.975,
+      "matchedTokens": 41,
+      "tokens": 44,
+      "coverage": 0.9318,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1272.127596,
+          1272.875079
+        ]
+      ],
+      "endSilences": [
+        [
+          1293.364444,
+          1294.160612
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p9-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 251,
+      "cueLast": 254,
+      "candidateStart": 1294.02,
+      "candidateEnd": 1312.549,
+      "matchedTokens": 37,
+      "tokens": 37,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1293.364444,
+          1294.160612
+        ]
+      ],
+      "endSilences": [
+        [
+          1311.856123,
+          1312.728073
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p10-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 255,
+      "cueLast": 257,
+      "candidateStart": 1312.594,
+      "candidateEnd": 1329.542,
+      "matchedTokens": 27,
+      "tokens": 27,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1311.856123,
+          1312.728073
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p10-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 257,
+      "cueLast": 262,
+      "candidateStart": 1323.543,
+      "candidateEnd": 1356.99,
+      "matchedTokens": 57,
+      "tokens": 57,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p10-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 262,
+      "cueLast": 264,
+      "candidateStart": 1350.99,
+      "candidateEnd": 1364.189,
+      "matchedTokens": 26,
+      "tokens": 29,
+      "coverage": 0.8966,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1363.465986,
+          1364.347732
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p11-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 265,
+      "cueLast": 267,
+      "candidateStart": 1364.239,
+      "candidateEnd": 1379.823,
+      "matchedTokens": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1363.465986,
+          1364.347732
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p11-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 268,
+      "cueLast": 269,
+      "candidateStart": 1379.823,
+      "candidateEnd": 1387.83,
+      "matchedTokens": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1387.326213,
+          1387.98932
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p11-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 270,
+      "cueLast": 272,
+      "candidateStart": 1387.881,
+      "candidateEnd": 1404.975,
+      "matchedTokens": 30,
+      "tokens": 33,
+      "coverage": 0.9091,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1387.326213,
+          1387.98932
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p11-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 272,
+      "cueLast": 274,
+      "candidateStart": 1399.169,
+      "candidateEnd": 1415.699,
+      "matchedTokens": 26,
+      "tokens": 26,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1414.932675,
+          1415.80102
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p11-s5": {
+      "status": "cue-envelope",
+      "cueFirst": 275,
+      "cueLast": 277,
+      "candidateStart": 1415.729,
+      "candidateEnd": 1433.043,
+      "matchedTokens": 23,
+      "tokens": 23,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1414.932675,
+          1415.80102
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p11-s6": {
+      "status": "cue-envelope",
+      "cueFirst": 277,
+      "cueLast": 284,
+      "candidateStart": 1427.673,
+      "candidateEnd": 1470.157,
+      "matchedTokens": 77,
+      "tokens": 77,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1469.754105,
+          1470.2761
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p12-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 285,
+      "cueLast": 291,
+      "candidateStart": 1470.196,
+      "candidateEnd": 1502.751,
+      "matchedTokens": 71,
+      "tokens": 71,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1469.754105,
+          1470.2761
+        ]
+      ],
+      "endSilences": [
+        [
+          1502.586462,
+          1503.151451
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p13-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 292,
+      "cueLast": 296,
+      "candidateStart": 1502.798,
+      "candidateEnd": 1528.851,
+      "matchedTokens": 50,
+      "tokens": 52,
+      "coverage": 0.9615,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1502.586462,
+          1503.151451
+        ]
+      ],
+      "endSilences": [
+        [
+          1528.106372,
+          1529.012789
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p14-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 297,
+      "cueLast": 301,
+      "candidateStart": 1528.896,
+      "candidateEnd": 1554.345,
+      "matchedTokens": 55,
+      "tokens": 55,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1528.106372,
+          1529.012789
+        ]
+      ],
+      "endSilences": [
+        [
+          1553.637346,
+          1554.446122
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sistematizacion-p15-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 302,
+      "cueLast": 304,
+      "candidateStart": 1554.393,
+      "candidateEnd": 1567.721,
+      "matchedTokens": 30,
+      "tokens": 30,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1553.637346,
+          1554.446122
+        ]
+      ],
+      "endSilences": [
+        [
+          1567.399206,
+          1568.887755
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-heading": {
+      "status": "cue-envelope",
+      "cueFirst": 305,
+      "cueLast": 305,
+      "candidateStart": 1568.815,
+      "candidateEnd": 1571.137,
+      "matchedTokens": 3,
+      "tokens": 3,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1567.399206,
+          1568.887755
+        ]
+      ],
+      "endSilences": [
+        [
+          1570.359638,
+          1571.270794
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p1-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 306,
+      "cueLast": 306,
+      "candidateStart": 1571.167,
+      "candidateEnd": 1578.161,
+      "matchedTokens": 8,
+      "tokens": 9,
+      "coverage": 0.8889,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1570.359638,
+          1571.270794
+        ]
+      ],
+      "endSilences": [
+        [
+          1578.148799,
+          1578.743107
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p1-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 306,
+      "cueLast": 309,
+      "candidateStart": 1571.167,
+      "candidateEnd": 1599.32,
+      "matchedTokens": 35,
+      "tokens": 35,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1570.359638,
+          1571.270794
+        ]
+      ],
+      "endSilences": [
+        [
+          1599.14331,
+          1599.475351
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p1-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 310,
+      "cueLast": 311,
+      "candidateStart": 1599.32,
+      "candidateEnd": 1612.777,
+      "matchedTokens": 22,
+      "tokens": 22,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1599.14331,
+          1599.475351
+        ]
+      ],
+      "endSilences": [
+        [
+          1612.101565,
+          1612.933356
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p2-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 312,
+      "cueLast": 314,
+      "candidateStart": 1612.808,
+      "candidateEnd": 1630.17,
+      "matchedTokens": 38,
+      "tokens": 38,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1612.101565,
+          1612.933356
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p2-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 315,
+      "cueLast": 317,
+      "candidateStart": 1630.17,
+      "candidateEnd": 1643.737,
+      "matchedTokens": 28,
+      "tokens": 31,
+      "coverage": 0.9032,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1643.047166,
+          1643.706576
+        ],
+        [
+          1643.706599,
+          1643.872744
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p3-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 318,
+      "cueLast": 321,
+      "candidateStart": 1643.764,
+      "candidateEnd": 1665.088,
+      "matchedTokens": 38,
+      "tokens": 38,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1643.047166,
+          1643.706576
+        ],
+        [
+          1643.706599,
+          1643.872744
+        ]
+      ],
+      "endSilences": [
+        [
+          1664.935601,
+          1665.426757
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p3-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 321,
+      "cueLast": 324,
+      "candidateStart": 1659.611,
+      "candidateEnd": 1681.592,
+      "matchedTokens": 37,
+      "tokens": 37,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p3-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 324,
+      "cueLast": 325,
+      "candidateStart": 1676.334,
+      "candidateEnd": 1682.541,
+      "matchedTokens": 11,
+      "tokens": 11,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1675.967143,
+          1676.847347
+        ]
+      ],
+      "endSilences": [
+        [
+          1681.909796,
+          1683.282449
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p4-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 326,
+      "cueLast": 327,
+      "candidateStart": 1682.583,
+      "candidateEnd": 1694.014,
+      "matchedTokens": 14,
+      "tokens": 15,
+      "coverage": 0.9333,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1681.909796,
+          1683.282449
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p4-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 327,
+      "cueLast": 329,
+      "candidateStart": 1688.186,
+      "candidateEnd": 1705.968,
+      "matchedTokens": 33,
+      "tokens": 33,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p4-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 329,
+      "cueLast": 331,
+      "candidateStart": 1699.991,
+      "candidateEnd": 1714.859,
+      "matchedTokens": 23,
+      "tokens": 23,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1714.24898,
+          1715.002585
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p4-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 332,
+      "cueLast": 333,
+      "candidateStart": 1714.898,
+      "candidateEnd": 1726.175,
+      "matchedTokens": 21,
+      "tokens": 21,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1714.24898,
+          1715.002585
+        ]
+      ],
+      "endSilences": [
+        [
+          1726.41449,
+          1726.981451
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p4-s5": {
+      "status": "cue-envelope",
+      "cueFirst": 333,
+      "cueLast": 335,
+      "candidateStart": 1720.311,
+      "candidateEnd": 1737.15,
+      "matchedTokens": 14,
+      "tokens": 15,
+      "coverage": 0.9333,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p4-s6": {
+      "status": "cue-envelope",
+      "cueFirst": 335,
+      "cueLast": 336,
+      "candidateStart": 1731.512,
+      "candidateEnd": 1742.789,
+      "matchedTokens": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1731.516258,
+          1732.344603
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p4-s7": {
+      "status": "cue-envelope",
+      "cueFirst": 336,
+      "cueLast": 337,
+      "candidateStart": 1737.15,
+      "candidateEnd": 1748.427,
+      "matchedTokens": 17,
+      "tokens": 19,
+      "coverage": 0.8947,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1747.892902,
+          1748.547188
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p5-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 338,
+      "cueLast": 341,
+      "candidateStart": 1748.467,
+      "candidateEnd": 1765.882,
+      "matchedTokens": 38,
+      "tokens": 38,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1747.892902,
+          1748.547188
+        ]
+      ],
+      "endSilences": [
+        [
+          1765.192086,
+          1766.041066
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p6-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 342,
+      "cueLast": 346,
+      "candidateStart": 1765.918,
+      "candidateEnd": 1792.62,
+      "matchedTokens": 51,
+      "tokens": 51,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1765.192086,
+          1766.041066
+        ]
+      ],
+      "endSilences": [
+        [
+          1791.927756,
+          1792.758005
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p6-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 347,
+      "cueLast": 348,
+      "candidateStart": 1792.669,
+      "candidateEnd": 1804.208,
+      "matchedTokens": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1791.927756,
+          1792.758005
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p6-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 348,
+      "cueLast": 351,
+      "candidateStart": 1798.787,
+      "candidateEnd": 1818.536,
+      "matchedTokens": 27,
+      "tokens": 27,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1798.981248,
+          1799.502971
+        ]
+      ],
+      "endSilences": [
+        [
+          1817.834943,
+          1818.719796
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p6-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 352,
+      "cueLast": 355,
+      "candidateStart": 1818.584,
+      "candidateEnd": 1837.577,
+      "matchedTokens": 44,
+      "tokens": 51,
+      "coverage": 0.8627,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1817.834943,
+          1818.719796
+        ]
+      ],
+      "endSilences": [
+        [
+          1836.788027,
+          1837.771905
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p7-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 356,
+      "cueLast": 359,
+      "candidateStart": 1837.629,
+      "candidateEnd": 1861.073,
+      "matchedTokens": 50,
+      "tokens": 50,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1836.788027,
+          1837.771905
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p7-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 359,
+      "cueLast": 361,
+      "candidateStart": 1855.291,
+      "candidateEnd": 1873.112,
+      "matchedTokens": 19,
+      "tokens": 19,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-francesa-p7-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 361,
+      "cueLast": 362,
+      "candidateStart": 1867.409,
+      "candidateEnd": 1876.359,
+      "matchedTokens": 17,
+      "tokens": 19,
+      "coverage": 0.8947,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          1875.900045,
+          1877.509501
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-heading": {
+      "status": "cue-envelope",
+      "cueFirst": 363,
+      "cueLast": 363,
+      "candidateStart": 1877.442,
+      "candidateEnd": 1879.021,
+      "matchedTokens": 3,
+      "tokens": 3,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1875.900045,
+          1877.509501
+        ]
+      ],
+      "endSilences": [
+        [
+          1878.56034,
+          1879.175533
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p1-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 364,
+      "cueLast": 365,
+      "candidateStart": 1879.063,
+      "candidateEnd": 1892.474,
+      "matchedTokens": 17,
+      "tokens": 17,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1878.56034,
+          1879.175533
+        ]
+      ],
+      "endSilences": [
+        [
+          1892.050521,
+          1892.882222
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p1-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 365,
+      "cueLast": 368,
+      "candidateStart": 1885.768,
+      "candidateEnd": 1909.992,
+      "matchedTokens": 37,
+      "tokens": 37,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1885.858888,
+          1886.448571
+        ]
+      ],
+      "endSilences": [
+        [
+          1909.415465,
+          1910.095465
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p1-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 369,
+      "cueLast": 374,
+      "candidateStart": 1910.019,
+      "candidateEnd": 1945.035,
+      "matchedTokens": 66,
+      "tokens": 66,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1909.415465,
+          1910.095465
+        ]
+      ],
+      "endSilences": [
+        [
+          1944.218458,
+          1945.182472
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p2-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 375,
+      "cueLast": 379,
+      "candidateStart": 1945.077,
+      "candidateEnd": 1973.306,
+      "matchedTokens": 54,
+      "tokens": 54,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1944.218458,
+          1945.182472
+        ]
+      ],
+      "endSilences": [
+        [
+          1973.483243,
+          1973.701429
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p2-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 379,
+      "cueLast": 382,
+      "candidateStart": 1967.505,
+      "candidateEnd": 1985.061,
+      "matchedTokens": 30,
+      "tokens": 30,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          1967.646009,
+          1968.019819
+        ]
+      ],
+      "endSilences": [
+        [
+          1984.355692,
+          1985.211973
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p3-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 383,
+      "cueLast": 384,
+      "candidateStart": 1985.098,
+      "candidateEnd": 1996.918,
+      "matchedTokens": 23,
+      "tokens": 23,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          1984.355692,
+          1985.211973
+        ]
+      ],
+      "endSilences": [
+        [
+          1996.310114,
+          1997.088277
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p3-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 384,
+      "cueLast": 386,
+      "candidateStart": 1991.198,
+      "candidateEnd": 2008.432,
+      "matchedTokens": 16,
+      "tokens": 19,
+      "coverage": 0.8421,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p3-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 386,
+      "cueLast": 388,
+      "candidateStart": 2002.866,
+      "candidateEnd": 2017.049,
+      "matchedTokens": 29,
+      "tokens": 33,
+      "coverage": 0.8788,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2016.25517,
+          2017.1939
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p3-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 389,
+      "cueLast": 392,
+      "candidateStart": 2017.099,
+      "candidateEnd": 2043.361,
+      "matchedTokens": 41,
+      "tokens": 46,
+      "coverage": 0.8913,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2016.25517,
+          2017.1939
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p3-s5": {
+      "status": "cue-envelope",
+      "cueFirst": 392,
+      "cueLast": 393,
+      "candidateStart": 2036.627,
+      "candidateEnd": 2049.421,
+      "matchedTokens": 24,
+      "tokens": 24,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2048.512653,
+          2049.570567
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p4-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 394,
+      "cueLast": 397,
+      "candidateStart": 2049.466,
+      "candidateEnd": 2072.394,
+      "matchedTokens": 48,
+      "tokens": 48,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2048.512653,
+          2049.570567
+        ]
+      ],
+      "endSilences": [
+        [
+          2071.863288,
+          2072.262857
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p4-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 397,
+      "cueLast": 400,
+      "candidateStart": 2066.589,
+      "candidateEnd": 2083.785,
+      "matchedTokens": 32,
+      "tokens": 32,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2066.396462,
+          2066.80619
+        ]
+      ],
+      "endSilences": [
+        [
+          2083.229206,
+          2084.481088
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p5-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 401,
+      "cueLast": 404,
+      "candidateStart": 2083.818,
+      "candidateEnd": 2106.379,
+      "matchedTokens": 38,
+      "tokens": 38,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2083.229206,
+          2084.481088
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-sueca-p5-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 404,
+      "cueLast": 407,
+      "candidateStart": 2100.72,
+      "candidateEnd": 2119.112,
+      "matchedTokens": 37,
+      "tokens": 39,
+      "coverage": 0.9487,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2100.157619,
+          2100.564082
+        ]
+      ],
+      "endSilences": [
+        [
+          2118.696418,
+          2120.276259
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-heading": {
+      "status": "cue-envelope",
+      "cueFirst": 408,
+      "cueLast": 408,
+      "candidateStart": 2120.209,
+      "candidateEnd": 2122.624,
+      "matchedTokens": 3,
+      "tokens": 3,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2118.696418,
+          2120.276259
+        ]
+      ],
+      "endSilences": [
+        [
+          2121.787279,
+          2122.74288
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p1-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 409,
+      "cueLast": 411,
+      "candidateStart": 2122.666,
+      "candidateEnd": 2143.722,
+      "matchedTokens": 30,
+      "tokens": 32,
+      "coverage": 0.9375,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2121.787279,
+          2122.74288
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p1-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 411,
+      "cueLast": 413,
+      "candidateStart": 2136.856,
+      "candidateEnd": 2154.524,
+      "matchedTokens": 28,
+      "tokens": 28,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2153.662743,
+          2154.639546
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p1-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 414,
+      "cueLast": 416,
+      "candidateStart": 2154.563,
+      "candidateEnd": 2172.775,
+      "matchedTokens": 37,
+      "tokens": 37,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2153.662743,
+          2154.639546
+        ]
+      ],
+      "endSilences": [
+        [
+          2171.810998,
+          2172.528594
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p1-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 417,
+      "cueLast": 418,
+      "candidateStart": 2172.775,
+      "candidateEnd": 2184.327,
+      "matchedTokens": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2171.810998,
+          2172.528594
+        ]
+      ],
+      "endSilences": [
+        [
+          2184.365307,
+          2184.558073
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p1-s5": {
+      "status": "cue-envelope",
+      "cueFirst": 418,
+      "cueLast": 421,
+      "candidateStart": 2177.909,
+      "candidateEnd": 2201.095,
+      "matchedTokens": 35,
+      "tokens": 35,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2200.297574,
+          2201.220476
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p2-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 422,
+      "cueLast": 424,
+      "candidateStart": 2201.141,
+      "candidateEnd": 2218.725,
+      "matchedTokens": 28,
+      "tokens": 30,
+      "coverage": 0.9333,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2200.297574,
+          2201.220476
+        ]
+      ],
+      "endSilences": [
+        [
+          2218.675147,
+          2219.297188
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p2-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 424,
+      "cueLast": 426,
+      "candidateStart": 2212.725,
+      "candidateEnd": 2230.976,
+      "matchedTokens": 28,
+      "tokens": 28,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2212.477913,
+          2213.048571
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p2-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 426,
+      "cueLast": 427,
+      "candidateStart": 2224.226,
+      "candidateEnd": 2237.643,
+      "matchedTokens": 14,
+      "tokens": 14,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2224.069524,
+          2224.231315
+        ]
+      ],
+      "endSilences": [
+        [
+          2237.169864,
+          2237.787596
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p3-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 428,
+      "cueLast": 430,
+      "candidateStart": 2237.688,
+      "candidateEnd": 2255.032,
+      "matchedTokens": 33,
+      "tokens": 33,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2237.169864,
+          2237.787596
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p3-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 430,
+      "cueLast": 434,
+      "candidateStart": 2249.425,
+      "candidateEnd": 2274.469,
+      "matchedTokens": 46,
+      "tokens": 49,
+      "coverage": 0.9388,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2273.69492,
+          2274.622426
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p3-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 435,
+      "cueLast": 437,
+      "candidateStart": 2274.496,
+      "candidateEnd": 2291.479,
+      "matchedTokens": 31,
+      "tokens": 31,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2273.69492,
+          2274.622426
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p3-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 437,
+      "cueLast": 439,
+      "candidateStart": 2285.844,
+      "candidateEnd": 2303.367,
+      "matchedTokens": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p3-s5": {
+      "status": "cue-envelope",
+      "cueFirst": 439,
+      "cueLast": 440,
+      "candidateStart": 2297.578,
+      "candidateEnd": 2309.466,
+      "matchedTokens": 16,
+      "tokens": 16,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2308.738186,
+          2309.618503
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p3-s6": {
+      "status": "cue-envelope",
+      "cueFirst": 441,
+      "cueLast": 445,
+      "candidateStart": 2309.501,
+      "candidateEnd": 2337.934,
+      "matchedTokens": 59,
+      "tokens": 59,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2308.738186,
+          2309.618503
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p3-s7": {
+      "status": "cue-envelope",
+      "cueFirst": 445,
+      "cueLast": 449,
+      "candidateStart": 2331.825,
+      "candidateEnd": 2356.638,
+      "matchedTokens": 41,
+      "tokens": 41,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2356.022155,
+          2356.82542
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p4-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 450,
+      "cueLast": 452,
+      "candidateStart": 2356.68,
+      "candidateEnd": 2373.167,
+      "matchedTokens": 28,
+      "tokens": 28,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2356.022155,
+          2356.82542
+        ]
+      ],
+      "endSilences": [
+        [
+          2372.408232,
+          2373.150454
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p5-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 453,
+      "cueLast": 455,
+      "candidateStart": 2373.217,
+      "candidateEnd": 2389.75,
+      "matchedTokens": 31,
+      "tokens": 31,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2372.408232,
+          2373.150454
+        ]
+      ],
+      "endSilences": [
+        [
+          2389.098322,
+          2389.850113
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p6-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 456,
+      "cueLast": 458,
+      "candidateStart": 2389.78,
+      "candidateEnd": 2406.932,
+      "matchedTokens": 32,
+      "tokens": 32,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2389.098322,
+          2389.850113
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p6-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 458,
+      "cueLast": 462,
+      "candidateStart": 2401.568,
+      "candidateEnd": 2425.445,
+      "matchedTokens": 43,
+      "tokens": 43,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2401.342994,
+          2401.49542
+        ]
+      ],
+      "endSilences": [
+        [
+          2424.725352,
+          2425.595737
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p7-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 463,
+      "cueLast": 468,
+      "candidateStart": 2425.491,
+      "candidateEnd": 2457.674,
+      "matchedTokens": 68,
+      "tokens": 68,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2424.725352,
+          2425.595737
+        ]
+      ],
+      "endSilences": [
+        [
+          2457.066054,
+          2457.833129
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p7-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 469,
+      "cueLast": 472,
+      "candidateStart": 2457.701,
+      "candidateEnd": 2477.392,
+      "matchedTokens": 44,
+      "tokens": 44,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2457.066054,
+          2457.833129
+        ]
+      ],
+      "endSilences": [
+        [
+          2476.580952,
+          2477.571746
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-alemana-p8-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 473,
+      "cueLast": 475,
+      "candidateStart": 2477.425,
+      "candidateEnd": 2491.032,
+      "matchedTokens": 29,
+      "tokens": 29,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2476.580952,
+          2477.571746
+        ]
+      ],
+      "endSilences": [
+        [
+          2490.598504,
+          2492.180499
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-minoritarios-heading": {
+      "status": "cue-envelope",
+      "cueFirst": 476,
+      "cueLast": 476,
+      "candidateStart": 2492.108,
+      "candidateEnd": 2497.495,
+      "matchedTokens": 10,
+      "tokens": 10,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2490.598504,
+          2492.180499
+        ]
+      ],
+      "endSilences": [
+        [
+          2496.727052,
+          2497.679524
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-minoritarios-p1-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 477,
+      "cueLast": 481,
+      "candidateStart": 2497.543,
+      "candidateEnd": 2534.159,
+      "matchedTokens": 49,
+      "tokens": 49,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2496.727052,
+          2497.679524
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-minoritarios-p1-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 481,
+      "cueLast": 484,
+      "candidateStart": 2526.956,
+      "candidateEnd": 2555.268,
+      "matchedTokens": 40,
+      "tokens": 44,
+      "coverage": 0.9091,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2554.683129,
+          2555.390068
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-minoritarios-p2-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 485,
+      "cueLast": 490,
+      "candidateStart": 2555.301,
+      "candidateEnd": 2587.113,
+      "matchedTokens": 74,
+      "tokens": 74,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2554.683129,
+          2555.390068
+        ]
+      ],
+      "endSilences": [
+        [
+          2586.272948,
+          2587.225601
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-minoritarios-p2-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 491,
+      "cueLast": 493,
+      "candidateStart": 2587.146,
+      "candidateEnd": 2603.653,
+      "matchedTokens": 28,
+      "tokens": 28,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2586.272948,
+          2587.225601
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-minoritarios-p2-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 493,
+      "cueLast": 498,
+      "candidateStart": 2597.872,
+      "candidateEnd": 2627.92,
+      "matchedTokens": 62,
+      "tokens": 62,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2627.242789,
+          2628.816735
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-minoritarios-p3-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 499,
+      "cueLast": 500,
+      "candidateStart": 2627.951,
+      "candidateEnd": 2640.614,
+      "matchedTokens": 17,
+      "tokens": 17,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2627.242789,
+          2628.816735
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-minoritarios-p3-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 500,
+      "cueLast": 503,
+      "candidateStart": 2634.283,
+      "candidateEnd": 2653.771,
+      "matchedTokens": 29,
+      "tokens": 31,
+      "coverage": 0.9355,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2634.332381,
+          2634.514444
+        ]
+      ],
+      "endSilences": [
+        [
+          2653.490045,
+          2654.414104
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-minoritarios-p4-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 504,
+      "cueLast": 506,
+      "candidateStart": 2653.814,
+      "candidateEnd": 2670.486,
+      "matchedTokens": 33,
+      "tokens": 33,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2653.490045,
+          2654.414104
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-minoritarios-p4-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 506,
+      "cueLast": 510,
+      "candidateStart": 2664.929,
+      "candidateEnd": 2687.158,
+      "matchedTokens": 39,
+      "tokens": 46,
+      "coverage": 0.8478,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2686.526122,
+          2688.346553
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-heading": {
+      "status": "cue-envelope",
+      "cueFirst": 511,
+      "cueLast": 511,
+      "candidateStart": 2688.246,
+      "candidateEnd": 2690.707,
+      "matchedTokens": 3,
+      "tokens": 3,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2686.526122,
+          2688.346553
+        ]
+      ],
+      "endSilences": [
+        [
+          2690.111225,
+          2690.890862
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p1-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 512,
+      "cueLast": 514,
+      "candidateStart": 2690.755,
+      "candidateEnd": 2706.678,
+      "matchedTokens": 24,
+      "tokens": 24,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2690.111225,
+          2690.890862
+        ]
+      ],
+      "endSilences": [
+        [
+          2706.309524,
+          2706.831361
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p1-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 514,
+      "cueLast": 515,
+      "candidateStart": 2701.084,
+      "candidateEnd": 2711.699,
+      "matchedTokens": 23,
+      "tokens": 23,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2700.410726,
+          2701.243356
+        ]
+      ],
+      "endSilences": [
+        [
+          2711.225419,
+          2711.857256
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p2-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 516,
+      "cueLast": 520,
+      "candidateStart": 2711.733,
+      "candidateEnd": 2739.412,
+      "matchedTokens": 60,
+      "tokens": 60,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2711.225419,
+          2711.857256
+        ]
+      ],
+      "endSilences": [
+        [
+          2738.754829,
+          2739.568707
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p2-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 521,
+      "cueLast": 521,
+      "candidateStart": 2739.412,
+      "candidateEnd": 2743.916,
+      "matchedTokens": 10,
+      "tokens": 10,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2738.754829,
+          2739.568707
+        ]
+      ],
+      "endSilences": [
+        [
+          2743.366395,
+          2744.071769
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p3-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 522,
+      "cueLast": 523,
+      "candidateStart": 2743.943,
+      "candidateEnd": 2755.512,
+      "matchedTokens": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2743.366395,
+          2744.071769
+        ]
+      ],
+      "endSilences": [
+        [
+          2755.321429,
+          2755.708458
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p3-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 523,
+      "cueLast": 524,
+      "candidateStart": 2749.803,
+      "candidateEnd": 2761.448,
+      "matchedTokens": 17,
+      "tokens": 17,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2749.575034,
+          2750.004921
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p3-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 524,
+      "cueLast": 527,
+      "candidateStart": 2755.512,
+      "candidateEnd": 2776.822,
+      "matchedTokens": 40,
+      "tokens": 40,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2755.321429,
+          2755.708458
+        ]
+      ],
+      "endSilences": [
+        [
+          2776.350386,
+          2776.979456
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p3-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 528,
+      "cueLast": 532,
+      "candidateStart": 2776.859,
+      "candidateEnd": 2803.237,
+      "matchedTokens": 58,
+      "tokens": 60,
+      "coverage": 0.9667,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2776.350386,
+          2776.979456
+        ]
+      ],
+      "endSilences": [
+        [
+          2802.638186,
+          2803.403855
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p4-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 533,
+      "cueLast": 537,
+      "candidateStart": 2803.27,
+      "candidateEnd": 2832.595,
+      "matchedTokens": 49,
+      "tokens": 49,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2802.638186,
+          2803.403855
+        ]
+      ],
+      "endSilences": [
+        [
+          2832.023243,
+          2832.482449
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p4-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 537,
+      "cueLast": 539,
+      "candidateStart": 2826.306,
+      "candidateEnd": 2840.143,
+      "matchedTokens": 23,
+      "tokens": 23,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2839.738753,
+          2840.45356
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p5-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 540,
+      "cueLast": 542,
+      "candidateStart": 2840.182,
+      "candidateEnd": 2851.978,
+      "matchedTokens": 27,
+      "tokens": 27,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2839.738753,
+          2840.45356
+        ]
+      ],
+      "endSilences": [
+        [
+          2851.283129,
+          2852.129592
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p5-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 543,
+      "cueLast": 545,
+      "candidateStart": 2852.017,
+      "candidateEnd": 2868.083,
+      "matchedTokens": 20,
+      "tokens": 20,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2851.283129,
+          2852.129592
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p5-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 545,
+      "cueLast": 548,
+      "candidateStart": 2862.387,
+      "candidateEnd": 2881.228,
+      "matchedTokens": 36,
+      "tokens": 36,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2862.458979,
+          2863.408231
+        ]
+      ],
+      "endSilences": [
+        [
+          2880.574467,
+          2881.412313
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p6-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 549,
+      "cueLast": 552,
+      "candidateStart": 2881.276,
+      "candidateEnd": 2903.704,
+      "matchedTokens": 47,
+      "tokens": 47,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2880.574467,
+          2881.412313
+        ]
+      ],
+      "endSilences": [
+        [
+          2903.912562,
+          2904.758118
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p6-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 552,
+      "cueLast": 555,
+      "candidateStart": 2897.763,
+      "candidateEnd": 2917.591,
+      "matchedTokens": 33,
+      "tokens": 33,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          2917.002562,
+          2917.769342
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p7-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 556,
+      "cueLast": 560,
+      "candidateStart": 2917.64,
+      "candidateEnd": 2942.578,
+      "matchedTokens": 53,
+      "tokens": 53,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2917.002562,
+          2917.769342
+        ]
+      ],
+      "endSilences": [
+        [
+          2941.740726,
+          2942.657846
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p8-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 561,
+      "cueLast": 566,
+      "candidateStart": 2942.614,
+      "candidateEnd": 2975.679,
+      "matchedTokens": 66,
+      "tokens": 66,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          2941.740726,
+          2942.657846
+        ]
+      ],
+      "endSilences": [
+        [
+          2974.957868,
+          2975.853129
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p8-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 567,
+      "cueLast": 570,
+      "candidateStart": 2975.713,
+      "candidateEnd": 2998.826,
+      "matchedTokens": 41,
+      "tokens": 41,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          2974.957868,
+          2975.853129
+        ]
+      ],
+      "endSilences": [
+        [
+          2998.61517,
+          2999.047279
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p8-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 570,
+      "cueLast": 573,
+      "candidateStart": 2993.185,
+      "candidateEnd": 3016.298,
+      "matchedTokens": 36,
+      "tokens": 36,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": false,
+      "startSilences": [],
+      "endSilences": [
+        [
+          3016.14839,
+          3016.584444
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p8-s4": {
+      "status": "cue-envelope",
+      "cueFirst": 573,
+      "cueLast": 575,
+      "candidateStart": 3011.048,
+      "candidateEnd": 3025.543,
+      "matchedTokens": 25,
+      "tokens": 25,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          3024.864898,
+          3025.716508
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p9-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 576,
+      "cueLast": 578,
+      "candidateStart": 3025.582,
+      "candidateEnd": 3042.042,
+      "matchedTokens": 38,
+      "tokens": 42,
+      "coverage": 0.9048,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          3024.864898,
+          3025.716508
+        ]
+      ],
+      "endSilences": [
+        [
+          3042.246463,
+          3043.128209
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p10-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 580,
+      "cueLast": 582,
+      "candidateStart": 3043.033,
+      "candidateEnd": 3059.333,
+      "matchedTokens": 39,
+      "tokens": 39,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": true,
+      "startSilences": [
+        [
+          3042.246463,
+          3043.128209
+        ]
+      ],
+      "endSilences": [
+        [
+          3059.0861,
+          3059.701134
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p11-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 583,
+      "cueLast": 587,
+      "candidateStart": 3059.361,
+      "candidateEnd": 3087.759,
+      "matchedTokens": 54,
+      "tokens": 54,
+      "coverage": 1.0,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          3059.0861,
+          3059.701134
+        ]
+      ],
+      "endSilences": [
+        [
+          3087.684218,
+          3088.321338
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p11-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 587,
+      "cueLast": 587,
+      "candidateStart": 3082.079,
+      "candidateEnd": 3087.759,
+      "matchedTokens": 7,
+      "tokens": 7,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          3087.684218,
+          3088.321338
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p11-s3": {
+      "status": "cue-envelope",
+      "cueFirst": 588,
+      "cueLast": 589,
+      "candidateStart": 3087.759,
+      "candidateEnd": 3095.306,
+      "matchedTokens": 13,
+      "tokens": 16,
+      "coverage": 0.8125,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          3087.684218,
+          3088.321338
+        ]
+      ],
+      "endSilences": [
+        [
+          3094.696168,
+          3095.461134
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p12-s1": {
+      "status": "cue-envelope",
+      "cueFirst": 590,
+      "cueLast": 592,
+      "candidateStart": 3095.333,
+      "candidateEnd": 3110.334,
+      "matchedTokens": 26,
+      "tokens": 28,
+      "coverage": 0.9286,
+      "startAtCueBoundary": true,
+      "endAtCueBoundary": false,
+      "startSilences": [
+        [
+          3094.696168,
+          3095.461134
+        ]
+      ],
+      "endSilences": [],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    },
+    "soa-finales-p12-s2": {
+      "status": "cue-envelope",
+      "cueFirst": 592,
+      "cueLast": 593,
+      "candidateStart": 3105.656,
+      "candidateEnd": 3113.305,
+      "matchedTokens": 11,
+      "tokens": 11,
+      "coverage": 1.0,
+      "startAtCueBoundary": false,
+      "endAtCueBoundary": true,
+      "startSilences": [],
+      "endSilences": [
+        [
+          3112.726554,
+          3113.331293
+        ]
+      ],
+      "acousticallyVerified": false,
+      "runtimeEnabled": false
+    }
+  }
+}

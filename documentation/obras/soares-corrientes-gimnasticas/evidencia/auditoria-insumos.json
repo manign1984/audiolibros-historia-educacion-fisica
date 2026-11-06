@@ -1,0 +1,1189 @@
+{
+  "scope": "diagnostico Work 1; no certifica alineacion acustica ni crea pagina",
+  "files": {
+    "academic.pdf": {
+      "bytes": 247142,
+      "sha256": "c81a7c039eb231ef183697761ea6e01fd7e0d4715309aff65ed769b5c8d10b45"
+    },
+    "audio.mp3": {
+      "bytes": 74721926,
+      "sha256": "f9c4226ec5794a959d77d6f97b523eabadb0dcdc272bbec9c9e1b04d9a019b37"
+    },
+    "subtitles.vtt": {
+      "bytes": 85242,
+      "sha256": "ec0beaea889464cd05328c6e73fb80f36f3f8899ae99cc463fcefb82bc1e294f"
+    },
+    "txt-1.txt": {
+      "bytes": 54958,
+      "sha256": "52f8ef8fe5b41624dc8f51f844d247f0c9f962e47f78ca19e8967b792d4d5dae"
+    },
+    "txt-2.txt": {
+      "bytes": 54958,
+      "sha256": "52f8ef8fe5b41624dc8f51f844d247f0c9f962e47f78ca19e8967b792d4d5dae"
+    },
+    "editable-a.txt": {
+      "bytes": 42040,
+      "sha256": "651990dc2be8f890644302b6eb727e07f9048f53765ef3af753e5b9249168fbf"
+    },
+    "editable-b.txt": {
+      "bytes": 42047,
+      "sha256": "71c2455a4cf65c102741eb9c2f66afef45ad52b90c887ab82ffde4e63be379c8"
+    },
+    "directrices.txt": {
+      "bytes": 24738,
+      "sha256": "3389f072c9a84d7faa33188dc4aedcf8ec78343d5b3172afa8c8c42b360c188f"
+    }
+  },
+  "audio": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "mp3",
+        "codec_long_name": "MP3 (MPEG audio layer 3)",
+        "codec_type": "audio",
+        "codec_tag_string": "[0][0][0][0]",
+        "codec_tag": "0x0000",
+        "sample_fmt": "fltp",
+        "sample_rate": "44100",
+        "channels": 1,
+        "channel_layout": "mono",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/14112000",
+        "start_pts": 353600,
+        "start_time": "0.025057",
+        "duration_ts": 43935989760,
+        "duration": "3113.377959",
+        "bit_rate": "192000",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        }
+      }
+    ],
+    "format": {
+      "filename": "audio.mp3",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mp3",
+      "format_long_name": "MP2/3 (MPEG audio layer 2/3)",
+      "start_time": "0.025057",
+      "duration": "3113.377959",
+      "size": "74721926",
+      "bit_rate": "192002",
+      "probe_score": 51,
+      "tags": {
+        "title": "﻿Las corrientes gimnásticas europeas y...",
+        "artist": "Unknown",
+        "Description": "﻿Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y...",
+        "encoder": "Lavf60.16.100"
+      }
+    }
+  },
+  "vtt": {
+    "count": 593,
+    "first": {
+      "index": 1,
+      "start": 0.0,
+      "end": 5.761,
+      "text": "Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y"
+    },
+    "last": {
+      "index": 593,
+      "start": 3110.334,
+      "end": 3113.305,
+      "text": "fatalmente de la ignorancia del pasado”."
+    },
+    "invalid": [],
+    "overlaps": [],
+    "reversedStarts": [],
+    "gapsOver1s": [
+      {
+        "afterCue": 180,
+        "start": 912.678,
+        "end": 913.763,
+        "gap": 1.0850000000000364
+      },
+      {
+        "afterCue": 304,
+        "start": 1567.721,
+        "end": 1568.815,
+        "gap": 1.094000000000051
+      },
+      {
+        "afterCue": 362,
+        "start": 1876.359,
+        "end": 1877.442,
+        "gap": 1.0830000000000837
+      },
+      {
+        "afterCue": 407,
+        "start": 2119.112,
+        "end": 2120.209,
+        "gap": 1.0969999999997526
+      },
+      {
+        "afterCue": 475,
+        "start": 2491.032,
+        "end": 2492.108,
+        "gap": 1.0760000000000218
+      },
+      {
+        "afterCue": 510,
+        "start": 2687.158,
+        "end": 2688.246,
+        "gap": 1.0880000000001928
+      }
+    ],
+    "sumCueSeconds": 3102.5529999999976
+  },
+  "diffs": {
+    "editable_a_vs_b": {
+      "a_tokens": 6390,
+      "b_tokens": 6390,
+      "matched": 6379,
+      "ratio": 0.9982785602503912,
+      "changes": [
+        {
+          "kind": "replace",
+          "a_range": [
+            1049,
+            1051
+          ],
+          "b_range": [
+            1049,
+            1050
+          ],
+          "a": "sobre todo",
+          "b": "sobretodo"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            1129,
+            1130
+          ],
+          "b_range": [
+            1128,
+            1129
+          ],
+          "a": "utilitarias",
+          "b": "utilitanas"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            1686,
+            1687
+          ],
+          "b_range": [
+            1685,
+            1686
+          ],
+          "a": "xix",
+          "b": "xlx"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2059,
+            2060
+          ],
+          "b_range": [
+            2058,
+            2060
+          ],
+          "a": "gutsmuths",
+          "b": "guts muths"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2272,
+            2274
+          ],
+          "b_range": [
+            2272,
+            2273
+          ],
+          "a": "sobre todo",
+          "b": "sobretodo"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            3230,
+            3231
+          ],
+          "b_range": [
+            3229,
+            3230
+          ],
+          "a": "amoros",
+          "b": "arnoros"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            4369,
+            4370
+          ],
+          "b_range": [
+            4368,
+            4370
+          ],
+          "a": "guthsmuths",
+          "b": "guths muths"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            4514,
+            4515
+          ],
+          "b_range": [
+            4514,
+            4516
+          ],
+          "a": "guthsmuths",
+          "b": "guths muths"
+        },
+        {
+          "kind": "delete",
+          "a_range": [
+            4554,
+            4555
+          ],
+          "b_range": [
+            4555,
+            4555
+          ],
+          "a": "a",
+          "b": ""
+        }
+      ]
+    },
+    "editable_a_vs_vtt": {
+      "a_tokens": 6390,
+      "b_tokens": 6390,
+      "matched": 6388,
+      "ratio": 0.9996870109546165,
+      "changes": [
+        {
+          "kind": "delete",
+          "a_range": [
+            14,
+            15
+          ],
+          "b_range": [
+            14,
+            14
+          ],
+          "a": "lucia",
+          "b": ""
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            613,
+            613
+          ],
+          "b_range": [
+            612,
+            613
+          ],
+          "a": "",
+          "b": "marc"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2332,
+            2333
+          ],
+          "b_range": [
+            2332,
+            2333
+          ],
+          "a": "corno",
+          "b": "como"
+        }
+      ]
+    },
+    "editable_b_vs_vtt": {
+      "a_tokens": 6390,
+      "b_tokens": 6390,
+      "matched": 6377,
+      "ratio": 0.9979655712050078,
+      "changes": [
+        {
+          "kind": "delete",
+          "a_range": [
+            14,
+            15
+          ],
+          "b_range": [
+            14,
+            14
+          ],
+          "a": "lucia",
+          "b": ""
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            613,
+            613
+          ],
+          "b_range": [
+            612,
+            613
+          ],
+          "a": "",
+          "b": "marc"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            1049,
+            1050
+          ],
+          "b_range": [
+            1049,
+            1051
+          ],
+          "a": "sobretodo",
+          "b": "sobre todo"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            1128,
+            1129
+          ],
+          "b_range": [
+            1129,
+            1130
+          ],
+          "a": "utilitanas",
+          "b": "utilitarias"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            1685,
+            1686
+          ],
+          "b_range": [
+            1686,
+            1687
+          ],
+          "a": "xlx",
+          "b": "xix"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2058,
+            2060
+          ],
+          "b_range": [
+            2059,
+            2060
+          ],
+          "a": "guts muths",
+          "b": "gutsmuths"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2272,
+            2273
+          ],
+          "b_range": [
+            2272,
+            2274
+          ],
+          "a": "sobretodo",
+          "b": "sobre todo"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2331,
+            2332
+          ],
+          "b_range": [
+            2332,
+            2333
+          ],
+          "a": "corno",
+          "b": "como"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            3229,
+            3230
+          ],
+          "b_range": [
+            3230,
+            3231
+          ],
+          "a": "arnoros",
+          "b": "amoros"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            4368,
+            4370
+          ],
+          "b_range": [
+            4369,
+            4370
+          ],
+          "a": "guths muths",
+          "b": "guthsmuths"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            4514,
+            4516
+          ],
+          "b_range": [
+            4514,
+            4515
+          ],
+          "a": "guths muths",
+          "b": "guthsmuths"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            4555,
+            4555
+          ],
+          "b_range": [
+            4554,
+            4555
+          ],
+          "a": "",
+          "b": "a"
+        }
+      ]
+    },
+    "pdf_vs_txt": {
+      "a_tokens": 8344,
+      "b_tokens": 8368,
+      "matched": 8317,
+      "ratio": 0.9953326950694112,
+      "changes": [
+        {
+          "kind": "replace",
+          "a_range": [
+            85,
+            86
+          ],
+          "b_range": [
+            85,
+            86
+          ],
+          "a": "inexistentes2",
+          "b": "inexistentes"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            97,
+            97
+          ],
+          "b_range": [
+            97,
+            98
+          ],
+          "a": "",
+          "b": "2"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            146,
+            147
+          ],
+          "b_range": [
+            147,
+            148
+          ],
+          "a": "discursos3",
+          "b": "discursos"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            158,
+            158
+          ],
+          "b_range": [
+            159,
+            160
+          ],
+          "a": "",
+          "b": "3"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            239,
+            240
+          ],
+          "b_range": [
+            241,
+            243
+          ],
+          "a": "gesto4",
+          "b": "gesto 4"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            1173,
+            1174
+          ],
+          "b_range": [
+            1176,
+            1178
+          ],
+          "a": "poblaciones5",
+          "b": "poblaciones 5"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            1225,
+            1226
+          ],
+          "b_range": [
+            1229,
+            1231
+          ],
+          "a": "canto6",
+          "b": "canto 6"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            1972,
+            1973
+          ],
+          "b_range": [
+            1977,
+            1979
+          ],
+          "a": "ensenanza7",
+          "b": "ensenanza 7"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2014,
+            2015
+          ],
+          "b_range": [
+            2020,
+            2022
+          ],
+          "a": "curricular8",
+          "b": "curricular 8"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2272,
+            2274
+          ],
+          "b_range": [
+            2279,
+            2280
+          ],
+          "a": "cons tituyen",
+          "b": "constituyen"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2334,
+            2335
+          ],
+          "b_range": [
+            2340,
+            2341
+          ],
+          "a": "metodos10",
+          "b": "metodos"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            2349,
+            2349
+          ],
+          "b_range": [
+            2355,
+            2356
+          ],
+          "a": "",
+          "b": "10"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2352,
+            2353
+          ],
+          "b_range": [
+            2359,
+            2360
+          ],
+          "a": "difundidos11",
+          "b": "difundidos"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            2365,
+            2365
+          ],
+          "b_range": [
+            2372,
+            2373
+          ],
+          "a": "",
+          "b": "11"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            2794,
+            2795
+          ],
+          "b_range": [
+            2802,
+            2803
+          ],
+          "a": "cuerpos12",
+          "b": "cuerpos"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            2804,
+            2804
+          ],
+          "b_range": [
+            2812,
+            2813
+          ],
+          "a": "",
+          "b": "12"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            3225,
+            3226
+          ],
+          "b_range": [
+            3234,
+            3235
+          ],
+          "a": "general13",
+          "b": "general"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            3233,
+            3233
+          ],
+          "b_range": [
+            3242,
+            3243
+          ],
+          "a": "",
+          "b": "13"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            3501,
+            3502
+          ],
+          "b_range": [
+            3511,
+            3513
+          ],
+          "a": "derrumbes14",
+          "b": "derrumbes 14"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            3714,
+            3715
+          ],
+          "b_range": [
+            3725,
+            3726
+          ],
+          "a": "arnoros15",
+          "b": "arnoros"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            3728,
+            3728
+          ],
+          "b_range": [
+            3739,
+            3740
+          ],
+          "a": "",
+          "b": "15"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            4010,
+            4011
+          ],
+          "b_range": [
+            4022,
+            4023
+          ],
+          "a": "amoros16",
+          "b": "amoros"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            4027,
+            4027
+          ],
+          "b_range": [
+            4039,
+            4040
+          ],
+          "a": "",
+          "b": "16"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            4064,
+            4065
+          ],
+          "b_range": [
+            4077,
+            4079
+          ],
+          "a": "energetico17",
+          "b": "energetico 17"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            4076,
+            4077
+          ],
+          "b_range": [
+            4090,
+            4091
+          ],
+          "a": "darwin18",
+          "b": "darwin"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            4082,
+            4082
+          ],
+          "b_range": [
+            4096,
+            4097
+          ],
+          "a": "",
+          "b": "18"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            4629,
+            4630
+          ],
+          "b_range": [
+            4644,
+            4645
+          ],
+          "a": "cuerpo19",
+          "b": "cuerpo"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            4636,
+            4636
+          ],
+          "b_range": [
+            4651,
+            4652
+          ],
+          "a": "",
+          "b": "19"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            5321,
+            5322
+          ],
+          "b_range": [
+            5337,
+            5339
+          ],
+          "a": "solidaria20",
+          "b": "solidaria 20"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            5680,
+            5681
+          ],
+          "b_range": [
+            5697,
+            5699
+          ],
+          "a": "escolares21",
+          "b": "escolares 21"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            6050,
+            6051
+          ],
+          "b_range": [
+            6068,
+            6069
+          ],
+          "a": "xx23",
+          "b": "xx"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            6058,
+            6058
+          ],
+          "b_range": [
+            6076,
+            6077
+          ],
+          "a": "",
+          "b": "23"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            6318,
+            6319
+          ],
+          "b_range": [
+            6337,
+            6339
+          ],
+          "a": "brasil25",
+          "b": "brasil 25"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            6388,
+            6389
+          ],
+          "b_range": [
+            6408,
+            6410
+          ],
+          "a": "innegable26",
+          "b": "innegable 26"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            6660,
+            6661
+          ],
+          "b_range": [
+            6681,
+            6682
+          ],
+          "a": "articulo27",
+          "b": "articulo"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            6669,
+            6669
+          ],
+          "b_range": [
+            6690,
+            6691
+          ],
+          "a": "",
+          "b": "27"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            6752,
+            6753
+          ],
+          "b_range": [
+            6774,
+            6775
+          ],
+          "a": "secundario28",
+          "b": "secundario"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            6754,
+            6754
+          ],
+          "b_range": [
+            6776,
+            6777
+          ],
+          "a": "",
+          "b": "28"
+        },
+        {
+          "kind": "replace",
+          "a_range": [
+            7150,
+            7151
+          ],
+          "b_range": [
+            7173,
+            7174
+          ],
+          "a": "economico29",
+          "b": "economico"
+        },
+        {
+          "kind": "insert",
+          "a_range": [
+            7157,
+            7157
+          ],
+          "b_range": [
+            7180,
+            7181
+          ],
+          "a": "",
+          "b": "29"
+        }
+      ]
+    }
+  },
+  "pageStarts": [
+    {
+      "page": 1,
+      "start": "Capítulo 12\nLas corrientes gimnásticas\neuropeas y su contenido:\nuna historia de rupturas y permanencias.1\nCarmen Lucia Soares\nCampinas, Brasil\nIntroducción\nLas corrientes gimnásticas europea"
+    },
+    {
+      "page": 2,
+      "start": "Es evidente que las exhibiciones de fuerza, los juegos tradicionales, las fiestas religiosas y las\npaganas; o sea, las referencias más antiguas de destreza y de brutalidad con respecto al mo"
+    },
+    {
+      "page": 3,
+      "start": "concentración de cuerpos y la exigüidad de los espacios que los componen. Así, la instauración de\nun orden que permita la realización de los cambios económicos, del trabajo industrial y de u"
+    },
+    {
+      "page": 4,
+      "start": "de la\npostura pasa a ocupar espacios específicos y amplios en este inicio del siglo XIX y la\ngimnástica es una de sus expresiones más aceptadas. Los ejercicios físicos protagonizados por la\n"
+    },
+    {
+      "page": 5,
+      "start": "Corrientes gimnásticas:\nun modo inédito de educar el cuerpo9\nEn una perspectiva amplia, las corrientes gimnásticas pueden ser comprendidas como uno de los\nprimeros esbozos de sistematización"
+    },
+    {
+      "page": 6,
+      "start": "denominadas ortopedias, de las coberturas mecánicas desde las que aquellos que atienden a la moda\nde las élites corno, por ejemplo, los corsé, hasta las mismas máquinas ortopédicas para el\ne"
+    },
+    {
+      "page": 7,
+      "start": "filosofía, en el canto y en la moral. Son verdaderos tratados sobre cómo educar al cuerpo y ejecutar\nejercicios, adecuándolos a las distintas poblaciones: niños, jóvenes, mujeres, militares,"
+    },
+    {
+      "page": 8,
+      "start": "la muerte de Amorós , a partir de la segunda mitad del siglo XIX, se deja de lado la concepción de\n16\nmodelo corporal y se transita hacia una concepción de adiestramiento del cuerpo. Plena d"
+    },
+    {
+      "page": 9,
+      "start": "correctivos del ejercicio físico en la educación del cuerpo , cuyo objetivo esencial es el desarrollo\n19\nsimétrico y armónico de todas las partes del cuerpo.\nLa concepción científica de esta"
+    },
+    {
+      "page": 10,
+      "start": "sustituyó la palabra \"gimnástica” por \"turnkunst\".\nSus propósitos se anclan en la necesidad de unificación de la nación alemana y, para ello, en la\nnecesidad de reunir sus compatriotas en un"
+    },
+    {
+      "page": 11,
+      "start": "a las corrientes predominantes. Estos movimientos fueron influenciados e inspirados por el\npensamiento de Francois Delsarte (1811-1871), cuyos principios configuraban una educación del\ncuerp"
+    },
+    {
+      "page": 12,
+      "start": "En este pensamiento, en este vocabulario de una “gestión social del cuerpo\" la idea de origen es la\nque predomina. Origen no solamente es el comienzo, sino el comienzo que explica y que bast"
+    },
+    {
+      "page": 13,
+      "start": "eliminación tanto de lo orgánico como de lo económico . La formación de este profesional todavía\n29\nes cercada de ingenuidad y el conjunto de prácticas corporales siempre se observa como pos"
+    },
+    {
+      "page": 14,
+      "start": "Referencias bibliográficas\nARNAULD, Pierre (1991), Le militaire, l'écolier, le gymnaste: la naissance de l'éducation\nphyisique en France (1869-1889). Lyon, Presses Universitaires de Lyion.\nA"
+    },
+    {
+      "page": 15,
+      "start": "a escola. Dissertação \". Mestrado em Ciências do Movimento Humano), UFRGS,\nPorto Alegre.\nHASSE, Manuela (1999), \"O corpo solar: a ginástica sueca e a construção do corpo europeu·: En:\nAnais "
+    },
+    {
+      "page": 16,
+      "start": "-(2004), \"Pedagogías do corpo: higiene, gimnástica, esporte': trabajo presentado en mesa redonda\ntitulada \"O corpo e o género': realizada en el coloquio: Foucault, 20 años después,\npromovido"
+    }
+  ],
+  "headings": [
+    {
+      "heading": "Introducción",
+      "cue": {
+        "index": 4,
+        "start": 10.295,
+        "end": 11.92,
+        "text": "Introducción."
+      },
+      "pdfPages": [
+        1
+      ]
+    },
+    {
+      "heading": "Corrientes gimnásticas: un modo inédito de educar el cuerpo",
+      "cue": {
+        "index": 181,
+        "start": 913.763,
+        "end": 919.104,
+        "text": "Corrientes gimnásticas: un modo inédito de educar el cuerpo."
+      },
+      "pdfPages": [
+        5
+      ]
+    },
+    {
+      "heading": "LA CORRIENTE FRANCESA",
+      "cue": {
+        "index": 305,
+        "start": 1568.815,
+        "end": 1571.137,
+        "text": "La corriente francesa."
+      },
+      "pdfPages": [
+        7,
+        9
+      ]
+    },
+    {
+      "heading": "LA CORRIENTE SUECA",
+      "cue": {
+        "index": 363,
+        "start": 1877.442,
+        "end": 1879.021,
+        "text": "La corriente sueca."
+      },
+      "pdfPages": [
+        1,
+        8,
+        9
+      ]
+    },
+    {
+      "heading": "LA GIMNÁSTICA ALEMANA",
+      "cue": {
+        "index": 408,
+        "start": 2120.209,
+        "end": 2122.624,
+        "text": "la gimnástica alemana."
+      },
+      "pdfPages": [
+        9
+      ]
+    },
+    {
+      "heading": "LAS CORRIENTES GIMNÁSTICAS Y LOS MOVIMIENTOS",
+      "cue": {
+        "index": 476,
+        "start": 2492.108,
+        "end": 2497.495,
+        "text": "Las corrientes gimnásticas y los movimientos minoritarios en su interior."
+      },
+      "pdfPages": [
+        10
+      ]
+    },
+    {
+      "heading": "Algunas ideas finales",
+      "cue": {
+        "index": 511,
+        "start": 2688.246,
+        "end": 2690.707,
+        "text": "Algunas ideas finales."
+      },
+      "pdfPages": [
+        11
+      ]
+    }
+  ],
+  "method": {
+    "pdfText": "pdftotext -layout; fitz for page index",
+    "comparisons": "NFKD lowercase; strip diacritics; [a-z0-9]+; SequenceMatcher autojunk=False",
+    "humanListening": false,
+    "acousticAlignment": false,
+    "mp3DecodeExitCode": 0,
+    "sourceHashes": "Original binary PDF/MP3/VTT/TXT; editable/directrices hashes are connector text snapshots"
+  }
+}
