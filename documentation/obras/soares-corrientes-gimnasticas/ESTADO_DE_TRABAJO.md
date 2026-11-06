@@ -86,3 +86,7 @@ Originales en Drive; imágenes en fuentes institucionales con referencias/huella
 ### Texto breve de relevo
 
 > Continuemos el Work 2 de Carmen Lucia Soares. Recuperá `documentation/obras/soares-corrientes-gimnasticas/ESTADO_DE_TRABAJO.md` en `feature/soares-corrientes-gimnasticas` y verificá HEAD y PR #79. El Work 1 contiene auditoría, investigación, tres pantallas de Contexto y diseño. Retomá el texto fiel y el cotejo acústico de la pareja fijada; luego implementá y probá con componentes compartidos. No repitas tareas cerradas ni publiques en Work 2. Actualizá el checkpoint al finalizar.
+
+## Checkpoint en curso · Work 2
+
+Recuperación remota concluida sobre `715bc4c…`; PR #79 abierta en borrador. Fuentes recuperadas con hashes idénticos. Reconstrucción académica inicial: siete apartados, 29 notas y 47 entradas, censo de caracteres sin pérdidas ni duplicaciones. Generador y adaptador guardados en este commit; detalles en [WORK_2_TECNICO.md](WORK_2_TECNICO.md). Materiales completos solo locales mientras I04 siga sin acreditar. Próximo paso: validar segmentación y generar correspondencia reproducible VTT/oraciones, después construir candidato sin publicar materiales restringidos. Este apartado sustituirá el corte de Work 1 al cerrar Work 2; no declara G2/G3 finales.
