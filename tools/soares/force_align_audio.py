@@ -64,6 +64,7 @@ report = {'complete':False, 'audioSha256':audio_sha, 'vttSha256':vtt_sha, 'model
 if output.exists():
     old = json.loads(output.read_text())
     assert old['audioSha256'] == audio_sha and old['vttSha256'] == vtt_sha and old['settings'] == settings
+    assert old['engine'] == report['engine'], 'Engine changed: use a separate reviewed output'
     assert [(w['word'],w['normalized'],w['cue']) for w in old['words']] == [(w['word'],w['normalized'],w['cue']) for w in words]
     report = old
     words = report['words']
@@ -75,7 +76,9 @@ if report['complete']: print('REUSE', output); raise SystemExit(0)
 torch.set_num_threads(a.threads); torch.set_num_interop_threads(1)
 model = MMS_FA.get_model().eval(); tokenizer = MMS_FA.get_tokenizer(); aligner = MMS_FA.get_aligner()
 model_file = next((Path(a.model_dir)/'hub/checkpoints').glob('*.pt'))
-report['modelWeights'] = {'name':model_file.name, 'sha256':digest(model_file)}
+weights_sha = digest(model_file)
+assert weights_sha == '20ef12963ab4924bef49ac4fc7f58ad5da2ee43b2c11bc8c853c9b90ecdbc680'
+report['modelWeights'] = {'name':model_file.name, 'sha256':weights_sha}
 data = np.frombuffer(subprocess.check_output(['ffmpeg','-v','error','-i',str(audio),'-f','f32le','-ac','1','-ar','16000','-']), dtype=np.float32).copy()
 assert abs(len(data)/16000-3113.331293) < .001
 print('ALIGN', len(plans), 'chunks', len(words), 'VTT words', flush=True)

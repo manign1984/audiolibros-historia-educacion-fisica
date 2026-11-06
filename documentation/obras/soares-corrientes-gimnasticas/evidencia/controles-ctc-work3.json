@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-06",
+  "incompleteReportRejectedBeforeWrite": true,
+  "concurrentWriterRejected": true,
+  "pythonSyntax": "passed",
+  "soaresRuntimeWithRealSources": "passed",
+  "localCandidateBuild": "passed; hashes enforced",
+  "applicationModified": false,
+  "browserLimits": [
+    "native input failed: AT-SPI unavailable",
+    "internal settings blocked by URL policy; not bypassed"
+  ],
+  "humanListening": false,
+  "syncReady": false,
+  "publication": false
+}

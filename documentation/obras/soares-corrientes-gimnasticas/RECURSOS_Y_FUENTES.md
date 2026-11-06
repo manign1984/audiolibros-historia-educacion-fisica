@@ -62,3 +62,16 @@ La indagación sobre expresividad se sustenta en las pp. 10–11 de la copia aca
 Identificar edición de 2006, copia de cátedra, traducción de Esteban Manuel Barcelona, materiales ElevenLabs aportados por el proyecto y condición de las partes no narradas. No declarar una licencia abierta del texto o del audio a partir de su disponibilidad en Drive. El permiso de redistribución pública de esos materiales no está documentado en el expediente.
 
 Las fuentes auténticas, los diagramas didácticos y los derivados web tendrán atribuciones diferenciadas. No habrá una imagen que simule ser fuente histórica. En el Work 2, guardar la imagen web final y sus hashes solo después de confirmar la fuente utilizada; este registro conserva las referencias y huellas de los candidatos ya inspeccionados.
+
+
+## Aclaración de I04 al responsable · reanudación de Work 3
+
+La consulta por «constancia o referencia» busca identificar una condición de publicación ya existente. No exige un contrato de formato determinado ni volver a autorizar el trabajo técnico. La falta de esa información en este expediente no demuestra que el proyecto carezca de permiso.
+
+| Material | Información que falta registrar para publicación abierta |
+| --- | --- |
+| Capítulo y versión española de Esteban Manuel Barcelona | Referencia de la condición de uso o autorización que cubra la reproducción del texto completo y su versión narrada en la web del proyecto |
+| MP3 suministrado por el proyecto | Procedencia/condiciones de publicación de la narración entregada; la voz y el archivo ya están fijados, no se solicitan de nuevo |
+| Retrato institucional de Soares | Condición de uso de esa fotografía concreta; la procedencia UNICAMP está documentada, la licencia individual no figura |
+
+Puede registrarse, cuando exista, un enlace a condiciones de uso o una comunicación de autorización con su alcance y procedencia. No se presume una licencia abierta, no se solicita al responsable inventar una y no se contacta a terceros. El desarrollo y análisis locales continúan; el control pendiente se aplica a la incorporación de esos materiales al repositorio público y su despliegue. La imagen de Demeny tiene una procedencia de dominio público documentada y no integra este pendiente.

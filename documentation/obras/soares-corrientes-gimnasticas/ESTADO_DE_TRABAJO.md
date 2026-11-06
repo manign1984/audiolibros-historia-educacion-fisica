@@ -79,3 +79,6 @@ Siguiente operación: completar y guardar privadamente alineación CTC adicional
 
 
 **Checkpoint privado actual de reanudación:** paquete acústico **versión 2**, 8076948 bytes, SHA `ed0c85bafdb9001bee9d9649b8301ce1921a7d126e744eb08b0799fc8cc01b8a`. Conserva todo lo de versión 1 y agrega CTC parcial (4/111 ventanas, padding 4 s). Las referencias de arriba a v1 describen la etapa anterior: para reanudar ahora usar v2. Recuperar `ctc.json` y ejecutar `force_align_audio.py` con los mismos argumentos para continuar; no empezar otra salida ni repetir Whisper. El checkpoint por ventana es atómico y hay bloqueo contra ejecuciones concurrentes.
+
+
+**Checkpoint privado más reciente:** versión **3**, CTC parcial 53/111 ventanas; SHA `f1a00380cfbebcba5639203c411ade6c52aa7a167497103881a0e966b81c8569`, 8140435 bytes. Sustituye a v2 como punto actual de recuperación; conserva las transcripciones y 40 extractos de v1. La ejecución completa continúa localmente y aún no hay informe final CTC ni tiempos activos. `evaluate_ctc.py` rechazará este resultado hasta que `complete` sea verdadero.
