@@ -16,6 +16,16 @@
 
 Una «T = aprobado» **no implica** que M, P o U también lo estén. Ningún hash verifica por sí solo que una voz es la aprobada. Ningún ASR por sí solo constituye escucha humana.
 
+### Acuerdo de reparto de tareas · 06/11/2026
+
+**Responsable del proyecto / creador de los archivos en ElevenLabs:** antes de iniciar una nueva obra, comprueba personalmente cuál es el **MP3 definitivo** y cuál es su **VTT/SRT definitivo**, generados y emitidos por él, y entrega esos recursos identificados. Su confirmación editorial es suficiente para **no obligar a la IA a rastrear todas las versiones históricas ni a intentar reconocer qué voz eligió el autor**. El ingreso puede resumirse en: «Confirmo que estos enlaces/archivos son el audio y los subtítulos definitivos de ElevenLabs para [obra]». No se exige una firma formal adicional, un informe de selección de versiones ni repetir escuchas ya realizadas.
+
+**Asistente de IA:** recibe esa selección como fuente editorial autorizada y, sin hacer trabajo redundante, verifica lo que sí puede comprobar: acceso, legibilidad, integridad, tamaño/hash para fijar una referencia, duración, final del VTT, orden de cues, correspondencia textual y anomalías de sincronización. Registra archivos exactos y resultados. **No vuelve a investigar la identidad de la voz por defecto**. Solo solicita revisión puntual del responsable si halla contradicciones, versiones duplicadas que afecten la selección, un recurso distinto del confirmado o un resultado que impida continuar con fidelidad.
+
+**Distinción importante:** el visto bueno del responsable prueba que se entregó la pareja editorial correcta, pero no certifica automáticamente que cada marca temporal esté sincronizada con cada oración. Los controles de G3, G6 y G7 siguen aplicándose; el asistente los realiza de forma autónoma hasta donde su evidencia lo permita, y declara el límite de las comprobaciones humanas sin cargarle al responsable una nueva tarea de revisión completa por defecto.
+
+**Para Scharagrodsky y sucesivas obras:** se mantiene íntegro el procedimiento de checkpoints, persistencia en rama, transferencias verificadas y reanudación idempotente. No se trasladan tareas técnicas de recuperación al responsable del proyecto.
+
 ## 1. Estados del expediente (distintos de estados del catálogo)
 
 - **INVENTARIO**: búsqueda, identificación, revisión no invasiva; no edición pública nueva.
@@ -33,7 +43,7 @@ El expediente no se «promueve» por completar un formulario: cada transición n
 | Puerta y producto | Evidencia mínima y comprobación | Bloqueo / decisión |
 | --- | --- | --- |
 | **G0 · Congelación del alcance** | Obra, año/edición, capítulo/selección, uso pedagógico, número de pantallas Contexto previsto, responsables y materiales esperados. | Si el alcance es contradictorio, permanecer INVENTARIO. |
-| **G1 · Identidad de insumos** | Lista de TODOS los PDF/TXT/MP3/VTT candidatos con Drive ID/ruta, tamaño, SHA-256, fecha, voz/versión conocida, duración real, comparación con el último VTT y elección explícita de fuente. Escucha del inicio, punto medio y cierre de la grabación elegida; transiciones si corresponde. | Dos voces sin arbitraje, VTT incompatible o permisos/procedencia indefinidos → INCIDENCIA_DE_INSUMOS. Investigar no equivale a habilitar sincronización. |
+| **G1 · Identidad de insumos** | El responsable confirma el **MP3 y VTT/SRT definitivos emitidos desde ElevenLabs** (archivos/enlaces exactos y obra). La IA registra esos archivos, su ID/ruta, bytes, hash, duración y último cue, y verifica acceso e integridad. **No se exige inventariar alternativas históricas ni repetir su selección editorial.** | Si falta la confirmación, la pareja se contradice o el medio entregado no coincide con lo declarado → INCIDENCIA_DE_INSUMOS y consulta puntual. La IA no sustituye por su cuenta la versión elegida. |
 | **G2 · Fidelidad académica** | Edición base y diferencias respecto de copia de cátedra, transcripción y guion; cuerpo, secciones, notas, epígrafes, citas, bibliografía, referencias, pasajes omitidos y qué se narra/no narra. Fuentes biográficas, visuales y derechos conocidos. | Si el lector promete una edición íntegra pero faltan segmentos o las fuentes son inciertas, corregir o registrar publicación parcial expresa. Nunca inventar notas o permisos. |
 | **G3 · Temporalidad y voz** | Duración del medio, primer/último punto y transiciones, VTT/SRT de origen, cobertura y huecos, intervalos por unidad, discrepancias léxicas, muestras de audio escuchadas y límites humanos. Separar marcas acústicas, VTT, interpolación e inferencias. | No activar etiqueta «verificado»/«ready» únicamente por tiempo o tokens coincidentes. Los segmentos no narrados no llevan tiempos ficticios. |
 | **G4 · Plan pedagógico y visual** | Esquema 5 bloques; Inicio 1, Autor 1, Contexto 1–3 justificado, Lectura 1, Créditos 1; dossier de Contexto y fuentes; portada/retrato auténtico o alternativa identificada; excepción y paleta. | No iniciar diseño de páginas definitivas si la estructura contradice SR-01/02 o no se han resuelto decisiones esenciales. |
@@ -44,17 +54,18 @@ El expediente no se «promueve» por completar un formulario: cada transición n
 
 **Regla de parada fuerte:** una incidencia en G1–G3 bloquea declarar completo un trabajo dependiente; permite investigación, inventario y prototipo privado. Si se autoriza publicar parcialmente conforme a SR-05, dejar quién lo decidió, qué prestación se habilita, qué quedó desactivado y qué evidencia faltó.
 
-## 3. Control especializado contra el fallo de Marcaida
+## 3. Control especializado contra el fallo de Marcaida: responsabilidad compartida sin trabajo duplicado
 
-**Al inicio y antes de publicar nuevamente:**
-1. Enumerar todos los audios del título en las carpetas de origen y publicación, por **ID y no solo por nombre**.
-2. Medir todos los candidatos. Anotar bytes y SHA-256. Comparar duración con último cue de cada VTT sin asumir que el desfase es silencio.
-3. Registrar voz/versionado con una muestra audible identificada por un referente académico. Si hay variantes de narración o edición, elegir expresamente y dejar la alternativa como histórica.
-4. Verificar inicio, punto medio, cambios de capítulo y final contra la edición. Documentar frases ausentes o diferentes.
-5. Congelar el binario elegido y su vínculo con el recurso público. Cualquier sustitución exige **reiniciar G1 y G3**.
-6. Al cambiar el MP3, revisar duración, enlaces, caché, capítulos, VTT, tiempos, progreso guardado y catálogo. Preservar notas personales si la identidad del texto lo permite; no reutilizar tiempos anteriores automáticamente.
+**Paso a cargo del responsable del proyecto:** antes de comenzar una obra, identifica y verifica **una sola vez** el MP3 y los subtítulos finales producidos por él con ElevenLabs. Los aporta con la confirmación editorial explícita y breve; no necesita preparar una auditoría ni proporcionar el historial de variantes. Si posteriormente sustituye alguno, informa cuál es el nuevo definitivo.
 
-**Prueba de aceptación adversa A1:** introducir en una copia de ensayo dos MP3 válidos con hashes correctos pero voces/duraciones distintas. Resultado esperado: G1 queda pendiente hasta aprobar el **archivo correcto**, aunque el validador estructural pase. No se declara que los tests actuales implementen esa verificación semántica.
+**Paso autónomo del asistente, después de recibir esa pareja:**
+1. Registrar enlaces/IDs de los dos originales confirmados, acceso, duración, tamaño y SHA-256 del recurso que efectivamente se publicará.
+2. Comprobar que el VTT/SRT corresponde **técnicamente** al audio recibido: validez y orden de cues, tiempos inicial/final, duración real, cobertura, saltos y correspondencia de pasajes comprobables; **no atribuir discrepancias a silencio sin verificarlas**.
+3. Contrastar la edición académica con el contenido narrado e identificar omisiones y diferencias relevantes, sin alterar los originales.
+4. Si todo es consistente, congelar el binario elegido y continuar G2–G8 sin pedir nuevas decisiones. Si aparece una contradicción, explicar **solo el problema concreto** y solicitar la corrección o elección que el asistente no pueda resolver legítimamente.
+5. Si el usuario cambia el MP3 o los subtítulos, repetir únicamente los controles afectados (G1/G3/G6/G7/G8): duración, enlace y caché, capítulos, intervalos, progreso y catálogo; conservar notas personales cuando corresponda. No reutilizar tiempos de la versión anterior sin revalidar.
+
+**Prueba adversa A1:** en un ensayo, entregar dos grabaciones con hashes válidos pero una sola **designada por el responsable**. El asistente debe usar la designada sin buscar un supuesto original «más auténtico»; una sustitución posterior obliga a revisar las dependencias y no se resuelve modificando silenciosamente el manifiesto. Un hash válido de otro audio no sustituye la confirmación editorial. Esta comprobación semántica aún no está automatizada en CI.
 
 ## 4. Control especializado contra el fallo de continuidad de Scharagrodsky
 
@@ -119,7 +130,7 @@ Las pruebas de DOM simulado y de viewport no sustituyen una prueba en dispositiv
 
 | ID | Situación simulada | Resultado correcto |
 | --- | --- | --- |
-| A1 | Dos grabaciones íntegras con voces distintas | G1 bloqueado hasta selección editorial verificable |
+| A1 | Dos grabaciones íntegras con voces distintas | Usar la pareja expresamente confirmada por el responsable; no escoger de forma autónoma otra voz, y bloquear si la selección no es inequívoca |
 | A2 | Sesión interrumpida durante la transferencia | Reanudación con checkpoint, sin duplicación, hash final igual |
 | A3 | El VTT acaba antes/después del MP3 | Incidencia temporal; investigar cola, cambio de voz o distinta edición; no estirar tiempos |
 | A4 | Cuerpo completo, notas académicas ausentes | Advertir y cotejar con edición; no declarar integridad académica total |
@@ -145,7 +156,7 @@ Cambio de audio → repetir G1/G3/G6/G7/G8. Cambio de texto académico → G2/G3
 
 ## 9. Condiciones de cierre y responsabilidad
 
-**Publicación normal:** M y T aprobadas; P documentada con alcance honesto y criterios adecuados a la función pública que se anuncia; U verificada. La vigencia de permisos y la autorización editorial no se deducen de las pruebas técnicas.
+**Publicación normal:** la identidad del MP3 y de los subtítulos de ElevenLabs queda confirmada editorialmente por el responsable de la obra y comprobada técnicamente por la IA; M y T aprobadas; P documentada con alcance honesto y criterios adecuados a la función pública que se anuncia; U verificada. La vigencia de permisos y la autorización editorial no se deducen de las pruebas técnicas.
 
 **Publicación parcial:** requiere decisión expresa conforme a SR-05, desactivación o comunicación de funciones no verificadas y registro público honesto; no convierte una incidencia en «aprobado».
 
