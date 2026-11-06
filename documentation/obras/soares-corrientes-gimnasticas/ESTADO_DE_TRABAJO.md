@@ -10,7 +10,7 @@ Fecha: 06-11-2026 (Argentina). Modalidad: 3 Work. Etapa: WORK 1 · PREPARACIÓN 
 - Acta: ACTA_OBRA.md, a completar desde plantilla oficial.
 ## Resultado verificable del último Work
 - Corte: todavía ninguno; investigación en curso.
-- G0 en evaluación; G1 técnico en curso; G2 en curso; G3 exploratorio; G4 pendiente; G5–G8 no ejecutados.
+- G0 en evaluación; G1 identidad y binarios APROBADOS; G2 auditoría concluida, documento del lector pendiente; G3 diagnóstico técnico cerrado, cotejo acústico pendiente; G4 pendiente; G5–G8 no ejecutados.
 - PDF de cátedra: Drive 1xOnn6jLmUI5wj72noq18J53oh5-nkyOT (16 páginas).
 - Editables: 1ZwUuFs_nBXR-ewnXmQXZQKsb16iGJHUdEvX1VeCxt3s y 1ql-P9yoKm8TZlqsG_j0KvqHZww_VUNTbQeSXc9QqEXs.
 - TXT localizados: 1ubCfCwnzbGZMSbMDxHUQhfJfcmLOHlFv y 1kRRm8XiSHtO4chZ9sbAmvchgXTDHV7WX.
@@ -25,3 +25,11 @@ Fecha: 06-11-2026 (Argentina). Modalidad: 3 Work. Etapa: WORK 1 · PREPARACIÓN 
 Continuar exclusivamente Work 1: cerrar auditoría documental/técnica, investigación, Contexto 1–3 pantallas, propuesta estética, estrategia técnica y acta completa. Guardar resultados y actualizar este estado antes del corte hacia Work 2.
 ## Historial de cortes
 06-11-2026: checkpoint inicial de inventario, recuperable desde la rama. El commit contenedor se consulta en el historial de este archivo; no se inventa su propio SHA.
+
+## Checkpoint documental y técnico
+- Auditoría: [AUDITORIA_DOCUMENTAL.md](AUDITORIA_DOCUMENTAL.md).
+- Huellas, diferencias y cues: [evidencia/auditoria-insumos.json](evidencia/auditoria-insumos.json).
+- MP3 decodificado completo con ffmpeg: código 0, sin errores. 593 cues ordenados; último 3113,305 s; diferencia con audio 0,072959 s.
+- A/B sin notas ni bibliografía; PDF/TXT con 29 notas y bibliografía. Los dos TXT son idénticos.
+- No certificar sincronización por oración; no se ejecutó escucha humana.
+- Próximo paso Work 1: concluir dossier académico, recursos, propuesta de tres pantallas y estrategia técnica; completar acta.
