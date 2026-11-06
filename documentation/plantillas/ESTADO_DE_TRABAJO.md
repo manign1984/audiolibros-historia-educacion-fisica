@@ -1,7 +1,7 @@
 # ESTADO DE TRABAJO · [obra/slug]
 
 > **Plantilla**: copiar como `documentation/obras/<slug>/ESTADO_DE_TRABAJO.md` al iniciar Work 1. Mantenerla en la **rama de la obra**. No representa una obra real hasta reemplazar cada campo.  
-> Referencias: [producción por etapas](../PRODUCCION_POR_ETAPAS_2026-11-06.md) · [protocolo de autonomía](../PROTOCOLO_AUTONOMIA_V1_2026-11-06.md) · [acta de obra](ACTA_OBRA_AUTONOMIA_V1.md).
+> Referencias en la raíz del repositorio: `documentation/PRODUCCION_POR_ETAPAS_2026-11-06.md`, `documentation/PROTOCOLO_AUTONOMIA_V1_2026-11-06.md` y `documentation/plantillas/ACTA_OBRA_AUTONOMIA_V1.md`. Se mantienen válidas al copiar esta plantilla a `documentation/obras/<slug>/`.
 
 ## Identificación y planificación
 
