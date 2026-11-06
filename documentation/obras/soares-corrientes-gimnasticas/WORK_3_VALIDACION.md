@@ -46,9 +46,9 @@ Procedimientos reproducibles, desde la raíz del repositorio (entradas privadas 
 
 ```sh
 python3 tools/soares/collate_academic.py ACADEMIC_JSON TXT INFORME_COLACION
-python3 tools/soares/recognize_audio.py --audio MP3 --output TINY_JSON --model tiny --model-dir MODELOS --threads 4
+python3 tools/soares/recognize_audio.py --audio MP3 --output TINY_JSON --model tiny --revision d90ca5fe260221311c53c58e660288d3deb8d356 --model-dir MODELOS --threads 4
 python3 tools/soares/map_acoustic.py --document DOCUMENT_JSON --vtt VTT --asr TINY_JSON --outdir RESULTADOS
-python3 tools/soares/recognize_audio.py --audio MP3 --output BASE_JSON --model base --model-dir MODELOS --windows RESULTADOS/review-windows.json --threads 4
+python3 tools/soares/recognize_audio.py --audio MP3 --output BASE_JSON --model base --revision ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66 --model-dir MODELOS --windows RESULTADOS/review-windows.json --threads 4
 python3 tools/soares/compare_acoustic.py DOCUMENT_JSON VTT TINY_JSON BASE_JSON RESULTADOS/acoustic-audit.json INFORME_COMPARACION
 python3 tools/soares/prepare_review.py DOCUMENT_JSON MP3 RESULTADOS/acoustic-candidate.json RESULTADOS/acoustic-audit.json INFORME_COMPARACION PAQUETE_PRIVADO
 ```
@@ -58,3 +58,12 @@ python3 tools/soares/prepare_review.py DOCUMENT_JSON MP3 RESULTADOS/acoustic-can
 Repetido sobre el código persistido `b994543…`: lector de **320×740** y **390×844**, ambos sin desbordamiento horizontal (diálogo 320/320 y 390/390; documento 310/310 y 380/380). Audio alcanza readyState 4; no autoplay. En 320 se cambió a Alemania, abrió nota académica 20 y volvió al pasaje; se guardó una anotación sintética, recargó realmente, reabrió y comprobó el comentario recuperado. Se eliminó exclusivamente esa anotación, confirmando cuaderno vacío. En 390 se navegó a Ideas finales y se inspeccionó su composición. Escritorio final: cuatro imágenes cargadas, ancho 1348/1348 sin overflow.
 
 El intento de atajos de zoom no cambió las dimensiones CSS: **no se declara zoom del navegador validado**. El aumento interno del lector a 132 % fue comprobado antes del reinicio y está descrito arriba. Movimiento reducido: inspección estática de las reglas del botón común y consultas matchMedia del lector; **no se emuló la preferencia en navegador**. Se requieren esos dos controles de navegador para cerrar G7; no se sustituyen con una compilación ni se afirman pruebas de hardware táctil. Tampoco se declara escucha humana del paquete acústico.
+
+
+## Pruebas finales guardadas
+
+Código bajo prueba `0f49702dc9fcaac2c13ffe6eea709f3a92e4a820`. [pruebas-work3.json](evidencia/pruebas-work3.json): 27 comprobaciones con cero fallos. Incluye Soares con fuentes reales, lector DOM, seis regresiones, catálogo y validación adversa; builds ordinarios/candidatos raíz y Pages con verificación de rutas/referencias, presencia/ausencia de materiales privados y escaneo de hashes completos en los dist ordinarios. No es una prueba general de exfiltración. Registro activo: 6 recorridos, 29 fichas, 106 referencias, 0 errores y 6 avisos anteriores conservados. Censo PDF y sintaxis Python reejecutados. `npm ci` finalizó con código 0 (72 dependencias fijadas; lock sin cambios). Enlaces locales y JSON válidos.
+
+CI remota del mismo checkpoint: **42281356936, completed/success**. El ajuste posterior de `recognize_audio.py` agrega `--revision` para fijar los pesos registrados y rechaza reutilizar resultados de ventanas/revisión diferentes; sintaxis y ruta de reutilización comprobadas. No altera los resultados ASR ya guardados ni el código de interfaz probado.
+
+**Corte recuperable:** no se fusiona ni publica. Las condiciones de redistribución siguen sin acreditarse y G3/G7 no están cerradas. El siguiente paso no es recomenzar Work 1/2: es resolver esos pendientes con los materiales conservados.

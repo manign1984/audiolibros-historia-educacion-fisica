@@ -1,8 +1,8 @@
-# Carmen Lucia Soares · Work 1 y Work 2 de 3
+# Carmen Lucia Soares · Work 1, 2 y checkpoint de Work 3
 
 *Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y permanencias.* Biblioteca +TEC UNAHUR · BEYOND THE STARS · 06-11-2026.
 
-**Work 2: candidato local implementado y evaluado técnicamente; sin fusionar ni publicar.** El MP3/VTT entregados quedaron identificados y auditados. El PDF de cátedra será la referencia académica; el guion abreviado no reemplazará las 29 notas y la bibliografía.
+**Work 3: candidato local corregido y evaluado; cierre acústico/perceptivo y redistribución pendientes, sin fusionar ni publicar.** El MP3/VTT entregados quedaron identificados y auditados. El PDF de cátedra será la referencia académica; el guion abreviado no reemplazará las 29 notas y la bibliografía.
 
 | Producto del Work 1 | Archivo |
 | --- | --- |
@@ -28,3 +28,11 @@ Work 2 concluyó con código candidato, datos académicos privados recuperables 
 - Código: `portable-site/src/soares/`; procedimientos: `tools/soares/`; registro candidato: `validation/soares-candidate.json`. Texto completo preservado privadamente; datos de recuperación en el estado.
 
 Para reanudar prevalece ESTADO_DE_TRABAJO.md: siguiente etapa Work 3, con derechos, alineación y aceptación integral pendientes.
+
+
+## Checkpoint de Work 3
+
+- [Validación integral, correcciones, métodos y límites](WORK_3_VALIDACION.md).
+- [Colación académica final](evidencia/colacion-work3.json), [comparación acústica sin activar](evidencia/acustica-work3.json) y [revisiones/hashes de modelos](evidencia/modelos-work3.json).
+- [Pruebas locales y CI](evidencia/pruebas-work3.json).
+- Recuperación de los dos paquetes privados versión 1 y próximo paso exacto en ESTADO_DE_TRABAJO.md. No repetir reconstrucción ni ASR conservados.

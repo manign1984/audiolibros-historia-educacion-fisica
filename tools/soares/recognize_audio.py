@@ -7,16 +7,16 @@ import argparse,json,hashlib,subprocess,importlib.metadata
 from pathlib import Path
 import numpy as np
 from faster_whisper import WhisperModel
-p=argparse.ArgumentParser();p.add_argument('--audio',required=True);p.add_argument('--output',required=True);p.add_argument('--model',default='tiny');p.add_argument('--model-dir',required=True);p.add_argument('--windows');p.add_argument('--threads',type=int,default=4);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--audio',required=True);p.add_argument('--output',required=True);p.add_argument('--model',default='tiny');p.add_argument('--model-dir',required=True);p.add_argument('--revision');p.add_argument('--windows');p.add_argument('--threads',type=int,default=4);a=p.parse_args()
 audio=Path(a.audio);out=Path(a.output);out.parent.mkdir(parents=True,exist_ok=True)
 sha=hashlib.sha256(audio.read_bytes()).hexdigest();assert sha=='f9c4226ec5794a959d77d6f97b523eabadb0dcdc272bbec9c9e1b04d9a019b37'
 windows=json.loads(Path(a.windows).read_text()) if a.windows else [{'start':0,'end':3113.331293}]
 if out.exists():
  old=json.loads(out.read_text())
- if old.get('complete') and old['audioSha256']==sha and old['model']==a.model and [{'start':w['start'],'end':w['end']} for w in old['windows']]==windows:print('REUSE',out);raise SystemExit(0)
+ if old.get('complete') and old['audioSha256']==sha and old['model']==a.model and old.get('modelRevision')==a.revision and [{'start':w['start'],'end':w['end']} for w in old['windows']]==windows:print('REUSE',out);raise SystemExit(0)
 print('LOAD',a.model,'windows',len(windows),flush=True)
-model=WhisperModel(a.model,device='cpu',compute_type='int8',cpu_threads=a.threads,download_root=a.model_dir)
-report={'complete':False,'audioSha256':sha,'model':a.model,'engine':{n:importlib.metadata.version(n) for n in ['faster-whisper','ctranslate2','huggingface-hub']},'decoding':'ffmpeg mono 16000 Hz float32','settings':{'language':'es','beam_size':5,'word_timestamps':True,'vad_filter':True,'condition_on_previous_text':False,'cpu_threads':a.threads},'windows':[],'words':[]}
+model=WhisperModel(a.model,device='cpu',compute_type='int8',cpu_threads=a.threads,download_root=a.model_dir,revision=a.revision)
+report={'complete':False,'audioSha256':sha,'model':a.model,'modelRevision':a.revision,'engine':{n:importlib.metadata.version(n) for n in ['faster-whisper','ctranslate2','huggingface-hub']},'decoding':'ffmpeg mono 16000 Hz float32','settings':{'language':'es','beam_size':5,'word_timestamps':True,'vad_filter':True,'condition_on_previous_text':False,'cpu_threads':a.threads},'windows':[],'words':[]}
 for wi,win in enumerate(windows):
  start,end=win['start'],win['end'];data=np.frombuffer(subprocess.check_output(['ffmpeg','-v','error','-ss',str(start),'-i',str(audio),'-t',str(end-start),'-f','f32le','-ac','1','-ar','16000','-']),dtype=np.float32)
  segments,info=model.transcribe(data,**{k:v for k,v in report['settings'].items() if k!='cpu_threads'})

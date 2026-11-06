@@ -1,6 +1,6 @@
 # Acta de obra · Carmen Lucia Soares
 
-**Estado vigente: corte Work 2 → Work 3; candidato local con derechos y sincronización pendientes.** Los apartados A–J preservan el acta histórica del Work 1; la actualización final figura al pie y en ESTADO_DE_TRABAJO.md.
+**Estado vigente: checkpoint de Work 3; candidato local corregido y probado, publicación bloqueada.** Los apartados A–J preservan el acta histórica del Work 1; la actualización final figura al pie y en ESTADO_DE_TRABAJO.md.
 
 Creada desde `documentation/plantillas/ACTA_OBRA_AUTONOMIA_V1.md`; conserva sus apartados A–J. Work 1 de 3, 06-11-2026. Norma superior: Directrices canónicas 2.0. No constituye autorización de publicación ni acta de aceptación de una página implementada.
 
@@ -146,3 +146,17 @@ Se completa la **preparación de Work 1**, no una nueva lectura disponible. Ning
 **Incidencias:** I01 resuelta en el candidato académico; I03 implementada; I05 resuelta con extensión mínima y regresión funcional; I02 e I04 abiertas; I06 transporte público pendiente, MP3 entero probado localmente. No se declara una autorización que la documentación no contiene. No se contactó a terceros.
 
 **M:** identidad fijada, permisos públicos pendientes. **T:** candidato local probado, materiales originales privados. **P:** cotejo escrito/geométrico y pausas, sin aceptación semántica acústica. **U:** inspección local inicial, sin experiencia pública publicada. El archivo de estado sustituye las instrucciones de reanudación de Work 1.
+
+
+## Actualización de acta · Checkpoint Work 3 · 06-11-2026
+
+- **G2:** colación final automática completada contra TXT íntegro, en orden: 6422 tokens del cuerpo/encabezados, 29 notas y 861 tokens bibliográficos. Censo del PDF reejecutado, idéntico. No se corrigió el original ni se sustituyó por el guion narrado.
+- **G3:** evidencia nueva de audio real: Whisper tiny completo y base en 38 ventanas/806,471 s. 194 candidatos, 135 fronteras comparadas, 17 discrepancias >0,45 s y 35 unidades señaladas. Paquete privado versión 1 con transcripciones y 40 extractos recuperables. Son tamaños de una familia ASR, no aceptación humana ni alineación forzada. **G3/I02 siguen pendientes; cero tiempos activos.**
+- **G5:** corregidos contraste en Créditos, filas de matriz, fuente/desbordamiento del título del lector y paleta local del botón. Componentes comunes y geometría preservados. Ninguna clave de otra obra cambió.
+- **G6:** suites específicas y regresiones de seis obras, builds raíz/Pages ordinarios/candidatos y aislamiento de materiales aprobados sobre `0f49702…`; CI completed/success, ejecución 42281356936. Informe pruebas-work3.json. Ajuste posterior del procedimiento ASR permite fijar revisión de pesos; no altera página ni evidencia medida.
+- **G7:** inspección real de siete pantallas, escritorio/tablet/móvil/altura baja, lector/nota 20/anotación/exportación/recarga y retorno de foco. Correcciones visuales aplicadas. Pendientes: zoom real y preferencia de movimiento reducido emulada; no se afirma escucha humana del paquete. **Aceptación integral todavía parcial.**
+- **G8/I04:** publicación bloqueada. Falta acreditar condiciones de redistribución de texto/traducción, narración y retrato. PR #79 abierta/draft; main y despliegue sin cambios de Soares. I06 transporte público sigue pendiente. No se contactó a terceros.
+
+**M:** fuentes fijadas, redistribución sin acreditar. **T:** candidato local corregido, probado y recuperable. **P:** colación documental y evidencia ASR guardadas; escucha/tiempos finales pendientes. **U:** observación de navegador ampliada, dos controles pendientes, sin ruta pública habilitada. La autorización de avanzar a Work 3 no se interpreta como una licencia de terceros.
+
+Este checkpoint no declara concluido el Work 3 ni habilita merge. Próximo paso exacto y paquetes en ESTADO_DE_TRABAJO.md.
