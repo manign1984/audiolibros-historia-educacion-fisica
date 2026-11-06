@@ -64,3 +64,10 @@ Antes de agregar la próxima página, copiar la [plantilla](plantillas/ACTA_OBRA
 - La decisión de pasar a implementación tiene dictamen trazable: aprobado, incidencia o publicación parcial expresamente autorizada.
 
 La adaptación del protocolo se evaluará con ese piloto y con las métricas de incidentes/retrabajo; **no se propone cambiar las Directrices 2.0 sin una decisión específica del proyecto**.
+
+
+## 5. Ajuste posterior de responsabilidades (06/11/2026)
+
+Esta prueba retrospectiva documenta lo sucedido y **no cambia retrospectivamente** el diagnóstico de Marcaida. Para la aplicación futura de G1 se acuerda que el responsable del proyecto confirme el MP3 y los subtítulos finales emitidos por él mediante ElevenLabs, sin exigirle inventario de versiones históricas. La IA verifica su integridad y correspondencia técnica y solo consulta si detecta contradicciones. Este reparto reduce trabajo sin rebajar G3, G6 o G7.
+
+La estrategia de Scharagrodsky (checkpoints, ramas persistentes, transferencia verificable y reanudación) se mantiene íntegra.
