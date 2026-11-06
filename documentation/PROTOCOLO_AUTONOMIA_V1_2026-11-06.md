@@ -181,3 +181,18 @@ En cada incorporación medir:
 ## 11. Auditoría del propio protocolo
 
 Al iniciar la próxima obra, ejecutar una revisión de mesa con A1, A3, A6 y A7, y al menos una simulación de reanudación A2 sobre datos de prueba; registrar resultados en el acta. Si alguna puerta resulta impracticable, documentar el obstáculo, ajustar el procedimiento con trazabilidad y, si fuera necesario modificar una regla canónica, tramitar esa decisión en el documento normativo y no aquí de manera silenciosa.
+
+## 12. Producción en dos o tres Work con cortes planificados (acuerdo del 06/11/2026)
+
+Para **cada nueva página**, seleccionar desde G0 un plan de **2 Work** (obra sencilla) o **3 Work** (obra compleja). El criterio de complejidad incluye extensión, aparato académico, sincronización, materiales pesados, diseño singular y cambios del lector; una intervención pequeña sobre obra existente puede ser un único Work. **Los cortes no equivalen a interrupciones de la plataforma y no las previenen**: su propósito es acotar el trabajo que podría perderse y volver reproducible la reanudación.
+
+- **Tres Work:** W1 = G0–G4, insumos confirmados por el responsable y diseño; W2 = G5–G6, página en rama y pruebas técnicas; W3 = G7–G8, revisión perceptiva/visual, ajustes y publicación comprobada.
+- **Dos Work:** W1 = G0–G6, con G1 aprobado **antes** del desarrollo definitivo; W2 = G7–G8. Si aparece una excepción importante, convertirlo en tres sin forzar la implementación.
+- **Corte W1→W2:** entregar acta, propuesta didáctica, estado de fuentes, rama, SHA y pendientes. **Corte W2→W3:** dejar candidato funcional, pruebas, riesgos, rama/PR y próximo paso exacto. **Cierre W3:** confirmar CI/Pages y la página realmente publicada o registrar bloqueo.
+- **Durante cada Work:** persistir commits por hitos; obligatoriamente antes de transferencias grandes y modificaciones de componentes comunes y al terminar la etapa.
+- **Archivo obligatorio por obra:** `documentation/obras/<slug>/ESTADO_DE_TRABAJO.md`, creado desde la [plantilla](plantillas/ESTADO_DE_TRABAJO.md). Contiene etapa, última puerta cerrada, rama, SHA, PR, materiales, pruebas efectuadas, pendientes, tareas no repetibles y primera acción siguiente.
+- **Arranque del siguiente Work:** leer el estado desde la rama en GitHub, cotejar HEAD/PR/archivos reales, consultar acta y continuar desde el último checkpoint demostrado, **no** desde lo recordado por el chat.
+- **Interrupción imprevista:** recuperar el último commit persistido; verificar destino antes de reintentar cargas; distinguir trabajo guardado de trabajo temporal perdido. Nunca afirmar «retomable» sin comprobar acceso al checkpoint.
+- **No exigir aprobaciones nuevas en cada corte:** son decisiones operativas del proceso; las decisiones editoriales extraordinarias y publicaciones parciales siguen bajo SR-05.
+
+La [guía de producción por etapas](PRODUCCION_POR_ETAPAS_2026-11-06.md) detalla productos de cada Work, condiciones de corte, reanudación y pruebas piloto C1–C6. **Estos controles documentales se aplicarán a las siguientes incorporaciones; todavía no son un sistema automático de CI ni han sido ensayados en una nueva obra.**
