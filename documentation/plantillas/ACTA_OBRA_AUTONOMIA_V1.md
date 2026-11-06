@@ -20,26 +20,27 @@
 | Estado técnico del lector y estado del catálogo (son distintos) | PENDIENTE |
 | Fecha de última verificación y estado | PENDIENTE |
 
-## B. Inventario de recursos y elección editorial G1
+## B. Ingreso confirmado por el responsable y control técnico G1
 
-Registrar **todos los candidatos encontrados**, incluyendo descartados; añadir filas.
+**Confirmación editorial breve a cargo del responsable del proyecto:** «Confirmo que el siguiente MP3 y el siguiente VTT/SRT son los archivos definitivos generados y emitidos por mí mediante ElevenLabs para esta obra». Basta con sus enlaces/archivos y esa confirmación en el intercambio de trabajo. **No se requiere un inventario manual de audios descartados, una auditoría de voces ni que el responsable vuelva a escuchar lo que ya seleccionó**.
+
+**Control autónomo del asistente:** registrar identificadores, duración, bytes, SHA-256 y coherencia entre el audio y las marcas temporales; detenerse solo si detecta una contradicción relevante. Añadir candidatos descartados únicamente si aparece una incidencia que obliga a compararlos.
 
 | Tipo | Archivo / ID o URL comprobada | Bytes | SHA-256 | Duración / págs. | Voz, versión y decisión |
 | --- | --- | ---: | --- | --- | --- |
 | PDF | PENDIENTE | — | — | — | — |
 | TXT académico | PENDIENTE | — | — | — | — |
-| MP3 candidato A | PENDIENTE | — | — | — | — |
-| MP3 candidato B (si existe) | PENDIENTE | — | — | — | — |
+| MP3 definitivo de ElevenLabs confirmado | PENDIENTE | — | — | — | Confirmado por responsable: PENDIENTE |
 | VTT/SRT | PENDIENTE | — | — | último cue: — | — |
 | Retrato/imagen | PENDIENTE | — | — | — | fuente/derechos: — |
 
-**Fuente seleccionada:** PENDIENTE.  
-**Quién y cómo identificó la voz:** PENDIENTE.  
-**Contraste de inicio, punto medio, transiciones y final:** PENDIENTE.  
+**Confirmación del responsable (enlace/archivo y fecha de confirmación):** PENDIENTE.  
+**Verificación técnica de IA: MP3 ↔ subtítulos, primeros y últimos cues, duración y continuidad:** PENDIENTE.  
 **Discrepancia duración audio – último cue:** PENDIENTE (no deducir que la diferencia es silencio).  
+**Revisión perceptiva adicional:** solo si la evaluación de sincronización lo requiere; registrar quién la realizó y su alcance, sin convertirla en tarea rutinaria de selección editorial para el responsable.  
 **Materiales originales preservados, copia web diferenciada:** PENDIENTE.  
 **Derechos y permisos verificados / limitaciones conocidas:** PENDIENTE.  
-**Dictamen G1:** APROBADO / BLOQUEADO / INVESTIGACIÓN (evidencia: PENDIENTE).
+**Dictamen G1:** APROBADO / BLOQUEADO / INVESTIGACIÓN. Para aprobar: constancia del MP3 y VTT/SRT definitivos elegidos por el responsable y pruebas técnicas coherentes; no exigir búsqueda de versiones alternativas si no hay incidencia.
 
 ## C. Fidelidad académica G2
 
@@ -156,7 +157,7 @@ No borrar incidencias cerradas: registrar resolución, commit y fuente finalment
 
 ## J. Acta de cierre
 
-**M (identidad editorial):** APROBADA / PENDIENTE / BLOQUEADA.  
+**M (identidad editorial):** APROBADA / PENDIENTE / BLOQUEADA. La elección de voz y subtítulos ElevenLabs corresponde al responsable; la integridad y correspondencia técnica, a la IA.  
 **T (contratos técnicos):** APROBADA / PENDIENTE / BLOQUEADA.  
 **P (correspondencia perceptiva y textual):** APROBADA PARA EL ALCANCE / ORIENTATIVA / PENDIENTE / BLOQUEADA.  
 **U (experiencia pública):** APROBADA / PENDIENTE / BLOQUEADA.  
