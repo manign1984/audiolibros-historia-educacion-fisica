@@ -68,3 +68,7 @@ I01 resuelta en documento candidato; I03 implementada; I05 resuelta técnicament
 ## Texto para iniciar Work 3
 
 > Retomemos el Work 3 de Carmen Lucia Soares en `feature/soares-corrientes-gimnasticas`, PR #79. Verificá HEAD y leé `documentation/obras/soares-corrientes-gimnasticas/ESTADO_DE_TRABAJO.md`. El candidato local está implementado y probado; recuperá el checkpoint privado versión 1 y los originales por sus hashes. Priorizá derechos de redistribución, alineación acústica por oración y auditoría visual/perceptiva integral. No repitas Work 1 ni reconstruyas el texto fijado. Mantené bloqueada la publicación y el resaltado hasta resolver sus pendientes; después completá integración y publicación autorizadas para Work 3.
+
+## Work 3 en curso · checkpoint de recuperación
+
+Se verificó ingreso `8575c53…` y PR abierta/draft. Se recuperaron las correcciones visuales ya observadas: contraste de cursivas de Créditos, filas de matriz, variable tipográfica del lector/desbordamiento y paleta del botón. Detalles en [WORK_3_VALIDACION.md](WORK_3_VALIDACION.md). Tras reinicio del entorno se restauró el ZIP privado v1; la evidencia acústica temporal se regenera, no se declara conservada. Procedimiento `tools/soares/recognize_audio.py`. Próximo paso: persistir ASR completo privado, evaluar fronteras contra VTT y terminar teclado/móvil/zoom. I04 y G3 aún bloquean la publicación; sin merge.
