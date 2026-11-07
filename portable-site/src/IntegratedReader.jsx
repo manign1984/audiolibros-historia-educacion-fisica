@@ -244,7 +244,12 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     () => {
       const references = new Map();
       for (const note of readingDocument.endnotes || []) {
-        if (!note.sentenceId || !(paragraphMode ? paragraphForSentence.has(note.sentenceId) : sentenceMap.has(note.sentenceId))) continue;
+        if (!note.sentenceId) continue;
+        const inHeading = paragraphMode && (
+          readingDocument.frontMatter?.some(item => item.id === note.sentenceId)
+          || readingDocument.sections.some(section => section.headingSentence?.id === note.sentenceId)
+        );
+        if (!(paragraphMode ? paragraphForSentence.has(note.sentenceId) || inHeading : sentenceMap.has(note.sentenceId))) continue;
         references.set(note.sentenceId, [...(references.get(note.sentenceId) || []), note]);
       }
       return references;
@@ -263,9 +268,15 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   };
   const returnToEditorialReference = (note) => {
     const targetId = paragraphMode ? paragraphForSentence.get(note.sentenceId) : note.sentenceId;
-    const target = textScrollRef.current?.querySelector(`[data-reader-sentence="${targetId}"]`);
+    let target = textScrollRef.current?.querySelector(`[data-reader-sentence="${targetId}"]`);
+    if (paragraphMode && !target) {
+      const cover = readingDocument.frontMatter?.some(item => item.id === note.sentenceId);
+      const section = readingDocument.sections.find(item => item.headingSentence?.id === note.sentenceId);
+      target = cover ? textScrollRef.current?.querySelector('#reader-document-title')
+        : section ? textScrollRef.current?.querySelector(`#reader-section-${section.id} h2`) : null;
+    }
     target?.scrollIntoView({ block: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-    (paragraphMode ? target?.querySelector('[role="button"]') : target)?.focus({ preventScroll: true });
+    (paragraphMode ? target?.querySelector('[role="button"]') || target : target)?.focus({ preventScroll: true });
   };
   const timedSentences = useMemo(
     () => sentences.filter((sentence) => Number.isFinite(sentence.start)),
@@ -739,6 +750,14 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
       </Fragment>
     );
   };
+  const renderHeadingEditorialNotes = sentenceId => (editorialFootnotes.get(sentenceId) || []).map(note => (
+    <button
+      key={note.number} type="button" className="reader-editorial-reference"
+      aria-label={`Consultar nota editorial ${note.number} ${config.editorialReferenceLabel || 'de la edición'}`}
+      onClick={() => showEditorialFootnote(note)}
+      title={`Nota académica ${note.number}, página ${note.page}; no forma parte del audiolibro`}
+    ><sup>{note.number}</sup></button>
+  ));
   const renderParagraph = (paragraph, Tag) => {
     const entry = sentenceMap.get(paragraph.id);
     const active = activeSentence?.id === paragraph.id;
@@ -886,7 +905,10 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
               <article className="reader-document" aria-labelledby="reader-document-title">
                 <header className="reader-document__cover">
                   <p>{readingDocument.versionLabel || 'Texto completo · versión accesible'}</p>
-                  <h1 id="reader-document-title">{paragraphMode ? readingDocument.frontMatter?.find((sentence) => sentence.role === 'title')?.text : renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'title'))}</h1>
+                  <h1 id="reader-document-title" tabIndex={paragraphMode ? -1 : undefined}>{paragraphMode ? <>
+                    {readingDocument.frontMatter?.find((sentence) => sentence.role === 'title')?.text}
+                    {renderHeadingEditorialNotes(readingDocument.frontMatter?.find((sentence) => sentence.role === 'title')?.id)}
+                  </> : renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'title'))}</h1>
                   <h2>{paragraphMode ? readingDocument.frontMatter?.find((sentence) => sentence.role === 'subtitle')?.text : renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'subtitle'))}</h2>
                   <span>{paragraphMode ? readingDocument.frontMatter?.find((sentence) => sentence.role === 'author')?.text : renderSentence(readingDocument.frontMatter?.find((sentence) => sentence.role === 'author'))}</span>
                   <div>
@@ -896,7 +918,9 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
 
                 {readingDocument.sections.map((section) => (
                   <section key={section.id} id={`reader-section-${section.id}`} className="reader-document__section">
-                    {section.title && <h2>{paragraphMode ? section.title : section.headingSentence ? renderSentence(section.headingSentence) : section.title}</h2>}
+                    {section.title && <h2 tabIndex={paragraphMode ? -1 : undefined}>{paragraphMode ? <>
+                      {section.title}{renderHeadingEditorialNotes(section.headingSentence?.id)}
+                    </> : section.headingSentence ? renderSentence(section.headingSentence) : section.title}</h2>}
                     {section.paragraphs.map((paragraph) => {
                       const Tag = paragraph.kind === 'quote' ? 'blockquote' : 'p';
                       return paragraphMode
