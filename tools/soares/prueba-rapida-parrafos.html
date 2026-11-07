@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es-AR">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Soares · Prueba rápida de resaltado VTT (sin subir archivos)</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#26292e;background:#eae7df;line-height:1.48}
+*{box-sizing:border-box}body{margin:0}main{max-width:1040px;margin:auto;padding:32px 22px 70px}
+h1{font-size:clamp(27px,4vw,46px);line-height:1.05;letter-spacing:-.04em;margin:.25rem 0 .6rem}
+h2{font-size:20px;margin:0 0 8px}.eyebrow{color:#643444;text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800}
+p{max-width:780px}small,.muted{color:#62676e}.notice{border-left:4px solid #643444;padding:8px 14px;margin:18px 0 22px;background:#f6f1e8}
+section{margin-top:24px;padding:22px;background:#faf8f4;border:1px solid #d6cfc3;border-radius:14px}
+.inputs{display:flex;gap:16px;flex-wrap:wrap}.inputs label{font-weight:650;flex:1;min-width:230px}input[type=file]{display:block;width:100%;margin-top:6px}
+button{border:1px solid #643444;background:#643444;color:#fff;border-radius:9px;padding:10px 15px;min-height:42px;cursor:pointer;font:inherit}
+button:disabled{opacity:.42;cursor:not-allowed}button.secondary{background:transparent;color:#643444}
+button:focus-visible,input:focus-visible{outline:3px solid #ac7a50;outline-offset:2px}
+.stops{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:16px 0}
+.stops button{text-align:left;display:grid;gap:4px;background:#f3eeea;color:#28262a;border:1px solid #cfc6be}
+.stops button.chosen{background:#643444;color:#fff}.stops button span{font-size:12px;opacity:.83}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.controls output{font-variant-numeric:tabular-nums;font-weight:700}
+audio{width:100%;margin:10px 0 14px}
+.preview{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.para{border:1px solid #d2cbc2;padding:18px;border-radius:12px;background:#f0eeeb;overflow-wrap:anywhere}
+.para.active{background:#e2eee4;border:2px solid #25836d;padding:17px}
+.para strong{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;color:#4f5156}
+.para.active strong{color:#17674f}.para p{margin:0}.para .mini{font-size:12px;margin-top:8px;color:#65696d}
+.verdicts{display:flex;gap:9px;flex-wrap:wrap}.verdicts button{background:#fff;color:#643444}.verdicts button.selected{background:#643444;color:#fff}
+#status{font-weight:600}.fine{font-size:13px;color:#62676e}.hidden{display:none}
+@media(max-width:640px){.stops,.preview{grid-template-columns:1fr}main{padding:22px 14px}section{padding:15px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style></head>
+<body><main>
+<p class="eyebrow">BEYOND THE STARS · Biblioteca +TEC · Prueba privada</p>
+<h1>¿Coincide el resaltado por párrafos con la voz?</h1>
+<p>Cuatro cambios seleccionados de los 70 párrafos de Carmen Soares. Escuchá unos <strong>8 segundos por cambio</strong> y marcá una impresión. No necesitás instalar nada ni recorrer el audiolibro completo.</p>
+<div class="notice"><strong>Sin publicación ni transferencia:</strong> el MP3 y el VTT se abren localmente en este navegador. Esta página no envía archivos a ningún servidor ni contiene el texto o la grabación. Se muestran fragmentos del <em>VTT</em>, no la edición académica completa. Los tiempos son aproximados.</div>
+<section><h2>1 · Elegí los archivos originales</h2>
+<div class="inputs"><label>MP3 de ElevenLabs<input id="audiofile" type="file" accept=".mp3,audio/mpeg"/></label>
+<label>Subtítulos VTT<input id="vttfile" type="file" accept=".vtt,text/vtt,text/plain"/></label></div>
+<p class="fine">Utilizá los archivos ya confirmados del proyecto. El VTT debería tener 593 segmentos. El documento académico y las notas no se cargan en esta prueba.</p></section>
+<section><h2>2 · Elegí uno de los cuatro cambios</h2><div class="stops" id="stops"></div>
+<div class="controls"><button id="start" type="button">Escuchar 8 segundos</button><button class="secondary" id="next" type="button">Siguiente cambio</button><output id="clock">00:00</output></div>
+<audio id="audio" controls preload="none"></audio>
+<p class="fine" id="focus"></p><div class="preview" id="cards" aria-live="off"></div>
+<p id="message" role="status" class="fine">Cargá los archivos y elegí una transición.</p></section>
+<section><h2>3 · ¿El párrafo resaltado sigue a la voz?</h2><div class="verdicts" id="verdicts"></div>
+<p class="fine">“Coincide” significa que el cambio es aceptable para estudiar, no que tenga exactitud de palabra u oración. Si detectás errores, indicalos aunque las pruebas automáticas hayan aprobado.</p>
+<p id="status" aria-live="polite"></p><button id="copy" type="button" class="secondary">Copiar o descargar resultado</button>
+<p class="fine">El informe solo contiene cuatro respuestas y marcas temporales: no incluye ni el MP3 ni el texto.</p></section>
+<script>const PARAGRAPHS=[{"id":"soa-introduccion-p1","start":11.968,"end":116.124,"firstCue":5,"lastCue":24},{"id":"soa-introduccion-p2","start":116.175,"end":152.77,"firstCue":25,"lastCue":31},{"id":"soa-introduccion-p3","start":152.8,"end":221.843,"firstCue":32,"lastCue":44},{"id":"soa-introduccion-p4","start":221.871,"end":265.148,"firstCue":45,"lastCue":52},{"id":"soa-introduccion-p5","start":265.185,"end":298.664,"firstCue":53,"lastCue":59},{"id":"soa-introduccion-p6","start":298.703,"end":318.107,"firstCue":60,"lastCue":63},{"id":"soa-introduccion-p7","start":318.107,"end":343.253,"firstCue":63,"lastCue":69},{"id":"soa-introduccion-p8","start":343.298,"end":395.037,"firstCue":70,"lastCue":79},{"id":"soa-introduccion-p9","start":395.076,"end":429.999,"firstCue":80,"lastCue":86},{"id":"soa-introduccion-p10","start":430.029,"end":478.841,"firstCue":87,"lastCue":96},{"id":"soa-introduccion-p11","start":478.88,"end":504.979,"firstCue":97,"lastCue":101},{"id":"soa-introduccion-p12","start":505.03,"end":549.982,"firstCue":102,"lastCue":110},{"id":"soa-introduccion-p13","start":550.015,"end":592.602,"firstCue":111,"lastCue":118},{"id":"soa-introduccion-p14","start":592.65,"end":665.882,"firstCue":119,"lastCue":131},{"id":"soa-introduccion-p15","start":665.927,"end":709.483,"firstCue":132,"lastCue":139},{"id":"soa-introduccion-p16","start":709.528,"end":794.827,"firstCue":140,"lastCue":156},{"id":"soa-introduccion-p17","start":794.874,"end":827.243,"firstCue":157,"lastCue":163},{"id":"soa-introduccion-p18","start":827.293,"end":847.773,"firstCue":164,"lastCue":167},{"id":"soa-introduccion-p19","start":847.8,"end":912.678,"firstCue":168,"lastCue":180},{"id":"soa-sistematizacion-p1","start":919.146,"end":956.065,"firstCue":182,"lastCue":189},{"id":"soa-sistematizacion-p2","start":956.111,"end":1001.39,"firstCue":190,"lastCue":196},{"id":"soa-sistematizacion-p3","start":1001.435,"end":1052.145,"firstCue":197,"lastCue":205},{"id":"soa-sistematizacion-p4","start":1052.194,"end":1109.315,"firstCue":206,"lastCue":215},{"id":"soa-sistematizacion-p5","start":1109.351,"end":1149.801,"firstCue":216,"lastCue":223},{"id":"soa-sistematizacion-p6","start":1149.842,"end":1199.946,"firstCue":224,"lastCue":232},{"id":"soa-sistematizacion-p7","start":1199.974,"end":1247.565,"firstCue":233,"lastCue":241},{"id":"soa-sistematizacion-p8","start":1247.598,"end":1293.975,"firstCue":242,"lastCue":250},{"id":"soa-sistematizacion-p9","start":1294.02,"end":1312.549,"firstCue":251,"lastCue":254},{"id":"soa-sistematizacion-p10","start":1312.594,"end":1364.189,"firstCue":255,"lastCue":264},{"id":"soa-sistematizacion-p11","start":1364.239,"end":1470.157,"firstCue":265,"lastCue":284},{"id":"soa-sistematizacion-p12","start":1470.196,"end":1502.751,"firstCue":285,"lastCue":291},{"id":"soa-sistematizacion-p13","start":1502.798,"end":1528.851,"firstCue":292,"lastCue":296},{"id":"soa-sistematizacion-p14","start":1528.896,"end":1554.345,"firstCue":297,"lastCue":301},{"id":"soa-sistematizacion-p15","start":1554.393,"end":1567.721,"firstCue":302,"lastCue":304},{"id":"soa-francesa-p1","start":1571.167,"end":1612.777,"firstCue":306,"lastCue":311},{"id":"soa-francesa-p2","start":1612.808,"end":1643.737,"firstCue":312,"lastCue":317},{"id":"soa-francesa-p3","start":1643.764,"end":1682.541,"firstCue":318,"lastCue":325},{"id":"soa-francesa-p4","start":1682.583,"end":1748.427,"firstCue":326,"lastCue":337},{"id":"soa-francesa-p5","start":1748.467,"end":1765.882,"firstCue":338,"lastCue":341},{"id":"soa-francesa-p6","start":1765.918,"end":1837.577,"firstCue":342,"lastCue":355},{"id":"soa-francesa-p7","start":1837.629,"end":1876.359,"firstCue":356,"lastCue":362},{"id":"soa-sueca-p1","start":1879.063,"end":1945.035,"firstCue":364,"lastCue":374},{"id":"soa-sueca-p2","start":1945.077,"end":1985.061,"firstCue":375,"lastCue":382},{"id":"soa-sueca-p3","start":1985.098,"end":2049.421,"firstCue":383,"lastCue":393},{"id":"soa-sueca-p4","start":2049.466,"end":2083.785,"firstCue":394,"lastCue":400},{"id":"soa-sueca-p5","start":2083.818,"end":2119.112,"firstCue":401,"lastCue":407},{"id":"soa-alemana-p1","start":2122.666,"end":2201.095,"firstCue":409,"lastCue":421},{"id":"soa-alemana-p2","start":2201.141,"end":2237.643,"firstCue":422,"lastCue":427},{"id":"soa-alemana-p3","start":2237.688,"end":2356.638,"firstCue":428,"lastCue":449},{"id":"soa-alemana-p4","start":2356.68,"end":2373.167,"firstCue":450,"lastCue":452},{"id":"soa-alemana-p5","start":2373.217,"end":2389.75,"firstCue":453,"lastCue":455},{"id":"soa-alemana-p6","start":2389.78,"end":2425.445,"firstCue":456,"lastCue":462},{"id":"soa-alemana-p7","start":2425.491,"end":2477.392,"firstCue":463,"lastCue":472},{"id":"soa-alemana-p8","start":2477.425,"end":2491.032,"firstCue":473,"lastCue":475},{"id":"soa-minoritarios-p1","start":2497.543,"end":2555.268,"firstCue":477,"lastCue":484},{"id":"soa-minoritarios-p2","start":2555.301,"end":2627.92,"firstCue":485,"lastCue":498},{"id":"soa-minoritarios-p3","start":2627.951,"end":2653.771,"firstCue":499,"lastCue":503},{"id":"soa-minoritarios-p4","start":2653.814,"end":2687.158,"firstCue":504,"lastCue":510},{"id":"soa-finales-p1","start":2690.755,"end":2711.699,"firstCue":512,"lastCue":515},{"id":"soa-finales-p2","start":2711.733,"end":2743.916,"firstCue":516,"lastCue":521},{"id":"soa-finales-p3","start":2743.943,"end":2803.237,"firstCue":522,"lastCue":532},{"id":"soa-finales-p4","start":2803.27,"end":2840.143,"firstCue":533,"lastCue":539},{"id":"soa-finales-p5","start":2840.182,"end":2881.228,"firstCue":540,"lastCue":548},{"id":"soa-finales-p6","start":2881.276,"end":2917.591,"firstCue":549,"lastCue":555},{"id":"soa-finales-p7","start":2917.64,"end":2942.578,"firstCue":556,"lastCue":560},{"id":"soa-finales-p8","start":2942.614,"end":3025.543,"firstCue":561,"lastCue":575},{"id":"soa-finales-p9","start":3025.582,"end":3042.042,"firstCue":576,"lastCue":578},{"id":"soa-finales-p10","start":3043.033,"end":3059.333,"firstCue":580,"lastCue":582},{"id":"soa-finales-p11","start":3059.361,"end":3095.306,"firstCue":583,"lastCue":589},{"id":"soa-finales-p12","start":3095.333,"end":3113.305,"firstCue":590,"lastCue":593}];const STOPS=[{"label":"1. Inicio: cambio de primer párrafo","at":116.175,"detail":"Comprobar si el resaltado pasa al siguiente párrafo cuando empieza la voz."},{"label":"2. Caso especial: 05:18","at":318.107,"detail":"Ambos párrafos comparten el cue 63. Es el límite con más incertidumbre."},{"label":"3. Cambio de apartado: Francia","at":1571.167,"detail":"Escuchar cómo se comporta el resaltado tras el encabezado y la pausa."},{"label":"4. Cierre del audiolibro","at":3095.333,"detail":"Revisar un cambio cercano al final sin escuchar el capítulo entero."}];
+"use strict";
+// Los originales se leen en el navegador del usuario. No se transmiten ni se publican.
+const Q=id=>document.getElementById(id), audio=Q("audio"), state={vtt:[],answers:{},index:0,clipUntil:null,url:null};
+const fmt=t=>{t=Math.max(0,Number(t)||0);return String(Math.floor(t/60)).padStart(2,"0")+":"+String(Math.floor(t%60)).padStart(2,"0")};
+const htmlEscape=()=>{}; // El contenido de fuentes siempre se inserta con textContent.
+const chooseText=p=>state.vtt.length?state.vtt.slice(p.firstCue-1,p.lastCue).map(c=>c.text).join(" ").replace(/\s+/g," ").trim():"Cargá el archivo VTT para ver el texto narrado correspondiente a este párrafo.";
+function trimText(s){return s.length>420?s.slice(0,420)+"…":s||"Sin texto de subtítulo disponible."}
+function selectedParagraph(t){let low=0,high=PARAGRAPHS.length-1,out=0;while(low<=high){let mid=(low+high)>>1;if(PARAGRAPHS[mid].start<=t){out=mid;low=mid+1}else high=mid-1}return out}
+function render(){
+ const i=selectedParagraph(audio.currentTime),mark=STOPS[state.index];
+ Q("clock").textContent=fmt(audio.currentTime)+" / "+fmt(audio.duration||3113.378);
+ Q("focus").textContent=mark.detail+" Marca de cambio: "+fmt(mark.at)+" ("+mark.at.toFixed(3)+" s).";
+ const before=i===0?PARAGRAPHS[0]:PARAGRAPHS[i-1],current=PARAGRAPHS[i];
+ const neighbor=audio.currentTime<mark.at?PARAGRAPHS[Math.min(i+1,PARAGRAPHS.length-1)]:before;
+ const cards=[current,neighbor];Q("cards").replaceChildren();
+ for(const [k,p] of cards.entries()){
+  const el=document.createElement("article");el.className="para"+(k===0?" active":"");
+  const label=document.createElement("strong");label.textContent=(k===0?"Resaltado actual · ":"Párrafo cercano · ")+p.id;
+  const desc=document.createElement("p");desc.textContent=trimText(chooseText(p));
+  const meta=document.createElement("div");meta.className="mini";meta.textContent=fmt(p.start)+"–"+fmt(p.end)+" · cues "+p.firstCue+"–"+p.lastCue;
+  el.append(label,desc,meta);Q("cards").append(el);
+ }
+ Q("status").textContent=Object.keys(state.answers).length+" de "+STOPS.length+" comprobaciones registradas.";
+}
+function parseVtt(raw){
+ const blocks=raw.replace(/\r/g,"").replace(/^\uFEFF/,"").split(/\n\s*\n/),parsed=[];
+ for(const block of blocks){const lines=block.trim().split("\n");const i=lines.findIndex(s=>s.includes("-->"));if(i<0)continue;
+  const words=lines.slice(i+1).join(" ").replace(/<[^>]*>/g," ").replace(/&amp;/g,"&").replace(/\s+/g," ").trim();
+  parsed.push({text:words});
+ }return parsed;
+}
+function showStop(){
+ Q("stops").replaceChildren();
+ STOPS.forEach((s,i)=>{const b=document.createElement("button");b.type="button";b.className=i===state.index?"chosen":"";const big=document.createElement("strong");big.textContent=s.label;const sub=document.createElement("span");sub.textContent=fmt(s.at)+" · escuchar 3 s antes y 5 s después";b.append(big,sub);b.onclick=()=>{state.index=i;showStop();render()};Q("stops").append(b)});
+ Q("verdicts").replaceChildren();
+ for(const [value,label] of [["bien","Coincide"],["adelantado","Se adelanta"],["atrasado","Se atrasa"],["dudoso","No estoy seguro"]]){
+   const b=document.createElement("button");b.type="button";b.textContent=label;b.className=state.answers[state.index]===value?"selected":"";
+   b.onclick=()=>{state.answers[state.index]=value;showStop();render()};Q("verdicts").append(b);
+ }
+}
+async function startClip(){
+ if(!audio.src){Q("message").textContent="Primero seleccioná el MP3 local. El archivo nunca sale de tu computadora.";return;}
+ const mark=STOPS[state.index];state.clipUntil=mark.at+5;
+ audio.currentTime=Math.max(0,mark.at-3);
+ render();try{await audio.play();Q("message").textContent="Escuchando 8 segundos alrededor del cambio."}catch{Q("message").textContent="Presioná reproducir en el control de audio."}
+}
+audio.addEventListener("timeupdate",()=>{
+ if(state.clipUntil!==null&&audio.currentTime>=state.clipUntil){audio.pause();state.clipUntil=null;Q("message").textContent="Fragmento completo. Marcá tu impresión y elegí otra prueba."}
+ render();
+});
+Q("audiofile").addEventListener("change",evt=>{
+ const f=evt.target.files?.[0];if(!f)return;if(state.url)URL.revokeObjectURL(state.url);state.url=URL.createObjectURL(f);audio.src=state.url;audio.load();Q("message").textContent="Audio cargado localmente: "+f.name;
+});
+Q("vttfile").addEventListener("change",async evt=>{
+ const f=evt.target.files?.[0];if(!f)return;state.vtt=parseVtt(await f.text());Q("message").textContent="Subtítulos leídos localmente: "+state.vtt.length+" segmentos.";if(state.vtt.length!==593)Q("message").textContent+=" Esperábamos 593; verificar versión.";render();
+});
+Q("start").onclick=startClip;
+Q("next").onclick=()=>{state.index=(state.index+1)%STOPS.length;showStop();render()};
+Q("copy").onclick=async()=>{
+ const report={pilot:"soares-vtt-70-paragraphs",scope:"4 transiciones, audio cargado localmente",timeBasis:"VTT aproximado, no validado acústicamente",evaluations:STOPS.map((s,i)=>({label:s.label,second:s.at,result:state.answers[i]||"sin revisar"}))};
+ const plain=JSON.stringify(report,null,2);
+ try{await navigator.clipboard.writeText(plain);Q("message").textContent="Informe copiado. Pegalo en ChatGPT."}
+ catch {const a=document.createElement("a"),u=URL.createObjectURL(new Blob([plain],{type:"application/json"}));a.href=u;a.download="soares-prueba-rapida-4-transiciones.json";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);Q("message").textContent="Informe descargado: podés compartir el JSON."}
+};
+document.addEventListener("keydown",e=>{if(e.target.matches("button,input,audio"))return;if(e.key==="ArrowRight"){state.index=(state.index+1)%STOPS.length;showStop();render()}});
+window.addEventListener("beforeunload",()=>{if(state.url)URL.revokeObjectURL(state.url)});
+showStop();render();
+</script>
+</main></body></html>
