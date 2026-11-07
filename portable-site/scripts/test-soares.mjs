@@ -75,7 +75,7 @@ assert.deepEqual([...page.matchAll(/<section id="([a-z]+)"/g)].map(x=>x[1]),['in
 assert.match(page,/<JourneyCredits workId="soares"/);assert.equal((page.match(/className="so-screen so-context/g)||[]).length,3);
 assert.match(await readFile('src/shared/canonical-reading.css','utf8'),/\.scharagrodsky-page, \.soares-page\)/);
 assert.match(await readFile('scripts/soares-local-candidate.mjs','utf8'),/SOARES_LOCAL_CANDIDATE==='1'/);
-assert.match(await readFile('textos/soares-corrientes-gimnasticas/index.html','utf8'),/src\/biblioteca\/main.jsx/);
+assert.match(await readFile('textos/soares-corrientes-gimnasticas/index.html','utf8'),/src\/soares\/main.jsx/);
 await access('public/assets/soares-demeny-1906.jpg');
 assert.equal(createHash('sha256').update(await readFile('public/assets/soares-demeny-1906.jpg')).digest('hex'),'5663af848681deca1f9fd19551de220a858b5ce5cf37eff30021ef502512d7b2');
 let document;
