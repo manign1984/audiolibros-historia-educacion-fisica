@@ -150,7 +150,11 @@ assert.equal(matchesAvailability(marcaida, 'preparation'), false, 'Nunca aparece
 assert.equal(matchesAvailability(orbuch, 'review'), false);
 assert.equal(matchesAvailability(orbuch, 'available'), true);
 assert.equal(matchesAvailability(allCatalog.find((entry) => entry.id === 'braudel-historia-duraciones'), 'preparation'), true);
-assert.equal(allCatalog.filter(canReadAndListen).length, 6, 'Seis recorridos permiten leer y escuchar.');
+const soares = allCatalog.find((entry) => entry.id === 'soares-corrientes-gimnasticas');
+assert.ok(soares);
+assert.equal(soares.status, 'review', 'Soares conserva su estado de edición en revisión.');
+assert.equal(canReadAndListen(soares), true, 'Soares figura entre los lectores con texto y audiolibro.');
+assert.equal(allCatalog.filter(canReadAndListen).length, 7, 'Siete recorridos permiten leer y escuchar.');
 assert.match(libraryHome, /const readable = catalog\.filter\(canReadAndListen\)/, 'La estantería presenta todas las obras legibles.');
 assert.match(libraryHome, /entries=\{readable\}/, 'La estantería de lectura incluye Marcaida y Scaltritti.');
 assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
