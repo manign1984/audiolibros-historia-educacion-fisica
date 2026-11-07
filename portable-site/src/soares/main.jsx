@@ -14,4 +14,4 @@ fetch(soaresPrivateAsset('reader-document.json')).then(response=>{
   if(!response.ok) throw new Error('Material local ausente');
   return response.json();
 }).then(document=>root.render(<React.StrictMode><SoaresApp readingDocument={document}/></React.StrictMode>))
-.catch(()=>root.render(<main><h1>Lectura en preparación</h1><p>El capítulo todavía no está disponible.</p><a href={import.meta.env.BASE_URL}>Volver a la biblioteca</a></main>));
+.catch(()=>root.render(<React.StrictMode><SoaresApp readingDocument={null}/></React.StrictMode>));
