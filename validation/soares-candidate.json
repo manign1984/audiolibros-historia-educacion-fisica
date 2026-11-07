@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "soares-corrientes-gimnasticas",
-  "state": "LOCAL_CANDIDATE_RIGHTS_BLOCKED",
+  "state": "LECTOR_INTEGRADO_EN_REVISION_AUDIO_DRIVE",
   "route": "textos/soares-corrientes-gimnasticas/",
-  "catalogStatus": "preparation",
+  "catalogStatus": "review",
   "page": "src/soares/SoaresApp.jsx",
   "main": "src/soares/main.jsx",
   "config": "src/soares/readerConfig.js",
@@ -33,16 +33,17 @@
     "vttSha256": "ec0beaea889464cd05328c6e73fb80f36f3f8899ae99cc463fcefb82bc1e294f"
   },
   "promoteOnlyAfter": [
-    "redistribution conditions",
-    "G3",
-    "G7",
-    "Work 3 publication"
+    "disponibilidad pública estable del audio",
+    "revisión visual y funcional si el responsable vuelve a solicitarla"
   ],
-  "activeRegistry": "works.json unchanged: requires real public audio and accessible catalog work",
+  "activeRegistry": "works.json: Soares registrada como review con MP3 externo",
   "previousSentenceMode": {
     "unit": "sentence",
     "status": "pending",
     "activeTimings": 0
   },
-  "decision": "Use approximate paragraph highlighting as main local Soares candidate, without new acoustic validation. Production publication still blocked by I04."
+  "decision": "Lector integrado visible con texto académico y notas; 70 párrafos aproximados del VTT; audio desde Drive sin afirmar acceso universal ni escucha nueva.",
+  "document": "src/soares/reading-document.json",
+  "audioDelivery": "Google Drive · reproducción directa sujeta a acceso",
+  "externalAudioUrl": "https://drive.google.com/uc?export=download&id=1KAthUKiHsNqHg8sYIwPqzvJNgbGGbkt-"
 }
