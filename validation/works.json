@@ -487,7 +487,7 @@
       "sync": {
         "unit": "paragraph",
         "status": "paragraph-preview",
-        "review": "Seguimiento aproximado de 70 párrafos derivado del VTT original, sin escucha humana nueva; el audio se ofrece desde Google Drive y puede requerir acceso institucional."
+        "review": "Seguimiento aproximado de 70 párrafos derivado del VTT original, sin escucha humana nueva. Audio web mono de 48 kb/s dividido en 12 partes del mismo origen y reunidas por el lector. El MP3 original permanece intacto en Drive."
       },
       "materials": [
         {
@@ -501,11 +501,82 @@
           "kind": "pdf",
           "bytes": 247142,
           "sha256": "c81a7c039eb231ef183697761ea6e01fd7e0d4715309aff65ed769b5c8d10b45"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-00.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "3b205a6445bfad5c79f05df405337f5ad1be9d17dc5342a941524e13fabf13b8"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-01.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "83edfd013f3b1455096170f46fd613a4e71024c7ef07bfdfe7901fe3488d339b"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-02.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "834465d9d1dc9d7d52b0ad5653a30ef138e37d32c62e9505dfa571453d3ac626"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-03.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "159b835221c9a376de27e4c5b86906b039353098a8fb098435da0afef0a816cb"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-04.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "86f9a335ae0f8d8090dcd475726f3333bbcc9a03eb7e949a4b69f228b9dc9ac5"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-05.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "4300cbdc12416fa84336ec4cb54bb13fbde4c987fb02df2e48c96b9595fd62d5"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-06.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "87fd6c7db71bdca5488dfcdcb79e927194896b25bf7b10deba4d783b06a080ce"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-07.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "2a8c905e40b185676a476f7191cfc643792c48521c8c8f21ac60536315514ef7"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-08.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "6154a74b6714e597ad56bc1f22d289232ac06b89a58d4cc0a8eea43a6380af39"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-09.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "347839e3c878ead0917a4a91a449213cb7d1facce31f83307ac970013727d26c"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-10.part",
+          "kind": "audio",
+          "bytes": 1572864,
+          "sha256": "4fdb9680fb8dd1593af96fe7a9a876e47c88acf1953f5fef0e3273454f72da06"
+        },
+        {
+          "path": "public/assets/soares/audio/audio-11.part",
+          "kind": "audio",
+          "bytes": 1379316,
+          "sha256": "96b25173902fc0fa9cf15102668d3ac781595903653037e067596cb7bd207b45"
         }
       ],
-      "externalAudioUrl": "https://drive.google.com/uc?export=download&id=1KAthUKiHsNqHg8sYIwPqzvJNgbGGbkt-",
-      "audioDuration": 3113.377959,
-      "audioSha256": "f9c4226ec5794a959d77d6f97b523eabadb0dcdc272bbec9c9e1b04d9a019b37",
+      "audioDuration": 3113.4,
+      "audioSha256": "fd5f7e36249373334f19127212121ebc9df44ebbb56686d2d94c2952579c56d5",
       "documentSha256": "fe16dc8ca6ad8475cada4f386baf735539294259eb4ac54fab112fa8e646f4ad"
     }
   ],

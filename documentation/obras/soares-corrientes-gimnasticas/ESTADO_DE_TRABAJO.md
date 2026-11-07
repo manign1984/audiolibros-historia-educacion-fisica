@@ -1,3 +1,15 @@
+## Corrección del despliegue de audio · Etapa 1/2 · 07-11-2026
+
+**Incidencia recuperada:** el commit `90c1ffcf` introdujo correctamente los 12 fragmentos del audio y la configuración `audiobookParts` de Soares, pero **GitHub Pages no los publicó**: su job de validación falló por conservar en `validation/works.json` la declaración antigua de audio remoto (`externalAudioUrl`). El CI falló en `test:library` por contar seis recorridos cuando el catálogo ya tenía siete lecturas accesibles o en revisión. No debe interpretarse que la existencia de fragmentos en `main` implique su despliegue.
+
+**Solución Etapa 1:** actualizar los contratos en `validation/works.json` para registrar los 12 fragmentos MP3 de 1.572.864 bytes (el último 1.379.316 bytes), sus SHA-256 individuales, el SHA-256 de concatenación `fd5f7e36249373334f19127212121ebc9df44ebbb56686d2d94c2952579c56d5`, la duración de la copia web `3113.4` s y quitar exclusivamente la URL remota del contrato de publicación. El enlace de Drive se conserva en el lector solo como recurso externo opcional. Actualizar `test-library` al total real de siete lecturas, sin alterar el resto del catálogo ni las unidades de lectura.
+
+**Etapa 2:** entregar el despliegue de GitHub Pages que contenga las 12 partes del mismo origen, abrir la URL real del audio por fragmentos y confirmar que el lector se ofrece con las fuentes del repositorio. Si el responsable mantiene la decisión «sin pruebas», distinguir aceptación técnica de la validación acústica y visual (no ejecutadas). Solo tras un despliegue efectivo podrá declararse resuelto el error de carga reportado en la captura.
+
+**Sin cambios:** la edición completa, notas, progreso, comportamiento responsive, motor compartido y resaltado aproximado por los 70 párrafos del VTT. No se afirma verificación auditiva de las marcas temporales.
+
+---
+
 ## Corrección de la reproducción de audio · 07-11-2026 · prevalece sobre el diagnóstico «audio en Drive»
 
 **Incidencia reportada:** el reproductor integrado abrió el texto, pero el navegador indicó «No se pudo cargar el audio» desde la URL de descarga `drive.google.com/uc?export=download`. El uso del enlace de Drive para el reproductor estaba condicionado por permisos, redirecciones y respuestas de descarga de Google, por lo que no constituye un origen estable para `<audio>`.
