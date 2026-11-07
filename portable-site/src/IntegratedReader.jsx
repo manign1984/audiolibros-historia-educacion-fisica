@@ -313,6 +313,15 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   useEffect(() => {
     if (!open || audioSource) return undefined;
 
+    // Algunas obras ofrecen su MP3 desde un servicio externo: permitir al
+    // elemento de audio reproducirlo sin exigir CORS a un fetch binario.
+    if (config.audioMode === 'direct') {
+      setAudioLoading(false);
+      setAudioError(false);
+      setAudioSource(config.audiobookUrl);
+      return undefined;
+    }
+
     const controller = new AbortController();
     setAudioLoading(true);
     setAudioError(false);
@@ -351,7 +360,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
 
     prepareSeekableAudio();
     return () => controller.abort();
-  }, [audioSource, config.audiobookUrl, config.audiobookParts, open]);
+  }, [audioSource, config.audiobookUrl, config.audiobookParts, config.audioMode, open]);
 
   useEffect(() => () => {
     if (audioObjectUrlRef.current) URL.revokeObjectURL(audioObjectUrlRef.current);
