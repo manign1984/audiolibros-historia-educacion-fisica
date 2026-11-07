@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "workId": "soares-corrientes-gimnasticas",
+  "mode": "paragraph-preview",
+  "source": "correspondencia-work2.json derivado del VTT original, sin CTC ni Whisper",
+  "sourceVttSha256": "ec0beaea889464cd05328c6e73fb80f36f3f8899ae99cc463fcefb82bc1e294f",
+  "sourceEvidencePath": "documentation/obras/soares-corrientes-gimnasticas/evidencia/correspondencia-work2.json",
+  "paragraphCount": 70,
+  "method": "Inicio del primer segmento asociado al párrafo y fin del último. En cue compartido, punto medio provisional. Intervalos estimativos; no implica escucha humana ni sincronización certificada.",
+  "warnings": [
+    {
+      "previous": "soa-introduccion-p6",
+      "next": "soa-introduccion-p7",
+      "sharedCue": 63,
+      "originalPreviousEnd": 320.606,
+      "originalNextStart": 315.608,
+      "switchAt": 318.107,
+      "reason": "mismo cue compartido entre dos párrafos; punto medio provisional, sin confirmación acústica"
+    }
+  ],
+  "paragraphTimings": [
+    {
+      "id": "soa-introduccion-p1",
+      "start": 11.968,
+      "end": 116.124
+    },
+    {
+      "id": "soa-introduccion-p2",
+      "start": 116.175,
+      "end": 152.77
+    },
+    {
+      "id": "soa-introduccion-p3",
+      "start": 152.8,
+      "end": 221.843
+    },
+    {
+      "id": "soa-introduccion-p4",
+      "start": 221.871,
+      "end": 265.148
+    },
+    {
+      "id": "soa-introduccion-p5",
+      "start": 265.185,
+      "end": 298.664
+    },
+    {
+      "id": "soa-introduccion-p6",
+      "start": 298.703,
+      "end": 318.107
+    },
+    {
+      "id": "soa-introduccion-p7",
+      "start": 318.107,
+      "end": 343.253
+    },
+    {
+      "id": "soa-introduccion-p8",
+      "start": 343.298,
+      "end": 395.037
+    },
+    {
+      "id": "soa-introduccion-p9",
+      "start": 395.076,
+      "end": 429.999
+    },
+    {
+      "id": "soa-introduccion-p10",
+      "start": 430.029,
+      "end": 478.841
+    },
+    {
+      "id": "soa-introduccion-p11",
+      "start": 478.88,
+      "end": 504.979
+    },
+    {
+      "id": "soa-introduccion-p12",
+      "start": 505.03,
+      "end": 549.982
+    },
+    {
+      "id": "soa-introduccion-p13",
+      "start": 550.015,
+      "end": 592.602
+    },
+    {
+      "id": "soa-introduccion-p14",
+      "start": 592.65,
+      "end": 665.882
+    },
+    {
+      "id": "soa-introduccion-p15",
+      "start": 665.927,
+      "end": 709.483
+    },
+    {
+      "id": "soa-introduccion-p16",
+      "start": 709.528,
+      "end": 794.827
+    },
+    {
+      "id": "soa-introduccion-p17",
+      "start": 794.874,
+      "end": 827.243
+    },
+    {
+      "id": "soa-introduccion-p18",
+      "start": 827.293,
+      "end": 847.773
+    },
+    {
+      "id": "soa-introduccion-p19",
+      "start": 847.8,
+      "end": 912.678
+    },
+    {
+      "id": "soa-sistematizacion-p1",
+      "start": 919.146,
+      "end": 956.065
+    },
+    {
+      "id": "soa-sistematizacion-p2",
+      "start": 956.111,
+      "end": 1001.39
+    },
+    {
+      "id": "soa-sistematizacion-p3",
+      "start": 1001.435,
+      "end": 1052.145
+    },
+    {
+      "id": "soa-sistematizacion-p4",
+      "start": 1052.194,
+      "end": 1109.315
+    },
+    {
+      "id": "soa-sistematizacion-p5",
+      "start": 1109.351,
+      "end": 1149.801
+    },
+    {
+      "id": "soa-sistematizacion-p6",
+      "start": 1149.842,
+      "end": 1199.946
+    },
+    {
+      "id": "soa-sistematizacion-p7",
+      "start": 1199.974,
+      "end": 1247.565
+    },
+    {
+      "id": "soa-sistematizacion-p8",
+      "start": 1247.598,
+      "end": 1293.975
+    },
+    {
+      "id": "soa-sistematizacion-p9",
+      "start": 1294.02,
+      "end": 1312.549
+    },
+    {
+      "id": "soa-sistematizacion-p10",
+      "start": 1312.594,
+      "end": 1364.189
+    },
+    {
+      "id": "soa-sistematizacion-p11",
+      "start": 1364.239,
+      "end": 1470.157
+    },
+    {
+      "id": "soa-sistematizacion-p12",
+      "start": 1470.196,
+      "end": 1502.751
+    },
+    {
+      "id": "soa-sistematizacion-p13",
+      "start": 1502.798,
+      "end": 1528.851
+    },
+    {
+      "id": "soa-sistematizacion-p14",
+      "start": 1528.896,
+      "end": 1554.345
+    },
+    {
+      "id": "soa-sistematizacion-p15",
+      "start": 1554.393,
+      "end": 1567.721
+    },
+    {
+      "id": "soa-francesa-p1",
+      "start": 1571.167,
+      "end": 1612.777
+    },
+    {
+      "id": "soa-francesa-p2",
+      "start": 1612.808,
+      "end": 1643.737
+    },
+    {
+      "id": "soa-francesa-p3",
+      "start": 1643.764,
+      "end": 1682.541
+    },
+    {
+      "id": "soa-francesa-p4",
+      "start": 1682.583,
+      "end": 1748.427
+    },
+    {
+      "id": "soa-francesa-p5",
+      "start": 1748.467,
+      "end": 1765.882
+    },
+    {
+      "id": "soa-francesa-p6",
+      "start": 1765.918,
+      "end": 1837.577
+    },
+    {
+      "id": "soa-francesa-p7",
+      "start": 1837.629,
+      "end": 1876.359
+    },
+    {
+      "id": "soa-sueca-p1",
+      "start": 1879.063,
+      "end": 1945.035
+    },
+    {
+      "id": "soa-sueca-p2",
+      "start": 1945.077,
+      "end": 1985.061
+    },
+    {
+      "id": "soa-sueca-p3",
+      "start": 1985.098,
+      "end": 2049.421
+    },
+    {
+      "id": "soa-sueca-p4",
+      "start": 2049.466,
+      "end": 2083.785
+    },
+    {
+      "id": "soa-sueca-p5",
+      "start": 2083.818,
+      "end": 2119.112
+    },
+    {
+      "id": "soa-alemana-p1",
+      "start": 2122.666,
+      "end": 2201.095
+    },
+    {
+      "id": "soa-alemana-p2",
+      "start": 2201.141,
+      "end": 2237.643
+    },
+    {
+      "id": "soa-alemana-p3",
+      "start": 2237.688,
+      "end": 2356.638
+    },
+    {
+      "id": "soa-alemana-p4",
+      "start": 2356.68,
+      "end": 2373.167
+    },
+    {
+      "id": "soa-alemana-p5",
+      "start": 2373.217,
+      "end": 2389.75
+    },
+    {
+      "id": "soa-alemana-p6",
+      "start": 2389.78,
+      "end": 2425.445
+    },
+    {
+      "id": "soa-alemana-p7",
+      "start": 2425.491,
+      "end": 2477.392
+    },
+    {
+      "id": "soa-alemana-p8",
+      "start": 2477.425,
+      "end": 2491.032
+    },
+    {
+      "id": "soa-minoritarios-p1",
+      "start": 2497.543,
+      "end": 2555.268
+    },
+    {
+      "id": "soa-minoritarios-p2",
+      "start": 2555.301,
+      "end": 2627.92
+    },
+    {
+      "id": "soa-minoritarios-p3",
+      "start": 2627.951,
+      "end": 2653.771
+    },
+    {
+      "id": "soa-minoritarios-p4",
+      "start": 2653.814,
+      "end": 2687.158
+    },
+    {
+      "id": "soa-finales-p1",
+      "start": 2690.755,
+      "end": 2711.699
+    },
+    {
+      "id": "soa-finales-p2",
+      "start": 2711.733,
+      "end": 2743.916
+    },
+    {
+      "id": "soa-finales-p3",
+      "start": 2743.943,
+      "end": 2803.237
+    },
+    {
+      "id": "soa-finales-p4",
+      "start": 2803.27,
+      "end": 2840.143
+    },
+    {
+      "id": "soa-finales-p5",
+      "start": 2840.182,
+      "end": 2881.228
+    },
+    {
+      "id": "soa-finales-p6",
+      "start": 2881.276,
+      "end": 2917.591
+    },
+    {
+      "id": "soa-finales-p7",
+      "start": 2917.64,
+      "end": 2942.578
+    },
+    {
+      "id": "soa-finales-p8",
+      "start": 2942.614,
+      "end": 3025.543
+    },
+    {
+      "id": "soa-finales-p9",
+      "start": 3025.582,
+      "end": 3042.042
+    },
+    {
+      "id": "soa-finales-p10",
+      "start": 3043.033,
+      "end": 3059.333
+    },
+    {
+      "id": "soa-finales-p11",
+      "start": 3059.361,
+      "end": 3095.306
+    },
+    {
+      "id": "soa-finales-p12",
+      "start": 3095.333,
+      "end": 3113.305
+    }
+  ]
+}
