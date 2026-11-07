@@ -1,3 +1,15 @@
+# Soares · Adopción de resaltado por párrafos desde VTT
+
+**Decisión del responsable, 07-11-2026:** se adoptó el resaltado aproximado por párrafos **sin la serie de escuchas y pruebas perceptivas propuestas**. Los apartados siguientes son el expediente histórico del piloto; los mandatos de «probar antes de adoptar» que allí aparecen están superados por esta decisión. No se declaró precisión de tiempos por oración ni se modificaron los archivos originales.
+
+**Implementación elegida:** `SoaresApp.jsx` usa `soaresParagraphPreviewConfig` directamente en el candidato. El nombre `paragraph-preview` es un estado técnico soportado por `IntegratedReader`, no una etiqueta en la interfaz. Hay 70 intervalos del VTT, con transición provisional del cue 63 en 318,107 s. La experiencia comunica que el seguimiento es aproximado.
+
+**Publicación:** los materiales privados y la ficha actual siguen protegidos hasta documentar las condiciones de distribución de texto/traducción/audio/retrato. No corresponde confundir omitir pruebas perceptivas con otorgar una licencia de reproducción.
+
+**Recuperación vigente:** [ESTADO_DE_TRABAJO.md](ESTADO_DE_TRABAJO.md).
+
+---
+
 # Soares · Experimento aislado de resaltado por párrafos desde el VTT
 
 **Estado:** piloto en rama separada; NO publicado y SIN aprobación acústica.  
