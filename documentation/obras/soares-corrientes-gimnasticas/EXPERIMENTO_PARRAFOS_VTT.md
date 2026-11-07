@@ -63,3 +63,21 @@ Se pueden realizar pruebas de desarrollo en un entorno local autorizado con el c
 5. Si se decide adoptar párrafos, documentar la excepción y preparar su integración en #79 **separadamente**, con pruebas/regresiones y sin publicación mientras falten derechos.
 
 **Reversión:** descartar la rama experimental. #79 queda exactamente como estaba; sin migraciones de almacenamiento, sin archivos multimedia nuevos ni cambios públicos.
+
+
+## Atajo de evaluación sin Work: cuatro escuchas de ocho segundos
+
+Se agregó [visor HTML offline](../../../tools/soares/prueba-rapida-parrafos.html) en `tools/soares/prueba-rapida-parrafos.html`. El HTML **no contiene ningún fragmento del capítulo, el MP3 ni el VTT**: solo 70 ID/rangos temporales y cuatro puntos de verificación. Se abre como archivo local en un navegador y lee mediante `input[type=file]` los originales **desde la computadora del responsable**, sin transmitirlos.
+
+1. Desde GitHub, abrir el HTML y elegir **Download raw / Descargar archivo sin procesar**; guardar el archivo `.html` y abrirlo en Chrome/Firefox.
+2. Descargar los mismos MP3 y VTT ya identificados en el [estado de la obra](ESTADO_DE_TRABAJO.md) y seleccionar ambos en el visor. Los 593 cues se interpretan solo en el navegador.
+3. Presionar «Escuchar 8 segundos» en cuatro marcas: **01:56,175** (primer cambio), **05:18,107** (cue 63 compartido, estimación provisional), **26:11,167** (Francia) y **51:35,333** (último párrafo).
+4. Marcar «Coincide», «Se adelanta», «Se atrasa» o «No estoy seguro» en cada una y pulsar «Copiar o descargar resultado». Se exportan solo cuatro respuestas, sin audio ni texto.
+
+Este atajo reduce la **evaluación acústica inicial a 32 segundos de reproducción** (más manejo de archivos e interacción); no pretende revisar 70 transiciones ni certificar G3/G7. **El visor muestra extractos del VTT, no el texto académico completo**. Si los cuatro puntos se perciben aceptables, el paso siguiente es una breve observación de la página candidata real en navegador local, priorizando el límite compartido y la navegación/notas. Solo las anomalías desencadenan revisión extendida.
+
+**Control automatizado:** `npm run test:soares` incluye `test-soares-quickcheck.mjs`, que comprueba sintaxis JS, 70 intervalos, cuatro marcas y ausencia de transferencias de red en el visor. Una prueba de CI aprobada **no es escucha perceptiva**.
+
+**Enlace de archivo en la rama:** https://github.com/manign1984/audiolibros-historia-educacion-fisica/blob/experiment/soares-resaltado-parrafos-vtt/tools/soares/prueba-rapida-parrafos.html
+
+**Recuperación:** si una sesión se corta, continuar desde esta rama experimental y la PR #80. El expediente de Work 3 de la PR #79 sigue intacto. No convertir automáticamente estos cuatro resultados en autorización para publicar materiales del capítulo/traducción/audio/retrato.
