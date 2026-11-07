@@ -35,7 +35,7 @@ export default function SoaresApp({ readingDocument }) {
       </section>
       <section id="autor" className="so-screen so-author" aria-label="Sobre Carmen Lucia Soares">
         <AuthorBiography name="Carmen Lucia Soares" initial="CS" role="Historia de la educación del cuerpo · Gimnasia e higiene" summary={bio}
-          image={soaresPrivateAsset('portrait.jpeg')} imageAlt="Retrato de Carmen Lucia Soares" credit="Retrato: Facultad de Educación, UNICAMP. Biografía: FEF y Rectoría, UNICAMP, 2026." biographyUrl="https://www.fef.unicamp.br/graduacao/corpodocente/"/>
+          image={readingDocument ? soaresPrivateAsset('portrait.jpeg') : undefined} imageAlt="Retrato de Carmen Lucia Soares" credit={readingDocument ? "Retrato: Facultad de Educación, UNICAMP. Biografía: FEF y Rectoría, UNICAMP, 2026." : "Información biográfica: FEF y Rectoría, UNICAMP (2026). Retrato no reproducido en esta vista."} biographyUrl="https://www.fef.unicamp.br/graduacao/corpodocente/"/>
       </section>
       <section id="contexto" aria-label="Contexto: tres perspectivas de estudio">
         <div className="so-screen so-context" aria-labelledby="so-calculable">
@@ -67,7 +67,21 @@ export default function SoaresApp({ readingDocument }) {
           </div>
         </div>
       </section>
-      <section id="lectura" className="so-screen hb-material-reading" aria-labelledby="journey-reading-title"><IntegratedReader readingDocument={readingDocument} config={soaresParagraphPreviewConfig} showToast={setToast} Launcher={CanonicalReadingEntry}/></section>
+      <section id="lectura" className="so-screen hb-material-reading" aria-labelledby="journey-reading-title">
+        {readingDocument
+          ? <IntegratedReader readingDocument={readingDocument} config={soaresParagraphPreviewConfig} showToast={setToast} Launcher={CanonicalReadingEntry}/>
+          : <div className="so-public-reading">
+              <JourneyBlockLabel sectionId="lectura"/>
+              <p className="so-public-reading__eyebrow">Leé · escuchá · anotá</p>
+              <h2 id="journey-reading-title">Una lectura para volver sobre el gesto</h2>
+              <p>El recorrido presenta las corrientes gimnásticas europeas y las preguntas que organizan el capítulo de Carmen Lucia Soares. Podés consultar el material de cátedra desde su ubicación original.</p>
+              <div className="so-public-reading__links">
+                <a href="https://drive.google.com/file/d/1xOnn6jLmUI5wj72noq18J53oh5-nkyOT/view" target="_blank" rel="noreferrer">Consultar el capítulo en Drive</a>
+                <a href="https://drive.google.com/file/d/1KAthUKiHsNqHg8sYIwPqzvJNgbGGbkt-/view" target="_blank" rel="noreferrer">Audiolibro · acceso institucional</a>
+              </div>
+              <p className="so-public-reading__notice">El lector integrado, las anotaciones y el seguimiento aproximado por párrafos no están habilitados en esta versión pública. El enlace al audio puede requerir acceso institucional.</p>
+            </div>}
+      </section>
       <JourneyCredits workId="soares"/>
     </main>
     <span className="so-toast" role="status" aria-live="polite">{toast}</span>
