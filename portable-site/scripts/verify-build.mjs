@@ -27,6 +27,7 @@ assert.ok(orbuchHtml.includes(`src="${normalizedBase}assets/`), 'Orbuch debe res
 assert.ok(pineauHtml.includes(`src="${normalizedBase}assets/`), 'Pineau debe respetar el base público.');
 
 const assetNames = await readdir(resolve(dist, 'assets'));
+assert.ok(!assetNames.includes('soares-private'), 'I04: un build ordinario nunca debe publicar materiales privados de Soares.');
 const libraryBundleName = assetNames.find((name) => /^(?:biblioteca|main)-.*\.js$/.test(name) && libraryHtml.includes(name));
 const orbuchBundleName = assetNames.find((name) => /^orbuchEducarAlCuerpo-.*\.js$/.test(name));
 const pineauBundleName = assetNames.find((name) => /^pineauFrescoNoble-.*\.js$/.test(name));
