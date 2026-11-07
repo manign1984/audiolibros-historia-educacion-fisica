@@ -77,3 +77,14 @@ body:has(.journey-header) .soares-page #lectura.hb-material-reading {--material-
 .soares-page .hb-material-open::before {border-color:rgba(230,194,208,.22);border-bottom-color:rgba(49,22,36,.62);}
 .soares-page .hb-material-open>svg:last-child {color:#d4b27d;filter:drop-shadow(0 0 5px rgba(212,178,125,.28));}
 .soares-page .hb-material-synopsis {color:var(--so-ink);}
+
+/* Soares: vista editorial abierta, sin archivos internos ni simulación de reproducción. */
+.so-public-reading {width:min(780px,calc(100% - 56px));margin:48px auto;padding:clamp(24px,5vw,64px);border-top:3px solid var(--so-wine);background:rgba(255,255,255,.28);box-shadow:10px 16px 26px rgba(40,33,26,.08)}
+.so-public-reading__eyebrow {margin:28px 0 6px!important;text-transform:uppercase;color:var(--so-wine);letter-spacing:.08em;font-size:12px;font-weight:700}
+.so-public-reading h2 {font:900 clamp(28px,4vw,44px)/1.15 'Archivo',sans-serif;letter-spacing:-.03em;margin:8px 0 24px}
+.so-public-reading>p:not(.so-public-reading__eyebrow) {max-width:660px;line-height:1.65}
+.so-public-reading__links {display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}
+.so-public-reading__links a {display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--so-wine);border-radius:999px;padding:11px 18px;text-decoration:none;font-weight:700;font-size:15px;color:var(--so-wine)}
+.so-public-reading__links a:first-child {background:var(--so-wine);color:#fff}
+.so-public-reading__links a:focus-visible {outline:3px solid var(--so-wine);outline-offset:4px}
+.so-public-reading .so-public-reading__notice {font-size:14px;line-height:1.5;color:#525051}
