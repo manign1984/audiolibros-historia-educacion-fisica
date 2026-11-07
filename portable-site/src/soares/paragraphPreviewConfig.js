@@ -1,7 +1,7 @@
 // Configuración elegida para el candidato de Soares: seguimiento aproximado por párrafos.
 // Las marcas del VTT no se presentan como alineación acústica certificada.
 import { soaresReaderConfig } from './readerConfig.js';
-import paragraphPreview from './paragraphPreviewTimings.json';
+import paragraphPreview from './paragraphPreviewTimings.json' with { type: 'json' };
 
 export const soaresParagraphPreviewConfig = {
   ...soaresReaderConfig,
