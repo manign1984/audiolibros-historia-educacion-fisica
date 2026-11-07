@@ -12,7 +12,7 @@ const accidentallyPublic = await readdir('public/assets/soares-private', { recur
   throw error;
 });
 assert.deepEqual(accidentallyPublic, [], 'Soares: materiales restringidos en public/assets/soares-private; usar exclusivamente .local/soares/');
-assert.equal(catalog.find(w=>w.id===config.workId).status,'preparation');
+assert.equal(catalog.find(w=>w.id===config.workId).status,'review');
 assert.equal(config.sync.status,'pending');assert.equal(config.sync.unit,'sentence');
 assert.deepEqual(candidate.storage,manifest.storage);
 assert.equal(candidate.sync.unit,manifest.sync.unit);
