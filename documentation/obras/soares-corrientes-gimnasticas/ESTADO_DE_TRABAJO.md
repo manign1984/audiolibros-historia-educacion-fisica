@@ -1,4 +1,22 @@
-# Estado de trabajo · Soares · Checkpoint de Work 3
+# Estado de trabajo · Soares · Seguimiento aproximado por párrafos (decisión 07-11-2026)
+
+**Estado actual — prevalece sobre los checkpoints históricos que siguen debajo.** El responsable del proyecto decidió **adoptar directamente el resaltado por párrafos a partir del VTT, sin una nueva ronda de pruebas acústicas ni escucha de muestras**. Esa decisión no convierte los intervalos en tiempos auditivamente validados. La prueba de 4 escuchas y la validación por oración dejan de ser requisitos del desarrollo elegido.
+
+- **Modalidad del candidato:** `paragraph-preview` (nombre técnico existente en el lector común); 70 párrafos, inicio/fin derivado de VTT. La interfaz informa «seguimiento aproximado por párrafos».
+- **Límite conocido:** transición entre `soa-introduccion-p6` y `p7` en **318,107 s**, estimación por punto medio del cue 63 compartido. No escucha humana.
+- **App:** `SoaresApp.jsx` utiliza `soaresParagraphPreviewConfig` **sin bandera VITE** cuando está construida como candidato. La vía ordinaria de biblioteca sigue en `preparation`; los materiales privados no se publican.
+- **Anotaciones:** claves exclusivas `soares-corrientes-gimnasticas-paragraph-notes-v1` y `-paragraph-state-v1` (sin migración silenciosa de notas de ensayo). Los títulos y encabezados conservan las referencias a notas académicas.
+- **Fidelidad:** siete apartados, 70 párrafos, 185 oraciones, 29 notas y 47 referencias; texto académico y MP3 originales intactos; notas y bibliografía sin tiempos de audio.
+- **Permisos/publicación:** I04 sigue sin documentación de condiciones de uso para capítulo/traducción, narración y retrato. **No fusionar PR #79 a main ni desplegar archivos privados todavía.** No afirmar que la falta de registro demuestra ausencia de permiso.
+- **Pruebas:** no se ejecuta ni se exige nueva comprobación acústica; los controles automáticos de integridad de GitHub son salvaguardas técnicas, no pruebas perceptivas. G3 de sincronización **por oración** permanece sin aprobar y ha sido descartado como requisito para esta modalidad; G7 perceptual no se certifica.
+- **Referencia de implementación:** [EXPERIMENTO_PARRAFOS_VTT.md](EXPERIMENTO_PARRAFOS_VTT.md) registra la procedencia, decisiones y código. PR experimental #80 se integra a la rama de PR #79 como adopción de esta alternativa.
+
+**Próximo paso:** verificar que la rama de Soares incluye los cambios; resolver únicamente el circuito de incorporación/publicación y la información de condiciones de uso. No retomar la revisión de 72 unidades CTC ni las cuatro escuchas salvo nueva indicación.
+
+---
+
+## Historial anterior a la decisión de usar párrafos
+
 
 Actualizado **06-11-2026, Argentina**. **Candidato local corregido y evaluado. Publicación bloqueada, sin merge.** El cierre de Work 3 sigue pendiente: alineación final, dos controles de navegador y condiciones de redistribución. Este estado prevalece sobre los relevos históricos de Work 1/2.
 
