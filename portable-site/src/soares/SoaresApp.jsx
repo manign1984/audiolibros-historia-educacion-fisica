@@ -7,6 +7,7 @@ import JourneyCredits from '../shared/JourneyCredits.jsx';
 import IntegratedReader from '../IntegratedReader.jsx';
 import { soaresPrivateAsset } from './readerConfig.js';
 import { soaresParagraphPreviewConfig } from './paragraphPreviewConfig.js';
+import SoaresReadingAccess from './SoaresReadingAccess.jsx';
 // Decisión editorial: el candidato de Soares sigue el audio por párrafos estimados del VTT.
 import './soares.css';
 
@@ -70,17 +71,7 @@ export default function SoaresApp({ readingDocument }) {
       <section id="lectura" className="so-screen hb-material-reading" aria-labelledby="journey-reading-title">
         {readingDocument
           ? <IntegratedReader readingDocument={readingDocument} config={soaresParagraphPreviewConfig} showToast={setToast} Launcher={CanonicalReadingEntry}/>
-          : <div className="so-public-reading">
-              <JourneyBlockLabel sectionId="lectura"/>
-              <p className="so-public-reading__eyebrow">Leé · escuchá · anotá</p>
-              <h2 id="journey-reading-title">Una lectura para volver sobre el gesto</h2>
-              <p>El recorrido presenta las corrientes gimnásticas europeas y las preguntas que organizan el capítulo de Carmen Lucia Soares. Podés consultar el material de cátedra desde su ubicación original.</p>
-              <div className="so-public-reading__links">
-                <a href="https://drive.google.com/file/d/1xOnn6jLmUI5wj72noq18J53oh5-nkyOT/view" target="_blank" rel="noreferrer">Consultar el capítulo en Drive</a>
-                <a href="https://drive.google.com/file/d/1KAthUKiHsNqHg8sYIwPqzvJNgbGGbkt-/view" target="_blank" rel="noreferrer">Audiolibro · acceso institucional</a>
-              </div>
-              <p className="so-public-reading__notice">El lector integrado, las anotaciones y el seguimiento aproximado por párrafos no están habilitados en esta versión pública. El enlace al audio puede requerir acceso institucional.</p>
-            </div>}
+          : <SoaresReadingAccess/>}
       </section>
       <JourneyCredits workId="soares"/>
     </main>

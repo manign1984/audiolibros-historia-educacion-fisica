@@ -1,3 +1,17 @@
+## Bloque 04 · Ajuste a Directrices canónicas 2.0 · 07-11-2026
+
+Se revisaron las Directrices canónicas vigentes (SR-02, SR-04, SR-05, SR-06, §3.6 y CAN-01) en el documento [Directrices canónicas 2.0](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit).
+
+**Decisión de diseño e implementación:** la vista editorial abierta de Soares reutiliza `CanonicalReadingEntry` directamente, con la misma composición, ficha, sinopsis, botón en cápsula y CSS comunes a las otras obras. Se retiran `so-public-reading`, sus cajas, botones y título alternativos. Los únicos estilos nuevos se aplican al cuadro de acceso independiente y no cambian la geometría del bloque 04. La paleta vino y cobre de Soares se conserva.
+
+**Excepción temporal de disponibilidad (SR-05):** como la vista pública no sirve aún el JSON académico ni el MP3 al `IntegratedReader`, el rótulo del botón se sustituye únicamente allí por **«CONSULTAR EL TEXTO»** (con `aria-label` explicativa). El botón abre un diálogo accesible con enlaces al PDF en Drive y al audiolibro institucional, además de una indicación breve sobre el límite funcional. No se presenta como lector sincronizado, no se activa autoplay, no se publican fuentes o medios restringidos en GitHub. Las otras obras siguen usando el rótulo original **«ABRIR EL LECTOR»**; la vista de Soares con recursos locales completos también lo conserva.
+
+**Lector completo preservado:** `IntegratedReader` y `soaresParagraphPreviewConfig` mantienen la posibilidad de lectura, anotaciones, exportación, progreso aislado y seguimiento aproximado de 70 párrafos cuando los recursos estén disponibles. No se reutilizan marcas por oración no verificadas.
+
+**Estado editorial:** el bloque 04 queda unificado en código y estilo; su funcionamiento íntegro y la aceptación visual no se declaran terminados. La publicación abierta de material de autor, traducción, narración y retrato permanece sometida a condiciones de uso no asentadas en el expediente. El catálogo se mantiene en `preparation` hasta que el lector real pueda ofrecerse. No se realizaron nuevas pruebas acústicas, funcionales, visuales ni de navegador, por decisión expresa del responsable. La automatización propia del repositorio, si se ejecuta por el flujo de integración, no equivale a una aceptación visual.
+
+---
+
 ## Decisión de avance sin controles · 07-11-2026
 
 El responsable solicitó avanzar **sin nuevas pruebas ni controles**. Se eligió una publicación editorial parcial, no la publicación ficticia de un lector integrado sin archivos públicos.
