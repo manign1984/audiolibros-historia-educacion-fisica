@@ -1,3 +1,17 @@
+## Corrección de la reproducción de audio · 07-11-2026 · prevalece sobre el diagnóstico «audio en Drive»
+
+**Incidencia reportada:** el reproductor integrado abrió el texto, pero el navegador indicó «No se pudo cargar el audio» desde la URL de descarga `drive.google.com/uc?export=download`. El uso del enlace de Drive para el reproductor estaba condicionado por permisos, redirecciones y respuestas de descarga de Google, por lo que no constituye un origen estable para `<audio>`.
+
+**Solución implementada en código:** crear una copia web MP3 mono de 48 kb/s, de **51:53,4**, que se conserva completa y se divide en **12 fragmentos binarios consecutivos** para alojarlos mediante GitHub en `portable-site/public/assets/soares/audio/audio-00.part` … `audio-11.part`. El motor común `IntegratedReader` **ya contaba con** `config.audiobookParts`; cuando se abre el lector descarga esas partes desde el mismo origen de GitHub Pages, las concatena en orden como `Blob` `audio/mpeg`, y crea una URL de objeto buscable para el elemento `<audio>`. No se altera el código del motor común.
+
+**Integridad de la copia web:** 18.680.820 bytes; SHA-256 `fd5f7e36249373334f19127212121ebc9df44ebbb56686d2d94c2952579c56d5`; longitud de fragmento estándar de 1.572.864 bytes (último: 1.379.316 bytes). La reconstrucción es byte a byte de **la versión web comprimida**, no del archivo original. **El MP3 original de 74.721.926 bytes queda intacto en Drive** (ID `1KAthUKiHsNqHg8sYIwPqzvJNgbGGbkt-`). No se afirma que la copia comprimida sea idéntica acústicamente al archivo de origen. Su duración difiere en aproximadamente 0,022 s y se conservan los **70 intervalos aproximados VTT**, sin nueva validación acústica.
+
+**Interfaz:** el reproductor usa directamente los fragmentos publicados con el sitio, sin solicitar autenticación en Drive. El enlace de Drive solo permanece como recurso original alternativo si no se puede acceder al alojamiento web. Catálogo en estado «Edición en revisión», porque no se realizó la aceptación perceptual que el responsable decidió omitir; la observación final de la publicación queda consignada aparte.
+
+**Límite:** la implementación del código no implica por sí sola que GitHub Pages ya haya finalizado el despliegue, ni sustituye una comprobación real de reproducción en navegador. No se repitieron pruebas auditivas, de sincronización, perceptivas ni visuales.
+
+---
+
 # Estado vigente · Carmen Lucia Soares · Biblioteca +TEC UNAHUR
 
 Actualización editorial del 7 de noviembre de 2026. **Prevalece sobre los checkpoints y bloqueos históricos de Work 1–3.**
