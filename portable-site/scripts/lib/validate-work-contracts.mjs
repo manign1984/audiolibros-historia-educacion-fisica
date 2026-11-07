@@ -84,7 +84,8 @@ export function checkManifest(manifest) {
       if (!present(item.path) || paths.has(item.path) || !['pdf', 'audio', 'text', 'subtitles', 'alignment'].includes(item.kind) || !Number.isInteger(item.bytes) || item.bytes < 1 || !/^[a-f0-9]{64}$/.test(item.sha256)) throw new Error(`${work.id}: material inválido/repetido: ${item.path}`);
       paths.add(item.path);
     }
-    if (!work.materials.some(item => item.kind === 'text') || !work.materials.some(item => item.kind === 'audio')) throw new Error(`${work.id}: falta texto o audio real`);
+    const remoteAudio = present(work.externalAudioUrl) && /^https:\/\//.test(work.externalAudioUrl);
+    if (!work.materials.some(item => item.kind === 'text') || (!work.materials.some(item => item.kind === 'audio') && !remoteAudio)) throw new Error(`${work.id}: falta texto o audio real/localizado`);
   }
   return manifest;
 }
@@ -149,11 +150,19 @@ export async function validateWorks({ root, manifest, contracts, catalog, collec
       }
     }
     const audioUrls = config.audiobookParts || (config.audiobookUrl ? [config.audiobookUrl] : []);
-    check(audioUrls.length > 0 && !(config.audiobookParts && config.audiobookUrl), 'audio-config', work.id, 'Declarar un MP3 o una secuencia de partes.');
-    const audioPaths = audioUrls.map(url => `public${url}`);
-    for (const [index, path] of audioPaths.entries()) check(/^\/assets\/[^.][^\s]*$/.test(audioUrls[index]) && materialPaths.has(path) && work.materials.some(item => item.path === path && item.kind === 'audio'), 'unregistered-resource', work.id, `Audio local sin registro: ${path}`);
-    if (audioPaths.length && (await Promise.all(audioPaths.map(async path => { try { await stat(within(root, path)); return true; } catch { return false; } }))).every(Boolean)) {
-      check(await hashFiles(audioPaths.map(path => within(root, path))) === work.audioSha256, 'audio-sequence', work.id, 'El audio concatenado o el orden de sus partes cambió.');
+    const usesRemoteAudio = present(work.externalAudioUrl);
+    if (usesRemoteAudio) {
+      check(config.audiobookUrl === work.externalAudioUrl && config.audioMode === 'direct' && !config.audiobookParts,
+        'external-audio-config', work.id, 'El audio remoto requiere URL explícita y reproducción directa.');
+      warning('external-audio', work.id,
+        'Audio institucional alojado fuera de este repositorio. No se comprueban disponibilidad remota, permisos de acceso ni correspondencia acústica.');
+    } else {
+      check(audioUrls.length > 0 && !(config.audiobookParts && config.audiobookUrl), 'audio-config', work.id, 'Declarar un MP3 o una secuencia de partes.');
+      const audioPaths = audioUrls.map(url => `public${url}`);
+      for (const [index, path] of audioPaths.entries()) check(/^\/assets\/[^.][^\s]*$/.test(audioUrls[index]) && materialPaths.has(path) && work.materials.some(item => item.path === path && item.kind === 'audio'), 'unregistered-resource', work.id, `Audio local sin registro: ${path}`);
+      if (audioPaths.length && (await Promise.all(audioPaths.map(async path => { try { await stat(within(root, path)); return true; } catch { return false; } }))).every(Boolean)) {
+        check(await hashFiles(audioPaths.map(path => within(root, path))) === work.audioSha256, 'audio-sequence', work.id, 'El audio concatenado o el orden de sus partes cambió.');
+      }
     }
     if (config.pdfUrl) check(work.materials.some(item => item.path === `public${config.pdfUrl}` && item.kind === 'pdf'), 'unregistered-resource', work.id, 'PDF de configuración no registrado como PDF.');
     else warning('pdf-unavailable', work.id, 'No hay pdfUrl en este lector; se conserva el texto registrado. No se inventa un PDF.');

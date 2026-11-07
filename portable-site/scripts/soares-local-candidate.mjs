@@ -17,7 +17,7 @@ export function soaresLocalCandidate() {
       const record=JSON.parse(await readFile(fileURLToPath(new URL('../../documentation/obras/soares-corrientes-gimnasticas/evidencia/documento-work2.json',import.meta.url)),'utf8'));
       if(createHash('sha256').update(await readFile(dir+'reader-document.json')).digest('hex')!==record.documentSha256)throw new Error('Soares: documento candidato distinto del auditado');
       await access(dir+'portrait.jpeg');
-      config.logger.warn('SOARES: candidato local con materiales sin permiso de redistribución acreditado. NO publicar esta compilación.');
+      config.logger.warn('SOARES: compilación local alternativa. El sitio ordinario usa el documento incorporado y el audio de Drive.');
     },
     transformIndexHtml:{order:'pre',handler(html,context){
       if(active && context.filename.replaceAll('\\','/').endsWith('/textos/soares-corrientes-gimnasticas/index.html'))return html.replace('/src/biblioteca/main.jsx','/src/soares/main.jsx');

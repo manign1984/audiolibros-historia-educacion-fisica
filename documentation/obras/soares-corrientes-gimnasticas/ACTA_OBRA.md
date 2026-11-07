@@ -1,8 +1,8 @@
 # Acta de obra · Carmen Lucia Soares
 
-**Estado vigente: checkpoint de Work 3; candidato local corregido y probado, publicación bloqueada.** Los apartados A–J preservan el acta histórica del Work 1; la actualización final figura al pie y en ESTADO_DE_TRABAJO.md.
+**ACTA HISTÓRICA:** este documento registra checkpoints de Work 1–3. El bloqueo editorial I04 y la condición «sin publicar» quedaron superados por la instrucción actual del responsable; consultar [ESTADO_DE_TRABAJO.md](ESTADO_DE_TRABAJO.md) para el estado vigente. Los apartados A–J preservan el acta histórica del Work 1; la actualización final figura al pie y en ESTADO_DE_TRABAJO.md.
 
-Creada desde `documentation/plantillas/ACTA_OBRA_AUTONOMIA_V1.md`; conserva sus apartados A–J. Work 1 de 3, 06-11-2026. Norma superior: Directrices canónicas 2.0. No constituye autorización de publicación ni acta de aceptación de una página implementada.
+Creada desde `documentation/plantillas/ACTA_OBRA_AUTONOMIA_V1.md`; conserva sus apartados A–J. Work 1 de 3, 06-11-2026. Norma superior: Directrices canónicas 2.0. Describe el alcance de Work 1 y no reemplaza el estado actual publicado en ESTADO_DE_TRABAJO.md.
 
 ## A. Identidad, alcance y estado
 

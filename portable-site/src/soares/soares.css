@@ -77,17 +77,3 @@ body:has(.journey-header) .soares-page #lectura.hb-material-reading {--material-
 .soares-page .hb-material-open::before {border-color:rgba(230,194,208,.22);border-bottom-color:rgba(49,22,36,.62);}
 .soares-page .hb-material-open>svg:last-child {color:#d4b27d;filter:drop-shadow(0 0 5px rgba(212,178,125,.28));}
 .soares-page .hb-material-synopsis {color:var(--so-ink);}
-
-/* La composición 04 usa íntegramente canonical-reading.css.
-   El cuadro de acceso aparece fuera de la pantalla canónica. */
-.so-reading-dialog {border:1px solid #b8aca3;border-radius:18px;padding:0;width:min(560px,calc(100% - 28px));max-height:min(90dvh,720px);overflow-y:auto;background:#eeeae1;color:#252b2f;box-shadow:0 20px 75px rgba(12,14,21,.38);font:400 17px/1.6 'Archivo',sans-serif;}
-.so-reading-dialog::backdrop {background:rgba(12,14,21,.72);}
-.so-reading-dialog__body {padding:clamp(22px,4vw,40px);}
-.so-reading-dialog__eyebrow {font:700 12px/1.5 'Archivo',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#643444;}
-.so-reading-dialog h3 {font:900 clamp(25px,5vw,36px)/1.12 'Archivo',sans-serif;letter-spacing:-.03em;margin:14px 0 20px;}
-.so-reading-dialog__links {display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 22px;}
-.so-reading-dialog__links a {display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border:1px solid #643444;border-radius:999px;color:#643444;text-align:center;text-decoration:none;font-size:15px;font-weight:700;}
-.so-reading-dialog__links a:first-child {background:#643444;color:#fff;}
-.so-reading-dialog__note {font-size:14px;line-height:1.55;color:#514c4d;}
-.so-reading-dialog__close {margin-top:22px;padding:10px 20px;border:1px solid #643444;border-radius:999px;background:transparent;color:#643444;font:700 15px 'Archivo',sans-serif;cursor:pointer;}
-.so-reading-dialog :is(a,button):focus-visible {outline:3px solid #643444;outline-offset:4px;}

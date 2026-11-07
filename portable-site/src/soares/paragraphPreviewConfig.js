@@ -22,6 +22,6 @@ export const soaresParagraphPreviewConfig = {
     launcherDescription: 'Leé y escuchá con resaltado aproximado por párrafos, guiado por los subtítulos del audio.',
     featureTitle: 'Seguimiento por párrafos',
     featureDescription: 'Resaltado aproximado según el VTT; podés leer, escuchar y anotar.',
-    coverMessage: 'El resaltado por párrafos es aproximado y se basa en los subtítulos. Las notas y la bibliografía no se narran.',
+    coverMessage: 'Seguimiento aproximado por párrafos según los subtítulos. El audio puede requerir acceso institucional a Drive; las notas y la bibliografía no se narran.',
   },
 };

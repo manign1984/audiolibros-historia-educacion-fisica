@@ -42,6 +42,13 @@ const records = [
 // Obras con lectura y audio habilitados, pero sin alineación certificada.
 // Mantener un estado propio para no confundirlas con fichas futuras.
 const readingsInReview = {
+  'soares-corrientes-gimnasticas': {
+    status: 'review',
+    duration: 3113.377959,
+    historicalPeriod: 'Gimnasias europeas · siglo XIX',
+    stateKey: 'soares-corrientes-gimnasticas-paragraph-state-v1',
+    reviewSummary: 'Seguimiento aproximado por párrafos · audio en Drive',
+  },
   'marcaida-scaltritti-estado-nacional': {
     status: 'review',
     duration: 1878.909388,
