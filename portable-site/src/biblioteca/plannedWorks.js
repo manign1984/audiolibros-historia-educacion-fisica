@@ -39,15 +39,15 @@ const records = [
   ['vassiliades-politicas-docentes', 'Alejandro Vassiliades', 'Enseñanza y políticas docentes', 'Impugnaciones de la enseñanza y desplazamientos de la pedagogía: políticas docentes y discursos estandarizados en Argentina durante la presidencia de Mauricio Macri (2015–2019)', 'presente', '2020', 'Vassiliades, A. (2020). Impugnaciones de la enseñanza y desplazamientos de la pedagogía: políticas docentes y discursos estandarizados en Argentina durante la presidencia de Mauricio Macri (2015–2019). Espacios en Blanco. Revista de Educación, 30(2), 247–262.', 'programa'],
 ];
 
-// Obras con lectura y audio habilitados, pero sin alineación certificada.
-// Mantener un estado propio para no confundirlas con fichas futuras.
-const readingsInReview = {
+// Obras con lectura y audio habilitados; la disponibilidad del lector
+// se distingue del grado de sincronización de cada obra.
+const readablePlannedWorks = {
   'soares-corrientes-gimnasticas': {
-    status: 'review',
+    status: 'available',
     duration: 3113.377959,
     historicalPeriod: 'Gimnasias europeas · siglo XIX',
     stateKey: 'soares-corrientes-gimnasticas-paragraph-state-v1',
-    reviewSummary: 'Seguimiento aproximado por párrafos · audio en el lector',
+    readingDetail: 'Seguimiento aproximado por párrafos',
   },
   'marcaida-scaltritti-estado-nacional': {
     status: 'review',
@@ -65,5 +65,5 @@ export const plannedWorks = records.map(([id, author, shortTitle, title, collect
   sortAuthor: author.split(' · ')[0].split(' ').slice(-1).join(''),
   path: `textos/${id}/`,
   posterVariant: index % 3,
-  ...(readingsInReview[id] || {}),
+  ...(readablePlannedWorks[id] || {}),
 }));

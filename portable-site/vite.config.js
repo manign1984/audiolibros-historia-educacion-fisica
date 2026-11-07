@@ -45,7 +45,16 @@ export default defineConfig({
         aisensteinTablaRasa: fileURLToPath(new URL('./textos/aisenstein-tabla-rasa/index.html', import.meta.url)),
         hobsbawmHistoriaSigloXX: fileURLToPath(new URL('./textos/hobsbawm-historia-siglo-xx/index.html', import.meta.url)),
         scharagrodskyConstitucionEF: fileURLToPath(new URL('./textos/scharagrodsky-constitucion-ef/index.html', import.meta.url)),
-        ...Object.fromEntries(catalog.filter((entry) => entry.status !== 'available').map((entry) => [entry.id, fileURLToPath(new URL(`./${entry.path}index.html`, import.meta.url))])),
+        // Las cinco entradas históricas ya están declaradas arriba.
+        // Compilar las demás rutas por identidad, no por estado: una obra
+        // que pasa de revisión a disponible debe conservar su página física.
+        ...Object.fromEntries(catalog.filter((entry) => ![
+          'orbuch-educar-al-cuerpo',
+          'pineau-fresco-noble',
+          'aisenstein-tabla-rasa',
+          'hobsbawm-historia-siglo-xx',
+          'scharagrodsky-constitucion-ef',
+        ].includes(entry.id)).map((entry) => [entry.id, fileURLToPath(new URL(`./${entry.path}index.html`, import.meta.url))])),
       },
     },
   },

@@ -12,7 +12,7 @@ const accidentallyPublic = await readdir('public/assets/soares-private', { recur
   throw error;
 });
 assert.deepEqual(accidentallyPublic, [], 'Soares: la ruta obsoleta soares-private debe permanecer vacía; los recursos vigentes usan rutas explícitas');
-assert.equal(catalog.find(w=>w.id===config.workId).status,'review');
+assert.equal(catalog.find(w=>w.id===config.workId).status,'available');
 assert.equal(config.sync.status,'pending');assert.equal(config.sync.unit,'sentence');
 assert.deepEqual(candidate.storage,manifest.storage);
 assert.equal(candidate.sync.unit,manifest.sync.unit);

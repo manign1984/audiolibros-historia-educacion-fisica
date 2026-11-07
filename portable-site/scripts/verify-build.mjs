@@ -10,6 +10,9 @@ const libraryHtmlPath = resolve(dist, 'index.html');
 const orbuchHtmlPath = resolve(dist, 'textos/orbuch-educar-al-cuerpo/index.html');
 const pineauHtmlPath = resolve(dist, 'textos/pineau-fresco-noble/index.html');
 const hobsbawmHtml = await readFile(resolve(dist, 'textos/hobsbawm-historia-siglo-xx/index.html'), 'utf8');
+const soaresHtml = await readFile(resolve(dist, 'textos/soares-corrientes-gimnasticas/index.html'), 'utf8');
+assert.match(soaresHtml, /Leer y escuchar/);
+assert.ok(soaresHtml.includes(`src="${normalizedBase}assets/`), 'La ruta Soares debe compilarse en la base pública correcta.');
 assert.match(hobsbawmHtml, /Historia del siglo XX · Eric Hobsbawm/);
 assert.ok(hobsbawmHtml.includes(`src="${normalizedBase}assets/`));
 
