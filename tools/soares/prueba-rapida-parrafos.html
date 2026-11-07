@@ -51,7 +51,7 @@ audio{width:100%;margin:10px 0 14px}
 // Los originales se leen en el navegador del usuario. No se transmiten ni se publican.
 const Q=id=>document.getElementById(id), audio=Q("audio"), state={vtt:[],answers:{},index:0,clipUntil:null,url:null};
 const fmt=t=>{t=Math.max(0,Number(t)||0);return String(Math.floor(t/60)).padStart(2,"0")+":"+String(Math.floor(t%60)).padStart(2,"0")};
-const htmlEscape=()=>{}; // El contenido de fuentes siempre se inserta con textContent.
+// El contenido de fuentes se inserta con textContent, nunca como HTML.
 const chooseText=p=>state.vtt.length?state.vtt.slice(p.firstCue-1,p.lastCue).map(c=>c.text).join(" ").replace(/\s+/g," ").trim():"Cargá el archivo VTT para ver el texto narrado correspondiente a este párrafo.";
 function trimText(s){return s.length>420?s.slice(0,420)+"…":s||"Sin texto de subtítulo disponible."}
 function selectedParagraph(t){let low=0,high=PARAGRAPHS.length-1,out=0;while(low<=high){let mid=(low+high)>>1;if(PARAGRAPHS[mid].start<=t){out=mid;low=mid+1}else high=mid-1}return out}
@@ -59,13 +59,14 @@ function render(){
  const i=selectedParagraph(audio.currentTime),mark=STOPS[state.index];
  Q("clock").textContent=fmt(audio.currentTime)+" / "+fmt(audio.duration||3113.378);
  Q("focus").textContent=mark.detail+" Marca de cambio: "+fmt(mark.at)+" ("+mark.at.toFixed(3)+" s).";
- const before=i===0?PARAGRAPHS[0]:PARAGRAPHS[i-1],current=PARAGRAPHS[i];
- const neighbor=audio.currentTime<mark.at?PARAGRAPHS[Math.min(i+1,PARAGRAPHS.length-1)]:before;
- const cards=[current,neighbor];Q("cards").replaceChildren();
+ const targetIndex=PARAGRAPHS.findIndex(p=>Math.abs(p.start-mark.at)<0.002);
+ const before=PARAGRAPHS[Math.max(0,targetIndex-1)],after=PARAGRAPHS[Math.max(0,targetIndex)];
+ const cards=[before,after];Q("cards").replaceChildren();
  for(const [k,p] of cards.entries()){
-  const el=document.createElement("article");el.className="para"+(k===0?" active":"");
-  const label=document.createElement("strong");label.textContent=(k===0?"Resaltado actual · ":"Párrafo cercano · ")+p.id;
-  const desc=document.createElement("p");desc.textContent=trimText(chooseText(p));
+  const el=document.createElement("article");el.className="para"+(p.id===PARAGRAPHS[i].id?" active":"");
+  const label=document.createElement("strong");label.textContent=(k===0?"Párrafo anterior · ":"Párrafo siguiente · ")+p.id;
+  const raw=chooseText(p);
+  const desc=document.createElement("p");desc.textContent=raw.length<=370?raw:(k===0?"…"+raw.slice(-300):raw.slice(0,300)+"…");
   const meta=document.createElement("div");meta.className="mini";meta.textContent=fmt(p.start)+"–"+fmt(p.end)+" · cues "+p.firstCue+"–"+p.lastCue;
   el.append(label,desc,meta);Q("cards").append(el);
  }
