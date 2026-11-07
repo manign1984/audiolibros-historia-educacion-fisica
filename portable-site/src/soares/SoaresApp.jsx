@@ -6,6 +6,9 @@ import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import IntegratedReader from '../IntegratedReader.jsx';
 import { soaresReaderConfig, soaresPrivateAsset } from './readerConfig.js';
+import { soaresParagraphPreviewConfig } from './paragraphPreviewConfig.js';
+// Piloto opt-in; el candidato habitual sigue sin tiempos activos.
+const soaresExperimentalParagraphs = import.meta.env.VITE_SOARES_PARAGRAPH_PREVIEW === '1';
 import './soares.css';
 
 const currents = [
@@ -65,7 +68,7 @@ export default function SoaresApp({ readingDocument }) {
           </div>
         </div>
       </section>
-      <section id="lectura" className="so-screen hb-material-reading" aria-labelledby="journey-reading-title"><IntegratedReader readingDocument={readingDocument} config={soaresReaderConfig} showToast={setToast} Launcher={CanonicalReadingEntry}/></section>
+      <section id="lectura" className="so-screen hb-material-reading" aria-labelledby="journey-reading-title"><IntegratedReader readingDocument={readingDocument} config={soaresExperimentalParagraphs ? soaresParagraphPreviewConfig : soaresReaderConfig} showToast={setToast} Launcher={CanonicalReadingEntry}/></section>
       <JourneyCredits workId="soares"/>
     </main>
     <span className="so-toast" role="status" aria-live="polite">{toast}</span>
