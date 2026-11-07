@@ -1,5 +1,7 @@
 # Soares · Registro de fuentes y recursos
 
+**Estado vigente 07-11-2026:** el responsable solicitó continuar la incorporación del lector y retirar el carácter bloqueante de I04. El registro de procedencias y las limitaciones de acceso se mantienen; no se declara una licencia abierta ni un permiso de terceros que no figure en las fuentes.
+
 Consulta: 06-11-2026. Registro interno; las fuentes del capítulo y los recursos externos se distinguen. Las fichas no equivalen a permisos supuestos. Los enlaces de Drive y sus huellas figuran en AUDITORIA_DOCUMENTAL.md.
 
 ## Documentación rectora
@@ -30,14 +32,13 @@ Consulta: 06-11-2026. Registro interno; las fuentes del capítulo y los recursos
 - Texto alternativo previsto: «Cronofotografía de un esgrimista: varias posiciones del cuerpo y del arma quedan registradas en una misma imagen».
 - Pie previsto: «Georges Demeny, [Fencer], 1906. The Metropolitan Museum of Art, 2010.1. Dominio público».
 
-### V2 · Retrato auténtico de Carmen Lucia Soares — elegido con derechos pendientes
+### V2 · Retrato auténtico de Carmen Lucia Soares — procedencia institucional
 
 - Fuente B3: fotografía identificada por Facultad de Educación de UNICAMP como Profa. Carmen Lúcia Soares.
 - [Original institucional observado](https://portal.fe.unicamp.br/wp-content/uploads/sites/66/2026/05/WhatsApp-Image-2026-05-23-at-2.22.57-PM-1.jpeg): JPEG 1200×1600, 306846 bytes, SHA-256 `aab6808fb2326b37f1437c17a23a645401e339fab674cfa69732e600dee2ad2f`.
 - Inspección visual: retrato vertical en entorno exterior, cara visible y sin texto impreso. Apto para derivado B/N conservando proporciones y rasgos. No se editó en este Work.
 - Atribución conocida: procedencia institucional FE/UNICAMP. **Autoría fotográfica individual y licencia no consignadas**. No escribir «foto UNICAMP, CC» ni «dominio público».
-- Acción pendiente antes de uso público: documentar condiciones de reproducción aplicables o sustituir por un retrato con derechos documentados. No solicitar permiso en nombre de Manuel ni enviar mensajes sin instrucción.
-- Si no se resuelve, preparar una alternativa tipográfica honestamente identificada para decisión editorial puntual; no usar un rostro sintético ni considerar aprobada esa excepción por precedente de otra obra.
+- Uso vigente: enlace al archivo institucional original en el bloque Autor, con crédito a la Facultad de Educación de UNICAMP. No se le atribuye licencia CC o dominio público; el expediente no identifica autoría fotográfica individual.
 
 ### V3 · Hartelius, Swedish movements or medical gymnastics, 1896 — reserva documental
 
@@ -57,21 +58,24 @@ Soares, C. L. (2000). *Notas sobre a educação no corpo*. Educar em Revista, 16
 
 La indagación sobre expresividad se sustenta en las pp. 10–11 de la copia académica. Se localizó la referencia de Soares y Madureira sobre Educación Física, lenguaje y arte; no se completa su ficha a partir de agregadores ni se presenta como artículo íntegramente consultado. El dossier no depende de ese acceso.
 
-## Créditos futuros y límites de esta etapa
+## Créditos vigentes y registro de procedencia
 
-Identificar edición de 2006, copia de cátedra, traducción de Esteban Manuel Barcelona, materiales ElevenLabs aportados por el proyecto y condición de las partes no narradas. No declarar una licencia abierta del texto o del audio a partir de su disponibilidad en Drive. El permiso de redistribución pública de esos materiales no está documentado en el expediente.
+La lectura identifica la edición de 2006, la copia de cátedra, la traducción de Esteban Manuel Barcelona, la grabación aportada por el proyecto y las partes no narradas. La disponibilidad en Drive no equivale a una licencia abierta; no se declara una licencia de ese tipo.
 
-Las fuentes auténticas, los diagramas didácticos y los derivados web tendrán atribuciones diferenciadas. No habrá una imagen que simule ser fuente histórica. En el Work 2, guardar la imagen web final y sus hashes solo después de confirmar la fuente utilizada; este registro conserva las referencias y huellas de los candidatos ya inspeccionados.
+Las fuentes auténticas, los diagramas didácticos y los derivados web tienen atribuciones diferenciadas. Ninguna imagen sintética se identifica como fuente histórica. Se preservan referencias y huellas de los recursos evaluados.
 
 
-## Aclaración de I04 al responsable · reanudación de Work 3
+## Decisión editorial vigente · retiro de la puerta I04
 
-La consulta por «constancia o referencia» busca identificar una condición de publicación ya existente. No exige un contrato de formato determinado ni volver a autorizar el trabajo técnico. La falta de esa información en este expediente no demuestra que el proyecto carezca de permiso.
+La instrucción del responsable del proyecto del 7 de noviembre de 2026 elimina el **bloqueo de producción** derivado exclusivamente de la falta de una constancia archivada. La implementación del lector integrado, texto académico y PDF procede de acuerdo con esa decisión. La documentación de permisos deja de funcionar como requisito previo de programación o fusión.
 
-| Material | Información que falta registrar para publicación abierta |
+| Recurso | Procedencia y uso en el recorrido |
 | --- | --- |
-| Capítulo y versión española de Esteban Manuel Barcelona | Referencia de la condición de uso o autorización que cubra la reproducción del texto completo y su versión narrada en la web del proyecto |
-| MP3 suministrado por el proyecto | Procedencia/condiciones de publicación de la narración entregada; la voz y el archivo ya están fijados, no se solicitan de nuevo |
-| Retrato institucional de Soares | Condición de uso de esa fotografía concreta; la procedencia UNICAMP está documentada, la licencia individual no figura |
+| Capítulo y traducción | Edición de cátedra utilizada en la materia, presentada íntegra con autoría y traducción acreditadas |
+| Grabación original | Audiolibro aportado al proyecto, conservado en Google Drive, usado mediante enlace directo con advertencia de acceso |
+| Retrato institucional | Fotografía alojada en el portal de la Facultad de Educación de UNICAMP, enlazada con atribución institucional |
+| Demeny, 1906 | Fotografía del Met Museum identificada como dominio público |
 
-Puede registrarse, cuando exista, un enlace a condiciones de uso o una comunicación de autorización con su alcance y procedencia. No se presume una licencia abierta, no se solicita al responsable inventar una y no se contacta a terceros. El desarrollo y análisis locales continúan; el control pendiente se aplica a la incorporación de esos materiales al repositorio público y su despliegue. La imagen de Demeny tiene una procedencia de dominio público documentada y no integra este pendiente.
+No se infieren licencias abiertas, titularidades ni autorizaciones de terceras personas a partir de esta decisión de trabajo. El hecho operativo pendiente es la **disponibilidad del audio embebido en todos los navegadores**, debido a sus permisos y la entrega de medios por Google Drive; puede resolverse con un alojamiento web estable sin reconstruir el lector.
+
+La explicación histórica de I04 permanece en los expedientes de Work 1–3, no en el flujo operativo actual.
