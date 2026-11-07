@@ -1,41 +1,11 @@
-# Carmen Lucia Soares · Work 1, 2 y checkpoint de Work 3
+# Carmen Lucia Soares · Recorrido de la Biblioteca +TEC UNAHUR
 
-*Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y permanencias.* Biblioteca +TEC UNAHUR · BEYOND THE STARS · 06-11-2026.
+**Estado de incorporación:** lector integrado implementado, catálogo en «Edición en revisión» por dependencia técnica del audio alojado en Google Drive. La ausencia de documentación de una licencia en el expediente no opera como bloqueo de las tareas ordenadas por el responsable del proyecto.
 
-**Work 3: candidato local corregido y evaluado; cierre acústico/perceptivo y redistribución pendientes, sin fusionar ni publicar.** El MP3/VTT entregados quedaron identificados y auditados. El PDF de cátedra será la referencia académica; el guion abreviado no reemplazará las 29 notas y la bibliografía.
+La obra es *Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y permanencias* (2006). El recorrido cuenta con cinco bloques y siete pantallas (1/1/3/1/1). El bloque 04 mantiene el botón y la composición visual canónicos, junto con el lector común, el documento académico completo, 70 intervalos aproximados por párrafo, las anotaciones y el cuaderno exportable.
 
-| Producto del Work 1 | Archivo |
-| --- | --- |
-| Entrada de reanudación, rama, commits y pendientes | [ESTADO_DE_TRABAJO.md](ESTADO_DE_TRABAJO.md) |
-| Acta oficial, puertas y decisiones | [ACTA_OBRA.md](ACTA_OBRA.md) |
-| Auditoría de versiones, integridad, audio y VTT | [AUDITORIA_DOCUMENTAL.md](AUDITORIA_DOCUMENTAL.md) |
-| Estudio académico y propuesta de tres pantallas | [ANALISIS_Y_CONTEXTO.md](ANALISIS_Y_CONTEXTO.md) |
-| Identidad visual, cinco bloques y estrategia técnica | [DISENO_Y_PLAN_TECNICO.md](DISENO_Y_PLAN_TECNICO.md) |
-| Fuentes, imágenes, derechos conocidos y límites | [RECURSOS_Y_FUENTES.md](RECURSOS_Y_FUENTES.md) |
-| Datos reproducibles de las comprobaciones | [auditoria-insumos.json](evidencia/auditoria-insumos.json) y [AUDITAR_INSUMOS.py](evidencia/AUDITAR_INSUMOS.py) |
+**Estado y continuidad:** [ESTADO_DE_TRABAJO.md](ESTADO_DE_TRABAJO.md).  
+**Fuentes y atribuciones:** [RECURSOS_Y_FUENTES.md](RECURSOS_Y_FUENTES.md).  
+**Expediente histórico:** [ACTA_OBRA.md](ACTA_OBRA.md), [WORK_2_TECNICO.md](WORK_2_TECNICO.md), [WORK_3_VALIDACION.md](WORK_3_VALIDACION.md) y [EXPERIMENTO_PARRAFOS_VTT.md](EXPERIMENTO_PARRAFOS_VTT.md).
 
-Contexto: **el gesto calculable → diferencias y tensiones entre corrientes → alternativas y formación docente**. La secuencia organiza preguntas; no propone una evolución inevitable de prácticas.
-
-Work 2 concluyó con código candidato, datos académicos privados recuperables y pruebas técnicas. Derechos, sincronización y aceptación integral siguen pendientes. El siguiente paso se define en ESTADO_DE_TRABAJO.md.
-
-## Resultados del Work 2
-
-- [Construcción, condiciones de uso y recuperación exacta](WORK_2_TECNICO.md).
-- [Documento: huellas y censo de integridad](evidencia/documento-work2.json).
-- [Correspondencia candidata, sin tiempos activos](evidencia/correspondencia-work2.json).
-- [Muestras de comienzo, encabezados, mitad, diferencias y final](evidencia/muestras-work2.json).
-- [Pruebas automáticas, observación inicial y límites perceptivos](evidencia/pruebas-work2.json).
-- Código: `portable-site/src/soares/`; procedimientos: `tools/soares/`; registro candidato: `validation/soares-candidate.json`. Texto completo preservado privadamente; datos de recuperación en el estado.
-
-Para reanudar prevalece ESTADO_DE_TRABAJO.md: siguiente etapa Work 3, con derechos, alineación y aceptación integral pendientes.
-
-
-## Checkpoint de Work 3
-
-- [Validación integral, correcciones, métodos y límites](WORK_3_VALIDACION.md).
-- [Colación académica final](evidencia/colacion-work3.json), [comparación acústica sin activar](evidencia/acustica-work3.json) y [revisiones/hashes de modelos](evidencia/modelos-work3.json).
-- [Pruebas locales y CI](evidencia/pruebas-work3.json).
-- Recuperación del documento privado v1 y paquete acústico v4 y próximo paso exacto en ESTADO_DE_TRABAJO.md. No repetir reconstrucción ni ASR conservados.
-
-
-Reanudación actual: [CTC completo y contraste numérico](evidencia/ctc-work3.json), [controles](evidencia/controles-ctc-work3.json). 194 candidatos, 122 unidades corroboradas por la regla y 72 para revisión, sin activar tiempos. Paquete privado v4 con 80 extractos actuales y material histórico preservado. [Aclaración de condiciones de publicación](RECURSOS_Y_FUENTES.md).
+Las decisiones técnicas e investigaciones anteriores se preservan como evidencia histórica. Ninguna referencia antigua a «publicación bloqueada» prevalece sobre este estado actual. No se realizaron nuevas pruebas acústicas ni visuales por decisión del responsable.
