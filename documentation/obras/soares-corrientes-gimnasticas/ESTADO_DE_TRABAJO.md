@@ -1,3 +1,15 @@
+## Recuperación tras interrupción · 07-11-2026 · protección de materiales
+
+- Se verificó PR #79 abierta/en borrador, HEAD de ingreso `fd836b13ded07b47919c691d05bf8de19c528d8c`, con GitHub Actions `42382481847` **completed/success**. El modo aproximado de párrafos decidido el 07-11 sigue vigente; no se retomaron las rondas de escucha ni el CTC.
+- Se encontró que el último commit había versionado por error `portable-site/public/assets/soares-private/reader-document.json`, que contiene el capítulo académico reconstruido. **Corrección:** archivo retirado del árbol activo en `91538503bbd2508fc92650c0e192d3365bf30355`; `.gitignore` ampliado en `3337c575c843956668158a0bca8053aba541a8a9`. El documento local fijado por hash en la biblioteca privada **no se elimina ni modifica**.
+- Salvaguardas introducidas: `test:soares` falla si encuentra archivos en `public/assets/soares-private` (commit `1b64dbbd306d0660786d63a0ee9148baaf5132e8`); `verify:build` falla si el dist ordinario raíz o Pages incluye el directorio privado (commit `ddfc6fd560a034090164940e84e97fd3c89315c4`). No se alteró el lector, las marcas VTT ni las obras existentes.
+- **Límite importante:** retirar un archivo del árbol actual **no purga su contenido del historial de commits ni de los cachés de GitHub**. El commit `fd836b1…` fue publicado en una rama de un repositorio público. Antes de dar por resuelto ese aspecto, se debe evaluar un procedimiento de limpieza del historial compatible con la preservación de la PR y del trabajo ajeno; no se ha reescrito el historial ni forzado una rama.
+- Se inspeccionó la regla compartida de `prefers-reduced-motion`: ya desactiva transición y animación del botón canónico en Soares. **No corresponde modificarla ni declarar superada G7 por esa inspección estática.** El zoom real y la emulación perceptiva siguen pendientes.
+- **I04 sigue abierta:** las condiciones de publicación de capítulo/traducción, audio y retrato no están asentadas. Por ello, se mantiene la PR en borrador y el catálogo en `preparation`, sin fusionar ni desplegar el candidato con materiales restringidos.
+- Tras estos cambios, se requiere comprobar CI del nuevo HEAD y el árbol privado ausente. Este hito no declara pruebas visuales ni derechos resueltos.
+
+---
+
 # Estado de trabajo · Soares · Seguimiento aproximado por párrafos (decisión 07-11-2026)
 
 **Estado actual — prevalece sobre los checkpoints históricos que siguen debajo.** El responsable del proyecto decidió **adoptar directamente el resaltado por párrafos a partir del VTT, sin una nueva ronda de pruebas acústicas ni escucha de muestras**. Esa decisión no convierte los intervalos en tiempos auditivamente validados. La prueba de 4 escuchas y la validación por oración dejan de ser requisitos del desarrollo elegido.
