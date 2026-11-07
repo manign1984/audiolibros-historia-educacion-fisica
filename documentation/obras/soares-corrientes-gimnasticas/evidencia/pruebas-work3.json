@@ -1,0 +1,358 @@
+{
+  "commitUnderTest": "0f49702dc9fcaac2c13ffe6eea709f3a92e4a820",
+  "date": "2026-11-06",
+  "automatic": [
+    {
+      "label": "test-library",
+      "command": [
+        "npm",
+        "run",
+        "test:library"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 0.243,
+      "logSha256": "1fb00641dce551a88cade743c745d82df9019bba13be290fada5636f96bf2289"
+    },
+    {
+      "label": "test-two-works",
+      "command": [
+        "npm",
+        "run",
+        "test:two-works"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 0.342,
+      "logSha256": "f6b191f52ec8fe839f8489659949965e635a9525391b6de52918fea35221c087"
+    },
+    {
+      "label": "test-reader-runtime",
+      "command": [
+        "npm",
+        "run",
+        "test:reader-runtime"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 24.559,
+      "logSha256": "ce6cb3f0e48d84e1f306dd0aeb33e33aee87b238117df3d178899bc2efa7e39f"
+    },
+    {
+      "label": "test-hobsbawm",
+      "command": [
+        "npm",
+        "run",
+        "test:hobsbawm"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 0.222,
+      "logSha256": "55c1b91b9875e8b6f57280b1e91b55a9027e5802f5a6bc1117b0cb120f350f6e"
+    },
+    {
+      "label": "test-aisenstein",
+      "command": [
+        "npm",
+        "run",
+        "test:aisenstein"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 0.205,
+      "logSha256": "2c2835d87043ea580a9fc38bee952eac8625b5386d532e4df5bb28b3f486991e"
+    },
+    {
+      "label": "test-marcaida",
+      "command": [
+        "npm",
+        "run",
+        "test:marcaida"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 0.585,
+      "logSha256": "87a453a1000e46c42626423bcaf15f483507f8c981df319c0dc835b7a212e70b"
+    },
+    {
+      "label": "test-scharagrodsky",
+      "command": [
+        "npm",
+        "run",
+        "test:scharagrodsky"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 0.58,
+      "logSha256": "6475a6ab5169ec0f4876ac20429175c7a97373045315b1741b70dbfebe7a6ae8"
+    },
+    {
+      "label": "test-work-validation",
+      "command": [
+        "npm",
+        "run",
+        "test:work-validation"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 0.382,
+      "logSha256": "337de22522568cf8d38189d5e7153d03ecaf98317e71d83861e4320e2b143e52"
+    },
+    {
+      "label": "test-soares",
+      "command": [
+        "npm",
+        "run",
+        "test:soares"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 3.065,
+      "logSha256": "590d758e860c4918ad55f76142a226a95317d4941f52accd9b0ba09d2779bd59"
+    },
+    {
+      "label": "validate-works",
+      "command": [
+        "npm",
+        "run",
+        "validate:works"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 1.287,
+      "logSha256": "cdbdd9d0a85a0027634577f62560a140f36e6d59df959def4fe45cdab2ae616b"
+    },
+    {
+      "label": "ordinary-root-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 1.778,
+      "logSha256": "c2ec4f2a4e6de8369b921b0666354927ba021a650d3d21129a1cad770dc5f955"
+    },
+    {
+      "label": "ordinary-root-verify",
+      "command": [
+        "npm",
+        "run",
+        "verify:build"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 0.22,
+      "logSha256": "50081dac3dab7f6755478c263d1854e4671a845fcbeb317363f86f2eb174677f"
+    },
+    {
+      "label": "ordinary-root-references",
+      "command": [
+        "npm",
+        "run",
+        "validate:works",
+        "--",
+        "--dist",
+        "dist"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 1.199,
+      "logSha256": "f215cfcbb92ae1f2be3d456377b7d5c08fb8ce89344fb830834f20906587d883"
+    },
+    {
+      "label": "ordinary-root-private-material-isolation",
+      "passed": true,
+      "privateFiles": 0,
+      "scope": "full-file SHA scan of ordinary dist plus private-directory presence"
+    },
+    {
+      "label": "ordinary-pages-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "environment": {
+        "GITHUB_PAGES_BASE": "/audiolibros-historia-educacion-fisica/"
+      },
+      "exitCode": 0,
+      "seconds": 1.689,
+      "logSha256": "e8ba6083b57c38bee8d2f4a5a5c7b2231357e63bbc5f6a9b63a335a3d70def89"
+    },
+    {
+      "label": "ordinary-pages-verify",
+      "command": [
+        "npm",
+        "run",
+        "verify:build"
+      ],
+      "environment": {
+        "GITHUB_PAGES_BASE": "/audiolibros-historia-educacion-fisica/"
+      },
+      "exitCode": 0,
+      "seconds": 0.208,
+      "logSha256": "09e3745edf1379a5b0a4873efe4c83a4658b5586904b8d042f1e9f06e15e703d"
+    },
+    {
+      "label": "ordinary-pages-references",
+      "command": [
+        "npm",
+        "run",
+        "validate:works",
+        "--",
+        "--dist",
+        "dist"
+      ],
+      "environment": {
+        "GITHUB_PAGES_BASE": "/audiolibros-historia-educacion-fisica/"
+      },
+      "exitCode": 0,
+      "seconds": 1.069,
+      "logSha256": "f215cfcbb92ae1f2be3d456377b7d5c08fb8ce89344fb830834f20906587d883"
+    },
+    {
+      "label": "ordinary-pages-private-material-isolation",
+      "passed": true,
+      "privateFiles": 0,
+      "scope": "full-file SHA scan of ordinary dist plus private-directory presence"
+    },
+    {
+      "label": "candidate-root-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "environment": {
+        "SOARES_LOCAL_CANDIDATE": "1"
+      },
+      "exitCode": 0,
+      "seconds": 1.908,
+      "logSha256": "147bb6758eb7dcc849473c53ccbf661c47b4e08db60a7531116f5c32f8e78d98"
+    },
+    {
+      "label": "candidate-root-verify",
+      "command": [
+        "npm",
+        "run",
+        "verify:build"
+      ],
+      "environment": {
+        "SOARES_LOCAL_CANDIDATE": "1"
+      },
+      "exitCode": 0,
+      "seconds": 0.215,
+      "logSha256": "50081dac3dab7f6755478c263d1854e4671a845fcbeb317363f86f2eb174677f"
+    },
+    {
+      "label": "candidate-root-references",
+      "command": [
+        "npm",
+        "run",
+        "validate:works",
+        "--",
+        "--dist",
+        "dist"
+      ],
+      "environment": {
+        "SOARES_LOCAL_CANDIDATE": "1"
+      },
+      "exitCode": 0,
+      "seconds": 1.1,
+      "logSha256": "f24ca0b5cec5527c614dc119f6c24b53ce76f77ac02e3afdd1d188aa926f24a1"
+    },
+    {
+      "label": "candidate-root-private-material-isolation",
+      "passed": true,
+      "privateFiles": 5,
+      "scope": "full-file SHA scan of ordinary dist plus private-directory presence"
+    },
+    {
+      "label": "candidate-pages-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "environment": {
+        "SOARES_LOCAL_CANDIDATE": "1",
+        "GITHUB_PAGES_BASE": "/audiolibros-historia-educacion-fisica/"
+      },
+      "exitCode": 0,
+      "seconds": 1.88,
+      "logSha256": "1e8c7c1c7ebd31d8127ac7a7a8692ae0e9427cc4cbfc37a2c951e61f7f47bf91"
+    },
+    {
+      "label": "candidate-pages-verify",
+      "command": [
+        "npm",
+        "run",
+        "verify:build"
+      ],
+      "environment": {
+        "SOARES_LOCAL_CANDIDATE": "1",
+        "GITHUB_PAGES_BASE": "/audiolibros-historia-educacion-fisica/"
+      },
+      "exitCode": 0,
+      "seconds": 0.228,
+      "logSha256": "09e3745edf1379a5b0a4873efe4c83a4658b5586904b8d042f1e9f06e15e703d"
+    },
+    {
+      "label": "candidate-pages-references",
+      "command": [
+        "npm",
+        "run",
+        "validate:works",
+        "--",
+        "--dist",
+        "dist"
+      ],
+      "environment": {
+        "SOARES_LOCAL_CANDIDATE": "1",
+        "GITHUB_PAGES_BASE": "/audiolibros-historia-educacion-fisica/"
+      },
+      "exitCode": 0,
+      "seconds": 1.091,
+      "logSha256": "f24ca0b5cec5527c614dc119f6c24b53ce76f77ac02e3afdd1d188aa926f24a1"
+    },
+    {
+      "label": "candidate-pages-private-material-isolation",
+      "passed": true,
+      "privateFiles": 5,
+      "scope": "full-file SHA scan of ordinary dist plus private-directory presence"
+    },
+    {
+      "label": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "environment": {},
+      "exitCode": 0,
+      "seconds": 0.003,
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "browserEvidence": "../WORK_3_VALIDACION.md",
+  "humanListening": false,
+  "syncReady": false,
+  "publication": false,
+  "additionalChecks": {
+    "pythonScriptsSyntax": "passed",
+    "pdfCharacterCensusRecheck": "passed; identical to documento-work2.json",
+    "preservedSixPreviousWarnings": true,
+    "ordinaryBuildPrivacyScan": "whole-file SHA and directory presence; not a general exfiltration proof",
+    "npmCiAfterChecks": "exit 0; 72 pinned packages installed in 2 s; package/lock unchanged",
+    "acousticProcedureReuse": "exit 0; complete tiny result reused without repeating ASR",
+    "documentationLinksAndJson": "passed"
+  },
+  "remoteCI": {
+    "sha": "0f49702dc9fcaac2c13ffe6eea709f3a92e4a820",
+    "runId": 42281356936,
+    "status": "completed",
+    "conclusion": "success"
+  }
+}

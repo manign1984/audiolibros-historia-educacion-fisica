@@ -1,5 +1,13 @@
 # Matriz de fidelidad y procedencia
 
+## Revisión de Soares · Work 3 · 06/11/2026
+
+Por autorización de continuar a Work 3 se corrigen únicamente estilos propios de Soares: contraste de cursivas en Créditos, alineación de filas de Contexto, fuente y corte accesible del título del lector, y colores del botón canónico. Geometría, motor común y claves de otras obras preservados. Colación documental final, evidencia ASR candidata, revisión móvil y regresiones guardadas en [WORK_3_VALIDACION.md](obras/soares-corrientes-gimnasticas/WORK_3_VALIDACION.md). Los tiempos no se activan: hay discrepancias medibles y revisión pendiente. Redistribución sin acreditar, zoom/movimiento reducido en navegador pendientes; PR abierta en borrador, sin integración ni publicación.
+
+## Candidato local de Soares · Work 2 · 06/11/2026
+
+Por pedido explícito se implementa el recorrido de Soares en la rama de obra, con cinco bloques y siete pantallas. La ruta ordinaria permanece en preparación; el candidato con materiales académicos se compila solo mediante opt-in local, mientras no se acrediten las condiciones de redistribución. No se fusiona ni publica. Lector, claves y documentos anteriores sin modificaciones. Cambios comunes: únicamente nueva raíz en selectores de Lectura y nueva clave en créditos. Regresión funcional de las seis obras y builds raíz/Pages aprobados. El documento local conserva siete apartados, 29 notas y 47 referencias; sincronización pendiente. Alcance y recuperación en [obras/soares-corrientes-gimnasticas/ESTADO_DE_TRABAJO.md](obras/soares-corrientes-gimnasticas/ESTADO_DE_TRABAJO.md).
+
 ## Incorporación de Scharagrodsky · 06/11/2026
 
 Por solicitud explícita se completa la rama iniciada: capítulo íntegro con 29 notas y 86 referencias, MP3 original, alineación acústica sin interpolación, cinco bloques/seis pantallas y acceso desde catálogo. Procedencia, limitaciones y aceptación en [SCHARAGRODSKY_2026.md](SCHARAGRODSKY_2026.md). Se conservan los originales de Drive y los archivos previos de guion/VTT. Los cinco registros anteriores de `validation/works.json` permanecen idénticos.

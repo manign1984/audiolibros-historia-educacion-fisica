@@ -1,0 +1,16 @@
+{
+  "method": "Independent ordered lexical collation against original full TXT, excluding digits/punctuation; PDF character census remains separate",
+  "txtSha256": "52f8ef8fe5b41624dc8f51f844d247f0c9f962e47f78ca19e8967b792d4d5dae",
+  "academicSha256": "291e552ae0348c77e1f15d60e8df046c7fe633a8942bdc75aa9f5a11f016adc1",
+  "bodyLexicalTokens": 6422,
+  "bodySequenceEqual": true,
+  "notesCompared": 29,
+  "allNotesEqual": true,
+  "bibliographyLexicalTokens": 861,
+  "bibliographySequenceEqual": true,
+  "txtLayoutRepairs": [
+    "separate notes 20/21",
+    "separate notes 24/25"
+  ],
+  "humanListening": false
+}

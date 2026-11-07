@@ -1,6 +1,20 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  soares: {
+    references: [
+      <>Soares, C. L. (2006). Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y permanencias. En R. Rozengardt (Coord.), <em>Apuntes de historia para profesores de Educación Física</em> (pp. 223–242). Miño y Dávila.</>,
+      <>Versión en español de Esteban Manuel Barcelona. Copia de cátedra de 16 páginas, con 29 notas y bibliografía.</>,
+      link('https://www.metmuseum.org/art/collection/search/291656', 'Georges Demeny, [Fencer], 1906 · The Metropolitan Museum of Art, 2010.1'),
+      link('https://portal.fe.unicamp.br/noticias/nota-de-falecimento-profa-carmen-lucia-soares/', 'Facultad de Educación · UNICAMP · Retrato y trayectoria'),
+    ],
+    rights: [
+      <>Fotografía de Demeny: dominio público. Crédito: Purchase, Alfred Stieglitz Society Gifts, 2010.</>,
+      <>Texto y traducción: edición de cátedra enlazada en su origen. Audiolibro: acceso institucional. El recorrido integrado permanece en preparación; no se declara licencia abierta ni se reproduce el retrato sin condiciones documentadas.</>,
+      <>El audio abrevia referencias. Las notas y la bibliografía se conservan en la lectura y no se narran.</>,
+      <>Contexto: síntesis didácticas del proyecto. +TEC · Universidad Nacional de Hurlingham.</>,
+    ],
+  },
   scharagrodsky: {
     references: [
       <>Scharagrodsky, P. A. (2011). La constitución de la educación física escolar en la Argentina. Tensiones, conflictos y disputas con la matriz militar en las primeras décadas del siglo XX. En P. Scharagrodsky (Comp.), <em>La invención del homo gymnasticus: Fragmentos históricos sobre la educación de los cuerpos en movimiento en Occidente</em>. Prometeo.</>,

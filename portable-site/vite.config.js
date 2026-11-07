@@ -1,3 +1,4 @@
+import { soaresLocalCandidate } from './scripts/soares-local-candidate.mjs';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
@@ -34,7 +35,7 @@ function libraryMetadata() {
 
 export default defineConfig({
   base,
-  plugins: [libraryMetadata(), preservePublicAssetPaths(), react()],
+  plugins: [soaresLocalCandidate(), libraryMetadata(), preservePublicAssetPaths(), react()],
   build: {
     rollupOptions: {
       input: {

@@ -1,0 +1,15 @@
+{
+  "pdfSha256": "c81a7c039eb231ef183697761ea6e01fd7e0d4715309aff65ed769b5c8d10b45",
+  "academicSha256": "291e552ae0348c77e1f15d60e8df046c7fe633a8942bdc75aa9f5a11f016adc1",
+  "documentSha256": "7ae2eb3dc0384547ef1d03f4d441e8d1093587e07ed97d6c7929f359db5aa40b",
+  "characterCensus": "equal excluding whitespace and discretionary hyphens",
+  "bodySentences": 185,
+  "paragraphs": 70,
+  "sections": 7,
+  "notes": 29,
+  "bibliography": 47,
+  "allNoteCallsResolved": true,
+  "activeTimings": 0,
+  "visualProof": false,
+  "humanListening": false
+}

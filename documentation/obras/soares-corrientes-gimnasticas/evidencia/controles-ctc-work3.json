@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-06",
+  "incompleteReportRejectedBeforeWrite": true,
+  "concurrentWriterRejected": true,
+  "pythonSyntax": "passed",
+  "soaresRuntimeWithRealSources": "passed",
+  "localCandidateBuild": "passed; hashes enforced",
+  "applicationModified": false,
+  "browserLimits": [
+    "native input failed: AT-SPI unavailable",
+    "internal settings blocked by URL policy; not bypassed"
+  ],
+  "humanListening": false,
+  "syncReady": false,
+  "publication": false,
+  "fullCtcCompleted": true,
+  "chunks": 111,
+  "vttWordsAligned": 6390,
+  "academicUnitsMapped": 194,
+  "numericReportReproducedByteIdentical": true,
+  "ctcReviewClips": 80,
+  "ctcReviewClipsDecode": "passed",
+  "whisperRepeated": false,
+  "sourceFilesChanged": false,
+  "readerTimingsActivated": false
+}
