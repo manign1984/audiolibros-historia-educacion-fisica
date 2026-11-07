@@ -10,8 +10,8 @@ export const creditsContent = {
     ],
     rights: [
       <>Fotografía de Demeny: dominio público. Crédito: Purchase, Alfred Stieglitz Society Gifts, 2010.</>,
-      <>Texto y traducción: edición de cátedra enlazada en su origen. Audiolibro: acceso institucional. El recorrido integrado permanece en preparación; no se declara licencia abierta ni se reproduce el retrato sin condiciones documentadas.</>,
-      <>El audio abrevia referencias. Las notas y la bibliografía se conservan en la lectura y no se narran.</>,
+      <>Texto y traducción de la edición utilizada: copia de cátedra incorporada al lector. Audiolibro: grabación del proyecto alojada en Drive, cuyo acceso puede requerir una cuenta habilitada. No se declara licencia abierta.</>,
+      <>El audio abrevia referencias. Las notas y la bibliografía están disponibles en la lectura y no se narran. El seguimiento por párrafos es aproximado.</>,
       <>Contexto: síntesis didácticas del proyecto. +TEC · Universidad Nacional de Hurlingham.</>,
     ],
   },
