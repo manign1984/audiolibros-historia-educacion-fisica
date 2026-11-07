@@ -133,7 +133,11 @@ const pilotDoc = {
       { id: 'soa-introduccion-p2', sentences: [{ id: 'soa-introduccion-p2-s1', text: 'Primera oración del segundo párrafo.' }] },
     ],
   }],
-  endnotes: [{ number: 1, text: 'Nota académica de ensayo', sentenceId: 'soa-introduccion-p1-s1', page: 1 }],
+  endnotes: [
+    { number: 1, text: 'Nota del título', sentenceId: 'soa-title', page: 1 },
+    { number: 2, text: 'Nota del apartado', sentenceId: 'soa-introduccion-heading', page: 2 },
+    { number: 3, text: 'Nota del cuerpo', sentenceId: 'soa-introduccion-p1-s1', page: 3 },
+  ],
   bibliography: ['Referencia de ensayo'],
   sourceNote: 'Ensayo local no publicado.',
 };
@@ -144,9 +148,15 @@ assert.equal(document.querySelectorAll('.reader-paragraph-unit.is-active').lengt
 assert.equal(document.querySelector('.reader-paragraph-unit.is-active')?.getAttribute('data-reader-sentence'), 'soa-introduccion-p1');
 await updateTime(120);
 assert.equal(document.querySelector('.reader-paragraph-unit.is-active')?.getAttribute('data-reader-sentence'), 'soa-introduccion-p2');
-await click(byLabel('Consultar nota editorial 1 de la edición de Soares'));
-assert.equal(document.activeElement.id, 'reader-editorial-note-1');
-await click(byText('#reader-editorial-note-1 button', 'Volver al pasaje'));
+for (const [number, expected] of [[1, 'reader-document-title'], [2, 'reader-section-introduccion'], [3, 'soa-introduccion-p1']]) {
+ await click(byLabel(`Consultar nota editorial ${number} de la edición de Soares`));
+ assert.equal(document.activeElement.id, `reader-editorial-note-${number}`);
+ await click(byText(`#reader-editorial-note-${number} button`, 'Volver al pasaje'));
+ const focused = document.activeElement;
+ if (number === 1) assert.equal(focused.id, expected);
+ else if (number === 2) assert.equal(focused.closest('section')?.id, expected);
+ else assert.equal(focused.closest('[data-reader-sentence]')?.getAttribute('data-reader-sentence'), expected);
+}
 assert.ok(!window.localStorage.getItem(pilotConfig.storage.notesKey) || JSON.parse(window.localStorage.getItem(pilotConfig.storage.notesKey)).length === 0);
 assert.equal(JSON.parse(window.localStorage.getItem(config.storage.notesKey))[0].text, 'Comentario sintético Soares');
 await unmount();
