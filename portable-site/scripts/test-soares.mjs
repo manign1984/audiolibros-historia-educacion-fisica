@@ -1,11 +1,17 @@
 import assert from 'node:assert/strict';
-import { readFile, access } from 'node:fs/promises';
+import { readFile, access, readdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { buildSoaresDocument } from '../src/soares/buildReadingDocument.js';
 import { soaresReaderConfig as config } from '../src/soares/readerConfig.js';
 import { soaresParagraphPreviewConfig as candidate } from '../src/soares/paragraphPreviewConfig.js';
 import { catalog } from '../src/biblioteca/catalog.js';
 const manifest=JSON.parse(await readFile('../validation/soares-candidate.json','utf8'));
+// I04: el repositorio público no puede contener el capítulo, narración ni retrato privados.
+const accidentallyPublic = await readdir('public/assets/soares-private', { recursive: true }).catch(error => {
+  if (error.code === 'ENOENT') return [];
+  throw error;
+});
+assert.deepEqual(accidentallyPublic, [], 'Soares: materiales restringidos en public/assets/soares-private; usar exclusivamente .local/soares/');
 assert.equal(catalog.find(w=>w.id===config.workId).status,'preparation');
 assert.equal(config.sync.status,'pending');assert.equal(config.sync.unit,'sentence');
 assert.deepEqual(candidate.storage,manifest.storage);
