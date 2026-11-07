@@ -774,7 +774,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
                 key={editorialNote.number}
                 type="button"
                 className="reader-editorial-reference"
-                aria-label={`Consultar nota editorial ${editorialNote.number} de la edición de Marcaida y Scaltritti`}
+                aria-label={`Consultar nota editorial ${editorialNote.number} ${config.editorialReferenceLabel || 'de la edición de Marcaida y Scaltritti'}`}
                 onClick={() => showEditorialFootnote(editorialNote)}
                 title={`Nota académica ${editorialNote.number}, página ${editorialNote.page}; no forma parte del audiolibro`}
               ><sup>{editorialNote.number}</sup></button>)}
