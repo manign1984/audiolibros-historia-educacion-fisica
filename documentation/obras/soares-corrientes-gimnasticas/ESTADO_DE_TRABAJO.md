@@ -1,3 +1,18 @@
+## Decisión de avance sin controles · 07-11-2026
+
+El responsable solicitó avanzar **sin nuevas pruebas ni controles**. Se eligió una publicación editorial parcial, no la publicación ficticia de un lector integrado sin archivos públicos.
+
+- **Página pública preparada en la ruta canónica** `textos/soares-corrientes-gimnasticas/`: cinco bloques, siete pantallas; se reutilizan las composiciones académicas y la foto de Demeny de dominio público.
+- **Lectura pública:** acceso explícito al PDF original ya compartido por el responsable en Drive. El MP3 conserva su enlace original, identificado como acceso institucional; no se modifican sus permisos de Drive.
+- **Autora:** se conserva biografía y enlace académico; en la modalidad pública sin recursos privados se usa la identificación tipográfica, sin publicar el retrato de licencia no consignada.
+- **Lector integrado:** mantiene su implementación candidate y los 70 límites VTT de párrafo, pero sólo se activa cuando está presente el documento y los archivos del entorno privado. La versión pública aclara que no ofrece anotaciones ni sincronización.
+- **Seguridad editorial:** el JSON del capítulo, el MP3 y el retrato no se copian a la rama pública; el catálogo conserva el estado `preparation` hasta que el lector integral realmente se encuentre disponible. La página editorial ya permite explorar contenidos y consultar fuentes.
+- **Sin nuevas pruebas manuales ni de navegador** para esta decisión. No confundir la edición del contrato antiguo de test con la ejecución de una nueva evaluación.
+
+Esta publicación parcial no sustituye el objetivo de disponer de lectura, escucha y anotación integradas; deja la obra preparada para incorporarlas sin repetir el desarrollo, cuando pueda servirse el material completo.
+
+---
+
 ## Recuperación tras interrupción · 07-11-2026 · protección de materiales
 
 - Se verificó PR #79 abierta/en borrador, HEAD de ingreso `fd836b13ded07b47919c691d05bf8de19c528d8c`, con GitHub Actions `42382481847` **completed/success**. El modo aproximado de párrafos decidido el 07-11 sigue vigente; no se retomaron las rondas de escucha ni el CTC.
