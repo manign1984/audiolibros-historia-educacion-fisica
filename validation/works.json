@@ -466,6 +466,47 @@
           "public/assets/scharagrodsky-subtitulos-originales.vtt"
         ]
       ]
+    },
+    {
+      "id": "soares-corrientes-gimnasticas",
+      "config": {
+        "module": "src/soares/paragraphPreviewConfig.js",
+        "export": "soaresParagraphPreviewConfig"
+      },
+      "document": {
+        "module": "src/soares/reading-document.json",
+        "export": "default"
+      },
+      "page": "src/soares/SoaresApp.jsx",
+      "main": "src/soares/main.jsx",
+      "creditsKey": "soares",
+      "storage": {
+        "notesKey": "soares-corrientes-gimnasticas-paragraph-notes-v1",
+        "stateKey": "soares-corrientes-gimnasticas-paragraph-state-v1"
+      },
+      "sync": {
+        "unit": "paragraph",
+        "status": "paragraph-preview",
+        "review": "Seguimiento aproximado de 70 párrafos derivado del VTT original, sin escucha humana nueva; el audio se ofrece desde Google Drive y puede requerir acceso institucional."
+      },
+      "materials": [
+        {
+          "path": "src/soares/reading-document.json",
+          "kind": "text",
+          "bytes": 89068,
+          "sha256": "6b08a51ed3e44dfef7048fb891a3a05f682dbea0fcdb547bcedd049335fbd41f"
+        },
+        {
+          "path": "public/assets/soares/chapter.pdf",
+          "kind": "pdf",
+          "bytes": 247142,
+          "sha256": "c81a7c039eb231ef183697761ea6e01fd7e0d4715309aff65ed769b5c8d10b45"
+        }
+      ],
+      "externalAudioUrl": "https://drive.google.com/uc?export=download&id=1KAthUKiHsNqHg8sYIwPqzvJNgbGGbkt-",
+      "audioDuration": 3113.377959,
+      "audioSha256": "f9c4226ec5794a959d77d6f97b523eabadb0dcdc272bbec9c9e1b04d9a019b37",
+      "documentSha256": "fe16dc8ca6ad8475cada4f386baf735539294259eb4ac54fab112fa8e646f4ad"
     }
   ],
   "baseline": {
