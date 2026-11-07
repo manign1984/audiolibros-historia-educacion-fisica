@@ -6,12 +6,12 @@ import { soaresReaderConfig as config } from '../src/soares/readerConfig.js';
 import { soaresParagraphPreviewConfig as candidate } from '../src/soares/paragraphPreviewConfig.js';
 import { catalog } from '../src/biblioteca/catalog.js';
 const manifest=JSON.parse(await readFile('../validation/soares-candidate.json','utf8'));
-// I04: el repositorio público no puede contener el capítulo, narración ni retrato privados.
+// Ruta obsoleta del candidato privado: evitar duplicados accidentales en public.
 const accidentallyPublic = await readdir('public/assets/soares-private', { recursive: true }).catch(error => {
   if (error.code === 'ENOENT') return [];
   throw error;
 });
-assert.deepEqual(accidentallyPublic, [], 'Soares: materiales restringidos en public/assets/soares-private; usar exclusivamente .local/soares/');
+assert.deepEqual(accidentallyPublic, [], 'Soares: la ruta obsoleta soares-private debe permanecer vacía; los recursos vigentes usan rutas explícitas');
 assert.equal(catalog.find(w=>w.id===config.workId).status,'review');
 assert.equal(config.sync.status,'pending');assert.equal(config.sync.unit,'sentence');
 assert.deepEqual(candidate.storage,manifest.storage);
