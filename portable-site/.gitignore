@@ -13,3 +13,4 @@ public/assets/*.download
 
 # Soares: materiales locales, hasta acreditar redistribución
 .local/
+public/assets/soares-private/
