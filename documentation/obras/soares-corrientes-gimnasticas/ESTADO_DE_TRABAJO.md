@@ -1,3 +1,13 @@
+## Presentación pública de disponibilidad · 07-11-2026
+
+**Decisión de catálogo:** Soares se presenta con la misma etiqueta **«Leer + escuchar»** que las obras con recorrido de lectura y audio publicado. La implementación del lector y del MP3 web en 12 fragmentos está integrada en GitHub Pages (despliegue exitoso de la ejecución #42405489189). En `portable-site/src/biblioteca/plannedWorks.js`, la obra pasa de `review` a `available`.
+
+**Distinción imprescindible:** la disponibilidad técnica del lector no significa que el seguimiento VTT haya adquirido validación acústica por oración. Por eso el subtítulo de la tarjeta utiliza **«Seguimiento aproximado por párrafos»** en vez del mensaje genérico **«Lectura sincronizada»**. La propia página y la configuración del lector conservan este alcance. No se cambian marcas temporales, duración, archivos de audio ni capacidades de anotación.
+
+Esta decisión reemplaza las indicaciones históricas que prescriben «Edición en revisión» como estado visible de Soares; los antecedentes del proceso se conservan como bitácora.
+
+---
+
 ## Corrección del despliegue de audio · Etapa 1/2 · 07-11-2026
 
 **Incidencia recuperada:** el commit `90c1ffcf` introdujo correctamente los 12 fragmentos del audio y la configuración `audiobookParts` de Soares, pero **GitHub Pages no los publicó**: su job de validación falló por conservar en `validation/works.json` la declaración antigua de audio remoto (`externalAudioUrl`). El CI falló en `test:library` por contar seis recorridos cuando el catálogo ya tenía siete lecturas accesibles o en revisión. No debe interpretarse que la existencia de fragmentos en `main` implique su despliegue.
