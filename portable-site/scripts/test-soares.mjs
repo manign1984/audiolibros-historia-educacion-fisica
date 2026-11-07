@@ -19,7 +19,7 @@ assert.equal(candidate.sync.unit,manifest.sync.unit);
 assert.equal(candidate.sync.status,manifest.sync.status);
 assert.equal(candidate.sync.paragraphTimings.length,manifest.sync.activeTimings);
 const prior=JSON.parse(await readFile('../validation/works.json','utf8'));
-for(const w of prior.works)for(const key of Object.values(w.storage))assert.ok(!Object.values(candidate.storage).includes(key));
+for(const w of prior.works.filter(work => work.id !== config.workId))for(const key of Object.values(w.storage))assert.ok(!Object.values(candidate.storage).includes(key), 'Claves de Soares independientes de otras obras.');
 const correspondence=JSON.parse(await readFile('../documentation/obras/soares-corrientes-gimnasticas/evidencia/correspondencia-work2.json','utf8'));
 assert.equal(correspondence.cueCount,593);assert.equal(correspondence.units,194);
 for(const e of Object.values(correspondence.evidence)) {
