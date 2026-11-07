@@ -5,9 +5,8 @@ import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
 import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import IntegratedReader from '../IntegratedReader.jsx';
-import { soaresPrivateAsset } from './readerConfig.js';
 import { soaresParagraphPreviewConfig } from './paragraphPreviewConfig.js';
-import SoaresReadingAccess from './SoaresReadingAccess.jsx';
+import readingDocument from './reading-document.json' with { type: 'json' };
 // Decisión editorial: el candidato de Soares sigue el audio por párrafos estimados del VTT.
 import './soares.css';
 
@@ -17,7 +16,7 @@ const currents = [
   { name:'Alemana', knowledge:'Propuestas pedagógicas, patrióticas y escolares con fundamentos y destinatarios diferentes', aims:'Formación integral, defensa patriótica y lugar escolar del ejercicio y sus docentes', tensions:'Diferencias entre Guts Muths, Jahn y Spiess; prescripciones diferenciadas para mujeres y varones' },
 ];
 const bio='Carmen Lucia Soares fue profesora titular de la Universidad Estadual de Campinas y doctora en Educación. Investigó la historia de la educación del cuerpo, la gimnasia y la higiene, relacionando prácticas corporales, saberes científicos y pedagogías. Sus trabajos permiten comprender cómo se construyeron formas de educar el cuerpo y cómo esas historias interpelan la formación docente y las prácticas del presente.';
-export default function SoaresApp({ readingDocument }) {
+export default function SoaresApp() {
   const { active, progress } = useJourneyNavigation();
   const [toast,setToast]=useState('');
   return <div className="soares-page">
@@ -36,7 +35,7 @@ export default function SoaresApp({ readingDocument }) {
       </section>
       <section id="autor" className="so-screen so-author" aria-label="Sobre Carmen Lucia Soares">
         <AuthorBiography name="Carmen Lucia Soares" initial="CS" role="Historia de la educación del cuerpo · Gimnasia e higiene" summary={bio}
-          image={readingDocument ? soaresPrivateAsset('portrait.jpeg') : undefined} imageAlt="Retrato de Carmen Lucia Soares" credit={readingDocument ? "Retrato: Facultad de Educación, UNICAMP. Biografía: FEF y Rectoría, UNICAMP, 2026." : "Información biográfica: FEF y Rectoría, UNICAMP (2026). Retrato no reproducido en esta vista."} biographyUrl="https://www.fef.unicamp.br/graduacao/corpodocente/"/>
+          image="https://portal.fe.unicamp.br/wp-content/uploads/sites/66/2026/05/WhatsApp-Image-2026-05-23-at-2.22.57-PM-1.jpeg" imageAlt="Retrato de Carmen Lucia Soares" credit="Retrato: Facultad de Educación, UNICAMP. Biografía: FEF y Rectoría, UNICAMP, 2026." biographyUrl="https://www.fef.unicamp.br/graduacao/corpodocente/"/>
       </section>
       <section id="contexto" aria-label="Contexto: tres perspectivas de estudio">
         <div className="so-screen so-context" aria-labelledby="so-calculable">
@@ -69,9 +68,7 @@ export default function SoaresApp({ readingDocument }) {
         </div>
       </section>
       <section id="lectura" className="so-screen hb-material-reading" aria-labelledby="journey-reading-title">
-        {readingDocument
-          ? <IntegratedReader readingDocument={readingDocument} config={soaresParagraphPreviewConfig} showToast={setToast} Launcher={CanonicalReadingEntry}/>
-          : <SoaresReadingAccess/>}
+        <IntegratedReader readingDocument={readingDocument} config={soaresParagraphPreviewConfig} showToast={setToast} Launcher={CanonicalReadingEntry}/>
       </section>
       <JourneyCredits workId="soares"/>
     </main>
