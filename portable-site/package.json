@@ -23,7 +23,7 @@
     "test:marcaida": "node scripts/prepare-marcaida-assets.mjs && node scripts/test-marcaida.mjs && node scripts/test-marcaida-sync-review.mjs",
     "validate:works": "node scripts/validate-works.mjs",
     "test:work-validation": "node scripts/test-work-validation.mjs",
-    "test:soares": "node scripts/test-soares.mjs && node scripts/test-soares-runtime.mjs"
+    "test:soares": "node scripts/test-soares.mjs && node scripts/test-soares-runtime.mjs && node scripts/test-soares-paragraph-preview.mjs && node scripts/test-soares-quickcheck.mjs"
   },
   "dependencies": {
     "@fontsource/archivo": "5.2.8",

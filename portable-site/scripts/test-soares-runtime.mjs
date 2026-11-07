@@ -14,7 +14,7 @@ let sourceDoc;
 try { sourceDoc=JSON.parse(await (await import('node:fs/promises')).readFile(`${rootPath}.local/soares/reader-document.json`,'utf8')); }
 catch(e) { if(e.code!=='ENOENT')throw e; }
 if(!sourceDoc) sourceDoc={id:'soares-corrientes-gimnasticas',title:'Texto sintético de prueba',author:'Autora de prueba',duration:3113.377959,frontMatter:[{id:'soa-title',role:'title',text:'Título de prueba'}],sections:Array.from({length:7},(_,i)=>({id:`apartado-${i}`,title:`Apartado ${i}`,paragraphs:[{id:`soa-p${i}`,sentences:[{id:`soa-p${i}-s1`,text:'Primera oración de prueba.'},{id:`soa-p${i}-s2`,text:'Segunda oración de prueba.'}]}]})),endnotes:Array.from({length:29},(_,i)=>({number:i+1,text:`Nota académica sintética ${i+1}`,sentenceId:'soa-p0-s1'})),bibliography:['Referencia sintética de prueba'],sourceNote:'Sin seguimiento automático.'};
-await writeFile(entryPath, `export { default as Reader } from ${JSON.stringify(`${rootPath}src/IntegratedReader.jsx`)};export { soaresReaderConfig } from ${JSON.stringify(`${rootPath}src/soares/readerConfig.js`)};export const soaresDocument=${JSON.stringify(sourceDoc)};`);
+await writeFile(entryPath, `export { default as Reader } from ${JSON.stringify(`${rootPath}src/IntegratedReader.jsx`)};export { soaresReaderConfig } from ${JSON.stringify(`${rootPath}src/soares/readerConfig.js`)};export { soaresParagraphPreviewConfig } from ${JSON.stringify(`${rootPath}src/soares/paragraphPreviewConfig.js`)};export const soaresDocument=${JSON.stringify(sourceDoc)};`);
 await build({
   configFile: false, root: rootPath, publicDir: false, logLevel: 'silent',
   plugins: [react()],
@@ -113,5 +113,52 @@ await cancelDialog();await updateTime(1800);await click(byLabel('Cerrar modo lec
 await new Promise(resolve=>window.setTimeout(resolve,500));await unmount();await mount(config,doc);
 assert.equal(document.querySelector('audio').currentTime,1800);assert.equal(document.querySelector('audio').paused,true);
 assert.equal(JSON.parse(window.localStorage.getItem(config.storage.notesKey))[0].text,'Comentario sintético Soares');
-await unmount();dom.window.close();await rm(outDir,{recursive:true,force:true});await rm(entryPath,{force:true});
-console.log('Soares runtime: notas 1/9/22/29, selección por oración, sin saltos/resaltado ficticio, anotación, exportación, guardado y restauración sin autoplay. DOM simulado, sin prueba perceptiva.');
+await unmount();
+
+// Segundo montaje aislado: VTT estimativo por párrafos, sin tocar las notas de la configuración habitual.
+const pilotConfig = fixture.soaresParagraphPreviewConfig;
+assert.equal(pilotConfig.sync.unit, 'paragraph');
+assert.equal(pilotConfig.sync.status, 'paragraph-preview');
+assert.equal(pilotConfig.sync.paragraphTimings.length, 70);
+assert.notEqual(pilotConfig.storage.notesKey, config.storage.notesKey);
+assert.notEqual(pilotConfig.storage.stateKey, config.storage.stateKey);
+const pilotDoc = {
+  id: config.workId, title: 'Texto de ensayo por párrafos', author: 'Autora de ensayo',
+  duration: 3113.377959, frontMatter: [{ id: 'soa-title', role: 'title', text: 'Título de ensayo' }],
+  sections: [{
+    id: 'introduccion', title: 'Introducción',
+    headingSentence: { id: 'soa-introduccion-heading', text: 'Introducción' },
+    paragraphs: [
+      { id: 'soa-introduccion-p1', sentences: [{ id: 'soa-introduccion-p1-s1', text: 'Primera oración del primer párrafo.' }] },
+      { id: 'soa-introduccion-p2', sentences: [{ id: 'soa-introduccion-p2-s1', text: 'Primera oración del segundo párrafo.' }] },
+    ],
+  }],
+  endnotes: [
+    { number: 1, text: 'Nota del título', sentenceId: 'soa-title', page: 1 },
+    { number: 2, text: 'Nota del apartado', sentenceId: 'soa-introduccion-heading', page: 2 },
+    { number: 3, text: 'Nota del cuerpo', sentenceId: 'soa-introduccion-p1-s1', page: 3 },
+  ],
+  bibliography: ['Referencia de ensayo'],
+  sourceNote: 'Ensayo local no publicado.',
+};
+await mount(pilotConfig, pilotDoc);
+assert.equal(document.querySelectorAll('.reader-paragraph-unit').length, 2);
+await updateTime(20);
+assert.equal(document.querySelectorAll('.reader-paragraph-unit.is-active').length, 1);
+assert.equal(document.querySelector('.reader-paragraph-unit.is-active')?.getAttribute('data-reader-sentence'), 'soa-introduccion-p1');
+await updateTime(120);
+assert.equal(document.querySelector('.reader-paragraph-unit.is-active')?.getAttribute('data-reader-sentence'), 'soa-introduccion-p2');
+for (const [number, expected] of [[1, 'reader-document-title'], [2, 'reader-section-introduccion'], [3, 'soa-introduccion-p1']]) {
+ await click(byLabel(`Consultar nota editorial ${number} de la edición de Soares`));
+ assert.equal(document.activeElement.id, `reader-editorial-note-${number}`);
+ await click(byText(`#reader-editorial-note-${number} button`, 'Volver al pasaje'));
+ const focused = document.activeElement;
+ if (number === 1) assert.equal(focused.id, expected);
+ else if (number === 2) assert.equal(focused.closest('section')?.id, expected);
+ else assert.equal(focused.closest('[data-reader-sentence]')?.getAttribute('data-reader-sentence'), expected);
+}
+assert.ok(!window.localStorage.getItem(pilotConfig.storage.notesKey) || JSON.parse(window.localStorage.getItem(pilotConfig.storage.notesKey)).length === 0);
+assert.equal(JSON.parse(window.localStorage.getItem(config.storage.notesKey))[0].text, 'Comentario sintético Soares');
+await unmount();
+dom.window.close();await rm(outDir,{recursive:true,force:true});await rm(entryPath,{force:true});
+console.log('Soares runtime: modo original sin resaltado y piloto por párrafos en DOM sintético, notas académicas, progreso, separación de claves. Sin prueba perceptiva.');

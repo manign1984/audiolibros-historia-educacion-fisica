@@ -1,15 +1,48 @@
 {
-  "schemaVersion":1,"id":"soares-corrientes-gimnasticas","state":"LOCAL_CANDIDATE_RIGHTS_BLOCKED",
-  "route":"textos/soares-corrientes-gimnasticas/","catalogStatus":"preparation",
-  "page":"src/soares/SoaresApp.jsx","main":"src/soares/main.jsx","config":"src/soares/readerConfig.js","builder":"src/soares/buildReadingDocument.js",
-  "screens":[1,1,3,1,1],"sync":{"unit":"sentence","status":"pending","activeTimings":0},
-  "storage":{"notesKey":"soares-corrientes-gimnasticas-reader-notes-v1","stateKey":"soares-corrientes-gimnasticas-reader-state-v1"},
-  "privateDocumentCheckpoint":"libfile_31d84354c2b08191bec4d2f86fb3c122",
-  "localInputs":{
-    "pdfSha256":"c81a7c039eb231ef183697761ea6e01fd7e0d4715309aff65ed769b5c8d10b45",
-    "mp3Sha256":"f9c4226ec5794a959d77d6f97b523eabadb0dcdc272bbec9c9e1b04d9a019b37",
-    "vttSha256":"ec0beaea889464cd05328c6e73fb80f36f3f8899ae99cc463fcefb82bc1e294f"
+  "schemaVersion": 1,
+  "id": "soares-corrientes-gimnasticas",
+  "state": "LOCAL_CANDIDATE_RIGHTS_BLOCKED",
+  "route": "textos/soares-corrientes-gimnasticas/",
+  "catalogStatus": "preparation",
+  "page": "src/soares/SoaresApp.jsx",
+  "main": "src/soares/main.jsx",
+  "config": "src/soares/readerConfig.js",
+  "builder": "src/soares/buildReadingDocument.js",
+  "screens": [
+    1,
+    1,
+    3,
+    1,
+    1
+  ],
+  "sync": {
+    "unit": "paragraph",
+    "status": "paragraph-preview",
+    "activeTimings": 70,
+    "source": "VTT-derived estimated paragraph boundaries",
+    "note": "No sentence-level verification; no human listening claimed."
   },
-  "promoteOnlyAfter":["redistribution conditions","G3","G7","Work 3 publication"],
-  "activeRegistry":"works.json unchanged: requires real public audio and accessible catalog work"
+  "storage": {
+    "notesKey": "soares-corrientes-gimnasticas-paragraph-notes-v1",
+    "stateKey": "soares-corrientes-gimnasticas-paragraph-state-v1"
+  },
+  "privateDocumentCheckpoint": "libfile_31d84354c2b08191bec4d2f86fb3c122",
+  "localInputs": {
+    "pdfSha256": "c81a7c039eb231ef183697761ea6e01fd7e0d4715309aff65ed769b5c8d10b45",
+    "mp3Sha256": "f9c4226ec5794a959d77d6f97b523eabadb0dcdc272bbec9c9e1b04d9a019b37",
+    "vttSha256": "ec0beaea889464cd05328c6e73fb80f36f3f8899ae99cc463fcefb82bc1e294f"
+  },
+  "promoteOnlyAfter": [
+    "redistribution conditions",
+    "G3",
+    "G7",
+    "Work 3 publication"
+  ],
+  "activeRegistry": "works.json unchanged: requires real public audio and accessible catalog work",
+  "previousSentenceMode": {
+    "unit": "sentence",
+    "status": "pending",
+    "activeTimings": 0
+  },
+  "decision": "Use approximate paragraph highlighting as main local Soares candidate, without new acoustic validation. Production publication still blocked by I04."
 }
