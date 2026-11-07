@@ -1,11 +1,15 @@
-export const soaresPrivateAsset = name => `${(import.meta.env?.BASE_URL || '/')}${['assets', 'soares-private', name].join('/')}`;
+export const soaresAsset = name => `${(import.meta.env?.BASE_URL || '/')}${['assets', 'soares', name].join('/')}`;
 export const soaresReaderConfig = {
   workId: 'soares-corrientes-gimnasticas', mark: 'CS',
   shortTitle: 'Las corrientes gimnásticas europeas',
   authorAndTitle: 'Carmen Lucia Soares · Las corrientes gimnásticas europeas y su contenido',
   experienceName: 'El gesto entre la norma y la expresión',
-  audiobookUrl: soaresPrivateAsset('audiobook.mp3'),
-  pdfUrl: soaresPrivateAsset('chapter.pdf'),
+  // Reproducción directa de Drive sin transcodificar en el navegador.
+  // El reproductor mantiene lectura y anotaciones si la cuenta no permite cargar el audio.
+  audiobookUrl: 'https://drive.google.com/uc?export=download&id=1KAthUKiHsNqHg8sYIwPqzvJNgbGGbkt-',
+  audiobookExternalUrl: 'https://drive.google.com/file/d/1KAthUKiHsNqHg8sYIwPqzvJNgbGGbkt-/view',
+  audioMode: 'direct',
+  pdfUrl: soaresAsset('chapter.pdf'),
   editorialReferenceLabel: 'de la edición de Soares', modalAccessibility: true,
   readingEntry: {
     author: 'Carmen Lucia Soares', title: 'Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y permanencias', audioMinutes: 52,
