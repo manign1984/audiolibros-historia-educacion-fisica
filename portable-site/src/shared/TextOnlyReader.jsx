@@ -115,7 +115,7 @@ export default function TextOnlyReader({ config, showToast }) {
   );
   const close = () => {
     setOpen(false);
-    requestAnimationFrame(() => openButton.current?.focus());
+    requestAnimationFrame(() => openButton.current?.querySelector('button')?.focus());
   };
 
   return <>
