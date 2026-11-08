@@ -236,11 +236,12 @@ assert.match(libraryCss, /animation:hero-content-fade var\(--hero-fade-duration,
 assert.match(libraryCss, /@media\(prefers-reduced-motion:reduce\)/, 'Debe existir variante sin animaciones.');
 assert.match(libraryCss, /\.library-page \.hero-pagination \.hero-rotation-toggle\s*\{[\s\S]*?width:44px;/, 'La pausa debe tener un objetivo táctil visible.');
 
-// Nueva modalidad legítima de lectura sin audiolibro: no se confunde con «Leer + escuchar».
+// Lionetti: nueva modalidad audiovisual, con el texto y las notas originales conservados.
 const lionetti = allCatalog.find(entry => entry.id === 'lionetti-escuela-republicana');
-assert.equal(lionetti.status, 'text');
-assert.equal(canReadAndListen(lionetti), false);
-assert.equal(matchesAvailability(lionetti, 'text'), true);
-assert.equal(matchesAvailability(lionetti, 'available'), false);
+assert.equal(lionetti.status, 'available');
+assert.equal(canReadAndListen(lionetti), true);
+assert.equal(matchesAvailability(lionetti, 'text'), false);
+assert.equal(matchesAvailability(lionetti, 'available'), true);
+assert.equal(lionetti.stateKey, 'lionetti-escuela-republicana-audio-state-v1');
 await access(new URL('../src/shared/TextOnlyReader.jsx', import.meta.url));
 await access(new URL('../public/assets/lionetti/texto-academico.txt', import.meta.url));
