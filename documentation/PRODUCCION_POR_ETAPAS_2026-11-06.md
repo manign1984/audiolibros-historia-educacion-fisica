@@ -1,3 +1,5 @@
+> **ESTADO HISTÓRICO · 08/11/2026.** Este documento conserva el procedimiento anterior. La producción en chats convencionales, sin Work obligatorios ni investigaciones acústicas, se rige ahora por las [Directrices canónicas vigentes](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit) y el [registro único de producción activa](PRODUCCION_ACTIVA.md). En caso de contradicción, prevalecen esas dos referencias. No retomar aquí G3/CTC/Whisper ni fases de 2–3 Work.
+
 # Producción por etapas y cortes planificados · Biblioteca +TEC UNAHUR
 
 **Versión:** 1.0 · 06/11/2026. **Aplicación:** nuevas páginas de BEYOND THE STARS.  
