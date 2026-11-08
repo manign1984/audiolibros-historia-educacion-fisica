@@ -11,7 +11,8 @@ export const creditsContent = {
     rights: [
       <>Esta edición de la Biblioteca +TEC utiliza el texto académico facilitado para la cátedra. Conserva las notas, la bibliografía y las referencias originales.</>,
       <>El artículo está disponible en acceso abierto desde la revista y SciELO; consultar las condiciones de uso en las fuentes de publicación.</>,
-      <>Recorrido de lectura sin audio. Las anotaciones y el progreso se guardan exclusivamente en este navegador y pueden exportarse.</>,
+      <>Audiolibro y subtítulos SRT aportados al proyecto +TEC UNAHUR: <a href="https://drive.google.com/file/d/11KrL0qxhvKtNVIzJEef1B-Oyrai-oPHX/view" target="_blank" rel="noreferrer">grabación original</a> y <a href="https://drive.google.com/file/d/1LZLftX99lQqndt723ag7CkA9cJljlZPB/view" target="_blank" rel="noreferrer">subtítulos originales</a>. No se declara una licencia abierta.</>,
+      <>Las marcas temporales son las del SRT entregado; el texto académico se consulta por páginas y no se presenta como una alineación automática exacta por oración. Las anotaciones y el progreso se guardan en este navegador y pueden exportarse.</>,
       <>Portada tipográfica y tres perspectivas de Contexto: elaboración didáctica del proyecto +TEC UNAHUR; no son documentos de época.</>,
     ],
   },
