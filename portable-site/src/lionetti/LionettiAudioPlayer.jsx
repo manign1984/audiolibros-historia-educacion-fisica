@@ -39,6 +39,7 @@ export default function LionettiAudioPlayer({ open, config }) {
     setSubtitleError('');
     setSrc('');
     setPlaying(false);
+    setDuration(0);
 
     // Los subtítulos se cargan independientemente del MP3: el texto sigue
     // siendo accesible aunque el audio no se descargue.
@@ -81,15 +82,18 @@ export default function LionettiAudioPlayer({ open, config }) {
 
     return () => {
       controller.abort();
-      audioRef.current?.pause();
-      audioRef.current?.removeAttribute('src');
-      audioRef.current?.load();
+      const player = audioRef.current;
+      if (player) {
+        // No resetear src/load al cerrar: puede disparar un timeupdate a 0
+        // y borrar inadvertidamente el punto de reproducción recuperable.
+        player.pause();
+      }
       if (objectUrl) URL.revokeObjectURL(objectUrl);
     };
   }, [open, config.audio.parts, config.audio.srtUrl]);
 
   useEffect(() => {
-    if (!open) return;
+    if (!open || !src || !duration) return;
     // Permitir que una segunda apertura retome el último punto de la misma sesión.
     savedRef.current = { currentTime, playbackRate: rate };
     try { localStorage.setItem(config.audio.stateKey, JSON.stringify({ currentTime, playbackRate: rate })); }
