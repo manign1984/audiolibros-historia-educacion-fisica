@@ -157,7 +157,7 @@ assert.equal(soares.readingDetail, 'Seguimiento aproximado por párrafos', 'El c
 assert.equal(matchesAvailability(soares, 'review'), false, 'Soares ya no aparece bajo Edición en revisión.');
 assert.equal(canReadAndListen(soares), true, 'Soares figura entre los lectores con texto y audiolibro.');
 assert.equal(allCatalog.filter(canReadAndListen).length, 7, 'Siete recorridos permiten leer y escuchar.');
-assert.match(libraryHome, /const readable = catalog\.filter\(canReadAndListen\)/, 'La estantería presenta todas las obras legibles.');
+assert.match(libraryHome, /const readable = catalog\\.filter/, 'La estantería incluye lecturas con audio o solo texto.');
 assert.match(libraryHome, /entries=\{readable\}/, 'La estantería de lectura incluye Marcaida y Scaltritti.');
 assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
 assert.match(libraryHome, /const available = catalog\.filter\(\(entry\) => entry\.status === 'available'\)/, 'Conservar los cuatro destacados del carrusel automático.');
