@@ -35,14 +35,14 @@ export default function LionettiApp() {
 
       <section id="autor" className="ln-screen ln-author" aria-labelledby="ln-author-title">
         <div className="ln-inner ln-author-grid">
-          <div className="ln-author-mark" aria-label="Iniciales de Lucía Lionetti; recurso tipográfico, no retrato fotográfico"><span>LL</span><small>HISTORIA SOCIAL<br/>DE LA EDUCACIÓN</small></div>
+          <figure className="ln-author-photo"><img src={`${import.meta.env.BASE_URL}assets/lionetti/lionetti.jpg`} width="487" height="429" alt="Retrato fotográfico de Lucía Lionetti" loading="lazy"/><figcaption>Fotografía facilitada para el proyecto desde la carpeta WEBs.</figcaption></figure>
           <div className="ln-author-copy">
             <JourneyBlockLabel sectionId="autor" />
             <h2 id="ln-author-title">Lucía Lionetti</h2>
             <p className="ln-author-role">Historiadora · Educación, ciudadanía e infancias</p>
             <p>{biography}</p>
             <a href="https://iehs.unicen.edu.ar/LuciaLionetti.html" target="_blank" rel="noreferrer">Consultar trayectoria académica · IEHS / UNICEN ↗</a>
-            <small>Identidad tipográfica utilizada como recurso editorial; no representa una fotografía de la autora.</small>
+            <small>Retrato aportado al proyecto. Se conserva la imagen original sin modificaciones.</small>
           </div>
         </div>
       </section>
