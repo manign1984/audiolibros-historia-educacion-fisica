@@ -7,8 +7,8 @@
 
 ## 1. Qué se está haciendo
 
-**Tarea actual:** piloto Lucía Lionetti · *La función republicana de la escuela pública* (2005), solo texto, sin audio. Etapas A y B guardadas en la rama `feat/lionetti-lectura-solo-texto-20261108` y PR #87; C pendiente de verificación de CI/Pages.
-**Próxima tarea:** validar la PR #87, resolver únicamente fallas técnicas de CI, integrar cuando corresponda y comprobar la URL real antes de marcar la página publicada. No incorporar audio a Lionetti.
+**Tarea actual:** piloto Lucía Lionetti · *La función republicana de la escuela pública* (2005) **cerrado**. Tres etapas A/B/C completadas con texto académico íntegro, lector sin audio y cuaderno. PR #87 fusionada en `main` (commit `6b972f5260ff0113137256b8b97a3bcd666a8c66`). CI de la PR #87 aprobada (run `42445107697`) y GitHub Pages desplegado correctamente (run `42445185821`, `completed/success`). No se afirma auditoría visual desde navegador interactivo externo.
+**Próxima tarea:** elegir la siguiente obra de la cola de producción y confirmar sus materiales. No volver a ejecutar las etapas de Lionetti ni añadirle audio sin pedido explícito.
 **Objetivo de rendimiento:** al menos tres páginas por jornada con materiales completos; es una meta y no una afirmación de producción alcanzada.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
@@ -23,7 +23,7 @@ Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatori
 | Obra / grupo | Estado en código `main` | Acción pendiente asignada |
 | --- | --- | --- |
 | Carmen Lucia Soares, *Las corrientes gimnásticas europeas* | `available`; seguimiento aproximado por párrafos | Ninguna |
-| Lucía Lionetti, *La función republicana de la escuela pública* | `preparation` en `main`; candidato `text` en PR #87 | Terminar C: CI, integración, Pages y catálogo |
+| Lucía Lionetti, *La función republicana de la escuela pública* | `text` («Solo lectura»), integrado mediante PR #87 y desplegado en Pages | Ninguna; versión solo texto disponible |
 | Marcaida y Scaltritti, *La construcción del Estado nacional argentino* | `review` | Ninguna |
 | Orbuch, Pineau/Fresco–Noble, Hobsbawm, Aisenstein/Tabla rasa y Scharagrodsky | `available` | Ninguna |
 | Demás fichas de `plannedWorks.js` | `preparation` salvo las excepciones citadas | Elegir próximas obras solo con datos confirmados |
@@ -34,14 +34,14 @@ Los estados anteriores indican datos del catálogo, no una nueva auditoría perc
 
 | Campo | Valor vigente |
 | --- | --- |
-| Obra activa | Lucía Lionetti · La función republicana de la escuela pública (2005) |
-| Etapa | C · Publicar (A y B persistidas) |
-| Rama / PR | `feat/lionetti-lectura-solo-texto-20261108` · https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/87 |
-| Último commit recuperable | Consultar HEAD de PR #87; código, texto y catálogo ya guardados |
-| Enlaces a originales | TXT: https://drive.google.com/file/d/1wabrGO_C9oZaJZj0nv-fzEq9ukRaC5tD/view · PDF: https://drive.google.com/file/d/1FXGeM_sEvkKNpjrb1_6Z0bWTz7d9bBkZ/view · edición: https://ojs.rmie.mx/index.php/rmie/article/view/1511 |
-| Incidencia real pendiente | Ninguna funcional confirmada; CI y despliegue aún sin acreditar |
-| **Próxima acción única** | Verificar CI de PR #87, integrar si aprueba y comprobar URL pública |
-| URL publicada | Pendiente: no afirmar publicación antes del despliegue confirmado |
+| Obra activa | Sin asignar (Lionetti terminada) |
+| Etapa | — (Lionetti A/B/C completadas) |
+| Rama / PR | PR #87 fusionada: https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/87 |
+| Último commit recuperable | `6b972f5260ff0113137256b8b97a3bcd666a8c66` (`main`, Lionetti publicada) |
+| Enlaces a originales | Lionetti: TXT https://drive.google.com/file/d/1wabrGO_C9oZaJZj0nv-fzEq9ukRaC5tD/view ; PDF https://drive.google.com/file/d/1FXGeM_sEvkKNpjrb1_6Z0bWTz7d9bBkZ/view ; revista https://ojs.rmie.mx/index.php/rmie/article/view/1511 |
+| Incidencia real pendiente | Ninguna incidencia técnica abierta de Lionetti; no se efectuó evaluación visual manual del sitio público |
+| **Próxima acción única** | Seleccionar próxima obra y localizar sus fuentes facilitadas |
+| URL publicada | https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/lionetti-escuela-republicana/ (despliegue GitHub Pages #42445185821 exitoso; no inspección visual externa) |
 
 Al iniciar una obra, completar únicamente estos campos. Al terminar una etapa A, B o C, **guardar un commit verificable y actualizar esta ficha antes de seguir**. No esperar al límite del chat. No crear un expediente nuevo para cada intercambio. Los materiales grandes permanecen en sus ubicaciones autorizadas; no poner texto académico, audio privado o credenciales en esta ficha.
 
