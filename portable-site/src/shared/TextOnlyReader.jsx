@@ -1,22 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, BookOpen, Download, FileText, NotebookPen, Save, Trash2, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookOpen, Download, FileText, NotebookPen, Pencil, Save, Search, Trash2, X } from 'lucide-react';
 import CanonicalReadingEntry from './CanonicalReadingEntry.jsx';
+import { getChapters, normalizeNotes, paragraphsOf, preparePages, resolvePage, searchDocument } from './textOnlyReaderModel.js';
 import './text-only-reader.css';
 
 const retrieve = (key, fallback) => {
   try { const raw = localStorage.getItem(key); return raw === null ? fallback : JSON.parse(raw); }
   catch { return fallback; }
 };
-
-const TOC = [
-  { title: 'Apertura · Educar al soberano', term: 'La Argentina a partir de 1880' },
-  { title: 'Civilización y estabilidad republicana', term: 'Garantizar el triunfo de la civilización' },
-  { title: 'Argentinizar a la sociedad civil', term: 'Educar para “argentinizar”' },
-  { title: 'Virtud pública y moral cívica', term: 'Formar en la virtud pública y la moral cívica' },
-  { title: 'Consideraciones finales', term: 'Consideraciones finales' },
-  { title: 'Notas del artículo', term: '(*) Agradezco' },
-  { title: 'Bibliografía', term: 'BIBLIOGRAFIA' },
-];
 
 function download(name, contents, type) {
   const url = URL.createObjectURL(new Blob([contents], { type }));
@@ -25,14 +16,6 @@ function download(name, contents, type) {
   a.download = name;
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
-
-function preparePages(raw) {
-  return raw.split('\f').map((text) => text.replace(/\r/g, '').replace(/\n\s*\d+\s*$/, '').trim()).filter(Boolean);
-}
-
-function paragraphsOf(pageText) {
-  return pageText.split(/\n\s*\n/g).map(text => text.replace(/\s*\n\s*/g, ' ').replace(/\s{2,}/g, ' ').trim()).filter(Boolean);
 }
 
 /**
@@ -44,16 +27,20 @@ export default function TextOnlyReader({ config, showToast }) {
   const [error, setError] = useState('');
   const [open, setOpen] = useState(false);
   const [page, setPage] = useState(() => Math.max(0, Number(retrieve(config.storage.stateKey, 0)) || 0));
-  const [notes, setNotes] = useState(() => retrieve(config.storage.notesKey, []));
+  const [notes, setNotes] = useState(() => normalizeNotes(retrieve(config.storage.notesKey, [])));
   const [draft, setDraft] = useState('');
+  const [editingId, setEditingId] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
   const [notice, setNotice] = useState('');
   const [fontScale, setFontScale] = useState(1);
   const dialog = useRef(null);
   const article = useRef(null);
   const openButton = useRef(null);
   const pages = useMemo(() => preparePages(raw), [raw]);
-  const safePage = Math.min(page, Math.max(0, pages.length - 1));
-  const toc = useMemo(() => TOC.map(item => ({ ...item, page: pages.findIndex(text => text.includes(item.term)) })).filter(item => item.page >= 0), [pages]);
+  // Evitar que la primera renderización (antes del fetch) borre el progreso previo.
+  const safePage = pages.length ? resolvePage(page, pages.length) : page;
+  const toc = useMemo(() => getChapters(pages, config.sections), [pages, config.sections]);
+  const searchHits = useMemo(() => searchDocument(pages, searchTerm), [pages, searchTerm]);
   const currentNotes = notes.filter(note => note.page === safePage);
 
   useEffect(() => {
@@ -73,9 +60,10 @@ export default function TextOnlyReader({ config, showToast }) {
   }, [notes, config.storage.notesKey]);
 
   useEffect(() => {
+    if (!pages.length) return;
     try { localStorage.setItem(config.storage.stateKey, JSON.stringify(safePage)); }
     catch { /* El progreso se mantiene en memoria. */ }
-  }, [safePage, config.storage.stateKey]);
+  }, [safePage, pages.length, config.storage.stateKey]);
 
   useEffect(() => {
     const node = dialog.current;
@@ -93,26 +81,45 @@ export default function TextOnlyReader({ config, showToast }) {
 
   const notify = message => { setNotice(message); showToast?.(message); };
   const jump = index => {
-    setPage(Math.max(0, Math.min(pages.length - 1, index)));
+    setPage(resolvePage(index, pages.length));
     article.current?.scrollTo({ top: 0 });
+    setEditingId(null);
+    setDraft('');
     setNotice('');
   };
   const save = () => {
     const value = draft.trim();
     if (!value) return;
-    setNotes(previous => [...previous, { id: String(Date.now()) + Math.random().toString(36).slice(2), page: safePage, text: value, createdAt: new Date().toISOString() }]);
+    if (editingId) {
+      setNotes(previous => previous.map(note => note.id === editingId ? { ...note, text: value, updatedAt: new Date().toISOString() } : note));
+      notify('Nota actualizada en este navegador');
+    } else {
+      setNotes(previous => [...previous, { id: String(Date.now()) + Math.random().toString(36).slice(2), page: safePage, text: value, createdAt: new Date().toISOString() }]);
+      notify('Nota guardada en este navegador');
+    }
+    setEditingId(null);
     setDraft('');
-    notify('Nota guardada en este navegador');
+  };
+  const edit = note => {
+    setEditingId(note.id);
+    setDraft(note.text);
+    dialog.current?.querySelector('#lionetti-note')?.focus();
   };
   const remove = id => {
     setNotes(previous => previous.filter(note => note.id !== id));
+    if (editingId === id) { setEditingId(null); setDraft(''); }
     notify('Nota eliminada');
   };
   const exportText = () => download(
     'cuaderno-lionetti.txt',
-    ['Cuaderno de lectura · Lucía Lionetti', ...notes.map((note, index) => `\n${index + 1}. Página ${note.page + 1}\n${note.text}\n`)].join('\n'),
+    ['Cuaderno de lectura · Lucía Lionetti', ...[...notes].sort((a, b) => a.page - b.page).map((note, index) => `\n${index + 1}. Página ${note.page + 1}\n${note.text}\n`)].join('\n'),
     'text/plain;charset=utf-8',
   );
+  const searchResults = searchHits.length
+    ? searchHits.map(hit => <button key={hit.page} type="button" onClick={() => jump(hit.page)}>
+        Página {hit.page + 1}<small>{hit.snippet}</small>
+      </button>)
+    : searchTerm.trim().length >= 2 ? <p>No hay coincidencias en las páginas del artículo.</p> : null;
   const close = () => {
     setOpen(false);
     requestAnimationFrame(() => openButton.current?.querySelector('button')?.focus());
@@ -139,16 +146,31 @@ export default function TextOnlyReader({ config, showToast }) {
         <div className="text-only-workspace">
           <nav className="text-only-chapters" aria-label="Apartados del texto">
             <h3><BookOpen size={19}/> Recorrido</h3>
+            <label htmlFor="lionetti-search-desktop"><Search size={15}/> Buscar en el artículo</label>
+            <input id="lionetti-search-desktop" type="search" value={searchTerm} onChange={event => setSearchTerm(event.target.value)} placeholder="Palabra o expresión"/>
+            {searchTerm.trim().length >= 2 && <div className="text-only-search-results" aria-label="Resultados de búsqueda">{searchResults}</div>}
             {toc.map(item => <button key={item.term} type="button"
               className={safePage === item.page ? 'is-active' : ''}
               onClick={() => jump(item.page)}>{item.title}<small>Página {item.page + 1}</small></button>)}
             <a href={config.sourceUrl} target="_blank" rel="noreferrer">Consultar edición original</a>
           </nav>
           <main className="text-only-document" ref={article} tabIndex={0} aria-label="Texto académico íntegro">
+            <div className="text-only-mobile-navigation">
+              <label htmlFor="lionetti-sections">Apartados del artículo</label>
+              <select id="lionetti-sections" value={toc.some(item => item.page === safePage) ? safePage : ''}
+                onChange={event => { if (event.target.value !== '') jump(Number(event.target.value)); }}>
+                <option value="">Elegí un apartado</option>
+                {toc.map(item => <option key={item.title} value={item.page}>{item.title} · pág. {item.page + 1}</option>)}
+              </select>
+              <label htmlFor="lionetti-search-mobile">Buscar en todas las páginas</label>
+              <input id="lionetti-search-mobile" type="search" value={searchTerm} onChange={event => setSearchTerm(event.target.value)} placeholder="Palabra o expresión"/>
+              {searchTerm.trim().length >= 2 && <div className="text-only-search-results" aria-label="Resultados de búsqueda">{searchResults}</div>}
+            </div>
             {error && <p role="alert">{error} <a href={config.sourceUrl} target="_blank" rel="noreferrer">Ver fuente</a></p>}
             {!raw && !error && <p role="status">Cargando texto académico…</p>}
             {pages.length > 0 && <>
               <div className="text-only-page-meta">Lucía Lionetti · Artículo de 2005 <span>Página {safePage + 1} de {pages.length}</span></div>
+              <progress className="text-only-progress" value={safePage + 1} max={pages.length} aria-label="Progreso de lectura por páginas">{safePage + 1} de {pages.length}</progress>
               <article style={{ '--text-scale': fontScale }}>
                 {paragraphsOf(pages[safePage]).map((paragraph, index) => <p key={index}>{paragraph}</p>)}
               </article>
@@ -163,9 +185,10 @@ export default function TextOnlyReader({ config, showToast }) {
             <h3><NotebookPen size={18}/> Mi cuaderno <small>{notes.length}</small></h3>
             <label htmlFor="lionetti-note">Anotá sobre la página {safePage + 1}</label>
             <textarea id="lionetti-note" rows={5} value={draft} onChange={event => setDraft(event.target.value)} placeholder="Ideas, preguntas y relaciones para volver a pensar…"/>
-            <button className="text-only-save" type="button" disabled={!draft.trim()} onClick={save}><Save size={16}/> Guardar nota</button>
+            <button className="text-only-save" type="button" disabled={!draft.trim()} onClick={save}><Save size={16}/> {editingId ? 'Guardar cambios' : 'Guardar nota'}</button>
+            {editingId && <button type="button" onClick={() => { setEditingId(null); setDraft(''); }}>Cancelar edición</button>}
             <div className="text-only-notelist">
-              {currentNotes.length ? currentNotes.map(note => <div key={note.id} className="text-only-note"><p>{note.text}</p><button type="button" onClick={() => remove(note.id)} aria-label="Eliminar nota"><Trash2 size={16}/></button></div>) : <p className="text-only-empty">Todavía no hay anotaciones en esta página.</p>}
+              {currentNotes.length ? currentNotes.map(note => <div key={note.id} className="text-only-note"><p>{note.text}</p><div className="text-only-note-actions"><button type="button" onClick={() => edit(note)} aria-label="Editar nota"><Pencil size={16}/></button><button type="button" onClick={() => remove(note.id)} aria-label="Eliminar nota"><Trash2 size={16}/></button></div></div>) : <p className="text-only-empty">Todavía no hay anotaciones en esta página.</p>}
             </div>
             <div className="text-only-tools">
               <label>Aumentar o reducir texto
