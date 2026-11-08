@@ -81,7 +81,7 @@ for (const entry of catalog.filter((item) => item.status !== 'available')) {
     assert.doesNotMatch(html, /Recorrido en preparación\./, `${entry.id}: no publicar como ficha sin recorrido.`);
   } else if (entry.status === 'text') {
     assert.ok(html.includes('src="' + normalizedBase + 'assets/'), `${entry.id}: ruta web correcta.`);
-    assert.ok(html.includes('src="' + normalizedBase + 'assets/lionetti/'), `${entry.id}: lector textual cargado en la ruta.`);
+    await access(resolve(dist, 'assets/lionetti/texto-academico.txt'));
     assert.ok(html.includes('Lucía Lionetti'), `${entry.id}: título y autora presentes.`);
     assert.ok(html.includes('Sin audio') || html.includes('sin audiolibro') || html.includes('sin audio'), `${entry.id}: no prometer escucha.`);
     continue;
