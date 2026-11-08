@@ -1,5 +1,7 @@
 # Biblioteca de Historia de la Educación y de la Educación Física
 
+**Para continuar el proyecto desde un chat nuevo:** consultar primero [Producción activa y continuidad entre chats](documentation/PRODUCCION_ACTIVA.md) y las [Directrices canónicas vigentes](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit). El registro identifica la obra activa y la siguiente acción sin releer conversaciones anteriores.
+
 Este repositorio contiene una biblioteca académica estática para leer textos y escuchar sus audiolibros. El catálogo reúne 29 lecturas: dos recorridos completos (Orbuch y Pineau) y 27 fichas en preparación. La ampliación parte del programa UNAHUR 2024–2025 recuperado y de materiales del proyecto; no certifica la cobertura de una versión posterior del programa.
 
 ## Arquitectura pública incorporada por esta etapa
