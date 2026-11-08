@@ -30,7 +30,7 @@ export default function LionettiApp() {
               <span>ARCHIVO DE IDEAS</span><strong>1880</strong><div className="ln-graphic-rule"></div><p>ESCUELA<br/>PÚBLICA</p><small>CIUDADANÍA · CIVILIZACIÓN · INFANCIA</small>
             </div>
           </div>
-          <div className="ln-bottom"><span>Una lectura sobre educación y política</span><span>Texto completo · Anotaciones personales · Sin audiolibro</span></div>
+          <div className="ln-bottom"><span>Una lectura sobre educación y política</span><span>Texto completo · Audiolibro · Subtítulos · Anotaciones personales</span></div>
         </div>
       </section>
 
