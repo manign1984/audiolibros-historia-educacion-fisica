@@ -90,6 +90,8 @@ export default function LionettiAudioPlayer({ open, config }) {
 
   useEffect(() => {
     if (!open) return;
+    // Permitir que una segunda apertura retome el último punto de la misma sesión.
+    savedRef.current = { currentTime, playbackRate: rate };
     try { localStorage.setItem(config.audio.stateKey, JSON.stringify({ currentTime, playbackRate: rate })); }
     catch { /* El progreso sigue disponible durante la sesión. */ }
   }, [open, currentTime, rate, config.audio.stateKey]);
