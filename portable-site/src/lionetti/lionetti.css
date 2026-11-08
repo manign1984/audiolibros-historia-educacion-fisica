@@ -27,7 +27,7 @@ body:has(.lionetti-page){margin:0;}
 .ln-author{background:#e3ddd5;padding:40px 0;}
 .ln-author-grid{display:grid;grid-template-columns:44% 1fr;align-items:center;gap:65px;}
 .ln-author-photo{margin:0;min-width:0;height:min(61svh,520px);min-height:330px;display:flex;flex-direction:column;gap:10px;}
-.ln-author-photo img{display:block;width:100%;flex:1;min-height:0;object-fit:cover;object-position:center 34%;border:1px solid #a69c92;background:#c8beb3;}
+.ln-author-photo img{display:block;width:100%;flex:1;min-height:0;object-fit:cover;object-position:center 34%;border:1px solid #a69c92;background:#c8beb3;filter:grayscale(100%) contrast(1.04);}
 .ln-author-photo figcaption{font:400 11px/1.35 'Archivo',sans-serif;color:#6c6261;}
 .ln-author-copy h2{font:400 clamp(80px,8vw,130px)/.9 'Bebas Neue',sans-serif;margin:14px 0 24px;letter-spacing:-.02em;}
 .ln-author-role{font-weight:700;letter-spacing:.02em;color:var(--ln-wine);}
@@ -54,12 +54,30 @@ body:has(.lionetti-page){margin:0;}
 .lionetti-page #lectura.hb-material-reading{--material-paper:#f1ece4;--material-ink:#273443;--material-rust:#68455d;}
 .lionetti-page .hb-material-open{--material-rust:#68455d;}
 
-/* La ficha y la sinopsis ya están centradas. Solo el título y el botón heredaban
-   el desplazamiento horizontal pensado para otras páginas. Neutralizarlo
-   exclusivamente en Lionetti, sin alterar la entrada canónica compartida. */
-@media (min-width:1041px){
-  body:has(.lionetti-page) .lionetti-page .hb-material-content{
-    --hb-group-shift:0px;
+/* Corrección Lionetti (08/11/2026): usar UN eje horizontal en todo el bloque 04.
+   Aprendizaje: --hb-group-shift no era suficiente: el título (194 unidades)
+   y el acceso (261 unidades) conservaban márgenes a la izquierda.
+   Mantener la retícula tipográfica, proporciones y relieve del bloque canónico.
+   Centrar únicamente las cajas afectadas, sin alterar otras obras.
+   Las reglas móviles compartidas (<=740 px) quedan intactas. */
+@media (min-width:741px) {
+  .lionetti-page #lectura.hb-material-reading .hb-material-content {
+    --hb-group-shift: 0px;
+  }
+  .lionetti-page #lectura.hb-material-reading .hb-material-title {
+    margin: 0 auto;
+    max-width: calc(100% - 32px);
+  }
+  .lionetti-page #lectura.hb-material-reading .hb-material-access {
+    margin: calc(30 * var(--hb-unit)) auto 0;
+    max-width: calc(100% - 32px);
+  }
+  .lionetti-page #lectura.hb-material-reading .hb-material-copy {
+    margin-inline: auto;
+  }
+  /* El rótulo 04 acompaña el borde izquierdo de la ficha bibliográfica. */
+  .lionetti-page #lectura.hb-material-reading .hb-material-hero > .journey-block-label {
+    left: calc(50% - 235 * var(--hb-unit));
   }
 }
 .ln-toast{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);font-size:12px;pointer-events:none;color:#fff;background:#222a36;padding:4px 10px;border-radius:5px;}
