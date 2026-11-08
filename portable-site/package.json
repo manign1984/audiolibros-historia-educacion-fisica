@@ -12,6 +12,7 @@
     "preview": "vite preview --host 0.0.0.0",
     "sync:orbuch": "node scripts/generate-orbuch-sync.mjs",
     "test:lionetti-assets": "node scripts/test-lionetti-assets.mjs",
+    "test:lionetti-audiovisual": "node scripts/test-lionetti-audiovisual.mjs",
     "test:lionetti-reader": "node scripts/test-lionetti-reader.mjs",
     "test:library": "node scripts/test-library.mjs",
     "test:two-works": "node scripts/test-two-works.mjs",
