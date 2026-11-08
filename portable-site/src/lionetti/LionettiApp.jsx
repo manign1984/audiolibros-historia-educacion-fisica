@@ -3,6 +3,7 @@ import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import TextOnlyReader from '../shared/TextOnlyReader.jsx';
+import LionettiAudioPlayer from './LionettiAudioPlayer.jsx';
 import { lionettiReaderConfig } from './readerConfig.js';
 import './lionetti.css';
 
@@ -85,7 +86,7 @@ export default function LionettiApp() {
         </div>
       </section>
       <section id="lectura" className="ln-screen ln-reading hb-material-reading" aria-labelledby="journey-reading-title">
-        <TextOnlyReader config={lionettiReaderConfig} showToast={setToast}/>
+        <TextOnlyReader config={lionettiReaderConfig} showToast={setToast} AudioPlayer={LionettiAudioPlayer}/>
       </section>
       <JourneyCredits workId="lionetti"/>
     </main>
