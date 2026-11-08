@@ -128,7 +128,7 @@ assert.equal(new Set(allCatalog.map((entry) => entry.id)).size, allCatalog.lengt
 for (const entry of allCatalog) {
   assert.ok(collections.some((collection) => collection.id === entry.collection));
   assert.ok(citationAsPlainText(entry).length > 30);
-  assert.ok(['available', 'review', 'preparation'].includes(entry.status));
+  assert.ok(['available', 'review', 'text', 'preparation'].includes(entry.status));
   await access(new URL(`../${entry.path}index.html`, import.meta.url));
   if (entry.status === 'preparation') {
     assert.equal(entry.duration, undefined, 'No inventar duración para audios pendientes.');
@@ -235,3 +235,12 @@ assert.match(libraryCss, /transition:opacity var\(--hero-fade-duration,700ms\)/,
 assert.match(libraryCss, /animation:hero-content-fade var\(--hero-fade-duration,700ms\)/, 'Los textos deben acompañar el fundido.');
 assert.match(libraryCss, /@media\(prefers-reduced-motion:reduce\)/, 'Debe existir variante sin animaciones.');
 assert.match(libraryCss, /\.library-page \.hero-pagination \.hero-rotation-toggle\s*\{[\s\S]*?width:44px;/, 'La pausa debe tener un objetivo táctil visible.');
+
+// Nueva modalidad legítima de lectura sin audiolibro: no se confunde con «Leer + escuchar».
+const lionetti = allCatalog.find(entry => entry.id === 'lionetti-escuela-republicana');
+assert.equal(lionetti.status, 'text');
+assert.equal(canReadAndListen(lionetti), false);
+assert.equal(matchesAvailability(lionetti, 'text'), true);
+assert.equal(matchesAvailability(lionetti, 'available'), false);
+await access(new URL('../src/shared/TextOnlyReader.jsx', import.meta.url));
+await access(new URL('../public/assets/lionetti/texto-academico.txt', import.meta.url));
