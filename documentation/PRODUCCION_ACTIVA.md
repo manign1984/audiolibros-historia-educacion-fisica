@@ -7,8 +7,8 @@
 
 ## 1. Qué se está haciendo
 
-**Tarea actual:** instalar el nuevo sistema de continuidad entre chats. No se seleccionó todavía la próxima obra académica.
-**Próxima tarea:** elegir hasta tres obras con PDF/texto, MP3 y SRT/VTT facilitados, y producir una página por vez. No asignar títulos ni archivos por conjetura.
+**Tarea actual:** piloto Lucía Lionetti · *La función republicana de la escuela pública* (2005), solo texto, sin audio. Etapas A y B guardadas en la rama `feat/lionetti-lectura-solo-texto-20261108` y PR #87; C pendiente de verificación de CI/Pages.
+**Próxima tarea:** validar la PR #87, resolver únicamente fallas técnicas de CI, integrar cuando corresponda y comprobar la URL real antes de marcar la página publicada. No incorporar audio a Lionetti.
 **Objetivo de rendimiento:** al menos tres páginas por jornada con materiales completos; es una meta y no una afirmación de producción alcanzada.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
@@ -23,6 +23,7 @@ Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatori
 | Obra / grupo | Estado en código `main` | Acción pendiente asignada |
 | --- | --- | --- |
 | Carmen Lucia Soares, *Las corrientes gimnásticas europeas* | `available`; seguimiento aproximado por párrafos | Ninguna |
+| Lucía Lionetti, *La función republicana de la escuela pública* | `preparation` en `main`; candidato `text` en PR #87 | Terminar C: CI, integración, Pages y catálogo |
 | Marcaida y Scaltritti, *La construcción del Estado nacional argentino* | `review` | Ninguna |
 | Orbuch, Pineau/Fresco–Noble, Hobsbawm, Aisenstein/Tabla rasa y Scharagrodsky | `available` | Ninguna |
 | Demás fichas de `plannedWorks.js` | `preparation` salvo las excepciones citadas | Elegir próximas obras solo con datos confirmados |
@@ -33,14 +34,14 @@ Los estados anteriores indican datos del catálogo, no una nueva auditoría perc
 
 | Campo | Valor vigente |
 | --- | --- |
-| Obra activa | Sin asignar |
-| Etapa | — |
-| Rama / PR | — |
-| Último commit recuperable | — |
-| Enlaces a originales | — |
-| Incidencia real pendiente | Ninguna registrada de una nueva obra |
-| **Próxima acción única** | Seleccionar obra y confirmar materiales |
-| URL publicada | — |
+| Obra activa | Lucía Lionetti · La función republicana de la escuela pública (2005) |
+| Etapa | C · Publicar (A y B persistidas) |
+| Rama / PR | `feat/lionetti-lectura-solo-texto-20261108` · https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/87 |
+| Último commit recuperable | Consultar HEAD de PR #87; código, texto y catálogo ya guardados |
+| Enlaces a originales | TXT: https://drive.google.com/file/d/1wabrGO_C9oZaJZj0nv-fzEq9ukRaC5tD/view · PDF: https://drive.google.com/file/d/1FXGeM_sEvkKNpjrb1_6Z0bWTz7d9bBkZ/view · edición: https://ojs.rmie.mx/index.php/rmie/article/view/1511 |
+| Incidencia real pendiente | Ninguna funcional confirmada; CI y despliegue aún sin acreditar |
+| **Próxima acción única** | Verificar CI de PR #87, integrar si aprueba y comprobar URL pública |
+| URL publicada | Pendiente: no afirmar publicación antes del despliegue confirmado |
 
 Al iniciar una obra, completar únicamente estos campos. Al terminar una etapa A, B o C, **guardar un commit verificable y actualizar esta ficha antes de seguir**. No esperar al límite del chat. No crear un expediente nuevo para cada intercambio. Los materiales grandes permanecen en sus ubicaciones autorizadas; no poner texto académico, audio privado o credenciales en esta ficha.
 
