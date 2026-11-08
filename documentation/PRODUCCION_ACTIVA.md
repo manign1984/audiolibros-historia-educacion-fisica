@@ -7,8 +7,8 @@
 
 ## 1. Qué se está haciendo
 
-**Tarea actual:** Lucía Lionetti · *La función republicana de la escuela pública* (2005): piloto textual y mejora del lector **cerrados**. PR #87 (piloto) y PR #91 (mejora) fusionadas; último commit del lector `04cdf36054cc9f9796c360a92fdc3bc955d0c335`. El lector conserva 32 páginas, añade búsqueda, índice móvil, notas editables y progreso fiable, sin audio ni subtítulos. CI #42449600615 y despliegue Pages #42449696287 finalizaron con `success`. No se afirma inspección visual interactiva externa.
-**Próxima tarea:** elegir una nueva obra con materiales confirmados. No repetir el piloto Lionetti ni incorporar audio sin insumos autorizados.
+**Tarea actual:** Lucía Lionetti · *La función republicana de la escuela pública* (2005): actualización en **dos etapas**. **Etapa 1/2 — recursos completa en rama, pendiente de verificación CI:** MP3 original de 37.021.265 bytes (SHA-256 `99d49c1e3985a61e7209f01f8d17978ba2a3e172da186dd0a251e0d6a5e6ebe0`) dividido en 63 fragmentos binarios consecutivos sin modificación; cada hash de GitHub contrastado con su segmento original (63/63 coincidentes). SRT original: 82.882 bytes, 747 subtítulos, SHA-256 `89616a56a51c18cd8b193c28bd04661bc62d321ea9a09f9e6a9412ac9fce7612`; sintaxis y numeración comprobadas. No se investigaron desfases acústicos. La página publicada sigue siendo la edición de solo texto hasta completar la etapa 2.
+**Próxima tarea:** **Etapa 2/2 — implementar, probar y publicar el lector con audio y subtítulos de Lionetti** sobre la rama `feature/lionetti-audiolibro-srt-20261108`. Mantener las 32 páginas del texto, anotaciones y progreso preexistentes; permitir reproducción, navegación temporal, subtítulo vigente según el SRT y controles móviles. Actualizar el catálogo `text` → `available` solo cuando esas funciones estén probadas y el despliegue finalice. No modificar el diseño de los demás bloques.
 **Objetivo de rendimiento:** al menos tres páginas por jornada con materiales completos; es una meta y no una afirmación de producción alcanzada.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
@@ -23,7 +23,7 @@ Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatori
 | Obra / grupo | Estado en código `main` | Acción pendiente asignada |
 | --- | --- | --- |
 | Carmen Lucia Soares, *Las corrientes gimnásticas europeas* | `available`; seguimiento aproximado por párrafos | Ninguna |
-| Lucía Lionetti, *La función republicana de la escuela pública* | `text` («Solo lectura»), PR #87 y mejora #91 publicadas | Ninguna; lector textual de 32 páginas funcional en el código |
+| Lucía Lionetti, *La función republicana de la escuela pública* | `text` («Solo lectura») en `main`; recursos MP3 y SRT completos en la rama de etapa 1 | Etapa 2: lector con audio, subtítulos, pruebas, catálogo y publicación |
 | Marcaida y Scaltritti, *La construcción del Estado nacional argentino* | `review` | Ninguna |
 | Orbuch, Pineau/Fresco–Noble, Hobsbawm, Aisenstein/Tabla rasa y Scharagrodsky | `available` | Ninguna |
 | Demás fichas de `plannedWorks.js` | `preparation` salvo las excepciones citadas | Elegir próximas obras solo con datos confirmados |
@@ -34,13 +34,13 @@ Los estados anteriores indican datos del catálogo, no una nueva auditoría perc
 
 | Campo | Valor vigente |
 | --- | --- |
-| Obra activa | Sin asignar (Lionetti completada) |
-| Etapa | — (A/B/C Lionetti + mejora del lector completadas) |
-| Rama / PR | PR #91 fusionada: https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/91 |
-| Último commit recuperable | `04cdf36054cc9f9796c360a92fdc3bc955d0c335` (mejora del lector Lionetti fusionada en `main`) |
-| Enlaces a originales | Lionetti: TXT https://drive.google.com/file/d/1wabrGO_C9oZaJZj0nv-fzEq9ukRaC5tD/view ; PDF https://drive.google.com/file/d/1FXGeM_sEvkKNpjrb1_6Z0bWTz7d9bBkZ/view ; revista https://ojs.rmie.mx/index.php/rmie/article/view/1511 |
-| Incidencia real pendiente | Ninguna técnica comunicada; falta solamente una observación manual externa opcional de la interfaz. CI y Pages aprobados. |
-| **Próxima acción única** | Seleccionar siguiente obra y localizar fuentes, audio y subtítulos facilitados |
+| Obra activa | Lucía Lionetti · actualización audiovisual |
+| Etapa | **1/2 recursos completada**; iniciar **2/2 lector, pruebas y publicación** |
+| Rama / PR | Rama `feature/lionetti-audiolibro-srt-20261108` (no fusionar hasta finalizar etapa 2) |
+| Último commit recuperable | `3e65c88759ec5cd4f62277633bd86870aca4ed8e` (control de integridad incluido; ver rama actual para cambios posteriores) |
+| Enlaces a originales | Lionetti: MP3 https://drive.google.com/file/d/11KrL0qxhvKtNVIzJEef1B-Oyrai-oPHX/view ; SRT https://drive.google.com/file/d/1LZLftX99lQqndt723ag7CkA9cJljlZPB/view ; TXT https://drive.google.com/file/d/1wabrGO_C9oZaJZj0nv-fzEq9ukRaC5tD/view ; PDF https://drive.google.com/file/d/1FXGeM_sEvkKNpjrb1_6Z0bWTz7d9bBkZ/view |
+| Incidencia real pendiente | Integración audiovisual todavía no desarrollada en el lector; no hay comprobación de reproducción ni publicación de audio. No confundir acceso de edición con licencia abierta del material. |
+| **Próxima acción única** | Etapa 2: conectar MP3 fragmentado + SRT a `LionettiApp.jsx`, conservando `TextOnlyReader` y notas actuales, probar y publicar |
 | URL publicada | https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/lionetti-escuela-republicana/ (GitHub Pages #42449696287: success; sin inspección visual externa) |
 
 Al iniciar una obra, completar únicamente estos campos. Al terminar una etapa A, B o C, **guardar un commit verificable y actualizar esta ficha antes de seguir**. No esperar al límite del chat. No crear un expediente nuevo para cada intercambio. Los materiales grandes permanecen en sus ubicaciones autorizadas; no poner texto académico, audio privado o credenciales en esta ficha.
