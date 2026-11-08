@@ -28,9 +28,9 @@ export default function CanonicalReadingEntry({ onOpen, progress, noteCount, con
   return <div ref={content} id="lector" className="hb-material-content">
     <div className="hb-material-hero">
       <JourneyBlockLabel sectionId="lectura" />
-      <h2 id="journey-reading-title" className="hb-material-title" aria-label={textOnly ? 'Leé, estudiá y anotá' : 'Leé, escuchá y anotá'}>
-        <span className="hb-material-word hb-material-word--listen" aria-hidden="true">{textOnly ? 'LEÉ' : 'ESCUCHÁ'}</span>
-        <span className="hb-material-word hb-material-word--read" aria-hidden="true">{textOnly ? 'ESTUDIÁ' : 'LEÉ'}</span>
+      <h2 id="journey-reading-title" className="hb-material-title" aria-label={textOnly ? 'Pensá, leé y anotá' : 'Leé, escuchá y anotá'}>
+        <span className="hb-material-word hb-material-word--listen" aria-hidden="true">{textOnly ? 'PENSÁ' : 'ESCUCHÁ'}</span>
+        <span className="hb-material-word hb-material-word--read" aria-hidden="true">{'LEÉ'}</span>
         <span className="hb-material-word hb-material-word--note" aria-hidden="true">ANOTÁ</span>
       </h2>
       <div className="hb-material-access">
