@@ -26,10 +26,9 @@ body:has(.lionetti-page){margin:0;}
 .ln-graphic small{font-size:11px;letter-spacing:.04em;}
 .ln-author{background:#e3ddd5;padding:40px 0;}
 .ln-author-grid{display:grid;grid-template-columns:44% 1fr;align-items:center;gap:65px;}
-.ln-author-mark{height:min(60svh,530px);min-height:330px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#c8beb3;border:2px solid #80706c;color:var(--ln-wine);position:relative;}
-.ln-author-mark::before{content:"";position:absolute;inset:16px;border:1px solid #80706c;}
-.ln-author-mark span{font:400 clamp(170px,17vw,280px)/.8 'Bebas Neue',sans-serif;}
-.ln-author-mark small{font-size:11px;letter-spacing:.12em;text-align:center;margin-top:50px;color:#57454d;font-weight:700;}
+.ln-author-photo{margin:0;min-width:0;height:min(61svh,520px);min-height:330px;display:flex;flex-direction:column;gap:10px;}
+.ln-author-photo img{display:block;width:100%;flex:1;min-height:0;object-fit:cover;object-position:center 34%;border:1px solid #a69c92;background:#c8beb3;}
+.ln-author-photo figcaption{font:400 11px/1.35 'Archivo',sans-serif;color:#6c6261;}
 .ln-author-copy h2{font:400 clamp(80px,8vw,130px)/.9 'Bebas Neue',sans-serif;margin:14px 0 24px;letter-spacing:-.02em;}
 .ln-author-role{font-weight:700;letter-spacing:.02em;color:var(--ln-wine);}
 .ln-author-copy>p:not(.ln-author-role){max-width:620px;line-height:1.65;margin:22px 0;}
@@ -54,9 +53,18 @@ body:has(.lionetti-page){margin:0;}
 .ln-context-focus p{font-size:18px;line-height:1.55;}
 .lionetti-page #lectura.hb-material-reading{--material-paper:#f1ece4;--material-ink:#273443;--material-rust:#68455d;}
 .lionetti-page .hb-material-open{--material-rust:#68455d;}
+
+/* La ficha y la sinopsis ya están centradas. Solo el título y el botón heredaban
+   el desplazamiento horizontal pensado para otras páginas. Neutralizarlo
+   exclusivamente en Lionetti, sin alterar la entrada canónica compartida. */
+@media (min-width:1041px){
+  body:has(.lionetti-page) .lionetti-page .hb-material-content{
+    --hb-group-shift:0px;
+  }
+}
 .ln-toast{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);font-size:12px;pointer-events:none;color:#fff;background:#222a36;padding:4px 10px;border-radius:5px;}
 .ln-toast:empty{display:none;}
 .ln-skip{position:fixed;top:-100px;left:14px;background:#fff;z-index:2000;padding:12px;}
 .ln-skip:focus{top:12px;}
 @media(max-width:950px){.ln-inner{width:min(100% - 48px,1227px)}.ln-hero-layout{gap:28px;}.ln-graphic{min-height:360px;padding:24px;}.ln-graphic p{font-size:32px;}.ln-author-grid{gap:26px;}.ln-author-copy h2{font-size:80px;}.ln-focus-word{font-size:112px;}}
-@media(max-width:700px){.ln-screen{min-height:var(--reading-room);height:auto;}.ln-unit{min-height:var(--reading-room);padding:28px 0;}.ln-hero-layout,.ln-author-grid,.ln-context-focus{grid-template-columns:1fr;gap:26px;}.ln-graphic{min-height:290px;}.ln-graphic strong{font-size:105px;}.ln-author-mark{height:270px;min-height:270px;}.ln-author-mark span{font-size:170px;}.ln-author-copy h2{font-size:75px;}.ln-context-row{grid-template-columns:1fr;gap:18px;}.ln-context-row article{padding-top:11px;}.ln-context-row h3{margin:5px 0;}.ln-lead{font-size:17px;}.ln-focus-word{font-size:100px;}.ln-top,.ln-bottom{flex-direction:column;align-items:flex-start;gap:6px;}.ln-hero h1{font-size:42px;}.ln-subtitle{font-size:20px;}}
+@media(max-width:700px){.ln-screen{min-height:var(--reading-room);height:auto;}.ln-unit{min-height:var(--reading-room);padding:28px 0;}.ln-hero-layout,.ln-author-grid,.ln-context-focus{grid-template-columns:1fr;gap:26px;}.ln-graphic{min-height:290px;}.ln-graphic strong{font-size:105px;}.ln-author-photo{height:310px;min-height:310px;}.ln-author-copy h2{font-size:75px;}.ln-context-row{grid-template-columns:1fr;gap:18px;}.ln-context-row article{padding-top:11px;}.ln-context-row h3{margin:5px 0;}.ln-lead{font-size:17px;}.ln-focus-word{font-size:100px;}.ln-top,.ln-bottom{flex-direction:column;align-items:flex-start;gap:6px;}.ln-hero h1{font-size:42px;}.ln-subtitle{font-size:20px;}}
