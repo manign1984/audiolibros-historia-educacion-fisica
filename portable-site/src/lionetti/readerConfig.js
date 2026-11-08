@@ -1,8 +1,17 @@
 export const lionettiReaderConfig = {
   workId: 'lionetti-escuela-republicana',
-  textOnly: true,
+  textOnly: false,
   textUrl: `${import.meta.env.BASE_URL}assets/lionetti/texto-academico.txt`,
   sourceUrl: 'https://ojs.rmie.mx/index.php/rmie/article/view/1511',
+  audio: {
+    // El MP3 de Drive se reconstruye en el navegador con partes consecutivas sin modificación.
+    parts: Array.from({ length: 63 }, (_, index) =>
+      `${import.meta.env.BASE_URL}assets/lionetti/audio/audio-${String(index).padStart(2, '0')}.part`
+    ),
+    srtUrl: `${import.meta.env.BASE_URL}assets/lionetti/lionetti-subtitulos.srt`,
+    externalUrl: 'https://drive.google.com/file/d/11KrL0qxhvKtNVIzJEef1B-Oyrai-oPHX/view',
+    stateKey: 'lionetti-escuela-republicana-audio-state-v1',
+  },
   readingEntry: {
     author: 'Lucía Lionetti',
     title: 'La función republicana de la escuela pública: la formación del ciudadano en Argentina a fines del siglo XIX',
