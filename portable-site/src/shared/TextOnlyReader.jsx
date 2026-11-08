@@ -83,6 +83,7 @@ export default function TextOnlyReader({ config, showToast }) {
   const jump = index => {
     setPage(resolvePage(index, pages.length));
     article.current?.scrollTo({ top: 0 });
+    article.current?.closest('.text-only-workspace')?.scrollTo({ top: 0 });
     setEditingId(null);
     setDraft('');
     setNotice('');
@@ -154,7 +155,7 @@ export default function TextOnlyReader({ config, showToast }) {
               onClick={() => jump(item.page)}>{item.title}<small>Página {item.page + 1}</small></button>)}
             <a href={config.sourceUrl} target="_blank" rel="noreferrer">Consultar edición original</a>
           </nav>
-          <main className="text-only-document" ref={article} tabIndex={0} aria-label="Texto académico íntegro">
+          <div className="text-only-document" ref={article} role="region" tabIndex={0} aria-label="Texto académico íntegro">
             <div className="text-only-mobile-navigation">
               <label htmlFor="lionetti-sections">Apartados del artículo</label>
               <select id="lionetti-sections" value={toc.some(item => item.page === safePage) ? safePage : ''}
@@ -180,7 +181,7 @@ export default function TextOnlyReader({ config, showToast }) {
                 <button type="button" disabled={safePage === pages.length - 1} onClick={() => jump(safePage + 1)}>Siguiente <ArrowRight size={16}/></button>
               </div>
             </>}
-          </main>
+          </div>
           <aside className="text-only-notes" aria-label="Cuaderno de anotaciones">
             <h3><NotebookPen size={18}/> Mi cuaderno <small>{notes.length}</small></h3>
             <label htmlFor="lionetti-note">Anotá sobre la página {safePage + 1}</label>
