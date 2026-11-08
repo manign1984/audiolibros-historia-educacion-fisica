@@ -1,3 +1,5 @@
+> **ESTADO HISTÓRICO · 08/11/2026.** Este documento conserva el procedimiento anterior. La producción en chats convencionales, sin Work obligatorios ni investigaciones acústicas, se rige ahora por las [Directrices canónicas vigentes](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit) y el [registro único de producción activa](PRODUCCION_ACTIVA.md). En caso de contradicción, prevalecen esas dos referencias. No retomar aquí G3/CTC/Whisper ni fases de 2–3 Work.
+
 # Protocolo operativo de autonomía · Biblioteca +TEC UNAHUR · v1.0
 
 **Versión:** 1.0 / 06-11-2026. **Carácter:** protocolo de aplicación y aceptación, complementario y subordinado a las [Directrices canónicas 2.0](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit), sin reformarlas.  
