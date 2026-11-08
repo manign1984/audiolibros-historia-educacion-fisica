@@ -128,7 +128,7 @@ assert.equal(new Set(allCatalog.map((entry) => entry.id)).size, allCatalog.lengt
 for (const entry of allCatalog) {
   assert.ok(collections.some((collection) => collection.id === entry.collection));
   assert.ok(citationAsPlainText(entry).length > 30);
-  assert.ok(['available', 'review', 'preparation'].includes(entry.status));
+  assert.ok(['available', 'review', 'text', 'preparation'].includes(entry.status));
   await access(new URL(`../${entry.path}index.html`, import.meta.url));
   if (entry.status === 'preparation') {
     assert.equal(entry.duration, undefined, 'No inventar duración para audios pendientes.');
@@ -157,7 +157,7 @@ assert.equal(soares.readingDetail, 'Seguimiento aproximado por párrafos', 'El c
 assert.equal(matchesAvailability(soares, 'review'), false, 'Soares ya no aparece bajo Edición en revisión.');
 assert.equal(canReadAndListen(soares), true, 'Soares figura entre los lectores con texto y audiolibro.');
 assert.equal(allCatalog.filter(canReadAndListen).length, 7, 'Siete recorridos permiten leer y escuchar.');
-assert.match(libraryHome, /const readable = catalog\.filter\(canReadAndListen\)/, 'La estantería presenta todas las obras legibles.');
+assert.match(libraryHome, /const readable = catalog\.filter/, 'La estantería incluye lecturas con audio o solo texto.');
 assert.match(libraryHome, /entries=\{readable\}/, 'La estantería de lectura incluye Marcaida y Scaltritti.');
 assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
 assert.match(libraryHome, /const available = catalog\.filter\(\(entry\) => entry\.status === 'available'\)/, 'Conservar los cuatro destacados del carrusel automático.');
@@ -235,3 +235,12 @@ assert.match(libraryCss, /transition:opacity var\(--hero-fade-duration,700ms\)/,
 assert.match(libraryCss, /animation:hero-content-fade var\(--hero-fade-duration,700ms\)/, 'Los textos deben acompañar el fundido.');
 assert.match(libraryCss, /@media\(prefers-reduced-motion:reduce\)/, 'Debe existir variante sin animaciones.');
 assert.match(libraryCss, /\.library-page \.hero-pagination \.hero-rotation-toggle\s*\{[\s\S]*?width:44px;/, 'La pausa debe tener un objetivo táctil visible.');
+
+// Nueva modalidad legítima de lectura sin audiolibro: no se confunde con «Leer + escuchar».
+const lionetti = allCatalog.find(entry => entry.id === 'lionetti-escuela-republicana');
+assert.equal(lionetti.status, 'text');
+assert.equal(canReadAndListen(lionetti), false);
+assert.equal(matchesAvailability(lionetti, 'text'), true);
+assert.equal(matchesAvailability(lionetti, 'available'), false);
+await access(new URL('../src/shared/TextOnlyReader.jsx', import.meta.url));
+await access(new URL('../public/assets/lionetti/texto-academico.txt', import.meta.url));

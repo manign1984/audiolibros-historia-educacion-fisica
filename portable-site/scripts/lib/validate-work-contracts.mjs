@@ -108,7 +108,7 @@ export async function validateWorks({ root, manifest, contracts, catalog, collec
     check(/^textos\/[a-z0-9-]+\/$/.test(entry.path), 'catalog-route', entry.id, 'Ruta no canónica.');
     check(!routes.has(entry.path), 'catalog-route', entry.id, 'Ruta repetida.'); routes.add(entry.path);
     for (const field of ['id', 'author', 'title', 'shortTitle', 'sortAuthor']) check(present(entry[field]), 'catalog-metadata', entry.id, `Falta ${field}.`);
-    check(['available', 'review', 'preparation'].includes(entry.status), 'catalog-status', entry.id, 'Estado desconocido.');
+    check(['available', 'review', 'text', 'preparation'].includes(entry.status), 'catalog-status', entry.id, 'Estado desconocido.');
     check(collections.some(collection => collection.id === entry.collection), 'catalog-collection', entry.id, 'Colección inexistente.');
     check(present(entry.reference) || ['beforeItalic', 'italic', 'afterItalic'].every(field => present(entry.citation?.[field])), 'bibliography', entry.id, 'Falta referencia bibliográfica.');
     await exists(`${entry.path}index.html`, entry.id);

@@ -1,6 +1,20 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  lionetti: {
+    references: [
+      <>Lionetti, L. (2005). La función republicana de la escuela pública: la formación del ciudadano en Argentina a fines del siglo XIX. <em>Revista Mexicana de Investigación Educativa, 10</em>(27), 1225–1255.</>,
+      link('https://ojs.rmie.mx/index.php/rmie/article/view/1511', 'Revista Mexicana de Investigación Educativa · artículo y referencia editorial'),
+      link('https://www.scielo.org.mx/scielo.php?lng=es&nrm=iso&pid=S1405-66662005000401225&script=sci_arttext_plus&tlng=es', 'SciELO México · texto de acceso abierto'),
+      link('https://iehs.unicen.edu.ar/LuciaLionetti.html', 'IEHS / UNICEN · trayectoria de Lucía Lionetti'),
+    ],
+    rights: [
+      <>Esta edición de la Biblioteca +TEC utiliza el texto académico facilitado para la cátedra. Conserva las notas, la bibliografía y las referencias originales.</>,
+      <>El artículo está disponible en acceso abierto desde la revista y SciELO; consultar las condiciones de uso en las fuentes de publicación.</>,
+      <>Recorrido de lectura sin audio. Las anotaciones y el progreso se guardan exclusivamente en este navegador y pueden exportarse.</>,
+      <>Portada tipográfica y tres perspectivas de Contexto: elaboración didáctica del proyecto +TEC UNAHUR; no son documentos de época.</>,
+    ],
+  },
   soares: {
     references: [
       <>Soares, C. L. (2006). Las corrientes gimnásticas europeas y su contenido: una historia de rupturas y permanencias. En R. Rozengardt (Coord.), <em>Apuntes de historia para profesores de Educación Física</em> (pp. 223–242). Miño y Dávila.</>,

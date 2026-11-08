@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ArrowRight, Headphones } from 'lucide-react';
+import { ArrowRight, BookOpen, Headphones } from 'lucide-react';
 import '@fontsource/archivo/latin-900.css';
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import './canonical-reading.css';
@@ -21,15 +21,16 @@ export default function CanonicalReadingEntry({ onOpen, progress, noteCount, con
 
   const entry = config.readingEntry;
   const synopsisLines = entry.synopsis.split(/ (?=transformó la vida|de quienes lo vivieron|ese mundo y descubrir)/);
-  const hasProgress = progress.currentTime > 3;
+  const textOnly = config.textOnly === true;
+  const hasProgress = textOnly ? progress.currentPage > 1 : progress.currentTime > 3;
   const time = `${Math.floor(progress.currentTime / 60)}:${String(Math.floor(progress.currentTime % 60)).padStart(2, '0')}`;
 
   return <div ref={content} id="lector" className="hb-material-content">
     <div className="hb-material-hero">
       <JourneyBlockLabel sectionId="lectura" />
-      <h2 id="journey-reading-title" className="hb-material-title" aria-label="Leé, escuchá y anotá">
-        <span className="hb-material-word hb-material-word--listen" aria-hidden="true">ESCUCHÁ</span>
-        <span className="hb-material-word hb-material-word--read" aria-hidden="true">LEÉ</span>
+      <h2 id="journey-reading-title" className="hb-material-title" aria-label={textOnly ? 'Pensá, leé y anotá' : 'Leé, escuchá y anotá'}>
+        <span className="hb-material-word hb-material-word--listen" aria-hidden="true">{textOnly ? 'PENSÁ' : 'ESCUCHÁ'}</span>
+        <span className="hb-material-word hb-material-word--read" aria-hidden="true">{'LEÉ'}</span>
         <span className="hb-material-word hb-material-word--note" aria-hidden="true">ANOTÁ</span>
       </h2>
       <div className="hb-material-access">
@@ -37,12 +38,12 @@ export default function CanonicalReadingEntry({ onOpen, progress, noteCount, con
           <span className="hb-material-dots" />
         </div>
         <button className="hb-material-open" type="button" onClick={onOpen} aria-haspopup="dialog" aria-label={buttonAriaLabel} aria-describedby={hasProgress || noteCount > 0 ? "hb-material-resume" : undefined}>
-          <Headphones aria-hidden="true" />
+          {textOnly ? <BookOpen aria-hidden="true" /> : <Headphones aria-hidden="true" />}
           <span aria-hidden="true">{buttonLabel}</span>
           <ArrowRight aria-hidden="true" />
         </button>
       {(hasProgress || noteCount > 0) && <p id="hb-material-resume" className="hb-material-resume">
-        {hasProgress ? `Retomá desde ${time}.` : ''}{noteCount > 0 && ` ${noteCount} ${noteCount === 1 ? 'nota guardada' : 'notas guardadas'}.`}
+        {hasProgress ? (textOnly ? `Retomá desde la página ${progress.currentPage}.` : `Retomá desde ${time}.`) : ''}{noteCount > 0 && ` ${noteCount} ${noteCount === 1 ? 'nota guardada' : 'notas guardadas'}.`}
       </p>}
       </div>
     </div>

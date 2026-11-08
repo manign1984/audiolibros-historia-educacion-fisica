@@ -42,6 +42,12 @@ const records = [
 // Obras con lectura y audio habilitados; la disponibilidad del lector
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
+  'lionetti-escuela-republicana': {
+    status: 'text',
+    historicalPeriod: 'Escuela pública y ciudadanía · fines del siglo XIX',
+    stateKey: 'lionetti-escuela-republicana-text-page-v1',
+    readingDetail: 'Lectura académica íntegra y cuaderno de notas',
+  },
   'soares-corrientes-gimnasticas': {
     status: 'available',
     duration: 3113.377959,
