@@ -245,7 +245,7 @@ export async function validateWorks({ root, manifest, contracts, catalog, collec
       'El recorrido debe conservar el lector paginado con el reproductor y los créditos.');
     }
     if (textOk) {
-      const pages = (await readFile(within(root, work.textPath), 'utf8')).split('\\f').filter(part => part.trim());
+      const pages = (await readFile(within(root, work.textPath), 'utf8')).split('\f').filter(part => part.trim());
       check(pages.length === work.documentPages, 'page-audio-pages', location, 'Cantidad de páginas académicas diferente.');
     }
     if (srtOk) {
