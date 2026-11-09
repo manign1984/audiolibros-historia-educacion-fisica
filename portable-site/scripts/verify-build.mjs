@@ -11,6 +11,17 @@ const orbuchHtmlPath = resolve(dist, 'textos/orbuch-educar-al-cuerpo/index.html'
 const pineauHtmlPath = resolve(dist, 'textos/pineau-fresco-noble/index.html');
 const hobsbawmHtml = await readFile(resolve(dist, 'textos/hobsbawm-historia-siglo-xx/index.html'), 'utf8');
 const soaresHtml = await readFile(resolve(dist, 'textos/soares-corrientes-gimnasticas/index.html'), 'utf8');
+const lionettiHtml = await readFile(resolve(dist, 'textos/lionetti-escuela-republicana/index.html'), 'utf8');
+assert.ok(lionettiHtml.includes('Lucía Lionetti'), 'Lionetti debe publicar el recorrido propio.');
+assert.ok(lionettiHtml.includes('Audiolibro') && !lionettiHtml.includes('Sin audiolibro'),
+  'La portada de Lionetti anuncia la escucha y no conserva el aviso obsoleto.');
+assert.ok(lionettiHtml.includes(`src="${normalizedBase}assets/`), 'Lionetti respeta la base de GitHub Pages.');
+await access(resolve(dist, 'assets/lionetti/texto-academico.txt'));
+await access(resolve(dist, 'assets/lionetti/lionetti-subtitulos.srt'));
+for (let index = 0; index < 63; index += 1) {
+  await access(resolve(dist, `assets/lionetti/audio/audio-${String(index).padStart(2, '0')}.part`));
+}
+
 assert.match(soaresHtml, /Leer y escuchar/);
 assert.ok(soaresHtml.includes(`src="${normalizedBase}assets/`), 'La ruta Soares debe compilarse en la base pública correcta.');
 assert.match(hobsbawmHtml, /Historia del siglo XX · Eric Hobsbawm/);
@@ -53,6 +64,10 @@ const allJavaScript = (await Promise.all(
   assetNames.filter((name) => name.endsWith('.js')).map((name) => readFile(resolve(dist, 'assets', name), 'utf8')),
 )).join('\n');
 
+assert.ok(allJavaScript.includes(`${normalizedBase}assets/lionetti/audio/audio-`),
+  'El lector debe apuntar a los 63 archivos de la base publicada.');
+assert.ok(allJavaScript.includes(`${normalizedBase}assets/lionetti/lionetti-subtitulos.srt`),
+  'El lector debe cargar el SRT local en la base publicada.');
 const marcaidaBundle = await readFile(resolve(dist, 'assets', marcaidaBundleName), 'utf8');
 assert.ok(marcaidaBundle.includes(`./${readerBundleNames[0]}`), 'Marcaida/Scaltritti debe importar el lector compartido.');
 for (const name of ['marcaida-audiolibro-2026-11.mp3', 'marcaida-scaltritti-estado-nacional.pdf', 'marcaida-texto-accesible.txt', 'marcaida-tramas.svg']) {

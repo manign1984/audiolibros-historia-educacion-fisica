@@ -19,10 +19,10 @@ function download(name, contents, type) {
 }
 
 /**
- * Texto académico con navegación por página y cuaderno local. No requiere
- * audio, no inicia reproducciones y no muestra controles de sonido.
+ * Texto académico con navegación por página y cuaderno local.
+ * Puede recibir un reproductor opcional sin modificar las notas guardadas.
  */
-export default function TextOnlyReader({ config, showToast }) {
+export default function TextOnlyReader({ config, showToast, AudioPlayer = null }) {
   const [raw, setRaw] = useState('');
   const [error, setError] = useState('');
   const [open, setOpen] = useState(false);
@@ -130,10 +130,10 @@ export default function TextOnlyReader({ config, showToast }) {
     <div ref={openButton} className="text-only-entry">
       <CanonicalReadingEntry
         onOpen={() => setOpen(true)}
-        progress={{ currentTime: 0, currentPage: safePage + 1 }}
+        progress={{ currentTime: AudioPlayer ? (Number(retrieve(config.audio.stateKey, {}).currentTime) || 0) : 0, currentPage: safePage + 1 }}
         noteCount={notes.length}
         config={config}
-        buttonAriaLabel="Abrir lector de texto y cuaderno"
+        buttonAriaLabel={AudioPlayer ? "Abrir lector con audio, subtítulos y cuaderno" : "Abrir lector de texto y cuaderno"}
       />
     </div>
     <dialog ref={dialog} className="text-only-dialog" aria-label={`Lector de ${config.readingEntry.author}`}
@@ -144,6 +144,7 @@ export default function TextOnlyReader({ config, showToast }) {
           <div><small>Biblioteca +TEC UNAHUR · Lector integrado</small><h2>{config.readingEntry.title}</h2></div>
           <button type="button" onClick={close} aria-label="Cerrar lector"><X size={21}/></button>
         </header>
+        {AudioPlayer && <AudioPlayer open={open} config={config} />}
         <div className="text-only-workspace">
           <nav className="text-only-chapters" aria-label="Apartados del texto">
             <h3><BookOpen size={19}/> Recorrido</h3>
@@ -204,7 +205,7 @@ export default function TextOnlyReader({ config, showToast }) {
         </div>
         <footer className="text-only-footer">
           <span>{notice || 'Las notas y el progreso se guardan solamente en este navegador.'}</span>
-          <span>Edición solo de lectura · Sin audio</span>
+          <span>{AudioPlayer ? 'Texto completo · Audiolibro y subtítulos' : 'Edición solo de lectura · Sin audio'}</span>
         </footer>
       </div>
     </dialog>

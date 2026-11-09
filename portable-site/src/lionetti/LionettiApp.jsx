@@ -3,6 +3,7 @@ import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import TextOnlyReader from '../shared/TextOnlyReader.jsx';
+import LionettiAudioPlayer from './LionettiAudioPlayer.jsx';
 import { lionettiReaderConfig } from './readerConfig.js';
 import './lionetti.css';
 
@@ -29,7 +30,7 @@ export default function LionettiApp() {
               <span>ARCHIVO DE IDEAS</span><strong>1880</strong><div className="ln-graphic-rule"></div><p>ESCUELA<br/>PÚBLICA</p><small>CIUDADANÍA · CIVILIZACIÓN · INFANCIA</small>
             </div>
           </div>
-          <div className="ln-bottom"><span>Una lectura sobre educación y política</span><span>Texto completo · Anotaciones personales · Sin audiolibro</span></div>
+          <div className="ln-bottom"><span>Una lectura sobre educación y política</span><span>Texto completo · Audiolibro · Subtítulos · Anotaciones personales</span></div>
         </div>
       </section>
 
@@ -85,7 +86,7 @@ export default function LionettiApp() {
         </div>
       </section>
       <section id="lectura" className="ln-screen ln-reading hb-material-reading" aria-labelledby="journey-reading-title">
-        <TextOnlyReader config={lionettiReaderConfig} showToast={setToast}/>
+        <TextOnlyReader config={lionettiReaderConfig} showToast={setToast} AudioPlayer={LionettiAudioPlayer}/>
       </section>
       <JourneyCredits workId="lionetti"/>
     </main>

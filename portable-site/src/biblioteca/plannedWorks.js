@@ -43,10 +43,12 @@ const records = [
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
   'lionetti-escuela-republicana': {
-    status: 'text',
+    status: 'available',
+    // Referencia temporal aportada por el último subtítulo del SRT (no análisis acústico).
+    duration: 3701.996,
     historicalPeriod: 'Escuela pública y ciudadanía · fines del siglo XIX',
-    stateKey: 'lionetti-escuela-republicana-text-page-v1',
-    readingDetail: 'Lectura académica íntegra y cuaderno de notas',
+    stateKey: 'lionetti-escuela-republicana-audio-state-v1',
+    readingDetail: 'Audiolibro con subtítulos SRT · texto íntegro y cuaderno',
   },
   'soares-corrientes-gimnasticas': {
     status: 'available',

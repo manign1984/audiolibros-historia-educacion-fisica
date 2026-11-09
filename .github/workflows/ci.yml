@@ -35,6 +35,12 @@ jobs:
       - name: Test library catalog
         run: npm run test:library
 
+      - name: Verify Lionetti MP3 and SRT source integrity
+        run: npm run test:lionetti-assets
+
+      - name: Verify Lionetti SRT timecodes and audiovisual reader controls
+        run: npm run test:lionetti-audiovisual
+
       - name: Test Lionetti text reader and note-taking model
         run: npm run test:lionetti-reader
 

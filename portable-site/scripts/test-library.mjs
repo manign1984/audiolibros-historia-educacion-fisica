@@ -18,7 +18,7 @@ import { buildOrbuchReadingDocument } from '../src/orbuch/buildReadingDocument.j
 
 // Freeze the four legacy fixtures for their existing search/citation regressions.
 // Scharagrodsky has a dedicated document/catalog/runtime acceptance test.
-const catalog = allCatalog.filter((entry) => entry.status === 'available' && !['scharagrodsky-constitucion-ef', 'soares-corrientes-gimnasticas'].includes(entry.id));
+const catalog = allCatalog.filter((entry) => entry.status === 'available' && !['scharagrodsky-constitucion-ef', 'soares-corrientes-gimnasticas', 'lionetti-escuela-republicana'].includes(entry.id));
 const orbuch = catalog.find((entry) => entry.id === 'orbuch-educar-al-cuerpo');
 const pineau = catalog.find((entry) => entry.id === 'pineau-fresco-noble');
 const orbuchAccessibleText = await readFile(new URL('../src/orbuch/orbuch-texto-accesible.txt', import.meta.url), 'utf8');
@@ -156,7 +156,7 @@ assert.equal(soares.status, 'available', 'Soares figura como Leer + escuchar, co
 assert.equal(soares.readingDetail, 'Seguimiento aproximado por párrafos', 'El catálogo informa el grado real de sincronización.');
 assert.equal(matchesAvailability(soares, 'review'), false, 'Soares ya no aparece bajo Edición en revisión.');
 assert.equal(canReadAndListen(soares), true, 'Soares figura entre los lectores con texto y audiolibro.');
-assert.equal(allCatalog.filter(canReadAndListen).length, 7, 'Siete recorridos permiten leer y escuchar.');
+assert.equal(allCatalog.filter(canReadAndListen).length, 8, 'Ocho recorridos permiten leer y escuchar, incluido Lionetti.');
 assert.match(libraryHome, /const readable = catalog\.filter/, 'La estantería incluye lecturas con audio o solo texto.');
 assert.match(libraryHome, /entries=\{readable\}/, 'La estantería de lectura incluye Marcaida y Scaltritti.');
 assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
@@ -236,11 +236,12 @@ assert.match(libraryCss, /animation:hero-content-fade var\(--hero-fade-duration,
 assert.match(libraryCss, /@media\(prefers-reduced-motion:reduce\)/, 'Debe existir variante sin animaciones.');
 assert.match(libraryCss, /\.library-page \.hero-pagination \.hero-rotation-toggle\s*\{[\s\S]*?width:44px;/, 'La pausa debe tener un objetivo táctil visible.');
 
-// Nueva modalidad legítima de lectura sin audiolibro: no se confunde con «Leer + escuchar».
+// Lionetti: nueva modalidad audiovisual, con el texto y las notas originales conservados.
 const lionetti = allCatalog.find(entry => entry.id === 'lionetti-escuela-republicana');
-assert.equal(lionetti.status, 'text');
-assert.equal(canReadAndListen(lionetti), false);
-assert.equal(matchesAvailability(lionetti, 'text'), true);
-assert.equal(matchesAvailability(lionetti, 'available'), false);
+assert.equal(lionetti.status, 'available');
+assert.equal(canReadAndListen(lionetti), true);
+assert.equal(matchesAvailability(lionetti, 'text'), false);
+assert.equal(matchesAvailability(lionetti, 'available'), true);
+assert.equal(lionetti.stateKey, 'lionetti-escuela-republicana-audio-state-v1');
 await access(new URL('../src/shared/TextOnlyReader.jsx', import.meta.url));
 await access(new URL('../public/assets/lionetti/texto-academico.txt', import.meta.url));

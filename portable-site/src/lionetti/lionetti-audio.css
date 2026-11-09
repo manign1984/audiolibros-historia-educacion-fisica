@@ -1,0 +1,30 @@
+/* Extensión audiovisual del lector Lionetti. Sin modificar la retícula del texto. */
+.ln-audio{flex:0 0 auto;background:#18202d;color:#f7f5ef;padding:12px clamp(16px,2.5vw,28px);border-top:1px solid #46505e;font:400 13px/1.4 'Archivo',sans-serif;}
+.ln-audio-controls{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+.ln-audio-buttons{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+.ln-audio button{display:inline-flex;justify-content:center;align-items:center;gap:5px;min-width:42px;min-height:39px;padding:8px 10px;border:1px solid #8f8b96;border-radius:8px;background:#293243;color:#fff;cursor:pointer;font:600 12px/1.2 'Archivo',sans-serif;}
+.ln-audio button:disabled{opacity:.45;cursor:wait;}
+.ln-audio .ln-audio-primary{background:#e0c8ad;color:#241e25;border-color:#e0c8ad;min-width:105px;}
+.ln-audio-timeline{min-width:180px;flex:1;}
+.ln-audio-timeline input{width:100%;height:20px;accent-color:#e0c8ad;cursor:pointer;display:block;margin:0;}
+.ln-audio-time{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums;color:#e5d8cb;font-size:11px;}
+.ln-audio-speed{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;font-size:12px;}
+.ln-audio-speed select{min-height:35px;padding:5px 10px;border:1px solid #999ca7;border-radius:7px;color:#272735;background:#f7f3eb;font:600 13px 'Archivo',sans-serif;}
+.ln-audio-captions{display:flex;gap:18px;align-items:center;margin-top:9px;padding-top:9px;border-top:1px solid #394251;}
+.ln-audio-captions label{display:flex;gap:6px;align-items:center;white-space:nowrap;font-size:12px;cursor:pointer;}
+.ln-audio-captions label input{accent-color:#e0c8ad;width:16px;height:16px;}
+.ln-audio-caption-text{flex:1;min-width:0;min-height:25px;display:flex;align-items:center;color:#fff4de;font:500 14px/1.4 'Archivo',sans-serif;overflow-wrap:anywhere;}
+.ln-audio-status,.ln-audio-error{margin:6px 0 0;font-size:12px;}
+.ln-audio-error{color:#f6b7a8;}
+.ln-audio a{color:#f7d7b2;text-underline-offset:3px;}
+.ln-audio-links{display:flex;gap:16px;justify-content:flex-end;margin-top:6px;flex-wrap:wrap;font-size:11px;}
+@media(max-width:760px){
+  .ln-audio{padding:10px 13px;}
+  .ln-audio-controls{gap:8px 13px;}
+  .ln-audio-timeline{order:3;flex-basis:100%;}
+  .ln-audio-buttons{flex:1;}
+  .ln-audio-buttons button{min-height:44px;}
+  .ln-audio-speed{flex-shrink:0;}
+  .ln-audio-captions{align-items:flex-start;flex-direction:column;gap:6px;}
+  .ln-audio-caption-text{min-height:34px;}
+}

@@ -584,5 +584,31 @@
     "commit": "3b72722cbfd6249c061f471b792b9db1db3355ae",
     "date": "2026-11-05",
     "meaning": "Identidad de archivos y documentos de main inspeccionado. No certifica fidelidad editorial ni auditiva."
-  }
+  },
+  "pageAudioWorks": [
+    {
+      "id": "lionetti-escuela-republicana",
+      "mode": "page-audio",
+      "page": "src/lionetti/LionettiApp.jsx",
+      "main": "src/lionetti/main.jsx",
+      "creditsKey": "lionetti",
+      "textPath": "public/assets/lionetti/texto-academico.txt",
+      "srtPath": "public/assets/lionetti/lionetti-subtitulos.srt",
+      "audioPartsDirectory": "public/assets/lionetti/audio",
+      "audioPartsCount": 63,
+      "audioBytes": 37021265,
+      "audioSha256": "99d49c1e3985a61e7209f01f8d17978ba2a3e172da186dd0a251e0d6a5e6ebe0",
+      "srtBytes": 82882,
+      "srtSha256": "89616a56a51c18cd8b193c28bd04661bc62d321ea9a09f9e6a9412ac9fce7612",
+      "subtitleCues": 747,
+      "subtitleEnd": 3701.996,
+      "documentPages": 32,
+      "storage": {
+        "notesKey": "lionetti-escuela-republicana-text-notes-v1",
+        "pageKey": "lionetti-escuela-republicana-text-page-v1",
+        "audioKey": "lionetti-escuela-republicana-audio-state-v1"
+      },
+      "review": "Audiolibro y SRT provistos por el proyecto, con marcas temporales conservadas; el texto íntegro permanece paginado y no se declara alineación con oraciones."
+    }
+  ]
 }
