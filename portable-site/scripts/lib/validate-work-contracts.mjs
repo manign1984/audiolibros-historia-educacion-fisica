@@ -87,6 +87,30 @@ export function checkManifest(manifest) {
     const remoteAudio = present(work.externalAudioUrl) && /^https:\/\//.test(work.externalAudioUrl);
     if (!work.materials.some(item => item.kind === 'text') || (!work.materials.some(item => item.kind === 'audio') && !remoteAudio)) throw new Error(`${work.id}: falta texto o audio real/localizado`);
   }
+  // Lectores que conservan páginas académicas íntegras y muestran SRT durante
+  // el audio: no fingir una alineación oración a oración ni forzar el modelo
+  // de readingDocument usado por los lectores sincronizados.
+  if (manifest.pageAudioWorks !== undefined && !Array.isArray(manifest.pageAudioWorks))
+    throw new Error('pageAudioWorks debe ser una lista.');
+  for (const work of manifest.pageAudioWorks || []) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(work.id) || ids.has(work.id))
+      throw new Error(`ID de lector por páginas inválido/repetido: ${work.id}`);
+    ids.add(work.id);
+    if (work.mode !== 'page-audio') throw new Error(`${work.id}: modo inválido.`);
+    for (const field of ['page','main','creditsKey','textPath','srtPath','audioPartsDirectory','audioSha256','srtSha256'])
+      if (!present(work[field])) throw new Error(`${work.id}: falta ${field}.`);
+    for (const field of ['notesKey','pageKey','audioKey'])
+      if (!present(work.storage?.[field])) throw new Error(`${work.id}: falta clave ${field}.`);
+    if (!Number.isInteger(work.audioPartsCount) || work.audioPartsCount < 1 ||
+        !Number.isInteger(work.documentPages) || work.documentPages < 1 ||
+        !Number.isInteger(work.subtitleCues) || work.subtitleCues < 1 ||
+        !Number.isInteger(work.audioBytes) || work.audioBytes < 1 ||
+        !Number.isInteger(work.srtBytes) || work.srtBytes < 1 ||
+        !finite(work.subtitleEnd) || work.subtitleEnd <= 0 ||
+        !/^[a-f0-9]{64}$/.test(work.audioSha256) ||
+        !/^[a-f0-9]{64}$/.test(work.srtSha256))
+      throw new Error(`${work.id}: contrato de recursos incompleto.`);
+  }
   return manifest;
 }
 
@@ -98,7 +122,10 @@ export async function validateWorks({ root, manifest, contracts, catalog, collec
   const check = (condition, code, location, message) => { if (!condition) error(code, location, message); };
   const keys = new Map(reservedStorageKeys.map(key => [key, 'biblioteca'])), ids = new Set(), routes = new Set();
   const live = new Set(catalog.filter(entry => ['available', 'review'].includes(entry.status)).map(entry => entry.id));
-  for (const id of live) check(manifest.works.some(work => work.id === id), 'unregistered-work', id, 'Recorrido accesible sin registro de validación.');
+  for (const id of live) check(
+    manifest.works.some(work => work.id === id) || (manifest.pageAudioWorks || []).some(work => work.id === id),
+    'unregistered-work', id, 'Recorrido accesible sin registro de validación.',
+  );
   const exists = async (path, location) => {
     try { const info = await stat(within(root, path)); if (!info.isFile() || info.size === 0) throw new Error('No es un archivo no vacío'); return true; }
     catch (cause) { error('missing-file', location, `${path}: ${cause.code || cause.message}`); return false; }
@@ -196,6 +223,62 @@ export async function validateWorks({ root, manifest, contracts, catalog, collec
     const credits = await readFile(resolve(root, 'src/shared/creditsContent.jsx'), 'utf8');
     check(new RegExp(`\\b${work.creditsKey}:\\s*\\{\\s*references:\\s*\\[`).test(credits), 'credits-reference', work.id, 'No existe la entrada bibliográfica en los créditos compartidos.');
     report.works.push({ id: work.id, duration: document.duration, unit: work.sync.unit, status: config.sync.status, sections: document.sections.length, paragraphs: document.sections.flatMap(section => section.paragraphs).length, units: units.length, timed: units.length - timeline.untimed.length, untimed: timeline.untimed, gaps: timeline.gaps, materials: work.materials.length });
+  }
+  for (const work of manifest.pageAudioWorks || []) {
+    const location = work.id;
+    const entry = catalog.find(item => item.id === location);
+    check(!!entry && live.has(location), 'page-audio-catalog', location, 'Recorrido por páginas no publicado en el catálogo.');
+    check(entry?.stateKey === work.storage.audioKey, 'page-audio-storage', location, 'El catálogo no recupera el avance de audio.');
+    check(Math.abs((entry?.duration ?? NaN) - work.subtitleEnd) <= 0.005, 'page-audio-duration', location, 'Duración declarada distinta del fin del SRT.');
+    for (const [role, key] of Object.entries(work.storage)) {
+      check(!keys.has(key), 'storage-collision', location, `${role}: colisión con ${keys.get(key)}.`);
+      keys.set(key, location);
+    }
+    const [pageOk, mainOk, textOk, srtOk] = await Promise.all([
+      exists(work.page, location), exists(work.main, location),
+      exists(work.textPath, location), exists(work.srtPath, location),
+    ]);
+    if (pageOk) {
+      const pageSource = await readFile(within(root, work.page), 'utf8');
+      check(pageSource.includes('TextOnlyReader') && pageSource.includes('LionettiAudioPlayer') &&
+        pageSource.includes(`workId="${work.creditsKey}"`), 'page-audio-reader', location,
+      'El recorrido debe conservar el lector paginado con el reproductor y los créditos.');
+    }
+    if (textOk) {
+      const pages = (await readFile(within(root, work.textPath), 'utf8')).split('\\f').filter(part => part.trim());
+      check(pages.length === work.documentPages, 'page-audio-pages', location, 'Cantidad de páginas académicas diferente.');
+    }
+    if (srtOk) {
+      const srtFile = within(root, work.srtPath);
+      const srtBytes = await stat(srtFile);
+      check(srtBytes.size === work.srtBytes && await hashFiles([srtFile]) === work.srtSha256,
+        'page-audio-srt-integrity', location, 'SRT distinto del original.');
+      try {
+        const captions = parseSubtitles(await readFile(srtFile, 'utf8'));
+        check(captions.length === work.subtitleCues, 'page-audio-cues', location, 'Cantidad de segmentos SRT diferente.');
+        check(captions.every((cue, i) => finite(cue.start) && finite(cue.end) && cue.end > cue.start &&
+          (i === 0 || cue.start >= captions[i - 1].start)),
+          'page-audio-timeline', location, 'Marcas originales SRT inválidas o sin orden.');
+        check(Math.abs(captions.at(-1).end - work.subtitleEnd) <= 0.005,
+          'page-audio-srt-end', location, 'Extremo del SRT diferente.');
+      } catch (cause) { error('page-audio-srt-format', location, cause.message); }
+    }
+    const audioPaths = Array.from({ length: work.audioPartsCount }, (_, i) =>
+      `${work.audioPartsDirectory}/audio-${String(i).padStart(2, '0')}.part`);
+    let complete = true, size = 0;
+    for (const path of audioPaths) {
+      if (!await exists(path, location)) { complete = false; continue; }
+      size += (await stat(within(root, path))).size;
+    }
+    if (complete) {
+      check(size === work.audioBytes, 'page-audio-size', location, 'Total de bytes del audio modificado.');
+      check(await hashFiles(audioPaths.map(path => within(root, path))) === work.audioSha256,
+        'page-audio-hash', location, 'Los fragmentos ya no reproducen el MP3 original.');
+    }
+    report.works.push({ id: location, duration: work.subtitleEnd, unit: 'subtitle',
+      status: 'page-audio', sections: work.documentPages, paragraphs: 0,
+      units: work.subtitleCues, timed: work.subtitleCues, untimed: [],
+      gaps: [], materials: work.audioPartsCount + 2 });
   }
   return report;
 }
