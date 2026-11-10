@@ -66,34 +66,44 @@ body:has(.lionetti-page){margin:0;}
 .ln-focus-word{font:400 clamp(130px,14vw,230px)/1 'Bebas Neue',sans-serif;letter-spacing:-.045em;color:var(--ln-wine);border-bottom:4px solid var(--ln-wine);}
 .ln-context-focus h3{font-size:27px;margin:0 0 18px;}
 .ln-context-focus p{font-size:18px;line-height:1.55;}
-.lionetti-page #lectura.hb-material-reading{--material-paper:#f1ece4;--material-ink:#273443;--material-rust:#68455d;}
-.lionetti-page .hb-material-open{--material-rust:#68455d;}
+/* Bloque 04 · Lectura: geometría y responsive íntegramente canónicos.
+   Solo paleta cromática de Lionetti, sin ajustar márgenes ni --hb-group-shift.
+   El selector iguala la especificidad del CSS compartido para garantizar colores. */
+body:has(.journey-header, .aisenstein-preview__header) .lionetti-page #lectura.hb-material-reading {
+  --material-paper: #f1ece4;
+  --material-ink: #273443;
+  --material-rust: #68455d;
+}
 
-/* Corrección Lionetti (08/11/2026): usar UN eje horizontal en todo el bloque 04.
-   Aprendizaje: --hb-group-shift no era suficiente: el título (194 unidades)
-   y el acceso (261 unidades) conservaban márgenes a la izquierda.
-   Mantener la retícula tipográfica, proporciones y relieve del bloque canónico.
-   Centrar únicamente las cajas afectadas, sin alterar otras obras.
-   Las reglas móviles compartidas (<=740 px) quedan intactas. */
-@media (min-width:741px) {
-  .lionetti-page #lectura.hb-material-reading .hb-material-content {
-    --hb-group-shift: 0px;
-  }
-  .lionetti-page #lectura.hb-material-reading .hb-material-title {
-    margin: 0 auto;
-    max-width: calc(100% - 32px);
-  }
-  .lionetti-page #lectura.hb-material-reading .hb-material-access {
-    margin: calc(30 * var(--hb-unit)) auto 0;
-    max-width: calc(100% - 32px);
-  }
-  .lionetti-page #lectura.hb-material-reading .hb-material-copy {
-    margin-inline: auto;
-  }
-  /* El rótulo 04 acompaña el borde izquierdo de la ficha bibliográfica. */
-  .lionetti-page #lectura.hb-material-reading .hb-material-hero > .journey-block-label {
-    left: calc(50% - 235 * var(--hb-unit));
-  }
+/* Personalización exclusivamente cromática: mismo relieve, gradiente de
+   tres paradas, luces, sombras, animaciones y forma que Pineau/Orbuch. */
+.lionetti-page #lectura.hb-material-reading .hb-material-open {
+  color: #f4ede1;
+  border-color: rgba(198, 155, 177, .78);
+  border-right-color: rgba(60, 35, 52, .92);
+  border-bottom-color: rgba(44, 27, 40, .98);
+  background: linear-gradient(156deg, #80586f 0%, #624057 43%, #40293a 100%);
+  box-shadow:
+    inset 2px 3px 2px rgba(249, 228, 235, .42),
+    inset 7px 0 8px rgba(214, 176, 195, .18),
+    inset -2px -5px 3px rgba(37, 20, 33, .88),
+    1px 5px 0 #382333,
+    7px 18px 20px -7px rgba(65, 37, 57, .46),
+    14px 30px 26px -12px rgba(89, 58, 69, .30);
+}
+.lionetti-page #lectura.hb-material-reading .hb-material-open::before {
+  border-color: rgba(240, 208, 223, .27);
+  border-bottom-color: rgba(49, 28, 43, .65);
+}
+.lionetti-page #lectura.hb-material-reading .hb-material-open > svg:last-child {
+  color: #ebcdae;
+  filter: drop-shadow(0 0 5px rgba(235, 205, 174, .29));
+}
+.lionetti-page #lectura.hb-material-reading .hb-material-dots {
+  background: radial-gradient(circle at 4px 4px, rgba(104, 69, 93, .34) 0 1.6px, transparent 2px) 0 0 / 17px 17px;
+}
+.lionetti-page #lectura.hb-material-reading .hb-material-synopsis {
+  color: var(--material-ink);
 }
 .ln-toast{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);font-size:12px;pointer-events:none;color:#fff;background:#222a36;padding:4px 10px;border-radius:5px;}
 .ln-toast:empty{display:none;}
