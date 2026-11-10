@@ -2,6 +2,7 @@ import { useState } from 'react';
 import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
+import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
 import TextOnlyReader from '../shared/TextOnlyReader.jsx';
 import { lionettiReaderConfig } from './readerConfig.js';
 import './lionetti.css';
@@ -33,18 +34,17 @@ export default function LionettiApp() {
         </div>
       </section>
 
-      <section id="autor" className="ln-screen ln-author" aria-labelledby="ln-author-title">
-        <div className="ln-inner ln-author-grid">
-          <figure className="ln-author-photo"><img src={`${import.meta.env.BASE_URL}assets/lionetti/lionetti.jpg`} width="487" height="429" alt="Retrato fotográfico de Lucía Lionetti" loading="lazy"/><figcaption>Fotografía facilitada para el proyecto desde la carpeta WEBs.</figcaption></figure>
-          <div className="ln-author-copy">
-            <JourneyBlockLabel sectionId="autor" />
-            <h2 id="ln-author-title">Lucía Lionetti</h2>
-            <p className="ln-author-role">Historiadora · Educación, ciudadanía e infancias</p>
-            <p>{biography}</p>
-            <a href="https://iehs.unicen.edu.ar/LuciaLionetti.html" target="_blank" rel="noreferrer">Consultar trayectoria académica · IEHS / UNICEN ↗</a>
-            <small>Retrato aportado al proyecto. Se conserva la imagen original sin modificaciones.</small>
-          </div>
-        </div>
+      <section id="autor" className="ln-screen ln-author" aria-label="Lucía Lionetti">
+        <AuthorBiography
+          name="Lucía Lionetti"
+          initial="L"
+          role="Historiadora · Educación, ciudadanía e infancias"
+          summary={biography}
+          image={`${import.meta.env.BASE_URL}assets/lionetti/lionetti.jpg`}
+          imageAlt="Retrato fotográfico de Lucía Lionetti"
+          credit="Fotografía facilitada para el proyecto."
+          biographyUrl="https://iehs.unicen.edu.ar/LuciaLionetti.html"
+        />
       </section>
 
       <section id="contexto" aria-label="Tres perspectivas para estudiar el artículo">
