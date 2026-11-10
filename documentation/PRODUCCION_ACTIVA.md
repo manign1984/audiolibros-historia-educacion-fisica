@@ -9,8 +9,9 @@
 
 **Obra activa:** Ignacio Melano · *Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70* (capítulo 6, 2024).  
 **Hito 10/11/2026:** Etapa A, depuración textual. PDF de 19 páginas impresas (131–149); se retiraron notas al pie 193–212, encabezados y folios y se integró el cuerpo en el [Google Docs de narración](https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit). Conserva seis apartados, citas y contenido principal. [PDF original](https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view). Extensión aproximada: 35.940 caracteres. No existen MP3/SRT/VTT ni página web construida para esta obra.  
-**Estado:** EN DESARROLLO. **Etapa:** A (texto preparado; revisión final de locución si corresponde); B y C todavía no iniciadas.  
-**Próxima acción única:** Revisar puntualmente el texto preparado y generar audiolibro y subtítulos en ElevenLabs, sin repetir la extracción ya realizada. A continuación, integrar los cinco bloques canónicos y desarrollar el Contexto dentro de B.  
+**Actualización 10/11/2026:** Versión para ElevenLabs depurada de 35 citas parentéticas, dos fragmentos de una referencia bibliográfica dividida y un año citado dentro de un paréntesis explicativo; se conservan fechas y aclaraciones históricas. Existe una [copia académica con citas](https://docs.google.com/document/d/19_QDXB4uo8kaAhUA8yDbWTokbdzSEPYAFwlrqroxWLk/edit) para el lector visual; la copia original PDF también se conserva. No usar el TXT de locución como sustituto del texto académico con referencias en el futuro lector.  
+**Estado:** EN DESARROLLO. **Etapa:** A (texto preparado para locución; recursos sonoros aún pendientes); B y C todavía no iniciadas.  
+**Próxima acción única:** Exportar el documento de locución en TXT y generar audiolibro y subtítulos en ElevenLabs, sin repetir depuraciones ni usar la versión bibliográfica para la narración. A continuación, integrar los cinco bloques canónicos y desarrollar el Contexto dentro de B.  
 **Criterio operativo:** trabajo proporcionado al objetivo; reutilizar componentes y no abrir auditorías acústicas, jurídicas ni investigaciones redundantes.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
@@ -37,14 +38,15 @@ Los valores `available`, `review`, `text` y `preparation` de esta tabla son **va
 | Campo | Valor vigente |
 | --- | --- |
 | Obra activa | Ignacio Melano · *Militares al gobierno, juramentados al poder* (capítulo 6, 2024) |
-| Etapa | A · Texto depurado en Google Docs; pendiente revisión editorial puntual para locución. B/C aún sin iniciar. |
+| Etapa | A · Dos versiones preparadas: narración sin citas APA y lectura visual con citas; pendientes MP3/SRT-VTT. B/C aún sin iniciar. |
 | Estado interno | EN DESARROLLO: no hay aún MP3, subtítulos ni recorrido web. |
 | Rama / PR | Esta actualización del registro documental se gestiona por PR; la futura implementación web tendrá su propia rama. |
 | Último commit de código reutilizable | `04cdf36054cc9f9796c360a92fdc3bc955d0c335` (Lionetti, antecedente; no es implementación de Melano). |
 | Enlace al original | https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view |
-| Texto depurado | https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit |
+| Texto para ElevenLabs (sin citas) | https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit |
+| Texto académico para lector (con citas) | https://docs.google.com/document/d/19_QDXB4uo8kaAhUA8yDbWTokbdzSEPYAFwlrqroxWLk/edit |
 | Incidencia pendiente | Ninguna falla de extracción constatada; falta producir recursos sonoros. |
-| **Próxima acción única** | Revisar texto para ElevenLabs y producir MP3/SRT-VTT; luego comenzar B. |
+| **Próxima acción única** | Exportar TXT de locución y producir MP3/SRT-VTT; después comenzar B con la versión académica para lectura. |
 | URL publicada | No hay ruta Melano publicada todavía. |
 
 Al iniciar una obra, completar únicamente estos campos y el estado interno EN DESARROLLO/COMPLETA. Al terminar una etapa A, B o C, **guardar un commit verificable y actualizar esta ficha antes de seguir**. No esperar al límite del chat. No crear un expediente nuevo para cada intercambio. Los materiales grandes permanecen en sus ubicaciones autorizadas; no poner texto académico, audio privado o credenciales en esta ficha.
