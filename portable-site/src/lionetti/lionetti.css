@@ -75,6 +75,15 @@ body:has(.journey-header, .aisenstein-preview__header) .lionetti-page #lectura.h
   --material-rust: #68455d;
 }
 
+/* TextOnlyReader envuelve CanonicalReadingEntry en .text-only-entry.
+   Como #lectura es flex, sin ancho explícito ese envoltorio se centra con
+   ancho intrínseco y desplaza el título, botón y rótulo. Mismo ancho de
+   referencia que el Launcher directo de Hobsbawm, Pineau y Orbuch. */
+.lionetti-page #lectura.hb-material-reading > .text-only-entry {
+  width: 100%;
+  min-width: 0;
+}
+
 /* Personalización exclusivamente cromática: mismo relieve, gradiente de
    tres paradas, luces, sombras, animaciones y forma que Pineau/Orbuch. */
 .lionetti-page #lectura.hb-material-reading .hb-material-open {
