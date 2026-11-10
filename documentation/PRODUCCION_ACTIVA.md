@@ -12,7 +12,7 @@
 **Criterio operativo:** priorizar finalización y presentación institucional; resolver, implementar, comprobar lo indispensable, cerrar y avanzar. No se usan cuotas numéricas ni tiempos rígidos por página. Mejoras estéticas menores quedan para etapas posteriores.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
-- **A · Preparar:** reunir recursos facilitados, identificar edición y autoría, y definir el Contexto (1–3 pantallas).
+- **A · Preparar:** reunir recursos facilitados, identificar edición y autoría, y definir el Contexto (UNA o DOS pantallas útiles, máximo rígido de dos según las Directrices 3.0, sección 3.5).
 - **B · Construir:** reutilizar los cinco bloques, el lector y las funciones comunes; integrar texto primero si es necesario, y MP3/SRT/VTT cuando estén disponibles. Los cinco bloques construidos pueden desplegarse técnicamente con estado EN DESARROLLO.
 - **C · Comprobar y desplegar:** verificaciones funcionales mínimas, compilación, despliegue y URL real; registrar commit y estado interno. El despliegue técnico no equivale a COMPLETA ni a difusión institucional.
 
