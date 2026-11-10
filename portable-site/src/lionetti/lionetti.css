@@ -84,5 +84,9 @@ body:has(.lionetti-page){margin:0;}
 .ln-toast:empty{display:none;}
 .ln-skip{position:fixed;top:-100px;left:14px;background:#fff;z-index:2000;padding:12px;}
 .ln-skip:focus{top:12px;}
-@media(max-width:950px){.ln-inner{width:min(100% - 48px,1227px)}.ln-hero-layout{gap:28px;}.ln-graphic{min-height:360px;padding:24px;}.ln-graphic p{font-size:32px;}.ln-author{padding:6rem 0;}.ln-focus-word{font-size:112px;}}
-@media(max-width:700px){.ln-screen{min-height:var(--reading-room);height:auto;}.ln-unit{min-height:var(--reading-room);padding:28px 0;}.ln-hero-layout,.ln-context-focus{grid-template-columns:1fr;gap:26px;}.ln-graphic{min-height:290px;}.ln-graphic strong{font-size:105px;}.ln-author{padding:60px 0;}.ln-context-row{grid-template-columns:1fr;gap:18px;}.ln-context-row article{padding-top:11px;}.ln-context-row h3{margin:5px 0;}.ln-lead{font-size:17px;}.ln-focus-word{font-size:100px;}.ln-top,.ln-bottom{flex-direction:column;align-items:flex-start;gap:6px;}.ln-hero h1{font-size:42px;}.ln-subtitle{font-size:20px;}}
+@media(max-width:950px){.ln-inner{width:min(100% - 48px,1227px)}.ln-hero-layout{gap:28px;}.ln-graphic{min-height:360px;padding:24px;}.ln-graphic p{font-size:32px;}.ln-focus-word{font-size:112px;}}
+@media(max-width:700px){.ln-screen{min-height:var(--reading-room);height:auto;}.ln-unit{min-height:var(--reading-room);padding:28px 0;}.ln-hero-layout,.ln-context-focus{grid-template-columns:1fr;gap:26px;}.ln-graphic{min-height:290px;}.ln-graphic strong{font-size:105px;}.ln-context-row{grid-template-columns:1fr;gap:18px;}.ln-context-row article{padding-top:11px;}.ln-context-row h3{margin:5px 0;}.ln-lead{font-size:17px;}.ln-focus-word{font-size:100px;}.ln-top,.ln-bottom{flex-direction:column;align-items:flex-start;gap:6px;}.ln-hero h1{font-size:42px;}.ln-subtitle{font-size:20px;}}
+
+/* El espaciado se alinea con los puntos de quiebre canónicos del bloque 02. */
+@media(max-width:900px){.ln-author{padding:6rem 0;}}
+@media(max-width:360px){.ln-author{padding:60px 0;}}
