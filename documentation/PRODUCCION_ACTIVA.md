@@ -2,23 +2,23 @@
 
 **Fecha del primer registro:** 08/11/2026. **Rama de referencia:** `main`.  
 **Propósito:** registrar el estado operativo de la biblioteca, no reconstruir la historia de los chats.  
-**Norma superior:** [Directrices canónicas vigentes (v2.3)](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit).  
+**Norma superior:** [Directrices canónicas vigentes (v3.0)](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit).  
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 
 ## 1. Qué se está haciendo
 
-**Tarea actual:** Lucía Lionetti · *La función republicana de la escuela pública* (2005): piloto textual y mejora del lector **cerrados**. PR #87 (piloto) y PR #91 (mejora) fusionadas; último commit del lector `04cdf36054cc9f9796c360a92fdc3bc955d0c335`. El lector conserva 32 páginas, añade búsqueda, índice móvil, notas editables y progreso fiable, sin audio ni subtítulos. CI #42449600615 y despliegue Pages #42449696287 finalizaron con `success`. No se afirma inspección visual interactiva externa.
-**Próxima tarea:** elegir una nueva obra con materiales confirmados. No repetir el piloto Lionetti ni incorporar audio sin insumos autorizados.
-**Objetivo de rendimiento:** al menos tres páginas por jornada con materiales completos; es una meta y no una afirmación de producción alcanzada.
+**Último trabajo realizado:** Lucía Lionetti · *La función republicana de la escuela pública* (2005): piloto textual y mejora del lector **cerrados técnicamente**. La obra permanece **EN DESARROLLO** según las Directrices 3.0 mientras no incorpore audiolibro y subtítulos. PR #87 (piloto) y PR #91 (mejora) fusionadas; último commit del lector `04cdf36054cc9f9796c360a92fdc3bc955d0c335`. El lector conserva 32 páginas, añade búsqueda, índice móvil, notas editables y progreso fiable, sin audio ni subtítulos. CI #42449600615 y despliegue Pages #42449696287 finalizaron con `success`. No se afirma inspección visual interactiva externa.
+**Próxima tarea:** seleccionar la siguiente obra según prioridades de cierre del proyecto, usando los materiales ya disponibles. No repetir el piloto Lionetti ni inventar recursos de audio.
+**Criterio operativo:** priorizar finalización y presentación institucional; resolver, implementar, comprobar lo indispensable, cerrar y avanzar. No se usan cuotas numéricas ni tiempos rígidos por página. Mejoras estéticas menores quedan para etapas posteriores.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
 - **A · Preparar:** reunir recursos facilitados, identificar edición y autoría, y definir el Contexto (1–3 pantallas).
-- **B · Construir:** reutilizar los cinco bloques, el lector y las funciones comunes; integrar texto, MP3 y tiempos SRT/VTT.
-- **C · Publicar:** pruebas técnicas mínimas de interfaz y reproducción, compilación, despliegue y apertura de URL real; registrar commit y estado del catálogo.
+- **B · Construir:** reutilizar los cinco bloques, el lector y las funciones comunes; integrar texto primero si es necesario, y MP3/SRT/VTT cuando estén disponibles. Los cinco bloques construidos pueden desplegarse técnicamente con estado EN DESARROLLO.
+- **C · Comprobar y desplegar:** verificaciones funcionales mínimas, compilación, despliegue y URL real; registrar commit y estado interno. El despliegue técnico no equivale a COMPLETA ni a difusión institucional.
 
 **Audio y subtítulos:** usar los tiempos recibidos. CERO investigaciones acústicas, CERO búsqueda de desfases o incompatibilidades. El responsable comunica el error perceptivo cuando exista; solo entonces se corrige el punto indicado. Prohibidas por defecto Whisper, CTC, alineación forzada, análisis de silencios y rondas de escucha.
 
-## 2. Estado de catálogo confirmado el 08/11/2026
+## 2. Estados técnicos del catálogo observados el 08/11/2026 (histórico)
 
 | Obra / grupo | Estado en código `main` | Acción pendiente asignada |
 | --- | --- | --- |
@@ -28,22 +28,22 @@ Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatori
 | Orbuch, Pineau/Fresco–Noble, Hobsbawm, Aisenstein/Tabla rasa y Scharagrodsky | `available` | Ninguna |
 | Demás fichas de `plannedWorks.js` | `preparation` salvo las excepciones citadas | Elegir próximas obras solo con datos confirmados |
 
-Los estados anteriores indican datos del catálogo, no una nueva auditoría perceptiva de todas las páginas. Verificar de nuevo el código antes de cambiarlos. La lista no establece un orden de producción.
+Los valores `available`, `review`, `text` y `preparation` de esta tabla son **valores técnicos históricos del código**, no los estados normativos 3.0. Los únicos estados internos de producción acordados son EN DESARROLLO y COMPLETA. `text` como en Lionetti no es COMPLETA; el lector textual sí está implementado. La identificación pública acordada para recorridos en construcción es «Leer + escuchar»; su adopción en el código debe verificarse cuando se intervenga el catálogo, sin presumir que ya se modificó. No se han re-auditado perceptivamente todas las páginas. La lista no establece un orden.
 
 ## 3. Ficha de reanudación (una obra activa por vez)
 
 | Campo | Valor vigente |
 | --- | --- |
-| Obra activa | Sin asignar (Lionetti completada) |
-| Etapa | — (A/B/C Lionetti + mejora del lector completadas) |
+| Obra activa | Sin asignar (piloto textual de Lionetti cerrado técnicamente; obra EN DESARROLLO hasta integrar audio y subtítulos) |
+| Etapa | — (construcción y despliegue textual de Lionetti terminados; completar la obra requiere material sonoro) |
 | Rama / PR | PR #91 fusionada: https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/91 |
 | Último commit recuperable | `04cdf36054cc9f9796c360a92fdc3bc955d0c335` (mejora del lector Lionetti fusionada en `main`) |
 | Enlaces a originales | Lionetti: TXT https://drive.google.com/file/d/1wabrGO_C9oZaJZj0nv-fzEq9ukRaC5tD/view ; PDF https://drive.google.com/file/d/1FXGeM_sEvkKNpjrb1_6Z0bWTz7d9bBkZ/view ; revista https://ojs.rmie.mx/index.php/rmie/article/view/1511 |
 | Incidencia real pendiente | Ninguna técnica comunicada; falta solamente una observación manual externa opcional de la interfaz. CI y Pages aprobados. |
-| **Próxima acción única** | Seleccionar siguiente obra y localizar fuentes, audio y subtítulos facilitados |
+| **Próxima acción única** | Seleccionar obra siguiente según prioridades institucionales y recursos disponibles; no iniciar auditorías accesorias |
 | URL publicada | https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/lionetti-escuela-republicana/ (GitHub Pages #42449696287: success; sin inspección visual externa) |
 
-Al iniciar una obra, completar únicamente estos campos. Al terminar una etapa A, B o C, **guardar un commit verificable y actualizar esta ficha antes de seguir**. No esperar al límite del chat. No crear un expediente nuevo para cada intercambio. Los materiales grandes permanecen en sus ubicaciones autorizadas; no poner texto académico, audio privado o credenciales en esta ficha.
+Al iniciar una obra, completar únicamente estos campos y el estado interno EN DESARROLLO/COMPLETA. Al terminar una etapa A, B o C, **guardar un commit verificable y actualizar esta ficha antes de seguir**. No esperar al límite del chat. No crear un expediente nuevo para cada intercambio. Los materiales grandes permanecen en sus ubicaciones autorizadas; no poner texto académico, audio privado o credenciales en esta ficha.
 
 ## 4. Protocolo para iniciar o cambiar de chat
 
@@ -66,3 +66,7 @@ Al iniciar una obra, completar únicamente estos campos. Al terminar una etapa A
 Los documentos `documentation/PRODUCCION_POR_ETAPAS_2026-11-06.md` y `documentation/PROTOCOLO_AUTONOMIA_V1_2026-11-06.md` describen procesos anteriores de 2–3 Work y estudios acústicos que quedan **sustituidos en esos puntos**. Conservarlos como referencia histórica. No copiar sus puertas antiguas a una obra nueva.
 
 **Regla de mantenimiento:** una única fuente de estado vigente, mínima y actualizada al cerrar cada etapa. No introducir fechas, avances, permisos o publicaciones que no estén confirmados.
+
+## 6. Nota normativa del 10/11/2026
+
+La v3.0 sustituye cuotas de tres páginas por jornada, exigencia de audiolibro antes de comenzar, Work 1/2/3 obligatorios y auditorías de oficio. Las pruebas proporcionales y el registro único de observaciones sobre derechos rigen según las Directrices; véase [OBSERVACIONES_DERECHOS_PENDIENTES.md](OBSERVACIONES_DERECHOS_PENDIENTES.md). Este registro no declara que todas las obras históricamente marcadas `available` estén cerradas editorialmente: su estado se comprobará cuando corresponda intervenirlas.
