@@ -1,43 +1,25 @@
-# Instrucciones del repositorio
+# BEYOND THE STARS · Puerta de entrada al repositorio
 
-## Estructura
+**Norma general única:** [Directrices canónicas 3.0 · Google Docs](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit). Este archivo NO las reproduce ni crea otras reglas.
 
-- La aplicación ejecutable está en `portable-site/`.
-- La auditoría y las pruebas están en `documentation/`.
-- Los inventarios y la sincronización extraída están en `data/`.
-- La evidencia del estado publicado está en `evidence/`.
+**Estado del proyecto y próxima acción única:** [PRODUCCION_ACTIVA.md](documentation/PRODUCCION_ACTIVA.md).
 
-## Comandos
+## Antes de comenzar
+1. Leer las Directrices 3.0 y el registro de producción activa; contrastar la rama, PR y commit reales.
+2. Leer solo los archivos técnicos de la obra o componente que se necesita modificar. Recuperar soluciones y trabajo ya completado.
+3. Realizar la acción pendiente. No repetir investigaciones acústicas, pruebas superadas, expedientes de 2–3 Work ni comprobaciones jurídicas rutinarias.
+4. Guardar un commit verificable por hito importante y actualizar el estado operativo.
 
-Ejecutar desde `portable-site/`:
+## Arquitectura y seguridad técnica
+- Código ejecutable: `portable-site/`. Catálogo: `portable-site/src/biblioteca/`.
+- Pruebas: `portable-site/package.json`, `.github/workflows/ci.yml`; publicación: `.github/workflows/pages.yml`.
+- Fidelidad y antecedentes de modificaciones: `documentation/MATRIZ_DE_FIDELIDAD.md`.
+- Antes de modificar código o materiales originales, comprobar el alcance solicitado y preservar IDs, notas, progreso, rutas y funciones de otras obras. Si se toca un componente compartido, ejecutar regresiones pertinentes.
+- No versionar `node_modules/`, `portable-site/dist/`, secretos, credenciales ni materiales privados.
+- `main` activa automáticamente GitHub Pages; el despliegue técnico ordinario está incluido en el flujo de incorporación autorizado, pero no debe confundirse con el cierre de una obra ni la presentación institucional.
 
-```bash
-npm ci
-npm run test:library
-npm run test:two-works
-npm run build
-npm run dev
-```
+## Observaciones sobre derechos
+Único registro: [OBSERVACIONES_DERECHOS_PENDIENTES.md](documentation/OBSERVACIONES_DERECHOS_PENDIENTES.md). Anotar únicamente una cuestión que aparezca durante el trabajo normal, sin investigar ni abrir nuevos expedientes. Respetar las prohibiciones expresas conocidas.
 
-## Fidelidad
-
-Antes de cambiar la aplicación, leer `documentation/MATRIZ_DE_FIDELIDAD.md`.
-
-No modificar sin una solicitud explícita y trazabilidad:
-
-- `portable-site/index.html`;
-- `portable-site/src/**`;
-- `portable-site/public/assets/**`;
-- `portable-site/scripts/generate-reading-document-from-srt.mjs`.
-
-Los archivos de Pineau clasificados como literales fueron recuperados del Site v57. Orbuch y el lector compartido fueron incorporados posteriormente. Consultar `documentation/MATRIZ_DE_FIDELIDAD.md` para distinguirlos. Si un cambio futuro los afecta, documentar la diferencia, ejecutar la compilación y repetir las pruebas funcionales y responsive pertinentes.
-
-## Verificación mínima
-
-- `npm ci` y `npm run build` deben finalizar correctamente.
-- Confirmar que los recursos de ambas obras estén presentes.
-- Confirmar que Pineau y Orbuch importen el mismo `IntegratedReader.jsx`.
-- No agregar tiempos de Orbuch hasta disponer de una fuente temporal real verificada.
-- No versionar `node_modules/` ni `portable-site/dist/`.
-- Revisar que no existan secretos o credenciales.
-- No crear despliegues ni activar GitHub Pages salvo pedido explícito.
+## Documentación anterior
+Las guías de producción en 2–3 Work, las puertas G0–G8 y las investigaciones acústicas de oficio son históricas. No prevalecen sobre las Directrices 3.0. Archivo de la versión 2.3: https://docs.google.com/document/d/1FFha4jpvaqNbtqqc2OF6nIN0dKkQ5WP7abnYWgZtzTs/edit.
