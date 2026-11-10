@@ -28,11 +28,26 @@ body:has(.lionetti-page){margin:0;}
    Únicamente identidad cromática y espaciado vertical; medidas, marco, retrato,
    tipografías y responsive proceden de canonical-layout.css / author-viewport.css. */
 .ln-author{
-  background:#e3ddd5;
-  --paper-light:#202b35;
-  --mustard:#68455d;
-  --journey-label-color:#68455d;
+  /* Mismo bordó #68455D presente en la identidad de Lionetti y en la muestra aportada. */
+  background:var(--ln-wine);
+  --paper-light:#f4ede1;
+  --mustard:#ebcdae;
+  --journey-label-color:#f4ede1;
   padding:7rem 0;
+}
+/* El crédito hereda opacity:.72 del componente compartido; aquí se recupera
+   legibilidad sobre fondo oscuro sin cambiar el componente canónico global. */
+.lionetti-page .ln-author .canonical-author-photo figcaption{
+  color:var(--paper-light);
+  opacity:1;
+}
+/* En el resto de la obra el foco utiliza bordó; sobre este fondo sería invisible. */
+.lionetti-page .ln-author a:focus-visible{
+  outline:3px solid var(--mustard);
+  outline-offset:4px;
+}
+.lionetti-page .ln-author .canonical-author-link:hover{
+  color:var(--mustard);
 }
 .ln-context{background:#eeeae2;}
 .ln-context-alt{background:#e4ded4;}
