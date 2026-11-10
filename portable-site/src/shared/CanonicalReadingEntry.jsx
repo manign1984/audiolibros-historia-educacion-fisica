@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ArrowRight, BookOpen, Headphones } from 'lucide-react';
+import { ArrowRight, Headphones } from 'lucide-react';
 import '@fontsource/archivo/latin-900.css';
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import './canonical-reading.css';
@@ -28,8 +28,8 @@ export default function CanonicalReadingEntry({ onOpen, progress, noteCount, con
   return <div ref={content} id="lector" className="hb-material-content">
     <div className="hb-material-hero">
       <JourneyBlockLabel sectionId="lectura" />
-      <h2 id="journey-reading-title" className="hb-material-title" aria-label={textOnly ? 'Pensá, leé y anotá' : 'Leé, escuchá y anotá'}>
-        <span className="hb-material-word hb-material-word--listen" aria-hidden="true">{textOnly ? 'PENSÁ' : 'ESCUCHÁ'}</span>
+      <h2 id="journey-reading-title" className="hb-material-title" aria-label="Escuchá, leé y anotá">
+        <span className="hb-material-word hb-material-word--listen" aria-hidden="true">ESCUCHÁ</span>
         <span className="hb-material-word hb-material-word--read" aria-hidden="true">{'LEÉ'}</span>
         <span className="hb-material-word hb-material-word--note" aria-hidden="true">ANOTÁ</span>
       </h2>
@@ -38,7 +38,7 @@ export default function CanonicalReadingEntry({ onOpen, progress, noteCount, con
           <span className="hb-material-dots" />
         </div>
         <button className="hb-material-open" type="button" onClick={onOpen} aria-haspopup="dialog" aria-label={buttonAriaLabel} aria-describedby={hasProgress || noteCount > 0 ? "hb-material-resume" : undefined}>
-          {textOnly ? <BookOpen aria-hidden="true" /> : <Headphones aria-hidden="true" />}
+          <Headphones aria-hidden="true" />
           <span aria-hidden="true">{buttonLabel}</span>
           <ArrowRight aria-hidden="true" />
         </button>
