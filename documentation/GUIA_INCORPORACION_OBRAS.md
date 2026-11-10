@@ -1,3 +1,5 @@
+> **DOCUMENTO HISTÓRICO · SIN VIGENCIA OPERATIVA (10/11/2026).** Conservado como antecedente. No aplicar las instrucciones de 2–3 Work, G0–G8, exigencia de audio previo para comenzar ni controles acústicos que aparecen más abajo. Norma actual: [Directrices canónicas 3.0](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit). Estado vigente: [PRODUCCION_ACTIVA.md](PRODUCCION_ACTIVA.md).
+
 # Guía operativa para la próxima obra
 
 Esta guía aplica las Directrices canónicas 2.0 sin sustituirlas. No genera contenido, diseño ni sincronización. Los controles técnicos se ejecutan sobre una obra cuyos materiales se verificaron previamente.

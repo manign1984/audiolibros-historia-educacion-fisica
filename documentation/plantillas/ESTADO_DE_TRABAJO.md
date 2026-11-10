@@ -1,3 +1,5 @@
+> **DOCUMENTO HISTÓRICO · SIN VIGENCIA OPERATIVA (10/11/2026).** Conservado como antecedente. No aplicar las instrucciones de 2–3 Work, G0–G8, exigencia de audio previo para comenzar ni controles acústicos que aparecen más abajo. Norma actual: [Directrices canónicas 3.0](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit). Estado vigente: [PRODUCCION_ACTIVA.md](../PRODUCCION_ACTIVA.md).
+
 # ESTADO DE TRABAJO · [obra/slug]
 
 > **Plantilla**: copiar como `documentation/obras/<slug>/ESTADO_DE_TRABAJO.md` al iniciar Work 1. Mantenerla en la **rama de la obra**. No representa una obra real hasta reemplazar cada campo.  
