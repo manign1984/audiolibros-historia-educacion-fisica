@@ -7,9 +7,11 @@
 
 ## 1. Qué se está haciendo
 
-**Último trabajo realizado:** Lucía Lionetti · *La función republicana de la escuela pública* (2005): piloto textual y mejora del lector **cerrados técnicamente**. La obra permanece **EN DESARROLLO** según las Directrices 3.0 mientras no incorpore audiolibro y subtítulos. PR #87 (piloto) y PR #91 (mejora) fusionadas; último commit del lector `04cdf36054cc9f9796c360a92fdc3bc955d0c335`. El lector conserva 32 páginas, añade búsqueda, índice móvil, notas editables y progreso fiable, sin audio ni subtítulos. CI #42449600615 y despliegue Pages #42449696287 finalizaron con `success`. No se afirma inspección visual interactiva externa.
-**Próxima tarea:** seleccionar la siguiente obra según prioridades de cierre del proyecto, usando los materiales ya disponibles. No repetir el piloto Lionetti ni inventar recursos de audio.
-**Criterio operativo:** priorizar finalización y presentación institucional; resolver, implementar, comprobar lo indispensable, cerrar y avanzar. No se usan cuotas numéricas ni tiempos rígidos por página. Mejoras estéticas menores quedan para etapas posteriores.
+**Obra activa:** Ignacio Melano · *Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70* (capítulo 6, 2024).  
+**Hito 10/11/2026:** Etapa A, depuración textual. PDF de 19 páginas impresas (131–149); se retiraron notas al pie 193–212, encabezados y folios y se integró el cuerpo en el [Google Docs de narración](https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit). Conserva seis apartados, citas y contenido principal. [PDF original](https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view). Extensión aproximada: 35.940 caracteres. No existen MP3/SRT/VTT ni página web construida para esta obra.  
+**Estado:** EN DESARROLLO. **Etapa:** A (texto preparado; revisión final de locución si corresponde); B y C todavía no iniciadas.  
+**Próxima acción única:** Revisar puntualmente el texto preparado y generar audiolibro y subtítulos en ElevenLabs, sin repetir la extracción ya realizada. A continuación, integrar los cinco bloques canónicos y desarrollar el Contexto dentro de B.  
+**Criterio operativo:** trabajo proporcionado al objetivo; reutilizar componentes y no abrir auditorías acústicas, jurídicas ni investigaciones redundantes.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
 - **A · Preparar:** reunir recursos facilitados, identificar edición y autoría, y definir el Contexto (UNA o DOS pantallas útiles, máximo rígido de dos según las Directrices 3.0, sección 3.5).
@@ -34,14 +36,16 @@ Los valores `available`, `review`, `text` y `preparation` de esta tabla son **va
 
 | Campo | Valor vigente |
 | --- | --- |
-| Obra activa | Sin asignar (piloto textual de Lionetti cerrado técnicamente; obra EN DESARROLLO hasta integrar audio y subtítulos) |
-| Etapa | — (construcción y despliegue textual de Lionetti terminados; completar la obra requiere material sonoro) |
-| Rama / PR | PR #91 fusionada: https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/91 |
-| Último commit recuperable | `04cdf36054cc9f9796c360a92fdc3bc955d0c335` (mejora del lector Lionetti fusionada en `main`) |
-| Enlaces a originales | Lionetti: TXT https://drive.google.com/file/d/1wabrGO_C9oZaJZj0nv-fzEq9ukRaC5tD/view ; PDF https://drive.google.com/file/d/1FXGeM_sEvkKNpjrb1_6Z0bWTz7d9bBkZ/view ; revista https://ojs.rmie.mx/index.php/rmie/article/view/1511 |
-| Incidencia real pendiente | Ninguna técnica comunicada; falta solamente una observación manual externa opcional de la interfaz. CI y Pages aprobados. |
-| **Próxima acción única** | Seleccionar obra siguiente según prioridades institucionales y recursos disponibles; no iniciar auditorías accesorias |
-| URL publicada | https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/lionetti-escuela-republicana/ (GitHub Pages #42449696287: success; sin inspección visual externa) |
+| Obra activa | Ignacio Melano · *Militares al gobierno, juramentados al poder* (capítulo 6, 2024) |
+| Etapa | A · Texto depurado en Google Docs; pendiente revisión editorial puntual para locución. B/C aún sin iniciar. |
+| Estado interno | EN DESARROLLO: no hay aún MP3, subtítulos ni recorrido web. |
+| Rama / PR | Esta actualización del registro documental se gestiona por PR; la futura implementación web tendrá su propia rama. |
+| Último commit de código reutilizable | `04cdf36054cc9f9796c360a92fdc3bc955d0c335` (Lionetti, antecedente; no es implementación de Melano). |
+| Enlace al original | https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view |
+| Texto depurado | https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit |
+| Incidencia pendiente | Ninguna falla de extracción constatada; falta producir recursos sonoros. |
+| **Próxima acción única** | Revisar texto para ElevenLabs y producir MP3/SRT-VTT; luego comenzar B. |
+| URL publicada | No hay ruta Melano publicada todavía. |
 
 Al iniciar una obra, completar únicamente estos campos y el estado interno EN DESARROLLO/COMPLETA. Al terminar una etapa A, B o C, **guardar un commit verificable y actualizar esta ficha antes de seguir**. No esperar al límite del chat. No crear un expediente nuevo para cada intercambio. Los materiales grandes permanecen en sus ubicaciones autorizadas; no poner texto académico, audio privado o credenciales en esta ficha.
 
