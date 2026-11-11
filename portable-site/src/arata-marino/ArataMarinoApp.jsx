@@ -4,7 +4,7 @@ import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import ArataMarinoReaderPreview from './ArataMarinoReaderPreview.jsx';
-import ArataMarinoPrivateReader from './ArataMarinoPrivateReader.jsx';
+import ArataMarinoEditorialAccess from './ArataMarinoEditorialAccess.jsx';
 import './arata-marino.css';
 
 const LOCAL_READER_PREVIEW = import.meta.env.DEV && import.meta.env.VITE_ARATA_MARINO_READER_PREVIEW === '1';
@@ -98,7 +98,7 @@ function Lectura() {
   return <section id="lectura" className="am-screen am-reading hb-material-reading" aria-labelledby="journey-reading-title">
     {LOCAL_READER_PREVIEW
       ? <ArataMarinoReaderPreview assetBase={import.meta.env.BASE_URL + (import.meta.env.VITE_ARATA_MARINO_ASSET_PREFIX || '')} />
-      : <ArataMarinoPrivateReader />}
+      : <ArataMarinoEditorialAccess />}
   </section>;
 }
 
