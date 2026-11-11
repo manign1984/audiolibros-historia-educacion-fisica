@@ -9,6 +9,7 @@ export const melanoReaderConfig = {
     synopsis: 'En 1977, durante la última dictadura, la formación de profesores regresó al predio del INEF General Belgrano en San Fernando. ¿Cómo se hizo posible? Ignacio Melano analiza las trayectorias de los Juramentados, sus relaciones con organismos militares y estatales y las disputas del campo de la Educación Física que dieron sentido a aquella reapertura.',
   },
   pageMeta: 'Ignacio Melano · Capítulo 6 · EdUNLu',
+  footerLabel: 'Texto académico · cuaderno de lectura',
   export: {
     shareTitle: 'Cuaderno de lectura · Ignacio Melano',
     textFileName: 'cuaderno-ignacio-melano.txt',
