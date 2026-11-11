@@ -1,13 +1,20 @@
 # Arata y Mariño · Preparación y prueba local del lector
 
-**Estado:** candidato técnico de desarrollo, sin redistribución pública de texto, PDF, MP3 o SRT. La página editorial publicada permanece intacta.
+**Estado actualizado (11/11/2026):** el lector compartido está conectado en la web mediante selección local de materiales por la persona que lee, sin redistribución pública del texto, PDF, MP3 o SRT. Sigue existiendo el acceso de desarrollo local con recursos preinstalados; no confundirlo con la ruta pública. El conjunto permanece EN DESARROLLO.
+
+
+## Apertura desde la página pública (PR #116)
+
+La acción «ABRIR EL LECTOR» abre la selección de tres archivos personales (no se solicitan a GitHub): `edicion-academica.txt` preparado a partir del PDF con `pdftotext -layout`, `subtitulos.srt` y `audio.mp3` (36.125.008 bytes). Al elegirlos, el adaptador usa el TXT académico (incluida bibliografía), las 796 marcas del SRT y el MP3 local mediante URL temporal `blob:`; abre el modal `IntegratedReader` canónico. Los archivos no se suben, no se guardan en el servidor y se deben volver a seleccionar cuando se recarga la página. Las anotaciones y el progreso se guardan por obra en el almacenamiento local del navegador.
+
+La selección de archivos personales es una vía de uso técnico sin distribuir materiales protegidos; **no equivale a una edición pública de libre acceso**. Se conserva el enlace a la edición digital oficial en la interfaz. Una comprobación automatizada con archivos ficticios verifica apertura del modal y ausencia de `fetch` remotos; la interacción real con los materiales propios en un navegador sigue siendo una comprobación perceptiva breve, no una auditoría acústica.
 
 ## Implementación recuperable
 
 - `portable-site/src/arata-marino/buildArataMarinoReadingDocument.js`: adapta el texto académico extraído en modo *layout* (folios 182–201), conserva ocho apartados, bibliografía de la lección y referencias multimedia. El cuadro estadístico 1955–1975 se representa de manera accesible, sin tiempo inventado.
 - `portable-site/src/arata-marino/readerConfig.js`: configuración de 17 fragmentos consecutivos del MP3 (suma esperada de 36.125.008 bytes), claves propias para progreso y anotaciones.
 - `portable-site/src/arata-marino/ArataMarinoReaderPreview.jsx`: usa `IntegratedReader` y `CanonicalReadingEntry` existentes, con seguimiento aproximado por párrafos. No agrega una segunda franja de subtítulos.
-- `ArataMarinoApp.jsx` conserva la experiencia editorial abierta en producción. La vista integrada solo se habilita localmente con la bandera explícita `VITE_ARATA_MARINO_READER_PREVIEW=1`.
+- `ArataMarinoApp.jsx` ofrece la selección personal en producción mediante `ArataMarinoPrivateReader.jsx`; la bandera `VITE_ARATA_MARINO_READER_PREVIEW=1` queda exclusivamente para el laboratorio local con los recursos preinstalados.
 
 ## Recursos necesarios solo en la computadora de desarrollo
 
