@@ -82,7 +82,11 @@ for (const entry of catalog.filter((item) => item.status !== 'available')) {
     assert.ok(html.includes('src/arata-marino/main.jsx') === false, 'Arata y Mariño: la entrada debe estar compilada.');
     const asset = resolve(dist, 'assets/arata-marino/autor-editorial.svg');
     await access(asset);
-    assert.ok(allJavaScript.includes('CONSULTAR EDICIÓN') && allJavaScript.includes('digital.noveduc.com/library/publication/la-educacion-en-la-argentina'), 'Arata y Mariño: acceso directo a edición editorial sin selector de archivos.');
+    assert.ok(allJavaScript.includes('Arata y Mariño') && allJavaScript.includes('ABRIR EL LECTOR'), 'Arata y Mariño: entrada del lector canónico completo presente.');
+    assert.ok(!allJavaScript.includes('CONSULTAR EDICIÓN') && !allJavaScript.includes('Abrí tu ejemplar en el lector'), 'Arata y Mariño: prohibidas variantes de acceso y pantallas intermedias.');
+    for (const path of ['assets/arata-marino/edicion-academica.txt', 'assets/arata-marino/subtitulos.srt', ...Array.from({ length:17 }, (_,i) => 'assets/arata-marino/audio/audio-' + String(i).padStart(2, '0') + '.part')]) {
+      await access(resolve(dist,path));
+    }
     assert.ok(!html.includes('Recorrido en preparación.'), 'Arata y Mariño: no mostrar ficha genérica.');
     continue;
   }
