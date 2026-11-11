@@ -4,6 +4,7 @@
 **Propósito:** registrar el estado operativo de la biblioteca, no reconstruir la historia de los chats.  
 **Norma superior:** [Directrices canónicas vigentes (v3.0)](https://docs.google.com/document/d/1z0HqT7WR1A4u-RZRaFRINm9TWH5XWX8Lc_Vdj5q0aKM/edit).  
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
+**Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
 ## 1. Qué se está haciendo
 
@@ -13,10 +14,11 @@
 **Etapa B implementada en rama:** `feature/melano-militares-juramentados`, [PR #104](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/104). Página con `JourneyHeader`, `AuthorBiography` y retrato original, Contexto en dos pantallas, `CanonicalReadingEntry`/`TextOnlyReader`, `JourneyCredits`. Paleta enviada por usuario: #051e28, #3a8841, #40b5bc, #483df6, #86759f. El texto del sitio conserva las citas y notas 193–212; el texto de voz no incluye citas APA.  
 **Tramo 1 audiovisual (11/11/2026):** en la rama `feature/melano-integrated-reader-audio`, PR #106 (borrador), ya se incorporaron el SRT de ElevenLabs (489 segmentos) y los ocho fragmentos consecutivos del MP3 (suman 23.492.550 bytes, exactamente el tamaño informado por Drive; todavía no se afirma identidad criptográfica). El nuevo generador reutiliza el capítulo académico completo (61 párrafos, 20 notas, citas) y las marcas de tiempo del SRT para un seguimiento **aproximado por párrafos**, sin investigación acústica. Se conectó `IntegratedReader` con `CanonicalReadingEntry`, subtítulos visibles opcionales, carga del audio por fragmentos, validación de tamaño y migración no destructiva de notas/progreso previos. La prueba `test:melano` y la batería general de CI terminaron correctamente (25 pasos, [ejecución 42961102679](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/42961102679)). En este primer tramo los cambios todavía no estaban fusionados; las pruebas de compilación tampoco sustituían una observación perceptiva/visual en navegador.  
 **Tramo 2 técnico (11/11/2026):** la [PR #106](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/106) se fusionó a `main` con commit `c8142db3616c1b3a29d45d3930f6b1f367abe9cb`. La nueva prueba de interacción de Melano en DOM simulado y toda la batería de CI se aprobaron ([CI de PR](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/42962040969), [CI main](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/42962215517)). GitHub Pages confirmó build y despliegue exitosos ([ejecución 42962215568](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/42962215568)). La prueba DOM comprueba partes del audio, subtítulos alternables, reproducción simulada, 61 párrafos, 20 notas y progreso. **No equivale a escucha real ni a revisión visual responsive**; el acceso HTTP independiente desde este entorno no pudo corroborarse. La etapa C técnica está terminada y la obra sigue EN DESARROLLO solo hasta la revisión perceptiva breve.  
+**Ajuste de consistencia (11/11/2026):** el SRT se había utilizado tanto para acompañar los párrafos como para mostrar una barra adicional de subtítulos, introducida sin acuerdo editorial. Se corrigió esa expansión: el archivo SRT, sus 489 segmentos y los intervalos de sincronización aproximada permanecen; se retira solo la nueva barra visible y sus pruebas, preservando el motor compartido. La arquitectura y el circuito de relevo quedan documentados en [MAPA_OPERATIVO_LECTOR_INTEGRADO.md](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). La revisión perceptiva breve continúa pendiente.  
 
 **Ficha editorial actualizada:** [MELANO_FICHA_ETAPA_A.md](MELANO_FICHA_ETAPA_A.md). Documento operativo de esta obra; no modifica Directrices v3.0.  
 **Estado interno:** EN DESARROLLO. **Etapa:** C técnica completada; PR #104 (texto) y #106 (audiovisual) integradas en `main`, CI y despliegue Pages aprobados. Queda una comprobación visual y auditiva breve en navegador real.  
-**Próxima acción única (vigente):** abrir el lector publicado en escritorio y móvil, reproducir un fragmento real, observar subtítulos y guardar una nota. Registrar solo incidencias perceptibles. Si todo funciona, marcar estado interno COMPLETA sin rehacer CI ni auditar acústicamente de oficio.  
+**Próxima acción única (vigente):** abrir el lector publicado en escritorio y móvil, reproducir un fragmento real, observar el seguimiento por párrafos del texto y guardar una nota. Registrar solo incidencias perceptibles. Si todo funciona, marcar estado interno COMPLETA sin rehacer CI ni auditar acústicamente de oficio.  
 **Criterio operativo:** trabajo proporcionado al objetivo; reutilizar componentes y no abrir auditorías acústicas, jurídicas ni investigaciones redundantes.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
@@ -51,14 +53,14 @@ Los valores `available`, `review`, `text` y `preparation` de esta tabla son **va
 | Texto para ElevenLabs (sin citas) | https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit |
 | Texto académico para lector (con citas) | https://docs.google.com/document/d/19_QDXB4uo8kaAhUA8yDbWTokbdzSEPYAFwlrqroxWLk/edit |
 | Incidencia pendiente | No faltan MP3 ni SRT. CI y Pages aprobados; no se verificaron de manera perceptiva reproducción real ni diseño responsive. |
-| **Próxima acción única** | Revisión visual/auditiva breve en escritorio y móvil de la página publicada; corregir solo incidentes reales; si está bien, marcar COMPLETA. |
+| **Próxima acción única** | Revisión visual/auditiva breve en escritorio y móvil, incluyendo resaltado de párrafos y notas; corregir solo incidentes reales; si está bien, marcar COMPLETA. |
 | Ruta de publicación | `https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/melano-militares-juramentados/` (ruta compilada y verificada por CI, despliegue Pages exitoso; HTTP independiente no corroborado desde este entorno). |
 
 Al iniciar una obra, completar únicamente estos campos y el estado interno EN DESARROLLO/COMPLETA. Al terminar una etapa A, B o C, **guardar un commit verificable y actualizar esta ficha antes de seguir**. No esperar al límite del chat. No crear un expediente nuevo para cada intercambio. Los materiales grandes permanecen en sus ubicaciones autorizadas; no poner texto académico, audio privado o credenciales en esta ficha.
 
 ## 4. Protocolo para iniciar o cambiar de chat
 
-1. Leer este documento desde `main`, las Directrices vigentes enlazadas y **solo los archivos de la obra activa**.
+1. Leer este documento desde `main`, las Directrices vigentes enlazadas y el [mapa operativo del lector](MAPA_OPERATIVO_LECTOR_INTEGRADO.md); inspeccionar **solo los archivos de la obra activa o del cambio concreto**.
 2. Contrastar rama, PR y último commit con GitHub. No repetir etapas completadas.
 3. Continuar la **próxima acción única**; trabajar sobre el código existente y guardar por hito importante.
 4. Actualizar esta ficha y el estado del catálogo solo cuando se haya comprobado el cambio real.
