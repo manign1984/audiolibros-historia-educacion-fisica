@@ -76,6 +76,16 @@ assert.ok(
 assert.ok(allJavaScript.includes('Volver a la biblioteca'));
 for (const entry of catalog.filter((item) => item.status !== 'available')) {
   const html = await readFile(resolve(dist, entry.path, 'index.html'), 'utf8');
+  if (entry.editorialLanding) {
+    assert.ok(html.includes('Auroras y tempestades'), 'Arata y Mariño: identificar la obra en la página.');
+    assert.ok(html.includes(`src="${normalizedBase}assets/`), 'Arata y Mariño: ruta del bundle en la base pública.');
+    assert.ok(html.includes('src/arata-marino/main.jsx') === false, 'Arata y Mariño: la entrada debe estar compilada.');
+    const asset = resolve(dist, 'assets/arata-marino/autor-editorial.svg');
+    await access(asset);
+    assert.ok(allJavaScript.includes('Consultá la obra en su edición editorial'), 'Arata y Mariño: acceso editorial externo operativo.');
+    assert.ok(!html.includes('Recorrido en preparación.'), 'Arata y Mariño: no mostrar ficha genérica.');
+    continue;
+  }
   if (entry.status === 'review') {
     assert.ok(html.includes('Edición en revisión'), `${entry.id}: distinguir lectura disponible de alineación pendiente.`);
     assert.doesNotMatch(html, /Recorrido en preparación\./, `${entry.id}: no publicar como ficha sin recorrido.`);
