@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test Arata y Mariño local reader adapter without copyrighted assets
+        run: npm run test:arata-marino
+
       - name: Test Melano academic text, timed captions and MP3 parts
         run: npm run test:melano
 
