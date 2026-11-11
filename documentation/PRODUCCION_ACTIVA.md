@@ -8,13 +8,21 @@
 
 ## 0. Obra activa · Arata y Mariño (11/11/2026)
 
-**Obra:** Nicolás Arata y Marcelo Mariño, *Auroras y tempestades: la educación entre golpes (1955–1976)*, lección 10 de *La educación en la Argentina. Una historia en 12 lecciones*.  
-**Estado interno:** EN DESARROLLO. **Etapa:** A editorial documentada; no se ha creado ni publicado una página funcional de esta obra.  
-**Rama:** `feature/arata-marino-auroras-tempestades`. **Ficha de obra:** [FICHA_ETAPA_A.md](obras/arata-marino-auroras-tempestades/FICHA_ETAPA_A.md).  
-**Materiales identificados:** [PDF original](https://drive.google.com/file/d/1t1hPnCaYo3PEhfGM9Ej9FMokg6kwX4q7/view), [Doc de locución](https://docs.google.com/document/d/1VT5sB3JxpHtA0gd8ZKs2g7SaCyj2psUhWfvESy-BDUI/edit), [TXT](https://drive.google.com/file/d/1ycEDaCEwo0gXUo90gQBhSmM7rmqRGDVP/view), [SRT 796 intervalos](https://drive.google.com/file/d/1qa4ypdD3Xu9hE8x3NaqvtvngQZyIagLW/view), [proyecto ElevenLabs](https://elevenlabs.io/app/audiobooks/uCBThksNlAPKZB3YCZnG?chapterId=rHaATz1nUvWo9YYR857c) con control de exportación visible. No existe aún archivo MP3 descargado accesible en la carpeta institucional consultada.  
-**Contexto definido en A:** dos unidades, (1) coordenadas 1955–1976 y (2) el contraste entre planeamiento/capital humano y pedagogías de liberación/CREAR, sin convertirlo en clase exhaustiva.  
-**Observación concreta sobre reproducción:** cláusula expresa de la edición consultada asentada en [OBSERVACIONES_DERECHOS_PENDIENTES.md](OBSERVACIONES_DERECHOS_PENDIENTES.md); no distribuir públicamente los materiales afectados sin base de uso confirmada, pero continuar el diseño y la preparación.  
-**Próxima acción única:** obtener el archivo MP3 exportado o su ubicación accesible para integración; construir la candidata con los componentes existentes y preservar el texto académico y la bibliografía, sujetando la distribución pública a la condición documentada.
+**Obra:** Nicolás Arata y Marcelo Mariño, *Auroras y tempestades: la educación entre golpes (1955–1976)*, lección 10 de *La educación en la Argentina. Una historia en 12 lecciones*.
+
+**Estado interno:** EN DESARROLLO. **Etapa:** B implementada; C en verificación. Se construyeron los cinco bloques públicos de presentación/contexto sin desarrollar ni activar el lector integrado, conforme al alcance solicitado. No declarar COMPLETA ni audio/texto incorporado.
+
+**Rama:** `feature/arata-marino-auroras-tempestades`. **PR:** [#109](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/109). **Ficha:** [FICHA_ETAPA_A.md](obras/arata-marino-auroras-tempestades/FICHA_ETAPA_A.md).
+
+**Código:** `portable-site/src/arata-marino/ArataMarinoApp.jsx`, CSS local, entrada `textos/arata-marino-auroras-tempestades/index.html`, ilustración editorial original; tarjeta del catálogo. Se reutilizan `JourneyHeader`, `AuthorBiography`, `CanonicalReadingEntry` y `JourneyCredits`. La entrada de Lectura abre un diálogo breve con enlaces a la edición digital oficial y a la ficha editorial; **NO** abre un lector +TEC ni tiene audio, subtítulos, anotaciones ni progreso de lectura. En catálogo, la entrada visible permite «Explorar recorrido» en vez de prometer un lector inexistente.
+
+**Contexto:** dos unidades, (1) coordenadas 1955–1976 y (2) contraste de desarrollo, capital humano y planeamiento con experiencias de educación y liberación. No se copiaron obras originales ni el SRT a los assets públicos.
+
+**Fuentes localizadas:** [PDF académico original](https://drive.google.com/file/d/1t1hPnCaYo3PEhfGM9Ej9FMokg6kwX4q7/view); [Doc de narración](https://docs.google.com/document/d/1VT5sB3JxpHtA0gd8ZKs2g7SaCyj2psUhWfvESy-BDUI/edit); [TXT](https://drive.google.com/file/d/1ycEDaCEwo0gXUo90gQBhSmM7rmqRGDVP/view); [SRT](https://drive.google.com/file/d/1qa4ypdD3Xu9hE8x3NaqvtvngQZyIagLW/view); [ElevenLabs](https://elevenlabs.io/app/audiobooks/uCBThksNlAPKZB3YCZnG?chapterId=rHaATz1nUvWo9YYR857c). En esta entrega estos materiales no se distribuyen públicamente.
+
+**Nota editorial:** se conserva la observación de condición expresa de reproducción en [OBSERVACIONES_DERECHOS_PENDIENTES.md](OBSERVACIONES_DERECHOS_PENDIENTES.md). La página nueva solamente publica contenido original y enlace a edición oficial.
+
+**Próxima acción única:** finalizar CI de la PR #109, integrar en `main`, verificar GitHub Pages y abrir la URL real de la nueva página si se puede. Mantener EN DESARROLLO por ausencia deliberada del lector integrado, sin frenar la publicación del recorrido editorial.
 
 La obra **Ignacio Melano** conserva su estado EN DESARROLLO y la comprobación perceptiva breve pendiente, tal como se documenta a continuación; el cambio de obra activa no declara su cierre.
 
