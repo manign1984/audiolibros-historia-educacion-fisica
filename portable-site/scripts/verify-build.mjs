@@ -36,7 +36,7 @@ const orbuchBundleName = assetNames.find((name) => /^orbuchEducarAlCuerpo-.*\.js
 const pineauBundleName = assetNames.find((name) => /^pineauFrescoNoble-.*\.js$/.test(name));
 const hobsbawmBundleName = assetNames.find((name) => /^hobsbawmHistoriaSigloXX-.*\.js$/.test(name));
 assert.ok(hobsbawmBundleName, 'Debe existir el bundle independiente de Hobsbawm.');
-const readerBundleNames = assetNames.filter((name) => /^reader-.*\.js$/.test(name));
+const readerBundleNames = assetNames.filter((name) => /^(?:reader|IntegratedReader)-.*\.js$/.test(name));
 const marcaidaBundleName = assetNames.find((name) => /^marcaida-scaltritti-estado-nacional-.*\.js$/.test(name));
 assert.ok(marcaidaBundleName, 'Marcaida/Scaltritti debe tener su recorrido independiente.');
 assert.ok(libraryBundleName, 'Debe existir el bundle independiente de la biblioteca.');
@@ -81,9 +81,16 @@ for (const entry of catalog.filter((item) => item.status !== 'available')) {
     assert.doesNotMatch(html, /Recorrido en preparación\./, `${entry.id}: no publicar como ficha sin recorrido.`);
   } else if (entry.status === 'text') {
     assert.ok(html.includes('src="' + normalizedBase + 'assets/'), `${entry.id}: ruta web correcta.`);
-    await access(resolve(dist, 'assets/lionetti/texto-academico.txt'));
-    assert.ok(html.includes('Lucía Lionetti'), `${entry.id}: título y autora presentes.`);
-    assert.ok(html.includes('Sin audio') || html.includes('sin audiolibro') || html.includes('sin audio'), `${entry.id}: no prometer escucha.`);
+    const textAsset = entry.id === 'melano-militares-juramentados' ? 'assets/melano/texto-academico.txt' : 'assets/lionetti/texto-academico.txt';
+    await access(resolve(dist, textAsset));
+    assert.ok(html.includes(entry.author), `${entry.id}: autor presente en el HTML.`);
+    if (entry.id === 'lionetti-escuela-republicana') {
+      assert.ok(html.includes('Sin audio') || html.includes('sin audiolibro') || html.includes('sin audio'), `${entry.id}: no prometer escucha.`);
+    } else if (entry.id === 'melano-militares-juramentados') {
+      await access(resolve(dist, 'assets/melano/ignacio-melano-retrato.jpeg'));
+      assert.ok(html.includes('src="' + normalizedBase + 'assets/'), `${entry.id}: ruta de página correctamente compilada.`);
+      assert.ok(html.includes('Juramentados al poder'), `${entry.id}: identidad de página presente.`);
+    }
     continue;
   } else {
     assert.ok(html.includes('Recorrido en preparación.'), `${entry.id}: disponibilidad explícita en metadatos.`);

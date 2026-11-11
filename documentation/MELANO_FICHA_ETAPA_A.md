@@ -35,7 +35,7 @@
 **Especialidad de Autor:** “HISTORIA DE LA EDUCACIÓN FÍSICA · FORMACIÓN DOCENTE”.  
 **Inicial de Autor:** “I”.  
 **Enlace de biografía:** https://periodicos.uepa.br/index.php/cocar/article/view/4871.  
-**Retrato:** aún **no confirmado** como imagen auténtica; no inventar `image`, `imageAlt` ni crédito. Si se aporta, renderizar en B/N en el componente AuthorBiography; si no, usar alternativa honestamente identificada según Directrices.
+**Retrato recibido:** fotografía auténtica facilitada por Ignacio Melano para la página (800 × 800 px); original preservado en `portable-site/public/assets/melano/ignacio-melano-retrato.jpeg`. `AuthorBiography` lo muestra en blanco y negro mediante CSS. Crédito: «Fotografía facilitada por Ignacio Melano para esta página».
 
 ### 01 · INICIO · Presentación (52 palabras)
 > En 1967, el curso de varones del INEF General Belgrano fue trasladado a Capital Federal. Diez años después la formación de profesores regresó al predio de San Fernando, esta vez como anexo del INEF Buenos Aires y durante la última dictadura. ¿Qué actores, tradiciones y vínculos de poder hicieron posible ese retorno?
@@ -70,25 +70,33 @@ En escritorio: exactamente dos unidades de pantalla útil, sin tercera pantalla.
 
 ## 5. Identidad visual de la obra
 
-**Concepto:** archivo, huellas institucionales y redes de poder; sobrio, contemporáneo, no celebratorio del militarismo. Paleta **solo para bloques editables**:
-- Azul grafito `#192830`: contraste y base para Inicio.
-- Papel archivo `#EEE5D6`: superficies editoriales claras.
-- Rojo óxido `#A44739`: acento interpretativo, sin señales de alarma omnipresentes.
-- Latón tenue `#C5A46B`: marcas menores y líneas de orientación.
+**Paleta definitiva aportada por el usuario (10/11/2026):** cinco tonos de la imagen de referencia; sustituye los tonos archivísticos sugeridos inicialmente.
 
-**Inicio:** portada de carácter documental con el título completo, capítulo/alcance e imagen real identificada (primera candidata: el facsímil 543/77 o una fotografía histórica atribuida del INEF; no usar una foto actual del museo como imagen de 1977). **Autor:** composición compartida rígida con fondo plano escogido de la paleta y retrato auténtico en blanco y negro si se consigue. **Contexto:** cronología tipográfica breve + doble lectura de fuentes. **Lectura:** colores propios aplicados solo a las variables permitidas del componente compartido, sin mover geometría. **Header/Créditos:** colores y estilos transversales sin excepciones.
+- Azul petróleo oscuro `#051e28`: fondo de Inicio y tinta.
+- Verde `#3a8841`: Autor y marcadores históricos.
+- Turquesa `#40b5bc`: líneas y detalles.
+- Azul violáceo `#483df6`: acentos del título y botón del bloque 04.
+- Lavanda `#86759f`: contrapunto visual de la portada.
 
-El catálogo EdUNLu ofrece portada del libro; las carpetas de tapas del libro en Drive contienen tres alternativas y no se identificó aquí cuál es la versión de impresión definitiva. Elegir solo un recurso editorial real y atribuido, sin forzar su uso.
+**Inicio:** portada tipográfica contemporánea con 77 / UN REGRESO EN DISPUTA, años 1967–1981 y los cinco tonos; composición editorial declarada, no documento histórico.
+**Autor:** `AuthorBiography` compartido y retrato aportado, blanco y negro aplicado solo por CSS.
+**Contexto:** dos pantallas: 1967/1977/1981 y dos fuentes contrastadas; Resolución 543/77 accesible por enlace verificado, no se simula un facsímil.
+**Lectura:** `CanonicalReadingEntry` compartido, temporalmente abierto mediante `TextOnlyReader`; se aplica solo identidad cromática, sin alterar geometría.
+**Créditos y navegación:** componentes canónicos reutilizados.
+
+**Texto para lector visual:** `portable-site/public/assets/melano/texto-academico.txt` contiene el cuerpo de las pp. 131–149 con citas y las 20 notas originales 193–212 como apéndice. Se conserva como material diferente del texto de voz depurado para ElevenLabs.
+
+**Código candidato de etapa B:** rama `feature/melano-militares-juramentados`, PR #104. La implementación de voz y subtítulos depende de los archivos a entregar en la próxima etapa.
 
 ## 6. Integridad del texto académico y producción sonora
 
-- El PDF original **incluye las notas 193–212**. La copia Google Docs “con citas” conserva las referencias entre paréntesis, pero **NO las 20 notas al pie**: fueron retiradas en la primera preparación. Antes de configurar el lector académico en B, decidir cómo conservarlas como notas finales, material académico visual o acceso al PDF fuente; **no** dar por íntegra la copia de lectura sin ese paso.
+- El PDF original **incluye las notas 193–212**. La copia Google Docs “con citas” conserva las referencias entre paréntesis, pero **NO las 20 notas al pie**; la versión de lectura del sitio web sí recupera las 20 notas en un apéndice final: fueron retiradas en la primera preparación. Antes de configurar el lector académico en B, decidir cómo conservarlas como notas finales, material académico visual o acceso al PDF fuente; **no** dar por íntegra la copia de lectura sin ese paso.
 - No insertar en el lector los tiempos del audio o SRT ficticios. El MP3 y los subtítulos se están generando externamente y aún no se han recibido.
 - Separar el contenido narrado del contenido académico no narrado, conservando el orden, las citas y los IDs estables cuando se creen. No hacer alineaciones acústicas ni búsquedas de desfase por defecto.
 - El video de entrevista `Fuente Primaria` es **complementario potencial**, no un sexto bloque ni un requisito de la página. La escaleta existe, pero no hay enlace confirmado al video publicado.
 
 ## 7. Paso a B y pendientes reales
 
-**La preparación editorial A queda definida.** No se espera audio para construir: se puede iniciar B reutilizando los cinco componentes canónicos y TextOnlyReader hasta recibir MP3/SRT. Siguiente acción de implementación: crear recorrido Melano sobre la estructura compartida existente; la entrada del catálogo deberá conservar «Leer + escuchar» sin estados públicos de producción.
+**Etapa A definida y etapa B implementada como candidata textual.** Cinco bloques, foto, paleta, dos unidades de Contexto, créditos y lector de texto con notas. La validación y publicación dependerán de CI y GitHub Pages; el MP3/SRT se incorporará después. Estado interno EN DESARROLLO.
 
-**Pendientes verificables y acotados:** (1) retrato auténtico y su crédito / alternativa honesta; (2) recibir MP3 y SRT/VTT, sin exigirlos para empezar B; (3) preservar las veinte notas académicas del PDF en el lector visual o mediante acceso claro a la fuente; (4) comprobar legibilidad de la imagen de Resolución 543/77 antes de exhibirla; (5) verificar que el `workId` nuevo no exista y mantenerlo estable. No abrir más investigaciones de oficio.
+**Pendientes reales:** recibir MP3 y SRT/VTT para lector audiovisual, comprobar el despliegue técnico real y revisar el ajuste visual en navegador. Retrato original y veinte notas ya incorporados. Si se incorpora luego un facsímil directamente en pantalla, comprobar su legibilidad. No abrir más investigaciones de oficio.

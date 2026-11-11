@@ -112,8 +112,8 @@ export default function TextOnlyReader({ config, showToast }) {
     notify('Nota eliminada');
   };
   const exportText = () => download(
-    'cuaderno-lionetti.txt',
-    ['Cuaderno de lectura · Lucía Lionetti', ...[...notes].sort((a, b) => a.page - b.page).map((note, index) => `\n${index + 1}. Página ${note.page + 1}\n${note.text}\n`)].join('\n'),
+    config.export?.textFileName || 'cuaderno-lionetti.txt',
+    [config.export?.shareTitle || 'Cuaderno de lectura · Lucía Lionetti', ...[...notes].sort((a, b) => a.page - b.page).map((note, index) => `\n${index + 1}. Página ${note.page + 1}\n${note.text}\n`)].join('\n'),
     'text/plain;charset=utf-8',
   );
   const searchResults = searchHits.length
@@ -170,7 +170,7 @@ export default function TextOnlyReader({ config, showToast }) {
             {error && <p role="alert">{error} <a href={config.sourceUrl} target="_blank" rel="noreferrer">Ver fuente</a></p>}
             {!raw && !error && <p role="status">Cargando texto académico…</p>}
             {pages.length > 0 && <>
-              <div className="text-only-page-meta">Lucía Lionetti · Artículo de 2005 <span>Página {safePage + 1} de {pages.length}</span></div>
+              <div className="text-only-page-meta">{config.pageMeta || 'Lucía Lionetti · Artículo de 2005'} <span>Página {safePage + 1} de {pages.length}</span></div>
               <progress className="text-only-progress" value={safePage + 1} max={pages.length} aria-label="Progreso de lectura por páginas">{safePage + 1} de {pages.length}</progress>
               <article style={{ '--text-scale': fontScale }}>
                 {paragraphsOf(pages[safePage]).map((paragraph, index) => <p key={index}>{paragraph}</p>)}
@@ -198,13 +198,13 @@ export default function TextOnlyReader({ config, showToast }) {
                 </select>
               </label>
               <button type="button" disabled={!notes.length} onClick={exportText}><Download size={17}/> Exportar cuaderno</button>
-              <a href={config.textUrl} download="lionetti-texto-academico.txt"><FileText size={16}/> Descargar texto</a>
+              <a href={config.textUrl} download={config.downloadTextName || 'lionetti-texto-academico.txt'}><FileText size={16}/> Descargar texto</a>
             </div>
           </aside>
         </div>
         <footer className="text-only-footer">
           <span>{notice || 'Las notas y el progreso se guardan solamente en este navegador.'}</span>
-          <span>Edición solo de lectura · Sin audio</span>
+          <span>{config.footerLabel || 'Edición solo de lectura · Sin audio'}</span>
         </footer>
       </div>
     </dialog>

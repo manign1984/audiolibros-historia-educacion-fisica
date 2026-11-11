@@ -1,0 +1,186 @@
+
+/* BEYOND THE STARS · Ignacio Melano.
+   Paleta enviada por el equipo, 10/11/2026:
+   azul petróleo #051e28, verde #3a8841, turquesa #40b5bc,
+   azul violeta #483df6, lavanda #86759f.
+   Solo identidad cromática del bloque Lectura: el trazado es canónico. */
+.melano-page {
+  --ml-ink: #051e28;
+  --ml-green: #3a8841;
+  --ml-turquoise: #40b5bc;
+  --ml-violet: #483df6;
+  --ml-lavender: #86759f;
+  --ml-light: #f3f5f7;
+  --reading-room: calc(100svh - var(--journey-header-height, 80px));
+  --paper-light: #f7fbfa;
+  --mustard: #40b5bc;
+  --journey-label-color: #40b5bc;
+  background: #f3f5f7;
+  color: #051e28;
+  font: 400 17px/1.55 'Archivo', sans-serif;
+  font-synthesis: none;
+}
+.melano-page *, .melano-page *::before, .melano-page *::after { box-sizing: border-box; }
+html:has(.melano-page) { scroll-padding-top: var(--journey-header-height, 80px); }
+body:has(.melano-page) { margin: 0; }
+.melano-page :focus-visible { outline: 3px solid var(--ml-violet); outline-offset: 4px; }
+.melano-main { padding-top: var(--journey-header-height, 80px); }
+.melano-screen { min-height: var(--reading-room); overflow: visible; }
+.melano-container { width: min(1250px, calc(100% - 88px)); margin-inline: auto; }
+.melano-skip { position: fixed; top: -100px; left: 16px; z-index: 2500; padding: 12px 18px; background: white; color: #051e28; }
+.melano-skip:focus { top: 10px; }
+.melano-eyebrow { margin: 0; font: 700 12px/1.35 'Archivo', sans-serif; letter-spacing: .17em; text-transform: uppercase; }
+
+.melano-hero {
+  position: relative; display: flex; align-items: center;
+  padding: 28px 0 35px;
+  background: var(--ml-ink); color: #eef9fc;
+}
+.melano-hero__layout { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(300px, .84fr); gap: clamp(24px,4vw,65px); align-items: center; }
+.melano-hero .journey-block-label { color: var(--ml-turquoise); }
+.melano-hero__copy { min-width: 0; }
+.melano-hero .melano-eyebrow { margin: 18px 0 15px; color: #b6d6d9; }
+.melano-hero .melano-eyebrow span { padding-inline: 8px; color: var(--ml-turquoise); }
+.melano-hero h1 {
+  font: 900 clamp(42px, 4.15vw, 70px)/.99 'Archivo', sans-serif;
+  letter-spacing: -.065em; margin: 0 0 21px; max-width: 780px;
+  text-wrap: balance;
+}
+.melano-hero h1 span { display: block; color: #8d82ff; margin-top: 10px; }
+.melano-hero__subtitle { font: 600 clamp(18px, 1.8vw, 25px)/1.22 'Archivo', sans-serif; max-width: 680px; margin: 0 0 17px; color: #fafbfb; }
+.melano-hero__intro { font-size: clamp(13px, 1.07vw, 16px); line-height: 1.63; max-width: 700px; margin: 0; color: #d5e5e7; }
+.melano-hero__next { display: inline-flex; gap: 16px; align-items: center; margin-top: 25px; padding: 11px 0; color: #78d5d9; font: 700 12px/1.3 'Archivo', sans-serif; letter-spacing: .13em; text-transform: uppercase; text-decoration: none; border-bottom: 2px solid #40b5bc; }
+.melano-hero__next:hover { color: white; }
+.melano-hero__art {
+  position: relative; aspect-ratio: 4/5; max-height: min(680px, calc(var(--reading-room) - 72px));
+  min-height: 380px; display: flex; flex-direction: column; justify-content: space-between;
+  padding: clamp(25px,3.2vw,45px);
+  background: linear-gradient(140deg,#86759f 0 20%,#483df6 20% 60%,#3a8841 60% 100%);
+  border: 7px solid #051e28; outline: 1px solid #a7cbc8;
+  box-shadow: 18px 18px 0 #40b5bc;
+  isolation: isolate;
+}
+.melano-hero__art::before { content:''; position:absolute; inset: 17px; border: 1px solid #ffffff8c; pointer-events:none; }
+.melano-hero__art-top { display:flex; justify-content:space-between; gap:10px; font:700 10px/1.35 'Archivo',sans-serif; letter-spacing:.08em; text-transform:uppercase; color:white; }
+.melano-hero__art-center { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:8px; flex:1; }
+.melano-hero__art-numeral { display:block; font:400 clamp(140px,15vw,230px)/.72 'Bebas Neue',sans-serif; letter-spacing:-.065em; color:#fafaff; text-shadow:6px 9px 0 #051e2877; }
+.melano-hero__art-rule { display:block; height:6px; width:70%; background:#40b5bc; }
+.melano-hero__art-center strong { font:900 clamp(25px,2.75vw,43px)/1.07 'Archivo',sans-serif; letter-spacing:-.05em; color:#fff; }
+.melano-hero__art-bottom { display:flex; flex-direction:column; align-items:flex-end; gap:5px; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:white; }
+.melano-hero__stripes { position:absolute; bottom:0; left:0; width:100%; height:8px; display:grid; grid-template-columns:repeat(5,1fr); }
+.melano-hero__stripes i:nth-child(1){background:#051e28;} .melano-hero__stripes i:nth-child(2){background:#3a8841;} .melano-hero__stripes i:nth-child(3){background:#40b5bc;} .melano-hero__stripes i:nth-child(4){background:#483df6;} .melano-hero__stripes i:nth-child(5){background:#86759f;}
+
+.melano-author { display: flex; align-items: center; padding: 70px 0; background: var(--ml-green);
+  --paper-light: #f7fff9; --mustard: #c5f4f1; --journey-label-color: #f7fff9; }
+.melano-page .melano-author .canonical-author-photo img { filter: grayscale(1) contrast(1.1); object-position: center 30%; }
+.melano-page .melano-author .canonical-author-photo figcaption { color:#eafaf2; opacity:1; }
+.melano-page .melano-author .canonical-author-grid { max-width:1240px; }
+.melano-page .melano-author .canonical-author-link { color:white; }
+.melano-page .melano-author :focus-visible { outline-color:#fafafa; }
+
+.melano-context-screen { display:flex; align-items:center; padding:clamp(28px,4svh,48px) 0; }
+.melano-context-inner { display:flex; flex-direction:column; justify-content:space-between; gap:clamp(18px,2.2svh,25px); }
+.melano-context-one { background: #f3f5f7; color: var(--ml-ink); }
+.melano-context-two { background: #dce5e8; color: var(--ml-ink); }
+.melano-context-top { display:flex; justify-content:space-between; gap:20px; align-items:center; }
+.melano-context-top span { font:700 11px/1.4 'Archivo',sans-serif; color:#42556a; letter-spacing:.1em; text-transform:uppercase; }
+.melano-context-one .journey-block-label, .melano-context-two .journey-block-label { color:var(--ml-violet); }
+.melano-context-heading { max-width:1030px; }
+.melano-context-heading .melano-eyebrow { color:var(--ml-green); }
+.melano-context-heading h2 { font:900 clamp(33px,3.75vw,57px)/1.1 'Archivo',sans-serif; letter-spacing:-.055em; margin:9px 0 13px; }
+.melano-context-heading h2 em { color:var(--ml-violet); font-style:normal; }
+.melano-context-heading > p:last-child { max-width:890px; font-size:clamp(15px,1.18vw,18px); line-height:1.5; margin:0; }
+.melano-stages { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; }
+.melano-stage { min-width:0; padding:20px 21px 18px; border-top:6px solid var(--ml-violet); background:#fff; box-shadow:0 10px 22px #051e2812; }
+.melano-stage:nth-child(2) { border-top-color:var(--ml-green); }
+.melano-stage:nth-child(3) { border-top-color:var(--ml-lavender); }
+.melano-stage__head { display:flex; justify-content:space-between; align-items:start; gap:10px; }
+.melano-stage__head span { font:400 clamp(49px,5vw,75px)/.93 'Bebas Neue',sans-serif; color:var(--ml-ink); }
+.melano-stage__head small { font:700 12px/1 'Archivo',sans-serif; color:var(--ml-lavender); }
+.melano-stage h3 { font-size:19px; letter-spacing:-.025em; margin:10px 0 6px; }
+.melano-stage p { margin:0; font-size:14px; line-height:1.45; }
+.melano-groups { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.melano-groups > div { display:flex; flex-direction:column; gap:5px; padding-left:14px; border-left:3px solid var(--ml-turquoise); }
+.melano-groups > div:nth-child(2) { border-left-color:var(--ml-green); }
+.melano-groups > div:nth-child(3) { border-left-color:var(--ml-violet); }
+.melano-groups strong { font-size:15px; color:var(--ml-ink); }
+.melano-groups span { font-size:12px; line-height:1.43; color:#425661; }
+.melano-question { margin:0; padding:10px 0 0; border-top:1px solid #9cb2b5; font:700 clamp(15px,1.3vw,19px)/1.35 'Archivo',sans-serif; color:#253f50; }
+.melano-sources { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+.melano-source-card { min-width:0; display:flex; flex-direction:column; gap:9px; padding:24px 27px; border-top:7px solid var(--ml-green); background:#fefefe; }
+.melano-source-card--quote { border-top-color:var(--ml-violet); }
+.melano-source-card__head { display:flex; align-items:center; gap:11px; color:#486067; font:700 11px/1.3 'Archivo',sans-serif; text-transform:uppercase; letter-spacing:.09em; }
+.melano-source-card__number { font:400 clamp(46px,5vw,72px)/1 'Bebas Neue',sans-serif; color:var(--ml-green); margin:10px 0 0; }
+.melano-source-card blockquote { margin:16px 0 9px; font:700 clamp(19px,2.1vw,29px)/1.23 'Archivo',sans-serif; letter-spacing:-.03em; color:var(--ml-violet); }
+.melano-source-card h3 { font-size:22px; letter-spacing:-.02em; margin:0; }
+.melano-source-card p { margin:0; font-size:14px; line-height:1.47; }
+.melano-source-card a { display:inline-flex; align-items:center; gap:8px; align-self:start; margin-top:auto; padding-top:9px; color:#142f48; font-size:12px; font-weight:700; border-bottom:1px solid currentColor; text-decoration:none; }
+.melano-reading-key { display:grid; grid-template-columns:minmax(200px,.8fr) 1.2fr; gap:30px; align-items:center; padding:15px 19px; border-left:6px solid var(--ml-turquoise); background:#edf4f5; }
+.melano-reading-key > div { display:flex; align-items:center; gap:12px; color:var(--ml-ink); font-size:15px; line-height:1.28; }
+.melano-reading-key p { margin:0; font-size:13px; line-height:1.5; }
+
+body:has(.journey-header) .melano-page #lectura.hb-material-reading { --material-paper:#eff5f4; --material-ink:#051e28; --material-rust:#483df6; }
+.melano-page #lectura.hb-material-reading > .text-only-entry { width:100%; min-width:0; }
+.melano-page #lectura.hb-material-reading .hb-material-dots {
+  background:radial-gradient(circle at 4px 4px, #483df640 0 1.6px, transparent 2px) 0 0 / 17px 17px;
+}
+.melano-page #lectura.hb-material-reading .hb-material-open {
+  color:#f7fcff; border-color:#67c6c6; border-right-color:#071f30; border-bottom-color:#041624;
+  background:linear-gradient(156deg,#305d9a 0%,#483df6 43%,#252384 100%);
+  box-shadow: inset 2px 3px 2px #f7faff66, inset 7px 0 8px #40b5bc40,
+    inset -2px -5px 3px #0f1043bb, 1px 5px 0 #11184d,
+    7px 18px 20px -7px #161a6a66, 14px 30px 26px -12px #483df64d;
+}
+.melano-page #lectura.hb-material-reading .hb-material-open::before { border-color:#ffffff44; border-bottom-color:#131163a6; }
+.melano-page #lectura.hb-material-reading .hb-material-open > svg:last-child { color:#40b5bc; filter:drop-shadow(0 0 5px #40b5bc88); }
+.melano-page #lectura.hb-material-reading .hb-material-synopsis { color:#294a54; }
+
+.melano-toast { position:fixed; bottom:16px; left:50%; transform:translateX(-50%); z-index:2100; color:white; background:#051e28; border-radius:5px; padding:7px 12px; font-size:12px; pointer-events:none; }
+.melano-toast:empty { display:none; }
+@media(max-width:1050px) {
+ .melano-hero__layout {grid-template-columns:minmax(0,1fr) minmax(260px,.75fr);}
+ .melano-hero__art {min-height:320px;}
+ .melano-hero__art-numeral {font-size:160px;}
+ .melano-container {width:min(100% - 54px,1250px);}
+}
+@media(max-width:850px) {
+ .melano-hero__layout {grid-template-columns:1fr; gap:28px;}
+ .melano-hero__art {aspect-ratio:2.4; min-height:180px; width:100%; max-height:300px; padding:20px; box-shadow:10px 10px 0 #40b5bc;}
+ .melano-hero__art-center {flex-direction:row; align-items:center; gap:15px;}
+ .melano-hero__art-numeral {font-size:113px;}
+ .melano-hero__art-rule {width:7px; height:100px;}
+ .melano-hero__art-center strong {font-size:28px;}
+ .melano-hero__art-bottom {display:none;}
+ .melano-author {padding:60px 0;}
+ .melano-stages {gap:10px;}
+ .melano-stage {padding:16px;}
+ .melano-groups {gap:10px;}
+}
+@media(max-width:640px) {
+ .melano-container {width:calc(100% - 34px);}
+ .melano-hero {padding:30px 0 34px;}
+ .melano-hero h1 {font-size:clamp(38px,10.4vw,59px);}
+ .melano-hero__subtitle {font-size:19px;}
+ .melano-hero__intro {font-size:14px;}
+ .melano-hero__art {min-height:180px; aspect-ratio:1.9; margin-right:7px; width:calc(100% - 7px);}
+ .melano-hero__art-top {font-size:9px;}
+ .melano-hero__art-numeral {font-size:115px;}
+ .melano-hero__art-center strong {font-size:24px;}
+ .melano-context-screen {padding-block:30px;}
+ .melano-context-top {align-items:start;}
+ .melano-context-top span {max-width:145px; text-align:right; font-size:10px;}
+ .melano-context-heading h2 {font-size:clamp(30px,8.8vw,43px);}
+ .melano-context-heading > p:last-child {font-size:16px;}
+ .melano-stages, .melano-groups, .melano-sources, .melano-reading-key {grid-template-columns:1fr;}
+ .melano-stages {gap:10px;}
+ .melano-stage {padding:14px 17px;}
+ .melano-stage__head span {font-size:52px;}
+ .melano-stage h3 {margin:4px 0 5px;}
+ .melano-stage p {font-size:13px;}
+ .melano-groups > div {padding-left:11px;}
+ .melano-source-card {padding:20px;}
+ .melano-reading-key {gap:10px;}
+}
+@media(prefers-reduced-motion: reduce) {
+ .melano-page * {scroll-behavior:auto;}
+}
