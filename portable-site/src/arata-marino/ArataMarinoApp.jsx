@@ -108,6 +108,6 @@ export default function ArataMarinoApp() {
     <main className="am-main">
       <Inicio /><Autor /><Contexto /><Lectura />
     </main>
-    <JourneyCredits workId="arata-marino" />
+    <JourneyCredits workId="arataMarino" />
   </div>;
 }
