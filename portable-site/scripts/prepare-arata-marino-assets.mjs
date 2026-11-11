@@ -56,7 +56,24 @@ const tables = document.sections.flatMap(section => section.paragraphs).filter(p
 if (tables.length !== 1 || paragraphTimings.some(t => t.id === tables[0].id)) {
   throw Error('Arata y Mariño: el cuadro estadístico debe quedar completo y sin tiempo ficticio.');
 }
-const model = { document, paragraphTimings };
+// La pista MP3 termina antes que el último cue. La fuente SRT se conserva
+// sin alteración; el intervalo visual se limita únicamente a la duración real.
+const realAudioSeconds = 3612.447347;
+document.duration = realAudioSeconds;
+const timedById = new Map(paragraphTimings.map(item => [item.id, item]));
+const completeTimings = document.sections.flatMap(section => section.paragraphs).map(paragraph => {
+  const recorded = timedById.get(paragraph.id);
+  if (!recorded) return { id: paragraph.id, audioUnavailable: true };
+  return { ...recorded, end: Math.min(recorded.end, realAudioSeconds) };
+});
+if (completeTimings.length !== 79 || completeTimings.filter(t => t.audioUnavailable).length !== 1 ||
+    completeTimings.filter(t => Number.isFinite(t.start)).length !== 78) {
+  throw Error('Arata y Mariño: cobertura por párrafos incompleta.');
+}
+const model = { document, paragraphTimings: completeTimings };
+console.log('Arata y Mariño · contrato: documentSha256=' + sha(Buffer.from(JSON.stringify(document))) +
+  ', modelBytes=' + Buffer.byteLength(JSON.stringify(model)) +
+  ', modelSha256=' + sha(Buffer.from(JSON.stringify(model))) + '.');
 const tmpModel = modelPath + '.generando';
 try {
   await writeFile(tmpModel, JSON.stringify(model));
