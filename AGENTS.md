@@ -4,9 +4,11 @@
 
 **Estado del proyecto y próxima acción única:** [PRODUCCION_ACTIVA.md](documentation/PRODUCCION_ACTIVA.md).
 
+**Mapa de arquitectura y relevo técnico del lector (vigente):** [MAPA_OPERATIVO_LECTOR_INTEGRADO.md](documentation/MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Consultarlo antes de releer un motor compartido.
+
 ## Antes de comenzar
 1. Leer las Directrices 3.0 y el registro de producción activa; contrastar la rama, PR y commit reales.
-2. Leer solo los archivos técnicos de la obra o componente que se necesita modificar. Recuperar soluciones y trabajo ya completado.
+2. Usar el mapa operativo del lector para localizar directamente el contrato y la integración correspondiente; contrastar solo los archivos técnicos que hayan cambiado o que se vayan a modificar. No redescubrir el motor ni el despliegue desde cero.
 3. Realizar la acción pendiente. No repetir investigaciones acústicas, pruebas superadas, expedientes de 2–3 Work ni comprobaciones jurídicas rutinarias.
 4. Guardar un commit verificable por hito importante y actualizar el estado operativo.
 
