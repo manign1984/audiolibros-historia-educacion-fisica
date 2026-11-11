@@ -84,7 +84,7 @@ assert.equal(audio.paused,true,'No reproducir automáticamente');
 await flush(()=>audio.dispatchEvent(new window.Event('loadedmetadata')));
 assert.equal(document.querySelectorAll('.reader-paragraph-unit').length,61);
 assert.equal(document.querySelectorAll('.reader-editorial-note-body').length,20);
-assert.equal(JSON.parse(localStorage.getItem(config.storage.notesKey))[0].text,firstPageSentinel[0].text);
+assert.equal(JSON.parse(window.localStorage.getItem(config.storage.notesKey))[0].text,firstPageSentinel[0].text);
 const first=data.paragraphTimings[0];
 await setAudio((first.start+first.end)/2);
 assert.equal(document.querySelector('.reader-paragraph-unit.is-active')?.dataset.readerSentence,first.id);
