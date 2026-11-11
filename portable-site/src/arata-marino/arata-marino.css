@@ -118,16 +118,6 @@ body:has(.journey-header) .arata-marino-page #lectura.hb-material-reading {
   border-bottom-color:#0a2534;
 }
 .arata-marino-page #lectura .hb-material-open > svg:last-child { color:#eec06b; }
-.am-access-dialog { border:1px solid #bdc6c8; border-radius:8px; width:min(92vw,520px); max-height:85vh; padding:clamp(22px,3vw,36px); background:#f7f1e7; color:#172e3a; box-shadow:0 32px 90px #07182788; font:400 16px/1.6 'Archivo',sans-serif; }
-.am-access-dialog::backdrop { background:#111a26c7; }
-.am-access-dialog__head { display:flex; align-items:center; justify-content:space-between; gap:18px; color:#985035; font:700 12px/1.2 'Archivo',sans-serif; letter-spacing:.08em; text-transform:uppercase; }
-.am-access-dialog__head span { display:flex; align-items:center; gap:9px; }
-.am-access-dialog__close { cursor:pointer; border:0; background:transparent; color:inherit; padding:8px; }
-.am-access-dialog h2 { margin:20px 0 14px; font:900 clamp(25px,5vw,35px)/1.13 'Archivo',sans-serif; letter-spacing:-.04em; }
-.am-access-dialog p { margin:0 0 24px; }
-.am-access-dialog__link { display:flex; justify-content:space-between; align-items:center; gap:16px; background:#214b5d; color:#fff; text-decoration:none; padding:13px 17px; border-radius:4px; font-weight:700; }
-.am-access-dialog__secondary { display:inline-flex; align-items:center; gap:8px; margin-top:18px; color:#1b4358; font-weight:700; font-size:13px; }
-
 @media(max-width:1100px) {
   .am-hero__layout { grid-template-columns:minmax(0,1fr) minmax(285px,.8fr); }
   .am-hero h1 { font-size:clamp(49px,5.3vw,76px); }
@@ -172,13 +162,3 @@ body:has(.journey-header) .arata-marino-page #lectura.hb-material-reading {
   .am-hero__art, .am-hero__art * { animation:none!important; transition:none!important; }
 }
 
-/* Acceso personal a documentos ya adquiridos: sin alterar la pantalla canónica. */
-.am-private-reading-dialog { max-height: min(90dvh,850px); overflow-y:auto; }
-.am-private-reading-dialog .am-access-dialog__link { margin-top:8px; border:0; cursor:pointer; width:100%; font:700 15px/1.35 'Archivo',sans-serif; text-align:left; }
-.am-private-reading-dialog .am-access-dialog__link:disabled { opacity:.65; cursor:wait; }
-.am-private-reading-dialog .am-access-dialog__link:focus-visible,
-.am-private-reading-dialog input:focus-visible { outline:3px solid #b25139; outline-offset:3px; }
-.am-private-reading-form { display:grid; gap:11px; }
-.am-private-reading-form label { margin-top:2px; font:700 13px/1.45 'Archivo',sans-serif; color:#204357; }
-.am-private-reading-form input[type="file"] { min-width:0; max-width:100%; padding:9px 10px; border:1px solid #b3c4c7; border-radius:4px; background:white; color:#203f4e; font:400 13px/1.4 'Archivo',sans-serif; }
-.am-private-reading-error { margin:1px 0 0!important; color:#a13829; font-weight:700; font-size:13px; }
