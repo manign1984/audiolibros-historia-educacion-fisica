@@ -3,7 +3,9 @@ import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
-import ArataMarinoReader from './ArataMarinoReader.jsx';
+import IntegratedReader from '../IntegratedReader.jsx';
+import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
+import { arataReaderConfig, arataReadingDocument } from './readerContract.js';
 import './arata-marino.css';
 
 const EDITORIAL_IMAGE = import.meta.env.BASE_URL + 'assets/arata-marino/autor-editorial.svg';
@@ -94,7 +96,7 @@ function Contexto() {
 
 function Lectura() {
   return <section id="lectura" className="am-screen am-reading hb-material-reading" aria-labelledby="journey-reading-title">
-    <ArataMarinoReader />
+    <IntegratedReader readingDocument={arataReadingDocument} config={arataReaderConfig} Launcher={CanonicalReadingEntry} />
   </section>;
 }
 
