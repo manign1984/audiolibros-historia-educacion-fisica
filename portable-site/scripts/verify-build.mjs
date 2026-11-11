@@ -80,7 +80,7 @@ assert.equal(arataEntry?.status, 'available', 'Arata y Mariño debe estar dispon
 const arataHtml = await readFile(resolve(dist, 'textos/arata-marino-auroras-tempestades/index.html'), 'utf8');
 assert.match(arataHtml, /Auroras y tempestades/);
 assert.ok(arataHtml.includes(`src="${normalizedBase}assets/`), 'Arata y Mariño: respetar la base de GitHub Pages.');
-const arataBundleName = assetNames.find(name => /^arata-marino-auroras-tempestades-.*\\.js$/.test(name));
+const arataBundleName = assetNames.find(name => name.startsWith('arata-marino-auroras-tempestades-') && name.endsWith('.js'));
 assert.ok(arataBundleName, 'Debe existir un bundle independiente de Arata y Mariño.');
 const arataBundle = await readFile(resolve(dist, 'assets', arataBundleName), 'utf8');
 assert.ok(arataBundle.includes(`./${readerBundleNames[0]}`), 'Arata y Mariño debe reutilizar IntegratedReader.');
