@@ -107,7 +107,7 @@ function Lectura() {
   }};
   return <section id="lectura" className="am-screen am-reading hb-material-reading" aria-labelledby="journey-reading-title">
     {LOCAL_READER_PREVIEW
-      ? <ArataMarinoReaderPreview assetBase={import.meta.env.BASE_URL + 'assets/arata-marino-local/'} />
+      ? <ArataMarinoReaderPreview assetBase={import.meta.env.BASE_URL + (import.meta.env.VITE_ARATA_MARINO_ASSET_PREFIX || '')} />
       : <>
     <CanonicalReadingEntry onOpen={() => access.current?.showModal()} progress={{ currentTime: 0, currentPage: 1 }} noteCount={0} config={config} buttonAriaLabel="Abrir opciones de acceso a la lectura" />
     <dialog ref={access} className="am-access-dialog" aria-labelledby="am-access-title" aria-describedby="am-access-description">
