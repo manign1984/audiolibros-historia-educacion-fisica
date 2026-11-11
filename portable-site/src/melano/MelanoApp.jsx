@@ -190,7 +190,6 @@ export default function MelanoApp() {
 
   const integratedConfig = readerData ? {
     ...melanoReaderConfig,
-    captionCues: readerData.cues,
     sync: { ...melanoReaderConfig.sync, paragraphTimings: readerData.paragraphTimings },
   } : null;
 
