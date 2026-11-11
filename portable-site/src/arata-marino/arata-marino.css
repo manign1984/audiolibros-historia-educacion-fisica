@@ -171,3 +171,14 @@ body:has(.journey-header) .arata-marino-page #lectura.hb-material-reading {
 @media(prefers-reduced-motion:reduce) {
   .am-hero__art, .am-hero__art * { animation:none!important; transition:none!important; }
 }
+
+/* Acceso personal a documentos ya adquiridos: sin alterar la pantalla canónica. */
+.am-private-reading-dialog { max-height: min(90dvh,850px); overflow-y:auto; }
+.am-private-reading-dialog .am-access-dialog__link { margin-top:8px; border:0; cursor:pointer; width:100%; font:700 15px/1.35 'Archivo',sans-serif; text-align:left; }
+.am-private-reading-dialog .am-access-dialog__link:disabled { opacity:.65; cursor:wait; }
+.am-private-reading-dialog .am-access-dialog__link:focus-visible,
+.am-private-reading-dialog input:focus-visible { outline:3px solid #b25139; outline-offset:3px; }
+.am-private-reading-form { display:grid; gap:11px; }
+.am-private-reading-form label { margin-top:2px; font:700 13px/1.45 'Archivo',sans-serif; color:#204357; }
+.am-private-reading-form input[type="file"] { min-width:0; max-width:100%; padding:9px 10px; border:1px solid #b3c4c7; border-radius:4px; background:white; color:#203f4e; font:400 13px/1.4 'Archivo',sans-serif; }
+.am-private-reading-error { margin:1px 0 0!important; color:#a13829; font-weight:700; font-size:13px; }

@@ -26,7 +26,7 @@
     "validate:works": "node scripts/validate-works.mjs",
     "test:work-validation": "node scripts/test-work-validation.mjs",
     "test:soares": "node scripts/test-soares.mjs && node scripts/test-soares-runtime.mjs && node scripts/test-soares-paragraph-preview.mjs && node scripts/test-soares-quickcheck.mjs",
-    "test:arata-marino": "node scripts/test-arata-marino-preparation.mjs && node scripts/test-arata-marino-audio.mjs"
+    "test:arata-marino": "node scripts/test-arata-marino-preparation.mjs && node scripts/test-arata-marino-audio.mjs && node scripts/test-arata-marino-public-local.mjs"
   },
   "dependencies": {
     "@fontsource/archivo": "5.2.8",

@@ -25,7 +25,7 @@ export function createArataMarinoReaderConfig(assetBase) {
     readingEntry: {
       author: 'Nicolás Arata y Marcelo Mariño', audioMinutes: 60,
       title: 'Auroras y tempestades: la educación entre golpes (1955–1976)',
-      synopsis: 'La lección analiza las políticas educativas y las disputas sociales entre 1955 y 1976.',
+      synopsis: 'Entre 1955 y 1976, la escuela argentina fue escenario de cambios, proyectos de modernización y disputas políticas. Nicolás Arata y Marcelo Mariño examinan el desarrollismo, la expansión educativa, las experiencias pedagógicas alternativas y los proyectos de liberación, hasta el giro represivo que anticipó el golpe de Estado de 1976.',
     },
     pageMeta: 'Arata y Mariño · Lección 10 · Ediciones Novedades Educativas',
     footerLabel: 'Texto académico · audiolibro · cuaderno de lectura',
