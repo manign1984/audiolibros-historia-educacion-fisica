@@ -1,21 +1,17 @@
-import { useRef } from 'react';
-import { ArrowDown, ArrowUpRight, BookOpenText, ExternalLink, Globe2, Landmark, Users, X } from 'lucide-react';
+import { ArrowDown, Landmark, Users } from 'lucide-react';
 import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
-import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import ArataMarinoReaderPreview from './ArataMarinoReaderPreview.jsx';
+import ArataMarinoPrivateReader from './ArataMarinoPrivateReader.jsx';
 import './arata-marino.css';
 
 const LOCAL_READER_PREVIEW = import.meta.env.DEV && import.meta.env.VITE_ARATA_MARINO_READER_PREVIEW === '1';
-const EDITION_URL = 'https://digital.noveduc.com/library/publication/la-educacion-en-la-argentina';
-const BOOK_URL = 'https://www.noveduc.com/us/productos/educacion-en-la-argentina-la/';
 const EDITORIAL_IMAGE = import.meta.env.BASE_URL + 'assets/arata-marino/autor-editorial.svg';
 
 const INTRO = 'En 1955, un golpe de Estado abrió dos décadas de proscripciones, proyectos de modernización y conflictos sociales. La educación fue escenario de políticas estatales, resistencias y experiencias que imaginaron transformaciones profundas. ¿Cómo convivieron las promesas de progreso con las búsquedas de liberación y el avance de la represión hasta 1976?';
 const BIO = 'Nicolás Arata es doctor en Educación e investigador en historia de la educación argentina y latinoamericana. Marcelo Mariño es profesor de Historia, docente e investigador en el mismo campo. Juntos escribieron La educación en la Argentina. Una historia en 12 lecciones, una obra orientada a la formación docente que recorre las disputas, las instituciones y las experiencias educativas del país.';
-const SYNOPSIS = 'Entre 1955 y 1976, la escuela argentina fue escenario de cambios, proyectos de modernización y disputas políticas. Nicolás Arata y Marcelo Mariño examinan el desarrollismo, la expansión educativa, las experiencias pedagógicas alternativas y los proyectos de liberación, hasta el giro represivo que anticipó el golpe de Estado de 1976.';
 const timeline = [
   { year: '1955', label: 'Golpe y proscripción', body: 'El derrocamiento de Perón inaugura un período de inestabilidad y confrontación que atraviesa la escuela.' },
   { year: '1958–63', label: 'Modernizar y planificar', body: 'El desarrollismo impulsa la formación de recursos humanos y amplía el lugar de los expertos en la política educativa.' },
@@ -99,28 +95,10 @@ function Contexto() {
 }
 
 function Lectura() {
-  const access = useRef(null);
-  const config = { textOnly: false, readingEntry: {
-    author: 'Nicolás Arata y Marcelo Mariño',
-    title: 'Auroras y tempestades: la educación entre golpes (1955–1976)',
-    synopsis: SYNOPSIS,
-  }};
   return <section id="lectura" className="am-screen am-reading hb-material-reading" aria-labelledby="journey-reading-title">
     {LOCAL_READER_PREVIEW
       ? <ArataMarinoReaderPreview assetBase={import.meta.env.BASE_URL + (import.meta.env.VITE_ARATA_MARINO_ASSET_PREFIX || '')} />
-      : <>
-    <CanonicalReadingEntry onOpen={() => access.current?.showModal()} progress={{ currentTime: 0, currentPage: 1 }} noteCount={0} config={config} buttonAriaLabel="Abrir opciones de acceso a la lectura" />
-    <dialog ref={access} className="am-access-dialog" aria-labelledby="am-access-title" aria-describedby="am-access-description">
-      <div className="am-access-dialog__head">
-        <span><BookOpenText size={20} aria-hidden="true"/> Edición digital</span>
-        <form method="dialog"><button type="submit" className="am-access-dialog__close" aria-label="Cerrar opciones de acceso"><X size={22} aria-hidden="true"/></button></form>
-      </div>
-      <h2 id="am-access-title">Consultá la obra en su edición editorial</h2>
-      <p id="am-access-description">Esta página acompaña la lectura con presentación, autores y contexto histórico. El texto completo se consulta en la plataforma oficial de Ediciones Novedades Educativas, según sus condiciones de acceso.</p>
-      <a className="am-access-dialog__link" href={EDITION_URL} target="_blank" rel="noopener noreferrer">Abrir edición digital <ExternalLink size={18} aria-hidden="true"/></a>
-      <a className="am-access-dialog__secondary" href={BOOK_URL} target="_blank" rel="noopener noreferrer">Consultar información del libro <ArrowUpRight size={16} aria-hidden="true"/></a>
-    </dialog>
-      </>}
+      : <ArataMarinoPrivateReader />}
   </section>;
 }
 
