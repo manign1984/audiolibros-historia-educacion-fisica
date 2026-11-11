@@ -32,7 +32,7 @@ const records = [
   ['almada-privilegiados', 'Cecilia Almada', 'Los privilegiados en la Nueva Argentina', 'Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo', 'peronismo', '2020', 'Almada, C. (2020). Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo. History of Education in Latin America.', 'materiales'],
   ['pineau-reprimir-discriminar', 'Pablo Pineau', 'Reprimir y discriminar', 'Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)', 'dictadura', '2014', 'Pineau, P. (2014). Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983). Educar em Revista, 51, 103–122.', 'programa'],
   ['melano-aisenstein-ultima-dictadura', 'Ignacio Melano · Ángela Aisenstein', 'Formación docente en dictadura', 'Formación docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”', 'dictadura', '2018', 'Melano, I. y Aisenstein, A. (2018). Formación docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”. En C. Kaufmann, Estudios sobre historia y política de la educación argentina reciente (1960–2000) (pp. 179–198). FahrenHouse.', 'programa'],
-  ['melano-militares-juramentados', 'Ignacio Melano', 'Militares al gobierno, juramentados al poder', 'Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70', 'dictadura', '', 'Melano, I. Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70. En Formar líderes y salvar a los jóvenes. Claves para comprender la cultura escolar del Instituto Nacional de Educación Física General Belgrano. Datos de edición en preparación.', 'entrevistas'],
+  ['melano-militares-juramentados', 'Ignacio Melano', 'Militares al gobierno, juramentados al poder', 'Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70', 'dictadura', '2025', 'Melano, I. (2025). Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70. En Formar líderes y salvar a los jóvenes. Claves para comprender la cultura escolar del Instituto Nacional de Educación Física General Belgrano (cap. 6, pp. 131–149). EdUNLu.', 'entrevistas'],
   ['feldfeber-gluz-politicas', 'Myriam Feldfeber · Nora Gluz', 'Las políticas educativas en la Argentina', 'Las políticas educativas en Argentina: herencias de los 90, contradicciones y tendencias de nuevo signo', 'presente', '2011', 'Feldfeber, M. y Gluz, N. (2011). Las políticas educativas en Argentina: herencias de los 90, contradicciones y tendencias de nuevo signo. Educação & Sociedade, 32(115), 339–356.', 'programa'],
   ['levoratti-debates-ef', 'Alejo Levoratti', 'Los debates de la Educación Física', 'Los debates de la Educación Física y los enfoques de las ciencias sociales: un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015)', 'presente', '2018', 'Levoratti, A. (2018). Los debates de la Educación Física y los enfoques de las ciencias sociales: un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015). Revista de ALESDE, 9(1), 45–63.', 'programa'],
   ['puiggros-que-paso', 'Adriana Puiggrós', 'Qué pasó en la educación argentina', 'Qué pasó en la educación argentina. Breve historia desde la conquista hasta el presente', 'presente', '2003', 'Puiggrós, A. (2003). Qué pasó en la educación argentina. Breve historia desde la conquista hasta el presente (pp. 165–203). Galerna.', 'programa'],
@@ -42,6 +42,13 @@ const records = [
 // Obras con lectura y audio habilitados; la disponibilidad del lector
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
+  'melano-militares-juramentados': {
+    status: 'text',
+    historicalPeriod: 'Formación docente, dictadura y redes de poder · 1967–1981',
+    stateKey: 'melano-juramentados-text-page-v1',
+    readingDetail: 'Lectura académica y cuaderno de notas',
+    artwork: 'assets/melano/ignacio-melano-retrato.jpeg',
+  },
   'lionetti-escuela-republicana': {
     status: 'text',
     historicalPeriod: 'Escuela pública y ciudadanía · fines del siglo XIX',
