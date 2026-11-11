@@ -8,13 +8,11 @@
 ## 1. Qué se está haciendo
 
 **Obra activa:** Ignacio Melano · *Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70* (capítulo 6, 2024).  
-**Hito 10/11/2026:** Etapa A, depuración textual. PDF de 19 páginas impresas (131–149); se retiraron notas al pie 193–212, encabezados y folios y se integró el cuerpo en el [Google Docs de narración](https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit). Conserva seis apartados, citas y contenido principal. [PDF original](https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view). Extensión aproximada: 35.940 caracteres. No existen MP3/SRT/VTT ni página web construida para esta obra.  
+**Hito 10/11/2026:** Etapa A, depuración textual. PDF de 19 páginas impresas (131–149); se retiraron notas al pie 193–212, encabezados y folios y se integró el cuerpo en el [Google Docs de narración](https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit). Conserva seis apartados, citas y contenido principal. [PDF original](https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view). Extensión aproximada inicial: 35.940 caracteres; luego se retiraron las citas parentéticas. No existen MP3/SRT/VTT ni página web construida para esta obra.  
 **Actualización 10/11/2026:** Versión para ElevenLabs depurada de 35 citas parentéticas, dos fragmentos de una referencia bibliográfica dividida y un año citado dentro de un paréntesis explicativo; se conservan fechas y aclaraciones históricas. Existe una [copia académica con citas](https://docs.google.com/document/d/19_QDXB4uo8kaAhUA8yDbWTokbdzSEPYAFwlrqroxWLk/edit) para el lector visual; la copia original PDF también se conserva. No usar el TXT de locución como sustituto del texto académico con referencias en el futuro lector.  
-**Estado:** EN DESARROLLO. **Etapa:** A (texto preparado para locución; recursos sonoros aún pendientes); B y C todavía no iniciadas.  
-**Próxima acción única:** Exportar el documento de locución en TXT y generar audiolibro y subtítulos en ElevenLabs, sin repetir depuraciones ni usar la versión bibliográfica para la narración. A continuación, integrar los cinco bloques canónicos y desarrollar el Contexto dentro de B.  
-**Ficha editorial de etapa A:** [MELANO_FICHA_ETAPA_A.md](MELANO_FICHA_ETAPA_A.md) — bibliografía 2025 según EdUNLu, textos, paleta, Contexto de dos pantallas, fuentes y pendientes acotados. No confundir la ficha con las Directrices canónicas.  
-**Estado:** EN DESARROLLO. **Etapa:** A editorial definida; el siguiente trabajo es B, que puede comenzar con lector textual mientras se produce audio/subtítulos.  
-**Próxima acción única:** iniciar B con los cinco bloques canónicos y TextOnlyReader, utilizando la ficha editorial; integrar MP3/SRT cuando el usuario los entregue.  
+**Ficha editorial de etapa A:** [MELANO_FICHA_ETAPA_A.md](MELANO_FICHA_ETAPA_A.md) — identificación bibliográfica 2025 según EdUNLu, presentación, biografía, sinopsis, dos pantallas de Contexto, paleta y fuentes, con pendientes acotados.  
+**Estado:** EN DESARROLLO. **Etapa:** A editorial definida; siguiente etapa B puede comenzar con lector textual mientras se generan MP3 y SRT/VTT.  
+**Próxima acción única:** iniciar B con los cinco bloques canónicos y TextOnlyReader, utilizando la ficha editorial; incorporar MP3/SRT cuando estén disponibles.  
 **Criterio operativo:** trabajo proporcionado al objetivo; reutilizar componentes y no abrir auditorías acústicas, jurídicas ni investigaciones redundantes.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
@@ -40,7 +38,7 @@ Los valores `available`, `review`, `text` y `preparation` de esta tabla son **va
 
 | Campo | Valor vigente |
 | --- | --- |
-| Obra activa | Ignacio Melano · *Militares al gobierno, juramentados al poder* (capítulo 6, 2024) |
+| Obra activa | Ignacio Melano · *Militares al gobierno, juramentados al poder* (capítulo 6, edición impresa 2025) |
 | Etapa | A editorial definida y documentada en [ficha de Melano](MELANO_FICHA_ETAPA_A.md). Próxima etapa B, iniciable sin MP3/SRT. |
 | Estado interno | EN DESARROLLO: no hay aún MP3, subtítulos ni recorrido web. |
 | Rama / PR | Esta actualización del registro documental se gestiona por PR; la futura implementación web tendrá su propia rama. |
