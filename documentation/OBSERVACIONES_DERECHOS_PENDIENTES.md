@@ -11,6 +11,7 @@ Este archivo NO es un informe, auditoría, dictamen jurídico ni autorización d
 | Obra o recurso | Observación ya documentada |
 | --- | --- |
 | Carmen Lucia Soares · texto académico, traducción y recursos asociados | Los expedientes históricos registraron ausencia de una constancia de redistribución en el expediente; no se concluye aquí que exista o no una autorización. Eventual revisión institucional posterior, sin abrir investigación durante la producción. |
+| Arata y Mariño · *La educación en la Argentina*, lección 10; audio y subtítulos | La ficha editorial de primera edición consultada indica prohibición expresa de reproducción y transformación sin permiso escrito del editor. No se ha confirmado en esta etapa una autorización aplicable para distribución pública del texto y sus derivados; respetar esa restricción sin abrir auditoría de oficio. |
 
 ## Forma de añadir una observación
 Una nueva fila con **obra/recurso** y **observación breve**, únicamente si surge incidentalmente durante el trabajo normal. No agregar categorías, controles, vencimientos ni requisitos de aprobación. No publicar en este archivo datos personales, contratos o materiales privados.
