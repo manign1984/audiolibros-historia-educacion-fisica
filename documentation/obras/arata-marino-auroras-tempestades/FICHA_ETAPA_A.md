@@ -23,7 +23,7 @@
 | Google Doc preparado | https://docs.google.com/document/d/1VT5sB3JxpHtA0gd8ZKs2g7SaCyj2psUhWfvESy-BDUI/edit | Texto continuo de narración con título, autorías y los apartados de la lección; NO contiene la bibliografía final del PDF. |
 | TXT preparado | https://drive.google.com/file/d/1ycEDaCEwo0gXUo90gQBhSmM7rmqRGDVP/view | Versión textual para revisión del trabajo sonoro. |
 | SRT aportado | https://drive.google.com/file/d/1qa4ypdD3Xu9hE8x3NaqvtvngQZyIagLW/view | 796 intervalos, última marca 01:00:16,800. Se utilizarán tiempos originales, sin alineación acústica. Contiene 14 marcas \u003cbreak...\u003e incrustadas en texto que deben escaparse/representarse correctamente si algún reproductor las muestra; no cambiar los tiempos. |
-| MP3 | **No identificado todavía** | El responsable informa que está disponible. No apareció en la carpeta de audiolibros consultada: falta su URL exacta o ubicación accesible antes de integrarlo. |
+| Audio en ElevenLabs | https://elevenlabs.io/app/audiobooks/uCBThksNlAPKZB3YCZnG?chapterId=rHaATz1nUvWo9YYR857c | La pestaña conectada muestra el proyecto de Arata y Mariño con control «Exportar». Aún no se recuperó un MP3 descargado o una URL de archivo; no equivale a integración web. |
 
 **Fidelidad:** conservar en el futuro modelo académico la bibliografía del PDF y los apartados de la lección, sin sustituirlos por la copia de locución; mantener IDs de párrafos estables al incorporar los tiempos SRT.
 
@@ -86,6 +86,6 @@ La lección parte del golpe de 1955 y la proscripción del peronismo, analiza la
 
 **Uso de recursos:** La ficha catalográfica del libro consultado contiene una prohibición expresa de reproducción, transmisión, almacenamiento y transformación sin permiso editorial por escrito. Se registró la observación en `documentation/OBSERVACIONES_DERECHOS_PENDIENTES.md`; no equivale a dictamen jurídico ni exige una investigación rutinaria. **No publicar el texto protegido, el MP3 derivado ni sus subtítulos en una URL pública sin autorización aplicable o base legítima confirmada.** Sí continuar con diseño, metadatos, investigación editorial, componentes originales y enlaces a la fuente legítima.
 
-**Próxima acción única:** identificar la ubicación exacta del MP3 y definir una alternativa visual honesta para la autoría doble. Después implementar la candidata en la rama de esta obra con componentes canónicos, respetando el alcance que pueda compartirse.
+**Próxima acción única:** localizar o recibir el archivo MP3 exportado de ElevenLabs (la interfaz del proyecto está abierta en la pestaña conectada) y definir una alternativa visual honesta para la autoría doble. Después implementar la candidata en la rama de esta obra con componentes canónicos, respetando el alcance que pueda compartirse.
 
 **Referencia operativa:** `documentation/PRODUCCION_ACTIVA.md` y `documentation/MAPA_OPERATIVO_LECTOR_INTEGRADO.md`. Esta ficha no crea un protocolo transversal nuevo.
