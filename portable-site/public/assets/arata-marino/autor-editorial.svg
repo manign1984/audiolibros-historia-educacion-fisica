@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 760" role="img" aria-labelledby="title desc">
+<title id="title">Arata y Mariño</title><desc id="desc">Composición editorial en blanco y negro con iniciales A y M, sin retratar personas reales.</desc>
+<rect width="800" height="760" fill="#e6e3dd"/>
+<path d="M0 130H800M0 440H800M110 0V760M555 0V760" fill="none" stroke="#3d4852" stroke-width="2" opacity=".32"/>
+<path d="M65 710L735 50M0 355L800 355" stroke="#202e35" stroke-width="18" opacity=".12"/>
+<rect x="67" y="66" width="666" height="628" rx="1" fill="none" stroke="#222d35" stroke-width="7"/>
+<text x="108" y="338" fill="#202e35" font-family="Georgia,serif" font-size="300" font-weight="bold" letter-spacing="-22">A</text>
+<text x="380" y="600" fill="#394958" font-family="Georgia,serif" font-size="300" font-weight="bold" letter-spacing="-24">M</text>
+<path d="M130 392H667" stroke="#445560" stroke-width="5"/>
+<text x="120" y="90" fill="#202e35" font-family="Arial,sans-serif" font-size="24" font-weight="bold" letter-spacing="5">DOS AUTORES</text>
+<text x="120" y="660" fill="#202e35" font-family="Arial,sans-serif" font-size="23" letter-spacing="3">UNA HISTORIA EN 12 LECCIONES</text>
+</svg>

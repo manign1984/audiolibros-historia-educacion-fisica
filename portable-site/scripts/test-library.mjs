@@ -123,7 +123,7 @@ await Promise.all([
 ]);
 
 // New catalog entries have stable physical routes; their availability is explicit.
-assert.equal(allCatalog.length, 29);
+assert.equal(allCatalog.length, 30);
 assert.equal(new Set(allCatalog.map((entry) => entry.id)).size, allCatalog.length);
 for (const entry of allCatalog) {
   assert.ok(collections.some((collection) => collection.id === entry.collection));
@@ -136,6 +136,13 @@ for (const entry of allCatalog) {
   }
 }
 
+const arataMarino = allCatalog.find((entry) => entry.id === 'arata-marino-auroras-tempestades');
+assert.ok(arataMarino, 'Arata y Mariño deben figurar en el catálogo.');
+assert.equal(arataMarino.editorialLanding, true);
+assert.equal(arataMarino.duration, undefined, 'No declarar audio integrado.');
+assert.equal(arataMarino.stateKey, undefined, 'No declarar progreso inexistente.');
+assert.equal(arataMarino.status, 'preparation', 'La publicación editorial no declara lector completado.');
+assert.match(arataMarino.reference, /Novedades Educativas/);
 const marcaida = allCatalog.find((entry) => entry.id === 'marcaida-scaltritti-estado-nacional');
 assert.ok(marcaida);
 assert.equal(marcaida.status, 'review');

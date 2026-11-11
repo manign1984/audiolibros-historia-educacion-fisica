@@ -73,7 +73,7 @@ assert.equal(ctc.comparisonDiagnostics.over450ms,comparedCtcEdges.filter(b=>Math
 assert.equal(ctc.comparisonDiagnostics.unitsWithoutBothWhisperBoundaries,ctc.records.filter(r=>Object.keys(r.sameTokenWhisperComparison).length<2).length);
 assert.deepEqual([...page.matchAll(/<section id="([a-z]+)"/g)].map(x=>x[1]),['inicio','autor','contexto','lectura']);
 assert.match(page,/<JourneyCredits workId="soares"/);assert.equal((page.match(/className="so-screen so-context/g)||[]).length,3);
-assert.match(await readFile('src/shared/canonical-reading.css','utf8'),/\.scharagrodsky-page, \.soares-page(?:, \.lionetti-page)?(?:, \.melano-page)?\)/);
+assert.match(await readFile('src/shared/canonical-reading.css','utf8'),/\.scharagrodsky-page, \.soares-page(?:, \.lionetti-page)?(?:, \.melano-page)?(?:, \.arata-marino-page)?\)/);
 assert.match(await readFile('scripts/soares-local-candidate.mjs','utf8'),/SOARES_LOCAL_CANDIDATE==='1'/);
 assert.match(await readFile('textos/soares-corrientes-gimnasticas/index.html','utf8'),/src\/soares\/main.jsx/);
 await access('public/assets/soares-demeny-1906.jpg');

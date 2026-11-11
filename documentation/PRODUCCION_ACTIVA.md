@@ -6,9 +6,31 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
-## 1. Qué se está haciendo
+## 0. Obra activa · Arata y Mariño (11/11/2026)
 
-**Obra activa:** Ignacio Melano · *Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70* (capítulo 6, edición impresa 2025; archivo rotulado 2024).  
+**Obra:** Nicolás Arata y Marcelo Mariño, *Auroras y tempestades: la educación entre golpes (1955–1976)*, lección 10 de *La educación en la Argentina. Una historia en 12 lecciones*.
+
+**Estado interno:** EN DESARROLLO. **Etapa:** B implementada; C en verificación. Se construyeron los cinco bloques públicos de presentación/contexto sin desarrollar ni activar el lector integrado, conforme al alcance solicitado. No declarar COMPLETA ni audio/texto incorporado.
+
+**Rama:** `feature/arata-marino-auroras-tempestades`. **PR:** [#109](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/109). **Ficha:** [FICHA_ETAPA_A.md](obras/arata-marino-auroras-tempestades/FICHA_ETAPA_A.md).
+
+**Código:** `portable-site/src/arata-marino/ArataMarinoApp.jsx`, CSS local, entrada `textos/arata-marino-auroras-tempestades/index.html`, ilustración editorial original; tarjeta del catálogo. Se reutilizan `JourneyHeader`, `AuthorBiography`, `CanonicalReadingEntry` y `JourneyCredits`. La entrada de Lectura abre un diálogo breve con enlaces a la edición digital oficial y a la ficha editorial; **NO** abre un lector +TEC ni tiene audio, subtítulos, anotaciones ni progreso de lectura. En catálogo, la entrada visible permite «Explorar recorrido» en vez de prometer un lector inexistente.
+
+**Contexto:** dos unidades, (1) coordenadas 1955–1976 y (2) contraste de desarrollo, capital humano y planeamiento con experiencias de educación y liberación. No se copiaron obras originales ni el SRT a los assets públicos.
+
+**Fuentes localizadas:** [PDF académico original](https://drive.google.com/file/d/1t1hPnCaYo3PEhfGM9Ej9FMokg6kwX4q7/view); [Doc de narración](https://docs.google.com/document/d/1VT5sB3JxpHtA0gd8ZKs2g7SaCyj2psUhWfvESy-BDUI/edit); [TXT](https://drive.google.com/file/d/1ycEDaCEwo0gXUo90gQBhSmM7rmqRGDVP/view); [SRT](https://drive.google.com/file/d/1qa4ypdD3Xu9hE8x3NaqvtvngQZyIagLW/view); [ElevenLabs](https://elevenlabs.io/app/audiobooks/uCBThksNlAPKZB3YCZnG?chapterId=rHaATz1nUvWo9YYR857c). En esta entrega estos materiales no se distribuyen públicamente.
+
+**Nota editorial:** se conserva la observación de condición expresa de reproducción en [OBSERVACIONES_DERECHOS_PENDIENTES.md](OBSERVACIONES_DERECHOS_PENDIENTES.md). La página nueva solamente publica contenido original y enlace a edición oficial.
+
+**Próxima acción única:** finalizar CI de la PR #109, integrar en `main`, verificar GitHub Pages y abrir la URL real de la nueva página si se puede. Mantener EN DESARROLLO por ausencia deliberada del lector integrado, sin frenar la publicación del recorrido editorial.
+
+La obra **Ignacio Melano** conserva su estado EN DESARROLLO y la comprobación perceptiva breve pendiente, tal como se documenta a continuación; el cambio de obra activa no declara su cierre.
+
+---
+
+## 1. Registro previo · Ignacio Melano
+
+**Obra previa:** Ignacio Melano · *Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70* (capítulo 6, edición impresa 2025; archivo rotulado 2024).  
 **Hito 10/11/2026:** Etapa A, depuración textual. PDF de 19 páginas impresas (131–149); se retiraron notas al pie 193–212, encabezados y folios y se integró el cuerpo en el [Google Docs de narración](https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit). Conserva seis apartados, citas y contenido principal. [PDF original](https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view). Extensión aproximada inicial: 35.940 caracteres; luego se retiraron las citas parentéticas. En este hito aún no existían MP3/SRT/VTT ni página web construida; la página textual se implementó posteriormente en B.  
 **Actualización 10/11/2026:** Versión para ElevenLabs depurada de 35 citas parentéticas, dos fragmentos de una referencia bibliográfica dividida y un año citado dentro de un paréntesis explicativo; se conservan fechas y aclaraciones históricas. Existe una [copia académica con citas](https://docs.google.com/document/d/19_QDXB4uo8kaAhUA8yDbWTokbdzSEPYAFwlrqroxWLk/edit) para el lector visual; la copia original PDF también se conserva. No usar el TXT de locución como sustituto del texto académico con referencias en el futuro lector.  
 **Etapa B implementada en rama:** `feature/melano-militares-juramentados`, [PR #104](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/104). Página con `JourneyHeader`, `AuthorBiography` y retrato original, Contexto en dos pantallas, `CanonicalReadingEntry`/`TextOnlyReader`, `JourneyCredits`. Paleta enviada por usuario: #051e28, #3a8841, #40b5bc, #483df6, #86759f. El texto del sitio conserva las citas y notas 193–212; el texto de voz no incluye citas APA.  
@@ -18,7 +40,7 @@
 
 **Ficha editorial actualizada:** [MELANO_FICHA_ETAPA_A.md](MELANO_FICHA_ETAPA_A.md). Documento operativo de esta obra; no modifica Directrices v3.0.  
 **Estado interno:** EN DESARROLLO. **Etapa:** C técnica completada; PR #104 (texto) y #106 (audiovisual) integradas en `main`, CI y despliegue Pages aprobados. Queda una comprobación visual y auditiva breve en navegador real.  
-**Próxima acción única (vigente):** abrir el lector publicado en escritorio y móvil, reproducir un fragmento real, observar el seguimiento por párrafos del texto y guardar una nota. Registrar solo incidencias perceptibles. Si todo funciona, marcar estado interno COMPLETA sin rehacer CI ni auditar acústicamente de oficio.  
+**Comprobación pendiente de Melano (no ejecutada en este hito):** abrir el lector publicado en escritorio y móvil, reproducir un fragmento real, observar el seguimiento por párrafos del texto y guardar una nota. Registrar solo incidencias perceptibles. Si todo funciona, marcar estado interno COMPLETA sin rehacer CI ni auditar acústicamente de oficio.  
 **Criterio operativo:** trabajo proporcionado al objetivo; reutilizar componentes y no abrir auditorías acústicas, jurídicas ni investigaciones redundantes.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
@@ -40,11 +62,11 @@ Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatori
 
 Los valores `available`, `review`, `text` y `preparation` de esta tabla son **valores técnicos históricos del código**, no los estados normativos 3.0. Los únicos estados internos de producción acordados son EN DESARROLLO y COMPLETA. `text` como en Lionetti no es COMPLETA; el lector textual sí está implementado. La identificación pública acordada para recorridos en construcción es «Leer + escuchar»; su adopción en el código debe verificarse cuando se intervenga el catálogo, sin presumir que ya se modificó. No se han re-auditado perceptivamente todas las páginas. La lista no establece un orden.
 
-## 3. Ficha de reanudación (una obra activa por vez)
+## 3. Ficha histórica de reanudación · Melano (conservada)
 
 | Campo | Valor vigente |
 | --- | --- |
-| Obra activa | Ignacio Melano · *Militares al gobierno, juramentados al poder* (capítulo 6, edición impresa 2025) |
+| Obra anterior | Ignacio Melano · *Militares al gobierno, juramentados al poder* (capítulo 6, edición impresa 2025) |
 | Etapa | C técnica completada; lector audiovisual integrado a `main` mediante PR #106, publicado técnicamente en GitHub Pages. |
 | Estado interno | EN DESARROLLO: publicación técnica lograda; resta comprobación breve de experiencia visual/auditiva en navegador real. |
 | Rama / PR | PR #104 y PR #106 fusionadas; código de producción en `main`. |
