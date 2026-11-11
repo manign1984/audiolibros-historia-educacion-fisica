@@ -5,7 +5,7 @@ import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import './canonical-reading.css';
 
 // Canonical visual entry for every work. Player, progress and notes belong to IntegratedReader.
-export default function CanonicalReadingEntry({ onOpen, progress, noteCount, config, buttonLabel = 'ABRIR EL LECTOR', buttonAriaLabel = 'Abrir lector integrado' }) {
+export default function CanonicalReadingEntry({ onOpen, progress, noteCount, config, buttonLabel = 'ABRIR EL LECTOR', buttonAriaLabel = 'Abrir lector integrado', hasDialog = true }) {
   const content = useRef(null);
   useEffect(() => {
     let cancelled = false;
@@ -37,7 +37,7 @@ export default function CanonicalReadingEntry({ onOpen, progress, noteCount, con
         <div className="hb-material-geometry" aria-hidden="true">
           <span className="hb-material-dots" />
         </div>
-        <button className="hb-material-open" type="button" onClick={onOpen} aria-haspopup="dialog" aria-label={buttonAriaLabel} aria-describedby={hasProgress || noteCount > 0 ? "hb-material-resume" : undefined}>
+        <button className="hb-material-open" type="button" onClick={onOpen} aria-haspopup={hasDialog ? 'dialog' : undefined} aria-label={buttonAriaLabel} aria-describedby={hasProgress || noteCount > 0 ? "hb-material-resume" : undefined}>
           <Headphones aria-hidden="true" />
           <span aria-hidden="true">{buttonLabel}</span>
           <ArrowRight aria-hidden="true" />
