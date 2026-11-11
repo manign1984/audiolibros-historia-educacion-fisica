@@ -119,7 +119,7 @@ body:has(.melano-page) { margin: 0; }
 .melano-reading-key > div { display:flex; align-items:center; gap:12px; color:var(--ml-ink); font-size:15px; line-height:1.28; }
 .melano-reading-key p { margin:0; font-size:13px; line-height:1.5; }
 
-.melano-page #lectura.hb-material-reading { --material-paper:#eff5f4; --material-ink:#051e28; --material-rust:#483df6; }
+body:has(.journey-header) .melano-page #lectura.hb-material-reading { --material-paper:#eff5f4; --material-ink:#051e28; --material-rust:#483df6; }
 .melano-page #lectura.hb-material-reading > .text-only-entry { width:100%; min-width:0; }
 .melano-page #lectura.hb-material-reading .hb-material-dots {
   background:radial-gradient(circle at 4px 4px, #483df640 0 1.6px, transparent 2px) 0 0 / 17px 17px;
