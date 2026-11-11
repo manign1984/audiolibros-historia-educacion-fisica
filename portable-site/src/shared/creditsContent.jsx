@@ -1,6 +1,22 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  'arata-marino': {
+    references: [
+      <>Arata, N., y Mariño, M. (2013). Auroras y tempestades: la educación entre golpes (1955–1976). En <em>La educación en la Argentina: Una historia en 12 lecciones</em> (lección 10). Ediciones Novedades Educativas.</>,
+      link('https://www.noveduc.com/us/productos/educacion-en-la-argentina-la/', 'Ediciones Novedades Educativas · información de la obra y sus doce lecciones'),
+      link('https://digital.noveduc.com/library/publication/la-educacion-en-la-argentina', 'Edición digital oficial de La educación en la Argentina'),
+      link('https://iice.institutos.filo.uba.ar/integrante/arata-nicol%C3%A1s', 'Instituto de Investigaciones en Ciencias de la Educación (UBA) · Nicolás Arata'),
+      link('https://bnm.educacion.gob.ar/marcelo-marino-de-la-tertulia-al-repositorio/', 'Biblioteca Nacional de Maestros · Marcelo Mariño'),
+      link('https://www.saiehe.org.ar/anuario/revista/article/view/360', 'Anuario de Historia de la Educación · reseña del libro de Arata y Mariño'),
+    ],
+    rights: [
+      <>La lección se identifica como parte de una obra de Ediciones Novedades Educativas. El texto completo se consulta desde el sitio oficial de la editorial, según sus condiciones de acceso.</>,
+      <>Este recorrido presenta textos introductorios y comparaciones originales de +TEC UNAHUR. No reproduce íntegramente la lección ni distribuye el audiolibro y los subtítulos asociados.</>,
+      <>Composiciones gráficas de Inicio y Autor: elaboración tipográfica original del proyecto. La imagen de autoría doble es una ilustración editorial, no una fotografía de Nicolás Arata y Marcelo Mariño.</>,
+      <>Este recorrido contiene una introducción, contexto histórico y acceso bibliográfico externo. Las herramientas de anotación y reproducción de audio de la Biblioteca +TEC no están habilitadas en esta página.</>,
+    ],
+  },
   melano: {
     references: [
       <>Melano, I. (2025). Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70. En <em>Formar líderes y salvar a los jóvenes. Claves para comprender la cultura escolar del Instituto Nacional de Educación Física General Belgrano</em> (cap. 6, pp. 131–149). EdUNLu.</>,
