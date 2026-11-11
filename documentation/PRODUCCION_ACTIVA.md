@@ -8,6 +8,13 @@
 
 ## 0. Obra activa · Arata y Mariño (11/11/2026)
 
+**Relevo técnico adicional · 11/11/2026, recuperación del trabajo interrumpido:** la rama separada `feature/arata-marino-lector-integrado` está **dos commits por delante de `main`**: `1c89d7a43e57d06daefdaaf9618c8e884433ec37` (17 fragmentos del audio original) y `44f2e0d4d1b7885ef05bc9f124d48fa32b88a07c` (PDF académico y SRT). Los 17 archivos `audio-00.part` a `audio-16.part` suman **36.125.008 bytes** según tamaños informados por GitHub: 16 partes de 2.250.000 bytes y una de 125.008 bytes. **Esto acredita presencia y suma de tamaños, NO identidad binaria, reconstrucción/reproducción correcta ni calidad acústica.** El SRT aportado tiene 796 intervalos y llega a 01:00:16,800; el MP3 se había identificado aproximadamente en 60:12. No iniciar búsquedas de desfases ni alineaciones.
+
+**Alcance vigente de esa rama:** solo se añadieron recursos; `ArataMarinoApp.jsx` todavía presenta el diálogo a la edición oficial y no se incorporaron modelo académico, lector integrado ni anotaciones. La publicación en `main` no fue alterada. **No fusionar ni desplegar los archivos protegidos de esa rama**: la restricción editorial expresa que ya consta en `OBSERVACIONES_DERECHOS_PENDIENTES.md` sigue vigente; la autorización del responsable del proyecto para trabajar técnicamente no es constancia de permiso de redistribución del editor. Conservar este trabajo como candidato técnico separado.
+
+**Próxima acción técnica sobre Arata y Mariño:** contrastar la integridad binaria del MP3 reunido con el original, sin investigación acústica; después preparar la conexión del texto académico y los tiempos al `IntegratedReader` reutilizable sin divulgar públicamente el material restringido. La publicación editorial existente permanece tal como está. Este relevo sustituye únicamente la indicación anterior de que la próxima acción era solo la revisión visual, que sigue siendo deseable pero no debe confundirse con la integración audiovisual.
+
+
 **Obra:** Nicolás Arata y Marcelo Mariño, *Auroras y tempestades: la educación entre golpes (1955–1976)*, lección 10 de *La educación en la Argentina. Una historia en 12 lecciones*.
 
 **Estado interno:** EN DESARROLLO. **Etapa:** C de publicación editorial completada; lector integrado expresamente excluido del alcance. Se construyeron los cinco bloques públicos de presentación/contexto sin desarrollar ni activar el lector integrado, conforme al alcance solicitado. No declarar COMPLETA ni audio/texto incorporado.
