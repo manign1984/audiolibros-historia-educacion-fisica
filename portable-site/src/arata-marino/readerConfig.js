@@ -1,4 +1,4 @@
-// Configuración del lector de prueba: NO incluye materiales de la obra.
+// Configuración de la obra. Los recursos y el modelo académico se preparan antes del build.
 export const ARATA_AUDIO_BYTES = 36125008;
 export const ARATA_AUDIO_PARTS = 17;
 export function createArataMarinoReaderConfig(assetBase) {
