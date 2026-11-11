@@ -8,11 +8,12 @@
 ## 1. Qué se está haciendo
 
 **Obra activa:** Ignacio Melano · *Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70* (capítulo 6, edición impresa 2025; archivo rotulado 2024).  
-**Hito 10/11/2026:** Etapa A, depuración textual. PDF de 19 páginas impresas (131–149); se retiraron notas al pie 193–212, encabezados y folios y se integró el cuerpo en el [Google Docs de narración](https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit). Conserva seis apartados, citas y contenido principal. [PDF original](https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view). Extensión aproximada inicial: 35.940 caracteres; luego se retiraron las citas parentéticas. No existen MP3/SRT/VTT ni página web construida para esta obra.  
+**Hito 10/11/2026:** Etapa A, depuración textual. PDF de 19 páginas impresas (131–149); se retiraron notas al pie 193–212, encabezados y folios y se integró el cuerpo en el [Google Docs de narración](https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit). Conserva seis apartados, citas y contenido principal. [PDF original](https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view). Extensión aproximada inicial: 35.940 caracteres; luego se retiraron las citas parentéticas. En este hito aún no existían MP3/SRT/VTT ni página web construida; la página textual se implementó posteriormente en B.  
 **Actualización 10/11/2026:** Versión para ElevenLabs depurada de 35 citas parentéticas, dos fragmentos de una referencia bibliográfica dividida y un año citado dentro de un paréntesis explicativo; se conservan fechas y aclaraciones históricas. Existe una [copia académica con citas](https://docs.google.com/document/d/19_QDXB4uo8kaAhUA8yDbWTokbdzSEPYAFwlrqroxWLk/edit) para el lector visual; la copia original PDF también se conserva. No usar el TXT de locución como sustituto del texto académico con referencias en el futuro lector.  
-**Ficha editorial de etapa A:** [MELANO_FICHA_ETAPA_A.md](MELANO_FICHA_ETAPA_A.md) — identificación bibliográfica 2025 según EdUNLu, presentación, biografía, sinopsis, dos pantallas de Contexto, paleta y fuentes, con pendientes acotados.  
-**Estado:** EN DESARROLLO. **Etapa:** A editorial definida; siguiente etapa B puede comenzar con lector textual mientras se generan MP3 y SRT/VTT.  
-**Próxima acción única:** iniciar B con los cinco bloques canónicos y TextOnlyReader, utilizando la ficha editorial; incorporar MP3/SRT cuando estén disponibles.  
+**Etapa B implementada en rama:** `feature/melano-militares-juramentados`, [PR #104](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/104). Página con `JourneyHeader`, `AuthorBiography` y retrato original, Contexto en dos pantallas, `CanonicalReadingEntry`/`TextOnlyReader`, `JourneyCredits`. Paleta enviada por usuario: #051e28, #3a8841, #40b5bc, #483df6, #86759f. El texto del sitio conserva las citas y notas 193–212; el texto de voz no incluye citas APA.  
+**Ficha editorial actualizada:** [MELANO_FICHA_ETAPA_A.md](MELANO_FICHA_ETAPA_A.md). Documento operativo de esta obra; no modifica Directrices v3.0.  
+**Estado interno:** EN DESARROLLO. **Etapa:** B construida como candidata textual, pendiente comprobación/depliegue y futura etapa audiovisual cuando el usuario aporte MP3/SRT-VTT.  
+**Próxima acción única:** verificar CI y publicación real de la PR #104; luego, con los recursos provistos, integrar audio y subtítulos sin rehacer los bloques.  
 **Criterio operativo:** trabajo proporcionado al objetivo; reutilizar componentes y no abrir auditorías acústicas, jurídicas ni investigaciones redundantes.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
@@ -39,16 +40,16 @@ Los valores `available`, `review`, `text` y `preparation` de esta tabla son **va
 | Campo | Valor vigente |
 | --- | --- |
 | Obra activa | Ignacio Melano · *Militares al gobierno, juramentados al poder* (capítulo 6, edición impresa 2025) |
-| Etapa | A editorial definida y documentada en [ficha de Melano](MELANO_FICHA_ETAPA_A.md). Próxima etapa B, iniciable sin MP3/SRT. |
-| Estado interno | EN DESARROLLO: no hay aún MP3, subtítulos ni recorrido web. |
-| Rama / PR | Esta actualización del registro documental se gestiona por PR; la futura implementación web tendrá su propia rama. |
+| Etapa | B construida como página textual candidata en PR #104; pendiente CI/despliegue de C técnica. Integración audiovisual en siguiente etapa. |
+| Estado interno | EN DESARROLLO: recorrido web textual implementado en rama; audio y subtítulos por entregar. |
+| Rama / PR | `feature/melano-militares-juramentados` · PR #104 |
 | Último commit de código reutilizable | `04cdf36054cc9f9796c360a92fdc3bc955d0c335` (Lionetti, antecedente; no es implementación de Melano). |
 | Enlace al original | https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view |
 | Texto para ElevenLabs (sin citas) | https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit |
 | Texto académico para lector (con citas) | https://docs.google.com/document/d/19_QDXB4uo8kaAhUA8yDbWTokbdzSEPYAFwlrqroxWLk/edit |
-| Incidencia pendiente | Falta retrato auténtico; las notas 193–212 permanecen en PDF original, no en copia Docs con citas; MP3/SRT aún en elaboración externa. Ninguno impide construir los cinco bloques. |
-| **Próxima acción única** | Iniciar B: cinco bloques canónicos y lector textual con la [ficha A](MELANO_FICHA_ETAPA_A.md); integrar audio/subtítulos cuando lleguen. |
-| URL publicada | No hay ruta Melano publicada todavía. |
+| Incidencia pendiente | Retrato auténtico incorporado y notas 193–212 en texto web; pendientes CI, URL efectiva y MP3/SRT. |
+| **Próxima acción única** | Verificar y publicar PR #104; integrar MP3 y SRT/VTT cuando el usuario comparta archivos. |
+| Ruta de publicación prevista | `https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/melano-militares-juramentados/` (confirmar después de Pages). |
 
 Al iniciar una obra, completar únicamente estos campos y el estado interno EN DESARROLLO/COMPLETA. Al terminar una etapa A, B o C, **guardar un commit verificable y actualizar esta ficha antes de seguir**. No esperar al límite del chat. No crear un expediente nuevo para cada intercambio. Los materiales grandes permanecen en sus ubicaciones autorizadas; no poner texto académico, audio privado o credenciales en esta ficha.
 
