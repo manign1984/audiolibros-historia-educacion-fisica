@@ -99,7 +99,7 @@ body:has(.arata-marino-page) { margin:0; }
 .am-perspective--free .am-perspective__terms span { border-color:#a6574577; }
 
 /* 04. Únicamente variables cromáticas. La geometría pertenece al CSS canónico. */
-.arata-marino-page #lectura.hb-material-reading {
+body:has(.journey-header) .arata-marino-page #lectura.hb-material-reading {
   --material-paper:#ede4d5;
   --material-ink:#18394a;
   --material-rust:#b25139;
