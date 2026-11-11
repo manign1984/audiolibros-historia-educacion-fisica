@@ -1,6 +1,20 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  melano: {
+    references: [
+      <>Melano, I. (2025). Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70. En <em>Formar líderes y salvar a los jóvenes. Claves para comprender la cultura escolar del Instituto Nacional de Educación Física General Belgrano</em> (cap. 6, pp. 131–149). EdUNLu.</>,
+      link('https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view', 'Capítulo 6 · archivo PDF original con notas al pie'),
+      link('https://drive.google.com/file/d/15bo6oZeE9vhYWFbytFNyZCCSvcQGIg0f/view', 'Ministerio de Cultura y Educación (1977). Resolución 543/77, 11 de abril'),
+      <>Entrevista a Juan Carlos Cutrera publicada en <em>En Movimiento</em>, n.º 3 (1978), pp. 46–47. Fragmento reproducido por Melano en la p. 146.</>,
+    ],
+    rights: [
+      <>Retrato de Ignacio Melano: fotografía facilitada personalmente por el autor para esta página.</>,
+      <>Texto académico de la selección preparada a partir del capítulo original: conserva las citas y las veinte notas de la edición impresa. La copia de locución elimina las referencias bibliográficas que no se pronuncian.</>,
+      <>Contexto y portada: síntesis y composición contemporáneas del proyecto +TEC UNAHUR. La línea de fechas y la composición de portada no son imágenes de época.</>,
+      <>Las fuentes históricas se presentan con identificación de procedencia. No se declara licencia abierta sobre el capítulo ni sobre el retrato.</>,
+    ],
+  },
   lionetti: {
     references: [
       <>Lionetti, L. (2005). La función republicana de la escuela pública: la formación del ciudadano en Argentina a fines del siglo XIX. <em>Revista Mexicana de Investigación Educativa, 10</em>(27), 1225–1255.</>,
