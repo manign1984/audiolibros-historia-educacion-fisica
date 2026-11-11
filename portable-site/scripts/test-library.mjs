@@ -18,7 +18,7 @@ import { buildOrbuchReadingDocument } from '../src/orbuch/buildReadingDocument.j
 
 // Freeze the four legacy fixtures for their existing search/citation regressions.
 // Scharagrodsky has a dedicated document/catalog/runtime acceptance test.
-const catalog = allCatalog.filter((entry) => entry.status === 'available' && !['scharagrodsky-constitucion-ef', 'soares-corrientes-gimnasticas'].includes(entry.id));
+const catalog = allCatalog.filter((entry) => entry.status === 'available' && !['scharagrodsky-constitucion-ef', 'soares-corrientes-gimnasticas', 'arata-marino-auroras-tempestades'].includes(entry.id));
 const orbuch = catalog.find((entry) => entry.id === 'orbuch-educar-al-cuerpo');
 const pineau = catalog.find((entry) => entry.id === 'pineau-fresco-noble');
 const orbuchAccessibleText = await readFile(new URL('../src/orbuch/orbuch-texto-accesible.txt', import.meta.url), 'utf8');
@@ -138,10 +138,11 @@ for (const entry of allCatalog) {
 
 const arataMarino = allCatalog.find((entry) => entry.id === 'arata-marino-auroras-tempestades');
 assert.ok(arataMarino, 'Arata y Mariño deben figurar en el catálogo.');
-assert.equal(arataMarino.editorialLanding, true);
-assert.equal(arataMarino.duration, undefined, 'No declarar audio integrado.');
-assert.equal(arataMarino.stateKey, undefined, 'No declarar progreso inexistente.');
-assert.equal(arataMarino.status, 'preparation', 'La publicación editorial no declara lector completado.');
+assert.equal(arataMarino.editorialLanding, undefined);
+assert.equal(arataMarino.status, 'available', 'Arata y Mariño debe ofrecer lector canónico con audio.');
+assert.equal(arataMarino.duration, 3612.447347, 'Usar la duración del MP3 original.');
+assert.equal(arataMarino.stateKey, 'arata-marino-audio-state-v1');
+assert.equal(canReadAndListen(arataMarino), true);
 assert.match(arataMarino.reference, /Novedades Educativas/);
 const marcaida = allCatalog.find((entry) => entry.id === 'marcaida-scaltritti-estado-nacional');
 assert.ok(marcaida);
