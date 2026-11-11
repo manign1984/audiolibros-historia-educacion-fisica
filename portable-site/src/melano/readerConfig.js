@@ -7,8 +7,16 @@ export const melanoReaderConfig = {
   experienceName: 'Militares al gobierno, juramentados al poder',
   editorialReferenceLabel: 'del capítulo de Ignacio Melano',
   audiobookExternalUrl: 'https://drive.google.com/file/d/1JQINfXL-nUaHii7-A4ZHpOLGx6HWsKPm/view',
-  audiobookParts: Array.from({ length: 8 }, (_, i) =>
-    import.meta.env.BASE_URL + 'assets/melano/audio/audio-' + String(i).padStart(2, '0') + '.part'),
+  audiobookParts: [
+    '/assets/melano/audio/audio-00.part',
+    '/assets/melano/audio/audio-01.part',
+    '/assets/melano/audio/audio-02.part',
+    '/assets/melano/audio/audio-03.part',
+    '/assets/melano/audio/audio-04.part',
+    '/assets/melano/audio/audio-05.part',
+    '/assets/melano/audio/audio-06.part',
+    '/assets/melano/audio/audio-07.part',
+  ],
   expectedAudioBytes: 23492550,
   pdfUrl: 'https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view',
   sync: {
