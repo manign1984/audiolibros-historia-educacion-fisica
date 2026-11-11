@@ -3,11 +3,9 @@ import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
-import ArataMarinoReaderPreview from './ArataMarinoReaderPreview.jsx';
-import ArataMarinoEditorialAccess from './ArataMarinoEditorialAccess.jsx';
+import ArataMarinoReader from './ArataMarinoReader.jsx';
 import './arata-marino.css';
 
-const LOCAL_READER_PREVIEW = import.meta.env.DEV && import.meta.env.VITE_ARATA_MARINO_READER_PREVIEW === '1';
 const EDITORIAL_IMAGE = import.meta.env.BASE_URL + 'assets/arata-marino/autor-editorial.svg';
 
 const INTRO = 'En 1955, un golpe de Estado abrió dos décadas de proscripciones, proyectos de modernización y conflictos sociales. La educación fue escenario de políticas estatales, resistencias y experiencias que imaginaron transformaciones profundas. ¿Cómo convivieron las promesas de progreso con las búsquedas de liberación y el avance de la represión hasta 1976?';
@@ -96,9 +94,7 @@ function Contexto() {
 
 function Lectura() {
   return <section id="lectura" className="am-screen am-reading hb-material-reading" aria-labelledby="journey-reading-title">
-    {LOCAL_READER_PREVIEW
-      ? <ArataMarinoReaderPreview assetBase={import.meta.env.BASE_URL + (import.meta.env.VITE_ARATA_MARINO_ASSET_PREFIX || '')} />
-      : <ArataMarinoEditorialAccess />}
+    <ArataMarinoReader />
   </section>;
 }
 
