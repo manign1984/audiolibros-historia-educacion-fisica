@@ -4,3 +4,7 @@
 
 # Insumos locales no redistribuibles; nunca versionar ni desplegar estos originales.
 /portable-site/public/assets/arata-marino-local/
+
+# Outputs derived reproducibly from the verified academic PDF and SRT.
+/portable-site/public/assets/arata-marino/edicion-academica.txt
+/portable-site/src/arata-marino/readingDocument.generated.json

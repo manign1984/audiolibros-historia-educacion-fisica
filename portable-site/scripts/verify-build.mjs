@@ -74,18 +74,26 @@ assert.ok(
   'El catálogo debe enlazar a las dos rutas físicas.',
 );
 assert.ok(allJavaScript.includes('Volver a la biblioteca'));
+// Recorrido con audiolibro realmente integrado; comprobar la ruta y todos sus recursos.
+const arataEntry = catalog.find(entry => entry.id === 'arata-marino-auroras-tempestades');
+assert.equal(arataEntry?.status, 'available', 'Arata y Mariño debe estar disponible para leer y escuchar.');
+const arataHtml = await readFile(resolve(dist, 'textos/arata-marino-auroras-tempestades/index.html'), 'utf8');
+assert.match(arataHtml, /Auroras y tempestades/);
+assert.ok(arataHtml.includes(`src="${normalizedBase}assets/`), 'Arata y Mariño: respetar la base de GitHub Pages.');
+const arataBundleName = assetNames.find(name => name.startsWith('arata-marino-auroras-tempestades-') && name.endsWith('.js'));
+assert.ok(arataBundleName, 'Debe existir un bundle independiente de Arata y Mariño.');
+const arataBundle = await readFile(resolve(dist, 'assets', arataBundleName), 'utf8');
+assert.ok(arataBundle.includes(`./${readerBundleNames[0]}`), 'Arata y Mariño debe reutilizar IntegratedReader.');
+assert.ok(!allJavaScript.includes('CONSULTAR EDICIÓN') && !allJavaScript.includes('Abrí tu ejemplar en el lector'),
+  'Arata y Mariño: sin acceso alternativo ni formulario de archivos.');
+for (const path of ['assets/arata-marino/autor-editorial.svg', 'assets/arata-marino/edicion-academica.txt',
+  'assets/arata-marino/subtitulos.srt', ...Array.from({ length: 17 }, (_, i) =>
+    'assets/arata-marino/audio/audio-' + String(i).padStart(2, '0') + '.part')]) {
+  await access(resolve(dist, path));
+}
+
 for (const entry of catalog.filter((item) => item.status !== 'available')) {
   const html = await readFile(resolve(dist, entry.path, 'index.html'), 'utf8');
-  if (entry.editorialLanding) {
-    assert.ok(html.includes('Auroras y tempestades'), 'Arata y Mariño: identificar la obra en la página.');
-    assert.ok(html.includes(`src="${normalizedBase}assets/`), 'Arata y Mariño: ruta del bundle en la base pública.');
-    assert.ok(html.includes('src/arata-marino/main.jsx') === false, 'Arata y Mariño: la entrada debe estar compilada.');
-    const asset = resolve(dist, 'assets/arata-marino/autor-editorial.svg');
-    await access(asset);
-    assert.ok(allJavaScript.includes('CONSULTAR EDICIÓN') && allJavaScript.includes('digital.noveduc.com/library/publication/la-educacion-en-la-argentina'), 'Arata y Mariño: acceso directo a edición editorial sin selector de archivos.');
-    assert.ok(!html.includes('Recorrido en preparación.'), 'Arata y Mariño: no mostrar ficha genérica.');
-    continue;
-  }
   if (entry.status === 'review') {
     assert.ok(html.includes('Edición en revisión'), `${entry.id}: distinguir lectura disponible de alineación pendiente.`);
     assert.doesNotMatch(html, /Recorrido en preparación\./, `${entry.id}: no publicar como ficha sin recorrido.`);

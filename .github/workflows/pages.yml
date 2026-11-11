@@ -36,6 +36,9 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Install Poppler for original academic PDF extraction
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
       - name: Install dependencies
         run: npm ci
 

@@ -44,9 +44,11 @@ const records = [
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
   'arata-marino-auroras-tempestades': {
-    editorialLanding: true,
+    status: 'available',
+    duration: 3612.447347,
+    stateKey: 'arata-marino-audio-state-v1',
     historicalPeriod: 'Educación, modernización y conflicto · 1955–1976',
-    readingDetail: 'Recorrido académico con acceso a la edición editorial',
+    readingDetail: 'Audiolibro con seguimiento aproximado por párrafos y cuaderno de lectura',
   },
   'melano-militares-juramentados': {
     status: 'text',

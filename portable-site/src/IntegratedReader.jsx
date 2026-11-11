@@ -213,6 +213,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
             sectionTitle: section.title,
             start: timing?.start,
             end: timing?.end,
+            audioUnavailable: timing?.audioUnavailable === true,
           };
         }),
       ).map((paragraph, order) => ({ ...paragraph, order }));

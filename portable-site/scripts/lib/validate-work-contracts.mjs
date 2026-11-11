@@ -145,8 +145,23 @@ export async function validateWorks({ root, manifest, contracts, catalog, collec
       check(info.size === material.bytes && await hashFiles([path]) === material.sha256, 'material-integrity', material.path, 'Tamaño o SHA-256 no coincide.');
       if (material.kind === 'pdf') check((await readFile(path)).subarray(0, 1024).includes(Buffer.from('%PDF-')), 'pdf-signature', material.path, 'No hay cabecera PDF.');
       if (material.kind === 'subtitles') {
-        try { for (const message of validateTimeline(parseSubtitles(await readFile(path, 'utf8')), work.audioDuration).errors) error('subtitle-timeline', material.path, message); }
-        catch (cause) { error('subtitle-format', material.path, cause.message); }
+        try {
+          // Algunas marcas de origen terminan después del contenedor MP3.
+          // La excepción exige constancia y correspondencia con la fuente;
+          // preserva los cues sin modificarlos ni extender la pista de audio.
+          const subtitleEnd = Number.isFinite(work.subtitleTimelineEnd) ? work.subtitleTimelineEnd : work.audioDuration;
+          if (subtitleEnd > work.audioDuration + 0.005) {
+            check(present(work.subtitleTimelineReason) &&
+              Math.abs(subtitleEnd - (document.source?.finalCueEnd ?? 0)) <= 0.005,
+              'subtitle-duration-documentation', work.id,
+              'Diferencia de duración del SRT no documentada o sin concordancia con el original.');
+            warning('subtitle-duration-difference', work.id,
+              (subtitleEnd - work.audioDuration).toFixed(3) + ' s: ' + (work.subtitleTimelineReason || 'Diferencia no documentada.'));
+          }
+          for (const message of validateTimeline(parseSubtitles(await readFile(path, 'utf8')), subtitleEnd).errors) {
+            error('subtitle-timeline', material.path, message);
+          }
+        } catch (cause) { error('subtitle-format', material.path, cause.message); }
       }
     }
     const audioUrls = config.audiobookParts || (config.audiobookUrl ? [config.audiobookUrl] : []);
