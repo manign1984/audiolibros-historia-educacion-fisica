@@ -19,7 +19,16 @@ Guardar dentro de ese directorio local:
 - `subtitulos.srt`, el SRT original, sin modificar las marcas temporales.
 - `audio/audio-00.part` a `audio/audio-16.part`, fragmentos binarios consecutivos de la **misma** exportación MP3 original, sin transcodificación.
 
-La concatenación debe corresponder exactamente al MP3 original. Comparar SHA-256 del MP3 con la concatenación antes de atribuirle identidad binaria; el tamaño por sí solo no lo demuestra. Los nombres y tamaños esperados están registrados en `documentation/PRODUCCION_ACTIVA.md`.
+La concatenación debe corresponder exactamente al MP3 original. Comparar SHA-256 del MP3 con la concatenación antes de atribuirle identidad binaria; el tamaño por sí solo no lo demuestra.
+
+El comando implementado para efectuar esa comprobación local, una vez disponible el MP3 original, es:
+
+```sh
+cd portable-site
+node scripts/verify-arata-audio.mjs /ruta/segura/original.mp3 public/assets/arata-marino-local/audio
+```
+
+El programa lee el original y las 17 partes consecutivas sin modificar archivos; compara la longitud y el SHA-256 de ambas secuencias de bytes. La prueba automatizada utiliza binarios ficticios para comprobar la detección de corrupción. Los nombres y tamaños esperados están registrados en `documentation/PRODUCCION_ACTIVA.md`.
 
 Para activar la vista de desarrollo, configurar `VITE_ARATA_MARINO_READER_PREVIEW=1` y `VITE_ARATA_MARINO_ASSET_PREFIX=assets/arata-marino-local/`, y ejecutar `npm run dev` desde `portable-site/`. Sin esa bandera, incluso en desarrollo, el bloque 04 conserva el diálogo de acceso a la edición digital oficial.
 
