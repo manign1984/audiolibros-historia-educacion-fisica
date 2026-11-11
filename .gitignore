@@ -1,3 +1,6 @@
 
 # Exact Scharagrodsky MP3 is materialized from hash-checked repository parts.
 /portable-site/public/assets/scharagrodsky-audiolibro.mp3
+
+# Insumos locales no redistribuibles; nunca versionar ni desplegar estos originales.
+/portable-site/public/assets/arata-marino-local/

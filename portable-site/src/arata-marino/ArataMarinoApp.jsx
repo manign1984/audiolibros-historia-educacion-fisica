@@ -5,8 +5,10 @@ import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
 import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
+import ArataMarinoReaderPreview from './ArataMarinoReaderPreview.jsx';
 import './arata-marino.css';
 
+const LOCAL_READER_PREVIEW = import.meta.env.DEV && import.meta.env.VITE_ARATA_MARINO_READER_PREVIEW === '1';
 const EDITION_URL = 'https://digital.noveduc.com/library/publication/la-educacion-en-la-argentina';
 const BOOK_URL = 'https://www.noveduc.com/us/productos/educacion-en-la-argentina-la/';
 const EDITORIAL_IMAGE = import.meta.env.BASE_URL + 'assets/arata-marino/autor-editorial.svg';
@@ -104,6 +106,9 @@ function Lectura() {
     synopsis: SYNOPSIS,
   }};
   return <section id="lectura" className="am-screen am-reading hb-material-reading" aria-labelledby="journey-reading-title">
+    {LOCAL_READER_PREVIEW
+      ? <ArataMarinoReaderPreview assetBase={import.meta.env.BASE_URL + (import.meta.env.VITE_ARATA_MARINO_ASSET_PREFIX || '')} />
+      : <>
     <CanonicalReadingEntry onOpen={() => access.current?.showModal()} progress={{ currentTime: 0, currentPage: 1 }} noteCount={0} config={config} buttonAriaLabel="Abrir opciones de acceso a la lectura" />
     <dialog ref={access} className="am-access-dialog" aria-labelledby="am-access-title" aria-describedby="am-access-description">
       <div className="am-access-dialog__head">
@@ -115,6 +120,7 @@ function Lectura() {
       <a className="am-access-dialog__link" href={EDITION_URL} target="_blank" rel="noopener noreferrer">Abrir edición digital <ExternalLink size={18} aria-hidden="true"/></a>
       <a className="am-access-dialog__secondary" href={BOOK_URL} target="_blank" rel="noopener noreferrer">Consultar información del libro <ArrowUpRight size={16} aria-hidden="true"/></a>
     </dialog>
+      </>}
   </section>;
 }
 
