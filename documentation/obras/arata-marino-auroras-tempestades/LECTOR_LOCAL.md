@@ -21,7 +21,7 @@ Guardar dentro de ese directorio local:
 
 La concatenación debe corresponder exactamente al MP3 original. Comparar SHA-256 del MP3 con la concatenación antes de atribuirle identidad binaria; el tamaño por sí solo no lo demuestra. Los nombres y tamaños esperados están registrados en `documentation/PRODUCCION_ACTIVA.md`.
 
-Para activar la vista de desarrollo, configurar `VITE_ARATA_MARINO_READER_PREVIEW=1` y ejecutar `npm run dev` desde `portable-site/`. Sin esa bandera, incluso en desarrollo, el bloque 04 conserva el diálogo de acceso a la edición digital oficial.
+Para activar la vista de desarrollo, configurar `VITE_ARATA_MARINO_READER_PREVIEW=1` y `VITE_ARATA_MARINO_ASSET_PREFIX=assets/arata-marino-local/`, y ejecutar `npm run dev` desde `portable-site/`. Sin esa bandera, incluso en desarrollo, el bloque 04 conserva el diálogo de acceso a la edición digital oficial.
 
 ## Pruebas y límites
 
