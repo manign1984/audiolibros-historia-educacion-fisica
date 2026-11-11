@@ -109,6 +109,15 @@ body:has(.journey-header) .arata-marino-page #lectura.hb-material-reading {
   --hb-cta-text:#fff4df;
   --hb-cta-arrow:#eec06b;
 }
+/* Variación cromática permitida; sin cambios de tamaño o composición. */
+.arata-marino-page #lectura .hb-material-open {
+  background:linear-gradient(156deg,#477789 0%,#2c526a 43%,#172f45 100%);
+  color:#fff4df;
+  border-color:#81aab5;
+  border-right-color:#183a4e;
+  border-bottom-color:#0a2534;
+}
+.arata-marino-page #lectura .hb-material-open > svg:last-child { color:#eec06b; }
 .am-access-dialog { border:1px solid #bdc6c8; border-radius:8px; width:min(92vw,520px); max-height:85vh; padding:clamp(22px,3vw,36px); background:#f7f1e7; color:#172e3a; box-shadow:0 32px 90px #07182788; font:400 16px/1.6 'Archivo',sans-serif; }
 .am-access-dialog::backdrop { background:#111a26c7; }
 .am-access-dialog__head { display:flex; align-items:center; justify-content:space-between; gap:18px; color:#985035; font:700 12px/1.2 'Archivo',sans-serif; letter-spacing:.08em; text-transform:uppercase; }
