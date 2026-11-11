@@ -578,6 +578,162 @@
       "audioDuration": 3113.4,
       "audioSha256": "fd5f7e36249373334f19127212121ebc9df44ebbb56686d2d94c2952579c56d5",
       "documentSha256": "fe16dc8ca6ad8475cada4f386baf735539294259eb4ac54fab112fa8e646f4ad"
+    },
+    {
+      "id": "arata-marino-auroras-tempestades",
+      "config": {
+        "module": "src/arata-marino/readerContract.js",
+        "export": "arataReaderConfig"
+      },
+      "document": {
+        "module": "src/arata-marino/readerContract.js",
+        "export": "arataReadingDocument"
+      },
+      "page": "src/arata-marino/ArataMarinoApp.jsx",
+      "main": "src/arata-marino/main.jsx",
+      "creditsKey": "arata-marino",
+      "storage": {
+        "notesKey": "arata-marino-audio-notes-v1",
+        "stateKey": "arata-marino-audio-state-v1"
+      },
+      "sync": {
+        "unit": "paragraph",
+        "status": "paragraph-preview",
+        "review": "Seguimiento orientativo de 78 párrafos a partir de 796 cues originales; el cuadro estadístico permanece sin audio. No se realizan nuevas alineaciones acústicas."
+      },
+      "materials": [
+        {
+          "path": "src/arata-marino/readingDocument.generated.json",
+          "kind": "text",
+          "bytes": 82459,
+          "sha256": "773b298ed38d9c14bd1b9a4583258ccfc1f29f065d47f619ff8508dafa7d7fee"
+        },
+        {
+          "path": "public/assets/arata-marino/edicion-academica.txt",
+          "kind": "text",
+          "bytes": 66827,
+          "sha256": "d9ab4e078810cdd743b8188232fd3af2a6c49470d0a32732f4e00b0480211453"
+        },
+        {
+          "path": "source-assets/arata-marino/edicion-academica.pdf",
+          "kind": "pdf",
+          "bytes": 237347,
+          "sha256": "96431e1d98a6e2a474963a1bb51e421b3af2c3f898edfdeab99f3b32fb19cf1b"
+        },
+        {
+          "path": "public/assets/arata-marino/subtitulos.srt",
+          "kind": "subtitles",
+          "bytes": 88272,
+          "sha256": "b713bb72b595735bb8b39a55a1a72939686046ef89fc3424c3f61374d25698f7"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-00.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "12f0af3d74b421833e0ed7ff4377220cf966ec1fcc1b857c3b42389815ef7ba3"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-01.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "038241e7a9bda8fb019edbe8540943b7bf05638847a792594f947ed89499717d"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-02.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "a01c3ec3d809abdc9c869de9419648a48260b437cc48e095bf1370823a816355"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-03.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "e0a0c1b89f5d48c65bdb375382812172405881d8525404c69e14ab57e1ac2499"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-04.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "22c61cfdab0501d57ba33e93aa74305faa08aadbbbbb1604e91580a0918be31d"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-05.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "4b904b6f13df523598b73e93b85b4d1bafa784c7e4d4ad9d74322280da1ef9d9"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-06.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "29ce88215b31eefc55efa43ab7d9c8005144d1182ac0f6a9c730db142831c7c8"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-07.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "097b39a67c5d92d02a36d17afe225a924a6bae591f07768efc5ea4c1b9cf6cdf"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-08.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "18b6d725ee7f30e2187e0f30faa9a405b652239451367e3c3b7fd9ee4395b184"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-09.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "0bffeec57b9bfef20ffed05d7cc08001fdc2075b163d83daa435496396ee47d0"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-10.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "10b0c7c12a152785721c2ea9958682797600fc020f5fb2911253f2768c591a05"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-11.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "baf9a5ef5893dcf5e59ecfadd1d3c0f98008cc959be075c9a627183cbfe5648e"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-12.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "ac09edae7a54e832b5a3eb79e7144602df915974589f5e837d3b7362bcd4e771"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-13.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "aa72cc6d107c6204602782c2d6f36baed47f1df87d53dfef1c781d591c11fc0a"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-14.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "f0491519f76e7e251d41a20f8bb89aaefcb1c6066c67861d10c1d5bbeb58c7c0"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-15.part",
+          "kind": "audio",
+          "bytes": 2250000,
+          "sha256": "c9bb34e6e7b00e70ca0b79920a47be02bbd48ccc7227fe53f4e36e8417774cef"
+        },
+        {
+          "path": "public/assets/arata-marino/audio/audio-16.part",
+          "kind": "audio",
+          "bytes": 125008,
+          "sha256": "a9d97a7c15a3ad33050ed5237a4599cd21c9d58b43234523448fc57b50dcd726"
+        }
+      ],
+      "audioDuration": 3612.447347,
+      "audioSha256": "164eaa55ca2fc06232aae4cf80f2d3f3ddf8f7e97d4e4b55e4a63e2ba3929980",
+      "subtitleTimelineEnd": 3616.8,
+      "subtitleTimelineReason": "El SRT original termina 4,353 s después del contenedor MP3; se conservan los tiempos de origen sin alteraciones.",
+      "documentSha256": "2145be49e799a62dae69e7725af1458712f106c4ceb609e4215abee015428b9c"
     }
   ],
   "baseline": {
