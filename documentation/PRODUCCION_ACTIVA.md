@@ -10,7 +10,7 @@
 
 **Obra:** Nicolás Arata y Marcelo Mariño, *Auroras y tempestades: la educación entre golpes (1955–1976)*, lección 10 de *La educación en la Argentina. Una historia en 12 lecciones*.
 
-**Estado interno:** EN DESARROLLO. **Etapa:** B implementada; C en verificación. Se construyeron los cinco bloques públicos de presentación/contexto sin desarrollar ni activar el lector integrado, conforme al alcance solicitado. No declarar COMPLETA ni audio/texto incorporado.
+**Estado interno:** EN DESARROLLO. **Etapa:** C de publicación editorial completada; lector integrado expresamente excluido del alcance. Se construyeron los cinco bloques públicos de presentación/contexto sin desarrollar ni activar el lector integrado, conforme al alcance solicitado. No declarar COMPLETA ni audio/texto incorporado.
 
 **Rama:** `feature/arata-marino-auroras-tempestades`. **PR:** [#109](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/109). **Ficha:** [FICHA_ETAPA_A.md](obras/arata-marino-auroras-tempestades/FICHA_ETAPA_A.md).
 
@@ -22,7 +22,9 @@
 
 **Nota editorial:** se conserva la observación de condición expresa de reproducción en [OBSERVACIONES_DERECHOS_PENDIENTES.md](OBSERVACIONES_DERECHOS_PENDIENTES.md). La página nueva solamente publica contenido original y enlace a edición oficial.
 
-**Próxima acción única:** finalizar CI de la PR #109, integrar en `main`, verificar GitHub Pages y abrir la URL real de la nueva página si se puede. Mantener EN DESARROLLO por ausencia deliberada del lector integrado, sin frenar la publicación del recorrido editorial.
+**Publicación verificada:** [PR #109 fusionada](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/109) en `main` con commit `251007d6f7e4f9d9a477069dcedf0e340d847651`. CI de PR [42973089797](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/42973089797) aprobada y GitHub Pages [42973261065](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/42973261065) con build y despliegue exitosos. URL técnica: https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/arata-marino-auroras-tempestades/ . El acceso HTTP independiente no pudo corroborarse desde el entorno del asistente; la ruta física y sus assets se validaron en CI.
+
+**Próxima acción única:** revisión visual breve en escritorio y móvil del nuevo recorrido (principalmente portada, autoría doble, Contexto y diálogo externo); corregir solo problemas visibles. Mantener EN DESARROLLO porque el lector integrado, la escucha, los subtítulos y las notas quedaron fuera de esta entrega; ello no invalida la publicación del acompañamiento editorial.
 
 La obra **Ignacio Melano** conserva su estado EN DESARROLLO y la comprobación perceptiva breve pendiente, tal como se documenta a continuación; el cambio de obra activa no declara su cierre.
 
