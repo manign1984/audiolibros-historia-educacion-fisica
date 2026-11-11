@@ -61,7 +61,6 @@ const {act}=React;
 const {createRoot}=await import('react-dom/client');
 const fixture=await import(pathToFileURL(output+'/melano-runtime.js').href);
 const config={...fixture.melanoReaderConfig,
- captionCues:data.cues,
  sync:{...fixture.melanoReaderConfig.sync,paragraphTimings:data.paragraphTimings}};
 const firstPageSentinel=[{id:'prior-page',sentenceId:data.document.sections[0].paragraphs[0].id,text:'Nota académica personal previamente conservada'}];
 window.localStorage.setItem(config.storage.notesKey,JSON.stringify(firstPageSentinel));
@@ -89,14 +88,9 @@ assert.equal(JSON.parse(window.localStorage.getItem(config.storage.notesKey))[0]
 const first=data.paragraphTimings[0];
 await setAudio((first.start+first.end)/2);
 assert.equal(document.querySelector('.reader-paragraph-unit.is-active')?.dataset.readerSentence,first.id);
-const cue=data.cues.find(x=>x.start<=17&&x.end>17);
-assert.ok(cue,'Existe un subtítulo real a los 17 segundos');
-await setAudio(17);
-assert.equal(document.querySelector('.reader-player__captions p')?.textContent, cue.text);
-await click(button('Ocultar subtítulos'));
-assert.equal(document.querySelector('.reader-player__captions p'),null);
-await click(button('Mostrar subtítulos'));
-assert.equal(document.querySelector('.reader-player__captions p')?.textContent,cue.text);
+assert.equal(document.querySelector('.reader-player__captions'),null,
+ 'El lector canónico no agrega un segundo panel de subtítulos por obra');
+assert.equal(data.cues.length,489,'El SRT se conserva para calcular los tiempos de lectura');
 await click(control('Reproducir audiolibro'));
 assert.equal(audio.paused,false);
 await click(control('Pausar audiolibro'));
@@ -109,4 +103,4 @@ await flush(()=>mounted.unmount());
 dom.window.close();
 await rm(output,{recursive:true,force:true});
 await rm(entry,{force:true});
-console.log('Melano runtime: MP3 segmentado, subtítulos SRT activables, 61 párrafos, 20 notas, progreso, reproducción y cierre DOM simulados. No es prueba perceptiva ni responsive.');
+console.log('Melano runtime: MP3 segmentado, SRT usado para seguir 61 párrafos, 20 notas, progreso, reproducción y cierre DOM simulados. No es prueba perceptiva ni responsive.');
