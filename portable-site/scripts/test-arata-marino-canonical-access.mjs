@@ -39,6 +39,8 @@ try {
   globalThis.IS_REACT_ACT_ENVIRONMENT = true;
   document.fonts = { ready: Promise.resolve() };
   window.matchMedia = () => ({ matches: true });
+  globalThis.requestAnimationFrame = window.requestAnimationFrame.bind(window);
+  globalThis.cancelAnimationFrame = window.cancelAnimationFrame.bind(window);
   window.HTMLElement.prototype.scrollIntoView = () => {};
   window.HTMLElement.prototype.scrollTo = () => {};
   window.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
