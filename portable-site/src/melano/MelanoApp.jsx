@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowDown, ArrowUpRight, BookOpenText, FileText, Quote, Layers3 } from 'lucide-react';
 import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
 import TextOnlyReader from '../shared/TextOnlyReader.jsx';
+import IntegratedReader from '../IntegratedReader.jsx';
+import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
+import { buildMelanoReadingDocument } from './buildMelanoReadingDocument.js';
 import { melanoReaderConfig } from './readerConfig.js';
 import './melano.css';
 
@@ -124,9 +127,72 @@ function Contexto() {
   </section>;
 }
 
+
+// Conservar las notas y el progreso del lector textual anterior sin sobrescribirlos.
+// La nueva modalidad usa claves independientes y migra una sola vez si hace falta.
+function migrateMelanoTextReaderState(data) {
+  try {
+    const oldNotes = JSON.parse(localStorage.getItem('melano-juramentados-text-notes-v1') || '[]');
+    const newNotesKey = melanoReaderConfig.storage.notesKey;
+    if (localStorage.getItem(newNotesKey) === null && Array.isArray(oldNotes) && oldNotes.length) {
+      const firstParagraph = data.document.sections[0]?.paragraphs[0]?.id;
+      const converted = oldNotes.filter(note => typeof note?.text === 'string' && Number.isInteger(note.page))
+        .map(note => ({
+          id: note.id,
+          sentenceId: data.legacyPageMap[note.page] || firstParagraph,
+          text: note.text,
+          originalPage: note.page + 1,
+          createdAt: note.createdAt,
+          updatedAt: note.updatedAt,
+        })).filter(note => note.sentenceId);
+      if (converted.length) localStorage.setItem(newNotesKey, JSON.stringify(converted));
+    }
+    if (localStorage.getItem(melanoReaderConfig.storage.stateKey) === null) {
+      const previousPage = JSON.parse(localStorage.getItem('melano-juramentados-text-page-v1') || '0');
+      const paragraphId = data.legacyPageMap[previousPage];
+      const timing = data.paragraphTimings.find(item => item.id === paragraphId);
+      if (Number.isFinite(timing?.start)) {
+        localStorage.setItem(melanoReaderConfig.storage.stateKey, JSON.stringify({
+          currentTime: timing.start, playbackRate: 1, volume: 1, followText: true, fontScale: 1,
+        }));
+      }
+    }
+  } catch {
+    // El modo de lectura continúa funcionando si se bloquea el almacenamiento.
+  }
+}
+
 export default function MelanoApp() {
   const { active, progress } = useJourneyNavigation();
   const [toast, setToast] = useState('');
+  const [readerData, setReaderData] = useState(null);
+  const [audioReaderError, setAudioReaderError] = useState(false);
+  useEffect(() => {
+    const controller = new AbortController();
+    const fetchText = async (path) => {
+      const response = await fetch(import.meta.env.BASE_URL + path, { signal: controller.signal });
+      if (!response.ok) throw new Error('No se pudo cargar ' + path);
+      return response.text();
+    };
+    Promise.all([
+      fetchText('assets/melano/texto-academico.txt'),
+      fetchText('assets/melano/subtitulos.srt'),
+    ]).then(([academic, subtitles]) => {
+      if (controller.signal.aborted) return;
+      const data = buildMelanoReadingDocument(academic, subtitles);
+      migrateMelanoTextReaderState(data);
+      setReaderData(data);
+    }).catch(error => {
+      if (error.name !== 'AbortError') setAudioReaderError(true);
+    });
+    return () => controller.abort();
+  }, []);
+
+  const integratedConfig = readerData ? {
+    ...melanoReaderConfig,
+    captionCues: readerData.cues,
+    sync: { ...melanoReaderConfig.sync, paragraphTimings: readerData.paragraphTimings },
+  } : null;
 
   return <div className="melano-page">
     <a className="melano-skip" href="#lectura">Saltar a la lectura</a>
@@ -136,7 +202,19 @@ export default function MelanoApp() {
       <Autor />
       <Contexto />
       <section id="lectura" className="melano-screen melano-reading hb-material-reading" aria-labelledby="journey-reading-title">
-        <TextOnlyReader config={melanoReaderConfig} showToast={setToast} />
+        {readerData
+          ? <IntegratedReader
+              config={integratedConfig}
+              readingDocument={readerData.document}
+              Launcher={CanonicalReadingEntry}
+              showToast={setToast}
+            />
+          : <TextOnlyReader
+              config={{ ...melanoReaderConfig, textOnly: true,
+                storage: { notesKey: 'melano-juramentados-text-notes-v1', stateKey: 'melano-juramentados-text-page-v1' } }}
+              showToast={setToast}
+            />}
+        {audioReaderError && <p className="melano-reader-error" role="status">No se pudo iniciar la reproducción integrada. La lectura del texto y el cuaderno siguen disponibles.</p>}
       </section>
     </main>
     <JourneyCredits workId="melano" />
