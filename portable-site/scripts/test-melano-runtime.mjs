@@ -55,6 +55,7 @@ const blobs=[];
 URL.createObjectURL=blob=>{blobs.push(blob);return 'blob:melano-test-'+blobs.length;};
 URL.revokeObjectURL=()=>{};
 window.HTMLAnchorElement.prototype.click=function(){};
+process.env.NODE_ENV='development';
 const React=await import('react');
 const {act}=React;
 const {createRoot}=await import('react-dom/client');
