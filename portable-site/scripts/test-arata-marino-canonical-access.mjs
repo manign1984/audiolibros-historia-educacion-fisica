@@ -12,8 +12,14 @@ const cache = root + 'node_modules/.cache';
 const out = cache + '/arata-canonical-runtime';
 const entry = cache + '/arata-canonical-runtime-entry.js';
 await mkdir(cache, { recursive: true });
-await writeFile(entry, 'export { default as Reader } from ' +
-  JSON.stringify(root + 'src/arata-marino/ArataMarinoReader.jsx') + ';');
+await writeFile(entry, [
+  "import React from 'react';",
+  'import IntegratedReader from ' + JSON.stringify(root + 'src/IntegratedReader.jsx') + ';',
+  'import CanonicalReadingEntry from ' + JSON.stringify(root + 'src/shared/CanonicalReadingEntry.jsx') + ';',
+  'import { arataReaderConfig, arataReadingDocument } from ' +
+    JSON.stringify(root + 'src/arata-marino/readerContract.js') + ';',
+  'export function Reader(){ return React.createElement(IntegratedReader, { readingDocument: arataReadingDocument, config: arataReaderConfig, Launcher: CanonicalReadingEntry }); }',
+].join('\n'));
 try {
   await build({
     configFile: false, root, publicDir: false, logLevel: 'silent', plugins: [react()],
