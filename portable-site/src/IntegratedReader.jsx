@@ -185,6 +185,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
   const [audioLoading, setAudioLoading] = useState(false);
   const [audioSource, setAudioSource] = useState('');
   const [audioError, setAudioError] = useState(false);
+  const [captionsVisible, setCaptionsVisible] = useState(true);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState(() => readStoredValue(config.storage.stateKey, EMPTY_STATE).currentTime || 0);
   const [duration, setDuration] = useState(readingDocument.duration);
@@ -288,6 +289,19 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
     [syncInteractive, paragraphMode, currentTime, timedSentences],
   );
   const selectedSentence = sentenceMap.get(selectedSentenceId) || null;
+  const captionCues = config.captionCues || [];
+  const activeCaption = useMemo(() => {
+    let low = 0;
+    let high = captionCues.length - 1;
+    while (low <= high) {
+      const middle = Math.floor((low + high) / 2);
+      const cue = captionCues[middle];
+      if (currentTime < cue.start) high = middle - 1;
+      else if (currentTime >= cue.end) low = middle + 1;
+      else return cue;
+    }
+    return null;
+  }, [captionCues, currentTime]);
   const annotationTarget = selectedSentence || activeSentence || sentences[0];
   const sortedNotes = useMemo(
     () => [...notes].sort((a, b) => {
@@ -347,6 +361,9 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
           blob = await response.blob();
         }
         if (controller.signal.aborted) return;
+        if (Number.isFinite(config.expectedAudioBytes) && blob.size !== config.expectedAudioBytes) {
+          throw new Error('El audio no coincide con el tamaño del archivo original');
+        }
 
         const objectUrl = URL.createObjectURL(blob);
         audioObjectUrlRef.current = objectUrl;
@@ -360,7 +377,7 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
 
     prepareSeekableAudio();
     return () => controller.abort();
-  }, [audioSource, config.audiobookUrl, config.audiobookParts, config.audioMode, open]);
+  }, [audioSource, config.audiobookUrl, config.audiobookParts, config.audioMode, config.expectedAudioBytes, open]);
 
   useEffect(() => () => {
     if (audioObjectUrlRef.current) URL.revokeObjectURL(audioObjectUrlRef.current);
@@ -987,6 +1004,13 @@ export default function IntegratedReader({ showToast, readingDocument, config, L
           </div>
 
           <footer className="reader-player">
+            {captionCues.length > 0 && <div className="reader-player__captions" aria-label="Subtítulos del audiolibro">
+              <button type="button" aria-pressed={captionsVisible}
+                onClick={() => setCaptionsVisible(visible => !visible)}>
+                {captionsVisible ? 'Ocultar subtítulos' : 'Mostrar subtítulos'}
+              </button>
+              {captionsVisible && <p>{activeCaption?.text || ' '}</p>}
+            </div>}
             {audioLoading && !audioReady && !audioError && (
               <div className="reader-player__loading" role="status">
                 {syncInteractive ? (paragraphMode ? 'Preparando la lectura por párrafos…' : 'Preparando el audio para habilitar saltos precisos…') : 'Preparando el audio para escuchar…'}

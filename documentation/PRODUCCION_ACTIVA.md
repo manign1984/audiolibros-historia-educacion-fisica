@@ -11,9 +11,12 @@
 **Hito 10/11/2026:** Etapa A, depuración textual. PDF de 19 páginas impresas (131–149); se retiraron notas al pie 193–212, encabezados y folios y se integró el cuerpo en el [Google Docs de narración](https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit). Conserva seis apartados, citas y contenido principal. [PDF original](https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view). Extensión aproximada inicial: 35.940 caracteres; luego se retiraron las citas parentéticas. En este hito aún no existían MP3/SRT/VTT ni página web construida; la página textual se implementó posteriormente en B.  
 **Actualización 10/11/2026:** Versión para ElevenLabs depurada de 35 citas parentéticas, dos fragmentos de una referencia bibliográfica dividida y un año citado dentro de un paréntesis explicativo; se conservan fechas y aclaraciones históricas. Existe una [copia académica con citas](https://docs.google.com/document/d/19_QDXB4uo8kaAhUA8yDbWTokbdzSEPYAFwlrqroxWLk/edit) para el lector visual; la copia original PDF también se conserva. No usar el TXT de locución como sustituto del texto académico con referencias en el futuro lector.  
 **Etapa B implementada en rama:** `feature/melano-militares-juramentados`, [PR #104](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/104). Página con `JourneyHeader`, `AuthorBiography` y retrato original, Contexto en dos pantallas, `CanonicalReadingEntry`/`TextOnlyReader`, `JourneyCredits`. Paleta enviada por usuario: #051e28, #3a8841, #40b5bc, #483df6, #86759f. El texto del sitio conserva las citas y notas 193–212; el texto de voz no incluye citas APA.  
+**Tramo 1 audiovisual (11/11/2026):** en la rama `feature/melano-integrated-reader-audio`, PR #106 (borrador), ya se incorporaron el SRT de ElevenLabs (489 segmentos) y los ocho fragmentos consecutivos del MP3 (suman 23.492.550 bytes, exactamente el tamaño informado por Drive; todavía no se afirma identidad criptográfica). El nuevo generador reutiliza el capítulo académico completo (61 párrafos, 20 notas, citas) y las marcas de tiempo del SRT para un seguimiento **aproximado por párrafos**, sin investigación acústica. Se conectó `IntegratedReader` con `CanonicalReadingEntry`, subtítulos visibles opcionales, carga del audio por fragmentos, validación de tamaño y migración no destructiva de notas/progreso previos. La prueba `test:melano` y la batería general de CI terminaron correctamente (25 pasos, [ejecución 42961102679](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/42961102679)). Los cambios NO se fusionaron en `main` y NO están publicados en GitHub Pages. Estas pruebas de compilación no sustituyen la observación perceptiva/visual en navegador.  
+**Próxima acción única (tramo 2):** comprobar el resultado de CI y el lector en navegador real (escritorio/móvil); corregir solamente problemas observados; fusionar PR #106, verificar GitHub Pages y actualizar esta ficha al cierre.  
+
 **Ficha editorial actualizada:** [MELANO_FICHA_ETAPA_A.md](MELANO_FICHA_ETAPA_A.md). Documento operativo de esta obra; no modifica Directrices v3.0.  
 **Estado interno:** EN DESARROLLO. **Etapa:** B textual integrada a `main` por PR #104; CI superó tests, compilación y verificación de rutas en base normal y GitHub Pages. La integración audiovisual continuará cuando el usuario aporte MP3/SRT-VTT. No se pudo comprobar por HTTP el sitio publicado desde este entorno.  
-**Próxima acción única:** recibir enlaces a MP3 y subtítulos y conectarlos al lector integrado de Melano; realizar una comprobación funcional y visual de la página pública cuando esté accesible, sin rehacer sus bloques.  
+**Próxima acción única (vigente):** revisar CI y validar la PR #106 de integración audiovisual en un navegador; solo después fusionar y comprobar la URL pública.  
 **Criterio operativo:** trabajo proporcionado al objetivo; reutilizar componentes y no abrir auditorías acústicas, jurídicas ni investigaciones redundantes.
 
 Cada página tiene tres etapas de trabajo, no tres Work ni tres chats obligatorios:
@@ -40,15 +43,15 @@ Los valores `available`, `review`, `text` y `preparation` de esta tabla son **va
 | Campo | Valor vigente |
 | --- | --- |
 | Obra activa | Ignacio Melano · *Militares al gobierno, juramentados al poder* (capítulo 6, edición impresa 2025) |
-| Etapa | B textual integrada en `main` mediante PR #104; CI completo aprobado. La página queda preparada para integrar MP3/SRT en siguiente etapa. |
-| Estado interno | EN DESARROLLO: recorrido web textual implementado en rama; audio y subtítulos por entregar. |
-| Rama / PR | `feature/melano-militares-juramentados` · PR #104 fusionada. Commit `31ae8c189b9cd6b0e6fc7e1718afe6388ec7f4c6`. |
-| Último commit de código reutilizable | `04cdf36054cc9f9796c360a92fdc3bc955d0c335` (Lionetti, antecedente; no es implementación de Melano). |
+| Etapa | B textual en `main` (#104); audiovisual implementada en rama mediante PR #106 (borrador), pendiente de validación visual y fusión. |
+| Estado interno | EN DESARROLLO: recursos audiovisuales incorporados en rama, funcionamiento público y cierre aún no verificados. |
+| Rama / PR | Base textual: PR #104 fusionada. Integración actual: `feature/melano-integrated-reader-audio` · PR #106 en borrador. |
+| Último commit de código reutilizable | `1ecff4ce9fa1b10bd9e2355c73191530d4b4d00c` (Melano; rutas estáticas de fragmentos, CI aprobado). |
 | Enlace al original | https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view |
 | Texto para ElevenLabs (sin citas) | https://docs.google.com/document/d/19xEmFfftckPYwctxTmZdGWFmLG6PIjxoF_evctmzQmA/edit |
 | Texto académico para lector (con citas) | https://docs.google.com/document/d/19_QDXB4uo8kaAhUA8yDbWTokbdzSEPYAFwlrqroxWLk/edit |
-| Incidencia pendiente | Retrato y notas incorporados; faltan MP3 y SRT/VTT. Verificación visual por navegador y acceso HTTP externo no completados desde este entorno. |
-| **Próxima acción única** | Integrar MP3 y subtítulos al lector canónico cuando el usuario comparta los enlaces; luego contrastar la página pública visualmente. |
+| Incidencia pendiente | No faltan MP3 ni SRT. Falta comprobar PR #106 y la experiencia en navegador real, y luego integrar/publicar. |
+| **Próxima acción única** | Validar PR #106 en CI y navegador, corregir incidencias reales, fusionar y comprobar GitHub Pages. |
 | Ruta de publicación | `https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/melano-militares-juramentados/` (ruta compilada y verificada por CI; acceso público HTTP aún sin corroboración externa). |
 
 Al iniciar una obra, completar únicamente estos campos y el estado interno EN DESARROLLO/COMPLETA. Al terminar una etapa A, B o C, **guardar un commit verificable y actualizar esta ficha antes de seguir**. No esperar al límite del chat. No crear un expediente nuevo para cada intercambio. Los materiales grandes permanecen en sus ubicaciones autorizadas; no poner texto académico, audio privado o credenciales en esta ficha.

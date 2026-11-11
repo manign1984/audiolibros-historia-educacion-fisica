@@ -184,3 +184,51 @@ body:has(.journey-header) .melano-page #lectura.hb-material-reading { --material
 @media(prefers-reduced-motion: reduce) {
  .melano-page * {scroll-behavior:auto;}
 }
+
+/* Subtítulos optativos del lector integrado de Ignacio Melano. */
+.melano-page .reader-player__captions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0.45rem 1rem;
+  min-height: 2.6rem;
+  color: #f5f5f8;
+  background: #051e28;
+  border-bottom: 1px solid rgba(255,255,255,.16);
+}
+.melano-page .reader-player__captions button {
+  flex: 0 0 auto;
+  border: 1px solid #40b5bc;
+  color: #f5f5f8;
+  background: transparent;
+  padding: .35rem .6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: .75rem;
+}
+.melano-page .reader-player__captions button:focus-visible {
+  outline: 2px solid #40b5bc;
+  outline-offset: 2px;
+}
+.melano-page .reader-player__captions p {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+  font-size: clamp(.8rem, 1.4vw, 1rem);
+}
+.melano-reader-error {
+  margin: .5rem auto;
+  padding: .6rem;
+  text-align: center;
+  color: #051e28;
+}
+@media (max-width: 640px) {
+  .melano-page .reader-player__captions {
+    flex-wrap: wrap;
+    gap: .35rem;
+    padding: .4rem .6rem;
+  }
+  .melano-page .reader-player__captions p { flex-basis: 100%; }
+}
