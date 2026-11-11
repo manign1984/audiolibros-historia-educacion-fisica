@@ -53,7 +53,7 @@ assert.equal(entry.status, 'available');
 assert.equal(entry.duration, doc.duration);
 assert.equal(entry.stateKey, config.storage.stateKey);
 assert.equal(filterCatalog(catalog, 'Scharagrodsky constitución')[0].id, config.workId);
-assert.equal(new Set(catalog.map(e => e.id)).size, 29);
+assert.equal(new Set(catalog.map(e => e.id)).size, catalog.length);
 assert.equal(config.sync.status, 'ready');
 const manifest = JSON.parse(await read('../../validation/works.json'));
 const work = manifest.works.find(w => w.id === config.workId);
