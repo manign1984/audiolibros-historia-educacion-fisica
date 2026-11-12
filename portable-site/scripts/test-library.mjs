@@ -164,7 +164,7 @@ assert.equal(soares.status, 'available', 'Soares figura como Leer + escuchar, co
 assert.equal(soares.readingDetail, 'Seguimiento aproximado por párrafos', 'El catálogo informa el grado real de sincronización.');
 assert.equal(matchesAvailability(soares, 'review'), false, 'Soares ya no aparece bajo Edición en revisión.');
 assert.equal(canReadAndListen(soares), true, 'Soares figura entre los lectores con texto y audiolibro.');
-assert.equal(allCatalog.filter(canReadAndListen).length, 8, 'Ocho recorridos permiten leer y escuchar.');
+assert.equal(allCatalog.filter(canReadAndListen).length, 9, 'Nueve recorridos permiten leer y escuchar.');
 assert.match(libraryHome, /const readable = catalog\.filter/, 'La estantería incluye lecturas con audio o solo texto.');
 assert.match(libraryHome, /entries=\{readable\}/, 'La estantería de lectura incluye Marcaida y Scaltritti.');
 assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
@@ -197,7 +197,7 @@ const blocked = { getItem() { throw new Error('Blocked'); }, setItem() { throw n
 assert.deepEqual(readList(blocked, ids), []);
 assert.equal(saveList(blocked, ids), false);
 assert.equal(readProgress(blocked, pineau), 0);
-console.log('Biblioteca: 29 fichas, 8 recorridos de lectura y audio (7 disponibles y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
+console.log('Biblioteca: 30 fichas, 9 recorridos de lectura y audio (8 disponibles y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
 
 
 // Portada de la biblioteca = una pantalla útil bajo el encabezado real.
