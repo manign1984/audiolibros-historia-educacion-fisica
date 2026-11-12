@@ -10,11 +10,15 @@
 
 **Obra y workId:** *La democratización del bienestar*, capítulo V de *Los años peronistas (1943–1955)*, Sudamericana, 2002. `torre-pastoriza-bienestar`.
 
-**Unidad y estado interno:** unidad 1 · **EN DESARROLLO**. Cinco bloques, Contexto en dos pantallas, [edición de cátedra](https://drive.google.com/file/d/1BJNJ5DyEJIylbX8E5EG6i2WMoFh5-1yx/view) y lector textual con cuaderno. Rama `feature/torre-pastoriza-bienestar`. [Ruta técnica](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/torre-pastoriza-bienestar/).
+**Unidad y estado interno:** unidad 3 · **EN DESARROLLO**. Cinco bloques, Contexto en dos pantallas y [edición de cátedra](https://drive.google.com/file/d/1BJNJ5DyEJIylbX8E5EG6i2WMoFh5-1yx/view). [Ruta técnica](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/torre-pastoriza-bienestar/).
 
-**Material audiovisual localizado:** [MP3](https://drive.google.com/file/d/1UqzrhEcvscmPLuzWJ7xHnWzUrPVr4gNI/view), 82.141.198 bytes y 2 h 16 min 54 s. [SRT localizado](https://drive.google.com/file/d/1Gxs5Ks79D65NsrVG6S-UsQbAYT8WFK3H/view), 17 marcas entre 0:00 y 1:25,813 correspondientes al cierre del texto. Queda pendiente la unidad audiovisual.
+**Integración audiovisual:** [PR #145](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/145), rama `feature/torre-pastoriza-lector-integrado`, sobre la página textual de la [PR #144](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/144). El lector canónico ofrece reproducción directa, resaltado aproximado de 97 párrafos y migración del cuaderno y progreso textuales.
 
-**Próxima acción única:** localizar el archivo completo de marcas correspondiente a este MP3 antes de preparar la integración audiovisual.
+**Material audiovisual:** el [MP3 base](https://drive.google.com/file/d/1UqzrhEcvscmPLuzWJ7xHnWzUrPVr4gNI/view) y la [narración de los cuatro párrafos finales](https://drive.google.com/file/d/1Toj2LfR_NR9zG0VVigXEe9G60JUC8lpp/view) se empalmaron sin recodificación. El [MP3 completo para publicación](https://drive.google.com/file/d/1F9nw482pxJHxQ_a4gmL4llpnROjgv9rn/view) dura 2:18:19,964 y la compilación verifica su tamaño y SHA-256. Se conserva el [SRT completo](https://drive.google.com/file/d/1bxeT-I4RAvOac9oSr0SJkKFCuYs4m953/view). El resaltado del cierre usa los tiempos del [SRT del fragmento](https://drive.google.com/file/d/1Gxs5Ks79D65NsrVG6S-UsQbAYT8WFK3H/view) desplazados al empalme.
+
+**Comprobaciones locales:** catálogo, pruebas del lector, integridad y compuerta B04.11.2 en raíz y con la base de GitHub Pages.
+
+**Próxima acción única:** tras el despliegue de la PR #145, comprobación personal del responsable en la ruta publicada, incluido el audio y el resaltado alrededor de 2:16:54.
 
 ---
 

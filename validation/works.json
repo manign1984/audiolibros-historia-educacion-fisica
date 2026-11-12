@@ -1186,6 +1186,61 @@
       "audioDuration": 2815.059592,
       "audioSha256": "63f4c3b0b7f152fa4a4414dd2951302dde4ad64856041477b594473000e61340",
       "documentSha256": "bc3f819ec735674c98ca2e9c6f389791555d15a47de2c9e4010440d5ac7581d1"
+    },
+    {
+      "id": "torre-pastoriza-bienestar",
+      "config": {
+        "module": "src/torre-pastoriza/readerConfig.js",
+        "export": "readerConfig"
+      },
+      "document": {
+        "module": "src/torre-pastoriza/readerConfig.js",
+        "export": "readingDocument"
+      },
+      "page": "src/torre-pastoriza/TorrePastorizaApp.jsx",
+      "main": "src/torre-pastoriza/main.jsx",
+      "creditsKey": "torrePastoriza",
+      "storage": {
+        "notesKey": "torre-pastoriza-bienestar-reader-notes-v1",
+        "stateKey": "torre-pastoriza-bienestar-reader-state-v1"
+      },
+      "sync": {
+        "unit": "paragraph",
+        "status": "paragraph-preview",
+        "review": "Seguimiento aproximado de 97 párrafos. Los dos últimos intervalos incorporan las marcas del SRT del fragmento de cierre desplazadas al punto de empalme. Cuadros, recuadro y bibliografía sin narración."
+      },
+      "materials": [
+        {
+          "path": "src/torre-pastoriza/readingDocument.generated.json",
+          "kind": "alignment",
+          "bytes": 135034,
+          "sha256": "1f67a72fcc49197a6b60cd3a78947d7cbb300cc8d66c76f34141f1a42e246f41"
+        },
+        {
+          "path": "public/assets/torre-pastoriza/texto-academico.txt",
+          "kind": "text",
+          "bytes": 115833,
+          "sha256": "a0925ede1310502f64c7bf2e507ac28968870663f860507cb06e06723b2fb4ff"
+        },
+        {
+          "path": "public/assets/torre-pastoriza/subtitulos.srt",
+          "kind": "subtitles",
+          "bytes": 179270,
+          "sha256": "1979d898a9127766cb021037dfe8da18d949d73c7546d8cea31188c3441cb5da"
+        },
+        {
+          "path": "public/assets/torre-pastoriza/audiolibro.mp3",
+          "kind": "audio",
+          "bytes": 84202414,
+          "sha256": "013ff368d7c41c6bcd1bd64f4921157218747d7145ab7403712a12308d23c16f",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=1F9nw482pxJHxQ_a4gmL4llpnROjgv9rn&export=download&confirm=t"
+        }
+      ],
+      "audioDuration": 8299.964082,
+      "audioSha256": "013ff368d7c41c6bcd1bd64f4921157218747d7145ab7403712a12308d23c16f",
+      "subtitleTimelineEnd": 8301.719,
+      "subtitleTimelineReason": "El SRT completo se conserva como fuente. Sus últimas marcas terminan 1,755 s después del MP3 empalmado; el resaltado del cierre usa los tiempos del SRT del fragmento.",
+      "documentSha256": "08b971ac5b8b3cd2b94c29f6136767fe210df0c0a0f2ee577f8dfc179a17b25a"
     }
   ],
   "baseline": {

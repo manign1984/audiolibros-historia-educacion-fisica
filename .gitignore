@@ -8,3 +8,7 @@
 # Outputs derived reproducibly from the verified academic PDF and SRT.
 /portable-site/public/assets/arata-marino/edicion-academica.txt
 /portable-site/src/arata-marino/readingDocument.generated.json
+
+# Copia verificada del audiolibro completo de Torre y Pastoriza.
+/portable-site/public/assets/torre-pastoriza/audiolibro.mp3
+/portable-site/public/assets/torre-pastoriza/.audio-*/
