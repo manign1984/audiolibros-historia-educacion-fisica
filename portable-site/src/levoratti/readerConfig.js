@@ -1,5 +1,5 @@
 // Datos propios de Levoratti. No personalizan la geometría del bloque 04 ni el lector.
-const assetBase = import.meta.env.BASE_URL + 'assets/levoratti-gimnasia-1958-1968/';
+const assetBase = [import.meta.env.BASE_URL.replace(/\/$/, ''), 'assets', 'levoratti-gimnasia-1958-1968'].join('/') + '/';
 export const LEVORATTI_AUDIO_BYTES = 22197397;
 export const LEVORATTI_AUDIO_PARTS = 17;
 
