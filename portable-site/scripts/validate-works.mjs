@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { catalog, collections } from '../src/biblioteca/catalog.js';
+import { catalog, programGroups } from '../src/biblioteca/catalog.js';
 import { LIST_KEY } from '../src/biblioteca/libraryState.js';
 import { loadWorkContracts } from './lib/load-work-contracts.mjs';
 import { checkManifest, validateWorks, validateReferences } from './lib/validate-work-contracts.mjs';
@@ -21,7 +21,7 @@ for (let index = 0; index < args.length; index += 1) {
 try {
   const manifest = checkManifest(JSON.parse(await readFile(manifestPath, 'utf8')));
   const contracts = await loadWorkContracts(root, manifest.works);
-  const report = await validateWorks({ root, manifest, contracts, catalog, collections, reservedStorageKeys: [LIST_KEY] });
+  const report = await validateWorks({ root, manifest, contracts, catalog, programGroups, reservedStorageKeys: [LIST_KEY] });
   const references = await validateReferences({ directory: resolve(root, 'src'), source: true });
   report.errors.push(...references.errors);
   report.referencesChecked = references.checked;

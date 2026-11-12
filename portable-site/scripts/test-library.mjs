@@ -3,7 +3,7 @@ import { access, readFile } from 'node:fs/promises';
 import {
   alphabeticGroup,
   catalog as allCatalog,
-  collections,
+  programGroups,
   citationAsPlainText,
   filterCatalog,
   canReadAndListen,
@@ -126,7 +126,7 @@ await Promise.all([
 assert.equal(allCatalog.length, 31);
 assert.equal(new Set(allCatalog.map((entry) => entry.id)).size, allCatalog.length);
 for (const entry of allCatalog) {
-  assert.ok(collections.some((collection) => collection.id === entry.collection));
+  assert.ok(programGroups.some((group) => group.id === entry.programGroup));
   assert.ok(citationAsPlainText(entry).length > 30);
   assert.ok(['available', 'review', 'text', 'preparation'].includes(entry.status));
   await access(new URL(`../${entry.path}index.html`, import.meta.url));
@@ -150,7 +150,16 @@ assert.equal(marcaida.status, 'review');
 assert.equal(marcaida.duration, 1878.909388);
 assert.equal(marcaida.historicalPeriod, '1852–1880');
 assert.equal(marcaida.stateKey, 'marcaida-scaltritti-reader-state-v2');
-assert.equal(collections.find((item) => item.id === 'estado').period.startsWith('1852–1930'), true);
+assert.deepEqual(programGroups.map(({ id }) => id), [
+  'unidad-1', 'unidad-2', 'unidad-3', 'unidad-4', 'unidad-5', 'complementaria',
+]);
+assert.deepEqual(programGroups.map(({ id }) => allCatalog.filter((entry) => entry.programGroup === id).length), [2, 2, 4, 4, 6, 13]);
+assert.equal(marcaida.programGroup, 'unidad-2');
+assert.equal(pineau.programGroup, 'unidad-4');
+assert.equal(orbuch.programGroup, 'complementaria');
+assert.equal(aisenstein.programGroup, 'complementaria');
+assert.ok(sortCatalog(allCatalog).findIndex((entry) => entry.id === 'thwaites-rey-democracia-argentina') >
+  sortCatalog(allCatalog).findIndex((entry) => entry.id === 'tedesco-educacion-sociedad'));
 assert.equal(canReadAndListen(marcaida), true, 'La edición en revisión tiene texto, audio y anotaciones.');
 assert.equal(matchesAvailability(marcaida, 'available'), true, 'Aparecer en filtro Leer y escuchar.');
 assert.equal(matchesAvailability(marcaida, 'review'), true, 'Aparecer en filtro Edición en revisión.');
@@ -168,8 +177,7 @@ const torrePastoriza = allCatalog.find((entry) => entry.id === 'torre-pastoriza-
 assert.ok(torrePastoriza);
 assert.equal(canReadAndListen(torrePastoriza), true);
 assert.equal(allCatalog.filter(canReadAndListen).length, 12, 'Doce recorridos permiten leer y escuchar.');
-assert.match(libraryHome, /const readable = catalog\.filter/, 'La estantería incluye lecturas con audio o solo texto.');
-assert.match(libraryHome, /entries=\{readable\}/, 'La estantería de lectura incluye Marcaida y Scaltritti.');
+assert.match(libraryHome, /const readable = catalog\.filter/, 'La biblioteca obtiene el progreso de los recorridos existentes.');
 assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
 assert.match(libraryHome, /const available = catalog\.filter\(\(entry\) => entry\.status === 'available'\)/, 'Conservar los cuatro destacados del carrusel automático.');
 const feiguinResults = filterCatalog(allCatalog, 'FEIGUÍN');
@@ -206,8 +214,7 @@ console.log('Biblioteca: 31 fichas, 12 recorridos de lectura y audio (11 disponi
 
 
 // Portada de la biblioteca = una pantalla útil bajo el encabezado real.
-// Las seis tarjetas temáticas no deben ocupar espacio debajo del hero;
-// colecciones y filtros permanecen disponibles dentro del catálogo.
+// Inicio muestra el catálogo completo debajo de las lecturas en curso.
 const librarySource = await readFile(new URL('../src/biblioteca/LibraryHome.jsx', import.meta.url), 'utf8');
 const libraryCss = await readFile(new URL('../src/biblioteca/library.css', import.meta.url), 'utf8');
 assert.match(librarySource, /const headerRef = useRef\(null\)/, 'Medir el encabezado de la biblioteca sin presumir una altura fija.');
@@ -220,8 +227,9 @@ assert.doesNotMatch(librarySource, /<section className="collections"/, 'Eliminar
 assert.doesNotMatch(librarySource, /id="colecciones"/, 'No conservar un ancla a la fila eliminada.');
 assert.match(librarySource, /href="#catalogo">Descubrí la biblioteca/, 'El CTA de descubrimiento debe dirigirse al catálogo.');
 assert.match(librarySource, /className="library-shell catalog-area" id="catalogo"/, 'El catálogo continúa disponible tras Inicio.');
-assert.match(librarySource, /<select value=\{collection\}/, 'Conservar la exploración por colecciones mediante el filtro.');
-assert.match(librarySource, /\{collections\.map\(\(item\) => <Shelf/, 'Conservar estanterías temáticas y sus colecciones.');
+assert.match(librarySource, /<select value=\{order\}/, 'Permitir alternar entre apellido y unidad.');
+assert.match(librarySource, /title="Seguí donde dejaste"[\s\S]*?id="results-title"[\s\S]*?'Todo el catálogo'/, 'El catálogo completo sigue a las lecturas en curso.');
+assert.doesNotMatch(librarySource, /Lecturas disponibles|Todos los períodos|collections\.map/, 'Retirar las estanterías temáticas del catálogo.');
 
 
 

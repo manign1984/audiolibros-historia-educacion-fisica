@@ -28,8 +28,8 @@ try {
   }
   work.storage = { ...config.storage };
   const manifest = { schemaVersion: 1, works: [work] };
-  const catalog = [{ id: 'trial', status: 'available', path: 'textos/trial/', title: 'Prueba', shortTitle: 'Prueba', author: 'Autor ficticio', sortAuthor: 'Ficticio', collection: 'testing', reference: 'Referencia ficticia', duration: 20, stateKey: config.storage.stateKey }];
-  const input = { root, manifest, contracts: [{ id: 'trial', config, document }], catalog, collections: [{ id: 'testing' }] };
+  const catalog = [{ id: 'trial', status: 'available', path: 'textos/trial/', title: 'Prueba', shortTitle: 'Prueba', author: 'Autor ficticio', sortAuthor: 'Ficticio', programGroup: 'testing', reference: 'Referencia ficticia', duration: 20, stateKey: config.storage.stateKey }];
+  const input = { root, manifest, contracts: [{ id: 'trial', config, document }], catalog, programGroups: [{ id: 'testing' }] };
   const clone = () => structuredClone(input);
   const expectFailure = async (mutate, code) => { const value = clone(); await mutate(value); const report = await validateWorks(value); assert.ok(report.errors.some(error => error.code === code), `${code}: ${JSON.stringify(report.errors)}`); };
   assert.deepEqual((await validateWorks(input)).errors, []);
