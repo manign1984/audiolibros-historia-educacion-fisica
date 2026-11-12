@@ -1186,6 +1186,60 @@
       "audioDuration": 2815.059592,
       "audioSha256": "63f4c3b0b7f152fa4a4414dd2951302dde4ad64856041477b594473000e61340",
       "documentSha256": "bc3f819ec735674c98ca2e9c6f389791555d15a47de2c9e4010440d5ac7581d1"
+    },
+    {
+      "id": "torre-pastoriza-bienestar",
+      "config": {
+        "module": "src/torre-pastoriza/readerConfig.js",
+        "export": "readerConfig"
+      },
+      "document": {
+        "module": "src/torre-pastoriza/readerConfig.js",
+        "export": "readingDocument"
+      },
+      "page": "src/torre-pastoriza/TorrePastorizaApp.jsx",
+      "main": "src/torre-pastoriza/main.jsx",
+      "creditsKey": "torrePastoriza",
+      "storage": {
+        "notesKey": "torre-pastoriza-bienestar-reader-notes-v1",
+        "stateKey": "torre-pastoriza-bienestar-reader-state-v1"
+      },
+      "sync": {
+        "unit": "paragraph",
+        "status": "paragraph-preview",
+        "review": "Candidato local. El texto y las marcas del cierre están completos. El MP3 disponible termina antes que las últimas 17 marcas y falta el cierre sonoro."
+      },
+      "materials": [
+        {
+          "path": "src/torre-pastoriza/readingDocument.generated.json",
+          "kind": "alignment",
+          "bytes": 135035,
+          "sha256": "67eece38463db6a4e0d8d805bb08bf3f0387622bd5de1ffecb57c064499da475"
+        },
+        {
+          "path": "public/assets/torre-pastoriza/texto-academico.txt",
+          "kind": "text",
+          "bytes": 115833,
+          "sha256": "a0925ede1310502f64c7bf2e507ac28968870663f860507cb06e06723b2fb4ff"
+        },
+        {
+          "path": "public/assets/torre-pastoriza/subtitulos.srt",
+          "kind": "subtitles",
+          "bytes": 179270,
+          "sha256": "1979d898a9127766cb021037dfe8da18d949d73c7546d8cea31188c3441cb5da"
+        },
+        {
+          "path": "public/assets/torre-pastoriza/audiolibro.mp3",
+          "kind": "audio",
+          "bytes": 82141198,
+          "sha256": "afdd30c8357c485cd949fc4557cb2c32dd5b49c73eb86d396e1ee74931c8f496"
+        }
+      ],
+      "audioDuration": 8214.073469,
+      "audioSha256": "afdd30c8357c485cd949fc4557cb2c32dd5b49c73eb86d396e1ee74931c8f496",
+      "subtitleTimelineEnd": 8301.719,
+      "subtitleTimelineReason": "El SRT de reemplazo cubre 2:18:21,719 y el MP3 disponible cubre 2:16:54. Se conservan las marcas de origen.",
+      "documentSha256": "c2b22973f471617902921d11a2a8ad863626048493861a8104574177467e5857"
     }
   ],
   "baseline": {

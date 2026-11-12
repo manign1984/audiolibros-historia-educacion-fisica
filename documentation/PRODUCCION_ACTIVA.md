@@ -12,9 +12,11 @@
 
 **Unidad y estado interno:** unidad 1 · **EN DESARROLLO**. Cinco bloques, Contexto en dos pantallas, [edición de cátedra](https://drive.google.com/file/d/1BJNJ5DyEJIylbX8E5EG6i2WMoFh5-1yx/view) y lector textual con cuaderno. Rama `feature/torre-pastoriza-bienestar`. [Ruta técnica](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/torre-pastoriza-bienestar/).
 
-**Material audiovisual localizado:** [MP3](https://drive.google.com/file/d/1UqzrhEcvscmPLuzWJ7xHnWzUrPVr4gNI/view), 82.141.198 bytes y 2 h 16 min 54 s. [SRT localizado](https://drive.google.com/file/d/1Gxs5Ks79D65NsrVG6S-UsQbAYT8WFK3H/view), 17 marcas entre 0:00 y 1:25,813 correspondientes al cierre del texto. Queda pendiente la unidad audiovisual.
+**Rama audiovisual:** `feature/torre-pastoriza-lector-integrado`, a partir de la página textual de la [PR #144](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/144) (`cab4bf7`). Candidato con `IntegratedReader`, carga directa del MP3 desde el reproductor, seguimiento aproximado por párrafos y migración de cuaderno y progreso desde el lector textual. La edición académica conserva los cuadros en el texto y en el PDF de cátedra.
 
-**Próxima acción única:** localizar el archivo completo de marcas correspondiente a este MP3 antes de preparar la integración audiovisual.
+**Material audiovisual:** el [SRT de reemplazo](https://drive.google.com/file/d/1bxeT-I4RAvOac9oSr0SJkKFCuYs4m953/view) contiene 1.689 marcas y llega al cierre a las 2:18:21,719. El [MP3 disponible](https://drive.google.com/file/d/1UqzrhEcvscmPLuzWJ7xHnWzUrPVr4gNI/view) contiene 82.141.198 bytes y termina a las 2:16:54. Las marcas 1.673–1.689 quedan después del final del MP3. Las marcas originales se preservan y el candidato local solo aplica tiempos dentro del archivo disponible.
+
+**Próxima acción única:** incorporar el MP3 completo o el fragmento sonoro final, actualizar duración, catálogo e integridad del audio en `validation/works.json`, y comprobar la compilación y el despliegue. El MP3 parcial se usó para la validación local y queda fuera de la rama remota. El despliegue público conserva la versión textual.
 
 ---
 

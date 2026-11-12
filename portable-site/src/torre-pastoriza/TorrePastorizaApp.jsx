@@ -2,8 +2,9 @@ import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
-import TextOnlyReader from '../shared/TextOnlyReader.jsx';
-import { authorImage, authors, cover, readerConfig } from './readerConfig.js';
+import IntegratedReader from '../IntegratedReader.jsx';
+import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
+import { authorImage, authors, cover, readerConfig, readingDocument } from './readerConfig.js';
 import './torre-pastoriza.css';
 
 const access = [
@@ -76,7 +77,7 @@ export default function TorrePastorizaApp() {
         </section>
 
         <section id="lectura" className="journey-reading hb-material-reading" aria-labelledby="journey-reading-title">
-          <TextOnlyReader config={readerConfig} />
+          <IntegratedReader readingDocument={readingDocument} config={readerConfig} Launcher={CanonicalReadingEntry} />
         </section>
       </main>
       <JourneyCredits workId="torrePastoriza" />

@@ -44,9 +44,11 @@ const records = [
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
   'torre-pastoriza-bienestar': {
-    status: 'text',
+    status: 'available',
     canonicalCard: true,
-    stateKey: 'torre-pastoriza-bienestar-text-page-v1',
+    duration: 8214.073469,
+    readingDetail: 'Seguimiento aproximado por párrafos y cuaderno de lectura',
+    stateKey: 'torre-pastoriza-bienestar-reader-state-v1',
     historicalPeriod: 'Primer peronismo · 1946–1955',
     artwork: 'assets/torre-pastoriza/chapadmalal-1950.webp',
   },
