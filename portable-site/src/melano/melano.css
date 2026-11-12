@@ -63,6 +63,8 @@ body:has(.melano-page) { margin: 0; }
   box-shadow: 18px 18px 0 #40b5bc;
 }
 .melano-hero__art img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
