@@ -63,10 +63,11 @@ body:has(.melano-page) { margin: 0; }
   display: flex;
   align-items: center;
   min-height: var(--reading-room);
+  width: min(1680px, calc(100% - 88px));
   padding: clamp(130px, 17svh, 180px) 0 clamp(24px, 4svh, 42px);
 }
 .melano-hero__copy {
-  width: min(56%, 735px);
+  width: min(52%, 680px);
   min-width: 0;
   padding-left: clamp(0px, 1.15vw, 18px);
   font-family: 'Courier New', 'Liberation Mono', monospace;
