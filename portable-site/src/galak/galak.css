@@ -17,24 +17,29 @@
 }
 
 .galak-hero {
-  background: #211e21;
+  --galak-hero-accent: #ebc08d;
+  --journey-label-color: var(--galak-hero-accent);
+  background-color: #211e21;
+  background-image:
+    linear-gradient(90deg, #211e21f5 0%, #211e21d6 54%, #211e2166 71%, #211e2114 100%),
+    url('/assets/portada-galak-del-dicho-al-hecho.png');
+  background-position: center, right 32%;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #f5ede0;
 }
 
-.galak-hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  align-items: center;
-  gap: clamp(28px, 5vw, 72px);
+.galak-hero-copy {
+  width: min(100%, 48vw, 38rem);
 }
 
-.galak-hero .journey-block-label,
 .galak-byline {
   color: #ebc08d;
 }
 
 .galak-byline {
   margin: 24px 0 10px;
+  color: var(--galak-hero-accent);
   font-weight: 700;
 }
 
@@ -53,7 +58,7 @@
   display: block;
   max-width: 40ch;
   margin-top: 14px;
-  color: #ebc08d;
+  color: var(--galak-hero-accent);
   font: 700 clamp(1rem, 1.7vw, 1.42rem)/1.32 'Archivo', sans-serif;
 }
 
@@ -64,26 +69,10 @@
   line-height: 1.55;
 }
 
-.galak-edition,
-.galak-cover figcaption {
+.galak-edition {
   margin: 14px 0 0;
   font-size: .85rem;
   line-height: 1.45;
-}
-
-.galak-cover {
-  margin: 0;
-}
-
-.galak-cover img {
-  display: block;
-  width: 100%;
-  max-height: 55svh;
-  object-fit: contain;
-}
-
-.galak-cover figcaption {
-  text-align: center;
 }
 
 .galak-author {
@@ -150,12 +139,33 @@ body:has(.journey-header) .galak-journey #lectura.hb-material-reading {
     width: calc(100% - 36px);
   }
 
-  .galak-hero-grid,
+  .galak-hero {
+    --galak-portrait-space: clamp(104px, 20svh, 180px);
+    background-image:
+      linear-gradient(180deg, #211e211a, #211e21db var(--galak-portrait-space), #211e21f0 100%),
+      url('/assets/portada-galak-del-dicho-al-hecho.png');
+    background-position: center, 94% top;
+  }
+
+  .galak-hero-copy {
+    width: 100%;
+    margin-block-start: var(--galak-portrait-space);
+  }
+
   .galak-milestones {
     grid-template-columns: minmax(0, 1fr);
   }
+}
 
-  .galak-cover img {
-    max-height: 48svh;
+@media print {
+  .galak-hero {
+    --galak-hero-accent: #272523;
+    background: none;
+    color: #272523;
+  }
+
+  .galak-hero-copy {
+    width: 100%;
+    margin-block-start: 0;
   }
 }
