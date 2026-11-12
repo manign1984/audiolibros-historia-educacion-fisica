@@ -80,6 +80,24 @@ assert.equal(arataEntry?.status, 'available', 'Arata y Mariño debe estar dispon
 const arataHtml = await readFile(resolve(dist, 'textos/arata-marino-auroras-tempestades/index.html'), 'utf8');
 assert.match(arataHtml, /Auroras y tempestades/);
 assert.ok(arataHtml.includes(`src="${normalizedBase}assets/`), 'Arata y Mariño: respetar la base de GitHub Pages.');
+// Levoratti: el lector comienza en Introducción; los preliminares de la edición
+// original permanecen en el TXT de origen, pero no se renderizan ni se listan.
+const levorattiPrepared = JSON.parse(await readFile(resolve('src/levoratti/readingDocument.generated.json'), 'utf8'));
+const levorattiDocument = levorattiPrepared.document;
+assert.equal(levorattiDocument.sections.length, 5, 'Levoratti debe conservar los cinco apartados de lectura.');
+assert.equal(levorattiDocument.sections[0].id, 'introduccion', 'Levoratti debe comenzar por Introducción.');
+assert.ok(levorattiDocument.sections[0].paragraphs[0].sentences[0].text.startsWith('En mayo de 1958'), 'No alterar el comienzo del cuerpo académico.');
+const levorattiDisplayedText = JSON.stringify(levorattiDocument.sections);
+for (const removedText of ['Portada, resúmenes y abstracts', 'Curitiba, v. 14', 'Physical Education and gymnastics in primary']) {
+  assert.ok(!levorattiDisplayedText.includes(removedText), 'Levoratti: preliminar no debe figurar en el lector: ' + removedText);
+}
+assert.equal(levorattiDocument.endnotes.length, 5, 'Levoratti debe preservar las cinco notas académicas.');
+assert.equal(levorattiPrepared.paragraphTimings.length, 39, 'Levoratti debe preservar los 39 párrafos con tiempo.');
+assert.equal(levorattiPrepared.legacyPageMap['0'], 'levoratti-introduccion-p1', 'El progreso histórico debe abrir un apartado existente.');
+assert.equal(levorattiDocument.legacySentenceMap['levoratti-preliminares-p1'], 'levoratti-introduccion-p1', 'Las anotaciones antiguas deben conservar un anclaje.');
+const levorattiSource = await readFile(resolve('public/assets/levoratti-gimnasia-1958-1968/texto-academico.txt'), 'utf8');
+assert.ok(levorattiSource.includes('Curitiba, v. 14'), 'El archivo original de fuente no debe perder sus preliminares.');
+
 // Regresión visual de build: abrir el modal necesita el CSS del lector completo.
 // No basta con compilar el JSX: la entrada independiente debe enlazar sus estilos.
 async function verifyIntegratedReaderStyles(route, work) {
