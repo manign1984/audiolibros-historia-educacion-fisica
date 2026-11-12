@@ -25,23 +25,6 @@
     ],
     "sections": [
       {
-        "id": "preliminares",
-        "title": "Portada, resúmenes y abstracts",
-        "shortTitle": "Portada, resúmenes y abstracts",
-        "paragraphs": [
-          {
-            "id": "levoratti-preliminares-p1",
-            "kind": "paragraph",
-            "sentences": [
-              {
-                "id": "levoratti-preliminares-p1-s1",
-                "text": "Curitiba, v. 14, n. 2, p. 162-178, outubro 2022 LA EDUCACIÓN FÍSICA Y LA GIMNASIA EN LA EDUCACIÓN PRIMARIA Y EL NIVEL MEDIO. UN ESTUDIO SOBRE LAS PERSPECTIVAS TEÓRICAS EN CIRCULACIÓN. (ARGENTINA, 1958-1968) Alejo Levoratti Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET) / Universidad Nacional de La Plata (UNLP). levoratti@gmail.com Envio original: 05-09-2022. Aceitar: 29-10-2022. Publicado: 09-10-2022. ________________________________________________________________________________ Resumen En 1958 se creó en el Ministerio de Educación de la Nación la Dirección General de Educación Física en un contexto de cambios en materia educativa de la mano de acuerdos con los organismos internacionales y concepciones desarrollistas. En este período se comienza a institucionalizar y legitimar un proyecto disciplinar que se auto consideraba como “moderno” y rupturista en relación a las perspectivas “positivistas”. Un punto central de la agenda de la Dirección fue la masificación de la Educación Física en los establecimientos educativos, la actualización del currículum y la capacitación de los docentes a cargo de la materia. Esto último se debía a que en las instituciones educativas de nivel primario se encontraban a cargo de maestros/as. En base a ello en este trabajo buscamos analizar las concepciones sobre la educación física y la gimnasia promovidos en los documentos curriculares del Estado Nacional para el nivel medio y primario. En particular buscamos identificar a los campos de saberes que sustentaron las propuestas, las principales perspectivas conceptuales y autores de referencia. Para ello analizaremos los diferentes documentos curriculares y la bibliografía que fueron produciendo los profesores que participaron de esos procesos. El desarrollo nos posibilitará visualizar la paulatina institucionalización de la psicología en la estructuración de las propuestas disciplinares y la instauración del “movimiento” como problemática nodal de la educación física. Palabras clave: Educación Física, Gimnasia, Educación, Teoría, Argentina. ________________________________________________________________________________ Educação Física e Ginástica no Ensino Fundamental e Médio. Um estudo sobre perspectivas teóricas em circulação (Argentina, 1958-1968) Resumo Em 1958, a Direção Geral de Educação Física foi criada no Ministério da Educação da Nação em um contexto de mudanças nas questões educacionais na mão de acordos com organizações internacionais e conceitos de desenvolvimento. Nesse período, um projeto disciplinar que se considerava \"moderno\" e disruptivo em relação às perspectivas \"positivistas\" começou a ser institucionalizado e legitimado. Um ponto central na agenda da Diretoria foi a massificação da Educação Física nos estabelecimentos de ensino, a atualização do currículo e a formação de professores responsáveis pela disciplina. Esta última se deve ao fato de as instituições de ensino fundamental serem dirigidas por professores. Com base nisso, neste trabalho buscamos analisar as concepções sobre educação física e ginástica veiculadas nos documentos curriculares do Estado Nacional para os níveis médio e fundamental. Em particular, buscamos identificar os campos do conhecimento que embasaram as propostas, as principais perspectivas conceituais e autores de referência. Para tal, iremos analisar os diferentes documentos curriculares e a bibliografia produzida pelos professores que participaram nestes processos. O desenvolvimento nos possibilitará visualizar a gradual institucionalização da psicologia na estruturação das propostas disciplinares e o estabelecimento do \"movimento\" como problema nodal da educação física. Palavras-chaves: Educação Física, Ginástica, Educação, Teoria, Argentina. ________________________________________________________________________________ Physical Education and gymnastics in primary and secondary education. A survey of the theoretical perspectives in circulation. (Argentina, 1958-1968) Abstract The paper deals with the training of physical education teachers at the time of the intervention of the Instituto Superior de Educación Física (ISEF) of Uruguay between September 1965 and November 1966. Following the strike and occupation of ISEF by students, the conservative government of the time decreed by Executive Decree No. 907 the intervention of the Institute. This can only be understood as part of the complex right-wing movement in the region. The main actions developed by the Intervention, its mechanisms and modes of education of the bodies and regulation of the student population are discussed. In such a short period, the implementation of the main regulatory and curricular transformations of the decade was linked to a certain degree of articulation between reform and dictatorship. Through the negotiation of various commissions, the Intervention was able to neutralize student protests and the demands of teachers and graduates. More than a radical change in training behaviours, practices and rituals, the Intervention brought together, strengthened and accentuated the most normalising, disciplinary and military aspects of training in previous decades, which had been part of the physical education tradition for many years. Keywords: Physical Education, Gymnastics, Education, Theory, Argentina. ________________________________________________________________________________"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "id": "introduccion",
         "title": "Introducción",
         "shortTitle": "Introducción",
@@ -505,7 +488,11 @@
       }
     ],
     "bibliography": [],
-    "sourceNote": "Edición académica del artículo, con sus resúmenes, apartados, notas y referencias. Las notas y los textos preliminares no reciben tiempos ficticios."
+    "sourceNote": "Edición de lectura que comienza en «Introducción» y conserva el cuerpo académico, las cinco notas y las referencias bibliográficas.",
+    "legacySentenceMap": {
+      "levoratti-preliminares-p1": "levoratti-introduccion-p1",
+      "levoratti-preliminares-p1-s1": "levoratti-introduccion-p1"
+    }
   },
   "paragraphTimings": [
     {
@@ -705,8 +692,8 @@
     }
   ],
   "legacyPageMap": {
-    "0": "levoratti-preliminares-p1",
-    "1": "levoratti-preliminares-p1",
+    "0": "levoratti-introduccion-p1",
+    "1": "levoratti-introduccion-p1",
     "2": "levoratti-introduccion-p2",
     "3": "levoratti-introduccion-p4",
     "4": "levoratti-introduccion-p6",
@@ -730,7 +717,6 @@
     "cueCount": 460,
     "mappedParagraphs": 39,
     "unmappedSections": [
-      "preliminares",
       "referencias"
     ],
     "endnotes": 5
