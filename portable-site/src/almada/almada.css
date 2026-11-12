@@ -1,0 +1,228 @@
+.almada-page {
+  background: #eae2d5;
+  font-family: 'Archivo', sans-serif;
+}
+
+.almada-skip {
+  position: fixed;
+  z-index: 1000;
+  inset: 12px auto auto 12px;
+  padding: 12px 18px;
+  color: #1c1714;
+  background: #f4eadd;
+  transform: translateY(calc(-100% - 16px));
+}
+
+.almada-skip:focus {
+  transform: translateY(0);
+}
+
+.almada-wrap {
+  width: min(1220px, calc(100% - 72px));
+  margin-inline: auto;
+}
+
+.almada-hero {
+  display: grid;
+  align-items: center;
+  background: #281f1b;
+  color: #f8eee0;
+}
+
+.almada-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 78px);
+}
+
+.almada-hero .journey-block-label {
+  color: #e6bc8f;
+}
+
+.almada-author-name {
+  margin: clamp(20px, 5svh, 50px) 0 12px;
+  color: #e6bc8f;
+  font-size: .84rem;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.almada-hero h1,
+.almada-context h2 {
+  margin: 0;
+  font-family: 'Bebas Neue', 'Archivo', sans-serif;
+  font-weight: 400;
+  overflow-wrap: break-word;
+}
+
+.almada-hero h1 {
+  max-width: 13ch;
+  font-size: clamp(4rem, min(7vw, 11svh), 7.2rem);
+  line-height: .91;
+}
+
+.almada-hero h1 em {
+  color: #e6bc8f;
+  font-style: normal;
+}
+
+.almada-subtitle {
+  max-width: 33ch;
+  margin: 20px 0 0;
+  font-size: clamp(1.1rem, 1.9vw, 1.52rem);
+  font-weight: 700;
+  line-height: 1.27;
+}
+
+.almada-hero-intro {
+  max-width: 43ch;
+  margin: 24px 0 0;
+  color: #e1d6c6;
+  line-height: 1.6;
+}
+
+.almada-edition {
+  margin: 22px 0 0;
+  color: #e6bc8f;
+  font-size: .78rem;
+}
+
+.almada-hero-photo {
+  width: min(100%, 510px, calc(var(--hero-room) * .77));
+  margin: 0;
+  justify-self: center;
+  padding: clamp(7px, 1vw, 12px);
+  border: 1px solid #a48973;
+  background: #e8decb;
+  color: #362b22;
+}
+
+.almada-hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.almada-hero-photo figcaption {
+  padding: 8px 3px 1px;
+  font-size: .77rem;
+  line-height: 1.45;
+}
+
+.almada-author {
+  --paper-light: #f7efdf;
+  --mustard: #f1ca9f;
+  background: #65342a;
+}
+
+.almada-context {
+  display: grid;
+  align-items: center;
+  min-height: var(--hero-room, calc(100svh - var(--journey-header-height, 80px)));
+  padding-block: clamp(30px, 6svh, 68px);
+}
+
+.almada-context-policy {
+  background: #eee6d8;
+  color: #2b211b;
+}
+
+.almada-context-tournaments {
+  background: #d8c5ab;
+  color: #2b211b;
+}
+
+.almada-context-content {
+  max-width: 1090px;
+}
+
+.almada-context h2 {
+  margin-top: 14px;
+  font-size: clamp(2.8rem, 5.8vw, 5.25rem);
+  line-height: .96;
+}
+
+.almada-context-lead {
+  max-width: 66ch;
+  margin: 18px 0 0;
+  font-size: clamp(1rem, 1.6vw, 1.19rem);
+  line-height: 1.6;
+}
+
+.almada-institutions,
+.almada-perspectives {
+  display: grid;
+  gap: clamp(16px, 3vw, 44px);
+  margin: clamp(20px, 6svh, 54px) 0 0;
+}
+
+.almada-institutions {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.almada-perspectives {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.almada-institutions > div,
+.almada-perspectives > article {
+  padding-block: 16px 4px;
+  border-top: 2px solid #845144;
+}
+
+.almada-institutions dt,
+.almada-perspectives h3 {
+  margin: 0 0 9px;
+  color: #5b3226;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.almada-institutions dd,
+.almada-perspectives p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.almada-question {
+  max-width: 65ch;
+  margin: clamp(20px, 5svh, 46px) 0 0;
+  padding-inline-start: 16px;
+  border-inline-start: 3px solid #845144;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+body:has(.journey-header) .almada-page #lectura.hb-material-reading {
+  --material-paper: #f3e6d6;
+  --material-ink: #2b211b;
+  --material-rust: #894737;
+}
+
+@media (max-width: 760px) {
+  .almada-wrap {
+    width: calc(100% - 36px);
+  }
+
+  .almada-hero-grid,
+  .almada-institutions,
+  .almada-perspectives {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .almada-hero-grid {
+    padding-block: 20px;
+  }
+
+  .almada-hero h1 {
+    font-size: clamp(2.8rem, 12vw, 4.65rem);
+  }
+
+  .almada-hero-photo {
+    width: min(100%, 440px);
+    justify-self: start;
+  }
+}

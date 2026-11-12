@@ -29,7 +29,7 @@ const records = [
   ['noble-reforma-educacional', 'Roberto Noble', 'Reforma educacional de Buenos Aires', 'Reforma educacional de Buenos Aires', 'conservadurismo', '1937', 'Noble, R. (1937). Reforma educacional de Buenos Aires. Taller de Impresiones Oficiales. La Plata.', 'programa-optativa'],
   ['orbuch-peronismo-educacion-fisica', 'Iván Orbuch', 'Peronismo y Educación Física', 'Peronismo y Educación Física. Políticas públicas entre 1946 y 1955', 'peronismo', '2016', 'Orbuch, I. (2016). Peronismo y Educación Física. Políticas públicas entre 1946 y 1955 (caps. 2 y 3). Miño y Dávila.', 'programa'],
   ['torre-pastoriza-bienestar', 'Juan Carlos Torre · Elisa Pastoriza', 'La democratización del bienestar', 'La democratización del bienestar', 'peronismo', '2002', 'Torre, J. C. y Pastoriza, E. (2002). La democratización del bienestar. Sudamericana. Buenos Aires.', 'programa'],
-  ['almada-privilegiados', 'Cecilia Almada', 'Los privilegiados en la Nueva Argentina', 'Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo', 'peronismo', '2020', 'Almada, C. (2020). Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo. History of Education in Latin America.', 'materiales'],
+  ['almada-privilegiados', 'Cecilia Almada', 'Los privilegiados en la Nueva Argentina', 'Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo', 'peronismo', '2020', 'Almada, C. (2020). Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo. History of Education in Latin America - HistELA, 3, e21434. https://doi.org/10.21680/2596-0113.2020v3n0ID21434', 'materiales'],
   ['pineau-reprimir-discriminar', 'Pablo Pineau', 'Reprimir y discriminar', 'Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)', 'dictadura', '2014', 'Pineau, P. (2014). Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983). Educar em Revista, 51, 103–122.', 'programa'],
   ['melano-aisenstein-ultima-dictadura', 'Ignacio Melano · Ángela Aisenstein', 'Formación docente en dictadura', 'Formación docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”', 'dictadura', '2018', 'Melano, I. y Aisenstein, A. (2018). Formación docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”. En C. Kaufmann, Estudios sobre historia y política de la educación argentina reciente (1960–2000) (pp. 179–198). FahrenHouse.', 'programa'],
   ['arata-marino-auroras-tempestades', 'Nicolás Arata · Marcelo Mariño', 'Auroras y tempestades', 'Auroras y tempestades: la educación entre golpes (1955–1976)', 'dictadura', '2013', 'Arata, N. y Mariño, M. (2013). Auroras y tempestades: la educación entre golpes (1955–1976). En La educación en la Argentina. Una historia en 12 lecciones (lección 10). Ediciones Novedades Educativas.', 'programa', 'assets/arata-marino/autor-editorial.svg'],
@@ -43,6 +43,13 @@ const records = [
 // Obras con lectura y audio habilitados; la disponibilidad del lector
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
+  'almada-privilegiados': {
+    status: 'text',
+    canonicalCard: true,
+    stateKey: 'almada-privilegiados-text-page-v1',
+    historicalPeriod: 'Primer peronismo · 1946–1955',
+    artwork: 'assets/almada/campeonato-infantil.webp',
+  },
   'arata-marino-auroras-tempestades': {
     status: 'available',
     duration: 3612.447347,
