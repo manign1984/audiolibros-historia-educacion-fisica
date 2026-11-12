@@ -12,7 +12,7 @@ import { melanoReaderConfig } from './readerConfig.js';
 import './melano.css';
 
 const PORTRAIT = import.meta.env.BASE_URL + 'assets/melano/ignacio-melano-retrato-20261111.jpg';
-const HERO_BACKGROUND = import.meta.env.BASE_URL + 'assets/melano/inicio-archivo-1977.png';
+const HERO_IMAGE = import.meta.env.BASE_URL + 'assets/melano/inicio-archivo-1977.png';
 const RESOLUTION_URL = 'https://drive.google.com/file/d/15bo6oZeE9vhYWFbytFNyZCCSvcQGIg0f/view';
 const CHAPTER_URL = 'https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view';
 const BIO = 'Ignacio Emmanuel Melano es profesor y licenciado en Educación Física y magíster en Ciencias Sociales y Humanidades por la Universidad Nacional de Quilmes. Su producción académica aborda la historia de la formación de profesores, las culturas escolares y las relaciones entre educación, política y poder. Ha investigado especialmente la trayectoria del Instituto Nacional de Educación Física General Belgrano y sus transformaciones durante la última dictadura y la recuperación democrática.';
@@ -31,10 +31,15 @@ const groups = [
 
 function Inicio() {
   return <section id="inicio" className="melano-screen melano-hero" aria-labelledby="melano-title">
-    <div className="melano-hero__background" aria-hidden="true">
-      <img src={HERO_BACKGROUND} alt="" fetchPriority="high" decoding="async" />
-    </div>
-    <div className="melano-container melano-hero__layout">
+    <div className="melano-hero__layout">
+      <img
+        className="melano-hero__image"
+        src={HERO_IMAGE}
+        alt="Composición con la Resolución 543 de 1977, una fotografía del predio de San Fernando y el distintivo del INEF General Belgrano"
+        width={2048}
+        height={841}
+        fetchPriority="high"
+      />
       <div className="melano-hero__copy">
         <JourneyBlockLabel sectionId="inicio" />
         <p className="melano-eyebrow">Ignacio Melano <span aria-hidden="true">/</span> Capítulo 6 · EdUNLu</p>

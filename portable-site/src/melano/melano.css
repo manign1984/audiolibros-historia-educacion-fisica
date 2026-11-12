@@ -1,113 +1,92 @@
-
-/* BEYOND THE STARS · Ignacio Melano.
-   Paleta enviada por el equipo, 10/11/2026:
-   azul petróleo #051e28, verde #3a8841, turquesa #40b5bc,
-   azul violeta #483df6, lavanda #86759f.
-   Solo identidad cromática del bloque Lectura: el trazado es canónico. */
+/* Paleta del distintivo del INEF General Belgrano y variantes de contraste. */
 .melano-page {
-  --ml-ink: #051e28;
-  --ml-green: #3a8841;
-  --ml-turquoise: #40b5bc;
-  --ml-violet: #483df6;
-  --ml-lavender: #86759f;
-  --ml-light: #f3f5f7;
+  --ml-ink: #141d11;
+  --ml-green: #205622;
+  --ml-blue: #5298b4;
+  --ml-blue-ink: #245b70;
+  --ml-rust: #983f2c;
+  --ml-cream: #f3e4cb;
+  --ml-paper: #fbf5e9;
+  --ml-sky: #dfedf2;
+  --ml-muted: #425047;
   --reading-room: calc(100svh - var(--journey-header-height, 80px));
-  --paper-light: #f7fbfa;
-  --mustard: #40b5bc;
-  --journey-label-color: #40b5bc;
-  background: #f3f5f7;
-  color: #051e28;
+  --paper-light: var(--ml-paper);
+  --mustard: var(--ml-blue-ink);
+  --journey-label-color: var(--ml-blue-ink);
+  background: var(--ml-paper);
+  color: var(--ml-ink);
   font: 400 17px/1.55 'Archivo', sans-serif;
   font-synthesis: none;
 }
 .melano-page *, .melano-page *::before, .melano-page *::after { box-sizing: border-box; }
 html:has(.melano-page) { scroll-padding-top: var(--journey-header-height, 80px); }
 body:has(.melano-page) { margin: 0; }
-.melano-page :focus-visible { outline: 3px solid var(--ml-violet); outline-offset: 4px; }
+.melano-main :focus-visible { outline: 3px solid var(--ml-blue-ink); outline-offset: 4px; }
 .melano-main { padding-top: var(--journey-header-height, 80px); }
 .melano-screen { min-height: var(--reading-room); overflow: visible; }
 .melano-container { width: min(1250px, calc(100% - 88px)); margin-inline: auto; }
-.melano-skip { position: fixed; top: -100px; left: 16px; z-index: 2500; padding: 12px 18px; background: white; color: #051e28; }
+.melano-skip { position: fixed; top: -100px; left: 16px; z-index: 2500; padding: 12px 18px; background: white; color: var(--ml-ink); }
 .melano-skip:focus { top: 10px; }
 .melano-eyebrow { margin: 0; font: 700 12px/1.35 'Archivo', sans-serif; letter-spacing: .17em; text-transform: uppercase; }
 
 
-/* 01 · INICIO · Mecanografía sobre documento y fotografía originales (2026-11-12).
-   La composición aportada permanece como imagen completa de fondo;
-   las letras son HTML real, accesible y seleccionable. */
-.melano-hero {
-  position: relative;
-  isolation: isolate;
-  display: flex;
-  align-items: stretch;
-  padding: 0;
-  background: #ecddc2;
-  color: #342920;
-}
-.melano-hero__background {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-.melano-hero__background img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+/* 01 · Inicio: la imagen determina el encuadre, sin estirar el original. */
+body:has(.journey-header) #inicio.melano-hero {
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  padding: 0 0 26px;
+  background: var(--ml-cream);
 }
 .melano-hero__layout {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  min-height: var(--reading-room);
-  width: min(1680px, calc(100% - 88px));
-  padding: clamp(130px, 17svh, 180px) 0 clamp(24px, 4svh, 42px);
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+.melano-hero__image {
+  display: block;
+  width: min(100%, calc(var(--reading-room) * 2048 / 841));
+  height: auto;
 }
 .melano-hero__copy {
-  width: min(52%, 680px);
-  min-width: 0;
-  padding-left: clamp(0px, 1.15vw, 18px);
+  width: min(720px, calc(100% - 36px));
+  margin-top: 24px;
   font-family: 'Courier New', 'Liberation Mono', monospace;
 }
-.melano-hero .journey-block-label {
-  color: #68483f;
-}
+.melano-hero .journey-block-label { color: var(--ml-blue-ink); }
 .melano-hero .melano-eyebrow {
   margin: 19px 0 14px;
-  color: #564139;
+  color: var(--ml-green);
   font: 700 clamp(11px, .95vw, 14px)/1.5 'Courier New', 'Liberation Mono', monospace;
   letter-spacing: .035em;
   text-transform: uppercase;
 }
-.melano-hero .melano-eyebrow span { padding-inline: 5px; color: #885b52; }
+.melano-hero .melano-eyebrow span { padding-inline: 5px; color: var(--ml-blue-ink); }
 .melano-hero h1 {
   margin: 0 0 16px;
   max-width: 100%;
-  color: #29231f;
+  color: var(--ml-ink);
   font: 700 clamp(30px, 3.05vw, 55px)/1.09 'Courier New', 'Liberation Mono', monospace;
   letter-spacing: -.043em;
   overflow-wrap: break-word;
-  text-shadow: 0 .5px .5px #6b514533;
+  text-shadow: 0 .5px .5px #141d1126;
 }
 .melano-hero h1 span {
   display: block;
   margin-top: 6px;
-  color: #6a3439;
+  color: var(--ml-rust);
 }
 .melano-hero__subtitle {
   max-width: 690px;
   margin: 0 0 17px;
-  color: #423129;
+  color: var(--ml-ink);
   font: 700 clamp(16px, 1.46vw, 22px)/1.33 'Courier New', 'Liberation Mono', monospace;
   letter-spacing: -.035em;
 }
 .melano-hero__intro {
   max-width: 675px;
   margin: 0;
-  color: #382d25;
+  color: var(--ml-ink);
   font: 400 clamp(13px, 1.04vw, 16px)/1.55 'Courier New', 'Liberation Mono', monospace;
   letter-spacing: -.02em;
 }
@@ -118,105 +97,109 @@ body:has(.melano-page) { margin: 0; }
   margin-top: 23px;
   min-height: 44px;
   padding: 7px 2px;
-  border-bottom: 2px solid #6a3439;
-  color: #5d2f32;
+  border-bottom: 2px solid var(--ml-rust);
+  color: var(--ml-blue-ink);
   font: 700 clamp(12px, 1vw, 14px)/1.4 'Courier New', 'Liberation Mono', monospace;
   letter-spacing: .015em;
   text-decoration: none;
   text-transform: uppercase;
 }
-.melano-hero__next:hover { color: #231a19; border-color: #231a19; }
-.melano-hero__next:focus-visible { outline: 3px solid #493ab1; outline-offset: 4px; }
+.melano-hero__next:hover { color: var(--ml-green); border-color: var(--ml-green); }
+.melano-hero__next:focus-visible { outline: 3px solid var(--ml-blue-ink); outline-offset: 4px; }
 
 .melano-author { display: flex; align-items: center; padding: 70px 0; background: var(--ml-green);
-  --paper-light: #f7fff9; --mustard: #c5f4f1; --journey-label-color: #f7fff9; }
+  --paper-light: var(--ml-paper); --mustard: #b9e2ef; --journey-label-color: var(--ml-paper); }
 .melano-page .melano-author .canonical-author-photo img { filter: grayscale(1) contrast(1.1); object-position: center 30%; }
-.melano-page .melano-author .canonical-author-photo figcaption { color:#eafaf2; opacity:1; }
+.melano-page .melano-author .canonical-author-photo figcaption { color:var(--ml-paper); opacity:1; }
 .melano-page .melano-author .canonical-author-grid { max-width:1240px; }
-.melano-page .melano-author .canonical-author-link { color:white; }
-.melano-page .melano-author :focus-visible { outline-color:#fafafa; }
+.melano-page .melano-author .canonical-author-link { color:var(--ml-paper); }
+.melano-page .melano-author :focus-visible { outline-color:#b9e2ef; }
 
 .melano-context-screen { display:flex; align-items:center; padding:clamp(28px,4svh,48px) 0; }
 .melano-context-inner { display:flex; flex-direction:column; justify-content:space-between; gap:clamp(18px,2.2svh,25px); }
-.melano-context-one { background: #f3f5f7; color: var(--ml-ink); }
-.melano-context-two { background: #dce5e8; color: var(--ml-ink); }
+.melano-context-one { background: var(--ml-paper); color: var(--ml-ink); }
+.melano-context-two { background: var(--ml-sky); color: var(--ml-ink); }
 .melano-context-top { display:flex; justify-content:space-between; gap:20px; align-items:center; }
-.melano-context-top span { font:700 11px/1.4 'Archivo',sans-serif; color:#42556a; letter-spacing:.1em; text-transform:uppercase; }
-.melano-context-one .journey-block-label, .melano-context-two .journey-block-label { color:var(--ml-violet); }
+.melano-context-top span { font:700 11px/1.4 'Archivo',sans-serif; color:var(--ml-muted); letter-spacing:.1em; text-transform:uppercase; }
+.melano-context-one .journey-block-label, .melano-context-two .journey-block-label { color:var(--ml-blue-ink); }
 .melano-context-heading { max-width:1030px; }
 .melano-context-heading .melano-eyebrow { color:var(--ml-green); }
 .melano-context-heading h2 { font:900 clamp(33px,3.75vw,57px)/1.1 'Archivo',sans-serif; letter-spacing:-.055em; margin:9px 0 13px; }
-.melano-context-heading h2 em { color:var(--ml-violet); font-style:normal; }
+.melano-context-heading h2 em { color:var(--ml-blue-ink); font-style:normal; }
 .melano-context-heading > p:last-child { max-width:890px; font-size:clamp(15px,1.18vw,18px); line-height:1.5; margin:0; }
 .melano-stages { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; }
-.melano-stage { min-width:0; padding:20px 21px 18px; border-top:6px solid var(--ml-violet); background:#fff; box-shadow:0 10px 22px #051e2812; }
+.melano-stage { min-width:0; padding:20px 21px 18px; border-top:6px solid var(--ml-blue-ink); background:#fff; box-shadow:0 10px 22px #141d1112; }
 .melano-stage:nth-child(2) { border-top-color:var(--ml-green); }
-.melano-stage:nth-child(3) { border-top-color:var(--ml-lavender); }
+.melano-stage:nth-child(3) { border-top-color:var(--ml-rust); }
 .melano-stage__head { display:flex; justify-content:space-between; align-items:start; gap:10px; }
 .melano-stage__head span { font:400 clamp(49px,5vw,75px)/.93 'Bebas Neue',sans-serif; color:var(--ml-ink); }
-.melano-stage__head small { font:700 12px/1 'Archivo',sans-serif; color:var(--ml-lavender); }
+.melano-stage__head small { font:700 12px/1 'Archivo',sans-serif; color:var(--ml-rust); }
 .melano-stage h3 { font-size:19px; letter-spacing:-.025em; margin:10px 0 6px; }
 .melano-stage p { margin:0; font-size:14px; line-height:1.45; }
 .melano-groups { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
-.melano-groups > div { display:flex; flex-direction:column; gap:5px; padding-left:14px; border-left:3px solid var(--ml-turquoise); }
+.melano-groups > div { display:flex; flex-direction:column; gap:5px; padding-left:14px; border-left:3px solid var(--ml-blue); }
 .melano-groups > div:nth-child(2) { border-left-color:var(--ml-green); }
-.melano-groups > div:nth-child(3) { border-left-color:var(--ml-violet); }
+.melano-groups > div:nth-child(3) { border-left-color:var(--ml-blue-ink); }
 .melano-groups strong { font-size:15px; color:var(--ml-ink); }
-.melano-groups span { font-size:12px; line-height:1.43; color:#425661; }
-.melano-question { margin:0; padding:10px 0 0; border-top:1px solid #9cb2b5; font:700 clamp(15px,1.3vw,19px)/1.35 'Archivo',sans-serif; color:#253f50; }
+.melano-groups span { font-size:12px; line-height:1.43; color:var(--ml-muted); }
+.melano-question { margin:0; padding:10px 0 0; border-top:1px solid #a2b6af; font:700 clamp(15px,1.3vw,19px)/1.35 'Archivo',sans-serif; color:var(--ml-green); }
 .melano-sources { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
 .melano-source-card { min-width:0; display:flex; flex-direction:column; gap:9px; padding:24px 27px; border-top:7px solid var(--ml-green); background:#fefefe; }
-.melano-source-card--quote { border-top-color:var(--ml-violet); }
-.melano-source-card__head { display:flex; align-items:center; gap:11px; color:#486067; font:700 11px/1.3 'Archivo',sans-serif; text-transform:uppercase; letter-spacing:.09em; }
+.melano-source-card--quote { border-top-color:var(--ml-blue-ink); }
+.melano-source-card__head { display:flex; align-items:center; gap:11px; color:var(--ml-muted); font:700 11px/1.3 'Archivo',sans-serif; text-transform:uppercase; letter-spacing:.09em; }
 .melano-source-card__number { font:400 clamp(46px,5vw,72px)/1 'Bebas Neue',sans-serif; color:var(--ml-green); margin:10px 0 0; }
-.melano-source-card blockquote { margin:16px 0 9px; font:700 clamp(19px,2.1vw,29px)/1.23 'Archivo',sans-serif; letter-spacing:-.03em; color:var(--ml-violet); }
+.melano-source-card blockquote { margin:16px 0 9px; font:700 clamp(19px,2.1vw,29px)/1.23 'Archivo',sans-serif; letter-spacing:-.03em; color:var(--ml-blue-ink); }
 .melano-source-card h3 { font-size:22px; letter-spacing:-.02em; margin:0; }
 .melano-source-card p { margin:0; font-size:14px; line-height:1.47; }
-.melano-source-card a { display:inline-flex; align-items:center; gap:8px; align-self:start; margin-top:auto; padding-top:9px; color:#142f48; font-size:12px; font-weight:700; border-bottom:1px solid currentColor; text-decoration:none; }
-.melano-reading-key { display:grid; grid-template-columns:minmax(200px,.8fr) 1.2fr; gap:30px; align-items:center; padding:15px 19px; border-left:6px solid var(--ml-turquoise); background:#edf4f5; }
+.melano-source-card a { display:inline-flex; align-items:center; gap:8px; align-self:start; margin-top:auto; padding-top:9px; color:var(--ml-blue-ink); font-size:12px; font-weight:700; border-bottom:1px solid currentColor; text-decoration:none; }
+.melano-reading-key { display:grid; grid-template-columns:minmax(200px,.8fr) 1.2fr; gap:30px; align-items:center; padding:15px 19px; border-left:6px solid var(--ml-blue); background:var(--ml-paper); }
 .melano-reading-key > div { display:flex; align-items:center; gap:12px; color:var(--ml-ink); font-size:15px; line-height:1.28; }
 .melano-reading-key p { margin:0; font-size:13px; line-height:1.5; }
 
-body:has(.journey-header) .melano-page #lectura.hb-material-reading { --material-paper:#eff5f4; --material-ink:#051e28; --material-rust:#483df6; }
+body:has(.journey-header) .melano-page #lectura.hb-material-reading { --material-paper:var(--ml-cream); --material-ink:var(--ml-ink); --material-rust:var(--ml-rust); --journey-label-color:var(--ml-blue-ink); }
 .melano-page #lectura.hb-material-reading > .text-only-entry { width:100%; min-width:0; }
 .melano-page #lectura.hb-material-reading .hb-material-dots {
-  background:radial-gradient(circle at 4px 4px, #483df640 0 1.6px, transparent 2px) 0 0 / 17px 17px;
+  background:radial-gradient(circle at 4px 4px, #245b7040 0 1.6px, transparent 2px) 0 0 / 17px 17px;
 }
 .melano-page #lectura.hb-material-reading .hb-material-open {
-  color:#f7fcff; border-color:#67c6c6; border-right-color:#071f30; border-bottom-color:#041624;
-  background:linear-gradient(156deg,#305d9a 0%,#483df6 43%,#252384 100%);
-  box-shadow: inset 2px 3px 2px #f7faff66, inset 7px 0 8px #40b5bc40,
-    inset -2px -5px 3px #0f1043bb, 1px 5px 0 #11184d,
-    7px 18px 20px -7px #161a6a66, 14px 30px 26px -12px #483df64d;
+  color:var(--ml-paper); border-color:var(--ml-blue); border-right-color:#16391c; border-bottom-color:#122816;
+  background:linear-gradient(156deg,#367247 0%,var(--ml-green) 43%,#17391b 100%);
+  box-shadow: inset 2px 3px 2px #fbf5e966, inset 7px 0 8px #5298b440,
+    inset -2px -5px 3px #122816bb, 1px 5px 0 #17391b,
+    7px 18px 20px -7px #17391b66, 14px 30px 26px -12px #2056224d;
 }
-.melano-page #lectura.hb-material-reading .hb-material-open::before { border-color:#ffffff44; border-bottom-color:#131163a6; }
-.melano-page #lectura.hb-material-reading .hb-material-open > svg:last-child { color:#40b5bc; filter:drop-shadow(0 0 5px #40b5bc88); }
-.melano-page #lectura.hb-material-reading .hb-material-synopsis { color:#294a54; }
+.melano-page #lectura.hb-material-reading .hb-material-open::before { border-color:#ffffff44; border-bottom-color:#17391ba6; }
+.melano-page #lectura.hb-material-reading .hb-material-open > svg:last-child { color:#b9e2ef; filter:drop-shadow(0 0 5px #5298b488); }
+.melano-page #lectura.hb-material-reading .hb-material-synopsis { color:var(--ml-muted); }
 
-.melano-toast { position:fixed; bottom:16px; left:50%; transform:translateX(-50%); z-index:2100; color:white; background:#051e28; border-radius:5px; padding:7px 12px; font-size:12px; pointer-events:none; }
+.melano-toast { position:fixed; bottom:16px; left:50%; transform:translateX(-50%); z-index:2100; color:white; background:var(--ml-ink); border-radius:5px; padding:7px 12px; font-size:12px; pointer-events:none; }
 .melano-toast:empty { display:none; }
 
 @media (max-width: 1050px) {
   .melano-container { width: min(100% - 54px, 1250px); }
 }
-@media (max-width: 850px) {
-  /* La imagen panorámica se conserva completa arriba; el texto baja a papel.
-     Así no se recorta la foto ni se superponen textos sobre sellos en móvil. */
-  .melano-hero { display: block; background: #ecddc2; }
-  .melano-hero__background { inset: 0 0 auto; width: 100%; aspect-ratio: 2048 / 841; }
-  .melano-hero__background img { height: auto; object-fit: contain; }
+@media (min-width: 1100px) and (min-height: 680px) {
+  body:has(.journey-header) #inicio.melano-hero {
+    align-content: center;
+    padding: 0;
+  }
   .melano-hero__layout {
-    display: block;
-    min-height: 0;
-    padding: clamp(175px, 42.2vw, 360px) 0 42px;
+    width: min(100%, calc(var(--reading-room) * 2048 / 841));
   }
+  .melano-hero__image,
   .melano-hero__copy {
-    width: 100%;
-    max-width: 740px;
-    padding: 24px 26px 30px;
-    border: 1px solid #b49b7b55;
-    background: #f1e3ca;
+    grid-area: 1 / 1;
   }
+  .melano-hero__image { width: 100%; }
+  .melano-hero__copy {
+    align-self: center;
+    justify-self: start;
+    width: min(45%, 680px);
+    margin: 0 0 0 5%;
+    padding-block: 10% 2%;
+  }
+}
+@media (max-width: 850px) {
   .melano-hero h1 { font-size: clamp(30px, 5.8vw, 43px); }
   .melano-hero__intro { font-size: 15px; }
   .melano-author { padding: 60px 0; }
@@ -226,8 +209,6 @@ body:has(.journey-header) .melano-page #lectura.hb-material-reading { --material
 }
 @media (max-width: 640px) {
   .melano-container { width: calc(100% - 34px); }
-  .melano-hero__layout { padding-top: clamp(170px, 42.2vw, 270px); padding-bottom: 34px; }
-  .melano-hero__copy { padding: 21px 17px 26px; }
   .melano-hero .melano-eyebrow { font-size: 11px; }
   .melano-hero h1 { font-size: clamp(29px, 8.2vw, 39px); overflow-wrap: anywhere; }
   .melano-hero__subtitle { font-size: 17px; }
@@ -256,5 +237,5 @@ body:has(.journey-header) .melano-page #lectura.hb-material-reading { --material
   margin: .5rem auto;
   padding: .6rem;
   text-align: center;
-  color: #051e28;
+  color: var(--ml-ink);
 }
