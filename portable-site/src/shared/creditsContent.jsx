@@ -1,6 +1,19 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  torrePastoriza: {
+    references: [
+      <>Torre, J. C., &amp; Pastoriza, E. (2002). La democratización del bienestar. En J. C. Torre (Dir.), <em>Los años peronistas (1943–1955)</em> (pp. 257–312). Sudamericana.</>,
+      link('https://drive.google.com/file/d/1BJNJ5DyEJIylbX8E5EG6i2WMoFh5-1yx/view', 'Edición de cátedra en PDF · texto y cuadros originales'),
+      link('https://www.cedinpe.unsam.edu.ar/content/los-a%C3%B1os-peronistas-1943-1955', 'CEDINPE · índice del volumen'),
+      link('https://www.e-publicacoes.uerj.br/transversos/article/view/78444', 'Elisa Pastoriza · trayectoria e historia del turismo'),
+    ],
+    rights: [
+      <>Portada: <em>Chapadmalal, colonia de vacaciones</em> (1950), fotógrafo desconocido. Archivo General de la Nación, inventario 249819. {link('https://commons.wikimedia.org/wiki/File:Chapadmalal,_colonia_de_vacaciones,_1950.jpg', 'Ficha de la fotografía y dominio público')}.</>,
+      <>El lector reproduce la edición de cátedra. Para ver los cuadros estadísticos con su disposición original, consultá el PDF.</>,
+      <>Composición tipográfica de Autor y claves de Contexto, +TEC UNAHUR.</>,
+    ],
+  },
   feiguinAisenstein: {
     references: [
       <>Feiguin, M. A., &amp; Aisenstein, Á. (2016). Diseño de sujetos morales, sanos y patriotas. Formación de profesores de Educación Física. Argentina, 1938–1967. <em>Pedagogía y Saberes</em>, (44), 9–20. {link('https://hdl.handle.net/20.500.12209/7554', 'Edición original')}.</>,

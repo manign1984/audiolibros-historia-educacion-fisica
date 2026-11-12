@@ -28,7 +28,7 @@ const records = [
   ['feiguin-aisenstein-sujetos', 'María Andrea Feiguin · Ángela Aisenstein', 'Morales, sanos y patriotas', 'Diseño de sujetos morales, sanos y patriotas. Formación de profesores de Educación Física. Argentina, 1938–1967', 'conservadurismo', '2016', 'Feiguin, M. A. y Aisenstein, A. (2016). Diseño de sujetos morales, sanos y patriotas. Formación de profesores de Educación Física. Argentina, 1938–1967. Pedagogía y Saberes, 44, 9–20.', 'programa-optativa'],
   ['noble-reforma-educacional', 'Roberto Noble', 'Reforma educacional de Buenos Aires', 'Reforma educacional de Buenos Aires', 'conservadurismo', '1937', 'Noble, R. (1937). Reforma educacional de Buenos Aires. Taller de Impresiones Oficiales. La Plata.', 'programa-optativa'],
   ['orbuch-peronismo-educacion-fisica', 'Iván Orbuch', 'Peronismo y Educación Física', 'Peronismo y Educación Física. Políticas públicas entre 1946 y 1955', 'peronismo', '2016', 'Orbuch, I. (2016). Peronismo y Educación Física. Políticas públicas entre 1946 y 1955 (caps. 2 y 3). Miño y Dávila.', 'programa'],
-  ['torre-pastoriza-bienestar', 'Juan Carlos Torre · Elisa Pastoriza', 'La democratización del bienestar', 'La democratización del bienestar', 'peronismo', '2002', 'Torre, J. C. y Pastoriza, E. (2002). La democratización del bienestar. Sudamericana. Buenos Aires.', 'programa'],
+  ['torre-pastoriza-bienestar', 'Juan Carlos Torre · Elisa Pastoriza', 'La democratización del bienestar', 'La democratización del bienestar', 'peronismo', '2002', 'Torre, J. C. y Pastoriza, E. (2002). La democratización del bienestar. En J. C. Torre (Dir.), Los años peronistas (1943–1955) (pp. 257–312). Sudamericana.', 'programa'],
   ['almada-privilegiados', 'Cecilia Almada', 'Los privilegiados en la Nueva Argentina', 'Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo', 'peronismo', '2020', 'Almada, C. (2020). Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo. History of Education in Latin America - HistELA, 3, e21434. https://doi.org/10.21680/2596-0113.2020v3n0ID21434', 'materiales'],
   ['pineau-reprimir-discriminar', 'Pablo Pineau', 'Reprimir y discriminar', 'Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)', 'dictadura', '2014', 'Pineau, P. (2014). Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983). Educar em Revista, 51, 103–122.', 'programa'],
   ['melano-aisenstein-ultima-dictadura', 'Ignacio Melano · Ángela Aisenstein', 'Formación docente en dictadura', 'Formación docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”', 'dictadura', '2018', 'Melano, I. y Aisenstein, A. (2018). Formación docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”. En C. Kaufmann, Estudios sobre historia y política de la educación argentina reciente (1960–2000) (pp. 179–198). FahrenHouse.', 'programa'],
@@ -43,6 +43,13 @@ const records = [
 // Obras con lectura y audio habilitados; la disponibilidad del lector
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
+  'torre-pastoriza-bienestar': {
+    status: 'text',
+    canonicalCard: true,
+    stateKey: 'torre-pastoriza-bienestar-text-page-v1',
+    historicalPeriod: 'Primer peronismo · 1946–1955',
+    artwork: 'assets/torre-pastoriza/chapadmalal-1950.webp',
+  },
   'feiguin-aisenstein-sujetos': {
     status: 'available',
     canonicalCard: true,
