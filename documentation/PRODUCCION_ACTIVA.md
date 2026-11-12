@@ -14,7 +14,7 @@
 
 **Insumos:** [texto de cátedra](https://docs.google.com/document/d/13A6FQADf_wm9m1g2b6p8U7q6U6PUScpgwh1Td_l6nyk/edit) y [PDF de referencia](https://drive.google.com/file/d/1aUEe7Lr5bTdD4XpziC1PvjMIFfJkxs8b/view).
 
-**Rama y ruta técnica:** [`feature/levoratti-debates-ef`](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/levoratti-debates-ef) · [GitHub Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/levoratti-debates-ef/).
+**PR, commit, rama y ruta técnica:** [PR #148](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/148) · [`ad445dcf51b3`](https://github.com/manign1984/audiolibros-historia-educacion-fisica/commit/ad445dcf51b3298a0993c01da3a91f43622f37bc) · [`feature/levoratti-debates-ef`](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/levoratti-debates-ef) · [GitHub Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/levoratti-debates-ef/).
 
 **Próxima acción única:** comprobación de la página y del lector textual por el responsable tras el despliegue técnico.
 
