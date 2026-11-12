@@ -103,36 +103,18 @@ const HERO_CROSSFADE_MS = 700;
 function Hero({ saved, toggle }) {
   const [index, setIndex] = useState(0);
   const [pausedByUser, setPausedByUser] = useState(false);
-  const [hovering, setHovering] = useState(false);
-  const [visibleTab, setVisibleTab] = useState(() => !document.hidden);
-  const [visibleHero, setVisibleHero] = useState(true);
   const [reducedMotion, setReducedMotion] = useState(
     () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
   );
-  const heroRef = useRef(null);
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-reduced-motion: reduce)');
     const syncMotion = () => setReducedMotion(media.matches);
-    const syncVisibility = () => setVisibleTab(!document.hidden);
-    const observer = new IntersectionObserver(
-      ([item]) => setVisibleHero(item.isIntersecting && item.intersectionRatio >= 0.35),
-      { threshold: [0, 0.35, 0.5] },
-    );
-    if (heroRef.current) observer.observe(heroRef.current);
     media.addEventListener('change', syncMotion);
-    document.addEventListener('visibilitychange', syncVisibility);
-    return () => {
-      observer.disconnect();
-      media.removeEventListener('change', syncMotion);
-      document.removeEventListener('visibilitychange', syncVisibility);
-    };
+    return () => media.removeEventListener('change', syncMotion);
   }, []);
 
-  // La pausa manual (incluida la interacción por teclado) solo se revierte
-  // mediante el botón explícito; el hover y el cambio de pestaña son temporales.
-  const rotating = available.length > 1
-    && !pausedByUser && !hovering && !reducedMotion && visibleTab && visibleHero;
+  const rotating = available.length > 1 && !pausedByUser && !reducedMotion;
 
   useEffect(() => {
     if (!rotating) return undefined;
@@ -142,16 +124,6 @@ function Hero({ saved, toggle }) {
     );
     return () => window.clearTimeout(timer);
   }, [index, rotating]);
-
-  const selectSlide = (next) => {
-    setIndex(next);
-    setPausedByUser(true);
-  };
-  const onHeroFocus = (event) => {
-    // El control Reproducir/Pausar es la excepción accesible: puede
-    // reactivar la rotación incluso mientras recibe foco de teclado.
-    if (!event.target.closest('[data-rotation-toggle]')) setPausedByUser(true);
-  };
 
   const entry = available[index];
   // Títulos propios de cada lectura. Nunca usar la obra anterior como fallback.
@@ -164,13 +136,9 @@ function Hero({ saved, toggle }) {
   };
   const title = heroTitles[entry.id] ?? entry.shortTitle;
   return <section
-    ref={heroRef}
     className={`hero hero--${entry.id} ${rotating ? 'hero--autoplay' : ''}`}
     aria-label="Lecturas destacadas"
     aria-roledescription="carrusel"
-    onMouseEnter={() => setHovering(true)}
-    onMouseLeave={() => setHovering(false)}
-    onFocusCapture={onHeroFocus}
     style={{ '--hero-rotation-duration': `${HERO_ROTATION_MS}ms`, '--hero-fade-duration': `${HERO_CROSSFADE_MS}ms` }}
   >
     {available.map((item, i) => <img
@@ -184,12 +152,13 @@ function Hero({ saved, toggle }) {
     />)}
     <div className="hero-shade" />
     <div className="library-shell hero-inner">
-      <div className="hero-content" key={entry.id} aria-live={rotating ? 'off' : 'polite'} aria-atomic="true">
-        <p className="eyebrow hero-eyebrow"><span /> HISTORIA DE LA EDUCACIÓN FÍSICA</p>
-        <p className="hero-author">UNA LECTURA CON {entry.author.toLocaleUpperCase('es')}</p>
-        <h1 id="hero-title" aria-label={entry.shortTitle}>{title}</h1>
-        <div className="hero-meta"><span className="available-dot">Disponible ahora</span><span>{formatDuration(entry.duration)} de audio</span><span>Texto + contexto</span></div>
-        <p className="hero-description">{entry.description}</p>
+      <div className="hero-content" aria-live={rotating ? 'off' : 'polite'} aria-atomic="true">
+        <div className="hero-copy" key={entry.id}>
+          <p className="hero-author">{entry.author.toLocaleUpperCase('es')}</p>
+          <h1 id="hero-title" aria-label={entry.shortTitle}>{title}</h1>
+          <div className="hero-meta"><span className="available-dot">Disponible ahora</span><span>{formatDuration(entry.duration)} de audio</span><span>Texto + contexto</span></div>
+          <p className="hero-description">{entry.description}</p>
+        </div>
         <div className="hero-actions">
           <a className="button button--primary" href={href(entry.path)}><Play size={17} fill="currentColor" aria-hidden="true" /> Leer y escuchar</a>
           <SaveButton entry={entry} saved={saved} toggle={toggle} label />
@@ -203,12 +172,11 @@ function Hero({ saved, toggle }) {
             key={item.id}
             aria-label={`Mostrar ${item.shortTitle}`}
             aria-pressed={index === i}
-            onClick={() => selectSlide(i)}
+            onClick={() => setIndex(i)}
           ><span>{String(i + 1).padStart(2, '0')}</span><i aria-hidden="true" /></button>)}
           <button
             type="button"
             className="hero-rotation-toggle"
-            data-rotation-toggle
             aria-label={reducedMotion ? 'Rotación automática desactivada por preferencia de movimiento reducido' : pausedByUser ? 'Reanudar rotación automática' : 'Pausar rotación automática'}
             title={reducedMotion ? 'Rotación desactivada por movimiento reducido' : pausedByUser ? 'Reanudar rotación' : 'Pausar rotación'}
             disabled={reducedMotion}

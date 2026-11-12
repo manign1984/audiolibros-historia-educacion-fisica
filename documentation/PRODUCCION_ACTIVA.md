@@ -6,6 +6,10 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
+## Interfaz general · Carrusel de Inicio (12/11/2026)
+
+La portada general usa la autoría del catálogo como único rótulo superior. El nombre de la asignatura figura en el encabezado. La rotación es continua y el botón de reproducción controla la pausa. Los indicadores numerados permiten cambiar de portada sin alterar ese estado. Se respeta la preferencia de movimiento reducido.
+
 ## OBRA ACTIVA · Alejo Levoratti (12/11/2026)
 
 **Obra y workId:** *Los debates de la educación física y los enfoques de las ciencias sociales. Un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015)*, [Revista da ALESDE, 9(1), 45–63 (2018)](https://doi.org/10.5380/jlasss.v9i1.61189). `levoratti-debates-ef`.
