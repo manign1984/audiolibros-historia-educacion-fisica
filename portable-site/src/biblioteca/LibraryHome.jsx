@@ -68,15 +68,18 @@ export function Cover({ entry, large = false }) {
 
 function WorkCard({ entry, saved, toggle, progress = 0 }) {
   const ready = entry.status === 'available';
-  const showCanonicalBadge = ready || entry.canonicalCard === true;
   const review = entry.status === 'review';
   const textOnly = entry.status === 'text';
   const readableWork = canReadAndListen(entry) || textOnly;
   const editorialLanding = entry.editorialLanding === true;
   return <article className="work-card">
-    <a className="work-card-cover" href={href(entry.path)} aria-label={`${readableWork ? 'Abrir recorrido' : (editorialLanding ? 'Explorar recorrido' : 'Ver ficha')}: ${entry.title}`}><Cover entry={entry} /><span className={`status-badge ${showCanonicalBadge ? 'status-badge--ready' : ''}`}>{showCanonicalBadge ? <><Headphones size={12} aria-hidden="true" /> Leer + escuchar</> : review ? <><Headphones size={12} aria-hidden="true" /> Edición en revisión</> : textOnly ? <><BookOpen size={12} aria-hidden="true" /> Solo lectura</> : editorialLanding ? 'Explorar recorrido' : 'En preparación'}</span><span className="cover-open" aria-hidden="true">{textOnly ? <BookOpen size={19} /> : readableWork ? <Play size={19} fill="currentColor" /> : <ArrowRight size={20} />}</span></a>
+    <a className="work-card-cover" href={href(entry.path)} aria-label={`${readableWork ? 'Abrir recorrido' : (editorialLanding ? 'Explorar recorrido' : 'Ver ficha')}: ${entry.title}`}>
+      <Cover entry={entry} />
+      <span className="status-badge status-badge--ready"><Headphones size={12} aria-hidden="true" /> Leer + escuchar</span>
+      <span className="cover-open" aria-hidden="true">{textOnly ? <BookOpen size={19} /> : readableWork ? <Play size={19} fill="currentColor" /> : <ArrowRight size={20} />}</span>
+    </a>
     <div className="work-card-info"><div><p className="card-author">{entry.author}</p><h3><a href={href(entry.path)}>{entry.shortTitle}</a></h3></div><SaveButton entry={entry} saved={saved} toggle={toggle} /></div>
-    <p className="card-meta">{ready ? <><Clock3 size={13} aria-hidden="true" /> {formatDuration(entry.duration)} de audio <span>·</span> {entry.readingDetail || 'Lectura sincronizada'}</> : review ? <><Clock3 size={13} aria-hidden="true" /> {entry.historicalPeriod} <span>·</span> {formatDuration(entry.duration)} de audio <span>·</span> Leer, escuchar y anotar <span>·</span> {entry.reviewSummary || 'Sincronización pendiente'}</> : textOnly ? <><BookOpen size={13} aria-hidden="true" /> Lectura completa <span>·</span> Cuaderno de notas{!entry.canonicalCard && <> <span>·</span> Sin audio</>}</> : editorialLanding ? <><BookOpen size={13} aria-hidden="true" /> Contexto histórico <span>·</span> Acceso a edición editorial</> : <>Ficha bibliográfica</>}</p>
+    <p className="card-meta">{ready ? <><Clock3 size={13} aria-hidden="true" /> {formatDuration(entry.duration)} de audio <span>·</span> {entry.readingDetail || 'Lectura sincronizada'}</> : review ? <><Clock3 size={13} aria-hidden="true" /> {entry.historicalPeriod} <span>·</span> {formatDuration(entry.duration)} de audio</> : textOnly ? <><BookOpen size={13} aria-hidden="true" /> Lectura completa <span>·</span> Cuaderno de notas</> : editorialLanding ? <><BookOpen size={13} aria-hidden="true" /> Contexto histórico <span>·</span> Acceso a edición editorial</> : <>Ficha bibliográfica</>}</p>
     {!textOnly && readableWork && progress > 3 && <a className="card-progress" href={`${href(entry.path)}#lectura`} aria-label={`Continuar ${entry.shortTitle} desde ${formatDuration(progress)}`}><span><i style={{ width: `${progress / entry.duration * 100}%` }} /></span><small>Continuar desde {formatDuration(progress)} <ArrowRight size={13} aria-hidden="true" /></small></a>}
   </article>;
 }
@@ -188,7 +191,7 @@ function Hero({ saved, toggle }) {
 }
 
 export function ProjectFooter() {
-  return <><section id="proyecto" className="project-section library-shell"><div><p className="eyebrow">UN PROYECTO +TEC · UNAHUR</p><h2>Otra forma de entrar<br />en la historia.</h2></div><div><p>Una biblioteca para leer, escuchar y volver a pensar la Educación Física. Cada recorrido reúne el texto, su autor y su contexto histórico, para acompañar el estudio a tu ritmo.</p><p className="muted">Los materiales se incorporan de manera progresiva. Las fichas marcadas “En preparación” todavía no tienen su recorrido de lectura y audio.</p></div></section><footer className="library-footer library-shell"><Brand /><p>Historia de la Educación y de la Educación Física</p><a href="#top">Volver arriba ↑</a></footer></>;
+  return <><section id="proyecto" className="project-section library-shell"><div><p className="eyebrow">UN PROYECTO +TEC · UNAHUR</p><h2>Otra forma de entrar<br />en la historia.</h2></div><div><p>Una biblioteca para leer, escuchar y volver a pensar la Educación Física. Cada recorrido reúne el texto, su autor y su contexto histórico, para acompañar el estudio a tu ritmo.</p></div></section><footer className="library-footer library-shell"><Brand /><p>Historia de la Educación y de la Educación Física</p><a href="#top">Volver arriba ↑</a></footer></>;
 }
 
 export default function LibraryHome() {
