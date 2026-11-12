@@ -2,8 +2,7 @@ import prepared from './readingDocument.generated.json';
 import { createAlmadaReaderConfig } from './readerConfig.js';
 
 // BASE_URL asegura una única implementación para raíz y GitHub Pages.
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const assetBase = base + '/assets/almada/';
+const assetBase = [import.meta.env.BASE_URL.replace(/\/$/, ''), 'assets', 'almada'].join('/') + '/';
 const config = createAlmadaReaderConfig(assetBase);
 
 export const almadaReaderConfig = {
