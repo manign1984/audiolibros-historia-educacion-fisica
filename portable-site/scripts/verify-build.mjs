@@ -104,12 +104,16 @@ assert.ok(levorattiSource.includes('Curitiba, v. 14'), 'El archivo original de f
 // Recorrer TODAS las entradas con IntegratedReader, no solo dos nombres.
 async function traceIntegratedReaderSources(entry, visited = new Set()) {
   const path = resolve(entry);
-  if (visited.has(path)) return { reader: false, stylesheet: false };
+  if (visited.has(path)) return { reader: false, stylesheet: false, archivo400: false, archivo700: false, bebas400: false };
   visited.add(path);
   const source = await readFile(path, 'utf8');
-  const result = { reader: path.endsWith('/IntegratedReader.jsx'), stylesheet: false };
+  const result = { reader: path.endsWith('/IntegratedReader.jsx'), stylesheet: false,
+    archivo400: false, archivo700: false, bebas400: false };
   const imports = [...source.matchAll(/\b(?:from\s*|import\s*)['"]([^'"]+)['"]/g)];
   for (const [, specifier] of imports) {
+    result.archivo400 ||= /^@fontsource\/archivo\/(?:latin-)?400\.css$/.test(specifier);
+    result.archivo700 ||= /^@fontsource\/archivo\/(?:latin-)?700\.css$/.test(specifier);
+    result.bebas400 ||= /^@fontsource\/bebas-neue\/(?:latin-)?400\.css$/.test(specifier);
     if (!specifier.startsWith('.')) continue;
     const target = resolve(dirname(path), specifier);
     if (target.endsWith('/reader.css')) {
@@ -125,8 +129,9 @@ async function traceIntegratedReaderSources(entry, visited = new Set()) {
     }
     if (!imported) continue;
     const child = await traceIntegratedReaderSources(imported, visited);
-    result.reader ||= child.reader;
-    result.stylesheet ||= child.stylesheet;
+    for (const key of ['reader', 'stylesheet', 'archivo400', 'archivo700', 'bebas400']) {
+      result[key] ||= child[key];
+    }
   }
   return result;
 }
@@ -159,6 +164,8 @@ for (const entry of await readdir(resolve('textos'), { withFileTypes: true })) {
   const graph = await traceIntegratedReaderSources(entrypoint);
   if (!graph.reader) continue;
   assert.ok(graph.stylesheet, route + ': falta import real de src/reader.css en el entrypoint.');
+  assert.ok(graph.archivo400 && graph.archivo700 && graph.bebas400,
+    route + ': faltan fuentes del lector (Archivo 400/700 y Bebas Neue 400) en la entrada real.');
   readerRoutes.push(route);
   await verifyIntegratedReaderStyles(route);
 }
