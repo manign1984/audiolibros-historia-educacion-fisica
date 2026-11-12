@@ -52,21 +52,23 @@ body:has(.melano-page) { margin: 0; }
 .melano-hero__next { display: inline-flex; gap: 16px; align-items: center; margin-top: 25px; padding: 11px 0; color: #78d5d9; font: 700 12px/1.3 'Archivo', sans-serif; letter-spacing: .13em; text-transform: uppercase; text-decoration: none; border-bottom: 2px solid #40b5bc; }
 .melano-hero__next:hover { color: white; }
 .melano-hero__art {
-  position: relative; aspect-ratio: 4/5; max-height: min(680px, calc(var(--reading-room) - 72px));
-  min-height: 380px; display: flex; flex-direction: column; justify-content: space-between;
-  padding: clamp(25px,3.2vw,45px);
-  background: linear-gradient(140deg,#86759f 0 20%,#483df6 20% 60%,#3a8841 60% 100%);
-  border: 7px solid #051e28; outline: 1px solid #a7cbc8;
+  position: relative;
+  aspect-ratio: 4/5;
+  min-height: 380px;
+  max-height: min(680px, calc(var(--reading-room) - 72px));
+  overflow: hidden;
+  background: #a98972;
+  border: 7px solid #051e28;
+  outline: 1px solid #a7cbc8;
   box-shadow: 18px 18px 0 #40b5bc;
-  isolation: isolate;
 }
-.melano-hero__art::before { content:''; position:absolute; inset: 17px; border: 1px solid #ffffff8c; pointer-events:none; }
-.melano-hero__art-top { display:flex; justify-content:space-between; gap:10px; font:700 10px/1.35 'Archivo',sans-serif; letter-spacing:.08em; text-transform:uppercase; color:white; }
-.melano-hero__art-center { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:8px; flex:1; }
-.melano-hero__art-numeral { display:block; font:400 clamp(140px,15vw,230px)/.72 'Bebas Neue',sans-serif; letter-spacing:-.065em; color:#fafaff; text-shadow:6px 9px 0 #051e2877; }
-.melano-hero__art-rule { display:block; height:6px; width:70%; background:#40b5bc; }
-.melano-hero__art-center strong { font:900 clamp(25px,2.75vw,43px)/1.07 'Archivo',sans-serif; letter-spacing:-.05em; color:#fff; }
-.melano-hero__art-bottom { display:flex; flex-direction:column; align-items:flex-end; gap:5px; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:white; }
+.melano-hero__art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 49% 50%;
+}
 .melano-hero__stripes { position:absolute; bottom:0; left:0; width:100%; height:8px; display:grid; grid-template-columns:repeat(5,1fr); }
 .melano-hero__stripes i:nth-child(1){background:#051e28;} .melano-hero__stripes i:nth-child(2){background:#3a8841;} .melano-hero__stripes i:nth-child(3){background:#40b5bc;} .melano-hero__stripes i:nth-child(4){background:#483df6;} .melano-hero__stripes i:nth-child(5){background:#86759f;}
 
@@ -140,17 +142,11 @@ body:has(.journey-header) .melano-page #lectura.hb-material-reading { --material
 @media(max-width:1050px) {
  .melano-hero__layout {grid-template-columns:minmax(0,1fr) minmax(260px,.75fr);}
  .melano-hero__art {min-height:320px;}
- .melano-hero__art-numeral {font-size:160px;}
  .melano-container {width:min(100% - 54px,1250px);}
 }
 @media(max-width:850px) {
  .melano-hero__layout {grid-template-columns:1fr; gap:28px;}
- .melano-hero__art {aspect-ratio:2.4; min-height:180px; width:100%; max-height:300px; padding:20px; box-shadow:10px 10px 0 #40b5bc;}
- .melano-hero__art-center {flex-direction:row; align-items:center; gap:15px;}
- .melano-hero__art-numeral {font-size:113px;}
- .melano-hero__art-rule {width:7px; height:100px;}
- .melano-hero__art-center strong {font-size:28px;}
- .melano-hero__art-bottom {display:none;}
+ .melano-hero__art {aspect-ratio:2.4; min-height:180px; width:100%; max-height:300px; box-shadow:10px 10px 0 #40b5bc;}
  .melano-author {padding:60px 0;}
  .melano-stages {gap:10px;}
  .melano-stage {padding:16px;}
@@ -163,9 +159,6 @@ body:has(.journey-header) .melano-page #lectura.hb-material-reading { --material
  .melano-hero__subtitle {font-size:19px;}
  .melano-hero__intro {font-size:14px;}
  .melano-hero__art {min-height:180px; aspect-ratio:1.9; margin-right:7px; width:calc(100% - 7px);}
- .melano-hero__art-top {font-size:9px;}
- .melano-hero__art-numeral {font-size:115px;}
- .melano-hero__art-center strong {font-size:24px;}
  .melano-context-screen {padding-block:30px;}
  .melano-context-top {align-items:start;}
  .melano-context-top span {max-width:145px; text-align:right; font-size:10px;}
