@@ -8,15 +8,17 @@
 
 ## OBRA ACTIVA · Pablo Pineau · Reprimir y discriminar (12/11/2026)
 
-**Obra y workId:** Pablo Pineau, *Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)*, *Educar em Revista*, 51, 103–122 (2014). WorkId: `pineau-reprimir-discriminar`.
+**Obra y workId:** Pablo Pineau, *Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)*, *Educar em Revista*, 51, 103–122 (2014). `pineau-reprimir-discriminar`.
 
-**Unidad y estado:** unidades 1, 2 y 3 en ejecución; EN DESARROLLO hasta despliegue, comprobación y aceptación del responsable. La obra cuenta con cinco bloques y Contexto de dos pantallas. Autor reutiliza el retrato, biografía y procedencia de Pineau, con fondo propio. Lectura reutiliza CanonicalReadingEntry + IntegratedReader sin modificar archivos compartidos.
+**Unidad y estado interno:** unidades productivas 1, 2 y 3 implementadas, integradas y desplegadas técnicamente. **EN DESARROLLO** hasta la comprobación y aceptación del responsable. Cinco bloques; Contexto de dos pantallas; retrato y biografía anteriores de Pineau reutilizados con nuevo fondo; acceso a lector mediante CanonicalReadingEntry + IntegratedReader, sin editar componentes compartidos.
 
-**Rama/PR:** `feature/pineau-reprimir-discriminar-1976-1983` · PR pendiente de creación. **Próxima acción única:** compilar automáticamente, superar B04.11.2 (CSS raíz + Pages), fusionar y publicar la URL técnica para comprobación exclusiva del responsable.
+**Rama, PR y último commit:** `feature/pineau-reprimir-discriminar-1976-1983` · [PR #136](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/136) fusionada a `main` mediante `ee142e975a1d47cd783465241cc04ed9d067499d`.
 
-**Recursos de entrada:** [PDF académico](https://drive.google.com/file/d/1vPYdIzNLMJNFLsZoK9z3EQED4mgGCdEt/view), [texto de lectura de cátedra](https://docs.google.com/document/d/12Zdn1aWkeeAZ4ByTPsfCh3aOrNCOM8z7oqB01MJNNyc/edit), [MP3 original](https://drive.google.com/file/d/18QKaPPT2BpxX97KU4RbQK2m8_z1JI5Fi/view), [SRT original](https://drive.google.com/file/d/1XcPU5qHkpkgtgpSpOw6YxBtCXqfU10kA/view).
+**Material persistido:** cuatro apartados y 58 párrafos del [documento de cátedra](https://docs.google.com/document/d/12Zdn1aWkeeAZ4ByTPsfCh3aOrNCOM8z7oqB01MJNNyc/edit). El [PDF académico](https://drive.google.com/file/d/1vPYdIzNLMJNFLsZoK9z3EQED4mgGCdEt/view) conserva resúmenes, notas y aparato crítico externos al texto de locución. Audiolibro de 30.272.629 bytes (3.027,226122 s) conservado en 12 fragmentos consecutivos, a partir del [MP3 original](https://drive.google.com/file/d/18QKaPPT2BpxX97KU4RbQK2m8_z1JI5Fi/view). [SRT original](https://drive.google.com/file/d/1XcPU5qHkpkgtgpSpOw6YxBtCXqfU10kA/view) de 604 marcas usado solo como insumo temporal para seguimiento aproximado por párrafos. Sin subtítulos visibles ni auditoría acústica. Identificadores de anotación y progreso propios de la obra.
 
-**Material integrado:** 58 párrafos en cuatro apartados tomados del texto de trabajo facilitado, texto original PDF enlazado para consultar resumen, notas y aparato crítico; 604 marcas SRT utilizadas exclusivamente como tiempos para seguimiento aproximado por párrafo; MP3 de 30.272.629 bytes dividido en 12 fragmentos binarios consecutivos. Identificadores y claves de notas/progreso nuevos y estables. Sin subtítulos visibles independientes, ajustes acústicos ni auditorías de derechos rutinarias.
+**CI y despliegue:** [CI de PR #136 · SUCCESS](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/43217548701), con validación de estilos CSS para raíz y Pages. [Build main · SUCCESS](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/43217817102) y [Pages · SUCCESS](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/43217817300). URL técnica: https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/pineau-reprimir-discriminar/ .
+
+**Próxima acción única:** **COMPROBACIÓN EXCLUSIVA DEL RESPONSABLE** sobre la página desplegada: composición, apertura del lector, texto, audio, seguimiento, notas, exportación y accesibilidad. No declarar COMPLETA por el éxito técnico de CI ni iniciar pruebas perceptivas por parte del asistente.
 
 ---
 
