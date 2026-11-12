@@ -96,7 +96,9 @@ assert.equal(levorattiPrepared.paragraphTimings.length, 39, 'Levoratti debe pres
 assert.equal(levorattiPrepared.legacyPageMap['0'], 'levoratti-introduccion-p1', 'El progreso histórico debe abrir un apartado existente.');
 assert.equal(levorattiDocument.legacySentenceMap['levoratti-preliminares-p1'], 'levoratti-introduccion-p1', 'Las anotaciones antiguas deben conservar un anclaje.');
 const levorattiSource = await readFile(resolve('public/assets/levoratti-gimnasia-1958-1968/texto-academico.txt'), 'utf8');
-assert.ok(levorattiSource.includes('Curitiba, v. 14'), 'El archivo original de fuente no debe perder sus prelimina// B04 · COMPUERTA OBLIGATORIA DE ESTILOS DEL LECTOR.
+assert.ok(levorattiSource.includes('Curitiba, v. 14'), 'El archivo original de fuente no debe perder sus preliminares.');
+
+// B04 · COMPUERTA OBLIGATORIA DE ESTILOS DEL LECTOR.
 // Lecciones de Arata–Mariño (PR #122) y Levoratti (PR #131):
 // React/DOM y audio pueden funcionar mientras el modal carece de reader.css.
 // Recorrer TODAS las entradas con IntegratedReader, no solo dos nombres.
@@ -164,9 +166,6 @@ assert.ok(readerRoutes.includes('textos/arata-marino-auroras-tempestades'), 'No 
 assert.ok(readerRoutes.includes('textos/levoratti-gimnasia-1958-1968'), 'No se detectó lector de Levoratti.');
 assert.ok(readerRoutes.length >= 8, 'La compuerta no cubre los lectores existentes.');
 console.log('B04: modal, retícula y reproductor con CSS integrado en ' + readerRoutes.length + ' entradas (base ' + normalizedBase + ').');
-
-'),
-]);
 
 const arataBundleName = assetNames.find(name => name.startsWith('arata-marino-auroras-tempestades-') && name.endsWith('.js'));
 assert.ok(arataBundleName, 'Debe existir un bundle independiente de Arata y Mariño.');
