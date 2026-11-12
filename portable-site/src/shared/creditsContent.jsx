@@ -9,7 +9,7 @@ export const creditsContent = {
     ],
     rights: [
       <>Texto y facsímil de portada de la edición publicada por la Universidad Pedagógica Nacional. El repositorio de la revista registra la licencia {link('https://creativecommons.org/licenses/by-nc/4.0/', 'CC BY-NC 4.0')}. Lectura adaptada a formato digital y portada recortada.</>,
-      <>Audiolibro facilitado al proyecto +TEC UNAHUR, con seguimiento aproximado por párrafos. Los resúmenes, las notas y las referencias están disponibles en el texto.</>,
+      <>Audiolibro facilitado al proyecto +TEC UNAHUR, con seguimiento aproximado por párrafos. Las notas y las referencias están disponibles en el lector.</>,
       <>Composición tipográfica de Autor y claves de Contexto, +TEC UNAHUR.</>,
     ],
   },

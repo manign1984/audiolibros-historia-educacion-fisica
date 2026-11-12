@@ -873,20 +873,20 @@
       "sync": {
         "unit": "paragraph",
         "status": "paragraph-preview",
-        "review": "Seguimiento aproximado de 69 párrafos derivado de 565 marcas del SRT recibido. Resúmenes y elipsis editoriales permanecen sin tiempos."
+        "review": "Seguimiento aproximado de 69 párrafos derivado de 565 marcas del SRT recibido. Las elipsis editoriales permanecen sin tiempos."
       },
       "materials": [
         {
           "path": "src/feiguin-aisenstein/readingDocument.json",
           "kind": "text",
-          "bytes": 99999,
-          "sha256": "64f368781ef5ce93b9a9528d016cef2de662a634c06733427f7c8b926d2ddc9f"
+          "bytes": 93151,
+          "sha256": "7e8bd9be739fa880e1095766cd4e2a0a08276ea9dd86816b845fb6589c182018"
         },
         {
           "path": "public/assets/feiguin-aisenstein/texto-academico.txt",
           "kind": "text",
-          "bytes": 53849,
-          "sha256": "48f6cda7e03257709d23d4bc8f4971629cf6d958266d2ea1deadd226936e672d"
+          "bytes": 51558,
+          "sha256": "b0f6bc58dd948630a7e096d55d69714372a57475bf6f961cceeb92ece880b5ca"
         },
         {
           "path": "public/assets/feiguin-aisenstein/articulo.pdf",
@@ -1185,7 +1185,7 @@
       ],
       "audioDuration": 2815.059592,
       "audioSha256": "63f4c3b0b7f152fa4a4414dd2951302dde4ad64856041477b594473000e61340",
-      "documentSha256": "02ef6abfbd36a86eecfd172171de6f12324b1b6139a1da2218aba79275cd306a"
+      "documentSha256": "bc3f819ec735674c98ca2e9c6f389791555d15a47de2c9e4010440d5ac7581d1"
     }
   ],
   "baseline": {
