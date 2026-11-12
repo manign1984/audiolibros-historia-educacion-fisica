@@ -1,0 +1,2280 @@
+1
+00:00:00,000 --> 00:00:05,161
+La educación física y la gimnasia en la
+educación primaria y el nivel medio. Un
+
+2
+00:00:05,161 --> 00:00:08,800
+estudio sobre las perspectivas teóricas
+en circulación,.
+
+3
+00:00:09,224 --> 00:00:10,744
+Alejo Levoratti.
+
+4
+00:00:11,265 --> 00:00:14,705
+<break time="0.8s"/>Introducción.<break
+time="1.2s"/>
+
+5
+00:00:14,823 --> 00:00:19,961
+En mayo de 1958 asumió la presidencia de
+la nación el Doctor Arturo Frondizi,
+
+6
+00:00:19,961 --> 00:00:25,234
+quien se desempeñó en el cargo hasta el
+año 1962. En el Ministerio de Educación
+
+7
+00:00:25,234 --> 00:00:30,710
+fue designado el abogado Luis R. Mac Kay
+y como Subsecretario de Educación Antonio
+
+8
+00:00:30,710 --> 00:00:35,443
+Salonia. Ambos funcionarios se
+inscribieron dentro de la extensa nómina
+
+9
+00:00:35,443 --> 00:00:40,108
+de desarrollo, las católicos que
+participaron de la política educativa
+
+10
+00:00:40,108 --> 00:00:45,313
+nacional. Un rasgo que caracterizó este
+período fue la adhesión a acuerdos con
+
+11
+00:00:45,313 --> 00:00:50,316
+los organismos internacionales y la
+participación en 1958 en Washington del
+
+12
+00:00:50,316 --> 00:00:55,184
+"Seminario Interamericano sobre
+Planeamiento Integral de la Educación" de
+
+13
+00:00:55,184 --> 00:01:00,389
+la Organización de Estados Americanos
+(OEA) y la UNESCO. En estos contextos se
+
+14
+00:01:00,389 --> 00:01:05,189
+proponía una visión economista de la
+educación y se procuraba ampliar la
+
+15
+00:01:05,189 --> 00:01:10,057
+obligatoriedad. Ahora bien, en el ámbito
+local las ideas "desarrollistas"
+
+16
+00:01:10,057 --> 00:01:14,722
+propuestas desde los organismos
+internacionales tuvieron apropiaciones
+
+17
+00:01:14,722 --> 00:01:19,860
+singulares. Pero se intensifican los
+procesos de inscripción de los debates y
+
+18
+00:01:19,860 --> 00:01:24,998
+proyectos políticos, disciplinares y
+académicos promovidos por los organismos
+
+19
+00:01:24,998 --> 00:01:29,324
+internacionales y asociaciones
+profesionales en las instancias de
+
+20
+00:01:29,324 --> 00:01:34,327
+creación curricular a nivel local. Esto
+se presentó con rasgos similares en
+
+21
+00:01:34,327 --> 00:01:36,423
+diferentes países de la región.
+
+22
+00:01:36,877 --> 00:01:41,488
+El profesor Ramón Muros, vinculado a
+Salonia, fue designado como Director
+
+23
+00:01:41,488 --> 00:01:46,099
+General de Educación Física en 1958,
+promoviendo desde este organismo las
+
+24
+00:01:46,099 --> 00:01:50,070
+líneas de acción para los
+establecimientos educativos del nivel
+
+25
+00:01:50,070 --> 00:01:54,745
+medio y los institutos nacionales
+destinados a la formación de profesores.
+
+26
+00:01:54,745 --> 00:01:59,677
+Ahora bien, también se le dio un amplio
+desarrollo a los Centros Nacionales de
+
+27
+00:01:59,677 --> 00:02:04,544
+Educación Física, los Campamentos, los
+cursos de capacitación que tenían como
+
+28
+00:02:04,544 --> 00:02:09,540
+foco de atención las dispares formaciones
+de los docentes que se encontraban en
+
+29
+00:02:09,540 --> 00:02:14,599
+ejercicio, como así también las temáticas
+que se estaban imponiendo en la agenda
+
+30
+00:02:14,599 --> 00:02:19,274
+disciplinar, como es el caso de la
+"Educación Física Infantil". En mayo de
+
+31
+00:02:19,274 --> 00:02:24,206
+1960 Ramón Muros conformó una comisión
+con el objeto de construir el "Programa
+
+32
+00:02:24,206 --> 00:02:28,368
+de Educación Física" para los
+establecimientos de enseñanza media,
+
+33
+00:02:28,368 --> 00:02:33,044
+entre los que se encontraban las Escuelas
+Normales dependientes del Estado
+
+34
+00:02:33,044 --> 00:02:37,399
+Nacional. En 1961 se sancionó dicho
+programa donde se establecían los
+
+35
+00:02:37,399 --> 00:02:41,946
+"objetivos" de la disciplina y los
+"agentes" para lograrlos, delimitando
+
+36
+00:02:41,946 --> 00:02:46,557
+también un "Programa de preparación
+profesional del ciclo de magisterio".
+
+37
+00:02:47,071 --> 00:02:52,171
+A partir de la década de 1960, en los
+informes de los funcionarios se consideró
+
+38
+00:02:52,171 --> 00:02:57,205
+como "problemática" la situación de la
+educación física en el nivel primario y
+
+39
+00:02:57,205 --> 00:03:02,370
+la formación de los docentes a cargo de
+las clases. En una encuesta realizada en
+
+40
+00:03:02,370 --> 00:03:07,013
+1962 por el Consejo Internacional para la
+Salud, la Educación Física, la
+
+41
+00:03:07,013 --> 00:03:12,374
+Recreación, el Deporte y la Danza junto a
+la UNESCO, Ramón Muros afirmó: "Carecemos
+
+42
+00:03:12,374 --> 00:03:16,820
+de espacios físicos, materiales
+didácticos y maestros capacitados (se
+
+43
+00:03:16,820 --> 00:03:21,462
+está haciendo un esfuerzo considerable
+para remediar esta situación). La
+
+44
+00:03:21,462 --> 00:03:26,431
+educación física es insuficiente en la
+escuela primaria (hasta los 12 años)".
+
+45
+00:03:26,859 --> 00:03:32,091
+En el Boletín Informativo número 1 de
+1962 de la Dirección General de Educación
+
+46
+00:03:32,091 --> 00:03:36,854
+Física, bajo el título "Primer Curso
+Nacional de Capacitación Docente en
+
+47
+00:03:36,854 --> 00:03:42,018
+Educación Física", se expresó que "las
+dos terceras partes de los docentes que
+
+48
+00:03:42,018 --> 00:03:47,318
+ejercen la cátedra de educación física en
+la segunda enseñanza carecen de título
+
+49
+00:03:47,318 --> 00:03:52,684
+docente y habilitante". En esa clave, en
+el Boletín Informativo número 14 del año
+
+50
+00:03:52,684 --> 00:03:57,446
+1967 de la Dirección Nacional de
+Educación Física, Deporte y Recreación,
+
+51
+00:03:57,446 --> 00:04:01,940
+bajo el título "Educación Física
+Infantil", se proponía una línea de
+
+52
+00:04:01,940 --> 00:04:07,038
+acción organizada en cuatro instancias:
+"Programa de Educación Física para la
+
+53
+00:04:07,038 --> 00:04:12,203
+Escuela Primaria; Programa de Educación
+Física para el Ciclo del Magisterio de
+
+54
+00:04:12,203 --> 00:04:17,368
+las Escuelas Normales; Programa para la
+capacitación y el perfeccionamiento de
+
+55
+00:04:17,368 --> 00:04:22,466
+los profesores del ciclo Magisterio y
+Programa a desarrollar en los cursos de
+
+56
+00:04:22,466 --> 00:04:27,497
+capacitación para Maestros en actividad".
+Esta propuesta se sustentaba en la
+
+57
+00:04:27,497 --> 00:04:32,662
+disposición número 517 de agosto de 1966,
+que había firmado durante su segunda
+
+58
+00:04:32,662 --> 00:04:38,028
+gestión a cargo de la Dirección Nacional
+el Profesor Ramón Muros, y establecía el
+
+59
+00:04:38,028 --> 00:04:42,724
+hecho de definir diferentes aspectos en
+relación a la "educación física
+
+60
+00:04:42,724 --> 00:04:47,888
+infantil". En ellas queda expresada la
+relevancia asignada a la inscripción de
+
+61
+00:04:47,888 --> 00:04:52,852
+la educación física en el nivel primario
+y el lugar que tenían los maestros
+
+62
+00:04:52,852 --> 00:04:56,139
+normales en el proceso de transmisión
+disciplinar.
+
+63
+00:04:56,462 --> 00:05:01,035
+En esta breve presentación quedó
+evidenciada la sinergía que existía en
+
+64
+00:05:01,035 --> 00:05:06,066
+dicho contexto entre el nivel medio, en
+particular las escuelas normales, y la
+
+65
+00:05:06,066 --> 00:05:11,162
+implementación de la educación física en
+el nivel primario. En este trabajo nos
+
+66
+00:05:11,162 --> 00:05:15,604
+interesa identificar y analizar las
+concepciones que construyeron las
+
+67
+00:05:15,604 --> 00:05:20,765
+perspectivas sobre la educación física y
+la gimnasia que se cristalizaron en los
+
+68
+00:05:20,765 --> 00:05:25,469
+documentos curriculares destinados al
+nivel medio, y en particular en las
+
+69
+00:05:25,469 --> 00:05:30,173
+Escuelas Normales dependientes del Estado
+Nacional del año 1961, y en los
+
+70
+00:05:30,173 --> 00:05:35,204
+documentos técnicos producidos en 1968
+por la Dirección Nacional con el objeto
+
+71
+00:05:35,204 --> 00:05:39,908
+de direccionar la educación física en el
+nivel primario y que tenían como
+
+72
+00:05:39,908 --> 00:05:44,285
+destinatarios a los maestros a cargo.
+Para ello, nos interesa además
+
+73
+00:05:44,285 --> 00:05:49,250
+contextualizar los debates que se venían
+difundiendo y promoviendo desde esta
+
+74
+00:05:49,250 --> 00:05:53,758
+agencia estatal. Trabajaremos con los
+documentos mencionados y con los
+
+75
+00:05:53,758 --> 00:05:58,331
+boletines técnicos y publicaciones
+oficiales que se realizaron desde el
+
+76
+00:05:58,331 --> 00:06:03,231
+Ministerio de Educación de la Nación para
+la Educación Física. Retomamos los
+
+77
+00:06:03,231 --> 00:06:08,000
+abordajes sobre el curriculum de Ivor
+Goodson, quien lo considera como una
+
+78
+00:06:08,000 --> 00:06:12,769
+instancia no neutral, dado que los
+saberes seleccionados son el resultante
+
+79
+00:06:12,769 --> 00:06:17,669
+de procesos de disputas de distintos
+colectivos con intereses en juego. Ello
+
+80
+00:06:17,669 --> 00:06:22,765
+nos posibilitó analizar estas instancias
+de definición de la formación como "el
+
+81
+00:06:22,765 --> 00:06:27,273
+testimonio visible y público de
+justificaciones racionales escogidas y
+
+82
+00:06:27,273 --> 00:06:31,193
+una retórica legitimadora de la
+enseñanza". Es decir, que los
+
+83
+00:06:31,193 --> 00:06:36,158
+posicionamientos encontrados en estas
+instancias son unos entre los posibles,
+
+84
+00:06:36,158 --> 00:06:41,254
+siendo objeto de análisis sus procesos de
+configuración, teniendo en cuenta que
+
+85
+00:06:41,254 --> 00:06:44,782
+ellos son los que lograron imponerse en
+esos contextos.
+
+86
+00:06:45,135 --> 00:06:50,307
+En la Argentina las producciones sobre la
+historia de la Educación Física se fueron
+
+87
+00:06:50,307 --> 00:06:54,848
+concentrando en las primeras cuatro
+décadas del siglo XX, evidenciando la
+
+88
+00:06:54,848 --> 00:06:59,704
+preponderancia de la propuesta formativa
+producida en el Instituto Nacional de
+
+89
+00:06:59,704 --> 00:07:04,497
+Educación Física a partir de la figura
+del Doctor Enrique Romero Brest. Dicho
+
+90
+00:07:04,497 --> 00:07:08,596
+"sistema" estaba sustentado
+preponderantemente en los heterogéneos
+
+91
+00:07:08,596 --> 00:07:13,453
+discursos médicos. En los últimos años se
+observa la aparición de una serie de
+
+92
+00:07:13,453 --> 00:07:18,372
+trabajos que problematizan la segunda
+mitad del siglo XX. Entre ellos se pueden
+
+93
+00:07:18,372 --> 00:07:23,291
+mencionar aquellos que se concentraron
+preponderantemente en la cultura escolar
+
+94
+00:07:23,291 --> 00:07:28,085
+del Instituto Nacional de Educación
+Física General Belgrano y en la formación
+
+95
+00:07:28,085 --> 00:07:32,752
+en el Instituto Nacional de Educación
+Física Romero Brest durante la última
+
+96
+00:07:32,752 --> 00:07:37,167
+dictadura cívico-militar entre 1976 y
+1983. En esa trama las propuestas
+
+97
+00:07:37,167 --> 00:07:41,518
+formativas "romeristas" fueron objeto de
+modificaciones, instaurándose
+
+98
+00:07:41,518 --> 00:07:46,438
+paulatinamente discursos psicológicos, de
+las ciencias de la educación y de las
+
+99
+00:07:46,438 --> 00:07:51,231
+ciencias sociales. En base a ello nos
+preguntamos cuáles fueron los campos de
+
+100
+00:07:51,231 --> 00:07:55,898
+saberes que se inscribieron en estas
+instancias de producción de documentos
+
+101
+00:07:55,898 --> 00:08:01,006
+curriculares. Es importante advertir que
+este texto se focaliza en la construcción
+
+102
+00:08:01,006 --> 00:08:06,178
+de dos documentos en singular, producidos
+por el Estado Nacional. En ese sentido no
+
+103
+00:08:06,178 --> 00:08:10,782
+se busca hacer un recorrido sobre los
+diversos debates de la disciplina en
+
+104
+00:08:10,782 --> 00:08:15,512
+dicho lapso temporal en la educación
+física argentina, pero sí atender a las
+
+105
+00:08:15,512 --> 00:08:17,215
+tramas que dan significado.
+
+106
+00:08:17,586 --> 00:08:22,626
+<break time="0.8s"/>La educación física
+en la escuela media.<break time="1.2s"/>
+
+107
+00:08:22,659 --> 00:08:28,331
+En el sistema educativo argentino en el
+período trabajado, entre 1958 y 1968,
+
+108
+00:08:28,331 --> 00:08:33,407
+encontrábamos instituciones dependientes
+del Estado Nacional y de las
+
+109
+00:08:33,407 --> 00:08:38,482
+administraciones provinciales y
+municipales. De acuerdo al informe de
+
+110
+00:08:38,482 --> 00:08:44,304
+estadística educativa del año 1959, el 86
+por ciento de los establecimientos de
+
+111
+00:08:44,304 --> 00:08:49,678
+nivel medio dependían del Estado
+Nacional, oficiales y particulares, el 2
+
+112
+00:08:49,678 --> 00:08:55,574
+por ciento eran municipalities y el 12
+por ciento de los gobiernos provinciales.
+
+113
+00:08:55,574 --> 00:09:01,247
+En septiembre de 1958, se crea en el
+Ministerio de Educación y Justicia de la
+
+114
+00:09:01,247 --> 00:09:06,621
+Nación, la Dirección General de Educación
+Física, que vino a suplantar al
+
+115
+00:09:06,621 --> 00:09:12,368
+Departamento de Extensión de Educación
+Física. La Dirección creada tenía entre
+
+116
+00:09:12,368 --> 00:09:17,667
+sus principales funciones "dirigir,
+ejecutar e inspeccionar la educación
+
+117
+00:09:17,667 --> 00:09:23,116
+física de los establecimientos de la
+enseñanza media". Se afirmaba que "la
+
+118
+00:09:23,116 --> 00:09:28,564
+educación física tiende al desarrollo
+armónico y la formación integral del
+
+119
+00:09:28,564 --> 00:09:34,013
+hombre en los aspectos intelectual, moral
+y físico". Entre 1958 y 1963, el
+
+120
+00:09:34,013 --> 00:09:39,760
+formación�ista dependencia, destacándose
+las siguientes acciones para el nivel
+
+121
+00:09:39,760 --> 00:09:45,283
+medio: la extensión de la carga horaria
+de la Educación Física y tres horas
+
+122
+00:09:45,283 --> 00:09:50,956
+semanales en 1959 por decreto 640, la
+reglamentación del régimen de promoción
+
+123
+00:09:50,956 --> 00:09:56,479
+para la educación física en 1958, la
+modificación del régimen de exenciones
+
+124
+00:09:56,479 --> 00:10:02,151
+por salud en 1961 y la construcción de
+nuevos programas. Para esto último, en
+
+125
+00:10:02,151 --> 00:10:07,451
+mayo de 1960 se creó una comisión,
+organizada por el Director General de
+
+126
+00:10:07,451 --> 00:10:12,825
+Educación Física, Profesor Ramón Muros,
+que tenía por objeto construir el
+
+127
+00:10:12,825 --> 00:10:18,348
+programa de educación física para el
+nivel medio. Ella estaba integrada por
+
+128
+00:10:18,348 --> 00:10:23,722
+los inspectores de Educación Física
+Ángela Cristobal, Ana Elvira Lamas de
+
+129
+00:10:23,722 --> 00:10:29,096
+Corradi, Ascencio Horacio Altuna,
+Humberto Ricardo Gilabert, Miguel Ángel
+
+130
+00:10:29,096 --> 00:10:34,694
+de Vita, Alfredo Loughlin y presidida por
+Rubén Pérez Madrid. Además, fueron
+
+131
+00:10:34,694 --> 00:10:40,665
+consultados profesores de la especialidad
+en diferentes áreas temáticas. En marzo
+
+132
+00:10:40,665 --> 00:10:46,636
+de 1961 se aprobaron por resolución 230
+los programas de educación física para la
+
+133
+00:10:46,636 --> 00:10:52,159
+enseñanza media propuestos por los
+inspectores, que estuvieron vigentes sin
+
+134
+00:10:52,159 --> 00:10:55,219
+grandes modificaciones hasta el año 1984.
+
+135
+00:10:55,661 --> 00:11:00,148
+El programa fue acompañado por un
+documento donde se presentaba un cuadro
+
+136
+00:11:00,148 --> 00:11:04,947
+de situación un tanto crítico sobre el
+dictado de la materia. Ello por un lado
+
+137
+00:11:04,947 --> 00:11:09,871
+era causado por la falta de condiciones
+materiales para el dictado de las clases
+
+138
+00:11:09,871 --> 00:11:14,981
+y por otro por el escaso desarrollo de la
+educación física en el nivel primario. En
+
+139
+00:11:14,981 --> 00:11:19,469
+esa dirección se decía que "en los
+establecimientos de enseñanza media se
+
+140
+00:11:19,469 --> 00:11:24,081
+realiza una educación física de nivel
+inferior al que les corresponde, como
+
+141
+00:11:24,081 --> 00:11:28,506
+consecuencia de una insuficiente
+educación física del niño en la escuela
+
+142
+00:11:28,506 --> 00:11:32,744
+primaria". Además, se partía de la
+convicción de que era necesaria la
+
+143
+00:11:32,744 --> 00:11:36,608
+"asignación de un tiempo
+considerablemente mayor a la educación
+
+144
+00:11:36,608 --> 00:11:41,157
+física del alumno, tendiente a equilibrar
+el que se destina a la formación
+
+145
+00:11:41,157 --> 00:11:45,458
+intelectual; y la transformación del
+actual régimen de designación del
+
+146
+00:11:45,458 --> 00:11:49,883
+profesorado en otro por el que se
+determine la cantidad de tiempo que el
+
+147
+00:11:49,883 --> 00:11:54,245
+docente deberá atender al alumno en
+actividades académicas, actividades
+
+148
+00:11:54,245 --> 00:11:58,608
+para-académicas, complementarias de la
+cátedra, trabajos prácticos o de
+
+149
+00:11:58,608 --> 00:12:01,101
+aplicación, estudios guiados, etcétera".
+
+150
+00:12:01,545 --> 00:12:05,914
+Esta preocupación por la
+intelectualización de la educación se fue
+
+151
+00:12:05,914 --> 00:12:11,359
+presentando a lo largo del siglo XX de la
+mano de las propuestas realizadas por la
+
+152
+00:12:11,359 --> 00:12:16,131
+Escuela Nueva o Escuela Activa y era
+considerada en las propuestas de la
+
+153
+00:12:16,131 --> 00:12:20,903
+educación física francesa para la
+promoción de los "métodos activos". En
+
+154
+00:12:20,903 --> 00:12:26,079
+1960, durante la gestión de Muros, esto
+se expresó cuando la Dirección General
+
+155
+00:12:26,079 --> 00:12:30,448
+publica el documento sobre "Las
+experiencias escolares en Vanves",
+
+156
+00:12:30,448 --> 00:12:35,825
+Francia, que lo inscribe como el modelo
+para la reforma educativa. Esta propuesta
+
+157
+00:12:35,825 --> 00:12:40,329
+partía de la premisa de promover un
+"Régimen de equilibrio entre las
+
+158
+00:12:40,329 --> 00:12:45,639
+actividades intelectuales y las físicas".
+Esta "experiencia" es interpretada por
+
+159
+00:12:45,639 --> 00:12:51,016
+William Moreno como parte de la lucha que
+se dio en la segunda mitad del siglo XX
+
+160
+00:12:51,016 --> 00:12:55,385
+por el reconocimiento del efecto
+educativo de la educación física.
+
+161
+00:12:55,831 --> 00:13:00,766
+Volviendo al programa sancionado en 1961,
+no se halló una definición para la
+
+162
+00:13:00,766 --> 00:13:05,767
+educación física; ahora bien, en el
+primer objetivo se planteaba la necesidad
+
+163
+00:13:05,767 --> 00:13:10,899
+de: "Cimentar la noción de que, siendo el
+espíritu la instancia más valiosa del
+
+164
+00:13:10,899 --> 00:13:16,229
+hombre, la educación física cobra su más
+alto sentido cuando se realiza en función
+
+165
+00:13:16,229 --> 00:13:21,362
+del perfeccionamiento espiritual, ya que
+las perfecciones psico-somáticas deben
+
+166
+00:13:21,362 --> 00:13:26,033
+ayudar al espíritu a cumplir mejor los
+ideales superiores". En esa misma
+
+167
+00:13:26,033 --> 00:13:30,903
+dirección se afirmaba que: "Toda acción
+humana es siempre compleja, y de su
+
+168
+00:13:30,903 --> 00:13:35,903
+realización participa, en proporciones
+variables, tanto el ser físico como el
+
+169
+00:13:35,903 --> 00:13:37,351
+ser psico-espiritual".
+
+170
+00:13:37,761 --> 00:13:43,066
+Si comparamos ello con las definiciones
+que se fueron instituyendo desde las
+
+171
+00:13:43,066 --> 00:13:48,300
+agencias estatales argentinas durante las
+primeras décadas del siglo XX, se
+
+172
+00:13:48,300 --> 00:13:53,392
+mantiene la preocupación por la
+integralidad. Bajo este rótulo, se fueron
+
+173
+00:13:53,392 --> 00:13:59,050
+agrupando diversos enfoques conceptuales
+entre los cuales podemos hallar aquellos
+
+174
+00:13:59,050 --> 00:14:03,789
+ligados al "positivismo", que se lo
+enlazó al "normalismo", y varias
+
+175
+00:14:03,789 --> 00:14:09,589
+propuestas disciplinares que se dieron en
+respuesta o en tensión, que ingresaron en
+
+176
+00:14:09,589 --> 00:14:14,894
+la categoría de "espiritualistas" según
+distintos analistas como Pallarola y
+
+177
+00:14:14,894 --> 00:14:20,552
+Scharagrodsky. Esta preocupación por lo
+"bio-psico-espiritual" no es exclusiva de
+
+178
+00:14:20,552 --> 00:14:26,352
+los actores de la educación física. En el
+discurso que dio el Ministro de Educación
+
+179
+00:14:26,352 --> 00:14:31,798
+de la Nación MacKay al cerrar el "Curso
+de perfeccionamiento y capacitación en
+
+180
+00:14:31,798 --> 00:14:37,173
+educación física" en 1959 manifestó:
+"Plagada de resabios positivistas, sigue
+
+181
+00:14:37,173 --> 00:14:42,548
+llenando las mentes juveniles de un
+verbalismo estéril haciendo del intelecto
+
+182
+00:14:42,548 --> 00:14:48,136
+un culto exclusivista y, para ese culto
+son naturalmente ateos quienes pretenden
+
+183
+00:14:48,136 --> 00:14:53,653
+interpretar el momento que vivimos. La
+moderna antropología filosófica nos dice
+
+184
+00:14:53,653 --> 00:14:58,250
+que el hombre es un todo
+bio-psico-espiritual que debe ser formado
+
+185
+00:14:58,250 --> 00:15:03,130
+en base a esas instancias fundamentales
+con sentido de equilibrio, con
+
+186
+00:15:03,130 --> 00:15:08,435
+proyecciones de plenitud humana. Cuando
+el hacer pedagógico se adapte a esta
+
+187
+00:15:08,435 --> 00:15:13,740
+nueva concepción del hombre, y esa
+adaptación debe lograrse con urgencia, la
+
+188
+00:15:13,740 --> 00:15:19,044
+educación física pasará a integrar
+decididamente los nuevos contenidos de la
+
+189
+00:15:19,044 --> 00:15:19,681
+escuela".
+
+190
+00:15:20,086 --> 00:15:25,133
+En esta clave, podemos advertir que la
+propuesta disciplinar se inscribía en un
+
+191
+00:15:25,133 --> 00:15:29,597
+debate más amplio y buscaba distanciarse
+de aquellas consideradas como
+
+192
+00:15:29,597 --> 00:15:34,450
+"intelectualistas", que se las entendía
+como "positivismo". En este caso, se
+
+193
+00:15:34,450 --> 00:15:39,173
+intentó significarla hacia la búsqueda de
+la "modernización" o en términos
+
+194
+00:15:39,173 --> 00:15:44,285
+"modernos". Esta preocupación no es solo
+para la educación física, sino que está
+
+195
+00:15:44,285 --> 00:15:48,879
+en diálogo con los lineamientos
+pedagógicos y discursivos promovidos por
+
+196
+00:15:48,879 --> 00:15:53,732
+el Estado nacional. David Beer clasifica
+a uno de los grupos de docentes del
+
+197
+00:15:53,732 --> 00:15:58,584
+Instituto Nacional de Educación Física
+como "los modernos", entre los cuales
+
+198
+00:15:58,584 --> 00:16:03,114
+ubicó a Alberto Dallo, Enrique Carlos
+Romero Brest y Beatriz Marty, que
+
+199
+00:16:03,114 --> 00:16:07,384
+proponían la "Gimnasia Moderna" y
+buscaban distinguirse de los "San
+
+200
+00:16:07,384 --> 00:16:11,913
+Fernandistas", considerados como
+"conservadores" según el autor. Dichos
+
+201
+00:16:11,913 --> 00:16:16,701
+profesores fueron consultados en las
+instancias de elaboración del programa
+
+202
+00:16:16,701 --> 00:16:18,966
+objeto de análisis en este estudio.
+
+203
+00:16:19,361 --> 00:16:23,460
+Teniendo en cuenta los argumentos
+planteados tanto en el cuadro de
+
+204
+00:16:23,460 --> 00:16:28,253
+situación propuesto inicialmente, donde
+se critica la visión focalizada en lo
+
+205
+00:16:28,253 --> 00:16:32,731
+intelectual, los saberes circulando en
+las instancias de formación y los
+
+206
+00:16:32,731 --> 00:16:37,650
+objetivos dispuestos en el programa, se
+evidencian puntos de proximidad con las
+
+207
+00:16:37,650 --> 00:16:41,938
+pedagogías que se encontraban en el
+amplio espectro de enfoques de la
+
+208
+00:16:41,938 --> 00:16:46,353
+"Escuela Nueva", donde los saberes
+psicológicos promovieron un sustento
+
+209
+00:16:46,353 --> 00:16:51,083
+conceptual. En este caso no estamos en
+condiciones de afirmar que responde a
+
+210
+00:16:51,083 --> 00:16:56,065
+dicho enfoque teórico, pero sí que los
+profesores que construyeron el curriculum
+
+211
+00:16:56,065 --> 00:16:59,281
+lo autoinscribieron en esa perspectiva
+pedagogética.
+
+212
+00:16:59,697 --> 00:17:04,185
+Este programa expresa el proceso de
+instauración de la psicología en el
+
+213
+00:17:04,185 --> 00:17:08,801
+andamiajie conceptual de la disciplina,
+lo cual no debe ser leído como un
+
+214
+00:17:08,801 --> 00:17:12,712
+direccionamiento hacia la
+psicomotricidad, cuestión que tendrá
+
+215
+00:17:12,712 --> 00:17:17,777
+lugar una década después. En cambio, en
+este contexto, la organización propuesta
+
+216
+00:17:17,777 --> 00:17:22,842
+de los contenidos tenía como teoría de
+base a las promovidas desde la psicología
+
+217
+00:17:22,842 --> 00:17:27,458
+preponderantemente del desarrollo.
+Georges Vigarello evidencia cómo en la
+
+218
+00:17:27,458 --> 00:17:31,369
+segunda mitad del siglo XX la psicología
+organizó los procesos
+
+219
+00:17:31,369 --> 00:17:36,498
+pedagógico-didácticos de la educación de
+los cuerpos en el campo francés, el cual
+
+220
+00:17:36,498 --> 00:17:41,178
+será una referencia a nivel local dado
+que la Dirección General traducía y
+
+221
+00:17:41,178 --> 00:17:45,217
+difundía los textos de la revista
+"Éducation Physique et Sport".
+
+222
+00:17:45,571 --> 00:17:51,370
+El programa fijó los objetivos para el
+"ciclo básico" y el "ciclo superior" del
+
+223
+00:17:51,370 --> 00:17:56,798
+nivel medio, que estaban organizados en
+tres grupos: "formación corporal",
+
+224
+00:17:56,798 --> 00:18:02,820
+"rendimiento o performance" y "educación
+del movimiento". Esta clasificación había
+
+225
+00:18:02,820 --> 00:18:08,693
+sido utilizada previamente por Enrique
+Carlos Romero Brest en 1957 y en 1959 por
+
+226
+00:18:08,693 --> 00:18:14,641
+Alberto Dallo al momento de organizar la
+propuesta de la "gimnasia moderna". Para
+
+227
+00:18:14,641 --> 00:18:20,589
+cumplir ello se fijaron como "agentes" de
+la educación física a "la gimnasia, los
+
+228
+00:18:20,589 --> 00:18:25,942
+deportes, los juegos, la danza, el
+atletismo, la natación y la vida en la
+
+229
+00:18:25,942 --> 00:18:31,816
+naturaleza", que eran pensados como un
+"medio" y no como un "fin". Estos agentes
+
+230
+00:18:31,816 --> 00:18:37,020
+eran ponderados de modo desigual,
+asignándole una relevancia mayor a la
+
+231
+00:18:37,020 --> 00:18:42,373
+gimnasia. Ello se encontraba expresado en
+la cantidad de horas que debían
+
+232
+00:18:42,373 --> 00:18:46,611
+destinarse y en el uso de esta categoría
+como protagonica.
+
+233
+00:18:46,936 --> 00:18:51,509
+En el desarrollo que se realizó de los
+distintos "agentes" tenían una gran
+
+234
+00:18:51,509 --> 00:18:56,584
+relevancia la gimnasia y en segundo lugar
+los deportes. Para la construcción de la
+
+235
+00:18:56,584 --> 00:19:01,346
+propuesta de gimnasia fueron consultados
+los profesores Beatriz Marty, Martha
+
+236
+00:19:01,346 --> 00:19:06,358
+Vassallo, Angélica Rolandelli, Pedro J.
+Harán y Alberto Dallo. A primera vista en
+
+237
+00:19:06,358 --> 00:19:10,743
+el programa se evidencia una gran
+heterogeneidad de corrientes; esto es
+
+238
+00:19:10,743 --> 00:19:15,442
+debido a las múltiples perspectivas a las
+cuales adherían los profesores que
+
+239
+00:19:15,442 --> 00:19:20,266
+construyeron el documento y también a los
+posicionamientos en esta materia que
+
+240
+00:19:20,266 --> 00:19:24,902
+tenían los diferentes grupos con poder
+dentro de las agencias estatales que
+
+241
+00:19:24,902 --> 00:19:28,536
+disputaban la conformación de las
+propuestas disciplinares.
+
+242
+00:19:28,970 --> 00:19:34,572
+La estructura a partir de la cual se
+organizaron los objetivos de la educación
+
+243
+00:19:34,572 --> 00:19:40,175
+física fue empleada también para ordenar
+a las corrientes de gimnasia. Para la
+
+244
+00:19:40,175 --> 00:19:44,977
+formación corporal (morfológica y
+funcional) se nombrará en primera
+
+245
+00:19:44,977 --> 00:19:50,506
+instancia a los continuadores de la
+gimnasia sueca, citando a Curt Johansson,
+
+246
+00:19:50,506 --> 00:19:56,109
+figura con la cual Alberto Dallo había
+realizado en 1953 cursos en Brasil y en
+
+247
+00:19:56,109 --> 00:20:01,420
+Suiza. En relación a los ejercicios
+construidos se consideraba que, por un
+
+248
+00:20:01,420 --> 00:20:07,241
+lado, "cada ejercicio tiende a constituir
+una totalidad; sus diferentes partes se
+
+249
+00:20:07,241 --> 00:20:12,698
+estructuran naturalmente"; y, por otro,
+"cada ejercicio tiende a un objetivo
+
+250
+00:20:12,698 --> 00:20:18,082
+determinado, objetivo que es total,
+bio-psico-espiritual, no exclusivamente
+
+251
+00:20:18,082 --> 00:20:20,410
+anátomo-mecánico o fisiológico".
+
+252
+00:20:20,878 --> 00:20:25,652
+Esto está de la mano de lo planteado por
+Dallo, que criticaba a la gimnasia
+
+253
+00:20:25,652 --> 00:20:30,297
+"analítica" porque estaría "matando en
+cierto modo la acción creadora del
+
+254
+00:20:30,297 --> 00:20:34,684
+profesor". En cambio, los ejercicios
+"sintéticos" trabajarían de modo
+
+255
+00:20:34,684 --> 00:20:39,523
+integral. El autor expresaba que "la
+gimnasia transforma la incoherencia del
+
+256
+00:20:39,523 --> 00:20:44,297
+movimiento corporal en movimiento rimado.
+Transforma el cuerpo humano en un
+
+257
+00:20:44,297 --> 00:20:49,394
+instrumento sensible al ritmo corporal y
+le da la capacidad de reflejar el ritmo
+
+258
+00:20:49,394 --> 00:20:50,878
+de la vida espiritual".
+
+259
+00:20:51,288 --> 00:20:57,230
+También para la "formación morfológica y
+funcional" se proponía la Gimnasia danesa
+
+260
+00:20:57,230 --> 00:21:02,952
+de Niels Bukh y la del "Método Único" que
+estaba basado en dicho movimiento, la
+
+261
+00:21:02,952 --> 00:21:08,747
+cual se consideraba como "más limitada".
+Este enfoque había sido impulsado desde
+
+262
+00:21:08,747 --> 00:21:14,689
+la década de 1940 por el Consejo Nacional
+de la Educación Física del Ministerio de
+
+263
+00:21:14,689 --> 00:21:19,897
+Guerra. En ese contexto habían
+establecido desde 1948 el "método único",
+
+264
+00:21:19,897 --> 00:21:25,326
+para lo cual se desarrollaron diferentes
+capacitaciones a los docentes y la
+
+265
+00:21:25,326 --> 00:21:30,607
+publicación de manuales. Uno de los
+actores claves en su "construcción" y
+
+266
+00:21:30,607 --> 00:21:32,808
+difusión fue Alejandro Amavet.
+
+267
+00:21:33,244 --> 00:21:38,267
+Para cumplir los objetivos relacionados
+con el rendimiento físico se proponía la
+
+268
+00:21:38,267 --> 00:21:42,845
+gimnasia natural de Hébert y la Gimnasia
+natural austríaca de Gaulhofer y
+
+269
+00:21:42,845 --> 00:21:47,613
+Streicher. Esta última fue impulsada en
+el país por Gerard Schmit, quien fue
+
+270
+00:21:47,613 --> 00:21:52,255
+contratado en el año 1959 por la
+Dirección General de Educación Física del
+
+271
+00:21:52,255 --> 00:21:56,833
+Ministerio de Educación de la Nación,
+participando en dicho contexto como
+
+272
+00:21:56,833 --> 00:22:01,665
+docente en el Instituto Nacional de
+Educación Física de la Capital y dictando
+
+273
+00:22:01,665 --> 00:22:04,844
+cursos de capacitación a los docentes en
+actividad.
+
+274
+00:22:05,195 --> 00:22:10,448
+La educación del movimiento se
+referenciaba en Medau, Idla, Jalkanen y
+
+275
+00:22:10,448 --> 00:22:15,624
+Fröelich: a los tres primeros se los
+inscribía dentro de la "gimnasia
+
+276
+00:22:15,624 --> 00:22:21,257
+moderna". Estas corrientes aparecían en
+los trabajos publicados por Dallo y
+
+277
+00:22:21,257 --> 00:22:26,967
+Beatriz Marty en 1959, donde se trazaba
+como punto central de la gimnasia la
+
+278
+00:22:26,967 --> 00:22:31,915
+educación del movimiento, donde el ritmo
+era una variable central.
+
+279
+00:22:32,287 --> 00:22:37,657
+En los varones la gimnasia buscaba en el
+ciclo básico la "formación corporal" y en
+
+280
+00:22:37,657 --> 00:22:42,563
+el ciclo superior se le sumaba la
+problemática del "rendimiento físico". La
+
+281
+00:22:42,563 --> 00:22:47,469
+educación del movimiento estaba ligada a
+la "eficiencia física, más que con
+
+282
+00:22:47,469 --> 00:22:52,706
+intenciones estéticas". En cambio, entre
+las "niñas" la "preeminencia" estaba en
+
+283
+00:22:52,706 --> 00:22:58,076
+"la formación corporal y la educación del
+movimiento". Se afirmaba que "la forma y
+
+284
+00:22:58,076 --> 00:23:03,181
+estilo del movimiento gimnástico deben
+ser elementos eficaces para acentuar la
+
+285
+00:23:03,181 --> 00:23:08,617
+feminidad de las alumnas". Esa distinción
+generizada que se realizó venía a atender
+
+286
+00:23:08,617 --> 00:23:13,722
+uno de los objetivos principales de la
+educación física, que era "favorecer la
+
+287
+00:23:13,722 --> 00:23:18,827
+diferenciación sexual" y la "capacidad de
+expresión por medio del cuerpo y del
+
+288
+00:23:18,827 --> 00:23:23,401
+movimiento (fundamentalmente en la
+mujer)". Esta separación también se
+
+289
+00:23:23,401 --> 00:23:28,771
+presentará en los deportes, identificando
+prácticas específicas para los varones y
+
+290
+00:23:28,771 --> 00:23:29,567
+las mujeres.
+
+291
+00:23:30,073 --> 00:23:35,124
+En el programa se asignó una sección
+especial para el dictado de la Educación
+
+292
+00:23:35,124 --> 00:23:40,176
+Física en las Escuelas Normales en el
+cuarto y quinto año, período que estaba
+
+293
+00:23:40,176 --> 00:23:44,097
+orientado a la formación
+pedagógico-didáctica a partir de la
+
+294
+00:23:44,097 --> 00:23:49,016
+reforma de 1941. Se establecía que dos de
+las tres horas semanales estarían
+
+295
+00:23:49,016 --> 00:23:53,403
+consignadas para la "preparación
+profesional" y la restante para la
+
+296
+00:23:53,403 --> 00:23:57,657
+"formación física del alumno". Se
+organizaba la currícula en tres
+
+297
+00:23:57,657 --> 00:24:02,575
+problemáticas: primero, conocimientos
+fundamentales de la educación física;
+
+298
+00:24:02,575 --> 00:24:07,826
+segundo, conocimientos didácticos de los
+distintos agentes; y tercero, ejercicio
+
+299
+00:24:07,826 --> 00:24:12,412
+en la práctica de la enseñanza. Se
+desglosaron las propuestas para los
+
+300
+00:24:12,412 --> 00:24:16,799
+diferentes "agentes", que consistían
+preponderantemente en tipos de
+
+301
+00:24:16,799 --> 00:24:21,119
+ejercicios. No se amplió sobre la
+perspectiva pedagógica didáctica
+
+302
+00:24:21,119 --> 00:24:25,839
+propuesta; ahora bien, en el libro de
+María Raquel Frigerio y María Geni
+
+303
+00:24:25,839 --> 00:24:31,156
+Maillot de 1968, "Educación Física", que
+estaba destinado a los y las estudiantes
+
+304
+00:24:31,156 --> 00:24:36,008
+del cuarto y quinto año del magisterio y
+era "Recomendado por la Dirección
+
+305
+00:24:36,008 --> 00:24:41,325
+Nacional de Educación Física, Recreación
+y Deportes" para el dictado del programa
+
+306
+00:24:41,325 --> 00:24:46,776
+en estudio, al presentar el desarrollo de
+la disciplina criticaba el lugar asignado
+
+307
+00:24:46,776 --> 00:24:51,628
+a la educación física y la problemática
+del cuerpo en la educación por las
+
+308
+00:24:51,628 --> 00:24:56,746
+miradas "intelectualistas", pregonando
+para superarla "conocer y practicar los
+
+309
+00:24:56,746 --> 00:25:02,129
+conceptos de la escuela activa o escuela
+nueva". Las autoras retoman el trabajo de
+
+310
+00:25:02,129 --> 00:25:07,513
+Gilda Lamarque de Romero Brest y Enrique
+Carlos Romero Brest al igual que lo hacía
+
+311
+00:25:07,513 --> 00:25:12,432
+Dallo; también se citaron para argumentar
+textos de autores de Francia y de
+
+312
+00:25:12,432 --> 00:25:17,284
+Alemania que problematizaron la educación
+física en general y no solo a la
+
+313
+00:25:17,284 --> 00:25:20,873
+gimnasia, como fue el caso de Suaudeau,
+Diem y Seybold.
+
+314
+00:25:21,201 --> 00:25:26,568
+A lo largo de este apartado se presentó
+el programa aprobado a partir del año
+
+315
+00:25:26,568 --> 00:25:32,076
+1961 para la educación media. En él se
+advierten las intenciones de sus autores
+
+316
+00:25:32,076 --> 00:25:37,301
+de autoinscribir esta currícula dentro
+del "método activo"; ahora bien, los
+
+317
+00:25:37,301 --> 00:25:42,880
+lineamientos y enfoques teóricos fueron
+diversos. Ello buscaba la distinción con
+
+318
+00:25:42,880 --> 00:25:47,893
+las propuestas consideradas como
+"positivistas". Esto trajo aparejado el
+
+319
+00:25:47,893 --> 00:25:53,260
+uso de categorías de la psicología del
+desarrollo para organizar los procesos
+
+320
+00:25:53,260 --> 00:25:58,697
+pedagógicos, como así también legitimar
+al "movimiento" por sus fines en dicho
+
+321
+00:25:58,697 --> 00:25:59,121
+campo.
+
+322
+00:25:59,447 --> 00:26:04,547
+<break time="0.9s"/>Plan de Educación
+Física Infantil.<break time="1.4s"/>
+
+323
+00:26:04,676 --> 00:26:09,738
+El 29 de junio de 1966 se produjo en la
+Argentina el golpe de Estado por la
+
+324
+00:26:09,738 --> 00:26:15,210
+autodenominada "Revolución Argentina", la
+cual impuso como presidente de facto al
+
+325
+00:26:15,210 --> 00:26:20,545
+General Juan Carlos Oganía. Durante su
+mandato se impulsó un proceso de reforma
+
+326
+00:26:20,545 --> 00:26:25,607
+educativa que no logró concretarse en
+todos sus aspectos, pero sí inició la
+
+327
+00:26:25,607 --> 00:26:31,080
+descentralización hacia las provincias y
+la desfinanciación del sistema educativo
+
+328
+00:26:31,080 --> 00:26:32,516
+por parte del Estado.
+
+329
+00:26:32,970 --> 00:26:39,557
+El 26 de septiembre de 1966 asume como
+máxima autoridad de la Dirección General
+
+330
+00:26:39,557 --> 00:26:45,130
+de Educación Física, Deportes y
+Recreación el Profesor Ramón Muros.
+
+331
+00:26:45,512 --> 00:26:50,618
+Este segundo período en el organismo
+durará cuarenta y cinco días y en ese
+
+332
+00:26:50,618 --> 00:26:55,654
+lapso se lanzó el "Plan de Educación
+Física Infantil", el cual se terminó
+
+333
+00:26:55,654 --> 00:27:00,690
+materializando en la gestión del Profesor
+Hermes Pérez Madrid. En 1968 se
+
+334
+00:27:00,690 --> 00:27:05,796
+difundieron los dos tomos del libro
+"Educación Física Infantil" publicados
+
+335
+00:27:05,796 --> 00:27:10,971
+por la Dirección Nacional. Estaban
+dirigidos a la formación de los maestros
+
+336
+00:27:10,971 --> 00:27:16,567
+para el dictado de las clases en el nivel
+primario. Los tópicos centrales fueron:
+
+337
+00:27:16,567 --> 00:27:21,953
+características de la evolución del niño;
+principios pedagógicos; objetivos de
+
+338
+00:27:21,953 --> 00:27:26,849
+Educación Física; desarrollo de
+actividades por niveles; preparación de
+
+339
+00:27:26,849 --> 00:27:32,304
+la clase; y fundamento de actividades:
+atléticas, vida en la naturaleza, juegos
+
+340
+00:27:32,304 --> 00:27:35,032
+y predeportivas, rítmicas y expresivas.
+
+341
+00:27:35,566 --> 00:27:40,286
+La Educación Física Infantil, al igual
+que en el programa analizado en el
+
+342
+00:27:40,286 --> 00:27:45,072
+apartado anterior, se fundamentó en el
+hecho de "contribuir a la formación
+
+343
+00:27:45,072 --> 00:27:50,317
+integral". En este caso se explicitó el
+sustento en la psicología infantil. En el
+
+344
+00:27:50,317 --> 00:27:55,561
+primer capítulo del libro se expone una
+organización de la proposición pedagógica
+
+345
+00:27:55,561 --> 00:28:00,413
+de la educación física subsumida en
+categorías como "desarrollo", "procesos
+
+346
+00:28:00,413 --> 00:28:05,395
+de desarrollo" y "crecimiento", citando
+recurrentemente a Arnold Gesell, y en
+
+347
+00:28:05,395 --> 00:28:10,771
+menor medida a Elizabeth Hurlock y Arthur
+Jersild, y al momento de problematizar la
+
+348
+00:28:10,771 --> 00:28:16,016
+enseñanza del juego, a Erikson, Wallon,
+Gesell, Chateau y Piaget. La presencia de
+
+349
+00:28:16,016 --> 00:28:20,671
+la psicología del desarrollo ofició en
+este caso de estructuración de la
+
+350
+00:28:20,671 --> 00:28:25,784
+enseñanza. Se acentuaba que "el maestro
+deberá tener conocimiento y comprensión
+
+351
+00:28:25,784 --> 00:28:30,701
+de los modos de crecimiento". También se
+explicitaba que el desarrollo de la
+
+352
+00:28:30,701 --> 00:28:35,749
+"personalidad" envolvía al "ser total
+psicofísico"; esta acepción era empleada
+
+353
+00:28:35,749 --> 00:28:40,273
+también por Gilda Lamarque de Romero
+Brest en un texto de 1956 que era
+
+354
+00:28:40,273 --> 00:28:44,731
+recurrentemente citado en las
+producciones nacionales, donde afirmaba
+
+355
+00:28:44,731 --> 00:28:48,926
+que "la educación es responsable del
+desarrollo equilibrado de la
+
+356
+00:28:48,926 --> 00:28:54,237
+personalidad". Recurrían a estos autores
+para presentar los caracteres del niño en
+
+357
+00:28:54,237 --> 00:28:59,350
+diferentes períodos y, en base a ello,
+qué se debía enseñar, cómo hacerlo y las
+
+358
+00:28:59,350 --> 00:29:02,366
+relaciones que se producían entre los
+períodos.
+
+359
+00:29:02,688 --> 00:29:08,039
+En los "principios pedagógicos" se partía
+de una frase del filósofo y pedagogo
+
+360
+00:29:08,039 --> 00:29:13,391
+alemán Herman Nohl y eran recurrentes las
+citas al filósofo hermeneuta Wilhelm
+
+361
+00:29:13,391 --> 00:29:19,090
+Dilthey, con quien se había formado Nohl.
+Este autor aparecía al inicio del trabajo
+
+362
+00:29:19,090 --> 00:29:24,580
+de la Doctora Liselott Diem que presentó
+en el Segundo Congreso Internacional de
+
+363
+00:29:24,580 --> 00:29:30,279
+Educación Física y Deportiva Femenina que
+se realizó en París en 1953 con el título
+
+364
+00:29:30,279 --> 00:29:35,631
+"Los Estados de Actividad Física y el
+Movimiento Físico en el Niño como Medios
+
+365
+00:29:35,631 --> 00:29:40,843
+Educativos", y que fue difundido en la
+Argentina en 1957 por la Dirección de
+
+366
+00:29:40,843 --> 00:29:45,986
+Educación Física en el "Boletín Técnico
+número 2". Esta referencia promovía
+
+367
+00:29:45,986 --> 00:29:50,990
+entender de modo integral al niño,
+visualizando la relación en el trabajo
+
+368
+00:29:50,990 --> 00:29:54,048
+con el cuerpo y su arraigón en lo
+espiritual.
+
+369
+00:29:54,492 --> 00:30:00,216
+La principal mención conceptual del campo
+pedagógico fue John Dewey, entendido como
+
+370
+00:30:00,216 --> 00:30:05,451
+un promotor del "método activo". Como
+desarrolló David Beer, Dewey fue en el
+
+371
+00:30:05,451 --> 00:30:10,687
+período una de las referencias teóricas
+de "los modernos" del INEF de Romero
+
+372
+00:30:10,687 --> 00:30:15,852
+Brest y se había posicionado a partir de
+la participación de Liselott Diem.
+
+373
+00:30:16,307 --> 00:30:20,804
+En este documento se explicitaba como
+relevante la consideración de la
+
+374
+00:30:20,804 --> 00:30:25,170
+"actividad" como "experiencia",
+entendiendo por ello "las relaciones
+
+375
+00:30:25,170 --> 00:30:30,253
+activas existentes entre un ser humano y
+su ámbito natural y social", ideas que
+
+376
+00:30:30,253 --> 00:30:34,685
+había desarrollado el pedagogo
+norteamericano, permitiéndoles afirmar
+
+377
+00:30:34,685 --> 00:30:39,377
+que "la Educación física infantil trata
+de favorecer la propia actividad,
+
+378
+00:30:39,377 --> 00:30:43,808
+facilitando y vigorizando las
+adquisiciones espontáneas, naturales de
+
+379
+00:30:43,808 --> 00:30:48,370
+los niños". Esta búsqueda de la
+naturaleza del niño presentaba lazos de
+
+380
+00:30:48,370 --> 00:30:53,062
+proximidad con la concepción sobre las
+prácticas corporales propuesta, en
+
+381
+00:30:53,062 --> 00:30:57,689
+particular con la gimnasia, donde había
+una fuerte crítica a los métodos
+
+382
+00:30:57,689 --> 00:31:02,707
+estructurados y artificiales, enfatizando
+el lugar del ritmo y la creatividad.
+
+383
+00:31:03,148 --> 00:31:08,242
+Recuperando lo dicho más arriba, el
+objetivo general de la educación física
+
+384
+00:31:08,242 --> 00:31:12,579
+estaba en la "integración de la
+personalidad". Se suma a ello el
+
+385
+00:31:12,579 --> 00:31:17,329
+"acrecentamiento de la salud", "el
+desarrollo normal en las diferentes
+
+386
+00:31:17,329 --> 00:31:22,699
+edades" y "satisfacer la necesidad de
+movimiento". Esto último tomaba sentido a
+
+387
+00:31:22,699 --> 00:31:27,724
+partir de la articulación de las
+propuestas de psicología del desarrollo y
+
+388
+00:31:27,724 --> 00:31:32,268
+el enfoque de Dewey, que era pensado
+dentro de la "escuela activa".
+
+389
+00:31:32,722 --> 00:31:37,943
+Entre los objetivos específicos de la
+disciplina se promovieron la "formación
+
+390
+00:31:37,943 --> 00:31:41,928
+física básica", "educación del
+movimiento", "rendimiento" y
+
+391
+00:31:41,928 --> 00:31:47,012
+"creatividad". La clasificación y
+organización propuesta tomaba fundamento,
+
+392
+00:31:47,012 --> 00:31:52,371
+de acuerdo al desarrollo realizado años
+después por Mario López y Alberto Dallo
+
+393
+00:31:52,371 --> 00:31:57,798
+en 1972, en la teoría de la Gestalt, al
+considerar al movimiento como totalidad.
+
+394
+00:31:57,798 --> 00:32:03,019
+La organización propuesta tenía en cuenta
+la articulación progresiva de estas
+
+395
+00:32:03,019 --> 00:32:07,966
+"totalidades". Bajo este principio, a
+diferencia del nivel medio, para la
+
+396
+00:32:07,966 --> 00:32:13,324
+educación primaria no se especificaron
+"agentes" dado que la centralidad pasó a
+
+397
+00:32:13,324 --> 00:32:15,042
+estar en el "movimiento".
+
+398
+00:32:15,383 --> 00:32:19,895
+A lo largo de este apartado buscamos
+presentar los lineamientos principales
+
+399
+00:32:19,895 --> 00:32:24,223
+para la educación física en el nivel
+primario. Aunque buena parte de los
+
+400
+00:32:24,223 --> 00:32:28,491
+actores que participaron de la
+construcción del documento de referencia
+
+401
+00:32:28,491 --> 00:32:33,125
+fueron los mismos que lo habían hecho
+para el nivel secundario, se observa en
+
+402
+00:32:33,125 --> 00:32:36,844
+este caso la consolidación de
+determinadas categorías que eran
+
+403
+00:32:36,844 --> 00:32:41,660
+incipientes años antes, pero también la
+modificación de la posición de actores y
+
+404
+00:32:41,660 --> 00:32:45,623
+grupos, lo cual se evidencia en el
+entramado curricular propuesto.
+
+405
+00:32:46,054 --> 00:32:49,314
+<break time="0.9s"/>Conclusión.<break
+time="1.4s"/>
+
+406
+00:32:49,429 --> 00:32:54,064
+En este trabajo pusimos el foco en dos
+propuestas curriculares que presentaban
+
+407
+00:32:54,064 --> 00:32:58,638
+fuertes lazos en el desarrollo de la
+educación física escolar en la Argentina
+
+408
+00:32:58,638 --> 00:33:03,273
+en la década de 1960, como fueron la
+formación promovida en el nivel medio, en
+
+409
+00:33:03,273 --> 00:33:07,606
+particular en las Escuelas Normales, y
+los lineamientos para instaurar la
+
+410
+00:33:07,606 --> 00:33:12,482
+educación física en la escuela primaria.
+Esta sinergía buscó poner en evidencia la
+
+411
+00:33:12,482 --> 00:33:17,297
+relevancia de los maestros normales en la
+implementación de la disciplina a nivel
+
+412
+00:33:17,297 --> 00:33:21,992
+escolar en un pasado reciente, actores
+poco estudiados al momento de considerar
+
+413
+00:33:21,992 --> 00:33:26,626
+la formación de los docentes ligados a la
+educación de los cuerpos. Se abre la
+
+414
+00:33:26,626 --> 00:33:31,020
+posibilidad de problematizar cómo se
+implementó la educación física en las
+
+415
+00:33:31,020 --> 00:33:34,752
+escuelas normales, analizando los
+procesos de resignificación y
+
+416
+00:33:34,752 --> 00:33:39,507
+actualización de la currícula, además de
+adentrarnos en cómo implementaron estos
+
+417
+00:33:39,507 --> 00:33:44,141
+maestros las clases en el territorio y
+cómo se inscribió esta labor en diálogo
+
+418
+00:33:44,141 --> 00:33:46,549
+con sus otras prácticas en las escuelas.
+
+419
+00:33:47,006 --> 00:33:51,768
+En ambas formulaciones curriculares se
+observó la búsqueda de legitimar sus
+
+420
+00:33:51,768 --> 00:33:55,887
+propuestas en autores del campo
+pedagógico y de la psicología del
+
+421
+00:33:55,887 --> 00:34:00,520
+desarrollo. Asimismo, discursivamente,
+consideraron sus lineamientos como
+
+422
+00:34:00,520 --> 00:34:05,732
+"modernos", procurando la distinción con
+las propuestas anteriores. Esto fue tanto
+
+423
+00:34:05,732 --> 00:34:10,559
+al momento de presentar a los saberes
+específicos de la disciplina, como así
+
+424
+00:34:10,559 --> 00:34:14,420
+también al considerar los saberes
+pedagógicos, psicológicos y
+
+425
+00:34:14,420 --> 00:34:19,568
+antropológicos. En ese proceso en ambos
+casos aparecen referencias a los "métodos
+
+426
+00:34:19,568 --> 00:34:24,459
+activos", aunque como vimos tomaron
+diferentes referencias conceptuales. Pero
+
+427
+00:34:24,459 --> 00:34:29,028
+estas dos instancias forman parte de un
+proceso de debates que se fueron
+
+428
+00:34:29,028 --> 00:34:32,953
+produciendo en la disciplina,
+tensionándose en ellos tanto los
+
+429
+00:34:32,953 --> 00:34:37,908
+lineamientos donde eran preponderantes
+los saberes de la anatomía y fisiología
+
+430
+00:34:37,908 --> 00:34:42,927
+como aquellos vinculados a la gimnasia
+promovida por los maestros de gimnasia y
+
+431
+00:34:42,927 --> 00:34:47,818
+esgrima del Ejército, cuestiones que
+grafican las disputas en la construcción
+
+432
+00:34:47,818 --> 00:34:48,526
+curricular.
+
+433
+00:34:48,893 --> 00:34:53,684
+En la propuesta destinada al nivel medio
+estaban presentes conceptos y prácticas
+
+434
+00:34:53,684 --> 00:34:58,051
+que evidenciaban la participación y
+articulación de diferentes grupos que
+
+435
+00:34:58,051 --> 00:35:02,660
+habían estado disputando la currícula
+disciplinar desde la década de 1930. En
+
+436
+00:35:02,660 --> 00:35:07,391
+el documento destinado a la educación
+primaria se visualiza la consolidación de
+
+437
+00:35:07,391 --> 00:35:12,364
+problemáticas y enfoques que venían de la
+mano de los organismos y las asociaciones
+
+438
+00:35:12,364 --> 00:35:16,973
+internacionales en las cuales estaba
+sumergida la educación física argentina.
+
+439
+00:35:17,317 --> 00:35:22,902
+Esto último no quiere decir la presencia
+de un único enfoque, dado que continuaban
+
+440
+00:35:22,902 --> 00:35:28,074
+estando presentes distintas perspectivas
+psicológicas al mismo tiempo que la
+
+441
+00:35:28,074 --> 00:35:33,728
+asignación de un lugar preponderante a la
+formación de la "personalidad". Bajo esta
+
+442
+00:35:33,728 --> 00:35:39,313
+categoría se sintetizará la discusión de
+la "formación integral"; esto también por
+
+443
+00:35:39,313 --> 00:35:44,208
+momentos apareció sustentado en la
+"espiritualidad", que como vimos tuvo
+
+444
+00:35:44,208 --> 00:35:46,277
+diversos marcos de referencia.
+
+445
+00:35:46,682 --> 00:35:51,937
+La estructuración de las prácticas en
+base a los saberes de la psicología fue
+
+446
+00:35:51,937 --> 00:35:56,776
+legitimando un lugar protagonico al
+"movimiento", invisibilizando a los
+
+447
+00:35:56,776 --> 00:36:02,031
+"agentes". Es más, Dallo y López en 1972
+titulan su libro "El movimiento como
+
+448
+00:36:02,031 --> 00:36:07,286
+agente instrumental operativo". Este
+punto será una gran diferencia entre los
+
+449
+00:36:07,286 --> 00:36:11,918
+dos documentos analizados. Esta
+centralidad en el "movimiento" en la
+
+450
+00:36:11,918 --> 00:36:17,449
+educación física, que se comienza a dar
+en lugar de diferentes manifestaciones de
+
+451
+00:36:17,449 --> 00:36:22,151
+la gimnasia y el deporte, enfatiza la
+diferenciación entre estas tres
+
+452
+00:36:22,151 --> 00:36:22,842
+prácticas.
+
+453
+00:36:23,335 --> 00:36:28,135
+Entendemos que este trabajo es un primer
+análisis sobre la problemática; en ese
+
+454
+00:36:28,135 --> 00:36:32,812
+sentido resulta interesante explicitar
+para futuros estudios posibles líneas.
+
+455
+00:36:32,812 --> 00:36:37,489
+Una de ellas puede estar vinculada a la
+concepción de "naturaleza" del niño y
+
+456
+00:36:37,489 --> 00:36:41,735
+cómo ello estructura e informa los
+sentidos asignados a las diferentes
+
+457
+00:36:41,735 --> 00:36:45,797
+prácticas corporales. También nos
+preguntamos: ¿cómo estos enfoques
+
+458
+00:36:45,797 --> 00:36:49,920
+conceptuales se articularon en un
+contexto desarrollista?, ¿cómo las
+
+459
+00:36:49,920 --> 00:36:54,843
+prácticas pedagogicas sobre los cuerpos
+se inscribieron en estos procesos?, ¿cuál
+
+460
+00:36:54,843 --> 00:36:59,335
+era la matriz ideológica de estas
+prácticas pedagogicas sobre los cuerpos?
+
