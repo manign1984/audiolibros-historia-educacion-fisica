@@ -734,6 +734,124 @@
       "subtitleTimelineEnd": 3616.8,
       "subtitleTimelineReason": "El SRT original termina 4,353 s después del contenedor MP3; se conservan los tiempos de origen sin alteraciones.",
       "documentSha256": "2145be49e799a62dae69e7725af1458712f106c4ceb609e4215abee015428b9c"
+    },
+    {
+      "id": "pineau-reprimir-discriminar",
+      "config": {
+        "module": "src/pineau-dictadura/readerContract.js",
+        "export": "pineauDictaduraReader"
+      },
+      "document": {
+        "module": "src/pineau-dictadura/readerContract.js",
+        "export": "pineauDictaduraReadingDocument"
+      },
+      "page": "src/pineau-dictadura/PineauDictaduraApp.jsx",
+      "main": "src/pineau-dictadura/PineauDictaduraMain.jsx",
+      "creditsKey": "pineauDictadura",
+      "storage": {
+        "notesKey": "pineau-reprimir-discriminar-notes-v1",
+        "stateKey": "pineau-reprimir-discriminar-audio-state-v1"
+      },
+      "sync": {
+        "unit": "paragraph",
+        "status": "paragraph-preview",
+        "review": "Seguimiento aproximado de 58 párrafos basado en 604 segmentos SRT de origen, distribuidos según extensión del texto. No implica verificación acústica ni precisión por oración."
+      },
+      "materials": [
+        {
+          "path": "src/pineau-dictadura/readingDocument.generated.json",
+          "kind": "text",
+          "bytes": 68386,
+          "sha256": "bcbe2e568263ffde9f1929f75077f93935f8f170fc41cee22f0a40d752afa658"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/texto-academico.txt",
+          "kind": "text",
+          "bytes": 44364,
+          "sha256": "a0fe6b32a9395302894458c1eb0962f83e7e2dc75b9d27d63a1a720fb2720ad0"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/marcas-originales.srt",
+          "kind": "subtitles",
+          "bytes": 65791,
+          "sha256": "952161e3c988e8349b11a3251a80d75ffe3a9834f7d8fdbb519793d3db3432ca"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-00.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "275a0cdcc17a5b8533757200a854724712cdc859a8fdf5dbafb8026312c3995b"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-01.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "d6a8847bbcd08913ba5b89ab010bb5edca675c02227501ee1e9c1ac3932cc325"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-02.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "d5b09f2a28fd22479fcd8d8346f133c82efe235512d21ed80b25b7e1eebebaf6"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-03.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "0c67bfbc05e251b4ef4bd6d7c9e659834e5172128243d0637e6ada4c0cf32215"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-04.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "df5247c74bb54a7bacb01fe11cd1648d422aa5390bd2f23e03539d52f135a3bc"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-05.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "697fb40ea0cb0e2b583d1091e361061b49c677da7d14be249104db426c5f13fa"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-06.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "89993335f490ff4ac001e9d058ecfc4634f2a3e36a29dbf368ec0436e266d421"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-07.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "b7de10a0bcd58b1a66702b91bbb44841d5b945ba67dac1f4ee2ce2b199524209"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-08.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "5e3402f5be2896a5187e66032b82dda9832cdfce5c64408b52b43245abffe256"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-09.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "56b1f35fc1f28ab21526278e0deebc4bb80b0ae2549d84400c3352808b23e591"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-10.part",
+          "kind": "audio",
+          "bytes": 2522721,
+          "sha256": "5e408bb91c4eb95694fc8688c6f00ea4d64e85f9c8a7af739f58ff7c051feedc"
+        },
+        {
+          "path": "public/assets/pineau-reprimir-discriminar/audio/audio-11.part",
+          "kind": "audio",
+          "bytes": 2522698,
+          "sha256": "19f8b4337f2779683845e84c29fa98033940dee0265bf87ca6690814f7444625"
+        }
+      ],
+      "audioDuration": 3027.226122,
+      "audioSha256": "1d57251c9d51a134bcb985c9f576afa807098b4d812b8c1286d7203055c71cc6",
+      "documentSha256": "b31f635c94ed9451d12b447e9fa7c09f0601b2a56a85e85d9e2d62452323f124"
     }
   ],
   "baseline": {
