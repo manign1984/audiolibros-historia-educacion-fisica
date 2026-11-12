@@ -1241,6 +1241,154 @@
       "subtitleTimelineEnd": 8301.719,
       "subtitleTimelineReason": "El SRT completo se conserva como fuente. Sus últimas marcas terminan 1,755 s después del MP3 empalmado; el resaltado del cierre usa los tiempos del SRT del fragmento.",
       "documentSha256": "08b971ac5b8b3cd2b94c29f6136767fe210df0c0a0f2ee577f8dfc179a17b25a"
+    },
+    {
+      "id": "thwaites-rey-democracia-argentina",
+      "config": {
+        "module": "src/thwaites-rey/readerConfig.js",
+        "export": "readerConfig"
+      },
+      "document": {
+        "module": "src/thwaites-rey/readerConfig.js",
+        "export": "readingDocument"
+      },
+      "page": "src/thwaites-rey/ThwaitesReyApp.jsx",
+      "main": "src/thwaites-rey/main.jsx",
+      "creditsKey": "thwaitesRey",
+      "storage": {
+        "notesKey": "thwaites-rey-democracia-argentina-reader-notes-v1",
+        "stateKey": "thwaites-rey-democracia-argentina-reader-state-v1"
+      },
+      "sync": {
+        "unit": "paragraph",
+        "status": "paragraph-preview",
+        "review": "Seguimiento aproximado de 29 párrafos a partir de las marcas del SRT original de 366 segmentos."
+      },
+      "materials": [
+        {
+          "path": "src/thwaites-rey/readingDocument.generated.json",
+          "kind": "alignment",
+          "bytes": 38216,
+          "sha256": "a0b2949e20b43d05a41b7f318b1c83c99841778b893c5760cd5fa0d96532e571"
+        },
+        {
+          "path": "public/assets/thwaites-rey/texto-academico.txt",
+          "kind": "text",
+          "bytes": 27209,
+          "sha256": "696be8bbca41aefd100614da81180a638ff81850148e8a8ef141b1d3a954b981"
+        },
+        {
+          "path": "public/assets/thwaites-rey/subtitulos.srt",
+          "kind": "subtitles",
+          "bytes": 40053,
+          "sha256": "c3632b155edd24ed2f8a557d4c56cb05816de9c515c84f7f447c934d86e568e1"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-00.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "132de40ca4184152a89843370fed7ca0e184d1a87315ec41f7e941be7a5ba45f"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-01.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "c10647f6e645d64d652bf4715071705091ed7d25e47304811a8385bb18b90a82"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-02.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "bfd43311f359ab7203a50b2542840dba39e30ba75f08945dc15fbe911f6e9ed4"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-03.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "c9a0d3eaa08b6d8a07e4950bbae5bf7b9cf7c5b2e2a80f2f208e3f0d8611b45f"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-04.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "ccbf26f6c20959f3e0283f0c6a5a34889890a314f66e7e86aa2a6d8aa77a6ca3"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-05.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "78d406538de502cbc8953476ea3d7e08237e2c262706e8275e68160d0a0d8ae6"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-06.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "f16bb50f3c0af5f7e363960e45dbacab273f43c91b98ce96eaa42b5a1bd8da5b"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-07.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "752b97562bdd32ce57447c0e949fd8be6ffb786948b10285f52ebaf5fda2162f"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-08.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "37219550cdf99f09f1802a4eafeba9012253663bad1f578ec701b7e21669c11a"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-09.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "b87298241bdfa79bea3244d78bb20fb73ab7c64ffc9a162814a5fae843036903"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-10.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "41d8561e3c3caa870c82f1277a9737115339715a04bac7014d608a0598810735"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-11.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "6d5cd310e5edf9e9946345d1741261f59f196088a3dc4a95e930c9ca08a2277a"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-12.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "fd9db011759b862a1986e9e6b6e4e2b0be15e3347883c8eaa8d67fb0683a789b"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-13.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "c2038a34602fa3da33c79cfe280c6c2984c7cd79baf19e578ff3c4503f4193bd"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-14.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "c6421b8e015441f2388ef3f0d455327892d36a5518dcf13633bd67732cbe5572"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-15.part",
+          "kind": "audio",
+          "bytes": 1000000,
+          "sha256": "d5e166ed8767864d76cd5f2f89b14fbe055eb54c76af458e438359c3bdd910d2"
+        },
+        {
+          "path": "public/assets/thwaites-rey/audio/audio-16.part",
+          "kind": "audio",
+          "bytes": 255595,
+          "sha256": "4cb60a74f902ecdaab4e175a3a57f5421097b3bd5b3228e8f7e9c0626f951555"
+        }
+      ],
+      "audioDuration": 1625.521633,
+      "audioSha256": "1c834a8330d4796052eedd0c14ad86f67b189e8a482ede0ddf196b7aa9038c2e",
+      "documentSha256": "a75a928b21eb1dd12f96632a04c90c2bbf8aaaba5738aa0e8565e816601b57af"
     }
   ],
   "baseline": {

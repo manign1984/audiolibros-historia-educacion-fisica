@@ -10,11 +10,13 @@
 
 **Obra y workId:** *La democracia argentina bajo el largo ciclo de hegemonía neoliberal (1983–2013)*, [Voces en el Fénix, 4(31), 32–41](https://www.economicas.uba.ar/extension/vocesenelfenix/la-democracia-argentina-bajo-el-largo-ciclo-de-hegemonia-neoliberal-1983-2013/). `thwaites-rey-democracia-argentina`.
 
-**Unidad y estado interno:** unidad 1 · **EN DESARROLLO**. Cinco bloques canónicos, Contexto en una pantalla sobre democracia y capacidad de intervención estatal, y lector textual con el [documento de cátedra](https://docs.google.com/document/d/1bpMEpjWIhFRf1NeSuFP0AsJiwoMzV0kewOUCmurCiMs/edit). [PDF de referencia](https://drive.google.com/file/d/1BQx5QwKILia0JQ8SIXpRgJdPPXUSlj9B/view). MP3 y SRT/VTT por incorporar.
+**Unidad y estado interno:** unidades 2 y 3 · **EN DESARROLLO**. El lector integrado usa la [edición de cátedra](https://docs.google.com/document/d/1bpMEpjWIhFRf1NeSuFP0AsJiwoMzV0kewOUCmurCiMs/edit) y conserva cuatro apartados y 29 párrafos. Se migra el cuaderno y el avance del lector textual por página.
 
-**Rama, PR, commit y ruta:** [PR #146](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/146) · `98b7740026a645b7b383c9505f8e8c29aa34d350` · [feature/thwaites-rey-democracia-argentina](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/thwaites-rey-democracia-argentina) · [Ruta técnica de Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/thwaites-rey-democracia-argentina/).
+**Insumos:** [MP3 de 27:05](https://drive.google.com/file/d/1dvnG5HsLSYHnsXGKDN4JcY9ycRLddHsV/view), preservado en 17 partes consecutivas y verificado por SHA-256, y [SRT original de 366 marcas](https://drive.google.com/file/d/1LcoOQWKccvjINep6IwBokY15r_IvXQpy/view). Las marcas alimentan el resaltado aproximado por párrafos.
 
-**Próxima acción única:** comprobación de la página y del lector textual por el responsable tras el despliegue técnico.
+**Rama y ruta:** [feature/thwaites-rey-lector-integrado](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/thwaites-rey-lector-integrado) · [Página textual original, PR #146](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/146) · [Ruta técnica de Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/thwaites-rey-democracia-argentina/).
+
+**Próxima acción única:** comprobación del responsable de la reproducción, el resaltado y el cuaderno en el lector integrado desplegado.
 
 ---
 

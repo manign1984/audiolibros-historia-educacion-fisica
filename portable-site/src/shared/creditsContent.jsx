@@ -1,13 +1,13 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
-  'thwaites-rey-democracia-argentina': {
+  thwaitesRey: {
     references: [
       <>Thwaites Rey, M. (2013). La democracia argentina bajo el largo ciclo de hegemonía neoliberal (1983–2013). <em>Voces en el Fénix, 4</em>(31), 32–41. {link('https://www.economicas.uba.ar/extension/vocesenelfenix/la-democracia-argentina-bajo-el-largo-ciclo-de-hegemonia-neoliberal-1983-2013/', 'Edición original, Facultad de Ciencias Económicas, UBA')}.</>,
       link('https://cienciapolitica.sociales.uba.ar/wp-content/uploads/sites/6/2011/04/MABELTHWAITESREY.pdf', 'Trayectoria académica de Mabel Thwaites Rey · Facultad de Ciencias Sociales, UBA'),
     ],
     rights: [
-      <>Texto de Mabel Thwaites Rey. Fuente: <em>Voces en el Fénix</em>. El lector presenta la versión de cátedra.</>,
+      <>Texto de Mabel Thwaites Rey. Fuente: <em>Voces en el Fénix</em>. El lector presenta la versión de cátedra y el audiolibro facilitado al proyecto +TEC UNAHUR, con seguimiento aproximado por párrafos.</>,
       <>Fotografía de Inicio: Archivo General de la Nación. {link('https://www.argentina.gob.ar/node/351944', 'La historia de la democracia argentina')}.</>,
       <>Retrato: {link('https://periodico.unal.edu.co/articulos/en-argentina-estamos-ante-un-ataque-inedito-contra-la-educacion-y-la-ciencia-mabel-thwaites', 'Periódico UNAL, Universidad Nacional de Colombia')}. Contexto: elaboración didáctica de +TEC UNAHUR.</>,
     ],
