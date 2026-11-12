@@ -12,7 +12,7 @@ import { JSDOM } from 'jsdom';
  *   (antes :is(.obra-page), ahora :has(> .journey-header)).
  */
 const css = readFileSync(fileURLToPath(new URL('../src/shared/canonical-reading.css', import.meta.url)), 'utf8');
-const canonicalAncestor = ':has(> .journey-header)';
+const canonicalAncestor = ':is(:has(> .journey-header), .pineau-page)';
 const readingSelector = `body:has(.journey-header, .aisenstein-preview__header) ${canonicalAncestor} #lectura.hb-material-reading`;
 const pageClasses = [
   'hobsbawm-page', 'orbuch-page', 'pineau-page', 'aisenstein-preview',
@@ -38,6 +38,7 @@ const html = `<!doctype html><html><body>
       </div>
     </section></main>
   </div>`).join('')}
+  <header class="journey-header"></header><main class="pineau-page"><section id="lectura" class="hb-material-reading"><div class="hb-material-content"><button class="hb-material-open">Abrir</button></div></section></main>
   <div class="library-page"><main><section class="hb-material-reading"><div class="hb-material-content"></div></section></main></div>
   <div class="nested-only"><div><header class="journey-header"></header></div><section class="hb-material-reading"></section></div>
 </body></html>`;
@@ -50,7 +51,8 @@ for (const name of pageClasses) {
   assert.ok(page.querySelector('.hb-material-content'), `El recorrido ${name} conserva su entrada`);
   assert.ok(page.querySelector('.hb-material-open'), `El recorrido ${name} conserva su botón`);
 }
+assert.ok(document.querySelector('main.pineau-page').matches(canonicalAncestor), 'Pineau usa el encabezado como hermano de main; conserva la geometría sin reestructuración');
 assert.ok(!document.querySelector('.library-page').matches(canonicalAncestor), 'El catálogo no debe heredar el lector');
 assert.ok(!document.querySelector('.nested-only').matches(canonicalAncestor), 'Un encabezado anidado no es contrato de página');
 assert.ok(document.querySelector('.levoratti-page').matches(canonicalAncestor), 'Levoratti hereda el bloque 04');
-console.log('PASS: selector canónico para 10 páginas existentes, Levoratti y futuras obras; sin alcance sobre catálogo');
+console.log('PASS: herencia canónica, estructura histórica de Pineau, Levoratti y nuevas páginas; catálogo excluido');
