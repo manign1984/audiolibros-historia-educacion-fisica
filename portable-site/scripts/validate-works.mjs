@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { catalog, programGroups } from '../src/biblioteca/catalog.js';
+import { workRegistry, programGroups } from '../src/biblioteca/catalog.js';
 import { LIST_KEY } from '../src/biblioteca/libraryState.js';
 import { loadWorkContracts } from './lib/load-work-contracts.mjs';
 import { checkManifest, validateWorks, validateReferences } from './lib/validate-work-contracts.mjs';
@@ -21,7 +21,7 @@ for (let index = 0; index < args.length; index += 1) {
 try {
   const manifest = checkManifest(JSON.parse(await readFile(manifestPath, 'utf8')));
   const contracts = await loadWorkContracts(root, manifest.works);
-  const report = await validateWorks({ root, manifest, contracts, catalog, programGroups, reservedStorageKeys: [LIST_KEY] });
+  const report = await validateWorks({ root, manifest, contracts, catalog: workRegistry, programGroups, reservedStorageKeys: [LIST_KEY] });
   const references = await validateReferences({ directory: resolve(root, 'src'), source: true });
   report.errors.push(...references.errors);
   report.referencesChecked = references.checked;
@@ -29,7 +29,7 @@ try {
     const built = await validateReferences({ directory: dist, base: process.env.GITHUB_PAGES_BASE || '/' });
     report.errors.push(...built.errors);
     report.builtReferencesChecked = built.checked;
-    for (const entry of catalog) {
+    for (const entry of workRegistry) {
       try { await readFile(resolve(dist, entry.path, 'index.html')); }
       catch { report.errors.push({ code: 'built-route', location: entry.id, message: 'Ruta ausente de la compilación.' }); }
     }
@@ -41,7 +41,7 @@ try {
     for (const work of report.works) console.log(`${work.id}: ${work.units} unidades ${work.unit}, ${work.timed} temporizadas, ${work.materials} materiales.`);
     for (const item of report.warnings) console.log(`AVISO [${item.code}] ${item.location}: ${item.message}`);
     for (const item of report.errors) console.error(`ERROR [${item.code}] ${item.location}: ${item.message}`);
-    console.log(`${report.ok ? 'APROBADO' : 'FALLÓ'}: ${report.works.length} recorridos; ${catalog.length} fichas; ${report.referencesChecked} referencias fuente${dist ? ` y ${report.builtReferencesChecked} compiladas` : ''}; ${report.errors.length} errores, ${report.warnings.length} avisos. ${report.scope}`);
+    console.log(`${report.ok ? 'APROBADO' : 'FALLÓ'}: ${report.works.length} recorridos; ${workRegistry.length} fichas; ${report.referencesChecked} referencias fuente${dist ? ` y ${report.builtReferencesChecked} compiladas` : ''}; ${report.errors.length} errores, ${report.warnings.length} avisos. ${report.scope}`);
   }
   if (!report.ok) process.exitCode = 1;
 } catch (cause) {

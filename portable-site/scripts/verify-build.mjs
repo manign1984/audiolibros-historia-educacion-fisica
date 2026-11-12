@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { access, readFile, readdir } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
-import { catalog } from '../src/biblioteca/catalog.js';
+import { workRegistry } from '../src/biblioteca/catalog.js';
 
 const dist = resolve('dist');
 const expectedBase = process.env.GITHUB_PAGES_BASE || '/';
@@ -75,7 +75,7 @@ assert.ok(
 );
 assert.ok(allJavaScript.includes('Volver a la biblioteca'));
 // Recorrido con audiolibro realmente integrado; comprobar la ruta y todos sus recursos.
-const arataEntry = catalog.find(entry => entry.id === 'arata-marino-auroras-tempestades');
+const arataEntry = workRegistry.find(entry => entry.id === 'arata-marino-auroras-tempestades');
 assert.equal(arataEntry?.status, 'available', 'Arata y Mariño debe estar disponible para leer y escuchar.');
 const arataHtml = await readFile(resolve(dist, 'textos/arata-marino-auroras-tempestades/index.html'), 'utf8');
 assert.match(arataHtml, /Auroras y tempestades/);
@@ -186,7 +186,7 @@ for (const path of ['assets/arata-marino/autor-editorial.svg', 'assets/arata-mar
   await access(resolve(dist, path));
 }
 
-for (const entry of catalog.filter((item) => item.status !== 'available')) {
+for (const entry of workRegistry.filter((item) => item.status !== 'available')) {
   const html = await readFile(resolve(dist, entry.path, 'index.html'), 'utf8');
   if (entry.status === 'review') {
     assert.ok(html.includes('Edición en revisión'), `${entry.id}: distinguir lectura disponible de alineación pendiente.`);

@@ -12,7 +12,9 @@ La portada general usa la autoría del catálogo como único rótulo superior. E
 
 ## Interfaz general · Orden del catálogo (12/11/2026)
 
-Después de «Seguí donde dejaste», Inicio muestra las 31 fichas del catálogo. El orden inicial es por apellido y el selector permite agrupar por unidad. La referencia es el [Programa historia UNAHUR 2024–2025](https://drive.google.com/file/d/1cU8MfaN_PaYLSaKSaR6adFG_qk3GZrqH/view). El programa enumera 18 lecturas obligatorias en un bloque general. Su ubicación por unidad sigue los contenidos de cada unidad y se registra en `portable-site/src/biblioteca/program.js`. Las 13 fichas restantes figuran en «Complementaria».
+Después de «Seguí donde dejaste», Inicio muestra las 18 fichas seleccionadas por el responsable para la apertura. La selección pública se registra en `portable-site/src/biblioteca/catalog.js`. Las demás fichas quedan fuera de Inicio, Explorar, la búsqueda y Mi lista, con sus rutas y datos conservados para una futura reincorporación.
+
+El orden inicial es por apellido. El agrupamiento por unidad toma como referencia el [Programa historia UNAHUR 2024–2025](https://drive.google.com/file/d/1cU8MfaN_PaYLSaKSaR6adFG_qk3GZrqH/view), con Lionetti ubicado en la Unidad 2 por indicación del responsable. El catálogo incluye los dos artículos de Levoratti y distingue el capítulo de Melano y Aisenstein sobre formación docente durante la última dictadura de «Militares al gobierno, juramentados al poder».
 
 ## OBRA ACTIVA · Alejo Levoratti (12/11/2026)
 

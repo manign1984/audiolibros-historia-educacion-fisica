@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowDown, ArrowLeft, ArrowRight, BookOpen, Bookmark, Check, ChevronLeft, ChevronRight, Clock3, Headphones, Library, Pause, Play, Search, X } from 'lucide-react';
-import { catalog, programGroups, filterCatalog, resolveSitePath, citationAsPlainText, canReadAndListen, matchesAvailability } from './catalog.js';
+import { catalog, workRegistry, programGroups, filterCatalog, resolveSitePath, citationAsPlainText, canReadAndListen, matchesAvailability } from './catalog.js';
 import { formatDuration, readList, readProgress, saveList } from './libraryState.js';
 
 const base = import.meta.env.BASE_URL;
 const href = (path) => resolveSitePath(path, base);
 const available = catalog.filter((entry) => entry.status === 'available');
 const readable = catalog.filter((entry) => canReadAndListen(entry) || entry.status === 'text');
-const validIds = catalog.map((entry) => entry.id);
+const validIds = workRegistry.map((entry) => entry.id);
 
 function usePersonalLibrary() {
   const [saved, setSaved] = useState(() => { try { return readList(window.localStorage, validIds); } catch { return []; } });

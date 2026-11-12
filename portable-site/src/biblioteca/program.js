@@ -16,7 +16,7 @@ export const programGroupByWork = new Map([
   ['marcaida-scaltritti-estado-nacional', 'unidad-2'],
   ['soares-corrientes-gimnasticas', 'unidad-2'],
   ['galak-del-dicho-al-hecho', 'unidad-3'],
-  ['lionetti-escuela-republicana', 'unidad-3'],
+  ['lionetti-escuela-republicana', 'unidad-2'],
   ['scharagrodsky-constitucion-ef', 'unidad-3'],
   ['tedesco-educacion-sociedad', 'unidad-3'],
   ['aisenstein-melano-martinez-autonomia', 'unidad-4'],

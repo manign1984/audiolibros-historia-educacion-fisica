@@ -26,6 +26,7 @@ const records = [
   ['arata-marino-auroras-tempestades', 'Nicolás Arata · Marcelo Mariño', 'Auroras y tempestades', 'Auroras y tempestades: la educación entre golpes (1955–1976)', 'sage', '2013', 'Arata, N. y Mariño, M. (2013). Auroras y tempestades: la educación entre golpes (1955–1976). En La educación en la Argentina. Una historia en 12 lecciones (lección 10). Ediciones Novedades Educativas.', 'programa', 'assets/arata-marino/autor-editorial.svg'],
   ['melano-militares-juramentados', 'Ignacio Melano', 'Militares al gobierno, juramentados al poder', 'Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70', 'sage', '2025', 'Melano, I. (2025). Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70. En Formar líderes y salvar a los jóvenes. Claves para comprender la cultura escolar del Instituto Nacional de Educación Física General Belgrano (cap. 6, pp. 131–149). EdUNLu.', 'entrevistas'],
   ['feldfeber-gluz-politicas', 'Myriam Feldfeber · Nora Gluz', 'Las políticas educativas en la Argentina', 'Las políticas educativas en Argentina: herencias de los 90, contradicciones y tendencias de nuevo signo', 'pink', '2011', 'Feldfeber, M. y Gluz, N. (2011). Las políticas educativas en Argentina: herencias de los 90, contradicciones y tendencias de nuevo signo. Educação & Sociedade, 32(115), 339–356.', 'programa'],
+  ['levoratti-gimnasia-1958-1968', 'Alejo Levoratti', 'La educación física y la gimnasia (1958–1968)', 'La educación física y la gimnasia en la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968)', 'sage', '2022', 'Levoratti, A. (2022). La Educación Física y la gimnasia en la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968). Revista da ALESDE, 14(2), 162–178. https://doi.org/10.5380/jlasss.v14i2.87581', 'materiales', 'assets/levoratti-gimnasia-1958-1968/autor-editorial.svg'],
   ['levoratti-debates-ef', 'Alejo Levoratti', 'Los debates de la Educación Física', 'Los debates de la Educación Física y los enfoques de las ciencias sociales: un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015)', 'pink', '2018', 'Levoratti, A. (2018). Los debates de la Educación Física y los enfoques de las ciencias sociales: un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015). Revista da ALESDE, 9(1), 45–63. https://doi.org/10.5380/jlasss.v9i1.61189', 'programa'],
   ['puiggros-que-paso', 'Adriana Puiggrós', 'Qué pasó en la educación argentina', 'Qué pasó en la educación argentina. Breve historia desde la conquista hasta el presente', 'pink', '2003', 'Puiggrós, A. (2003). Qué pasó en la educación argentina. Breve historia desde la conquista hasta el presente (pp. 165–203). Galerna.', 'programa'],
   ['thwaites-rey-democracia-argentina', 'Mabel Thwaites Rey', 'La democracia argentina', 'La democracia argentina bajo el largo ciclo de hegemonía neoliberal (1983–2013)', 'pink', '2013', 'Thwaites Rey, M. (2013). La democracia argentina bajo el largo ciclo de hegemonía neoliberal (1983–2013). Voces en el Fénix, 4(31), 32–41.', 'materiales'],
@@ -35,6 +36,15 @@ const records = [
 // Obras con lectura y audio habilitados; la disponibilidad del lector
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
+  'levoratti-gimnasia-1958-1968': {
+    status: 'available',
+    canonicalCard: true,
+    duration: 2219.335,
+    stateKey: 'levoratti-gimnasia-1958-1968-audio-state-v1',
+    historicalPeriod: 'Educación Física escolar · 1958–1968',
+    readingDetail: 'Seguimiento aproximado por párrafos y cuaderno de lectura',
+    description: 'Una comparación entre los programas de Educación Física para la escuela media y la primaria permite seguir los debates sobre la gimnasia, el movimiento y la formación docente entre 1958 y 1968.',
+  },
   'levoratti-debates-ef': {
     status: 'text',
     canonicalCard: true,
