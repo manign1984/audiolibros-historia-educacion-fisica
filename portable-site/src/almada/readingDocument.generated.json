@@ -1,0 +1,710 @@
+{
+  "document": {
+    "id": "almada-privilegiados",
+    "title": "Los privilegiados en la Nueva Argentina",
+    "subtitle": "La cultura física y el deporte en la política del peronismo",
+    "author": "Cecilia Almada",
+    "duration": 1423.673469,
+    "versionLabel": "Artículo completo · History of Education in Latin America, 2020",
+    "frontMatter": [
+      {
+        "id": "almada-portada-titulo",
+        "role": "title",
+        "text": "Los privilegiados en la Nueva Argentina"
+      },
+      {
+        "id": "almada-portada-subtitulo",
+        "role": "subtitle",
+        "text": "La cultura física y el deporte en la política del peronismo"
+      },
+      {
+        "id": "almada-portada-autor",
+        "role": "author",
+        "text": "Cecilia Almada"
+      }
+    ],
+    "sections": [
+      {
+        "id": "resumen",
+        "title": "Resumen y abstract",
+        "shortTitle": "Resumen",
+        "paragraphs": [
+          {
+            "id": "almada-resumen-p1",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-resumen-p1-s1",
+                "text": "El presente artículo describe el rol de la cultura física y el deporte en la Argentina del primer peronismo. Ambos integran la política de ampliación de ciudadanía que postuló el peronismo y se tornan un campo de disputas de recursos materiales y simbólicos. En ellas intervienen diversas agencias estatales, entre las que se destaca La Fundación Eva Perón. El análisis de documentos y las entrevistas a informantes calificados permitieron desentrañar ambas dimensiones y comprender el papel de la cultura física en la conformación de lo que el discurso peronista denominó “hombre nuevo”."
+              }
+            ]
+          },
+          {
+            "id": "almada-resumen-p2",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-resumen-p2-s1",
+                "text": "Palabras clave: Cultura física. Deporte. Peronismo. Fundación Eva Perón. Políticas públicas."
+              }
+            ]
+          },
+          {
+            "id": "almada-resumen-p3",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-resumen-p3-s1",
+                "text": "This article describes the role of physical culture and sport in the policy of the first Peronism. Physical culture becomes a field of disputes of material and symbolic resources where various state agencies take part, standing out the Fundación Eva Perón. The analysis of documents and interviews with qualified informants allows the unravelling of both dimensions and the understanding of the rol of physical culture in what the Peronist discourse called \"new man.\" Keywords: physical Culture. Sport. Peronismo. Eva Peròn Fundation. Public policies."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "introduccion",
+        "title": "Introducción",
+        "shortTitle": "Introducción",
+        "paragraphs": [
+          {
+            "id": "almada-introduccion-p1",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-introduccion-p1-s1",
+                "text": "Desde fines del siglo XIX la práctica de la cultura física se impulsa con la finalidad de inculcar a los niños y niñas pautas morales y de civilidad propias de la vida moderna, propiciar el control corporal y estimular un estilo de vida higiénico (Scharadrogsky, 2014). En la Argentina, a partir de la creación del sistema educativo y durante las dos primeras décadas del siglo XX, su abordaje estuvo a cargo de la escuela pública de manera casi exclusiva, responsabilidad que asumió cumpliendo un papel esencial en la educación espiritual y corporal de los niños y niñas (Armus, 2014). Sin embargo, el interés que suscitan las cuestiones en torno al cuerpo produjo tensiones entre diversas agencias estatales y actores sociales que buscaron imponerse. Por un lado, los militares estaban interesados en el fortalecimiento corporal de los jóvenes varones que eran concebidos como futuros soldados. En otro sentido, los deportistas, gimnastas y esgrimistas de las elites vernáculas se interesaban en la formación corporal basándose en el ideal compartido “mens sana in corpore sano”. Al mismo tiempo, los médicos e higienistas consideraban al cuerpo de los ciudadanos en su relación a la cuestión de la higiene pública como respuesta a la degeneración de la raza. Por último, los pedagogos y maestros que planteaban a la educación corporal como aspecto relevante del discurso pedagógico que se desplegó en la escuela1. (Aisenstein, 2006)."
+              }
+            ]
+          },
+          {
+            "id": "almada-introduccion-p2",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-introduccion-p2-s1",
+                "text": "En 1930 se inicia en la Argentina el periodo signado por la interrupción del sistema democrático encabezado por José Evaristo Uriburu. La denominada “Restauración Conservadora” descreía de la democracia liberal, admiraba a los modelos corporativistas europeos y accedía al gobierno mediante elecciones fraudulentas. Ese contexto nacional fue el marco para que en 1936 el gobernador de la provincia de Buenos Aires2 Manuel Fresco impulsara una reforma a la educación - que abarcaba a la educación física y la enseñanza de religión - iba a tener implicancia a nivel nacional. Crea la Dirección General de Educación Física y Cultura de la provincia con la finalidad de mejorar la salud física y moral de la población e intensificar el sentimiento de nacionalidad. Las actividades corporales involucradas en la educación física escolar, la práctica deportiva y los juegos al aire libre son consideradas una herramienta fundamental de la política que promueve una educación espiritual congruente con los sentimientos de argentinidad y con la lucha contra el comunismo (Reggiani, 2014). En 1938, la reforma del área a nivel provincial se replica a nivel nacional a través de la creación de la Dirección General de Educación Física Nacional, y logra imponerse la perspectiva militarista afín a los sectores golpistas a cargo del gobierno (Aisenstein & Scharagrodsky, 2006)."
+              }
+            ]
+          },
+          {
+            "id": "almada-introduccion-p3",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-introduccion-p3-s1",
+                "text": "Por ese entones el estado nacional continúa interesado en resolver los problemas sociales3 y la confianza depositada en el sistema educativo para incidir en la conformación de conductas saludables se traduce en el rol concedido a los maestros en la promoción de cambios de hábitos (Aisenstein & Cairo, 2012; Ramacciotti, 2007). La importancia atribuida a la cultura física y a la religión católica en la formación de las niñas y niños argentinos continuó vigente hasta el derrocamiento de Perón en 1955. Pero el fomento de la cultura física y el deporte transcendió el ámbito escolar durante el primer y segundo gobierno peronista llegando a ocupar un lugar relevante en la escena política más allá de la escuela."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "politica-publica",
+        "title": "La política pública peronista sobre cultura física",
+        "shortTitle": "Política pública",
+        "paragraphs": [
+          {
+            "id": "almada-politica-publica-p1",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p1-s1",
+                "text": "El gobierno peronista retoma la perspectiva planteada en la década anterior e intensifica las políticas sobre el tema con la finalidad de mejorar la salud de la población, prevenir enfermedades, mejorar la especie y moralizar la sociedad (Cornelis, 2012). La preeminencia que adquiere la cultura física la transforma en un campo de disputas de recursos materiales y simbólicos en la que participan diversas agencias estatales. Además de la Secretaría de Educación 4 y la Secretaría de Salud5, intervienen en su desarrollo el Ministerio de Guerra a través del Consejo Nacional de Educación Física6 y, a partir de su creación en 1948, la Fundación Eva Perón encargada de implementar acciones fuera del ámbito escolar. La práctica de la educación física escolar se articula con el control sanitario, ya que a través de la higiene y medicina escolar el Estado se abocó a la vigilancia y el cuidado de los niños para formar su carácter y su ideología (Cornelis, 2005)."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p2",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p2-s1",
+                "text": "Desde la perspectiva legal, hasta el año 1949 la normativa promulgada a favor de la promoción de la cultura física y el deporte aparece dispersa. Se opta fundamentalmente por la resolución rápida que permite la promulgación de decretos (Lupiano Cano, 2003) aunque también el congreso promulga leyes7 destinadas a la promoción de la cultura física: en 1947 se sanciona la ley Nº12.931, donde se aprueba el presupuesto de gastos para ese año y se destinan 20.000.000 de pesos para préstamos a instituciones deportivas y se otorgan subsidios8 (Aguirre, 2003)."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p3",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p3-s1",
+                "text": "Si bien las ideas de transformación social por medio de acciones formuladas por el peronismo, para construir la Nueva Argentina, fueron en muchos casos interpretadas como similares a las concepciones de la Italia y Alemania de la Segunda Guerra Mundial, parecieran estar más en línea con los debates científicos en torno a la eugenesia de las décadas de 1920 y 1930. Junto al repertorio simbólico subyace una concepción de otro orden: las ideas eugenésicas que impulsaba Carrillo y que formaban parte de los debates científicos existentes desde fines del siglo XIX (Ramacciotti, 2004). En ese sentido, Ramón Carrillo propone “una nueva rama aplicada a la medicina: la biopolítica” entendida como “la concurrencia de todas las ciencias conocidas aplicadas a mantener el potencial biológico de la Nación, que compete fundamentalmente al estado”. Carrillo basa la importancia de esta nueva rama en que “la grandeza de los pueblos está fundamentada en la salud y en la capacidad racional del potencial biológico, tanto como en la cultura” (Carrillo, 1949, p. 341). De este modo, se la concibe, por un lado, como estrategia para formar hombres vigorosos para defender la nación."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p4",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p4-s1",
+                "text": "Por esos años el objeto mayor de preocupación del discurso médico sobre la infancia estaba vinculado a los “niños indigentes que habitaban en lugares apartados” (Ramacciotti, 2010, p. 169) que en un futuro serían jóvenes y adultos inaptos para integrarse al ejército y al mundo laboral productivo. Como respuesta a la cuestión se consideró que el Estado debía hacerse responsable de “generar dispositivos para alejar a la infancia de la calle y del influjo perjudicial emanado de sus familias” (Ramacciotti, 2010, p. 180)."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p5",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p5-s1",
+                "text": "Paralelamente, la formación integral infantil continuó bajo la órbita del campo educativo, tal como queda plasmado en la Constitución Nacional de 1949, donde se indica que la enseñanza escolar deberá desarrollar “el vigor físico de los jóvenes”, perfeccionar “sus facultades intelectuales” y “sus potencias sociales”, “su capacitación profesional”, “la formación del carácter y el cultivo integral de todas las virtudes personales, familiares y cívicas.”(Astelarra & de la Portilla, 1950, p. 28). Se destaca, indudablemente, el papel del Estado en la formación del niño como “buen ciudadano” (Carli, 2002)."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p6",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p6-s1",
+                "text": "Así como había una política de la infancia, también había un nuevo modo de pensar a los jóvenes: en ellos se depositaba la visión de mundo centrada en las posibilidades de regeneración material y moral, transformándolos en protagonistas de la realidad social y política."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p7",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p7-s1",
+                "text": "Como soporte primordial de las políticas de Estado el gobierno peronista diseñó estrategias de difusión de las acciones con la finalidad de suscitar y afianzar adhesiones. Para ello se valió de la Subsecretaría de Informaciones9 (Gené, 2005; Rosa, 2009), instrumento clave de la construcción de la imagen de gobierno que identifica al Movimiento, al Partido y al Estado. La subsecretaría efectúa el control de los medios de difusión y la planificación centralizada de mensajes y contenidos, y su financiamiento, creando una política de imagen sustentada en la “imaginería popular”. La cultura física fue elegida como una de las áreas a difundir."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p8",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p8-s1",
+                "text": "Como parte del impulso al sector el gobierno destina fondos públicos para la creación de la Escuela Municipal Infantil y Juvenil del deporte “Eva Perón”, lo que implicaba la contratación de técnicos especialistas para fomentar la práctica deportiva. Al mismo tiempo, se creó la Escuela de Especialización Deportiva Presidente Perón en la Ciudad de Buenos Aires10 con la finalidad de propiciar la formación de profesores y técnicos de las distintas especialidades deportivas. La escuela infantil y juvenil funcionó como departamento de aplicación de la escuela de formación profesional11."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p9",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p9-s1",
+                "text": "A partir de la reforma a la Constitución Nacional de 1949, se brinda un lugar definido a la cultura física en la política pública orientada a consolidar el estado de bienestar. En ella se plantea a la educación como uno de los derechos básicos la que perseguía como una de sus finalidades fomentar"
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p10",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p10-s1",
+                "text": "el desarrollo del vigor físico de los jóvenes, el perfeccionamiento de sus facultades intelectuales y de sus potencias sociales, a su capacitación profesional, así como a la formación del carácter y el cultivo integral de todas las virtudes personales, familiares y cívicas (Segundo Plan Quinquenal, art. 37, cap. IV, punto 1)."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p11",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p11-s1",
+                "text": "El Segundo Plan Quinquenal12 fue presentado como “una doctrina, una teoría, y las formas de ejecución de las tareas” que emergían “en lo material y en lo espiritual, de esa doctrina y de esa teoría del Estado” (Perón, 1953, p. 14). Allí se plasmaron los lineamientos establecidos en la carta magna, y se presentaba explícitamente a la cultura física como herramienta de ampliación de ciudadanía. Formaba parte del apartado dedicado a la acción social, no sólo en el capítulo referido a la Educación –en donde se mencionan los objetivos generales de la educación física en el sistema de educación formal–, sino también en el capítulo referido al campo cultural, cuyo objetivo fundamental era “conformar una cultura nacional, de contenido popular, humanista y cristiano, inspirada en las expresiones universales de las culturas clásicas y modernas y de la cultura tradicional argentina, en cuanto concuerden con los principios de la Doctrina Nacional” (Segundo Plan Quinquenal, 1953, p. 99)."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p12",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p12-s1",
+                "text": "El plan de gobierno detalla los objetivos generales de la cultura física y el deporte donde se establece el impulso al deporte a través de instituciones privadas con el apoyo del Estado que oficiaría de auspiciante en la organización de todas las entidades deportivas del país para lograr un sistema nacional de organización deportiva. De este modo se garantizaba a los clubes la cobertura no sólo de sus asociados sino también de la población de las zonas de influencia. Además expresaba que el Estado debía auspiciar la realización de certámenes regionales, nacionales e internacionales que promovieran “la elevación del espíritu y el nivel deportivo del Pueblo” y la asistencia técnica y económica a deportistas que lo necesitaran “a fin de facilitarles la práctica de su especialidad y contribuir al progreso y superación del deporte nacional”, la fiscalización médica de carácter obligatorio a deportistas, y la promoción y facilitación de la formación de profesores y técnicos especializados en cada una de las distintas actividades deportivas (Segundo Plan Quinquenal, 1952, p.103)."
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p13",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p13-s1",
+                "text": "Al mismo tiempo, el gobierno peronista promulga desde sus inicios una serie de decretos y resoluciones municipales en el ámbito de la capital13. En su mayoría se relacionan con la cesión de terrenos fiscales a diferentes entidades deportivas vinculadas a la élite porteña, la creación de la Dirección Municipal del Deporte, y la construcción de infraestructura deportiva14. El sentido de estas acciones resulta acorde al proyecto político que concibe a la cultura física como un derecho social y fueron una estrategia para poner a disposición de los sectores populares espacios de promoción y práctica de la cultura física y el deporte, tal como narra un entrevistado:"
+              }
+            ]
+          },
+          {
+            "id": "almada-politica-publica-p14",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-politica-publica-p14-s1",
+                "text": "Me viene a mí la orden de que los clubes habían perdido la cesión gratuita, entonces se analizaba: el club Buenos Aires de Tenis, el club Argentino de Tenis, el club Deportes Racionales, los tres más o menos cerca, ahí en Palermo; el Golf Club Argentino. Entonces a mí se me ocurre la idea de popularizar eso: la Municipalidad se va a hacer cargo del terreno y los gastos, pero la comisión directiva y los socios tienen que seguir perteneciendo al club. ¡Así lo hice! ¿Para qué me sirvió eso? Para crear las escuelas [abiertas a la ciudadanía] de tenis, y en el Golf Club lo mismo, la escuela de golf, para los chicos, cosa que el club en aquella época no aceptaba si no era socio (funcionario a cargo de la Dirección de Deportes de la Municipalidad de Buenos Aires durante el periodo 1950-1955)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fundacion-eva-peron",
+        "title": "El rol de la Fundación Eva Perón",
+        "shortTitle": "Fundación Eva Perón",
+        "paragraphs": [
+          {
+            "id": "almada-fundacion-eva-peron-p1",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-fundacion-eva-peron-p1-s1",
+                "text": "Simultáneamente al incentivo que adquiere la educación física en el sistema educativo, se promociona la práctica física en diferentes instituciones sociales: unidades básicas barriales, escuelas sindicales, clubes deportivos barriales, ateneos deportivos femeninos, etc. La Fundación Eva Perón15 se transforma desde su creación en su principal impulsora (Cucuzza, 1997). Su creación se enmarca en la demanda al Estado, presente desde inicios del siglo XX, de administrar las cuestiones referentes a la asistencia social y la salud. La fundación adopta una política opuesta a la aplicada hasta ese momento por las sociedades benéficas en manos de las élites que procuraban mitigar las consecuencias de la pobreza sin cuestionar su origen (Ramacciotti, 2010). De este modo se configura como un espacio clave ideado para asistir a mujeres, ancianos y niños (Barry et al., 2008). A pesar de ser formalmente una institución privada, en los hechos funcionó como entidad paraestatal en la que se expresa el poder que se concentra en la figura de Eva Perón: era la que recaudaba, vigilaba y decidía el destino de los fondos (Navarro, 1994)."
+              }
+            ]
+          },
+          {
+            "id": "almada-fundacion-eva-peron-p2",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-fundacion-eva-peron-p2-s1",
+                "text": "La entidad se integra a la estructura de poder informalmente. Esa característica la favorece ya que no requería una administración burocrática (Navarro, 1994). Si bien en su funcionamiento involucraba la articulación con otras dependencias estatales del área de la salud y la educación, la autonomía conferida a este organismo le dio una capacidad de respuesta muy superior a cualquier dependencia de la administración pública. Muchos empleados pertenecían a diferentes reparticiones estatales y cumplían parte de sus tareas en la fundación. Esa doble pertenencia agilizaba la resolución de las demandas."
+              }
+            ]
+          },
+          {
+            "id": "almada-fundacion-eva-peron-p3",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-fundacion-eva-peron-p3-s1",
+                "text": "Este modelo organizativo convierte a la entidad, según el término utilizado por uno de los entrevistados16, en “la caballería ligera” del Estado. Se destacó, entonces, por la velocidad con la que se tomaban las decisiones y el modo de eludir la burocracia a partir de tener los medios económicos para resolver las situaciones planteadas. Fue esa modalidad de gestión la que dio lugar al despliegue de una política social paralela, que fue interpretada de diferentes maneras: como contrapeso del sindicalismo (Plotkin, 1994) y como mecanismo de incorporación de sectores a los que la estructura oficial del gobierno no llegaba (Barry et al., 2008; Navarro, 1994)."
+              }
+            ]
+          },
+          {
+            "id": "almada-fundacion-eva-peron-p4",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-fundacion-eva-peron-p4-s1",
+                "text": "Evita se transformó en la representante de Perón en las acciones sociales destinadas a los sectores populares más desprotegidos, mientras él se ocupaba de la gran política. En el discurso ante el Primer Congreso Latinoamericano de Medicina del Trabajo, Eva Perón explica la función de la entidad: cubrir lagunas de la organización estatal “porque en todo el país donde se realiza una obra, siempre hay lagunas que cubrir y para ello se debe estar pronto para realizar una acción rápida, directa y eficaz17\"."
+              }
+            ]
+          },
+          {
+            "id": "almada-fundacion-eva-peron-p5",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-fundacion-eva-peron-p5-s1",
+                "text": "La Fundación Eva Perón fue la vía a la que recurre el Estado nacional para concretar numerosas obras de infraestructura vinculadas al desarrollo social. En el terreno de promoción de la cultura física se destaca la creación de la Ciudad Estudiantil Juan Perón. Se trataba de un predio de cinco manzanas con un alojamiento con capacidad para albergar a estudiantes provenientes de las provincias, instalaciones para la práctica deportiva, una sala de teatro y cine. También se ocupaba de organizar diversos eventos deportivos, tales como los Campeonatos Infantiles Evita, Juveniles Juan Perón y las Olimpíadas Infantiles. Los recursos económicos de la fundación eran aprobados por el Congreso Nacional, tal el caso del dinero requerido para la organización de los campeonatos. Así, en 1949 se destinaron 950.000$ para el torneo de fútbol infantil a desarrollarse en todo el territorio argentino. En 1950 1.500.000$. En 1951 se destinaron 3.500.000$ y se amplía el campeonato al basquetbol infantil en todo el territorio nacional, y a la natación y el atletismo en el gran Buenos Aires. Además, se efectuó la donación de terrenos a dicha entidad. En 1952, 1953 y 1954 el estado contribuyó con 3.000.000$ por año para la organización de los Campeonatos Infantiles Evita y Juveniles Juan Perón (Aguirre, 2003). Parte de las partidas presupuestarias se utilizaron para construir infraestructura deportiva, tales como natatorios, gimnasios, velódromo y pista de atletismo y para subsidiar la mejora de las instalaciones a clubes barriales de todo el país. Tal como adelantamos, la difusión de las políticas del sector formó parte de la propaganda de gobierno, de tal modo que era frecuente encontrar reseñas de las acciones de la fundación en casi todos los números de las revistas Mundo Infantil. Las reseñas destinaban un espacio considerable para comunicar especialmente el desarrollo de los campeonatos. En esos artículos periodísticos se hacía mención que las obras de la fundación cumplían con lo estipulado en el Segundo Plan Quinquenal, y respondían a la finalidad de constituir el hombre del futuro, estimulando las cualidades requeridas en la Nueva Argentina."
+              }
+            ]
+          },
+          {
+            "id": "almada-fundacion-eva-peron-p6",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-fundacion-eva-peron-p6-s1",
+                "text": "Por otra parte, la Secretaría de Salud Pública y la Fundación Eva Perón18 actuaban de manera complementaria19, colaborando en el interés del gobierno en proyectar su política sanitaria en todo el territorio nacional, integrando las regiones más alejadas20, para llegar a poblaciones que no tenían hasta ese momento, contacto con los servicios oficiales de salud. De este modo, la acciones de cultura física promovidas por la fundación se transformaron en un vehículo notable para estudiar condiciones físicas de las niñas, niños y jóvenes del país. Fue uno de los caminos elegidos para revertir las situaciones de pobreza y abandono sanitario infantil, ya que la política sanitaria era impulsada simultáneamente desde otros organismos públicos: el Ministerio de Educación y la Dirección de Asistencia Social."
+              }
+            ]
+          },
+          {
+            "id": "almada-fundacion-eva-peron-p7",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-fundacion-eva-peron-p7-s1",
+                "text": "Asimismo, la idea acerca del potencial de la juventud era compartida por varios funcionarios de gobierno, y se expresaba también en los discursos oficiales de los principales referentes. Eva Perón, en ocasión de la apertura de los campeonatos de 1950, dirigió un mensaje radiofónico en el que expresó la necesidad de estimular las prácticas de cultura física y el deporte desde la niñez, a la que retrataba como la “maravillosa reserva con que se nutre el porvenir de la patria”. Y afirmaba que la práctica sistemática de la cultura física servía “para perfeccionar el físico y fortalecer el espíritu”. En ese mismo sentido es que, ya casi al final de su gobierno, Juan Perón sostenía que “los hombres fuertes y sanos suelen ser más buenos que aquél que tiene algún defecto21”."
+              }
+            ]
+          },
+          {
+            "id": "almada-fundacion-eva-peron-p8",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-fundacion-eva-peron-p8-s1",
+                "text": "Estas ideas –que circulaban entre los científicos desde décadas anteriores– sirvieron de fundamento a la creación de los campeonatos infantiles convertido en el marco propicio para estimar los índices de potencial biológico y la difusión de la educación sanitaria, en lo que fuera una suerte de medicalización de la cultura física y el deporte. Se consideraba que la ampliación de esas prácticas en los sectores populares favorecería el cultivo de cuerpos sanos, fuertes y bellos, al tiempo que se inculcaba a niños y jóvenes cualidades morales tales como la voluntad, decisión, la confianza en sí mismo, el espíritu de superación, la responsabilidad y la cooperación."
+              }
+            ]
+          },
+          {
+            "id": "almada-fundacion-eva-peron-p9",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-fundacion-eva-peron-p9-s1",
+                "text": "El requisito de la revisación médica para inscribirse en los campeonatos generó consenso en los participantes. Prácticamente todos los entrevistados se refirieron al control médico, coincidiendo en el valor social de esa práctica. Así, evocaban que eran los niños quienes pedían a sus padres participar de las competencias e, inclusive, les pedían que los llevaran al control médico. Si bien el acceso a la salud que significaba el control médico infantil estaba en consonancia con la idea de ampliación de derechos, es interesante revisarlas a la luz de las ideas eugenésicas de su mentor, que consideraba que las políticas preventivas incidirían a posteriori en el bagaje hereditario de los individuos."
+              }
+            ]
+          },
+          {
+            "id": "almada-fundacion-eva-peron-p10",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-fundacion-eva-peron-p10-s1",
+                "text": "Los campeonatos Evita fueron la excusa perfecta para lograr introducir estrategias de evaluación aplicadas a sectores que hasta ese momento no tenían acceso, transformándose en un vehículo que cumplía con la fiscalización médica de todos los que participantes posibilitando el relevamiento epidemiológico del que hasta entonces se carecía. La participación del Estado en el campo de la salud fortaleció el discurso médico en el campo de la cultura física y el deporte que venía en ascenso desde principios de siglo XX."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "consideraciones-finales",
+        "title": "Consideraciones finales",
+        "shortTitle": "Conclusiones",
+        "paragraphs": [
+          {
+            "id": "almada-consideraciones-finales-p1",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-consideraciones-finales-p1-s1",
+                "text": "Es incuestionable que el peronismo consideró a la cultura física como una herramienta política lo que se evidencia en la profusa normativa dedicada al tema desde el comienzo de sus gobiernos. Aunque en los primeros años el desarrollo del área haya sido desarticulado, muchos de los objetivos que se señalan en el Segundo Plan Quinquenal se venían ejecutando en años anteriores, y, a partir de 1948, fueron viabilizados a través de la Fundación Eva Perón. La sanción de varias leyes nacionales destinadas a definir la organización de la entidad en el área de la cultura física así lo demuestra."
+              }
+            ]
+          },
+          {
+            "id": "almada-consideraciones-finales-p2",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-consideraciones-finales-p2-s1",
+                "text": "Las acciones de cultura física y el deporte que introduce el peronismo implican una intensa actividad político-educadora que confirma la dispersión de la relación pedagógica, disuelta en muy variadas formas de relación entre actores e instituciones sociales, intentando sostener la hegemonía en el plano simbólico a través de una profunda acción formativa, hecho que se manifiesta en el elevado número tanto de acciones escolarizadas como no escolarizadas. A través del impulso al sector se procuró crear un nuevo perfil de ciudadano, un sujeto más colectivo que individual, movilizado, politizado, plebiscitario, organizado, disciplinado, alfabetizado. De este modo, la cultura física y el deporte se concibió como dispositivo para formar hombres vigorosos que se desempeñarían en el mundo del trabajo y, al mismo tiempo, capaces de defender la nación. En otras palabras, a cultura física fue considerada un aporte primordial para la construcción del “hombre nuevo”."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bibliografia",
+        "title": "Bibliografía",
+        "shortTitle": "Bibliografía",
+        "paragraphs": [
+          {
+            "id": "almada-bibliografia-p1",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-bibliografia-p1-s1",
+                "text": "Aguirre, Alfredo. (2003). Argentine: Federal public policies. June 1943 – September 1955. Recuperado de http://choloar.tripod.com/Argentine_Fpp4355.pdf Aisenstein, Á., & Scharagrodsky, P. (2006). Tras las huellas de la educación física escolar argentina: cuerpo, género y pedagogía, 1880-1950. Prometeo Libros Editorial. Aisenstein, Angela. (2006). La educación física escolar en Argentina. Conformación y permanencia de una matriz disciplinar, 1880-1960 (Tesis doctoral). San Andrés, Victoria, Buenos Aires. Aisenstein, Angela, & Cairo, María Eugenia. (2012). El gobierno de la moral y la salud: educación alimentaria en el discurso pedagógico. História da Educação, 16. Almada, Cecilia. (2017). El discurso pedagógico oficial sobre alimentación en la escuela primaria argentina. Período de Programas de Asuntos (1936-1961) (Tesis doctoral). San Andrés, Buenos Aires. Armus, Diego. (2014). Colonias de vacaciones: de la higiene a la recreación. En Miradas médicas sobre la cultura física en Argentina (1880-1970) (pp. 179-192). Buenos Aires: Prometeo Libros Editorial. Astelarra, Aramis, & de la Portilla, Evaristo. (1950). Conozcamos nuestra Constitución. Buenos Aires: Universidad de Buenos Aires. Ballent, Anahí. (1993). Arquitectura y ciudad como estéticas de la política. El peronismo en Buenos Aires, 1946-1955. Anuario IEHS, 8, 175-198. Barry, Carolina, Acha, Oscar, Ramacciotti, Karina, & Valobra, Adriana. (2008). La fundación Eva Perón y las mujeres: entre la provocación y la inclusión. Buenos Aires: Biblos. Carli, Sandra. (2002). Niñez, pedagogía y política. Transformaciones de los discursos acerca de la infancia en la historia de la educación argentina entre 1880 y 1950. Buenos Aires: Miño y Dávila. Carrillo, Ramón. (1949). Incidencia de la salud sobre la civilización y la cultura. En Contribuciones al conocimiento sanitario: Vol. II. Buenos Aires: Eudeba. Cornelis, Stella Maris. (2012). Adaptar la normativa y los métodos educativos al contexto local: la educación física en el Territorio Nacional de La Pampa (1930-1955). En Miradas desde la Historia social y la Historia intelectual. América Latina en sus culturas: de los procesos independistas a la globalización (pp. 121-136). Centro de Estudios Históricos Prof. Carlos S.A. Segreti; Facultad de Filosofía y Humanidades, Universidad Católica de Córdoba; Universidad Veracruzana, México. Instituto de Investigaciones Histórico-Sociales. Cornelis, Stella Marys. (2005). Control y generización de los cuerpos durante el peronismo: La educación física como transmisora de valores en el ámbito escolar (1946-1955). Aljaba [online], 5, 105-121. Cucuzza, Héctor Rubén. (1997). Estudios de historia de la Educaciòn durante el primer peronismo. 1943-1955. Buenos Aires: Los libros del Riel. Galak, Eduardo. (2017). Educar (con) la mirada. Discursos políticos y sentidos estéticos sobre la cultura física en noticieros cinematográficos. En Gregorio Weinberg : escritos en su honor : Premio Gregorio Weinberg a la Investigación en Historia de la Educación, la Ciencia y la Cultura Latinoamericanas (pp. 55-74). Buenos Aires: CLACSO."
+              }
+            ]
+          },
+          {
+            "id": "almada-bibliografia-p2",
+            "kind": "body",
+            "sentences": [
+              {
+                "id": "almada-bibliografia-p2-s1",
+                "text": "Gené, Marcela. (2005). Un mundo feliz: imágenes de los trabajadores en el primer peronismo, 1946-1955. Universidad de San Andrés. Gómez Dagfel, Patricia. (2004). La educación física en la legislación argentina. El itinerario normativo de una asignatura escolar (1880-1955) (Tesis de maestría). Universidad de Salamanca. Lupiano Cano, Joaquín. (2003). Las políticas deportivas durante la primera presidencia de Juan Domingo Perón (1946-1952) (Tesis de grado). Universidad Nacional de Luján, Luján, Argentina. Lupo, Víctor. (2004). Historia política del deporte argentino (1610-2002). Buenos Aires: Corregidor. Navarro, Marysa. (1994). Evita. Buenos Aires: Planeta. Perón, Juan. (1953). Exposición del presidente de La Nación del Segundo Plan Quinquenal. Sub Secretaría de Informaciones. Plotkin, Mariano. (1994). Mañana es San Perón: propaganda, rituales políticos y educación en el régimen peronista 1946-1955. Buenos Aires: Ariel. Ramacciotti, Karina. (2004). Las tensiones en la política sanitaria de Ramón Carrillo. En Sueños de bienestar en la Argentina. Estado y políticas públicas durante el peronismo (1946-1955) (pp. 229-268). Buenos Aires: Imago Mundi. Ramacciotti, Karina. (2007). Las campañas alimentarias durante el peronismo. Presentado en Latin American Studies Association (LASA), Montreal, Canadá. Ramacciotti, Karina. (2009). La política sanitaria del peronismo. Buenos Aires: Biblos. Ramacciotti, Karina. (2010). Políticas sanitarias hacia la infancia durante el peronismo. En Derivas de Darwin. Cultura y Política en clave biológica. Buenos Aires: Siglo XXI Editora Iberoamericana. Reggiani, Andrés. (2014). Eugenesia y cultura física. Tres trayectorias históricas: Francia, Gran Bretaña y Aregetina. En Miradas médicas sobre la cultura física en Argentina, 1880-1970 (pp. 17-58). Buenos Aires: Prometeo Libros Editorial. Rosa, Gabriel. (2009). ¿Desplazamientos de sentidos e incoherencias?. Una aproximación al \"Modelo de propaganda peronista. En V Jornadas de Jóvenes Investigadores. Instituto de Investigaciones Gino Germani, Facultad de Ciencias Sociales, Universidad de Buenos Aires, Buenos Aires. Recuperado de https://www.aacademica.org/000-089/133.pdf Scharadrogsky, Pablo. (2014). El discurso médico y su relación con la invención del oficio de ´educador físico´: entre la heteronomía solapada y la autonomía vigilada (Argentina, 1901-1931). En Miradas médicas sobre la cultura física en Argentina (1880-1970) (pp. 101-148). Buenos Aires: Prometeo Libros Editorial."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "endnotes": [
+      {
+        "number": 1,
+        "page": "2",
+        "text": "En 1884, la sanción de la Ley Nº1420 de Educación Común posibilitó la organización del sistema de escolarización de masas a través de la escuela moderna. La ley dio preeminencia al Estado por sobre los discursos familiar y eclesiástico. Así, la organización del sistema educativo argentino tuvo en su origen tres características: era laico. gratuito y obligatorio.",
+        "sentenceId": "almada-introduccion-p1-s1"
+      },
+      {
+        "number": 2,
+        "page": "3",
+        "text": "Por entonces, y desde 1862, la organización política de la Argentina dividía al territorio nacional en provincias (entidades subnacionales autónomas y autogobernadas) y territorios nacionales que dependían del Poder Ejecutivo Nacional. En 1880 se produjo la federalización de la ciudad de Buenos Aires lo que obligó a la provincia a crear su propia capital. Así es como se funda la ciudad de La Plata en 1882. Así, la provincia de Buenos Aires se constituyó en la jurisdicción políticamente más relevante, detrás de la homónima Capital Federal. Desde entonces el entramado económico y político entre la provincia y la nación argentina fue ceñido.",
+        "sentenceId": "almada-introduccion-p2-s1"
+      },
+      {
+        "number": 3,
+        "page": "3",
+        "text": "Una de las cuestiones relevantes que toma la política sanitaria es el alcoholismo, que lo considera una amenaza para el mejoramiento de la “raza”. La injerencia estatal en los comportamientos de los padres “viciosos” debilitaba la autoridad familiar respecto a la educación de los hijos (Almada, 2017).",
+        "sentenceId": "almada-introduccion-p3-s1"
+      },
+      {
+        "number": 4,
+        "page": "4",
+        "text": "En el campo de la educación física escolar, se trata del período más prolífico, siendo la primera presidencia de Perón la que mayor número de leyes, decretos y resoluciones ministeriales promulga. Superan ampliamente cualquier otra concentración de normas que pueda identificarse combinando varias presidencias. Le siguen en productividad regulatoria el periodo presidencial anterior, antecedente insoslayable, en cual se comenzó a concebir a la educación física como herramienta estatal (Gómez Dagfel, 2004)."
+      },
+      {
+        "number": 5,
+        "page": "4",
+        "text": "En 1946 la Secretaría de Salud Pública plantea la creación de un aparato administrativo que señala el interés en la cultura física: se crea Dirección de Medicina del Deporte, que integra el área de Medicina Social de la Secretaría de Salud (Ramacciotti, 2010).",
+        "sentenceId": "almada-politica-publica-p1-s1"
+      },
+      {
+        "number": 6,
+        "page": "4",
+        "text": "En 1947 el Consejo Nacional de Educación Física queda bajo la órbita del Ministerio de Guerra; su finalidad es la de dirigir, formar y fiscalizar la educación física, que comprende la gimnasia, los juegos y deportes, la recreación, las colonias de vacaciones y los campamentos (Lupo, 2004).",
+        "sentenceId": "almada-politica-publica-p1-s1"
+      },
+      {
+        "number": 7,
+        "page": "4",
+        "text": "A través de decretos presidenciales se otorgan subsidios a diversas entidades deportivas: a la Federación Atlética Argentina para concurrir al campeonato sudamericano de Chile (Decreto N°14.375/1946) y para concurrir al campeonato sudamericano de Río de Janeiro (Decreto N°7.662/1947), a la Federación Ecuestre (Decreto N° 1.789/1946), a la Federación Argentina de Esgrima (Decreto N°14.614/1946), a la Federación Argentina de Tiro para concurrir al campeonato Sudamericano de Chile (Decreto N°1.549 /1947), a la Federación de Basquet para organizar el XVIII Campeonato Argentino (Decreto N°1.622/1947), para concurrir al campeonato sudamericano de Río de Janeiro(Decreto N°14.661 /1947) y para organizar el XIX Campeonato Argentino (Decreto N°33.160/1948), a Buenos Aires Rowing para Copa Enley (Decreto N°1.623/1947), a la Federación de Natación (Decreto N°3.833 /1947), a la Confederación Argentina de Sky y Andinismo para concurrir a las olimpíadas de invierno en Saint Moritz (Decreto N°35.960/1947), al Club Sarmiento de Junín para construir el estadio (Decreto N°35.970/1947), a la familia Galimi para concurrir a torneos de esgrima en Francia e Italia (Decreto N°2.843/1948), a los hermanos Navarra para concurrir al Campeonato Mundial de Billar en Chicago (Decreto N°4.582/1948), para viaje de Carrera a Francia (Decreto N°6.093/1948) y para gastos de organización del Mundial de la especialidad (Decreto N°28.251/1948), al Club Tigre (Decreto N°10.295/1948), a la Federación Ciclista para concurrir al Campeonato Mundial de Ámsterdam (Decreto N°17.109/1948), a la asociación Argentina de Tennis para disputar la Copa Davis en Wimbledon, Roland Garros y Bélgica (Decreto N°20.548/1948), a la Federación de Ajedrez para la concurrencia de Narjdorf al Campeonato Mundial de Estocolmo (Decreto N°19.733/1948). También por ese mismo medio se otorgan préstamos a los clubes: Rosario Central (Decreto N°1.364/1947), Vélez Sarfield (Decreto N°2.171/1947), River Plate (Decreto N°2.259/1947), Independiente (Decreto N°2.904(1947), Racing (Decreto N°3.610/1947), Huracán (Decreto N°21.263/1947), Lanús (Decreto N°31.755/1947), Chacarita Juniors (Decreto N°31.824/1947), Platense (Decreto N°32.837/1947), Estudiantes de La Plata (Decreto N°36.326/1947), Gimnasia y Esgrima de La Plata (Decreto N°36.327/1947), San Fernando (Decreto N°5.536/1948), Pucará de Burzaco (Decreto N°13.043/1948), Olivos Rugby Club (Decreto N°15.663/1948), Central Córdoba (Decreto N°5.018/1948) y al Club Tigre (Decreto N°27.919/1948). También se otorgaron préstamos a entidades que practican Rugby, según establece el Decreto Nº29.310 de 1947 y las partidas presupuestarias para la participación en las Olimpíadas de Londres, a través del Decreto N°5.355/1948 (Aguirre, 2003).",
+        "sentenceId": "almada-politica-publica-p2-s1"
+      },
+      {
+        "number": 8,
+        "page": "5",
+        "text": "El Congreso de la Nación sanciona en 1947 las leyes Nº12.898, que establece una partida de 1.500.000 pesos para entidades deportivas de la provincia de Tucumán, y la ley Nº12.974 que otorga un subsidio de 250.000 pesos para participar en el Campeonato Mundial de Tiro a celebrarse en Estocolmo (Aguirre, 2003).",
+        "sentenceId": "almada-politica-publica-p2-s1"
+      },
+      {
+        "number": 9,
+        "page": "6",
+        "text": "En el año 1943, el presidente de la Nación Pedro Pablo Ramírez crea por medio del Decreto Nº12.937/43 la Subsecretaría de Información, Prensa y Propaganda del Estado (Rosa, 2009). Una vez finalizada la Segunda Guerra Mundial, la propaganda política, se instala en el universo cinematográfico. En el caso de Argentina, hasta 1950 la Subsecretaría de Informaciones pone énfasis en la producción de noticieros cinematográficos, desde los que busca instalar la imagen de los altos funcionarios del gobierno peronista, emitiendo información sobre los logros y las adhesiones que consigue sumar el gobierno, y también reproduciendo los símbolos y multitudinarios eventos políticos y partidarios. (Gené, 2005; Kriger, 2011; Rosa, 2009). En el noticiero cinematográfico Sucesos Argentinos se proyectan actividades de cultura física, clases de educación física, exhibiciones gimnásticas, imágenes de las colonias de vacaciones. Por ese medio se difunden los Juegos Infantiles ‘Evita’ o los Torneos Juveniles ‘Juan Perón’ (Galak, 2017).",
+        "sentenceId": "almada-politica-publica-p7-s1"
+      },
+      {
+        "number": 10,
+        "page": "7",
+        "text": "Ambas escuelas se crean por los decretos municipales N°9616 y 9617 del 12 de mayo de 1952. Asume la organización el director de deportes de la municipalidad de Buenos Aires, profesor de educación física, quien procura darle al organismo un perfil más formativo. Según narra en la entrevista quien estuviera a cargo de esa dirección, una de sus preocupaciones era que la enseñanza de los deportes estaba a cargo de idóneos, en general ex deportistas. “Muchos de ellos eran sumamente capaces y muy ilustrados, pero otros no. Esa gente podía cometer imprudencias” evoca el entrevistado. La escuela de especialización deportiva “presidente Perón” surge para subsanar el problema de la capacitación de los recursos humanos “Y para poder capacitarlos yo necesitaba un laboratorio de capacitación, además de las clases teóricas. ¿Y el laboratorio cuál podía ser? Una escuela infantil y juvenil que sirviera de departamento de preparación”.",
+        "sentenceId": "almada-politica-publica-p8-s1"
+      },
+      {
+        "number": 11,
+        "page": "7",
+        "text": "Estas acciones se difundían a través de los medios gráficos, en los que se destacaba la labor de la Dirección del Deporte de la Comuna. Se ponía énfasis en la formación de los profesores en la Escuela Municipal del deporte “Juan Perón” cuya idoneidad iría a “contribuir en grado sumo a la auténtica labor que en pro de la educación física se cumple en todo el país en base a las normas concretas que ha dictado el presidente de la República”. También se hace referencia a las instalaciones deportivas existentes en el parque Tres de Febrero –el campo de golf, las canchas de tenis, el Velódromo Presidente Perón, el circuito K.D.T. y el autódromo 17 de Octubre– algunas Estatales, pero otras de los clubes que el gobierno intentó poner al servicio de toda la población, ya que los consideraban “lugares apropiados para la práctica de diversas especialidades deportivas que pertenecen a la Municipalidad de nuestra ciudad y a las que tiene acceso el pueblo que, sin trabas de ninguna índole, puede dedicarse a la actividad que más le agrada, facilitándosele, además –como en el caso de los links de golf – los elementos necesarios” (Revista Olimpia N°1, 1954, p. 25).",
+        "sentenceId": "almada-politica-publica-p8-s1"
+      },
+      {
+        "number": 12,
+        "page": "8",
+        "text": "Presentación que efectúa Juan Perón del Segundo Plan Quinquenal ante el Congreso de la Nación, el 21 de diciembre de 1952. El Plan de Gobierno consta de cinco puntos: Acción Social, Acción Económica, Comercio y Finanzas, Servicios y Trabajos Públicos y Planes Militares y complementarios. El primer punto, a su vez, está constituido por nueve capítulos, a saber: 1) Organización del Pueblo- Población; 2) Trabajo; 3) Previsión; 4) Educación; 5) Cultura; 6) Investigación Científica y Técnica; 7) Salud Pública; 8) Vivienda y 9) Turismo.",
+        "sentenceId": "almada-politica-publica-p2-s1"
+      },
+      {
+        "number": 13,
+        "page": "9",
+        "text": "El 6 de mayo de 1946 fue negada la prórroga de la cesión al Tennis Club Argentino (decreto municipal N°2338); el 15 de mayo del mismo año se declaran caducas las autorizaciones y permisos precarios para la ocupación de terrenos en el Parque Tres de Febrero (decreto municipal N°2951). El 18 de febrero de 1949 se crea la Dirección Municipal del Deporte, a cargo del sr. Arturo López Peña. El 14 de diciembre de ese mismo año se cancela la cesión del predio al Golf Club Argentino (B.M. 8742), se establece el uso público del Club Asociación Deportiva de Comercio y la Industria (decreto municipal N°1851) y en 1950 se decreta la finalización de la concesión otorgada para la ocupación del terreno por el Buenos Aires Cricket Club (decreto municipal N°12494). En 1951 se transfieren a la Dirección de Deportes los predios “Campo Popular de Golf”, “Campo Popular de Rugby”, la pista de atletismo del Parque Avellaneda, el “Balneario Norte”, “Balneario Municipal” y el circuito K.D.T. (decreto municipal N°2411).",
+        "sentenceId": "almada-politica-publica-p13-s1"
+      },
+      {
+        "number": 14,
+        "page": "9",
+        "text": "Aunque la fundación contaba con sus propios cuerpos técnicos, una cantidad de obras publicitadas como producción de la Fundación fueron proyectadas por el Ministerio de Obras Públicas, era la estructura más poderosa y de mayor capacidad de ejecución, al que Eva Perón había acudido aún antes de la creación de la fundación. El Departamento de Construcciones de la FEP tuvo su origen en 1948, dentro de la Dirección Nacional de Asistencia Social, creada sobre la base de instituciones preexistentes, como la Sociedad de Beneficencia. La fundación contaba también con calificados asesores en arquitectura, como el arquitecto Jorge Sabaté (intendente MCBA 1952-54) y el arquitecto Carlos Federico Krag, vicedecano de la Facultad de Arquitectura de la UBA a partir de 1952 (Ballent, 1993).",
+        "sentenceId": "almada-politica-publica-p13-s1"
+      },
+      {
+        "number": 15,
+        "page": "10",
+        "text": "La entidad es creada a través de un decreto presidencial N°220.564 del 18 de julio de 1948, en el que se le concede la personería jurídica con la finalidad de “prestar ayuda pecuniaria o en especie, facilitar elementos de trabajo y otorgar becas para estudios universitarios y especializados a toda persona carente de recursos”; la ayuda se definía discrecionalmente “a juicio de la fundadora”.",
+        "sentenceId": "almada-fundacion-eva-peron-p1-s1"
+      },
+      {
+        "number": 16,
+        "page": "11",
+        "text": "Director de Deportes de la Capital Federal entre 1950 a 1955.",
+        "sentenceId": "almada-fundacion-eva-peron-p3-s1"
+      },
+      {
+        "number": 17,
+        "page": "11",
+        "text": "Discurso pronunciado en el Primer Congreso Latinoamericano de Medicina del Trabajo, 5 de diciembre de 1949, publicado en Diario Democracia, el 6 de diciembre de 1949."
+      },
+      {
+        "number": 18,
+        "page": "12",
+        "text": "En el reglamento interno de 1952, la fundación establece, en el área médico- asistencial, las funciones de asistencia médico- preventiva y curativa con o sin internación para toda persona que carezca de recursos, la provisión de alojamiento provisorio o permanente para la mujer que trabaja y esté imposibilitada de hacerlo y el fomento de la práctica deportiva de la infancia (Ramacciotti, 2007).",
+        "sentenceId": "almada-fundacion-eva-peron-p6-s1"
+      },
+      {
+        "number": 19,
+        "page": "12",
+        "text": "Sin embargo, a medida la fundación contó con más recursos fue ampliando el alcance de sus acciones llegando a superponerse con la Secretaría. Para profundizar en el tema se recomienda consultar La política sanitaria del peronismo, de Karina Ramacciotti (2009).",
+        "sentenceId": "almada-fundacion-eva-peron-p6-s1"
+      },
+      {
+        "number": 20,
+        "page": "12",
+        "text": "El viaje del Tren Sanitario Eva Perón durante agosto a noviembre de 1951 fue una de las estrategias llevadas a cabo por la fundación.",
+        "sentenceId": "almada-fundacion-eva-peron-p6-s1"
+      },
+      {
+        "number": 21,
+        "page": "13",
+        "text": "Discurso reproducido en la revista Mundo Infantil Nº152, 1952, p.26."
+      }
+    ],
+    "bibliography": [],
+    "sourceNote": "Artículo académico completo con resumen, abstract, notas y bibliografía. Las notas y referencias no forman parte de la lectura sonora."
+  },
+  "paragraphTimings": [
+    {
+      "id": "almada-introduccion-p1",
+      "start": 12.89,
+      "end": 95.09899999999999
+    },
+    {
+      "id": "almada-introduccion-p2",
+      "start": 95.1,
+      "end": 176.186
+    },
+    {
+      "id": "almada-introduccion-p3",
+      "start": 176.187,
+      "end": 222.248
+    },
+    {
+      "id": "almada-politica-publica-p1",
+      "start": 222.249,
+      "end": 277.97
+    },
+    {
+      "id": "almada-politica-publica-p2",
+      "start": 277.971,
+      "end": 315.25
+    },
+    {
+      "id": "almada-politica-publica-p3",
+      "start": 315.251,
+      "end": 386.567
+    },
+    {
+      "id": "almada-politica-publica-p4",
+      "start": 386.568,
+      "end": 416.663
+    },
+    {
+      "id": "almada-politica-publica-p5",
+      "start": 416.664,
+      "end": 452.48
+    },
+    {
+      "id": "almada-politica-publica-p6",
+      "start": 452.481,
+      "end": 469.88100000000003
+    },
+    {
+      "id": "almada-politica-publica-p7",
+      "start": 469.882,
+      "end": 507.762
+    },
+    {
+      "id": "almada-politica-publica-p8",
+      "start": 507.763,
+      "end": 543.657
+    },
+    {
+      "id": "almada-politica-publica-p9",
+      "start": 543.658,
+      "end": 557.769
+    },
+    {
+      "id": "almada-politica-publica-p10",
+      "start": 557.77,
+      "end": 579.8140000000001
+    },
+    {
+      "id": "almada-politica-publica-p11",
+      "start": 579.815,
+      "end": 637.5740000000001
+    },
+    {
+      "id": "almada-politica-publica-p12",
+      "start": 637.575,
+      "end": 699.618
+    },
+    {
+      "id": "almada-politica-publica-p13",
+      "start": 699.619,
+      "end": 738.82
+    },
+    {
+      "id": "almada-politica-publica-p14",
+      "start": 738.821,
+      "end": 790.794
+    },
+    {
+      "id": "almada-fundacion-eva-peron-p1",
+      "start": 790.795,
+      "end": 858.196
+    },
+    {
+      "id": "almada-fundacion-eva-peron-p2",
+      "start": 858.197,
+      "end": 893.909
+    },
+    {
+      "id": "almada-fundacion-eva-peron-p3",
+      "start": 893.91,
+      "end": 931.868
+    },
+    {
+      "id": "almada-fundacion-eva-peron-p4",
+      "start": 931.869,
+      "end": 961.886
+    },
+    {
+      "id": "almada-fundacion-eva-peron-p5",
+      "start": 961.887,
+      "end": 1106.298
+    },
+    {
+      "id": "almada-fundacion-eva-peron-p6",
+      "start": 1106.299,
+      "end": 1155.333
+    },
+    {
+      "id": "almada-fundacion-eva-peron-p7",
+      "start": 1155.334,
+      "end": 1203.663
+    },
+    {
+      "id": "almada-fundacion-eva-peron-p8",
+      "start": 1203.664,
+      "end": 1245.671
+    },
+    {
+      "id": "almada-fundacion-eva-peron-p9",
+      "start": 1245.672,
+      "end": 1287.01
+    },
+    {
+      "id": "almada-fundacion-eva-peron-p10",
+      "start": 1287.011,
+      "end": 1324.468
+    },
+    {
+      "id": "almada-consideraciones-finales-p1",
+      "start": 1324.469,
+      "end": 1362.035
+    },
+    {
+      "id": "almada-consideraciones-finales-p2",
+      "start": 1362.036,
+      "end": 1423.316
+    }
+  ],
+  "legacyPageMap": {
+    "0": "almada-resumen-p1",
+    "1": "almada-resumen-p3",
+    "2": "almada-introduccion-p2",
+    "3": "almada-politica-publica-p1",
+    "4": "almada-politica-publica-p2",
+    "5": "almada-politica-publica-p3",
+    "6": "almada-politica-publica-p7",
+    "7": "almada-politica-publica-p10",
+    "8": "almada-politica-publica-p12",
+    "9": "almada-politica-publica-p14",
+    "10": "almada-fundacion-eva-peron-p3",
+    "11": "almada-fundacion-eva-peron-p5",
+    "12": "almada-fundacion-eva-peron-p6",
+    "13": "almada-fundacion-eva-peron-p10",
+    "14": "almada-bibliografia-p1",
+    "15": "almada-bibliografia-p2"
+  },
+  "source": {
+    "cueCount": 313,
+    "srtLastCueEnd": 1423.316,
+    "audioDuration": 1423.673469,
+    "bodyParagraphs": 29,
+    "alignedParagraphs": 29
+  }
+}

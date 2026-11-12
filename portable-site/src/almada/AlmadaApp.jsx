@@ -2,9 +2,46 @@ import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
-import TextOnlyReader from '../shared/TextOnlyReader.jsx';
-import { almadaTextConfig } from './readerConfig.js';
+import IntegratedReader from '../IntegratedReader.jsx';
+import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
+import { almadaReaderConfig, almadaReadingDocument, almadaLegacyPageMap } from './readerContract.js';
 import './almada.css';
+
+
+// Conservación no destructiva del cuaderno y progreso del lector textual previo.
+// Ejecutar antes de montar IntegratedReader: el componente lee localStorage en su inicialización.
+function migrateAlmadaTextReaderState() {
+  try {
+    const oldNotes = JSON.parse(localStorage.getItem('almada-privilegiados-text-notes-v1') || '[]');
+    const newNotesKey = almadaReaderConfig.storage.notesKey;
+    if (localStorage.getItem(newNotesKey) === null && Array.isArray(oldNotes) && oldNotes.length) {
+      const first = almadaReadingDocument.sections[0].paragraphs[0]?.id;
+      const converted = oldNotes.filter(note => typeof note?.text === 'string' && note.text.trim() && Number.isInteger(note.page))
+        .map(note => ({
+          id: typeof note.id === 'string' ? note.id : String(note.page) + '-' + String(note.createdAt || ''),
+          sentenceId: almadaLegacyPageMap[note.page] || first,
+          text: note.text,
+          originalPage: note.page + 1,
+          createdAt: note.createdAt,
+          updatedAt: note.updatedAt,
+        })).filter(note => note.sentenceId);
+      if (converted.length) localStorage.setItem(newNotesKey, JSON.stringify(converted));
+    }
+    const newStateKey = almadaReaderConfig.storage.stateKey;
+    if (localStorage.getItem(newStateKey) === null) {
+      const page = Number(JSON.parse(localStorage.getItem('almada-privilegiados-text-page-v1') || '0'));
+      const timing = almadaReaderConfig.sync.paragraphTimings.find(item => item.id === almadaLegacyPageMap[page]);
+      const currentTime = Number.isFinite(timing?.start) ? timing.start
+        : page >= 14 ? 1423.316 : 0;
+      localStorage.setItem(newStateKey, JSON.stringify({
+        currentTime, playbackRate: 1, volume: 1, followText: true, fontScale: 1,
+      }));
+    }
+  } catch {
+    // El lector permanece disponible si el navegador restringe almacenamiento local.
+  }
+}
+if (typeof window !== 'undefined') migrateAlmadaTextReaderState();
 
 export default function AlmadaApp() {
   const { active, progress } = useJourneyNavigation();
@@ -90,10 +127,10 @@ export default function AlmadaApp() {
         </section>
 
         <section id="lectura" className="journey-reading hb-material-reading" aria-labelledby="journey-reading-title">
-          <TextOnlyReader config={almadaTextConfig} />
+          <IntegratedReader readingDocument={almadaReadingDocument} config={almadaReaderConfig} Launcher={CanonicalReadingEntry} />
         </section>
       </main>
-      <JourneyCredits workId={almadaTextConfig.workId} />
+      <JourneyCredits workId={almadaReaderConfig.workId} />
     </div>
   );
 }
