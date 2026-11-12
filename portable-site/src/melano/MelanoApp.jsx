@@ -29,7 +29,7 @@ const groups = [
   { name: 'Juramentados', desc: 'Egresados que ampliaron su formación en ámbitos militares y ocuparon posiciones de poder.' },
 ];
 
-funcfunction Inicio() {
+function Inicio() {
   return <section id="inicio" className="melano-screen melano-hero" aria-labelledby="melano-title">
     <div className="melano-hero__background" aria-hidden="true">
       <img src={HERO_BACKGROUND} alt="" fetchPriority="high" decoding="async" />
@@ -47,7 +47,7 @@ funcfunction Inicio() {
   </section>;
 }
 
-tion Autor() {
+function Autor() {
   return <section id="autor" className="melano-screen melano-author" aria-label="Sobre Ignacio Melano">
     <AuthorBiography
       name="Ignacio Melano"
