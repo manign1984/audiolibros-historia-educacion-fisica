@@ -10,13 +10,15 @@
 
 **Obra / workId:** Alejo Levoratti, *La educación física y la gimnasia en la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968)*, *Revista da ALESDE*, 14(2), 162–178 (2022). `levoratti-gimnasia-1958-1968`.
 
-**Unidad productiva y estado:** Unidad 1, página académica construida en rama, **EN DESARROLLO**. Modalidad: `TextOnlyReader`, sin MP3 ni SRT/VTT identificados entre los insumos localizados.
+**Unidad productiva y estado:** Unidad 1, página académica construida en rama y preparada para despliegue técnico, **EN DESARROLLO**. Modalidad: `TextOnlyReader`, sin MP3 ni SRT/VTT identificados entre los insumos localizados.
 
 **Rama / PR / último commit:** `feature/levoratti-educacion-fisica-1958-1968` · [PR #123, borrador](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/123) · último commit previo a este registro: `ec097af5fd4892255065084118c868178ac877d7`.
 
 **Resultado persistido:** fuente académica original de 17 páginas incorporada como TXT de lectura desde el PDF del artículo; página propia con Inicio, Autor (alternativa editorial honesta), dos unidades de Contexto comparativo 1961/1968, Lectura mediante componente canónico y Créditos compartidos. Entrada técnica de Vite creada; sin tarjeta nueva ni difusión institucional. Insumos: [PDF original](https://drive.google.com/file/d/1HC1dr49ict6QNR1QUDmbi8ubKQqHqy2F/view) · [copia de trabajo para narración](https://docs.google.com/document/d/1FDKS6tzTd4ZuyoehO0qyrKdjubq3A0M-XZnk_E1MuCY/edit). No se modificó el motor, la geometría ni el CSS compartido del bloque 04.
 
-**Próxima acción única:** tratar, mediante orden expresa y tarea transversal SEPARADA, la dependencia ya registrada en B04.10: la lista de selectores de `canonical-reading.css` no abarca una clase nueva como `levoratti-page`. No inventar compensaciones CSS locales, fusionar la PR ni declararla desplegada/completa antes de resolver la dependencia y obtener los resultados automáticos del pipeline. La comprobación perceptiva posterior será exclusiva del responsable.
+**Dependencia B04.10 resuelta:** la corrección transversal de `canonical-reading.css` se integró en `main` mediante [PR #124](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/124), commit `5a78c9c7943732c78da546bd460eff703cf04945`, tras CI aprobado. Su única excepción estructural es Pineau, cuyo encabezado no es hijo directo del contenedor. No se alteraron la geometría ni los componentes del lector.
+
+**Próxima acción única:** verificar la CI de PR #123 contra la norma compartida ya integrada, fusionar y comprobar Pages si todo aprueba; entregar el enlace directo de Levoratti para la comprobación del responsable. **EN DESARROLLO** hasta que haya audio/SRT y aceptación personal. La entrada al catálogo aún no se registra en este corte, para no mostrar un estado público prohibido por las Directrices 3.0 mediante el componente de catálogo anterior.
 
 ---
 
