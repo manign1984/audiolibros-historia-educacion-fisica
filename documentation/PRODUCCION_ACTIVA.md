@@ -159,6 +159,8 @@ Las 18 portadas del catálogo muestran el cartel verde «Leer + escuchar». La t
 
 ## 1. Registro previo · Ignacio Melano
 
+**Ajuste de portada y paleta (12/11/2026):** Inicio muestra la composición original de Corel en su proporción 2048 × 841 dentro de la altura útil. El texto ocupa el área libre a la izquierda en escritorio y se ubica debajo de la imagen en pantallas estrechas o bajas. Inicio, Autor, Contexto y Lectura adoptan los colores del distintivo del INEF General Belgrano.
+
 **Intervención visual de Inicio (12/11/2026):** diseño solicitado por el responsable en [PR #128](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/128). Se conserva la composición PNG original recibida (resolución ministerial 543/77 y fotografía institucional) en `portable-site/public/assets/melano/inicio-archivo-1977.png`, comprobada por identidad de bytes/Git blob SHA `dc73757ecbe1578762250646ced96c97497425df`. El bloque 01 emplea tipografía mecánica monoespaciada sobre la zona libre izquierda, con tratamiento adaptable a móvil; el encabezado, los bloques 02–05 y el lector no se modifican. La percepción editorial definitiva corresponde a la revisión del responsable sobre la página desplegada.
 
 
