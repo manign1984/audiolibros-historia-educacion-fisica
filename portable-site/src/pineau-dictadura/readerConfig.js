@@ -1,5 +1,5 @@
 // Datos propios de Pineau (1976–1983). Sin modificar el lector compartido.
-const assetBase = import.meta.env.BASE_URL + 'assets/pineau-reprimir-discriminar/';
+const assetBase = [import.meta.env.BASE_URL.replace(/\/$/, ''), 'assets', 'pineau-reprimir-discriminar'].join('/') + '/';
 export const pineauDictaduraReaderConfig = {
   workId: 'pineau-reprimir-discriminar',
   textOnly: false,
