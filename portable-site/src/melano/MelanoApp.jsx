@@ -11,7 +11,7 @@ import { buildMelanoReadingDocument } from './buildMelanoReadingDocument.js';
 import { melanoReaderConfig } from './readerConfig.js';
 import './melano.css';
 
-const PORTRAIT = import.meta.env.BASE_URL + 'assets/melano/ignacio-melano-retrato.jpeg';
+const PORTRAIT = import.meta.env.BASE_URL + 'assets/melano/ignacio-melano-retrato-20261111.jpg';
 const RESOLUTION_URL = 'https://drive.google.com/file/d/15bo6oZeE9vhYWFbytFNyZCCSvcQGIg0f/view';
 const CHAPTER_URL = 'https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view';
 const BIO = 'Ignacio Emmanuel Melano es profesor y licenciado en Educación Física y magíster en Ciencias Sociales y Humanidades por la Universidad Nacional de Quilmes. Su producción académica aborda la historia de la formación de profesores, las culturas escolares y las relaciones entre educación, política y poder. Ha investigado especialmente la trayectoria del Instituto Nacional de Educación Física General Belgrano y sus transformaciones durante la última dictadura y la recuperación democrática.';
@@ -57,8 +57,8 @@ function Autor() {
       role="Historia de la Educación Física · Formación docente"
       summary={BIO}
       image={PORTRAIT}
-      imageAlt="Retrato fotográfico de Ignacio Melano, facilitado por el autor"
-      credit="Fotografía facilitada por Ignacio Melano para esta página."
+      imageAlt="Retrato de Ignacio Melano"
+      credit="Retrato facilitado para esta página."
       biographyUrl="https://periodicos.uepa.br/index.php/cocar/article/view/4871"
     />
   </section>;
