@@ -12,7 +12,7 @@
 
 **Unidad y estado interno:** unidad 1 · **EN DESARROLLO**. Cinco bloques canónicos, Contexto en una pantalla sobre democracia y capacidad de intervención estatal, y lector textual con el [documento de cátedra](https://docs.google.com/document/d/1bpMEpjWIhFRf1NeSuFP0AsJiwoMzV0kewOUCmurCiMs/edit). [PDF de referencia](https://drive.google.com/file/d/1BQx5QwKILia0JQ8SIXpRgJdPPXUSlj9B/view). MP3 y SRT/VTT por incorporar.
 
-**Rama y ruta:** [feature/thwaites-rey-democracia-argentina](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/thwaites-rey-democracia-argentina) · [Ruta técnica de Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/thwaites-rey-democracia-argentina/).
+**Rama, PR, commit y ruta:** [PR #146](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/146) · `98b7740026a645b7b383c9505f8e8c29aa34d350` · [feature/thwaites-rey-democracia-argentina](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/thwaites-rey-democracia-argentina) · [Ruta técnica de Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/thwaites-rey-democracia-argentina/).
 
 **Próxima acción única:** comprobación de la página y del lector textual por el responsable tras el despliegue técnico.
 
