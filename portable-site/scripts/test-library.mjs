@@ -18,7 +18,7 @@ import { buildOrbuchReadingDocument } from '../src/orbuch/buildReadingDocument.j
 
 // Freeze the four legacy fixtures for their existing search/citation regressions.
 // Scharagrodsky has a dedicated document/catalog/runtime acceptance test.
-const catalog = allCatalog.filter((entry) => entry.status === 'available' && !['scharagrodsky-constitucion-ef', 'soares-corrientes-gimnasticas', 'arata-marino-auroras-tempestades'].includes(entry.id));
+const catalog = allCatalog.filter((entry) => entry.status === 'available' && !['scharagrodsky-constitucion-ef', 'soares-corrientes-gimnasticas', 'arata-marino-auroras-tempestades', 'pineau-reprimir-discriminar'].includes(entry.id));
 const orbuch = catalog.find((entry) => entry.id === 'orbuch-educar-al-cuerpo');
 const pineau = catalog.find((entry) => entry.id === 'pineau-fresco-noble');
 const orbuchAccessibleText = await readFile(new URL('../src/orbuch/orbuch-texto-accesible.txt', import.meta.url), 'utf8');
