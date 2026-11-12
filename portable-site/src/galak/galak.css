@@ -1,0 +1,161 @@
+.galak-journey {
+  background: #efe9dc;
+  color: #272523;
+  font-family: 'Archivo', sans-serif;
+}
+
+.galak-screen {
+  display: grid;
+  align-items: center;
+  min-height: calc(100svh - var(--journey-header-height, 80px));
+  padding-block: clamp(28px, 5svh, 58px);
+}
+
+.galak-shell {
+  width: min(1180px, calc(100% - 72px));
+  margin-inline: auto;
+}
+
+.galak-hero {
+  background: #211e21;
+  color: #f5ede0;
+}
+
+.galak-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+}
+
+.galak-hero .journey-block-label,
+.galak-byline {
+  color: #ebc08d;
+}
+
+.galak-byline {
+  margin: 24px 0 10px;
+  font-weight: 700;
+}
+
+.galak-byline a {
+  color: inherit;
+  text-underline-offset: .24em;
+}
+
+.galak-hero h1,
+.galak-context h2 {
+  margin: 0;
+  font: 400 clamp(2.75rem, 6vw, 6rem)/.95 'Bebas Neue', sans-serif;
+}
+
+.galak-hero h1 span {
+  display: block;
+  max-width: 40ch;
+  margin-top: 14px;
+  color: #ebc08d;
+  font: 700 clamp(1rem, 1.7vw, 1.42rem)/1.32 'Archivo', sans-serif;
+}
+
+.galak-lead {
+  max-width: 67ch;
+  margin: 18px 0 0;
+  font-size: 1.06rem;
+  line-height: 1.55;
+}
+
+.galak-edition,
+.galak-cover figcaption {
+  margin: 14px 0 0;
+  font-size: .85rem;
+  line-height: 1.45;
+}
+
+.galak-cover {
+  margin: 0;
+}
+
+.galak-cover img {
+  display: block;
+  width: 100%;
+  max-height: 55svh;
+  object-fit: contain;
+}
+
+.galak-cover figcaption {
+  text-align: center;
+}
+
+.galak-author {
+  --paper-light: #f5ede0;
+  --mustard: #ebc08d;
+  background: #533834;
+}
+
+.galak-context .journey-block-label,
+.galak-year {
+  color: #794136;
+}
+
+.galak-context h2 {
+  margin-top: 16px;
+  font-size: clamp(2.7rem, 5.3vw, 5.3rem);
+}
+
+.galak-milestones {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 38px);
+  margin: clamp(20px, 4svh, 38px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.galak-milestones li {
+  padding-top: 12px;
+  border-top: 2px solid #794136;
+}
+
+.galak-milestones p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.galak-milestones .galak-year {
+  font: 400 2.45rem/1 'Bebas Neue', sans-serif;
+}
+
+.galak-milestones h3 {
+  margin: 8px 0;
+  font-size: 1.15rem;
+}
+
+.galak-question {
+  max-width: 78ch;
+  margin: clamp(22px, 4svh, 38px) 0 0;
+  padding-inline-start: 16px;
+  border-inline-start: 3px solid #794136;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+body:has(.journey-header) .galak-journey #lectura.hb-material-reading {
+  --material-paper: #efe9dc;
+  --material-ink: #272523;
+  --material-rust: #794136;
+}
+
+@media (max-width: 760px) {
+  .galak-shell {
+    width: calc(100% - 36px);
+  }
+
+  .galak-hero-grid,
+  .galak-milestones {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .galak-cover img {
+    max-height: 48svh;
+  }
+}
