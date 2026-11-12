@@ -14,7 +14,7 @@
 
 **Insumos:** [MP3 de 27:05](https://drive.google.com/file/d/1dvnG5HsLSYHnsXGKDN4JcY9ycRLddHsV/view), preservado en 17 partes consecutivas y verificado por SHA-256, y [SRT original de 366 marcas](https://drive.google.com/file/d/1LcoOQWKccvjINep6IwBokY15r_IvXQpy/view). Las marcas alimentan el resaltado aproximado por párrafos.
 
-**Rama y ruta:** [feature/thwaites-rey-lector-integrado](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/thwaites-rey-lector-integrado) · [Página textual original, PR #146](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/146) · [Ruta técnica de Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/thwaites-rey-democracia-argentina/).
+**Rama, PR, commit y ruta:** [PR #147](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/147) · `cf74a0b51cd1dced1ef6a8d9f415d6cb98d4b4f3` · [feature/thwaites-rey-lector-integrado](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/thwaites-rey-lector-integrado) · [Página textual original, PR #146](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/146) · [Ruta técnica de Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/thwaites-rey-democracia-argentina/).
 
 **Próxima acción única:** comprobación del responsable de la reproducción, el resaltado y el cuaderno en el lector integrado desplegado.
 
