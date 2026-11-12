@@ -1,0 +1,194 @@
+.thwaites-page {
+  background: #eee9df;
+  font-family: 'Archivo', sans-serif;
+}
+
+.thwaites-skip {
+  position: fixed;
+  z-index: 120;
+  inset: 12px auto auto 12px;
+  padding: 12px 18px;
+  background: #f3e7cb;
+  color: #221f2b;
+  transform: translateY(calc(-100% - 16px));
+}
+
+.thwaites-skip:focus {
+  transform: translateY(0);
+}
+
+.thwaites-screen {
+  display: grid;
+  align-items: center;
+  min-height: var(--hero-room, calc(100svh - var(--journey-header-height, 80px)));
+  padding-block: clamp(24px, 5svh, 58px);
+}
+
+.thwaites-shell {
+  width: min(1220px, calc(100% - 72px));
+  margin-inline: auto;
+}
+
+.thwaites-hero {
+  background: #292337;
+  color: #f9f2e5;
+}
+
+.thwaites-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
+.thwaites-hero .journey-block-label,
+.thwaites-byline,
+.thwaites-hero h1 span {
+  color: #ebcda1;
+}
+
+.thwaites-byline {
+  margin: clamp(18px, 4svh, 36px) 0 12px;
+  font-weight: 700;
+}
+
+.thwaites-byline a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: .24em;
+}
+
+.thwaites-hero h1,
+.thwaites-context h2 {
+  margin: 0;
+  font: 400 clamp(3rem, min(6vw, 10svh), 6rem)/.98 'Bebas Neue', sans-serif;
+  overflow-wrap: break-word;
+}
+
+.thwaites-hero h1 span {
+  display: block;
+  margin-top: 10px;
+  font-size: .56em;
+  line-height: 1.04;
+}
+
+.thwaites-lead {
+  max-width: 65ch;
+  margin: 20px 0 0;
+  font-size: clamp(1rem, 1.55vw, 1.2rem);
+  line-height: 1.55;
+}
+
+.thwaites-hero .thwaites-lead {
+  max-width: 45ch;
+}
+
+.thwaites-edition {
+  margin: 16px 0 0;
+  font-size: .88rem;
+}
+
+.thwaites-cover {
+  width: min(100%, 560px, calc(var(--hero-room, 780px) * .94));
+  justify-self: end;
+  margin: 0;
+  padding: 10px;
+  background: #f3e7cb;
+  color: #292337;
+}
+
+.thwaites-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.thwaites-cover figcaption {
+  padding: 9px 4px 2px;
+  font-size: .85rem;
+  line-height: 1.4;
+}
+
+.thwaites-author {
+  --paper-light: #f8efe1;
+  --mustard: #eac99b;
+  background: #48374f;
+}
+
+.thwaites-context {
+  background: #eee9df;
+  color: #292337;
+}
+
+.thwaites-context .journey-block-label {
+  color: #614660;
+}
+
+.thwaites-context h2 {
+  margin-top: 15px;
+  font-size: clamp(2.6rem, 5vw, 5.1rem);
+}
+
+.thwaites-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 38px);
+  margin: clamp(20px, 5svh, 42px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.thwaites-timeline li {
+  padding-top: 12px;
+  border-top: 2px solid #785770;
+}
+
+.thwaites-timeline li > p:first-child {
+  color: #614660;
+  font: 400 2rem/1 'Bebas Neue', sans-serif;
+}
+
+.thwaites-timeline h3 {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.thwaites-timeline p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.thwaites-question {
+  max-width: 69ch;
+  margin: clamp(22px, 5svh, 42px) 0 0;
+  padding-inline-start: 15px;
+  border-inline-start: 3px solid #785770;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+body:has(.journey-header) .thwaites-page #lectura.hb-material-reading {
+  --material-paper: #eee9df;
+  --material-ink: #292337;
+  --material-rust: #694764;
+}
+
+@media (max-width: 760px) {
+  .thwaites-shell {
+    width: calc(100% - 36px);
+  }
+
+  .thwaites-hero-grid,
+  .thwaites-timeline {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .thwaites-cover {
+    width: min(100%, 500px);
+    justify-self: start;
+  }
+
+  .thwaites-hero h1 {
+    font-size: clamp(2.8rem, 11vw, 4.8rem);
+  }
+}

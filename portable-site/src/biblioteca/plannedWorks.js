@@ -37,12 +37,21 @@ const records = [
   ['feldfeber-gluz-politicas', 'Myriam Feldfeber · Nora Gluz', 'Las políticas educativas en la Argentina', 'Las políticas educativas en Argentina: herencias de los 90, contradicciones y tendencias de nuevo signo', 'presente', '2011', 'Feldfeber, M. y Gluz, N. (2011). Las políticas educativas en Argentina: herencias de los 90, contradicciones y tendencias de nuevo signo. Educação & Sociedade, 32(115), 339–356.', 'programa'],
   ['levoratti-debates-ef', 'Alejo Levoratti', 'Los debates de la Educación Física', 'Los debates de la Educación Física y los enfoques de las ciencias sociales: un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015)', 'presente', '2018', 'Levoratti, A. (2018). Los debates de la Educación Física y los enfoques de las ciencias sociales: un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015). Revista de ALESDE, 9(1), 45–63.', 'programa'],
   ['puiggros-que-paso', 'Adriana Puiggrós', 'Qué pasó en la educación argentina', 'Qué pasó en la educación argentina. Breve historia desde la conquista hasta el presente', 'presente', '2003', 'Puiggrós, A. (2003). Qué pasó en la educación argentina. Breve historia desde la conquista hasta el presente (pp. 165–203). Galerna.', 'programa'],
+  ['thwaites-rey-democracia-argentina', 'Mabel Thwaites Rey', 'La democracia argentina', 'La democracia argentina bajo el largo ciclo de hegemonía neoliberal (1983–2013)', 'presente', '2013', 'Thwaites Rey, M. (2013). La democracia argentina bajo el largo ciclo de hegemonía neoliberal (1983–2013). Voces en el Fénix, 4(31), 32–41.', 'materiales'],
   ['vassiliades-politicas-docentes', 'Alejandro Vassiliades', 'Enseñanza y políticas docentes', 'Impugnaciones de la enseñanza y desplazamientos de la pedagogía: políticas docentes y discursos estandarizados en Argentina durante la presidencia de Mauricio Macri (2015–2019)', 'presente', '2020', 'Vassiliades, A. (2020). Impugnaciones de la enseñanza y desplazamientos de la pedagogía: políticas docentes y discursos estandarizados en Argentina durante la presidencia de Mauricio Macri (2015–2019). Espacios en Blanco. Revista de Educación, 30(2), 247–262.', 'programa'],
 ];
 
 // Obras con lectura y audio habilitados; la disponibilidad del lector
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
+  'thwaites-rey-democracia-argentina': {
+    status: 'text',
+    canonicalCard: true,
+    sortAuthor: 'Thwaites Rey, Mabel',
+    stateKey: 'thwaites-rey-democracia-argentina-text-page-v1',
+    historicalPeriod: 'Democracia y hegemonía neoliberal · 1983–2013',
+    artwork: 'assets/thwaites-rey/plaza-de-mayo-1983.webp',
+  },
   'torre-pastoriza-bienestar': {
     status: 'available',
     canonicalCard: true,
