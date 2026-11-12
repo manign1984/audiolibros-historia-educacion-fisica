@@ -55,7 +55,7 @@ const readablePlannedWorks = {
     historicalPeriod: 'Formación docente, dictadura y redes de poder · 1967–1981',
     stateKey: 'melano-juramentados-text-page-v1',
     readingDetail: 'Lectura académica y cuaderno de notas',
-    artwork: 'assets/melano/ignacio-melano-retrato.jpeg',
+    artwork: 'assets/melano/melano-composicion-archivo.png',
   },
   'lionetti-escuela-republicana': {
     status: 'text',

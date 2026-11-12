@@ -40,7 +40,7 @@ export const creditsContent = {
     rights: [
       <>Retrato de Ignacio Melano: fotografía facilitada personalmente por el autor para esta página.</>,
       <>Texto académico de la selección preparada a partir del capítulo original: conserva las citas y las veinte notas de la edición impresa. La copia de locución elimina las referencias bibliográficas que no se pronuncian.</>,
-      <>Contexto y portada: síntesis y composición contemporáneas del proyecto +TEC UNAHUR. La línea de fechas y la composición de portada no son imágenes de época.</>,
+      <>Contexto y portada: síntesis y composición editorial ilustrativa del proyecto +TEC UNAHUR, elaborada a partir de las imágenes facilitadas. La composición de portada no es una reproducción literal de documentos o fotografías históricas.</>,
       <>Las fuentes históricas se presentan con identificación de procedencia. No se declara licencia abierta sobre el capítulo ni sobre el retrato.</>,
     ],
   },
