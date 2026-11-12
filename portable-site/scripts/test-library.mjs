@@ -123,7 +123,7 @@ await Promise.all([
 ]);
 
 // New catalog entries have stable physical routes; their availability is explicit.
-assert.equal(allCatalog.length, 30);
+assert.equal(allCatalog.length, 31);
 assert.equal(new Set(allCatalog.map((entry) => entry.id)).size, allCatalog.length);
 for (const entry of allCatalog) {
   assert.ok(collections.some((collection) => collection.id === entry.collection));
@@ -202,7 +202,7 @@ const blocked = { getItem() { throw new Error('Blocked'); }, setItem() { throw n
 assert.deepEqual(readList(blocked, ids), []);
 assert.equal(saveList(blocked, ids), false);
 assert.equal(readProgress(blocked, pineau), 0);
-console.log('Biblioteca: 30 fichas, 11 recorridos de lectura y audio (10 disponibles y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
+console.log('Biblioteca: 31 fichas, 11 recorridos de lectura y audio (10 disponibles y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
 
 
 // Portada de la biblioteca = una pantalla útil bajo el encabezado real.
