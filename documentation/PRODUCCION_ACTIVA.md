@@ -16,6 +16,8 @@ Después de «Seguí donde dejaste», Inicio muestra las 18 fichas seleccionadas
 
 El orden inicial es por apellido. El agrupamiento por unidad toma como referencia el [Programa historia UNAHUR 2024–2025](https://drive.google.com/file/d/1cU8MfaN_PaYLSaKSaR6adFG_qk3GZrqH/view), con Lionetti ubicado en la Unidad 2 por indicación del responsable. El catálogo incluye los dos artículos de Levoratti y distingue el capítulo de Melano y Aisenstein sobre formación docente durante la última dictadura de «Militares al gobierno, juramentados al poder».
 
+Las 18 portadas del catálogo muestran el cartel verde «Leer + escuchar». La tarjeta conserva el acceso que corresponde al material de cada obra.
+
 ## OBRA ACTIVA · Alejo Levoratti (12/11/2026)
 
 **Obra y workId:** *Los debates de la educación física y los enfoques de las ciencias sociales. Un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015)*, [Revista da ALESDE, 9(1), 45–63 (2018)](https://doi.org/10.5380/jlasss.v9i1.61189). `levoratti-debates-ef`.

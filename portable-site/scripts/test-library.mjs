@@ -34,6 +34,11 @@ const hobsbawm = catalog.find((entry) => entry.id === 'hobsbawm-historia-siglo-x
 assert.equal(aisenstein?.shortTitle, '¿Hacemos tabla rasa del pasado?', 'El título de Aisenstein debe ser propio y coincidir con su recorrido.');
 assert.equal(hobsbawm?.shortTitle, 'Historia del siglo XX', 'El título de Hobsbawm debe quedar asociado exclusivamente a su obra.');
 const libraryHome = await readFile(new URL('../src/biblioteca/LibraryHome.jsx', import.meta.url), 'utf8');
+const cardSection = libraryHome.slice(libraryHome.indexOf('function WorkCard('), libraryHome.indexOf('function Shelf('));
+assert.match(cardSection, /<span className="status-badge status-badge--ready"><Headphones[^>]*\/> Leer \+ escuchar<\/span>/,
+  'Todas las tarjetas usan el cartel verde Leer + escuchar.');
+assert.doesNotMatch(cardSection, /En preparación|Edición en revisión|Solo lectura|Sincronización pendiente|Sin audio/,
+  'Las tarjetas no muestran estados internos de producción.');
 const heroSection = libraryHome.slice(libraryHome.indexOf('function Hero({ saved, toggle })'), libraryHome.indexOf('export function ProjectFooter()'));
 assert.match(heroSection, /'aisenstein-tabla-rasa': <>¿Hacemos tabla<span>rasa del pasado\?<\/span><\/>/, 'El carrusel debe mostrar el título correcto de Aisenstein.');
 assert.match(heroSection, /'hobsbawm-historia-siglo-xx': <>Historia del<span>siglo XX\.<\/span><\/>/, 'La portada de Hobsbawm conserva su título.');

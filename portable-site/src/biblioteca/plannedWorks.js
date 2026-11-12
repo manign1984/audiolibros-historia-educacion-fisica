@@ -38,7 +38,6 @@ const records = [
 const readablePlannedWorks = {
   'levoratti-gimnasia-1958-1968': {
     status: 'available',
-    canonicalCard: true,
     duration: 2219.335,
     stateKey: 'levoratti-gimnasia-1958-1968-audio-state-v1',
     historicalPeriod: 'Educación Física escolar · 1958–1968',
@@ -47,14 +46,12 @@ const readablePlannedWorks = {
   },
   'levoratti-debates-ef': {
     status: 'text',
-    canonicalCard: true,
     sortAuthor: 'Levoratti, Alejo',
     stateKey: 'levoratti-debates-ef-text-page-v1',
     historicalPeriod: 'Formación docente y debates curriculares · 1993–2015',
   },
   'thwaites-rey-democracia-argentina': {
     status: 'available',
-    canonicalCard: true,
     sortAuthor: 'Thwaites Rey, Mabel',
     duration: 1625.521633,
     readingDetail: 'Seguimiento aproximado por párrafos y cuaderno de lectura',
@@ -64,7 +61,6 @@ const readablePlannedWorks = {
   },
   'torre-pastoriza-bienestar': {
     status: 'available',
-    canonicalCard: true,
     duration: 8299.964082,
     readingDetail: 'Seguimiento aproximado por párrafos y cuaderno de lectura',
     stateKey: 'torre-pastoriza-bienestar-reader-state-v1',
@@ -73,7 +69,6 @@ const readablePlannedWorks = {
   },
   'feiguin-aisenstein-sujetos': {
     status: 'available',
-    canonicalCard: true,
     duration: 2815.059592,
     stateKey: 'feiguin-aisenstein-sujetos-reader-state-v1',
     historicalPeriod: 'Formación docente e internado · 1938–1967',
@@ -82,7 +77,6 @@ const readablePlannedWorks = {
   },
   'almada-privilegiados': {
     status: 'text',
-    canonicalCard: true,
     stateKey: 'almada-privilegiados-text-page-v1',
     historicalPeriod: 'Primer peronismo · 1946–1955',
     artwork: 'assets/almada/campeonato-infantil.webp',
