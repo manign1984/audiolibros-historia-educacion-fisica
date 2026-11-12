@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="680" viewBox="0 0 720 680" role="img" aria-labelledby="title desc">
+<title id="title">Composición editorial sobre Alejo Levoratti</title>
+<desc id="desc">Tipografía de homenaje académico; no representa un retrato del autor.</desc>
+<rect width="720" height="680" fill="#143b3e"/>
+<path d="M40 92H680M40 588H680" stroke="#cfc89a" stroke-width="2"/>
+<path d="M50 116V565M670 116V565" stroke="#86aba2" stroke-width="1" stroke-dasharray="4 9"/>
+<circle cx="360" cy="330" r="188" fill="none" stroke="#96b9a5" stroke-width="2"/>
+<circle cx="360" cy="330" r="142" fill="none" stroke="#96b9a5" stroke-width="1" stroke-dasharray="7 9"/>
+<text x="360" y="370" font-family="Arial, Helvetica, sans-serif" font-size="160" font-weight="700" text-anchor="middle" fill="#efe9ce" letter-spacing="-10">AL</text>
+<text x="360" y="76" font-family="Arial, Helvetica, sans-serif" font-size="17" text-anchor="middle" fill="#cfc89a" letter-spacing="7">ALEJO LEVORATTI</text>
+<text x="360" y="625" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#cfc89a" letter-spacing="2">INVESTIGACIÓN · EDUCACIÓN FÍSICA · HISTORIA</text>
+</svg>

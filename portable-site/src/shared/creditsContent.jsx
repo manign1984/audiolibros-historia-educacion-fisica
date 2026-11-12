@@ -1,6 +1,18 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  levorattiGimnasia: {
+    references: [
+      <>Levoratti, A. (2022). La educación física y la gimnasia en la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968). <em>Revista da ALESDE, 14</em>(2), 162–178. {link('https://doi.org/10.5380/jlasss.v14i2.87581', 'https://doi.org/10.5380/jlasss.v14i2.87581')}</>,
+      link('https://www.memoria.fahce.unlp.edu.ar/art_revistas/pr.15959/pr.15959.pdf', 'Artículo académico original, edición de la revista y referencias'),
+      link('https://idihcs.fahce.unlp.edu.ar/integrante_idihcs/levoratti-alejo/', 'IdIHCS · Universidad Nacional de La Plata · perfil académico de Alejo Levoratti'),
+    ],
+    rights: [
+      <>Autoría del artículo académico: Alejo Levoratti. Se identifica la edición publicada en <em>Revista da ALESDE</em> (2022).</>,
+      <>Composición tipográfica de Inicio: elaboración editorial de +TEC UNAHUR, inspirada en los problemas de lectura del artículo; no reproduce un documento de época.</>,
+      <>Imagen del bloque Autor: composición editorial de iniciales, no fotografía del investigador.</>,
+    ],
+  },
   arataMarino: {
     references: [
       <>Arata, N., y Mariño, M. (2013). Auroras y tempestades: la educación entre golpes (1955–1976). En <em>La educación en la Argentina: Una historia en 12 lecciones</em> (lección 10). Ediciones Novedades Educativas.</>,

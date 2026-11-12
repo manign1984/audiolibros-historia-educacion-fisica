@@ -45,6 +45,7 @@ export default defineConfig({
         aisensteinTablaRasa: fileURLToPath(new URL('./textos/aisenstein-tabla-rasa/index.html', import.meta.url)),
         hobsbawmHistoriaSigloXX: fileURLToPath(new URL('./textos/hobsbawm-historia-siglo-xx/index.html', import.meta.url)),
         scharagrodskyConstitucionEF: fileURLToPath(new URL('./textos/scharagrodsky-constitucion-ef/index.html', import.meta.url)),
+        levorattiGimnasia1958: fileURLToPath(new URL('./textos/levoratti-gimnasia-1958-1968/index.html', import.meta.url)),
         // Las cinco entradas históricas ya están declaradas arriba.
         // Compilar las demás rutas por identidad, no por estado: una obra
         // que pasa de revisión a disponible debe conservar su página física.
