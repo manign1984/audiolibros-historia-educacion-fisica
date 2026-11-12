@@ -1,6 +1,16 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  'galak-del-dicho-al-hecho': {
+    references: [
+      <>Galak, E. (2012). <em>Del dicho al hecho. El largo trecho del nacimiento de la formación profesional en Educación Física en Argentina (1897–1909)</em>. II Congreso Patagónico de Educación Física y Formación Docente, Universidad Nacional del Comahue, Bariloche. {link('https://eduardogalak.wordpress.com/wp-content/uploads/2012/10/del-dicho-al-hecho-galak-2012-ponencia-bariloche.pdf', 'Ponencia original con notas y bibliografía')}.</>,
+      link('https://www.memoria.fahce.unlp.edu.ar/perfiles/0554GalakE.html', 'Perfil académico de Eduardo Galak · FaHCE, UNLP'),
+    ],
+    rights: [
+      <>Texto de Eduardo Galak. El lector presenta la versión de cátedra. Las notas y la bibliografía se pueden consultar en la ponencia original.</>,
+      <>Retrato publicado en Memoria Académica · FaHCE, UNLP. Portada y Contexto: Biblioteca Digital +TEC UNAHUR.</>,
+    ],
+  },
   'levoratti-debates-ef': {
     references: [
       <>Levoratti, A. (2018). Los debates de la educación física y los enfoques de las ciencias sociales. Un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015). <em>Revista da ALESDE, 9</em>(1), 45–63. {link('https://doi.org/10.5380/jlasss.v9i1.61189', 'Edición original')}.</>,
