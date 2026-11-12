@@ -15,7 +15,7 @@
     "test:lionetti-reader": "node scripts/test-lionetti-reader.mjs",
     "test:library": "node scripts/test-library.mjs",
     "test:two-works": "node scripts/test-two-works.mjs",
-    "test:reader-runtime": "node scripts/test-reader-runtime.mjs",
+    "test:reader-runtime": "node scripts/test-reader-runtime.mjs && node scripts/test-canonical-reading-selectors.mjs",
     "test:scharagrodsky": "node scripts/prepare-scharagrodsky-assets.mjs && node scripts/test-scharagrodsky.mjs",
     "test:hobsbawm": "node scripts/test-hobsbawm.mjs",
     "test:aisenstein": "node scripts/test-aisenstein.mjs",
