@@ -84,20 +84,20 @@ assert.ok(arataHtml.includes(`src="${normalizedBase}assets/`), 'Arata y Mariño:
 // No basta con compilar el JSX: la entrada independiente debe enlazar sus estilos.
 async function verifyIntegratedReaderStyles(route, work) {
   const html = await readFile(resolve(dist, route, 'index.html'), 'utf8');
-  const stylesheetTags = [...html.matchAll(/<link\\b[^>]*>/gi)]
+  const stylesheetTags = [...html.matchAll(/<link\b[^>]*>/gi)]
     .map(match => match[0])
-    .filter(tag => /\\brel=["']stylesheet["']/i.test(tag));
-  const hrefs = stylesheetTags.map(tag => tag.match(/\\bhref=["']([^"']+)["']/i)?.[1]).filter(Boolean);
+    .filter(tag => /\brel=["']stylesheet["']/i.test(tag));
+  const hrefs = stylesheetTags.map(tag => tag.match(/\bhref=["']([^"']+)["']/i)?.[1]).filter(Boolean);
   assert.ok(hrefs.length > 0, `${work}: faltan hojas CSS enlazadas desde HTML.`);
   const compiledStyles = (await Promise.all(hrefs.map(async href => {
     assert.ok(href.startsWith(normalizedBase), `${work}: stylesheet ajeno al BASE_URL: ${href}`);
     const relative = href.slice(normalizedBase.length);
-    assert.ok(/^assets\\/[a-zA-Z0-9_.-]+\\.css$/.test(relative), `${work}: ruta CSS inesperada ${href}`);
+    assert.ok(/^assets\/[a-zA-Z0-9_.-]+\.css$/.test(relative), `${work}: ruta CSS inesperada ${href}`);
     return readFile(resolve(dist, relative), 'utf8');
-  }))).join('\\n');
-  assert.match(compiledStyles, /\\.integrated-reader\\s*\\{/, `${work}: el modal está publicado SIN reader.css.`);
-  assert.match(compiledStyles, /\\.reader-app__layout\\s*\\{/, `${work}: falta la retícula del lector.`);
-  assert.match(compiledStyles, /--display\\s*:/, `${work}: faltan variables de tipografía compartidas.`);
+  }))).join('\n');
+  assert.match(compiledStyles, /\.integrated-reader\s*\{/, `${work}: el modal está publicado SIN reader.css.`);
+  assert.match(compiledStyles, /\.reader-app__layout\s*\{/, `${work}: falta la retícula del lector.`);
+  assert.match(compiledStyles, /--display\s*:/, `${work}: faltan variables de tipografía compartidas.`);
 }
 await Promise.all([
   verifyIntegratedReaderStyles('textos/arata-marino-auroras-tempestades', 'Arata y Mariño'),
