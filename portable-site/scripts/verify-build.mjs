@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { access, readFile, readdir } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { dirname, resolve } from 'node:path';
 import { catalog } from '../src/biblioteca/catalog.js';
 
 const dist = resolve('dist');
@@ -98,29 +98,74 @@ assert.equal(levorattiDocument.legacySentenceMap['levoratti-preliminares-p1'], '
 const levorattiSource = await readFile(resolve('public/assets/levoratti-gimnasia-1958-1968/texto-academico.txt'), 'utf8');
 assert.ok(levorattiSource.includes('Curitiba, v. 14'), 'El archivo original de fuente no debe perder sus preliminares.');
 
-// Regresión visual de build: abrir el modal necesita el CSS del lector completo.
-// No basta con compilar el JSX: la entrada independiente debe enlazar sus estilos.
-async function verifyIntegratedReaderStyles(route, work) {
+// B04 · COMPUERTA OBLIGATORIA DE ESTILOS DEL LECTOR.
+// Lecciones de Arata–Mariño (PR #122) y Levoratti (PR #131):
+// React/DOM y audio pueden funcionar mientras el modal carece de reader.css.
+// Recorrer TODAS las entradas con IntegratedReader, no solo dos nombres.
+async function traceIntegratedReaderSources(entry, visited = new Set()) {
+  const path = resolve(entry);
+  if (visited.has(path)) return { reader: false, stylesheet: false };
+  visited.add(path);
+  const source = await readFile(path, 'utf8');
+  const result = { reader: path.endsWith('/IntegratedReader.jsx'), stylesheet: false };
+  const imports = [...source.matchAll(/\b(?:from\s*|import\s*)['"]([^'"]+)['"]/g)];
+  for (const [, specifier] of imports) {
+    if (!specifier.startsWith('.')) continue;
+    const target = resolve(dirname(path), specifier);
+    if (target.endsWith('/reader.css')) {
+      result.stylesheet = true;
+      continue;
+    }
+    const candidates = [target, target + '.jsx', target + '.js', target + '.mjs'];
+    let imported = null;
+    for (const candidate of candidates) {
+      if (!/\.(?:js|jsx|mjs)$/.test(candidate)) continue;
+      try { await access(candidate); imported = candidate; break; }
+      catch { /* El candidato tiene una extensión diferente */ }
+    }
+    if (!imported) continue;
+    const child = await traceIntegratedReaderSources(imported, visited);
+    result.reader ||= child.reader;
+    result.stylesheet ||= child.stylesheet;
+  }
+  return result;
+}
+
+async function verifyIntegratedReaderStyles(route) {
   const html = await readFile(resolve(dist, route, 'index.html'), 'utf8');
   const stylesheetTags = [...html.matchAll(/<link\b[^>]*>/gi)]
     .map(match => match[0])
     .filter(tag => /\brel=["']stylesheet["']/i.test(tag));
   const hrefs = stylesheetTags.map(tag => tag.match(/\bhref=["']([^"']+)["']/i)?.[1]).filter(Boolean);
-  assert.ok(hrefs.length > 0, `${work}: faltan hojas CSS enlazadas desde HTML.`);
-  const compiledStyles = (await Promise.all(hrefs.map(async href => {
-    assert.ok(href.startsWith(normalizedBase), `${work}: stylesheet ajeno al BASE_URL: ${href}`);
+  assert.ok(hrefs.length > 0, route + ': no hay CSS enlazado en el HTML.');
+  const styles = (await Promise.all(hrefs.map(async href => {
+    assert.ok(href.startsWith(normalizedBase), route + ': CSS fuera de BASE_URL: ' + href);
     const relative = href.slice(normalizedBase.length);
-    assert.ok(/^assets\/[a-zA-Z0-9_.-]+\.css$/.test(relative), `${work}: ruta CSS inesperada ${href}`);
+    assert.ok(/^assets\/[a-zA-Z0-9_.-]+\.css$/.test(relative), route + ': ruta CSS inesperada: ' + href);
     return readFile(resolve(dist, relative), 'utf8');
   }))).join('\n');
-  assert.match(compiledStyles, /\.integrated-reader\s*\{/, `${work}: el modal está publicado SIN reader.css.`);
-  assert.match(compiledStyles, /\.reader-app__layout\s*\{/, `${work}: falta la retícula del lector.`);
-  assert.match(compiledStyles, /--display\s*:/, `${work}: faltan variables de tipografía compartidas.`);
+  assert.match(styles, /\.integrated-reader\s*\{/, route + ': modal sin reader.css.');
+  assert.match(styles, /\.reader-app__layout\s*\{/, route + ': falta la retícula del lector.');
+  assert.match(styles, /\.reader-player\s*\{/, route + ': falta la estructura del reproductor.');
 }
-await Promise.all([
-  verifyIntegratedReaderStyles('textos/arata-marino-auroras-tempestades', 'Arata y Mariño'),
-  verifyIntegratedReaderStyles('textos/levoratti-gimnasia-1958-1968', 'Levoratti'),
-]);
+
+const readerRoutes = [];
+for (const entry of await readdir(resolve('textos'), { withFileTypes: true })) {
+  if (!entry.isDirectory()) continue;
+  const route = 'textos/' + entry.name;
+  const sourceIndex = await readFile(resolve(route, 'index.html'), 'utf8');
+  const entrypoint = sourceIndex.match(/<script\b[^>]*\bsrc=["']\/(src\/[^"']+\.(?:js|jsx))["']/i)?.[1];
+  if (!entrypoint) continue; // Fichas sin aplicación React propia.
+  const graph = await traceIntegratedReaderSources(entrypoint);
+  if (!graph.reader) continue;
+  assert.ok(graph.stylesheet, route + ': falta import real de src/reader.css en el entrypoint.');
+  readerRoutes.push(route);
+  await verifyIntegratedReaderStyles(route);
+}
+assert.ok(readerRoutes.includes('textos/arata-marino-auroras-tempestades'), 'No se detectó lector de Arata–Mariño.');
+assert.ok(readerRoutes.includes('textos/levoratti-gimnasia-1958-1968'), 'No se detectó lector de Levoratti.');
+assert.ok(readerRoutes.length >= 8, 'La compuerta no cubre los lectores existentes.');
+console.log('B04: modal, retícula y reproductor con CSS integrado en ' + readerRoutes.length + ' entradas (base ' + normalizedBase + ').');
 
 const arataBundleName = assetNames.find(name => name.startsWith('arata-marino-auroras-tempestades-') && name.endsWith('.js'));
 assert.ok(arataBundleName, 'Debe existir un bundle independiente de Arata y Mariño.');
