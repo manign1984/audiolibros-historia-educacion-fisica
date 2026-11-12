@@ -8,6 +8,7 @@ import '@fontsource/archivo/900.css';
 import '@fontsource/bebas-neue/400.css';
 import ArataMarinoApp from './ArataMarinoApp.jsx';
 import '../styles.css';
+import '../reader.css';
 import '../shared/journey-block-labels.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

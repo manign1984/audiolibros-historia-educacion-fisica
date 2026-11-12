@@ -1,13 +1,22 @@
 // Contrato 3.6.17: la página monta el lector de verdad, sin formularios ni puentes.
 // Se usan los metadatos académicos generados desde fuentes verificadas y un MP3 simulado.
 import assert from 'node:assert/strict';
-import { mkdir, writeFile, rm } from 'node:fs/promises';
+import { mkdir, writeFile, rm, readFile } from 'node:fs/promises';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { build } from 'vite';
 import react from '@vitejs/plugin-react';
 import { JSDOM } from 'jsdom';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+// Regression: the real Arata entrypoint must load the shared reader stylesheet.
+// DOM-only tests passed previously while the published dialog had browser-default styling.
+const arataEntry = await readFile(new URL('../src/arata-marino/main.jsx', import.meta.url), 'utf8');
+const readerStyles = await readFile(new URL('../src/reader.css', import.meta.url), 'utf8');
+assert.match(arataEntry, /import\s+['"]\.\.\/reader\.css['"]\s*;/,
+  'Arata y Mariño must import the canonical reader.css in its public entrypoint');
+assert.match(readerStyles, /\.integrated-reader\s*\{/,
+  'The imported CSS must define the shared IntegratedReader dialog');
+
 const cache = root + 'node_modules/.cache';
 const out = cache + '/arata-canonical-runtime';
 const entry = cache + '/arata-canonical-runtime-entry.js';
