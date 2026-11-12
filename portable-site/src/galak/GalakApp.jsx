@@ -20,18 +20,14 @@ export default function GalakApp() {
       <JourneyHeader author="Galak" title={title} active={active} progress={progress} />
       <main>
         <section id="inicio" className="galak-screen galak-hero" aria-labelledby="galak-title">
-          <div className="galak-shell galak-hero-grid">
-            <div>
+          <div className="galak-shell">
+            <div className="galak-hero-copy">
               <JourneyBlockLabel sectionId="inicio" />
               <p className="galak-byline"><a href="#autor">Eduardo Galak</a></p>
               <h1 id="galak-title">{title}<span>{subtitle}</span></h1>
               <p className="galak-lead">¿Cómo llegó a definirse quién podía enseñar Educación Física en las escuelas argentinas? Las disputas entre el Ejército y las autoridades educativas permiten reconstruir el nacimiento de la formación profesional.</p>
               <p className="galak-edition">Ponencia del II Congreso Patagónico de Educación Física y Formación Docente · 2012</p>
             </div>
-            <figure className="galak-cover">
-              <img src="/assets/portada-galak-del-dicho-al-hecho.png" alt="" />
-              <figcaption>Portada editorial de la Biblioteca Digital +TEC UNAHUR.</figcaption>
-            </figure>
           </div>
         </section>
 
