@@ -9,6 +9,25 @@ export const LIBRARY_CONFIG = {
 
 const publishedWorks = [
   {
+    id: 'pineau-reprimir-discriminar',
+    status: 'available',
+    author: 'Pablo Pineau',
+    shortTitle: 'Reprimir y discriminar',
+    title: 'Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)',
+    collection: 'dictadura',
+    year: '2014',
+    duration: 3027.226122,
+    stateKey: 'pineau-reprimir-discriminar-audio-state-v1',
+    artwork: 'assets/pablo-pineau.webp',
+    description: 'Las estrategias represiva y discriminadora de la política educativa dictatorial: censura, disciplinamiento, segmentación y desigualdad.',
+    authorDisplay: 'Pineau, P.',
+    authorSearch: ['Pablo Pineau', 'Pineau, Pablo', 'Pineau, P.'],
+    sortAuthor: 'Pineau, Pablo',
+    reference: 'Pineau, P. (2014). Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983). Educar em Revista, 51, 103–122.',
+    path: 'textos/pineau-reprimir-discriminar/',
+    readingDetail: 'Audiolibro con seguimiento aproximado por párrafos y cuaderno de lectura',
+  },
+  {
     id: 'scharagrodsky-constitucion-ef',
     status: 'available',
     author: 'Pablo Ariel Scharagrodsky',

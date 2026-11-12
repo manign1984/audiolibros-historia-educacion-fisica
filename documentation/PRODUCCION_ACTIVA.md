@@ -6,7 +6,21 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
-## OBRA ACTIVA · Alejo Levoratti (12/11/2026)
+## OBRA ACTIVA · Pablo Pineau · Reprimir y discriminar (12/11/2026)
+
+**Obra y workId:** Pablo Pineau, *Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)*, *Educar em Revista*, 51, 103–122 (2014). WorkId: `pineau-reprimir-discriminar`.
+
+**Unidad y estado:** unidades 1, 2 y 3 en ejecución; EN DESARROLLO hasta despliegue, comprobación y aceptación del responsable. La obra cuenta con cinco bloques y Contexto de dos pantallas. Autor reutiliza el retrato, biografía y procedencia de Pineau, con fondo propio. Lectura reutiliza CanonicalReadingEntry + IntegratedReader sin modificar archivos compartidos.
+
+**Rama/PR:** `feature/pineau-reprimir-discriminar-1976-1983` · PR pendiente de creación. **Próxima acción única:** compilar automáticamente, superar B04.11.2 (CSS raíz + Pages), fusionar y publicar la URL técnica para comprobación exclusiva del responsable.
+
+**Recursos de entrada:** [PDF académico](https://drive.google.com/file/d/1vPYdIzNLMJNFLsZoK9z3EQED4mgGCdEt/view), [texto de lectura de cátedra](https://docs.google.com/document/d/12Zdn1aWkeeAZ4ByTPsfCh3aOrNCOM8z7oqB01MJNNyc/edit), [MP3 original](https://drive.google.com/file/d/18QKaPPT2BpxX97KU4RbQK2m8_z1JI5Fi/view), [SRT original](https://drive.google.com/file/d/1XcPU5qHkpkgtgpSpOw6YxBtCXqfU10kA/view).
+
+**Material integrado:** 58 párrafos en cuatro apartados tomados del texto de trabajo facilitado, texto original PDF enlazado para consultar resumen, notas y aparato crítico; 604 marcas SRT utilizadas exclusivamente como tiempos para seguimiento aproximado por párrafo; MP3 de 30.272.629 bytes dividido en 12 fragmentos binarios consecutivos. Identificadores y claves de notas/progreso nuevos y estables. Sin subtítulos visibles independientes, ajustes acústicos ni auditorías de derechos rutinarias.
+
+---
+
+## REGISTRO ANTERIOR · Alejo Levoratti (12/11/2026)
 
 **Obra y workId:** Alejo Levoratti, *La educación física y la gimnasia en la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968)*, *Revista da ALESDE*, 14(2), 162–178 (2022). `levoratti-gimnasia-1958-1968`.
 

@@ -18,7 +18,7 @@ import { buildOrbuchReadingDocument } from '../src/orbuch/buildReadingDocument.j
 
 // Freeze the four legacy fixtures for their existing search/citation regressions.
 // Scharagrodsky has a dedicated document/catalog/runtime acceptance test.
-const catalog = allCatalog.filter((entry) => entry.status === 'available' && !['scharagrodsky-constitucion-ef', 'soares-corrientes-gimnasticas', 'arata-marino-auroras-tempestades'].includes(entry.id));
+const catalog = allCatalog.filter((entry) => entry.status === 'available' && !['scharagrodsky-constitucion-ef', 'soares-corrientes-gimnasticas', 'arata-marino-auroras-tempestades', 'pineau-reprimir-discriminar'].includes(entry.id));
 const orbuch = catalog.find((entry) => entry.id === 'orbuch-educar-al-cuerpo');
 const pineau = catalog.find((entry) => entry.id === 'pineau-fresco-noble');
 const orbuchAccessibleText = await readFile(new URL('../src/orbuch/orbuch-texto-accesible.txt', import.meta.url), 'utf8');
@@ -164,7 +164,7 @@ assert.equal(soares.status, 'available', 'Soares figura como Leer + escuchar, co
 assert.equal(soares.readingDetail, 'Seguimiento aproximado por párrafos', 'El catálogo informa el grado real de sincronización.');
 assert.equal(matchesAvailability(soares, 'review'), false, 'Soares ya no aparece bajo Edición en revisión.');
 assert.equal(canReadAndListen(soares), true, 'Soares figura entre los lectores con texto y audiolibro.');
-assert.equal(allCatalog.filter(canReadAndListen).length, 8, 'Ocho recorridos permiten leer y escuchar.');
+assert.equal(allCatalog.filter(canReadAndListen).length, 9, 'Nueve recorridos permiten leer y escuchar.');
 assert.match(libraryHome, /const readable = catalog\.filter/, 'La estantería incluye lecturas con audio o solo texto.');
 assert.match(libraryHome, /entries=\{readable\}/, 'La estantería de lectura incluye Marcaida y Scaltritti.');
 assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
@@ -197,7 +197,7 @@ const blocked = { getItem() { throw new Error('Blocked'); }, setItem() { throw n
 assert.deepEqual(readList(blocked, ids), []);
 assert.equal(saveList(blocked, ids), false);
 assert.equal(readProgress(blocked, pineau), 0);
-console.log('Biblioteca: 29 fichas, 8 recorridos de lectura y audio (7 disponibles y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
+console.log('Biblioteca: 30 fichas, 9 recorridos de lectura y audio (8 disponibles y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
 
 
 // Portada de la biblioteca = una pantalla útil bajo el encabezado real.
