@@ -1,0 +1,207 @@
+.fa-page {
+  background: #efe8dd;
+  font-family: 'Archivo', sans-serif;
+}
+
+.fa-skip {
+  position: fixed;
+  z-index: 1000;
+  inset: 12px auto auto 12px;
+  padding: 12px 18px;
+  color: #26232b;
+  background: #f5ebdb;
+  transform: translateY(calc(-100% - 16px));
+}
+
+.fa-skip:focus {
+  transform: translateY(0);
+}
+
+.fa-shell {
+  width: min(1190px, calc(100% - 72px));
+  margin-inline: auto;
+}
+
+.fa-hero,
+.fa-context {
+  display: grid;
+  align-items: center;
+  min-height: var(--hero-room, calc(100svh - var(--journey-header-height, 80px)));
+  padding-block: clamp(28px, 5svh, 52px);
+}
+
+.fa-hero {
+  background: #26232b;
+  color: #fff6e9;
+}
+
+.fa-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, .82fr);
+  align-items: center;
+  gap: clamp(25px, 5vw, 76px);
+}
+
+.fa-authorline,
+.fa-edition,
+.fa-hero .journey-block-label,
+.fa-hero h1 em {
+  color: #efbc9e;
+}
+
+.fa-authorline {
+  margin: clamp(22px, 4svh, 43px) 0 14px;
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+}
+
+.fa-hero h1,
+.fa-context h2 {
+  margin: 0;
+  font-family: 'Bebas Neue', 'Archivo', sans-serif;
+  font-weight: 400;
+  line-height: .95;
+  overflow-wrap: break-word;
+}
+
+.fa-hero h1 {
+  max-width: 14ch;
+  font-size: clamp(3.4rem, min(6.2vw, 10svh), 6.6rem);
+}
+
+.fa-hero h1 em {
+  font-style: normal;
+}
+
+.fa-subtitle {
+  max-width: 39ch;
+  margin: 18px 0 0;
+  font-size: clamp(1.05rem, 1.8vw, 1.46rem);
+  font-weight: 700;
+  line-height: 1.32;
+}
+
+.fa-intro {
+  max-width: 49ch;
+  margin: 18px 0 0;
+  line-height: 1.58;
+}
+
+.fa-edition {
+  margin: 20px 0 0;
+  font-size: .85rem;
+}
+
+.fa-cover {
+  justify-self: center;
+  width: min(100%, 430px, calc(var(--hero-room, 700px) * .73));
+  margin: 0;
+  padding: 12px;
+  background: #f4eadb;
+  color: #383037;
+  box-shadow: 16px 16px 0 #50373c;
+}
+
+.fa-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fa-cover figcaption {
+  padding: 10px 3px 2px;
+  font-size: .86rem;
+}
+
+.fa-cover a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.fa-author {
+  --paper-light: #fff4e5;
+  --mustard: #ffd3ac;
+  background: #643e43;
+}
+
+.fa-context {
+  color: #28232b;
+}
+
+.fa-context-inner {
+  max-width: 1050px;
+}
+
+.fa-context h2 {
+  margin-top: 16px;
+  font-size: clamp(2.8rem, 6.8vw, 5.6rem);
+}
+
+.fa-context-lead {
+  max-width: 67ch;
+  margin: 20px 0 0;
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  line-height: 1.58;
+}
+
+.fa-lenses {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 40px);
+  margin: clamp(24px, 5svh, 56px) 0 0;
+}
+
+.fa-lenses div {
+  padding-top: 15px;
+  border-top: 2px solid #915349;
+}
+
+.fa-lenses dt {
+  color: #713b35;
+  font-weight: 700;
+  font-size: 1.13rem;
+}
+
+.fa-lenses dd {
+  margin: 9px 0 0;
+  line-height: 1.58;
+}
+
+.fa-question {
+  max-width: 60ch;
+  margin: clamp(22px, 5svh, 44px) 0 0;
+  padding-inline-start: 16px;
+  border-inline-start: 3px solid #915349;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+body:has(.journey-header) .fa-page #lectura.hb-material-reading {
+  --material-paper: #efe3d8;
+  --material-ink: #28232b;
+  --material-rust: #853e3b;
+}
+
+@media (max-width: 760px) {
+  .fa-shell {
+    width: calc(100% - 36px);
+  }
+
+  .fa-hero-grid,
+  .fa-lenses {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .fa-hero h1 {
+    font-size: clamp(2.85rem, 12vw, 4.6rem);
+  }
+
+  .fa-cover {
+    width: min(calc(100% - 12px), 410px);
+    justify-self: start;
+    box-shadow: 10px 10px 0 #50373c;
+  }
+}

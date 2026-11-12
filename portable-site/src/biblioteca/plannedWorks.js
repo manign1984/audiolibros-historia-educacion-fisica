@@ -43,6 +43,15 @@ const records = [
 // Obras con lectura y audio habilitados; la disponibilidad del lector
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
+  'feiguin-aisenstein-sujetos': {
+    status: 'available',
+    canonicalCard: true,
+    duration: 2815.059592,
+    stateKey: 'feiguin-aisenstein-sujetos-reader-state-v1',
+    historicalPeriod: 'Formación docente e internado · 1938–1967',
+    readingDetail: 'Seguimiento aproximado por párrafos y cuaderno de lectura',
+    artwork: 'assets/feiguin-aisenstein/portada.webp',
+  },
   'almada-privilegiados': {
     status: 'text',
     canonicalCard: true,

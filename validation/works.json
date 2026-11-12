@@ -852,6 +852,340 @@
       "audioDuration": 3027.226122,
       "audioSha256": "1d57251c9d51a134bcb985c9f576afa807098b4d812b8c1286d7203055c71cc6",
       "documentSha256": "b31f635c94ed9451d12b447e9fa7c09f0601b2a56a85e85d9e2d62452323f124"
+    },
+    {
+      "id": "feiguin-aisenstein-sujetos",
+      "config": {
+        "module": "src/feiguin-aisenstein/readerConfig.js",
+        "export": "readerConfig"
+      },
+      "document": {
+        "module": "src/feiguin-aisenstein/readerConfig.js",
+        "export": "readingDocument"
+      },
+      "page": "src/feiguin-aisenstein/FeiguinAisensteinApp.jsx",
+      "main": "src/feiguin-aisenstein/main.jsx",
+      "creditsKey": "feiguinAisenstein",
+      "storage": {
+        "notesKey": "feiguin-aisenstein-sujetos-reader-notes-v1",
+        "stateKey": "feiguin-aisenstein-sujetos-reader-state-v1"
+      },
+      "sync": {
+        "unit": "paragraph",
+        "status": "paragraph-preview",
+        "review": "Seguimiento aproximado de 69 párrafos derivado de 565 marcas del SRT recibido. Resúmenes y elipsis editoriales permanecen sin tiempos."
+      },
+      "materials": [
+        {
+          "path": "src/feiguin-aisenstein/readingDocument.json",
+          "kind": "text",
+          "bytes": 99999,
+          "sha256": "64f368781ef5ce93b9a9528d016cef2de662a634c06733427f7c8b926d2ddc9f"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/texto-academico.txt",
+          "kind": "text",
+          "bytes": 53849,
+          "sha256": "48f6cda7e03257709d23d4bc8f4971629cf6d958266d2ea1deadd226936e672d"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/articulo.pdf",
+          "kind": "pdf",
+          "bytes": 326236,
+          "sha256": "2c7f955b7e61adc72674ebecede92e74506285b53e54e2697b8c5c73b4e3ebbb"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/marcas.srt",
+          "kind": "subtitles",
+          "bytes": 60676,
+          "sha256": "a9c7e514716499083c0b59286cd54215e4b3a97d6f385c62db9b6635d638d33a"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-00.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "c0d9cd52c1f2b8bee310ea84c951f18a8d86037eecdccc90251ac68104cc2235"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-01.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "78fce2eb72703089b4dce0ae9d792a6506394a213eb6e8576c060a4a9a40d2ba"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-02.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "f492c1bef19e5ccf2f8ae669ef70f6935f3ee424126f1d413b6246f1e4ff4c85"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-03.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "e3394420e86cb8481e0fbf32a5e726e2ba34afa2168fc8266dbc15b92173c2d0"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-04.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "931700c2683d5ce345d59512a1ab31019686c523cfbf36bcee4b33075ad91ae1"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-05.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "9a3d81778016c553be7c5fb83a0e6d704a477582d33effc11d3aa02a9ef2dc17"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-06.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "e64243af594e1608302bbc57b2e8393ee51cb87216f0312ae717256279dc9eac"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-07.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "0303a53a6227389a9a8715eaa997e6b064d21b284d85f5282ac42c9f06075b81"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-08.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "40f387e2bf266d5383a4e346ca08e78299b482ad5e7544a96e3660eb9dcd02bf"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-09.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "e88f050ccfeee66455e8024ff38079242bda0df04d7565e258d4c1e01041f9f2"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-10.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "7a209c6d6899532f60b42acdfe7c8d5264b3dc79df78e3d3193fdaf1795cbf46"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-11.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "a32293c12bbdce02bca67ec01651c3ee4040daa29cb465122dd21a1fbb639086"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-12.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "0e1dff31f5d041d078d54273cf09c0940976b79e5c87635f95d7ac815af4e0ef"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-13.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "97f83740dd1c095cf1f999d3a3e85d042692812e138d600477daa0788a02b454"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-14.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "83b49b36d4e6b6fe6b9513a912e86131dc7605d61f7d770760aa02435d3bb357"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-15.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "60a6050dd89a51293eab035cfc0b556dacc0d5888a411a79e7d5a845b0950dc3"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-16.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "44a57928a7ce5f54a37036a143ab27e5b62447b340d855a9dbd40b548bfb6384"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-17.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "1ae0a2e87710701db474aea4236f632a6a8e7dbf1e6491fa9e92d798c7fea86c"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-18.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "adb79134ee2bd10a9aaa16dd1929007573f87e75710f627f675da54c27ddfe9e"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-19.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "d56a0310a4cfb4d757d9e548d664dc3ee37c823de4d078f2a5d26de779ccc9af"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-20.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "8f0836eb77bc06d2d1d7a5a845a58ba856b881d714df26f8c9d66ef4fdf91e34"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-21.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "68a3e4f15448eef75774074828ced318f1baee1c745b39561a1daa92ed18cea2"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-22.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "1fe44879778b3456f66e3ccd0a8bf1bd3c450704ddac3a10eb1f3baf48af75c2"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-23.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "a0c3261d404402cc167f3f3ff066123613284a66d3e8ad76372f5081e11a54c2"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-24.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "a83ecbc0b0dc2f75e5896adf496a069fc90f710b12047fddba85e793dc97736f"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-25.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "c7109927ea50f34ee62bf615749dfb4c5128f3f78782f8ac6b21aeadcacf6624"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-26.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "3bbed69d443b48dd40fcdd207b7e54f20620e834b97db5b57d06b4fcb24c78af"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-27.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "20fde6a209288003ba74fb903f293432531b43eff4becf80b44ed0e00bfc8331"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-28.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "a51776d4541e8688863d8ab89ed1d5de867545205c61a0f2e76fd2c9f311316c"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-29.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "ddd2c6ef89e84ceeb22719aae232596695cbec4ab76bd7719bf9565d682242ad"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-30.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "b0fbbb581c61451d40808ba4ed07a4e8c5039fdd4e5c160c19735ececed0cc7b"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-31.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "9b82299efd5bb783479eb56415f956a4f3e72f57d72a5c2e2aa0ef5488c0fbe9"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-32.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "f9f48bf8eaf8efb0341b6fed461bcbed667d26324cfa6c3c95611838eaf3912e"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-33.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "e029cc28705b693410dcb05cc78ef925da3c0efd7dcd751e8461b7f431058cd6"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-34.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "a30b1a42969ef7e14c18d3eb1e49f32d0ed6675aaf4121f6fde9a4e852af0219"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-35.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "b21a242acb759594a393965f8aaf160d3090dbfd16757e3e0e7dfd527ce5f4e2"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-36.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "07978545498b377dd502c2ccbea5d282d184b57b3752a10d7f821fd3d17b0721"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-37.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "1376902999de9955ef20b1f1d94cc03b97c7fe866ec66502de9dda3d24ce173b"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-38.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "5cf2f2a3a350f7b33c92493e68dc7fd19806b1da8c21a49e2d86f5cf35768abe"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-39.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "954920c4fbba2fd9a287a06e5aae8456e527076e5e65ec4458ef5748e6a0ecd1"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-40.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "8b24553403178b04daaab3fc78e1ea0cfabcc106e9ee0343d4eb77eb2b9bb3f7"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-41.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "59c14774526fb9c0c7e08fc6a091362b2e2af86197b24bb43fa182182ef10022"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-42.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "b81cdcb12d415f8563313ff3f68b0bf38bd866061116ad53b7b48c5e34d34718"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-43.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "632e9abd009d8baf48cb25e5e59d7fe4db38492331080ff3eaea8d1465263546"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-44.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "abacc2b4467c3f93cdcd497b5258230d8a00e233437f24d648892819290b598f"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-45.part",
+          "kind": "audio",
+          "bytes": 1440000,
+          "sha256": "f7e30f1a75cc5500233b9f2a727f1b389fc2769e2bf608ca1f8dc84a7e2d3079"
+        },
+        {
+          "path": "public/assets/feiguin-aisenstein/audio/audio-46.part",
+          "kind": "audio",
+          "bytes": 1322280,
+          "sha256": "15b68dd4cc0e31e5db21cc4eb0a6340f15d11fbfd4d0e7f7c2074305a8115dde"
+        }
+      ],
+      "audioDuration": 2815.059592,
+      "audioSha256": "63f4c3b0b7f152fa4a4414dd2951302dde4ad64856041477b594473000e61340",
+      "documentSha256": "02ef6abfbd36a86eecfd172171de6f12324b1b6139a1da2218aba79275cd306a"
     }
   ],
   "baseline": {

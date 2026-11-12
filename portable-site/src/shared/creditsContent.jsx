@@ -1,6 +1,18 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  feiguinAisenstein: {
+    references: [
+      <>Feiguin, M. A., &amp; Aisenstein, Á. (2016). Diseño de sujetos morales, sanos y patriotas. Formación de profesores de Educación Física. Argentina, 1938–1967. <em>Pedagogía y Saberes</em>, (44), 9–20. {link('https://hdl.handle.net/20.500.12209/7554', 'Edición original')}.</>,
+      link('https://ri.unlu.edu.ar/items/7cb9c944-e4f4-4289-a44f-113dc31836e5', 'María Andrea Feiguin · investigación de maestría, UNLu'),
+      link('https://udesa.edu.ar/cuerpo-docente/angela-aisenstein', 'Ángela Aisenstein · perfil académico, UdeSA'),
+    ],
+    rights: [
+      <>Texto y facsímil de portada de la edición publicada por la Universidad Pedagógica Nacional. El repositorio de la revista registra la licencia {link('https://creativecommons.org/licenses/by-nc/4.0/', 'CC BY-NC 4.0')}. Lectura adaptada a formato digital y portada recortada.</>,
+      <>Audiolibro facilitado al proyecto +TEC UNAHUR, con seguimiento aproximado por párrafos. Los resúmenes, las notas y las referencias están disponibles en el texto.</>,
+      <>Composición tipográfica de Autor y claves de Contexto, +TEC UNAHUR.</>,
+    ],
+  },
   'almada-privilegiados': {
     references: [
       <>Almada, C. (2020). Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo. <em>History of Education in Latin America - HistELA, 3</em>, e21434. {link('https://doi.org/10.21680/2596-0113.2020v3n0ID21434', 'Consultar edición original (DOI)')}.</>,

@@ -6,7 +6,21 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
-## OBRA ACTIVA · Cecilia Almada · Los privilegiados en la Nueva Argentina (12/11/2026)
+## OBRA ACTIVA · María Andrea Feiguin y Ángela Aisenstein (12/11/2026)
+
+**Obra y workId:** *Diseño de sujetos morales, sanos y patriotas. Formación de profesores de Educación Física. Argentina, 1938–1967*. *Pedagogía y Saberes*, (44), 9–20 (2016). `feiguin-aisenstein-sujetos`.
+
+**Unidad y estado interno:** unidades 1, 2 y 3 preparadas e integradas en la rama. **EN DESARROLLO** hasta que el responsable compruebe y acepte la experiencia desplegada.
+
+**Rama, PR y commit de implementación:** `feature/feiguin-aisenstein-sujetos` · [PR #142](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/142) · `37c65f713082e78f6ee21d14d674818f6281e4f2`.
+
+**Producto:** cinco bloques, Contexto de una pantalla sobre ingreso, internado y liderazgo, y `IntegratedReader` con `CanonicalReadingEntry`. Se conservan el [artículo original](https://hdl.handle.net/20.500.12209/7554), seis notas académicas, 47 referencias y el [MP3 original](https://drive.google.com/file/d/1pPrjiAFoQ5qGyza2yIDpTZgsvSG2Bowj/view) en 47 partes consecutivas (46:55). El [SRT aportado](https://drive.google.com/file/d/1aXyjKKg1WKa1D62tS1Cngr0OaJAYvAYH/view) contiene 565 marcas y sustenta el resaltado aproximado de 69 párrafos. Compilaciones locales, compuerta de CSS B04.11.2 y validación de la obra aprobadas para raíz y Pages.
+
+**Próxima acción única:** comprobación del responsable en la [ruta técnica de Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/feiguin-aisenstein-sujetos/) una vez concluido el despliegue asociado a la PR.
+
+---
+
+## REGISTRO ANTERIOR · Cecilia Almada · Los privilegiados en la Nueva Argentina (12/11/2026)
 
 **Obra y workId:** Cecilia Almada, *Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo*, *History of Education in Latin America - HistELA*, 3, e21434 (2020). [Edición original](https://doi.org/10.21680/2596-0113.2020v3n0ID21434). `almada-privilegiados`.
 
