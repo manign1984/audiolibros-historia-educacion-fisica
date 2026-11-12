@@ -1,6 +1,16 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  'levoratti-debates-ef': {
+    references: [
+      <>Levoratti, A. (2018). Los debates de la educación física y los enfoques de las ciencias sociales. Un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015). <em>Revista da ALESDE, 9</em>(1), 45–63. {link('https://doi.org/10.5380/jlasss.v9i1.61189', 'Edición original')}.</>,
+      link('https://idihcs.fahce.unlp.edu.ar/integrante_idihcs/levoratti-alejo/', 'Perfil académico de Alejo Levoratti · IdIHCS, UNLP'),
+    ],
+    rights: [
+      <>Texto de Alejo Levoratti, publicado originalmente en <em>Revista da ALESDE</em>. El lector presenta la versión de cátedra. La edición original reúne el aparato crítico del artículo.</>,
+      <>Portada, composición tipográfica del autor y Contexto: Biblioteca Digital +TEC UNAHUR.</>,
+    ],
+  },
   thwaitesRey: {
     references: [
       <>Thwaites Rey, M. (2013). La democracia argentina bajo el largo ciclo de hegemonía neoliberal (1983–2013). <em>Voces en el Fénix, 4</em>(31), 32–41. {link('https://www.economicas.uba.ar/extension/vocesenelfenix/la-democracia-argentina-bajo-el-largo-ciclo-de-hegemonia-neoliberal-1983-2013/', 'Edición original, Facultad de Ciencias Económicas, UBA')}.</>,

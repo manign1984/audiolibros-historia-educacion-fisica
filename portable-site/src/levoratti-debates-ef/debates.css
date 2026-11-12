@@ -1,0 +1,216 @@
+.levoratti-debates {
+  background: #edf2ef;
+  color: #162d37;
+  font-family: 'Archivo', sans-serif;
+}
+
+.ld-skip {
+  position: fixed;
+  z-index: 120;
+  inset: 12px auto auto 12px;
+  padding: 12px 18px;
+  background: #e9cf93;
+  color: #162d37;
+  transform: translateY(calc(-100% - 16px));
+}
+
+.ld-skip:focus {
+  transform: translateY(0);
+}
+
+.ld-screen {
+  display: grid;
+  align-items: center;
+  min-height: calc(100svh - var(--journey-header-height, 80px));
+  padding-block: clamp(28px, 5svh, 60px);
+}
+
+.ld-shell {
+  width: min(1180px, calc(100% - 72px));
+  margin-inline: auto;
+}
+
+.ld-hero {
+  background: #152d37;
+  color: #f8f4e8;
+}
+
+.ld-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 80px);
+  align-items: center;
+}
+
+.ld-hero .journey-block-label,
+.ld-byline,
+.ld-subtitle {
+  color: #efcf8d;
+}
+
+.ld-byline {
+  margin: clamp(18px, 3svh, 34px) 0 10px;
+  font-weight: 700;
+}
+
+.ld-byline a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: .24em;
+}
+
+.ld-hero h1,
+.ld-context h2 {
+  margin: 0;
+  font: 400 clamp(2.9rem, min(5.45vw, 9svh), 5.65rem)/.98 'Bebas Neue', sans-serif;
+  overflow-wrap: break-word;
+}
+
+.ld-subtitle {
+  max-width: 46ch;
+  margin: 14px 0 0;
+  font-size: clamp(1.02rem, 1.65vw, 1.38rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.ld-lead,
+.ld-context-lead,
+.ld-comparison p,
+.ld-question {
+  line-height: 1.55;
+}
+
+.ld-lead {
+  max-width: 51ch;
+  margin: 18px 0 0;
+  font-size: 1.06rem;
+}
+
+.ld-edition {
+  margin: 16px 0 0;
+  font-size: .86rem;
+  line-height: 1.45;
+}
+
+.ld-cover {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: clamp(16px, 2.5vw, 30px);
+  background: #28434a;
+  border: 1px solid #647b79;
+}
+
+.ld-cover-sheet {
+  background: #f0e7d2;
+  color: #162d37;
+  padding: clamp(14px, 2vw, 24px);
+}
+
+.ld-cover-sheet:nth-child(2) {
+  background: #d4e2db;
+}
+
+.ld-cover-sheet div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 14px;
+  border-bottom: 1px solid #778983;
+}
+
+.ld-cover-sheet strong {
+  font: 400 clamp(2.35rem, 4.1vw, 4rem)/1 'Bebas Neue', sans-serif;
+}
+
+.ld-cover-sheet span {
+  font-weight: 700;
+}
+
+.ld-cover-sheet p {
+  margin: 10px 0 0;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+}
+
+.ld-cover figcaption {
+  font-size: .84rem;
+  line-height: 1.4;
+}
+
+.ld-author {
+  --paper-light: #f8f2e5;
+  --mustard: #efcf8d;
+  background: #29464a;
+}
+
+.ld-context .journey-block-label,
+.ld-date {
+  color: #275b59;
+}
+
+.ld-context h2 {
+  margin-top: 16px;
+  font-size: clamp(2.6rem, 5vw, 5.1rem);
+}
+
+.ld-context-lead {
+  max-width: 76ch;
+  margin: 16px 0 0;
+  font-size: 1.1rem;
+}
+
+.ld-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 38px);
+  margin-top: clamp(22px, 4.5svh, 42px);
+}
+
+.ld-comparison article {
+  padding-top: 12px;
+  border-top: 2px solid #3e6e68;
+}
+
+.ld-comparison .ld-date {
+  margin: 0;
+  font: 400 2.4rem/1 'Bebas Neue', sans-serif;
+}
+
+.ld-comparison h3 {
+  margin: 8px 0;
+  font-size: 1.2rem;
+}
+
+.ld-comparison p {
+  margin: 0;
+}
+
+.ld-question {
+  max-width: 78ch;
+  margin: clamp(22px, 4.5svh, 42px) 0 0;
+  padding-inline-start: 16px;
+  border-inline-start: 3px solid #3e6e68;
+  font-weight: 700;
+}
+
+body:has(.journey-header) .levoratti-debates #lectura.hb-material-reading {
+  --material-paper: #edf2ef;
+  --material-ink: #162d37;
+  --material-rust: #275b59;
+}
+
+@media (max-width: 760px) {
+  .ld-shell {
+    width: calc(100% - 36px);
+  }
+
+  .ld-hero-grid,
+  .ld-comparison {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ld-hero h1 {
+    font-size: clamp(2.65rem, 10vw, 4.6rem);
+  }
+}
