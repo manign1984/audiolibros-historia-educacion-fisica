@@ -195,6 +195,7 @@ for (const entry of catalog.filter((item) => item.status !== 'available')) {
     assert.ok(html.includes('src="' + normalizedBase + 'assets/'), `${entry.id}: ruta web correcta.`);
     const textAsset = {
       'almada-privilegiados': 'assets/almada/texto-academico.txt',
+      'levoratti-debates-ef': 'assets/levoratti-debates-ef/texto-academico.txt',
       'melano-militares-juramentados': 'assets/melano/texto-academico.txt',
       'torre-pastoriza-bienestar': 'assets/torre-pastoriza/texto-academico.txt',
     }[entry.id] ?? 'assets/lionetti/texto-academico.txt';

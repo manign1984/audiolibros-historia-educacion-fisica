@@ -6,7 +6,21 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
-## OBRA ACTIVA · Mabel Thwaites Rey (12/11/2026)
+## OBRA ACTIVA · Alejo Levoratti (12/11/2026)
+
+**Obra y workId:** *Los debates de la educación física y los enfoques de las ciencias sociales. Un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015)*, [Revista da ALESDE, 9(1), 45–63 (2018)](https://doi.org/10.5380/jlasss.v9i1.61189). `levoratti-debates-ef`.
+
+**Unidad y estado interno:** unidad 1 · **EN DESARROLLO**. Cinco bloques, Contexto en una pantalla sobre los CBC de 1997 y las recomendaciones del INFD de 2009, y lector textual con navegación por siete apartados. Audio y SRT/VTT pendientes.
+
+**Insumos:** [texto de cátedra](https://docs.google.com/document/d/13A6FQADf_wm9m1g2b6p8U7q6U6PUScpgwh1Td_l6nyk/edit) y [PDF de referencia](https://drive.google.com/file/d/1aUEe7Lr5bTdD4XpziC1PvjMIFfJkxs8b/view).
+
+**PR, commit, rama y ruta técnica:** [PR #148](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/148) · [`ad445dcf51b3`](https://github.com/manign1984/audiolibros-historia-educacion-fisica/commit/ad445dcf51b3298a0993c01da3a91f43622f37bc) · [`feature/levoratti-debates-ef`](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/levoratti-debates-ef) · [GitHub Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/levoratti-debates-ef/).
+
+**Próxima acción única:** comprobación de la página y del lector textual por el responsable tras el despliegue técnico.
+
+---
+
+## REGISTRO ANTERIOR · Mabel Thwaites Rey (12/11/2026)
 
 **Obra y workId:** *La democracia argentina bajo el largo ciclo de hegemonía neoliberal (1983–2013)*, [Voces en el Fénix, 4(31), 32–41](https://www.economicas.uba.ar/extension/vocesenelfenix/la-democracia-argentina-bajo-el-largo-ciclo-de-hegemonia-neoliberal-1983-2013/). `thwaites-rey-democracia-argentina`.
 
