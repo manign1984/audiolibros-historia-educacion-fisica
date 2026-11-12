@@ -6,6 +6,20 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
+## OBRA ACTIVA · Alejo Levoratti (11/11/2026)
+
+**Obra / workId:** Alejo Levoratti, *La educación física y la gimnasia en la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968)*, *Revista da ALESDE*, 14(2), 162–178 (2022). `levoratti-gimnasia-1958-1968`.
+
+**Unidad productiva y estado:** Unidad 1, página académica construida en rama, **EN DESARROLLO**. Modalidad: `TextOnlyReader`, sin MP3 ni SRT/VTT identificados entre los insumos localizados.
+
+**Rama / PR / último commit:** `feature/levoratti-educacion-fisica-1958-1968` · [PR #123, borrador](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/123) · último commit previo a este registro: `ec097af5fd4892255065084118c868178ac877d7`.
+
+**Resultado persistido:** fuente académica original de 17 páginas incorporada como TXT de lectura desde el PDF del artículo; página propia con Inicio, Autor (alternativa editorial honesta), dos unidades de Contexto comparativo 1961/1968, Lectura mediante componente canónico y Créditos compartidos. Entrada técnica de Vite creada; sin tarjeta nueva ni difusión institucional. Insumos: [PDF original](https://drive.google.com/file/d/1HC1dr49ict6QNR1QUDmbi8ubKQqHqy2F/view) · [copia de trabajo para narración](https://docs.google.com/document/d/1FDKS6tzTd4ZuyoehO0qyrKdjubq3A0M-XZnk_E1MuCY/edit). No se modificó el motor, la geometría ni el CSS compartido del bloque 04.
+
+**Próxima acción única:** tratar, mediante orden expresa y tarea transversal SEPARADA, la dependencia ya registrada en B04.10: la lista de selectores de `canonical-reading.css` no abarca una clase nueva como `levoratti-page`. No inventar compensaciones CSS locales, fusionar la PR ni declararla desplegada/completa antes de resolver la dependencia y obtener los resultados automáticos del pipeline. La comprobación perceptiva posterior será exclusiva del responsable.
+
+---
+
 ## 0. Obra concluida · Arata y Mariño (11/11/2026)
 
 **Estado interno: COMPLETA · incorporación técnica y despliegue verificados.** Nicolás Arata y Marcelo Mariño, *Auroras y tempestades: la educación entre golpes (1955–1976)*, lección 10 de *La educación en la Argentina. Una historia en 12 lecciones*. El recorrido conserva los cinco bloques públicos (Inicio, Autor, Contexto en dos pantallas, Lectura y Créditos) y la identidad editorial definitiva.
