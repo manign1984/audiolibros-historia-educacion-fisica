@@ -6,7 +6,23 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
-## OBRA ACTIVA · Pablo Pineau · Reprimir y discriminar (12/11/2026)
+## OBRA ACTIVA · Cecilia Almada · Los privilegiados en la Nueva Argentina (12/11/2026)
+
+**Obra y workId:** Cecilia Almada, *Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo*, *History of Education in Latin America - HistELA*, 3, e21434 (2020). [Edición original](https://doi.org/10.21680/2596-0113.2020v3n0ID21434). `almada-privilegiados`.
+
+**Unidad y estado interno:** Unidad 1, página desplegada en modalidad textual con `TextOnlyReader`. **EN DESARROLLO**.
+
+**Rama, PR y último commit:** `feature/almada-privilegiados` · [PR #138](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/138) fusionada a `main` mediante `76d7ebac037217fecc895d12010a8cd6460f3ee3`.
+
+**Producto persistido:** cinco bloques, ficha en la colección La Nueva Argentina y Contexto de dos pantallas (cultura física como política pública y Campeonatos Evita). Lector textual de 16 páginas con las 21 notas y bibliografía del [PDF académico de cátedra](https://drive.google.com/file/d/1t53oZ47OzCAcaJiBNkyZSTQSTOdk8oa3/view). [Texto preparado para locución](https://docs.google.com/document/d/1u64Tc-QC8D0Jsm-iK5xFWMAt36lP0NNPnaFNOyZ1NBw/edit). MP3 y SRT/VTT aún no localizados en las carpetas de producción. Fotografía de Inicio atribuida al AGN y monograma editorial en Autor.
+
+**CI y despliegue:** [CI de PR #138](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/43222541990), [build de main](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/43222795399) y [GitHub Pages](https://github.com/manign1984/audiolibros-historia-educacion-fisica/actions/runs/43222795728) concluyeron con éxito. Compilación y validación en raíz y Pages aprobadas. URL técnica: https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/almada-privilegiados/ .
+
+**Próxima acción única:** **COMPROBACIÓN DEL RESPONSABLE** de la página desplegada y de la apertura directa del lector textual.
+
+---
+
+## REGISTRO ANTERIOR · Pablo Pineau · Reprimir y discriminar (12/11/2026)
 
 **Obra y workId:** Pablo Pineau, *Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)*, *Educar em Revista*, 51, 103–122 (2014). `pineau-reprimir-discriminar`.
 
