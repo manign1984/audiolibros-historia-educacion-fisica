@@ -90,7 +90,7 @@ export function checkManifest(manifest) {
   return manifest;
 }
 
-export async function validateWorks({ root, manifest, contracts, catalog, collections, reservedStorageKeys = [] }) {
+export async function validateWorks({ root, manifest, contracts, catalog, programGroups, reservedStorageKeys = [] }) {
   checkManifest(manifest);
   const report = issues();
   const error = (code, location, message) => add(report, 'errors', code, location, message);
@@ -109,7 +109,7 @@ export async function validateWorks({ root, manifest, contracts, catalog, collec
     check(!routes.has(entry.path), 'catalog-route', entry.id, 'Ruta repetida.'); routes.add(entry.path);
     for (const field of ['id', 'author', 'title', 'shortTitle', 'sortAuthor']) check(present(entry[field]), 'catalog-metadata', entry.id, `Falta ${field}.`);
     check(['available', 'review', 'text', 'preparation'].includes(entry.status), 'catalog-status', entry.id, 'Estado desconocido.');
-    check(collections.some(collection => collection.id === entry.collection), 'catalog-collection', entry.id, 'Colección inexistente.');
+    check(programGroups.some(group => group.id === entry.programGroup), 'catalog-program-group', entry.id, 'Unidad o categoría complementaria inexistente.');
     check(present(entry.reference) || ['beforeItalic', 'italic', 'afterItalic'].every(field => present(entry.citation?.[field])), 'bibliography', entry.id, 'Falta referencia bibliográfica.');
     await exists(`${entry.path}index.html`, entry.id);
     for (const resource of [entry.artwork, entry.thumbnail?.src].filter(Boolean)) await exists(`public/${resource.replace(/^\//, '')}`, entry.id);

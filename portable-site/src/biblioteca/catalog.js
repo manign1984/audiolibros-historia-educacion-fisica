@@ -1,5 +1,6 @@
-import { plannedWorks, collections } from './plannedWorks.js';
-export { collections };
+import { plannedWorks } from './plannedWorks.js';
+import { programGroups, programGroupByWork } from './program.js';
+export { programGroups };
 
 export const LIBRARY_CONFIG = {
   name: 'Biblioteca de Historia de la Educación y de la Educación Física',
@@ -14,7 +15,7 @@ const publishedWorks = [
     author: 'Pablo Pineau',
     shortTitle: 'Reprimir y discriminar',
     title: 'Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)',
-    collection: 'dictadura',
+    coverTone: 'sage',
     year: '2014',
     duration: 3027.226122,
     stateKey: 'pineau-reprimir-discriminar-audio-state-v1',
@@ -33,7 +34,7 @@ const publishedWorks = [
     author: 'Pablo Ariel Scharagrodsky',
     shortTitle: 'La constitución de la Educación Física escolar',
     title: 'La constitución de la Educación Física escolar en la Argentina. Tensiones, conflictos y disputas con la matriz militar en las primeras décadas del siglo XX',
-    collection: 'estado',
+    coverTone: 'blue',
     year: '2011',
     duration: 3083.755102,
     stateKey: 'scharagrodsky-constitucion-ef-reader-state-v1',
@@ -51,7 +52,7 @@ const publishedWorks = [
     author: 'Ángela Aisenstein',
     shortTitle: '¿Hacemos tabla rasa del pasado?',
     title: '¿Hacemos tabla rasa del pasado? El saber histórico en la formación docente en Educación Física',
-    collection: 'miradas',
+    coverTone: 'lilac',
     year: '2006',
     duration: 1493.19,
     stateKey: 'aisenstein-tabla-rasa-reader-state-v1',
@@ -68,7 +69,7 @@ const publishedWorks = [
     status: 'available',
     author: 'Iván Pablo Orbuch',
     shortTitle: 'Educar al cuerpo dentro y fuera del aula',
-    collection: 'peronismo',
+    coverTone: 'gold',
     year: '2020',
     duration: 1673.900408,
     stateKey: 'orbuch-educar-cuerpo-reader-state-v1',
@@ -97,7 +98,7 @@ const publishedWorks = [
     status: 'available',
     author: 'Pablo Pineau',
     shortTitle: 'Renovación, represión, cooptación',
-    collection: 'conservadurismo',
+    coverTone: 'coral',
     year: '1999',
     duration: 3005.727,
     stateKey: 'fresco-noble-reader-state-v1',
@@ -126,7 +127,7 @@ const publishedWorks = [
     author: 'Eric Hobsbawm',
     shortTitle: 'Historia del siglo XX',
     title: 'Historia del siglo XX. Vista panorámica del siglo XX',
-    collection: 'miradas',
+    coverTone: 'lilac',
     year: '1999',
     duration: 2942.197551,
     stateKey: 'hobsbawm-siglo-xx-reader-state-v1',
@@ -140,7 +141,13 @@ const publishedWorks = [
   },
 ];
 
-export const catalog = [...publishedWorks, ...plannedWorks.filter((entry) => !publishedWorks.some(work => work.id === entry.id))];
+export const catalog = [
+  ...publishedWorks,
+  ...plannedWorks.filter((entry) => !publishedWorks.some((work) => work.id === entry.id)),
+].map((entry) => ({
+  ...entry,
+  programGroup: programGroupByWork.get(entry.id) ?? 'complementaria',
+}));
 
 export const canReadAndListen = (entry) => entry.status === 'available' || entry.status === 'review';
 export function matchesAvailability(entry, selected = 'all') {
@@ -168,7 +175,7 @@ export function matchesCatalogEntry(entry, query) {
     entry.authorDisplay,
     entry.title,
     entry.shortTitle,
-    collections.find((collection) => collection.id === entry.collection)?.title,
+    entry.historicalPeriod,
   ].join(' '));
 
   return tokens.every((token) => haystack.includes(token));
@@ -176,7 +183,9 @@ export function matchesCatalogEntry(entry, query) {
 
 export function sortCatalog(entries = catalog) {
   return [...entries].sort((left, right) => {
-    const authorOrder = left.sortAuthor.localeCompare(right.sortAuthor, 'es', { sensitivity: 'base' });
+    const leftSurname = left.sortAuthor.split(',')[0];
+    const rightSurname = right.sortAuthor.split(',')[0];
+    const authorOrder = leftSurname.localeCompare(rightSurname, 'es', { sensitivity: 'base' });
     if (authorOrder !== 0) return authorOrder;
     return left.title.localeCompare(right.title, 'es', { sensitivity: 'base' });
   });

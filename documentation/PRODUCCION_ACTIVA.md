@@ -10,6 +10,10 @@
 
 La portada general usa la autoría del catálogo como único rótulo superior. El nombre de la asignatura figura en el encabezado. La rotación es continua y el botón de reproducción controla la pausa. Los indicadores numerados permiten cambiar de portada sin alterar ese estado. Se respeta la preferencia de movimiento reducido.
 
+## Interfaz general · Orden del catálogo (12/11/2026)
+
+Después de «Seguí donde dejaste», Inicio muestra las 31 fichas del catálogo. El orden inicial es por apellido y el selector permite agrupar por unidad. La referencia es el [Programa historia UNAHUR 2024–2025](https://drive.google.com/file/d/1cU8MfaN_PaYLSaKSaR6adFG_qk3GZrqH/view). El programa enumera 18 lecturas obligatorias en un bloque general. Su ubicación por unidad sigue los contenidos de cada unidad y se registra en `portable-site/src/biblioteca/program.js`. Las 13 fichas restantes figuran en «Complementaria».
+
 ## OBRA ACTIVA · Alejo Levoratti (12/11/2026)
 
 **Obra y workId:** *Los debates de la educación física y los enfoques de las ciencias sociales. Un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015)*, [Revista da ALESDE, 9(1), 45–63 (2018)](https://doi.org/10.5380/jlasss.v9i1.61189). `levoratti-debates-ef`.

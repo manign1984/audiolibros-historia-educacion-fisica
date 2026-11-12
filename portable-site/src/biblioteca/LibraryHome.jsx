@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowDown, ArrowLeft, ArrowRight, BookOpen, Bookmark, Check, ChevronLeft, ChevronRight, Clock3, Headphones, Library, Pause, Play, Search, X } from 'lucide-react';
-import { catalog, collections, filterCatalog, resolveSitePath, citationAsPlainText, canReadAndListen, matchesAvailability } from './catalog.js';
+import { catalog, programGroups, filterCatalog, resolveSitePath, citationAsPlainText, canReadAndListen, matchesAvailability } from './catalog.js';
 import { formatDuration, readList, readProgress, saveList } from './libraryState.js';
 
 const base = import.meta.env.BASE_URL;
@@ -62,9 +62,8 @@ function SaveButton({ entry, saved, toggle, label = false }) {
 }
 
 export function Cover({ entry, large = false }) {
-  const collection = collections.find((item) => item.id === entry.collection);
   if (entry.artwork) return <div className={`cover cover--image ${large ? 'cover--large' : ''}`}><img src={href(entry.artwork)} alt="" loading="lazy" /><div className="cover-image-title"><span>{entry.author}</span><strong>{entry.shortTitle}</strong></div></div>;
-  return <div className={`cover cover--type tone-${collection.color} variant-${entry.posterVariant} ${large ? 'cover--large' : ''}`} aria-hidden="true"><span className="cover-series">HISTORIA / EDUCACIÓN FÍSICA</span><span className="cover-shape" /><strong>{entry.shortTitle}</strong><span className="cover-bottom"><span>{entry.author.split(' · ')[0]}</span><span>{entry.year || 'LECTURAS'}</span></span></div>;
+  return <div className={`cover cover--type tone-${entry.coverTone} variant-${entry.posterVariant} ${large ? 'cover--large' : ''}`} aria-hidden="true"><span className="cover-series">HISTORIA / EDUCACIÓN FÍSICA</span><span className="cover-shape" /><strong>{entry.shortTitle}</strong><span className="cover-bottom"><span>{entry.author.split(' · ')[0]}</span><span>{entry.year || 'LECTURAS'}</span></span></div>;
 }
 
 function WorkCard({ entry, saved, toggle, progress = 0 }) {
@@ -77,12 +76,12 @@ function WorkCard({ entry, saved, toggle, progress = 0 }) {
   return <article className="work-card">
     <a className="work-card-cover" href={href(entry.path)} aria-label={`${readableWork ? 'Abrir recorrido' : (editorialLanding ? 'Explorar recorrido' : 'Ver ficha')}: ${entry.title}`}><Cover entry={entry} /><span className={`status-badge ${showCanonicalBadge ? 'status-badge--ready' : ''}`}>{showCanonicalBadge ? <><Headphones size={12} aria-hidden="true" /> Leer + escuchar</> : review ? <><Headphones size={12} aria-hidden="true" /> Edición en revisión</> : textOnly ? <><BookOpen size={12} aria-hidden="true" /> Solo lectura</> : editorialLanding ? 'Explorar recorrido' : 'En preparación'}</span><span className="cover-open" aria-hidden="true">{textOnly ? <BookOpen size={19} /> : readableWork ? <Play size={19} fill="currentColor" /> : <ArrowRight size={20} />}</span></a>
     <div className="work-card-info"><div><p className="card-author">{entry.author}</p><h3><a href={href(entry.path)}>{entry.shortTitle}</a></h3></div><SaveButton entry={entry} saved={saved} toggle={toggle} /></div>
-    <p className="card-meta">{ready ? <><Clock3 size={13} aria-hidden="true" /> {formatDuration(entry.duration)} de audio <span>·</span> {entry.readingDetail || 'Lectura sincronizada'}</> : review ? <><Clock3 size={13} aria-hidden="true" /> {entry.historicalPeriod} <span>·</span> {formatDuration(entry.duration)} de audio <span>·</span> Leer, escuchar y anotar <span>·</span> {entry.reviewSummary || 'Sincronización pendiente'}</> : textOnly ? <><BookOpen size={13} aria-hidden="true" /> Lectura completa <span>·</span> Cuaderno de notas{!entry.canonicalCard && <> <span>·</span> Sin audio</>}</> : editorialLanding ? <><BookOpen size={13} aria-hidden="true" /> Contexto histórico <span>·</span> Acceso a edición editorial</> : <>{collections.find((item) => item.id === entry.collection).title}<span>·</span> Ficha bibliográfica</>}</p>
+    <p className="card-meta">{ready ? <><Clock3 size={13} aria-hidden="true" /> {formatDuration(entry.duration)} de audio <span>·</span> {entry.readingDetail || 'Lectura sincronizada'}</> : review ? <><Clock3 size={13} aria-hidden="true" /> {entry.historicalPeriod} <span>·</span> {formatDuration(entry.duration)} de audio <span>·</span> Leer, escuchar y anotar <span>·</span> {entry.reviewSummary || 'Sincronización pendiente'}</> : textOnly ? <><BookOpen size={13} aria-hidden="true" /> Lectura completa <span>·</span> Cuaderno de notas{!entry.canonicalCard && <> <span>·</span> Sin audio</>}</> : editorialLanding ? <><BookOpen size={13} aria-hidden="true" /> Contexto histórico <span>·</span> Acceso a edición editorial</> : <>Ficha bibliográfica</>}</p>
     {!textOnly && readableWork && progress > 3 && <a className="card-progress" href={`${href(entry.path)}#lectura`} aria-label={`Continuar ${entry.shortTitle} desde ${formatDuration(progress)}`}><span><i style={{ width: `${progress / entry.duration * 100}%` }} /></span><small>Continuar desde {formatDuration(progress)} <ArrowRight size={13} aria-hidden="true" /></small></a>}
   </article>;
 }
 
-function Shelf({ title, eyebrow, entries, saved, toggle, progress = {}, id }) {
+function Shelf({ title, entries, saved, toggle, progress = {}, id }) {
   const rail = useRef(null);
   const [limits, setLimits] = useState({ start: true, end: true });
   useEffect(() => {
@@ -94,7 +93,7 @@ function Shelf({ title, eyebrow, entries, saved, toggle, progress = {}, id }) {
     return () => { element.removeEventListener('scroll', update); observer.disconnect(); };
   }, [entries.length]);
   const move = (direction) => rail.current.scrollBy({ left: direction * rail.current.clientWidth * 0.85, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-  return <section className={`shelf ${id === 'disponibles' ? 'shelf--featured' : ''}`} aria-labelledby={`${id}-title`}><div className="section-heading"><div>{eyebrow && <p className="eyebrow">{eyebrow}</p>}<h2 id={`${id}-title`}>{title}<span className="count" aria-label={`${entries.length} lecturas`}>{entries.length}</span></h2></div><div className="shelf-arrows"><button type="button" onClick={() => move(-1)} disabled={limits.start} aria-label={`Anteriores en ${title}`}><ChevronLeft size={19} /></button><button type="button" onClick={() => move(1)} disabled={limits.end} aria-label={`Siguientes en ${title}`}><ChevronRight size={19} /></button></div></div><div className="shelf-rail" ref={rail}>{entries.map((entry) => <WorkCard key={entry.id} entry={entry} saved={saved} toggle={toggle} progress={progress[entry.id]} />)}</div></section>;
+  return <section className="shelf" aria-labelledby={`${id}-title`}><div className="section-heading"><div><h2 id={`${id}-title`}>{title}<span className="count" aria-label={`${entries.length} lecturas`}>{entries.length}</span></h2></div><div className="shelf-arrows"><button type="button" onClick={() => move(-1)} disabled={limits.start} aria-label={`Anteriores en ${title}`}><ChevronLeft size={19} /></button><button type="button" onClick={() => move(1)} disabled={limits.end} aria-label={`Siguientes en ${title}`}><ChevronRight size={19} /></button></div></div><div className="shelf-rail" ref={rail}>{entries.map((entry) => <WorkCard key={entry.id} entry={entry} saved={saved} toggle={toggle} progress={progress[entry.id]} />)}</div></section>;
 }
 
 const HERO_ROTATION_MS = 10_000;
@@ -196,42 +195,91 @@ export default function LibraryHome() {
   const initialView = new URLSearchParams(window.location.search).get('vista');
   const [view, setView] = useState(['explore', 'list'].includes(initialView) ? initialView : 'home');
   const [query, setQuery] = useState('');
-  const [collection, setCollection] = useState('all');
+  const [order, setOrder] = useState('author');
   const [status, setStatus] = useState('all');
   const { saved, toggle, notice } = usePersonalLibrary();
   const progress = useMemo(() => Object.fromEntries(readable.map((entry) => { try { return [entry.id, readProgress(window.localStorage, entry)]; } catch { return [entry.id, 0]; } })), []);
   const continuing = readable.filter((entry) => progress[entry.id] > 3 && progress[entry.id] < entry.duration - 3);
-  const isFiltered = query.trim() || collection !== 'all' || status !== 'all' || view !== 'home';
-  const entries = useMemo(() => filterCatalog(catalog, query).filter((entry) => (collection === 'all' || collection === entry.collection) && matchesAvailability(entry, status) && (view !== 'list' || saved.includes(entry.id))), [query, collection, status, view, saved]);
+  const entries = useMemo(
+    () => filterCatalog(catalog, query).filter((entry) =>
+      matchesAvailability(entry, status) && (view !== 'list' || saved.includes(entry.id))),
+    [query, status, view, saved],
+  );
+  const renderCards = (works) => <div className="catalog-grid">
+    {works.map((entry) => <WorkCard key={entry.id} entry={entry} saved={saved} toggle={toggle} progress={progress[entry.id]} />)}
+  </div>;
   function changeView(next) {
-    setView(next); setQuery(''); setCollection('all'); setStatus('all');
+    setView(next); setQuery(''); setStatus('all');
     const url = new URL(window.location.href); url.hash = ''; next === 'home' ? url.searchParams.delete('vista') : url.searchParams.set('vista', next);
     window.history.pushState({}, '', url);
     window.scrollTo({ top: 0, behavior: 'instant' });
   }
   useEffect(() => {
-    const sync = () => { const next = new URLSearchParams(window.location.search).get('vista'); setView(['explore', 'list'].includes(next) ? next : 'home'); setQuery(''); setCollection('all'); setStatus('all'); };
+    const sync = () => { const next = new URLSearchParams(window.location.search).get('vista'); setView(['explore', 'list'].includes(next) ? next : 'home'); setQuery(''); setStatus('all'); };
     window.addEventListener('popstate', sync); return () => window.removeEventListener('popstate', sync);
   }, []);
-  const resetFilters = () => { setQuery(''); setCollection('all'); setStatus('all'); };
+  const resetFilters = () => { setQuery(''); setStatus('all'); };
   return <div className="library-page" id="top"><a className="skip-link" href="#catalogo">Saltar al catálogo</a><Header view={view} onView={changeView} /><main>
-    {view === 'home' ? <Hero saved={saved} toggle={toggle} /> : <section className="library-shell page-intro"><p className="eyebrow">TU BIBLIOTECA DE HISTORIA</p><h1>{view === 'list' ? 'Mi lista.' : 'Cada lectura, un recorrido.'}</h1><p>{view === 'list' ? 'Tus lecturas guardadas en este navegador. Sin cuentas, a tu ritmo.' : 'Explorá autores, temas y períodos. Encontrá tu próxima lectura.'}</p></section>}
+    {view === 'home' ? <Hero saved={saved} toggle={toggle} /> : <section className="library-shell page-intro"><p className="eyebrow">TU BIBLIOTECA DE HISTORIA</p><h1>{view === 'list' ? 'Mi lista.' : 'Cada lectura, un recorrido.'}</h1><p>{view === 'list' ? 'Tus lecturas guardadas en este navegador. Sin cuentas, a tu ritmo.' : 'Explorá las lecturas por autor o unidad del programa.'}</p></section>}
     <div className="library-shell catalog-area" id="catalogo">
-      <section className="catalog-tools" aria-label="Buscar y filtrar lecturas"><div className="search-field"><Search size={19} aria-hidden="true" /><label className="sr-only" htmlFor="catalog-search">Buscar por título, autor o tema</label><input id="catalog-search" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Buscá un título, autor o tema" autoComplete="off" />{query && <button type="button" onClick={() => setQuery('')} aria-label="Limpiar búsqueda"><X size={17} /></button>}</div><div className="filter-selects"><label><span className="sr-only">Colección</span><select value={collection} onChange={(event) => setCollection(event.target.value)}><option value="all">Todos los períodos</option>{collections.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}</select></label><label><span className="sr-only">Disponibilidad</span><select value={status} onChange={(event) => setStatus(event.target.value)}><option value="all">Todos los materiales</option><option value="available">Leer y escuchar</option><option value="text">Solo lectura</option><option value="review">Edición en revisión</option><option value="preparation">En preparación</option></select></label></div></section>
-      {isFiltered ? <section className="results" aria-labelledby="results-title"><div className="section-heading"><h2 id="results-title">{query ? `Resultados para “${query}”` : collection !== 'all' ? collections.find((item) => item.id === collection).title : view === 'list' ? 'Lecturas guardadas' : 'Todo el catálogo'}</h2><span className="result-count" role="status">{entries.length} {entries.length === 1 ? 'lectura' : 'lecturas'}</span></div>{(query || collection !== 'all' || status !== 'all') && <button type="button" className="reset-filters" onClick={resetFilters}><X size={14} /> Limpiar filtros</button>}{entries.length ? <div className="catalog-grid">{entries.map((entry) => <WorkCard key={entry.id} entry={entry} saved={saved} toggle={toggle} progress={progress[entry.id]} />)}</div> : <div className="empty-state"><Library size={36} aria-hidden="true" /><h3>{view === 'list' && !saved.length ? 'Tu próxima lectura empieza acá.' : 'No encontramos lecturas con esos filtros.'}</h3><p>{view === 'list' && !saved.length ? 'Usá el marcador de cualquier tarjeta para sumarla a tu lista.' : 'Probá con un apellido, parte del título u otro período.'}</p><button className="button button--primary" type="button" onClick={() => changeView('explore')}>Explorar el catálogo <ArrowRight size={16} /></button></div>}</section> : <>
-        {continuing.length > 0 && <Shelf id="continuar" title="Seguí donde dejaste" entries={continuing} saved={saved} toggle={toggle} progress={progress} />}
-        <Shelf id="disponibles" title="Lecturas disponibles" eyebrow="LEÉ · ESCUCHÁ · ANOTÁ" entries={readable} saved={saved} toggle={toggle} progress={progress} />
-        <div className="catalog-divider"><p><span>{catalog.length}</span> lecturas, muchas formas de mirar.</p><button type="button" onClick={() => changeView('explore')}>Ver todo el catálogo <ArrowRight size={16} aria-hidden="true" /></button></div>
-        {collections.map((item) => <Shelf key={item.id} id={item.id} title={item.title} eyebrow={item.period} entries={catalog.filter((entry) => entry.collection === item.id)} saved={saved} toggle={toggle} />)}
-      </>}
+      {view === 'home' && continuing.length > 0 && <Shelf id="continuar" title="Seguí donde dejaste" entries={continuing} saved={saved} toggle={toggle} progress={progress} />}
+      <section className="results" aria-labelledby="results-title">
+        <div className="section-heading">
+          <h2 id="results-title">{view === 'list' ? 'Lecturas guardadas' : 'Todo el catálogo'}</h2>
+          <span className="result-count" role="status">{entries.length} {entries.length === 1 ? 'lectura' : 'lecturas'}</span>
+        </div>
+        <div className="catalog-tools">
+          <div className="search-field">
+            <Search size={19} aria-hidden="true" />
+            <label className="sr-only" htmlFor="catalog-search">Buscar por título o autor</label>
+            <input id="catalog-search" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Buscá por título o autor" autoComplete="off" />
+            {query && <button type="button" onClick={() => setQuery('')} aria-label="Limpiar búsqueda"><X size={17} /></button>}
+          </div>
+          <div className="filter-selects">
+            <label className="catalog-order">
+              <span>Ordenar por</span>
+              <select value={order} onChange={(event) => setOrder(event.target.value)}>
+                <option value="author">Apellido del autor</option>
+                <option value="program">Unidad del programa</option>
+              </select>
+            </label>
+            <label>
+              <span className="sr-only">Disponibilidad</span>
+              <select value={status} onChange={(event) => setStatus(event.target.value)}>
+                <option value="all">Todos los materiales</option>
+                <option value="available">Leer y escuchar</option>
+                <option value="text">Solo lectura</option>
+                <option value="review">Edición en revisión</option>
+                <option value="preparation">En preparación</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        {(query || status !== 'all') && <button type="button" className="reset-filters" onClick={resetFilters}><X size={14} /> Limpiar filtros</button>}
+        {entries.length === 0 ? <div className="empty-state">
+          <Library size={36} aria-hidden="true" />
+          <h3>{view === 'list' && !saved.length ? 'Tu próxima lectura empieza acá.' : 'No encontramos lecturas con esos filtros.'}</h3>
+          <p>{view === 'list' && !saved.length ? 'Usá el marcador de cualquier tarjeta para sumarla a tu lista.' : 'Probá con un apellido o parte del título.'}</p>
+          {view === 'list' && !saved.length && <button className="button button--primary" type="button" onClick={() => changeView('explore')}>Explorar el catálogo <ArrowRight size={16} /></button>}
+        </div> : order === 'author' ? renderCards(entries) : programGroups.map((group) => {
+          const works = entries.filter((entry) => entry.programGroup === group.id);
+          return works.length > 0 && <section className="catalog-unit" key={group.id} aria-labelledby={`catalog-${group.id}`}>
+            <h3 id={`catalog-${group.id}`}>{group.title}</h3>
+            {group.subtitle && <p>{group.subtitle}</p>}
+            {renderCards(works)}
+          </section>;
+        })}
+      </section>
     </div>
   </main><ProjectFooter /><div className={`toast ${notice ? 'is-visible' : ''}`} role="status" aria-live="polite">{notice}</div></div>;
 }
 
 export function WorkPage({ entry }) {
   const { saved, toggle, notice } = usePersonalLibrary();
-  const collection = collections.find((item) => item.id === entry.collection);
-  const related = catalog.filter((item) => item.collection === entry.collection && item.id !== entry.id).slice(0, 4);
+  const group = programGroups.find((item) => item.id === entry.programGroup);
+  const related = entry.programGroup === 'complementaria' ? [] : catalog.filter(
+    (item) => item.programGroup === entry.programGroup && item.id !== entry.id,
+  ).slice(0, 4);
   useEffect(() => { document.title = `${entry.shortTitle} · Biblioteca +TEC`; }, [entry]);
-  return <div className="library-page" id="top"><a className="skip-link" href="#ficha">Saltar a la ficha</a><Header view="" /><main className="library-shell work-page"><a className="back-link" href={base}><ArrowLeft size={16} /> Volver a la biblioteca</a><section className="work-intro" id="ficha"><Cover entry={entry} large /><div><p className="eyebrow">{collection.title}</p><span className="detail-status">RECORRIDO EN PREPARACIÓN</span><h1>{entry.title}</h1><p className="detail-author">{entry.author}</p><p className="muted">{entry.year ? `Publicación · ${entry.year}` : 'Ficha bibliográfica'}</p><SaveButton entry={entry} saved={saved} toggle={toggle} label /></div></section><div className="work-details"><section><p className="eyebrow">SOBRE ESTA LECTURA</p><h2>Un espacio para volver al texto.</h2><p>Esta lectura ya tiene su lugar en la biblioteca. Su recorrido de autor, contexto histórico y lectura acompañada se irá incorporando a medida que los materiales estén disponibles.</p><p className="preparation-note"><Clock3 size={20} aria-hidden="true" /><span>Este recorrido de lectura todavía no está publicado.</span></p></section><section className="reference-panel"><h2>Referencia bibliográfica</h2><p>{citationAsPlainText(entry)}</p></section></div>{related.length > 0 && <Shelf id="relacionadas" title="En la misma colección" entries={related} saved={saved} toggle={toggle} />}</main><ProjectFooter /><div className={`toast ${notice ? 'is-visible' : ''}`} role="status" aria-live="polite">{notice}</div></div>;
+  return <div className="library-page" id="top"><a className="skip-link" href="#ficha">Saltar a la ficha</a><Header view="" /><main className="library-shell work-page"><a className="back-link" href={base}><ArrowLeft size={16} /> Volver a la biblioteca</a><section className="work-intro" id="ficha"><Cover entry={entry} large /><div><p className="eyebrow">{group.title}</p><span className="detail-status">RECORRIDO EN PREPARACIÓN</span><h1>{entry.title}</h1><p className="detail-author">{entry.author}</p><p className="muted">{entry.year ? `Publicación · ${entry.year}` : 'Ficha bibliográfica'}</p><SaveButton entry={entry} saved={saved} toggle={toggle} label /></div></section><div className="work-details"><section><p className="eyebrow">SOBRE ESTA LECTURA</p><h2>Un espacio para volver al texto.</h2><p>Esta lectura ya tiene su lugar en la biblioteca. Su recorrido de autor, contexto histórico y lectura acompañada se irá incorporando a medida que los materiales estén disponibles.</p><p className="preparation-note"><Clock3 size={20} aria-hidden="true" /><span>Este recorrido de lectura todavía no está publicado.</span></p></section><section className="reference-panel"><h2>Referencia bibliográfica</h2><p>{citationAsPlainText(entry)}</p></section></div>{related.length > 0 && <Shelf id="relacionadas" title="En la misma unidad" entries={related} saved={saved} toggle={toggle} />}</main><ProjectFooter /><div className={`toast ${notice ? 'is-visible' : ''}`} role="status" aria-live="polite">{notice}</div></div>;
 }
