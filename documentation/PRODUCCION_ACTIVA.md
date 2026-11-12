@@ -6,7 +6,19 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
-## OBRA ACTIVA · María Andrea Feiguin y Ángela Aisenstein (12/11/2026)
+## OBRA ACTIVA · Juan Carlos Torre y Elisa Pastoriza (12/11/2026)
+
+**Obra y workId:** *La democratización del bienestar*, capítulo V de *Los años peronistas (1943–1955)*, Sudamericana, 2002. `torre-pastoriza-bienestar`.
+
+**Unidad y estado interno:** unidad 1 · **EN DESARROLLO**. Cinco bloques, Contexto en dos pantallas, [edición de cátedra](https://drive.google.com/file/d/1BJNJ5DyEJIylbX8E5EG6i2WMoFh5-1yx/view) y lector textual con cuaderno. Rama `feature/torre-pastoriza-bienestar`. [Ruta técnica](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/torre-pastoriza-bienestar/).
+
+**Material audiovisual localizado:** [MP3](https://drive.google.com/file/d/1UqzrhEcvscmPLuzWJ7xHnWzUrPVr4gNI/view), 82.141.198 bytes y 2 h 16 min 54 s. [SRT localizado](https://drive.google.com/file/d/1Gxs5Ks79D65NsrVG6S-UsQbAYT8WFK3H/view), 17 marcas entre 0:00 y 1:25,813 correspondientes al cierre del texto. Queda pendiente la unidad audiovisual.
+
+**Próxima acción única:** localizar el archivo completo de marcas correspondiente a este MP3 antes de preparar la integración audiovisual.
+
+---
+
+## REGISTRO ANTERIOR · María Andrea Feiguin y Ángela Aisenstein (12/11/2026)
 
 **Obra y workId:** *Diseño de sujetos morales, sanos y patriotas. Formación de profesores de Educación Física. Argentina, 1938–1967*. *Pedagogía y Saberes*, (44), 9–20 (2016). `feiguin-aisenstein-sujetos`.
 

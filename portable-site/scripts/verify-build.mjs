@@ -193,7 +193,11 @@ for (const entry of catalog.filter((item) => item.status !== 'available')) {
     assert.doesNotMatch(html, /Recorrido en preparación\./, `${entry.id}: no publicar como ficha sin recorrido.`);
   } else if (entry.status === 'text') {
     assert.ok(html.includes('src="' + normalizedBase + 'assets/'), `${entry.id}: ruta web correcta.`);
-    const textAsset = entry.id === 'melano-militares-juramentados' ? 'assets/melano/texto-academico.txt' : 'assets/lionetti/texto-academico.txt';
+    const textAsset = {
+      'almada-privilegiados': 'assets/almada/texto-academico.txt',
+      'melano-militares-juramentados': 'assets/melano/texto-academico.txt',
+      'torre-pastoriza-bienestar': 'assets/torre-pastoriza/texto-academico.txt',
+    }[entry.id] ?? 'assets/lionetti/texto-academico.txt';
     await access(resolve(dist, textAsset));
     assert.ok(html.includes(entry.author), `${entry.id}: autor presente en el HTML.`);
     if (entry.id === 'lionetti-escuela-republicana') {
