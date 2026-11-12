@@ -1,6 +1,17 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  'almada-privilegiados': {
+    references: [
+      <>Almada, C. (2020). Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo. <em>History of Education in Latin America - HistELA, 3</em>, e21434. {link('https://doi.org/10.21680/2596-0113.2020v3n0ID21434', 'Consultar edición original (DOI)')}.</>,
+      link('https://www.memoria.fahce.unlp.edu.ar/perfiles/2087AlmadaC.html', 'Memoria Académica, FaHCE-UNLP · Perfil de Cecilia Almada'),
+    ],
+    rights: [
+      <>Texto de Cecilia Almada, publicado en <em>HistELA</em>. La versión de lectura conserva el contenido académico de la edición de cátedra en formato de texto. Licencia indicada en el PDF de base: {link('https://creativecommons.org/licenses/by-nc-sa/4.0/', 'CC BY-NC-SA 4.0')}.</>,
+      <>Fotografía de Inicio: Archivo General de la Nación, Fondo Secretaría de Informaciones. {link('https://commons.wikimedia.org/wiki/File:Argentina_-_Eva_Per%C3%B3n_en_Campeonato_de_f%C3%BAtbol_infantil.jpg', 'Ficha de la fotografía en Wikimedia Commons')}.</>,
+      <>Monograma y Contexto: elaboración didáctica de +TEC UNAHUR.</>,
+    ],
+  },
   pineauDictadura: {
     references: [
       <>Pineau, P. (2014). Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983). <em>Educar em Revista</em>, (51), 103–122.</>,
