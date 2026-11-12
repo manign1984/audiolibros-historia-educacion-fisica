@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx';
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
-import TextOnlyReader from '../shared/TextOnlyReader.jsx';
-import { levorattiReaderConfig } from './readerConfig.js';
+import IntegratedReader from '../IntegratedReader.jsx';
+import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
+import { levorattiLegacyStorage, levorattiReaderConfig } from './readerConfig.js';
+import { levorattiIntegratedConfig, levorattiLegacyPageMap, levorattiParagraphTimings, levorattiReadingDocument } from './readerContract.js';
 import './levoratti.css';
 
 const BIO = "Alejo Levoratti es profesor y licenciado en Educación Física por la Universidad Nacional de La Plata, magíster en Antropología Social y doctor en Ciencias Sociales y Humanas. Investiga la historia de la formación docente en Educación Física, los debates disciplinares y las políticas públicas sobre deporte y cuerpos. Es investigador del CONICET en el IdIHCS y docente de la UNLP.";
@@ -92,8 +95,48 @@ function Contexto() {
   );
 }
 
+// Copia no destructiva del cuaderno y el avance del lector textual anterior.
+// Se ejecuta antes de montar IntegratedReader; las claves originales nunca se borran.
+function migrateLevorattiTextState() {
+  if (typeof window === 'undefined') return;
+  try {
+    const store = window.localStorage;
+    const nextNotesKey = levorattiReaderConfig.storage.notesKey;
+    if (store.getItem(nextNotesKey) === null) {
+      const previous = JSON.parse(store.getItem(levorattiLegacyStorage.notesKey) || '[]');
+      if (Array.isArray(previous) && previous.length) {
+        const firstId = levorattiReadingDocument.sections[0]?.paragraphs[0]?.id;
+        const migrated = previous
+          .filter(note => typeof note?.text === 'string' && Number.isInteger(note.page))
+          .map(note => ({
+            ...note,
+            sentenceId: levorattiLegacyPageMap[note.page] || firstId,
+            originalPage: note.page + 1,
+          }))
+          .filter(note => note.sentenceId);
+        if (migrated.length) store.setItem(nextNotesKey, JSON.stringify(migrated));
+      }
+    }
+    const nextStateKey = levorattiReaderConfig.storage.stateKey;
+    if (store.getItem(nextStateKey) === null) {
+      const oldPage = Number(JSON.parse(store.getItem(levorattiLegacyStorage.stateKey) || '0'));
+      const anchorId = levorattiLegacyPageMap[oldPage];
+      const timing = levorattiParagraphTimings.find(item => item.id === anchorId);
+      if (Number.isFinite(timing?.start)) {
+        store.setItem(nextStateKey, JSON.stringify({
+          currentTime: timing.start, playbackRate: 1, volume: 1,
+          followText: true, fontScale: 1,
+        }));
+      }
+    }
+  } catch {
+    // La lectura no se bloquea si el navegador restringe el almacenamiento local.
+  }
+}
+
 export default function LevorattiApp() {
   const { active, progress } = useJourneyNavigation();
+  useState(() => { migrateLevorattiTextState(); return true; });
   return (
     <div className="levoratti-page">
       <a className="lv-skip" href="#lectura">Saltar a la lectura</a>
@@ -108,7 +151,11 @@ export default function LevorattiApp() {
         <Autor />
         <Contexto />
         <section id="lectura" className="journey-reading hb-material-reading" aria-labelledby="journey-reading-title">
-          <TextOnlyReader config={levorattiReaderConfig} />
+          <IntegratedReader
+            readingDocument={levorattiReadingDocument}
+            config={levorattiIntegratedConfig}
+            Launcher={CanonicalReadingEntry}
+          />
         </section>
       </main>
       <JourneyCredits workId="levorattiGimnasia" />
