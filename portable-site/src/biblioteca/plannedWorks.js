@@ -45,10 +45,12 @@ const records = [
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
   'thwaites-rey-democracia-argentina': {
-    status: 'text',
+    status: 'available',
     canonicalCard: true,
     sortAuthor: 'Thwaites Rey, Mabel',
-    stateKey: 'thwaites-rey-democracia-argentina-text-page-v1',
+    duration: 1625.521633,
+    readingDetail: 'Seguimiento aproximado por párrafos y cuaderno de lectura',
+    stateKey: 'thwaites-rey-democracia-argentina-reader-state-v1',
     historicalPeriod: 'Democracia y hegemonía neoliberal · 1983–2013',
     artwork: 'assets/thwaites-rey/plaza-de-mayo-1983.webp',
   },

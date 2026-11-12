@@ -2,8 +2,9 @@ import JourneyHeader, { useJourneyNavigation } from '../shared/JourneyHeader.jsx
 import JourneyBlockLabel from '../shared/JourneyBlockLabel.jsx';
 import JourneyCredits from '../shared/JourneyCredits.jsx';
 import { AuthorBiography } from '../shared/CanonicalLayout.jsx';
-import TextOnlyReader from '../shared/TextOnlyReader.jsx';
-import { readerConfig } from './readerConfig.js';
+import IntegratedReader from '../IntegratedReader.jsx';
+import CanonicalReadingEntry from '../shared/CanonicalReadingEntry.jsx';
+import { readerConfig, readingDocument } from './readerConfig.js';
 import './thwaites-rey.css';
 
 const milestones = [
@@ -80,10 +81,10 @@ export default function ThwaitesReyApp() {
         </section>
 
         <section id="lectura" className="journey-reading hb-material-reading" aria-labelledby="journey-reading-title">
-          <TextOnlyReader config={readerConfig} />
+          <IntegratedReader readingDocument={readingDocument} config={readerConfig} Launcher={CanonicalReadingEntry} />
         </section>
       </main>
-      <JourneyCredits workId={readerConfig.workId} />
+      <JourneyCredits workId="thwaitesRey" />
     </div>
   );
 }

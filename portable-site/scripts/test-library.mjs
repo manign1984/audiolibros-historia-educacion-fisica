@@ -167,7 +167,7 @@ assert.equal(canReadAndListen(soares), true, 'Soares figura entre los lectores c
 const torrePastoriza = allCatalog.find((entry) => entry.id === 'torre-pastoriza-bienestar');
 assert.ok(torrePastoriza);
 assert.equal(canReadAndListen(torrePastoriza), true);
-assert.equal(allCatalog.filter(canReadAndListen).length, 11, 'Once recorridos permiten leer y escuchar.');
+assert.equal(allCatalog.filter(canReadAndListen).length, 12, 'Doce recorridos permiten leer y escuchar.');
 assert.match(libraryHome, /const readable = catalog\.filter/, 'La estantería incluye lecturas con audio o solo texto.');
 assert.match(libraryHome, /entries=\{readable\}/, 'La estantería de lectura incluye Marcaida y Scaltritti.');
 assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
@@ -202,7 +202,7 @@ const blocked = { getItem() { throw new Error('Blocked'); }, setItem() { throw n
 assert.deepEqual(readList(blocked, ids), []);
 assert.equal(saveList(blocked, ids), false);
 assert.equal(readProgress(blocked, pineau), 0);
-console.log('Biblioteca: 31 fichas, 11 recorridos de lectura y audio (10 disponibles y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
+console.log('Biblioteca: 31 fichas, 12 recorridos de lectura y audio (11 disponibles y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
 
 
 // Portada de la biblioteca = una pantalla útil bajo el encabezado real.

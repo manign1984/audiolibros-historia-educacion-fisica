@@ -197,7 +197,6 @@ for (const entry of catalog.filter((item) => item.status !== 'available')) {
       'almada-privilegiados': 'assets/almada/texto-academico.txt',
       'melano-militares-juramentados': 'assets/melano/texto-academico.txt',
       'torre-pastoriza-bienestar': 'assets/torre-pastoriza/texto-academico.txt',
-      'thwaites-rey-democracia-argentina': 'assets/thwaites-rey/texto-academico.txt',
     }[entry.id] ?? 'assets/lionetti/texto-academico.txt';
     await access(resolve(dist, textAsset));
     assert.ok(html.includes(entry.author), `${entry.id}: autor presente en el HTML.`);
