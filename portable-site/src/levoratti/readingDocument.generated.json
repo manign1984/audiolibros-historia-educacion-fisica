@@ -1,0 +1,738 @@
+{
+  "document": {
+    "id": "levoratti-gimnasia-1958-1968",
+    "title": "La educación física y la gimnasia en la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968)",
+    "subtitle": "Argentina, 1958–1968",
+    "author": "Alejo Levoratti",
+    "duration": 2219.335,
+    "versionLabel": "Revista da ALESDE, 14(2), 162–178 (2022)",
+    "source": {
+      "kind": "ElevenLabs SRT",
+      "cueCount": 460,
+      "finalCueEnd": 2219.335
+    },
+    "frontMatter": [
+      {
+        "id": "levoratti-front-title",
+        "role": "title",
+        "text": "La educación física y la gimnasia en la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968)"
+      },
+      {
+        "id": "levoratti-front-author",
+        "role": "author",
+        "text": "Alejo Levoratti"
+      }
+    ],
+    "sections": [
+      {
+        "id": "preliminares",
+        "title": "Portada, resúmenes y abstracts",
+        "shortTitle": "Portada, resúmenes y abstracts",
+        "paragraphs": [
+          {
+            "id": "levoratti-preliminares-p1",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-preliminares-p1-s1",
+                "text": "Curitiba, v. 14, n. 2, p. 162-178, outubro 2022 LA EDUCACIÓN FÍSICA Y LA GIMNASIA EN LA EDUCACIÓN PRIMARIA Y EL NIVEL MEDIO. UN ESTUDIO SOBRE LAS PERSPECTIVAS TEÓRICAS EN CIRCULACIÓN. (ARGENTINA, 1958-1968) Alejo Levoratti Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET) / Universidad Nacional de La Plata (UNLP). levoratti@gmail.com Envio original: 05-09-2022. Aceitar: 29-10-2022. Publicado: 09-10-2022. ________________________________________________________________________________ Resumen En 1958 se creó en el Ministerio de Educación de la Nación la Dirección General de Educación Física en un contexto de cambios en materia educativa de la mano de acuerdos con los organismos internacionales y concepciones desarrollistas. En este período se comienza a institucionalizar y legitimar un proyecto disciplinar que se auto consideraba como “moderno” y rupturista en relación a las perspectivas “positivistas”. Un punto central de la agenda de la Dirección fue la masificación de la Educación Física en los establecimientos educativos, la actualización del currículum y la capacitación de los docentes a cargo de la materia. Esto último se debía a que en las instituciones educativas de nivel primario se encontraban a cargo de maestros/as. En base a ello en este trabajo buscamos analizar las concepciones sobre la educación física y la gimnasia promovidos en los documentos curriculares del Estado Nacional para el nivel medio y primario. En particular buscamos identificar a los campos de saberes que sustentaron las propuestas, las principales perspectivas conceptuales y autores de referencia. Para ello analizaremos los diferentes documentos curriculares y la bibliografía que fueron produciendo los profesores que participaron de esos procesos. El desarrollo nos posibilitará visualizar la paulatina institucionalización de la psicología en la estructuración de las propuestas disciplinares y la instauración del “movimiento” como problemática nodal de la educación física. Palabras clave: Educación Física, Gimnasia, Educación, Teoría, Argentina. ________________________________________________________________________________ Educação Física e Ginástica no Ensino Fundamental e Médio. Um estudo sobre perspectivas teóricas em circulação (Argentina, 1958-1968) Resumo Em 1958, a Direção Geral de Educação Física foi criada no Ministério da Educação da Nação em um contexto de mudanças nas questões educacionais na mão de acordos com organizações internacionais e conceitos de desenvolvimento. Nesse período, um projeto disciplinar que se considerava \"moderno\" e disruptivo em relação às perspectivas \"positivistas\" começou a ser institucionalizado e legitimado. Um ponto central na agenda da Diretoria foi a massificação da Educação Física nos estabelecimentos de ensino, a atualização do currículo e a formação de professores responsáveis pela disciplina. Esta última se deve ao fato de as instituições de ensino fundamental serem dirigidas por professores. Com base nisso, neste trabalho buscamos analisar as concepções sobre educação física e ginástica veiculadas nos documentos curriculares do Estado Nacional para os níveis médio e fundamental. Em particular, buscamos identificar os campos do conhecimento que embasaram as propostas, as principais perspectivas conceituais e autores de referência. Para tal, iremos analisar os diferentes documentos curriculares e a bibliografia produzida pelos professores que participaram nestes processos. O desenvolvimento nos possibilitará visualizar a gradual institucionalização da psicologia na estruturação das propostas disciplinares e o estabelecimento do \"movimento\" como problema nodal da educação física. Palavras-chaves: Educação Física, Ginástica, Educação, Teoria, Argentina. ________________________________________________________________________________ Physical Education and gymnastics in primary and secondary education. A survey of the theoretical perspectives in circulation. (Argentina, 1958-1968) Abstract The paper deals with the training of physical education teachers at the time of the intervention of the Instituto Superior de Educación Física (ISEF) of Uruguay between September 1965 and November 1966. Following the strike and occupation of ISEF by students, the conservative government of the time decreed by Executive Decree No. 907 the intervention of the Institute. This can only be understood as part of the complex right-wing movement in the region. The main actions developed by the Intervention, its mechanisms and modes of education of the bodies and regulation of the student population are discussed. In such a short period, the implementation of the main regulatory and curricular transformations of the decade was linked to a certain degree of articulation between reform and dictatorship. Through the negotiation of various commissions, the Intervention was able to neutralize student protests and the demands of teachers and graduates. More than a radical change in training behaviours, practices and rituals, the Intervention brought together, strengthened and accentuated the most normalising, disciplinary and military aspects of training in previous decades, which had been part of the physical education tradition for many years. Keywords: Physical Education, Gymnastics, Education, Theory, Argentina. ________________________________________________________________________________"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "introduccion",
+        "title": "Introducción",
+        "shortTitle": "Introducción",
+        "paragraphs": [
+          {
+            "id": "levoratti-introduccion-p1",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-introduccion-p1-s1",
+                "text": "En mayo de 1958 asumió la presidencia de la nación el Doctor Arturo Frondizi quien se desempeñó en el cargo hasta el año 1962. En el Ministerio de Educación fue designado el abogado Luis R. Mac Kay y como Subsecretario de Educación Antonio Salonia 1 (Rodríguez, 2017). Ambos funcionarios se inscribieron dentro de la extensa nómina de desarrollistas católicos que participaron de la política educativa nacional (Rodríguez, 2013). Un rasgo que caracterizó este período fue la adhesión a acuerdos con los organismos internacionales y la participación en 1958 en Washington del “Seminario Interamericano sobre Planeamiento Integral de la Educación” de la Organización de Estados Americanos (OEA) y la Unesco. En estos contextos se proponía una visión economista de la educación y se procuraba ampliar la obligatoriedad. Ahora bien, en el ámbito local las ideas “desarrollistas” propuestas desde los organismos internacionales tuvieron apropiaciones singulares (Rodríguez, 2013; Suasnábar, 2004). Pero se intensifican los procesos de inscripción de los debates y proyectos políticos, disciplinares y académicos promovidos por los organismos internacionales y asociaciones profesionales en las instancias de creación curricular a nivel local. Esto se presentó con rasgos similares en diferentes países de la región (Dos Santos, 2017; Eusse, Almeida y Bracht, 2019)."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-introduccion-p2",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-introduccion-p2-s1",
+                "text": "El profesor Ramón Muros, vinculado a Salonia, fue designado como Director General de Educación Física en 1958 promoviendo desde este organismo las líneas de acción para los establecimientos educativos del nivel medio y los institutos nacionales destinados a la formación de profesores. Ahora bien, también se le dio un amplio desarrollo a los Centros Nacionales de Educación Física, los Campamentos, los cursos de capacitación que tenían como foco de atención las dispares formaciones de los docentes que se encontraban en ejercicio como así también las temáticas que se estaban imponiendo en la agenda disciplinar como es el caso de la “Educación Física Infantil” (Levoratti, 2020). En mayo de 1960 Ramón Muros conformó una comisión con el objeto de construir el “Programa de Educación Física” para los establecimientos de enseñanza media, entre los que se encontraban las Escuelas Normales dependientes del Estado Nacional. En 1961 se sancionó dicho programa donde se establecían los “objetivos” de la disciplina y los “agentes” para lograrlos, delimitando también un “Programa de preparación profesional del ciclo de magisterio”."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-introduccion-p3",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-introduccion-p3-s1",
+                "text": "A partir de la década de 1960, en los informes de los funcionarios se consideró como “problemática” la situación de la educación física en el nivel primario y la formación de los docentes a cargo de las clases. En una encuesta realizada en 1962 por la International Council for Health, Physical Education, Recreation, Sport and Dance junto a la UNESCO Ramón Muros afirmó: Carecemos de espacios física, materiales didácticos y maestros capacitados (se está haciendo un esfuerzo considerable para remediar esta situación). La educación física es insuficiente en la escuela primaria (hasta los 12 años). (Traducción del autor) (International Council on Health, Physical, Recreation, Sport and Dance,1963, p.42). En el Boletín Informativo N°1 de 1962 de la Dirección General de Educación Física bajo el título “Primer Curso Nacional de Capacitación Docente en Educación Física” se expresó que “Las dos terceras partes de los docentes que ejercen la cátedra de educación física en la segunda enseñanza carecen de título docente y habilitante” (Dirección General de Educación Física, 1962, p.5). En esa clave"
+              }
+            ]
+          },
+          {
+            "id": "levoratti-introduccion-p4",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-introduccion-p4-s1",
+                "text": "en el Boletín Informativo Número 14 del año 1967 de la Dirección Nacional de Educación Física, Deporte y Recreación bajo el título “Educación Física Infantil” se proponía una línea de acción organizada en cuatro instancias: “Programa de Educación Física para la Escuela Primaria; Programa de Educación Física para el Ciclo del Magisterio de las Escuelas Normales; Programa para la capacitación y el perfeccionamiento de los profesores del ciclo Magisterio y Programa a desarrollar en los cursos de capacitación para Maestros en actividad” (Dirección Nacional de Educación Física, Deporte y Recreación, 1967: p. 58). Esta propuesta se sustentaba en la disposición N°517 de agosto de 1966, que había firmado durante su segunda gestión a cargo de la Dirección Nacional el Profesor Ramón Muros, y establecía el hecho de definir diferentes aspectos en relación a la “educación física infantil”. En ellas queda expresada la relevancia asignada a la inscripción de la educación física en el nivel primario y el lugar que tenían los maestros normales en el proceso de transmisión disciplinar."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-introduccion-p5",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-introduccion-p5-s1",
+                "text": "En esta breve presentación quedó evidenciada la sinergia que existía en dicho contexto entre el nivel medio, en particular las escuelas normales, y la implementación de la educación física en el nivel primario. En este trabajo nos interesa identificar y analizar las concepciones que construyeron las perspectivas sobre la educación física y la gimnasia que se cristalizaron en los documentos curriculares destinados al nivel medio y en particular en las Escuelas Normales dependientes del Estado Nacional del año 1961 y en los documentos técnicos producidos en 1968 por la Dirección Nacional con el objeto de direccionar la educación física en el nivel primario y que tenían como destinatarios a los maestros a cargo2. Para ello, nos interesa además contextualizar los debates que se venían difundiendo y promoviendo desde esta agencia estatal. Trabajaremos con los documentos mencionados y con los boletines técnicos y publicaciones oficiales que se realizaron desde el Ministerio de Educación de la Nación para la Educación Física. Retomamos los abordajes sobre el currículum de Ivor Goodson, quien lo considera como una instancia no neutral, dado que lo saberes seleccionados son el resultante de procesos de disputas de distintos colectivos con intereses en juego. Ello nos posibilitó analizar estas instancias de definición de la formación como “…el testimonio visible y público de justificaciones racionales escogidas y una retórica legitimadora de la enseñanza.” (Goodson, 2003, p.45). Es decir, que los posicionamientos encontrados en estas instancias son unos entre los posibles, siendo objeto de análisis sus procesos de configuración, teniendo en cuenta que ellos son los que lograron imponerse en esos contextos."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-introduccion-p6",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-introduccion-p6-s1",
+                "text": "En la Argentina las producciones sobre la historia de la Educación Física se fueron concentrando en las primeras cuatro décadas del siglo XX, evidenciando la preponderancia de la propuesta formativa producida en el Instituto Nacional de Educación Física a partir de la figura del Doctor Enrique Romero Brest (Aisentein, 1995, 2006, Galak, 2012, Scharagrodsky, 2006). Dicho “sistema” estaba sustentado preponderantemente en los heterogéneos discursos médicos (Scharagrodsky, 2014). En los últimos años se observa la aparición de una serie de trabajo que problematizan la segunda mitad del siglo XX. Entre ellos se pueden mencionar aquellos que se concentraron preponderantemente en la cultura escolar del Instituto Nacional de Educación Física General Belgrano (Feiguin y Aisentein, 2006; Aisenstein y Melano, 2018) y a la formación en el Instituto Nacional de Educación Física Romero Brest durante la última dictadura cívico-militar entre 1976-1983 (Beer, 2014). En esa trama las propuestas formativas “romeristas” fueron objeto de modificaciones instaurándose paulatinamente discursos psicológicos, de las ciencias de la educación y de las ciencias sociales (Levoratti, 2017). En base a ello nos preguntamos cuales fueron los campos de saberes que se inscribieron en estas instancias de producción de documentos curriculares. Es importante advertir al lector que este texto se focaliza en la construcción de dos documentos en singular, producidos por el Estado Nacional. En ese sentido no se busca hacer un recorrido sobre los diversos debates de la disciplina en dicho lapsus temporal en la educación física argentina, pero si atender a las tramas que dan significado."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "escuela-media",
+        "title": "La educación física en la escuela media",
+        "shortTitle": "La educación física en la escuela media",
+        "paragraphs": [
+          {
+            "id": "levoratti-escuela-media-p1",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p1-s1",
+                "text": "En el sistema educativo argentino en el período trabajado, 1958-1968, encontrábamos instituciones dependientes del Estado Nacional y de las administraciones provinciales y municipales. De acuerdo al informe de estadística educativa del año 1959 el 86% de los establecimientos de nivel medio dependían del Estado Nacional –oficiales y particulares-, el 2% eran municipales y el 12% de los gobiernos provinciales. En septiembre de 1958, se crea en el Ministerio de Educación y Justicia de la Nación, la Dirección General de Educación Física, que vino a suplantar al Departamento de Extensión de Educación Física3. La Dirección creada tenía entre sus principales funciones “Dirigir, ejecutar, e inspeccionar la educación física de los establecimientos de la enseñanza media” (Decreto 5817 de 1958, Artículo 2). Se afirmaba que “la educación física tiende al desarrollo armónico y a la formación integral del hombre en los aspectos intelectuales, moral y físico”. Entre 1958 y 1963 funcionó esta dependencia, destacándose las siguientes acciones para el nivel medio: la extensión de la carga horaria de la Educación Física a tres horas semanales en 1959 por decreto 640, la reglamentación del régimen de promoción para la educación física en 1958, la modificación del régimen de exenciones por salud en 1961 y la construcción de nuevos programas. Para esto último, en mayo de 1960 se creó una comisión, organizada por el Director General de Educación Física Profesor Ramón Muros, que tenía por objeto construir el programa de educación física para el nivel medio. Ella estaba integrada por los inspectores de Educación Física Ángela Cristobal, Ana Elvira Lamas de Corradi, Ascencio Horacio Altuna, Humberto Ricardo Gilabert, Miguel Ángel de Vita, Alfredo Loughlin y presidida por Rubén Pérez Madrid. Además, fueron consultados profesores de la especialidad en diferentes áreas temáticas. En marzo de 1961 se aprobó por resolución 230 los programas de educación física para la enseñanza media propuestos por los inspectores, que estuvo vigente sin grandes modificaciones hasta el año 1984."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p2",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p2-s1",
+                "text": "El programa fue acompañado por un documento donde se presentaba un cuadro de situación un tanto crítico sobre el dictado de la materia. Ello por un lado era causado por la falta de condiciones materiales para el dictado de las clases y por otro al escaso desarrollo de la educación física en el nivel primario. En esa dirección se decía que “…en los establecimientos de enseñanza media se realiza una educación física de nivel inferior al que les corresponde, como consecuencia de una insuficiente educación física del niño en la escuela primaria” (Ministerio de Educación y Justicia, 1961: p. 9). Además, se partía de la convicción de que era necesario la asignación de un tiempo considerablemente mayor a la educación física del alumno, tendiente a equilibrar el que se destina a la formación intelectual; y la transformación del actual régimen de designación del profesorado en otro por el que se determine la cantidad de tiempo que el docente deberá atender al alumno en actividades académicas, actividades para-académicas, complementarias de la cátedra, trabajos prácticos o de aplicación, estudios guiado, etc. (Ministerio de Educación y Justicia, 1961, p.8)."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p3",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p3-s1",
+                "text": "Esta preocupación por la intelectualización de la educación se fue presentando a lo largo del siglo XX de la mano de las propuestas realizadas por la Escuela Nueva o Escuela Activa (Caruso, 2016; Cucuzza, 2017) y era considerada a las propuestas de la educación física francesa para la promoción de los “métodos activos” (Charbonnel, 2002). En 1960, durante la gestión de Muros, esto se expresó cuando la Dirección General publica el documento sobre “Las experiencias escolares en Vanves”, Francia, que lo inscribe como el “como” para la reforma educativa. Esta propuesta partía de la premisa de promover un “Régimen de equilibrio entre las actividades intelectuales y las físicas”. Esta “experiencia” es interpretada por William Moreno (2013) como parte de la lucha que se dio en la segunda mitad del siglo XX por el reconocimiento del efecto educativo de la educación física."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p4",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p4-s1",
+                "text": "Volviendo al programa sancionado en 1961 no se halló una definición para la educación física ahora bien en el primer objetivo se planteaba la necesidad de: Cimentar la noción de que, siendo el espíritu la instancia más valiosa del hombre, la educación física cobra su más alto sentido cuando se realiza en función del perfeccionamiento espiritual, ya que las perfecciones psico-somáticas deben ayudar al espíritu a cumplir mejor los ideales superiores (Ministerio de Educación y Justicia, 1961: p.16). En esa misma dirección se afirmaba que: “Toda acción humana es siempre compleja, y de su realización participa, en proporciones variables, tanto el ser físico como el ser psico-espiritual” (Ministerio de Educación y Justicia, 1961: p.15)"
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p5",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p5-s1",
+                "text": "Si comparamos ello con la definición que se fueron instituyendo desde las agencias estatales argentina durante las primeras décadas del siglo XX se mantiene la preocupación por la integralidad (Galak, 2013). Bajo este rótulo, se fueron agrupando diversos enfoques conceptuales entre los cuales podemos hallar aquellos ligados al “positivismo”, que se lo enlazó al “normalísimo”, y varias propuestas disciplinares que se dieron en respuesta o en tensión que ingresaron en la categoría de “espiritualista” según distintos analistas Pallarola (2002) Scharagrodsky (2004). Esta preocupación por lo “bio-psico-espiritual” no es exclusiva de los actores de la educación física. En el discurso que dio el Ministro de Educación de la Nación Mac Kay al Cerrar el “Curso de perfeccionamiento y capacitación en educación física” en 1959 manifestó: Plagada de resabios positivistas, sigue llenando las mentes juveniles de un verbalismo estéril haciendo del intelecto un culto exclusivista y, para ese culto son naturalmente ateos quienes pretenden interpretar el momento que vivimos. La moderna antropología filosófica nos dice que el hombre es un todo bio-psico-espiritual que debe ser formado en base a esas instancias fundamentales con sentido de equilibrio, con proyecciones de plenitud humana. Cuando el hacer pedagógico se adapte a esta nueva concepción del hombre -y esa adaptación debe lograrse con urgencia, la educación física pasará a integrar decididamente los nuevos contenidos de la escuela. (Mac Kay, 1959: p. 5)."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p6",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p6-s1",
+                "text": "En esta clave, podemos advertir que la propuesta disciplinar se inscribía en un debate más amplio y buscaba distanciarse de aquellas consideradas como “intelectualistas”, que se las entendía como “positivismo”. En este caso, se intentó significarla hacia la búsqueda de la “modernización” o en términos “modernos”. Esta preocupación no es solo para la educación física, sino que está en diálogo a los lineamientos pedagógicos y discursivos promovidos por el Estado nacional. David Beer (2014) clasifica a uno de los grupos de docentes del Instituto Nacional de Educación Física como “los modernos” entre los cuales ubicó a Alberto Dallo, Enrique Carlos Romero Brest, Beatriz Marty que proponían la “Gimnasia Moderna” y buscaban distinguirse de los “San Fernandistas” considerados como “conservadores” según el autor. Dichos profesores fueron consultados en las instancias de elaborar del programa objeto de análisis en este estudio4."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p7",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p7-s1",
+                "text": "Teniendo en cuenta los argumentos planteados tanto en el cuadro de situación propuesto inicialmente donde se critica la visión focalizada en lo intelectual, los saberes circulando en las instancias de formación y los objetivos dispuestos en el programa se evidencian puntos de proximidad con las pedagogías que se encontraban en el amplio espectro de enfoques de la “Escuela Nueva”, donde los saberes psicológicos promovieron un sustento conceptual (Caruso, 2016). En este caso no estamos en condiciones de afirmar que responde a dicho enfoque teórico, pero sí que los profesores que construyeron el curriculum lo auto-inscribieron en esa perspectiva pedagógica."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p8",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p8-s1",
+                "text": "Este programa expresa el proceso de instauración de la psicología en el andamiaje conceptual de la disciplina, lo cual no debe ser leído como un direccionamiento hacia la psicomotricidad, cuestión que tendrá lugar una década después. En cambio, en este contexto, la organización propuesta de los contenidos tenía como teoría de base a las promovidas desde la psicología preponderantemente del desarrollo. George Vigarello (2005) evidencia como en la segunda mitad del siglo XX la psicología organizó los procesos pedagógico-didácticos de la educación de los cuerpos en el campo francés, el cual será una referencia a nivel local dado que la Dirección General traducía y difundía los textos de la revista “Éducation Physique et Sport”."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p9",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p9-s1",
+                "text": "El programa fijó los objetivos para el “ciclo básico” y el “ciclo superior” del nivel medio que estaban organizados en tres grupos “formación corporal”, “rendimiento o performance” y “educación del movimiento”. Esta clasificación había sido utilizada previamente por Enrique Carlos Romero Brest en 1957 (Aisenstein, 2006) y en 1959 por Alberto Dallo al momento de organizar la propuesta de la “gimnasia moderna”. Para cumplir ello se fijaron como “agentes” de la educación física a “la gimnasia, los deportes, los juegos, la danza, el atletismo, la natación y la vida en la naturaleza”, que eran pensados como un “medio” y no como un “fin”. Estos agentes eran ponderados de modo desigual, asignándole una relevancia mayor a la gimnasia. Ello se encontraba expresado en la cantidad de horas que debían destinarse y en el uso de esta categoría como protagónica. En la tabla 1 se transcribe el criterio de distribución propuesto en el programa de acuerdo al año de educación. Tabla 1 Distribución horaria de los “agentes” de la Ed. Física en términos proporcionales de acuerdo al año. Programa 1961 Año de la educación: A la gimnasia, en sus diferentes formas A los demás agentes, en suma: En primer año 50% 50% En segundo y tercer año 40% 60% Desde cuarto año 30% 70%"
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p10",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p10-s1",
+                "text": "En el desarrollo que se realizó de los distintos “agentes” tenían una gran relevancia la gimnasia y en segundo lugar los deportes. Para la construcción de la propuesta de gimnasia fueron consultados los profesores Beatriz Marty, Martha Vassallo, Angélica Rolandelli, Pedro J. Harán y Alberto Dallo. A primera vista en el programa se evidencia una gran heterogeneidad de corrientes, esto es debido a las múltiples perspectivas a las cuales adherían los profesores que construyeron el documento y también a los posicionamientos en esta materia que tenían los diferentes grupos con poder dentro de las agencias estatales que disputaban la conformación de las propuestas disciplinares."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p11",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p11-s1",
+                "text": "La estructura a partir de la cual se organizaron los objetivos de la educación física fue empleada también para ordenar a las corrientes de gimnasia. Para la formación corporal (morfológica y funcional) se nombrará en primera instancia a los continuadores de la gimnasia sueca citando a Curt Johansson. Figura con la cual Alberto Dallo había realizado en 1953 cursos en Brasil y en Suiza. En relación a los ejercicios construidos se consideraba que: a) Cada ejercicio tiende a constituir una totalidad; sus diferentes partes se estructuran naturalmente; b) Cada ejercicio tiende un objetivo determinado, objetivo que es total –bio-psico-espiritual- no exclusivamente anátomo-mecánico o fisiológico (Ministerio de Educación y Justicia, 1961: p. 22)"
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p12",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p12-s1",
+                "text": "Esto está de la mano a lo planteado por Dallo (1959) que criticaba a la gimnasia “analítica” porque estaría “matando en cierto modo la acción creadora del profesor” (Dallo, 1959, p.11). En cambio, los ejercicios “sintéticos” trabajaría de modo integral. El autor expresaba que “La gimnasia transforma la incoherencia del movimiento corporal en movimiento rimado. Transforma el cuerpo humano en un instrumento sensible al ritmo corporal y le da la capacidad de reflejar el ritmo de la vida espiritual” (Dallo, 1959, p.7)."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p13",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p13-s1",
+                "text": "También para la “formación morfológica y funcional” se proponía la Gimnasia danesa de Niels Bukh y la del “Método Único” que estaba basado en dicho movimiento, la cual se considerada como “más limitada”. Este enfoque había sido impulsado desde la década del 1940 por el Consejo Nacional de la Educación Física del Ministerio de Guerra. En ese contexto habían establecido desde 1948 el “método único” para lo cual se desarrollaron diferentes capacitaciones a los docentes y la publicación de manuales. Uno de los actores claves en su “construcción” y difusión fue Alejando Amavet5."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p14",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p14-s1",
+                "text": "Para cumplir los objetivos relacionados con el rendimiento físico se proponía la gimnasia natural de Hébert y la Gimnasia natural austríaca de Gaulhofer y Streicher. Esta última fue impulsada en el país por Gerard Schmit quien fue contratado en el año 1959 por la Dirección General de Educación Física del Ministerio de Educación de la Nación participando en dicho contexto como docente en el Instituto Nacional de Educación Física de la Capital y dictando cursos de capacitación a los docentes en actividad."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p15",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p15-s1",
+                "text": "La educación del movimiento se referenciaba en Medau, Idla, Jalkanen y Fröelich: los tres primeros se los inscribían dentro de la “gimnasia moderna”. Estas corrientes aparecían en los trabajos publicados por Dallo (1959) y Beatriz Marty (1959) donde se trazaba como punto central de la gimnasia la educación del movimiento donde el ritmo era una variable central."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p16",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p16-s1",
+                "text": "En los varones la gimnasia buscaba en el ciclo básico la “formación corporal” y en el ciclo superior se le sumaba la problemática del “rendimiento físico”. La educación del movimiento estaba ligada a la “eficiencia física, más que con intenciones estéticas”. En cambios entre las “niñas” la “preminencia” estaba en “la formación corporal y la educación del movimiento”. Se afirmaba que “La forma y estilo del movimiento gimnástico deben ser elementos eficaces para acentuar la femineidad de las alumnas” (Ministerio de Educación y Justicia, 1961, p.26). Esa distinción generizada que se realizó venía a atender uno de los objetivos principales de la educación física que era: Favorecer la diferenciación sexual. Capacidad de expresión por medio del cuerpo y del movimiento (fundamentalmente en la mujer) (Ministerio de Educación y Justicia, 1961: p. 18) Esta separación también se presentará en los deportes identificando prácticas específicas para los varones y las mujeres."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p17",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p17-s1",
+                "text": "En el programa se asignó una sección especial para el dictado de la Educación Física en las Escuelas Normales en el 4to y 5to año, período que estaba orientado a la formación pedagógica-didáctica a partir de la reforma de 1941 (Rodríguez, 2019). Se establecía que dos de las tres horas semanales estaría consignado para la “preparación profesional” y la restante para la “formación física del alumno”. Se organizaba la curricula en tres problemáticas: 1) conocimientos fundamentales de la educación física, 2) conocimientos didácticos de los distintos agentes y 3) ejercicio en la práctica de la enseñanza. Se desglosaron las propuestas para los diferentes “agentes” que consistía preponderantemente en tipos de ejercicios. No se amplió sobre la perspectiva pedagógica didáctica propuesta, ahora bien en el libro de María Raquel Frigerio y María Geni Maillot (1968) “Educación Física” que estaba destinado a los/as estudiantes del 4to y 5to año del magisterio y era “Recomendado por la Dirección Nacional de Educación Física, Recreación y Deportes” para el dictado del programa en estudio, al presentar el desarrollo de la disciplina criticaba el lugar asignado a la educación física y la problemática del cuerpo en la educación por las miradas “intelectualistas”, pregonando para superarla “conocer y practicar los conceptos de la escuela activa o escuela nueva” (1968, p.10). Las autoras retoman el trabajo de Gilda Lamarque de Romero Brest y Enrique Carlos Romero Brest al igual que lo hacía Dallo, también se citaron para argumentar texto de autores de Francia y de Alemania que problematizaron la educación física en nivel y no solo a la gimnasia como fue el caso de Suaudeau, Diem, Seybold."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-escuela-media-p18",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-escuela-media-p18-s1",
+                "text": "A lo largo de este apartado se presentó el programa aprobado a partir del año 1961 para la educación media en él se advierten las intenciones de sus autores de auto inscribir esta curricula dentro del “método activo” ahora bien los lineamientos y enfoques teóricos fueron diversos. Ello buscaba la distinción con las propuestas consideradas como “positivistas”. Esto trajo aparejado el uso de categorías de la psicología del desarrollo para organizar los procesos pedagógicos como así también legitimar al “movimiento” por sus fines en dicho campo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "educacion-infantil",
+        "title": "“Plan de Educación Física Infantil”",
+        "shortTitle": "“Plan de Educación Física Infantil”",
+        "paragraphs": [
+          {
+            "id": "levoratti-educacion-infantil-p1",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-educacion-infantil-p1-s1",
+                "text": "En 29 de junio de 1966 se produjo en la Argentina el golpe de estado por la auto denominada “Revolución Argentina” la cual impuso como presidente de facto al General Juan Carlos Onganía. Durante su mandato se impulsó un proceso de reforma educativa que no logro concretarse en todos sus aspectos, pero si inicio la descentralización hacia las provincias y desfinanciación del sistema educativo por parte del Estado (Puiggrós, 1986)."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-educacion-infantil-p2",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-educacion-infantil-p2-s1",
+                "text": "El 26 de septiembre de 1966 asume como máxima autoridad de la Dirección General de Educación Física, Deportes y Recreación el Profesor Ramón Muros. Este segundo período en el organismo durará cuarenta y cinco días y en ese lapsus se lanzó el “Plan de Educación Física Infantil” el cual se terminó materializando en la gestión del Profesor Hermes Pérez Madrid. En 1968 se difundieron los dos tomos del libro “Educación Física Infantil” publicados por la Dirección Nacional. Estaban dirigidos a la formación de los maestros para el dictado de las clases en el nivel primario. Los tópicos centrales fueron: características de la evolución del niño; principios pedagógicos, objetivos de Educación Física; desarrollo de actividades por niveles; preparación de la clase; fundamento de actividades: atléticas, vida en la naturaleza, juegos y pre deportivas, rítmicas, expresivas."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-educacion-infantil-p3",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-educacion-infantil-p3-s1",
+                "text": "La Educación Física Infantil, al igual que en el programa analizado en el apartado anterior, se fundamentó en el hecho de “…contribuir a la formación integral” (1968, p. 7). En este caso es explicitó el sustento en la psicología infantil. En el primer capítulo del libro se expone una organización de la proposición pedagógica de la educación física subsumida en categorías como “desarrollo”, “procesos de desarrollo”, “crecimiento” citando recurrentemente a Arnold Gesell, y en mejor medida a Elizabeth Hurlock, Arthur Jersild. Al momento de problematizar la enseñanza del juego a Erikson, Wallon, Gesell, Chateau y Piaget. La presencia de la psicología del desarrollo ofició en este caso de estructuración de la enseñanza. Se acentuaba que “El maestro deberá tener conocimiento y comprensión de los modos de crecimiento” (Secretaria de Estado de Cultura y Educación, 1968: p.7). También, se explicitaba que el desarrollo de la “personalidad” envolvía al “ser total psicofísico”, esta acepción era empleada también en Gilda Lamarque de Romero Brest en un texto de 1956 que era recurrentemente citado en las producciones nacionales donde afirmaba que “La educación es responsable del desarrollo equilibrado de la personalidad…” (Lamarque de Romero Brest, 1956, p. 1). Recurrían a estos autores para presentar los caracteres del niño en diferentes periodos y en base a ello qué se debía enseñar, cómo hacerlo y la relaciones que se producían entre los períodos."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-educacion-infantil-p4",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-educacion-infantil-p4-s1",
+                "text": "En los “principios pedagógicos” se partía de una frase del filósofo y pedagogo alemán Herman Nohl y era recurrente las citas al filósofo hermeneuta Wilhelm Dilthey con quien se había formado Nohl. Este autor aparecía al inicio de trabajo de la Doctora Liselott Diem que presentó en el II Congreso Internacional de Educación Física y Deportiva Femenina que se realizó en París en 1953 con el título “Los Estadios de Actividad Física y el Movimiento Físico en el Niño como Medios Educativos” y que fue difundido en la Argentina en 1957 por la Dirección de Educación Física en el “Boletín Técnico N°2”. Esta referencia promovía entender de modo integral al niño visualizando la relación en el trabajo con el cuerpo y su arraigo en lo espiritual."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-educacion-infantil-p5",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-educacion-infantil-p5-s1",
+                "text": "La principal mención conceptual del campo pedagógico fue John Dewey, entendido como un promotor del “método activo”. Como desarrolló David Beer (2014), Dewey fue en el período una de las referencias teóricas de “los modernos” del INEF de Romero Brest y se había posicionado a partir de la participación de Liselott Diem."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-educacion-infantil-p6",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-educacion-infantil-p6-s1",
+                "text": "En este documento se explicitaba como relevante la consideración de la “actividad” como “experiencia” entendiendo por ello “las relaciones activas existentes entre un ser humano y su ámbito natural y social”, ideas que había desarrollado el pedagogo norteamericano. Permitiéndoles afirmar que “La Educación física infantil trata de favorecer la propia actividad, facilitando y vigorizando las adquisiciones espontáneas, naturales de los niños…” (Secretaria de Estado de Cultura y Educación, 1968 p. 18). Esta búsqueda de la naturaleza del niño presentaba lazos de proximidad con la concepción sobre las prácticas corporales propuesta, en particular con la gimnasia, donde había una fuerte crítica a los métodos estructurados y artificiales enfatizando el lugar de ritmo y la creatividad."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-educacion-infantil-p7",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-educacion-infantil-p7-s1",
+                "text": "Recuperando lo dicho más arriba, el objetivo general de la educación física estaba en la “integración de la personalidad”. Se suma a ello el “acrecentamiento de la salud”, “el desarrollo normal en las diferentes edades” y “satisfacer la necesidad de movimiento”. Esto último tomaba sentido a partir de la articulación de las propuestas de psicología del desarrollo y el enfoque de Dewey que era pensado dentro de la “escuela activa”."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-educacion-infantil-p8",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-educacion-infantil-p8-s1",
+                "text": "Entre los objetivos específicos de la disciplina se promovieron la “formación física básica”, “educación del movimiento”, “rendimiento” y “creatividad”. La clasificación y organización propuesta tomaba fundamento de acuerdo al desarrollo realizado años después por Mario López y Alberto Dallo (1972) en la teoría de la Gestalt, al considerar al movimiento como totalidad. La organización propuesta tenía en cuenta la articulación progresiva de estas “totalidades”. Bajo este principio, a diferencia del nivel medio, para la educación primaria no se especificaron “agentes” dado que la centralidad pasó a estar en el “movimiento” (Mansi, 2019)."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-educacion-infantil-p9",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-educacion-infantil-p9-s1",
+                "text": "A lo largo de este apartado buscamos presentar los lineamientos principales para la educación física en el nivel primario. Aunque buena parte de los actores que participaron de la construcción del documento de referencia fueron los mismos que lo habían hecho para el nivel secundario, se observa en este caso la consolidación de determinadas categorías que eran incipientes años antes pero también la modificación de la posición de actores y grupos lo cual se evidencia en el entramado curricular propuesto."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conclusion",
+        "title": "Conclusión",
+        "shortTitle": "Conclusión",
+        "paragraphs": [
+          {
+            "id": "levoratti-conclusion-p1",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-conclusion-p1-s1",
+                "text": "En este trabajo pusimos el foco en dos propuestas curriculares que presentaban fuertes lazos en el desarrollo de la educación física escolar en la Argentina en la década de 1960, como fueron la formación promovida en el nivel medio, en particular en las Escuelas Normales, y los lineamientos para instaurar la educación física en la escuela primaria. Esta sinergia buscó poner en evidencia la relevancia de los maestros normales en la implementación de la disciplina a nivel escolar en un pasado reciente, actores poco estudiados al momento de considerar la formación de los docentes ligados a la educación de los cuerpos. Se abre la posibilidad de problematizar cómo se implementó la educación física en las escuelas normales, analizando los procesos de resignificación y actualización de la curricula, además de adentrarnos en ¿cómo implementaron estos maestros las clases en el territorio? y ¿cómo se inscribió esta labor en diálogo con sus otras prácticas en las escuelas?."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-conclusion-p2",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-conclusion-p2-s1",
+                "text": "En ambas formulaciones curriculares se observó la búsqueda de legitimar sus propuestas en autores del campo pedagógico y de la psicología del desarrollo. Asimismo, discursivamente, consideraron sus lineamientos como “modernos” procurando la distinción con las propuestas anteriores. Esto fue tanto al momento de presentar a los saberes específicos de la disciplina, como así también al considerar los saberes pedagógicos, psicológicos y antropológicos. En ese proceso en ambos casos aparecen referencia a los “métodos activos” aunque como vimos tomaron diferentes referencias conceptuales. Pero estas dos instancias forman parte de un proceso de debates que se fueron produciendo en la disciplina, tensionándose en ellos tantos los lineamientos donde era preponderantes los saberes de la anatomía -fisiología y aquellas vinculados a la gimnasia promovida por los maestros de gimnasia y esgrima del Ejército. Cuestiones que grafican las disputas en la construcción curricular (Goodson, 2003)"
+              }
+            ]
+          },
+          {
+            "id": "levoratti-conclusion-p3",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-conclusion-p3-s1",
+                "text": "En la propuesta destinada al nivel medio estaban presentes conceptos y prácticas que evidenciaban la participación y articulación de diferentes grupos que habían estado disputando la curricula disciplinar desde la década de 1930. En el documento destinado a la educación primaria se visualiza la consolidación de problemáticas y enfoques que venían de la mano de los organismos y las asociaciones internacionales en las cuales estaba sumergida la educación física Argentina."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-conclusion-p4",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-conclusion-p4-s1",
+                "text": "Esto último no quiere decir la presencia de un único enfoque, dado que continuaban estando presentes distintas perspectivas psicológicas al mismo tiempo que la asignación de un lugar preponderante a la formación de la “personalidad”. Bajo esta categoría se sintetizará la discusión de la “formación integral” esto también por momentos apareció sustentado en la “espiritualidad”, que como vimos tuvo diversos marcos de referencia."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-conclusion-p5",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-conclusion-p5-s1",
+                "text": "La estructuración de las prácticas en base a los saberes de la psicología fue legitimando un lugar protagónico al “movimiento” inviabilizando a los “agentes”. Es más, Dallo y López (1972) titulan su libro “El movimiento como agente instrumental operativo”. Este punto será una gran diferencia entre los dos documentos analizados. Esta centralidad en el “movimiento” en la educación física, que se comienza a dar, en lugar de diferentes manifestaciones de la gimnasia y el deporte enfatiza la diferenciación entre estas tres prácticas."
+              }
+            ]
+          },
+          {
+            "id": "levoratti-conclusion-p6",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-conclusion-p6-s1",
+                "text": "Entendemos que este trabajo, es un primer análisis sobre la problemática, en ese sentido resulta interesante explicitar para futuros estudios posibles líneas. Una de ellas puede estar vinculada la concepción de “naturaleza” del niño y como ello estructura e informa los sentidos asignados a las diferentes prácticas corporales. También, nos preguntamos ¿Cómo estos enfoques conceptuales se articularon en un contexto desarrollista? ¿Cómo las prácticas pedagógicas sobre los cuerpos se inscribieron en estos procesos? ¿Cuál era la matriz ideológica de estas prácticas pedagógicas sobre los cuerpos?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "referencias",
+        "title": "Referencias",
+        "shortTitle": "Referencias",
+        "paragraphs": [
+          {
+            "id": "levoratti-referencias-p1",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "levoratti-referencias-p1-s1",
+                "text": "Aisentein, Á. (1995). Currículo presente ciencia ausente. El modelo didáctico de la Educación Física: entre la escuela y la formación docente. Buenos Aires: Ed. Miño y Dávila. Aisenstein, Á. (2006). La educación física en el currículo moderno o la historia de la conformación de una matriz disciplinar (Argentina, 1880-1960). En: Rozengardt, R. Apuntes de Historia para profesores de Educación Física (p. 69-84). Buenos Aires: Miño y Dávila. Aisenstein, Á. y Melano, I. (2018). Formación Docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”. En: Kaufman, C. (Comp.), Estudios sobre historia y política de la educación argentina reciente (1960-2000) (p.179-198). Entre Ríos: Fahrenhouse. Beer, D. (2014). La configuración de las tradiciones del Instituto Nacional de Educación Física de Buenos Aires y su resignificación en el contexto de la última Dictadura Militar. Tesis de Doctorado en Ciencias Sociales-FLACSO-Argentina. Cucuzza, Hector Rubén (2017). Desembarco de la escuela nueva en Buenos Aires: Heterogéneas naves atracadas en puertos heterogéneos. Revista Brasileira de Pesquisa. V.2, N5, pp. 310-329. Caruso, M. (2016). ¿Una nave sin puerto definitivo? Antecedentes, tendencias e interpretaciones alrededor del movimiento de la Escuela Nueva. En Pineau, P., Dussel, I. y Caruso, M. La Escuela como máquina de educar (pp. 93-131). Buenos Aires: Paidós. Charbonnel, P. (2002) L´école hors de l´ecole. Observatoire de l´enfance en France. N°48. Dallo, A. (1959). Gimnasia Moderna. Buenos Aires: Dirección General de Educación Física. Dirección General de Educación Física (1962) Boletín Informativo N°1. Buenos Aires: Ministerio de Educación de la Nación. Dirección Nacional de Educación Física, Deporte y Recreación (1967). Boletín Informativo N°16. Buenos Aires: Ministerio de Educación de la Nación. Dos Santos, F. C. (2017). Bola em jogo entre Brasil e República Federal da Alemanha: cientificidade e modelagem pedagógica na formação de professores na Escola de Educação Física da UFMG (1963-1982). Dissertação do Programa de Pós-Graduação em Educação, Universidade Federal de Minas Gerais. Eusse, K., Almeida, F., Bracht, V. (2019). \"Esportivização\" da educação física colombiana: a \"herança\" do convênio Colombo-Alemão nas páginas da revista Educación Física y Deporte. Revista Brasileira de Ciências do Esporte, 41(4), 437-443. Feiguin, M. A. y Aisenstein, Á. (2006). Diseño de sujetos morales, sanos y patriotas. Formación de profesores de Educación Física. Argentina, 1938-1967”. Pedagogía y Saberes, núm.44, pp.9-20. Frigerio, M. R.; Maillot, María G. (1968). Educación Física. Buenos Aires: edición del autor. Galak, E. (2012). Del dicho al hecho (y viceversa). Al largo trecho de la construcción del campo de la formación profesional de la educación física en Argentina, Tesis de doctorado en Ciencias Sociales. La Plata: UNLP. Galak, E. (2013) Herbert Spencer y la pedagogía integralista. Influencias en los inicios de la Educación Física argentina. Varea, V y Galak, E. Cuerpo y Educación Física (pp.45-66). Buenos Aires: Editorial Biblos. Goodson, I. (2003). Estudio del Curriculum. Casos y métodos. Buenos Aires: Amorrortu Editores. International Council on Health, Physical Education, and Recreation (1963). Physical Education and Games in the curriculum. Washington: International Council on Health, Physical Education, and Recreation. Lamarque de Romero Brest, G. (1956). Bases para la elaboración del programa de Educación Física. La Plata: Dirección General de Educación Física. Levoratti, A. (2017). Configuraciones de la formación de los profesores en educación física. Actores y sentidos en disputa en instituciones de educación superior en la provincia de Buenos Aires (Argentina, 1990-2015). Tesis Doctoral. Buenos Aires: Universidad Nacional de Quilmes. Levoratti, A. (2020) La configuración de la Dirección Nacional de Educación Física, Deportes y Recreación de la República Argentina. Entre las problemáticas locales y los lineamientos internacionales (1963-1983). Revista Espacio Abierto. Cuaderno Venezolano de Sociología. V. 29 N°2. pp. 110- 129. López, M.; Dallo, A. (1972). El movimiento como agente instrumental operativo. Buenos Aires: Editorial Glauco. Mac Kay, L. (1959). La educación física y la escuela argentina. Buenos Aires: Ministerio de Educación y Justicia Mansi, D. (2019). Desarrollismo y Humanismo con visión socio-crítica: tendencias pedagógicas en pugna en la Educación Física Argentina del nivel inicial. Educación Física y Ciencia, vol. 21, nº 3, e088 Marty, B. (1959). Gimnasia femenina moderna. Buenos Aires: Ministerio de Educación y Justicia Ministerio de Educación y Justicia (1961) Programas de Educación Física. República Argentina: Ministerio de Educación y Justicia de la Nación. Moreno, W. (2013). Las creencias de los profesores y la educación del cuerpo. Aproximación histórico-sensible y descriptivo-comprensiva a las creencias fundantes de la intervención pedagógica del cuerpo en la educación pública primaria en Antioquia (Colombia). Tesis doctoral. Valencia: Universidad de Valencia. Pallarola, D. (2002) Positivismo, normalismo y Educación Física en Argentina. efdeportes.com. Año 8, N° 52. Puiggrós, A. (1986). Democracia y autoritarismo en la pedagogía argentina y latinoamericana. Buenos Aires: Galerna. Rodríguez, L. G. (2017). Los ministros de educación en Argentina (1854-2015): análisis de los perfiles profesionales de las elites políticas. História da Educação. v. 21, n. 51. p. 397-417 Rodríguez, L. G.. (2013) Los católicos desarrollistas en Argentina. Educación y planeamiento en los años de 1960. Diálogos - Revista do Departamento de História e do Programa de Pós-Graduação em História, vol. 17, núm. 1, pp. 155-184. Suasnábar, C. (2004). Universidad e intelectuales. Educación y política em la Argentina (1955- 1976). Buenos Aires: Flacso-Manantial. Scharagrodsky, P. (2004). La educación física escolar argentina (1940-1990): De la fraternidad a la complementariedad. Anthropologica, 22(22), 63-92. Scharagrodsky, P. (2006). El padre de la Educación Física argentina: fabricando una política corporal generizada (1901-1938). En: Aisenstein, Á. y Scharagrodsky, P. Tras las huellas de la Educación Física Escolar Argentina (pp.159-198). Buenos Aires: Prometeo Libros. Scharagrodsky, P. (2014). El discurso médico y su relación con la invención del oficio de ´educador físico´: entre la heteronomia solapada y la autonomía vigilada (Argentina 1901 -1931). En: Scharagrodsky, P. (Compilador), Miradas Médicas sobre la cultura física en Argentina 1880-1970. Buenos Aires: Prometeo Libros. Secretaria de Estado de Cultura y Educación (1968). Educación Física Infantil. Buenos Aires: Dirección Nacional de Educación Física, Deportes y Recreación. Vigarello, G. (2005). Corregir el cuerpo. Historia de un poder pedagógico. Buenos Aires: Nueva Visión."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "endnotes": [
+      {
+        "number": 1,
+        "text": "Antonio Salonia se desempeñó como subsecretario de Educación de la Nación entre 1958-1962 durante la presidencia de Arturo Frondizi y como Ministro de Educación entre 1989-1992 en la presidencia de Carlos Saúl Menem. En 1969 fundó la Nueva Escuela Argentina 2000, institución donde se dictó el profesorado de educación física a partir de 1974. En ese espacio también se desempeñó Ramón Muros como docente.",
+        "sentenceId": "levoratti-introduccion-p1-s1"
+      },
+      {
+        "number": 2,
+        "text": "En este trabajo se hará sólo referencia a la gimnasia por el lugar protagónico que esta práctica tuvo en las definiciones curriculares bajo análisis.",
+        "sentenceId": "levoratti-introduccion-p5-s1"
+      },
+      {
+        "number": 3,
+        "text": "Es importante enfatizar que dentro del Estado Nacional se inscribieron diferentes agencias destinadas a la educación física siendo la primera de ella la Dirección General de Educación Física en 1938. Por una génesis de dichas dependencias puede consultar a Levoratti (2020).",
+        "sentenceId": "levoratti-escuela-media-p1-s1"
+      },
+      {
+        "number": 4,
+        "text": "En 1959 la Dirección General de Educación Física había publicado el Folleto Técnico 2 llamado “Gimnasia Moderna” y escrito por el Profesor Alberto Dallo. Volveremos más adelante sobre el mismo.",
+        "sentenceId": "levoratti-escuela-media-p6-s1"
+      },
+      {
+        "number": 5,
+        "text": "El Método Único fue sancionado por Decreto N° 7807, fechado el 16 de marzo de 1948.",
+        "sentenceId": "levoratti-escuela-media-p13-s1"
+      }
+    ],
+    "bibliography": [],
+    "sourceNote": "Edición académica del artículo, con sus resúmenes, apartados, notas y referencias. Las notas y los textos preliminares no reciben tiempos ficticios."
+  },
+  "paragraphTimings": [
+    {
+      "id": "levoratti-introduccion-p1",
+      "start": 14.823,
+      "end": 96.876
+    },
+    {
+      "id": "levoratti-introduccion-p2",
+      "start": 96.877,
+      "end": 167.07
+    },
+    {
+      "id": "levoratti-introduccion-p3",
+      "start": 167.071,
+      "end": 206.858
+    },
+    {
+      "id": "levoratti-introduccion-p4",
+      "start": 206.859,
+      "end": 296.461
+    },
+    {
+      "id": "levoratti-introduccion-p5",
+      "start": 296.462,
+      "end": 405.134
+    },
+    {
+      "id": "levoratti-introduccion-p6",
+      "start": 405.135,
+      "end": 502.658
+    },
+    {
+      "id": "levoratti-escuela-media-p1",
+      "start": 502.659,
+      "end": 655.66
+    },
+    {
+      "id": "levoratti-escuela-media-p2",
+      "start": 655.661,
+      "end": 721.544
+    },
+    {
+      "id": "levoratti-escuela-media-p3",
+      "start": 721.545,
+      "end": 775.83
+    },
+    {
+      "id": "levoratti-escuela-media-p4",
+      "start": 775.831,
+      "end": 817.76
+    },
+    {
+      "id": "levoratti-escuela-media-p5",
+      "start": 817.761,
+      "end": 920.085
+    },
+    {
+      "id": "levoratti-escuela-media-p6",
+      "start": 920.086,
+      "end": 979.36
+    },
+    {
+      "id": "levoratti-escuela-media-p7",
+      "start": 979.361,
+      "end": 1019.696
+    },
+    {
+      "id": "levoratti-escuela-media-p8",
+      "start": 1019.697,
+      "end": 1065.57
+    },
+    {
+      "id": "levoratti-escuela-media-p9",
+      "start": 1065.571,
+      "end": 1126.935
+    },
+    {
+      "id": "levoratti-escuela-media-p10",
+      "start": 1126.936,
+      "end": 1168.969
+    },
+    {
+      "id": "levoratti-escuela-media-p11",
+      "start": 1168.97,
+      "end": 1220.877
+    },
+    {
+      "id": "levoratti-escuela-media-p12",
+      "start": 1220.878,
+      "end": 1251.287
+    },
+    {
+      "id": "levoratti-escuela-media-p13",
+      "start": 1251.288,
+      "end": 1293.243
+    },
+    {
+      "id": "levoratti-escuela-media-p14",
+      "start": 1293.244,
+      "end": 1325.194
+    },
+    {
+      "id": "levoratti-escuela-media-p15",
+      "start": 1325.195,
+      "end": 1352.286
+    },
+    {
+      "id": "levoratti-escuela-media-p16",
+      "start": 1352.287,
+      "end": 1410.072
+    },
+    {
+      "id": "levoratti-escuela-media-p17",
+      "start": 1410.073,
+      "end": 1521.2
+    },
+    {
+      "id": "levoratti-escuela-media-p18",
+      "start": 1521.201,
+      "end": 1564.675
+    },
+    {
+      "id": "levoratti-educacion-infantil-p1",
+      "start": 1564.676,
+      "end": 1592.969
+    },
+    {
+      "id": "levoratti-educacion-infantil-p2",
+      "start": 1592.97,
+      "end": 1655.565
+    },
+    {
+      "id": "levoratti-educacion-infantil-p3",
+      "start": 1655.566,
+      "end": 1742.687
+    },
+    {
+      "id": "levoratti-educacion-infantil-p4",
+      "start": 1742.688,
+      "end": 1794.491
+    },
+    {
+      "id": "levoratti-educacion-infantil-p5",
+      "start": 1794.492,
+      "end": 1816.306
+    },
+    {
+      "id": "levoratti-educacion-infantil-p6",
+      "start": 1816.307,
+      "end": 1863.147
+    },
+    {
+      "id": "levoratti-educacion-infantil-p7",
+      "start": 1863.148,
+      "end": 1892.721
+    },
+    {
+      "id": "levoratti-educacion-infantil-p8",
+      "start": 1892.722,
+      "end": 1935.382
+    },
+    {
+      "id": "levoratti-educacion-infantil-p9",
+      "start": 1935.383,
+      "end": 1969.428
+    },
+    {
+      "id": "levoratti-conclusion-p1",
+      "start": 1969.429,
+      "end": 2027.005
+    },
+    {
+      "id": "levoratti-conclusion-p2",
+      "start": 2027.006,
+      "end": 2088.892
+    },
+    {
+      "id": "levoratti-conclusion-p3",
+      "start": 2088.893,
+      "end": 2117.316
+    },
+    {
+      "id": "levoratti-conclusion-p4",
+      "start": 2117.317,
+      "end": 2146.681
+    },
+    {
+      "id": "levoratti-conclusion-p5",
+      "start": 2146.682,
+      "end": 2183.334
+    },
+    {
+      "id": "levoratti-conclusion-p6",
+      "start": 2183.335,
+      "end": 2219.335
+    }
+  ],
+  "legacyPageMap": {
+    "0": "levoratti-preliminares-p1",
+    "1": "levoratti-preliminares-p1",
+    "2": "levoratti-introduccion-p2",
+    "3": "levoratti-introduccion-p4",
+    "4": "levoratti-introduccion-p6",
+    "5": "levoratti-escuela-media-p2",
+    "6": "levoratti-escuela-media-p5",
+    "7": "levoratti-escuela-media-p8",
+    "8": "levoratti-escuela-media-p11",
+    "9": "levoratti-escuela-media-p16",
+    "10": "levoratti-escuela-media-p18",
+    "11": "levoratti-educacion-infantil-p4",
+    "12": "levoratti-educacion-infantil-p9",
+    "13": "levoratti-conclusion-p4",
+    "14": "levoratti-referencias-p1",
+    "15": "levoratti-referencias-p1",
+    "16": "levoratti-referencias-p1"
+  },
+  "preparation": {
+    "sourceText": "texto-academico.txt",
+    "timingSource": "subtitulos.srt",
+    "syncUnit": "paragraph",
+    "cueCount": 460,
+    "mappedParagraphs": 39,
+    "unmappedSections": [
+      "preliminares",
+      "referencias"
+    ],
+    "endnotes": 5
+  }
+}
