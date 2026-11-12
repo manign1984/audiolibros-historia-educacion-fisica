@@ -26,7 +26,7 @@ Las 18 portadas del catálogo muestran el cartel verde «Leer + escuchar». La t
 
 **Insumos:** [texto de cátedra](https://docs.google.com/document/d/1u7bmjgvvAyb7-Pup2H979p6s09W-89bRq4IT5S9uN6M/edit), [PDF de cátedra](https://drive.google.com/file/d/15RmVq3_8I6klO5GsRK3bY1kfPzYnmHTJ/view) y [ponencia original](https://eduardogalak.wordpress.com/wp-content/uploads/2012/10/del-dicho-al-hecho-galak-2012-ponencia-bariloche.pdf).
 
-**Rama y ruta técnica:** [`feature/galak-del-dicho-al-hecho`](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/galak-del-dicho-al-hecho) · [GitHub Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/galak-del-dicho-al-hecho/).
+**Rama, PR, commit de implementación y ruta técnica:** [`feature/galak-del-dicho-al-hecho`](https://github.com/manign1984/audiolibros-historia-educacion-fisica/tree/feature/galak-del-dicho-al-hecho) · [PR #153](https://github.com/manign1984/audiolibros-historia-educacion-fisica/pull/153) · [`d244c6c9b2b6`](https://github.com/manign1984/audiolibros-historia-educacion-fisica/commit/d244c6c9b2b6a6eecd4e4e521e297faaa06b4333) · [GitHub Pages](https://manign1984.github.io/audiolibros-historia-educacion-fisica/textos/galak-del-dicho-al-hecho/).
 
 **Próxima acción única:** comprobación de la página y del lector textual por el responsable tras el despliegue técnico.
 
