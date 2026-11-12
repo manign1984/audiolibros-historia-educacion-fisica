@@ -31,48 +31,102 @@ body:has(.melano-page) { margin: 0; }
 .melano-skip:focus { top: 10px; }
 .melano-eyebrow { margin: 0; font: 700 12px/1.35 'Archivo', sans-serif; letter-spacing: .17em; text-transform: uppercase; }
 
+
+/* 01 · INICIO · Mecanografía sobre documento y fotografía originales (2026-11-12).
+   La composición aportada permanece como imagen completa de fondo;
+   las letras son HTML real, accesible y seleccionable. */
 .melano-hero {
-  position: relative; display: flex; align-items: center;
-  padding: 28px 0 35px;
-  background: var(--ml-ink); color: #eef9fc;
-}
-.melano-hero__layout { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(300px, .84fr); gap: clamp(24px,4vw,65px); align-items: center; }
-.melano-hero .journey-block-label { color: var(--ml-turquoise); }
-.melano-hero__copy { min-width: 0; }
-.melano-hero .melano-eyebrow { margin: 18px 0 15px; color: #b6d6d9; }
-.melano-hero .melano-eyebrow span { padding-inline: 8px; color: var(--ml-turquoise); }
-.melano-hero h1 {
-  font: 900 clamp(42px, 4.15vw, 70px)/.99 'Archivo', sans-serif;
-  letter-spacing: -.065em; margin: 0 0 21px; max-width: 780px;
-  text-wrap: balance;
-}
-.melano-hero h1 span { display: block; color: #8d82ff; margin-top: 10px; }
-.melano-hero__subtitle { font: 600 clamp(18px, 1.8vw, 25px)/1.22 'Archivo', sans-serif; max-width: 680px; margin: 0 0 17px; color: #fafbfb; }
-.melano-hero__intro { font-size: clamp(13px, 1.07vw, 16px); line-height: 1.63; max-width: 700px; margin: 0; color: #d5e5e7; }
-.melano-hero__next { display: inline-flex; gap: 16px; align-items: center; margin-top: 25px; padding: 11px 0; color: #78d5d9; font: 700 12px/1.3 'Archivo', sans-serif; letter-spacing: .13em; text-transform: uppercase; text-decoration: none; border-bottom: 2px solid #40b5bc; }
-.melano-hero__next:hover { color: white; }
-.melano-hero__art {
   position: relative;
-  aspect-ratio: 4/5;
-  min-height: 380px;
-  max-height: min(680px, calc(var(--reading-room) - 72px));
-  overflow: hidden;
-  background: #a98972;
-  border: 7px solid #051e28;
-  outline: 1px solid #a7cbc8;
-  box-shadow: 18px 18px 0 #40b5bc;
+  isolation: isolate;
+  display: flex;
+  align-items: stretch;
+  padding: 0;
+  background: #ecddc2;
+  color: #342920;
 }
-.melano-hero__art img {
+.melano-hero__background {
   position: absolute;
+  z-index: 0;
   inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.melano-hero__background img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: 49% 50%;
+  object-fit: fill;
 }
-.melano-hero__stripes { position:absolute; bottom:0; left:0; width:100%; height:8px; display:grid; grid-template-columns:repeat(5,1fr); }
-.melano-hero__stripes i:nth-child(1){background:#051e28;} .melano-hero__stripes i:nth-child(2){background:#3a8841;} .melano-hero__stripes i:nth-child(3){background:#40b5bc;} .melano-hero__stripes i:nth-child(4){background:#483df6;} .melano-hero__stripes i:nth-child(5){background:#86759f;}
+.melano-hero__layout {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  min-height: var(--reading-room);
+  width: min(1680px, calc(100% - 88px));
+  padding: clamp(130px, 17svh, 180px) 0 clamp(24px, 4svh, 42px);
+}
+.melano-hero__copy {
+  width: min(52%, 680px);
+  min-width: 0;
+  padding-left: clamp(0px, 1.15vw, 18px);
+  font-family: 'Courier New', 'Liberation Mono', monospace;
+}
+.melano-hero .journey-block-label {
+  color: #68483f;
+}
+.melano-hero .melano-eyebrow {
+  margin: 19px 0 14px;
+  color: #564139;
+  font: 700 clamp(11px, .95vw, 14px)/1.5 'Courier New', 'Liberation Mono', monospace;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+.melano-hero .melano-eyebrow span { padding-inline: 5px; color: #885b52; }
+.melano-hero h1 {
+  margin: 0 0 16px;
+  max-width: 100%;
+  color: #29231f;
+  font: 700 clamp(30px, 3.05vw, 55px)/1.09 'Courier New', 'Liberation Mono', monospace;
+  letter-spacing: -.043em;
+  overflow-wrap: break-word;
+  text-shadow: 0 .5px .5px #6b514533;
+}
+.melano-hero h1 span {
+  display: block;
+  margin-top: 6px;
+  color: #6a3439;
+}
+.melano-hero__subtitle {
+  max-width: 690px;
+  margin: 0 0 17px;
+  color: #423129;
+  font: 700 clamp(16px, 1.46vw, 22px)/1.33 'Courier New', 'Liberation Mono', monospace;
+  letter-spacing: -.035em;
+}
+.melano-hero__intro {
+  max-width: 675px;
+  margin: 0;
+  color: #382d25;
+  font: 400 clamp(13px, 1.04vw, 16px)/1.55 'Courier New', 'Liberation Mono', monospace;
+  letter-spacing: -.02em;
+}
+.melano-hero__next {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 23px;
+  min-height: 44px;
+  padding: 7px 2px;
+  border-bottom: 2px solid #6a3439;
+  color: #5d2f32;
+  font: 700 clamp(12px, 1vw, 14px)/1.4 'Courier New', 'Liberation Mono', monospace;
+  letter-spacing: .015em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.melano-hero__next:hover { color: #231a19; border-color: #231a19; }
+.melano-hero__next:focus-visible { outline: 3px solid #493ab1; outline-offset: 4px; }
 
 .melano-author { display: flex; align-items: center; padding: 70px 0; background: var(--ml-green);
   --paper-light: #f7fff9; --mustard: #c5f4f1; --journey-label-color: #f7fff9; }
@@ -141,40 +195,58 @@ body:has(.journey-header) .melano-page #lectura.hb-material-reading { --material
 
 .melano-toast { position:fixed; bottom:16px; left:50%; transform:translateX(-50%); z-index:2100; color:white; background:#051e28; border-radius:5px; padding:7px 12px; font-size:12px; pointer-events:none; }
 .melano-toast:empty { display:none; }
-@media(max-width:1050px) {
- .melano-hero__layout {grid-template-columns:minmax(0,1fr) minmax(260px,.75fr);}
- .melano-hero__art {min-height:320px;}
- .melano-container {width:min(100% - 54px,1250px);}
+
+@media (max-width: 1050px) {
+  .melano-container { width: min(100% - 54px, 1250px); }
 }
-@media(max-width:850px) {
- .melano-hero__layout {grid-template-columns:1fr; gap:28px;}
- .melano-hero__art {aspect-ratio:2.4; min-height:180px; width:100%; max-height:300px; box-shadow:10px 10px 0 #40b5bc;}
- .melano-author {padding:60px 0;}
- .melano-stages {gap:10px;}
- .melano-stage {padding:16px;}
- .melano-groups {gap:10px;}
+@media (max-width: 850px) {
+  /* La imagen panorámica se conserva completa arriba; el texto baja a papel.
+     Así no se recorta la foto ni se superponen textos sobre sellos en móvil. */
+  .melano-hero { display: block; background: #ecddc2; }
+  .melano-hero__background { inset: 0 0 auto; width: 100%; aspect-ratio: 2048 / 841; }
+  .melano-hero__background img { height: auto; object-fit: contain; }
+  .melano-hero__layout {
+    display: block;
+    min-height: 0;
+    padding: clamp(175px, 42.2vw, 360px) 0 42px;
+  }
+  .melano-hero__copy {
+    width: 100%;
+    max-width: 740px;
+    padding: 24px 26px 30px;
+    border: 1px solid #b49b7b55;
+    background: #f1e3ca;
+  }
+  .melano-hero h1 { font-size: clamp(30px, 5.8vw, 43px); }
+  .melano-hero__intro { font-size: 15px; }
+  .melano-author { padding: 60px 0; }
+  .melano-stages { gap: 10px; }
+  .melano-stage { padding: 16px; }
+  .melano-groups { gap: 10px; }
 }
-@media(max-width:640px) {
- .melano-container {width:calc(100% - 34px);}
- .melano-hero {padding:30px 0 34px;}
- .melano-hero h1 {font-size:clamp(38px,10.4vw,59px);}
- .melano-hero__subtitle {font-size:19px;}
- .melano-hero__intro {font-size:14px;}
- .melano-hero__art {min-height:180px; aspect-ratio:1.9; margin-right:7px; width:calc(100% - 7px);}
- .melano-context-screen {padding-block:30px;}
- .melano-context-top {align-items:start;}
- .melano-context-top span {max-width:145px; text-align:right; font-size:10px;}
- .melano-context-heading h2 {font-size:clamp(30px,8.8vw,43px);}
- .melano-context-heading > p:last-child {font-size:16px;}
- .melano-stages, .melano-groups, .melano-sources, .melano-reading-key {grid-template-columns:1fr;}
- .melano-stages {gap:10px;}
- .melano-stage {padding:14px 17px;}
- .melano-stage__head span {font-size:52px;}
- .melano-stage h3 {margin:4px 0 5px;}
- .melano-stage p {font-size:13px;}
- .melano-groups > div {padding-left:11px;}
- .melano-source-card {padding:20px;}
- .melano-reading-key {gap:10px;}
+@media (max-width: 640px) {
+  .melano-container { width: calc(100% - 34px); }
+  .melano-hero__layout { padding-top: clamp(170px, 42.2vw, 270px); padding-bottom: 34px; }
+  .melano-hero__copy { padding: 21px 17px 26px; }
+  .melano-hero .melano-eyebrow { font-size: 11px; }
+  .melano-hero h1 { font-size: clamp(29px, 8.2vw, 39px); overflow-wrap: anywhere; }
+  .melano-hero__subtitle { font-size: 17px; }
+  .melano-hero__intro { font-size: 14px; line-height: 1.5; }
+  .melano-hero__next { font-size: 12px; }
+  .melano-context-screen { padding-block: 30px; }
+  .melano-context-top { align-items: start; }
+  .melano-context-top span { max-width: 145px; text-align: right; font-size: 10px; }
+  .melano-context-heading h2 { font-size: clamp(30px, 8.8vw, 43px); }
+  .melano-context-heading > p:last-child { font-size: 16px; }
+  .melano-stages, .melano-groups, .melano-sources, .melano-reading-key { grid-template-columns: 1fr; }
+  .melano-stages { gap: 10px; }
+  .melano-stage { padding: 14px 17px; }
+  .melano-stage__head span { font-size: 52px; }
+  .melano-stage h3 { margin: 4px 0 5px; }
+  .melano-stage p { font-size: 13px; }
+  .melano-groups > div { padding-left: 11px; }
+  .melano-source-card { padding: 20px; }
+  .melano-reading-key { gap: 10px; }
 }
 @media(prefers-reduced-motion: reduce) {
  .melano-page * {scroll-behavior:auto;}

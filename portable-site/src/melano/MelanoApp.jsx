@@ -12,7 +12,7 @@ import { melanoReaderConfig } from './readerConfig.js';
 import './melano.css';
 
 const PORTRAIT = import.meta.env.BASE_URL + 'assets/melano/ignacio-melano-retrato-20261111.jpg';
-const HERO_ARTWORK = import.meta.env.BASE_URL + 'assets/melano/melano-composicion-archivo.png';
+const HERO_BACKGROUND = import.meta.env.BASE_URL + 'assets/melano/inicio-archivo-1977.png';
 const RESOLUTION_URL = 'https://drive.google.com/file/d/15bo6oZeE9vhYWFbytFNyZCCSvcQGIg0f/view';
 const CHAPTER_URL = 'https://drive.google.com/file/d/11kPIjFdMMIAwgfiukL0VenWDqloa10oB/view';
 const BIO = 'Ignacio Emmanuel Melano es profesor y licenciado en Educación Física y magíster en Ciencias Sociales y Humanidades por la Universidad Nacional de Quilmes. Su producción académica aborda la historia de la formación de profesores, las culturas escolares y las relaciones entre educación, política y poder. Ha investigado especialmente la trayectoria del Instituto Nacional de Educación Física General Belgrano y sus transformaciones durante la última dictadura y la recuperación democrática.';
@@ -31,6 +31,9 @@ const groups = [
 
 function Inicio() {
   return <section id="inicio" className="melano-screen melano-hero" aria-labelledby="melano-title">
+    <div className="melano-hero__background" aria-hidden="true">
+      <img src={HERO_BACKGROUND} alt="" fetchPriority="high" decoding="async" />
+    </div>
     <div className="melano-container melano-hero__layout">
       <div className="melano-hero__copy">
         <JourneyBlockLabel sectionId="inicio" />
@@ -40,11 +43,7 @@ function Inicio() {
         <p className="melano-hero__intro">En 1967, el curso de varones del INEF General Belgrano fue trasladado a Capital Federal. Diez años después la formación de profesores regresó al predio de San Fernando, esta vez como anexo del INEF Buenos Aires y durante la última dictadura. ¿Qué actores, tradiciones y vínculos de poder hicieron posible ese retorno?</p>
         <a className="melano-hero__next" href="#autor">Comenzar el recorrido <ArrowDown size={19} aria-hidden="true" /></a>
       </div>
-      <div className="melano-hero__art">
-        <img src={HERO_ARTWORK} alt="Composición editorial ilustrativa: una vista de edificio institucional y un documento administrativo de época, presentados como fotografías superpuestas." fetchPriority="high" decoding="async" />
-      </div>
     </div>
-    <div className="melano-hero__stripes" aria-hidden="true"><i/><i/><i/><i/><i/></div>
   </section>;
 }
 
