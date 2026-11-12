@@ -46,7 +46,7 @@ const readablePlannedWorks = {
   'torre-pastoriza-bienestar': {
     status: 'available',
     canonicalCard: true,
-    duration: 8214.073469,
+    duration: 8299.964082,
     readingDetail: 'Seguimiento aproximado por párrafos y cuaderno de lectura',
     stateKey: 'torre-pastoriza-bienestar-reader-state-v1',
     historicalPeriod: 'Primer peronismo · 1946–1955',

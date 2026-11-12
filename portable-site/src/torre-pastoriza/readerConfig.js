@@ -6,8 +6,8 @@ export const sourceUrl = 'https://drive.google.com/file/d/1BJNJ5DyEJIylbX8E5EG6i
 export const cover = assetBase + 'chapadmalal-1950.webp';
 export const authors = 'Juan Carlos Torre · Elisa Pastoriza';
 
-// Duración del MP3 disponible para la validación local de esta rama.
-export const audioDuration = 8214.073469;
+// Duración del MP3 completo, incluida la narración de cierre.
+export const audioDuration = 8299.964082;
 export const readingDocument = {
   ...prepared.document,
   duration: audioDuration,

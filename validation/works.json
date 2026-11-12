@@ -1207,14 +1207,14 @@
       "sync": {
         "unit": "paragraph",
         "status": "paragraph-preview",
-        "review": "Candidato local. El texto y las marcas del cierre están completos. El MP3 disponible termina antes que las últimas 17 marcas y falta el cierre sonoro."
+        "review": "Seguimiento aproximado de 97 párrafos. Los dos últimos intervalos incorporan las marcas del SRT del fragmento de cierre desplazadas al punto de empalme. Cuadros, recuadro y bibliografía sin narración."
       },
       "materials": [
         {
           "path": "src/torre-pastoriza/readingDocument.generated.json",
           "kind": "alignment",
-          "bytes": 135035,
-          "sha256": "67eece38463db6a4e0d8d805bb08bf3f0387622bd5de1ffecb57c064499da475"
+          "bytes": 135034,
+          "sha256": "1f67a72fcc49197a6b60cd3a78947d7cbb300cc8d66c76f34141f1a42e246f41"
         },
         {
           "path": "public/assets/torre-pastoriza/texto-academico.txt",
@@ -1231,15 +1231,16 @@
         {
           "path": "public/assets/torre-pastoriza/audiolibro.mp3",
           "kind": "audio",
-          "bytes": 82141198,
-          "sha256": "afdd30c8357c485cd949fc4557cb2c32dd5b49c73eb86d396e1ee74931c8f496"
+          "bytes": 84202414,
+          "sha256": "013ff368d7c41c6bcd1bd64f4921157218747d7145ab7403712a12308d23c16f",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=1F9nw482pxJHxQ_a4gmL4llpnROjgv9rn&export=download&confirm=t"
         }
       ],
-      "audioDuration": 8214.073469,
-      "audioSha256": "afdd30c8357c485cd949fc4557cb2c32dd5b49c73eb86d396e1ee74931c8f496",
+      "audioDuration": 8299.964082,
+      "audioSha256": "013ff368d7c41c6bcd1bd64f4921157218747d7145ab7403712a12308d23c16f",
       "subtitleTimelineEnd": 8301.719,
-      "subtitleTimelineReason": "El SRT de reemplazo cubre 2:18:21,719 y el MP3 disponible cubre 2:16:54. Se conservan las marcas de origen.",
-      "documentSha256": "c2b22973f471617902921d11a2a8ad863626048493861a8104574177467e5857"
+      "subtitleTimelineReason": "El SRT completo se conserva como fuente. Sus últimas marcas terminan 1,755 s después del MP3 empalmado; el resaltado del cierre usa los tiempos del SRT del fragmento.",
+      "documentSha256": "08b971ac5b8b3cd2b94c29f6136767fe210df0c0a0f2ee577f8dfc179a17b25a"
     }
   ],
   "baseline": {
