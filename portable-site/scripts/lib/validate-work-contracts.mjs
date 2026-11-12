@@ -77,6 +77,10 @@ export function checkManifest(manifest) {
     if (!finite(work.audioDuration) || work.audioDuration === 0) throw new Error(`${work.id}: duración real requerida`);
     if (!['sentence', 'paragraph'].includes(work.sync?.unit) || !['ready', 'pending', 'paragraph-preview'].includes(work.sync?.status) || !present(work.sync?.review)) throw new Error(`${work.id}: modalidad/estado/revisión requeridos`);
     if (work.sync.status === 'paragraph-preview' && work.sync.unit !== 'paragraph') throw new Error(`${work.id}: paragraph-preview requiere párrafos`);
+    const untimed = work.sync.untimedParagraphIds;
+    if (untimed !== undefined && (work.sync.unit !== 'paragraph' || !Array.isArray(untimed) || !untimed.every(present) || new Set(untimed).size !== untimed.length)) {
+      throw new Error(`${work.id}: IDs inválidos o repetidos para párrafos sin narración`);
+    }
     if (!present(work.storage?.notesKey) || !present(work.storage?.stateKey)) throw new Error(`${work.id}: claves de guardado requeridas`);
     if (!Array.isArray(work.materials) || !work.materials.length) throw new Error(`${work.id}: materiales requeridos`);
     const paths = new Set();
@@ -193,7 +197,12 @@ export async function validateWorks({ root, manifest, contracts, catalog, progra
     }
     if (work.sync.unit === 'paragraph') {
       const paragraphIds = document.sections.flatMap(section => section.paragraphs.map(item => item.id));
-      check(JSON.stringify(config.sync.paragraphTimings.map(item => item.id)) === JSON.stringify(paragraphIds), 'paragraph-coverage', work.id, 'Los tiempos deben cubrir cada párrafo una vez y en orden.');
+      const untimed = work.sync.untimedParagraphIds || [];
+      check(untimed.every(id => paragraphIds.includes(id)),
+        'paragraph-coverage', work.id, 'Los párrafos sin narración deben existir en el documento.');
+      const expectedTimedIds = paragraphIds.filter(id => !untimed.includes(id));
+      check(JSON.stringify(config.sync.paragraphTimings.map(item => item.id)) === JSON.stringify(expectedTimedIds),
+        'paragraph-coverage', work.id, 'Los tiempos deben cubrir cada párrafo narrado una vez y en orden.');
     }
     const units = readingUnits(document, config);
     const timeline = validateTimeline(units, work.audioDuration, { allowUntimed: config.sync.status === 'pending' });

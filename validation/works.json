@@ -1389,6 +1389,161 @@
       "audioDuration": 1625.521633,
       "audioSha256": "1c834a8330d4796052eedd0c14ad86f67b189e8a482ede0ddf196b7aa9038c2e",
       "documentSha256": "a75a928b21eb1dd12f96632a04c90c2bbf8aaaba5738aa0e8565e816601b57af"
+    },
+    {
+      "id": "levoratti-gimnasia-1958-1968",
+      "config": {
+        "module": "src/levoratti/readerContract.js",
+        "export": "levorattiIntegratedConfig"
+      },
+      "document": {
+        "module": "src/levoratti/readerContract.js",
+        "export": "levorattiReadingDocument"
+      },
+      "page": "src/levoratti/LevorattiApp.jsx",
+      "main": "src/levoratti/LevorattiMain.jsx",
+      "creditsKey": "levorattiGimnasia",
+      "storage": {
+        "notesKey": "levoratti-gimnasia-1958-1968-audio-notes-v1",
+        "stateKey": "levoratti-gimnasia-1958-1968-audio-state-v1"
+      },
+      "sync": {
+        "unit": "paragraph",
+        "status": "paragraph-preview",
+        "review": "Seguimiento aproximado de 39 párrafos narrados. Las referencias se conservan como texto.",
+        "untimedParagraphIds": [
+          "levoratti-referencias-p1"
+        ]
+      },
+      "materials": [
+        {
+          "path": "src/levoratti/readingDocument.generated.json",
+          "kind": "alignment",
+          "bytes": 62619,
+          "sha256": "208c6edb01354f852dd2b1798e1cfe5c29a4d004fa5f30038b27152f6e692e3a"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/texto-academico.txt",
+          "kind": "text",
+          "bytes": 50174,
+          "sha256": "0a4deb7f30e481f0fb720e43ab73ba18924431f1597439f88b2a3be4135a7d98"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/subtitulos.srt",
+          "kind": "subtitles",
+          "bytes": 50559,
+          "sha256": "3c1a1626d8e076bda8fad8c7d2a69f282cb5d9f18e1770755929f6aff18e1551"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-00.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "87595e0cb0467bda6f25c0f4fc5da617dae43ddcb4eb06e527f350ade22c70da"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-01.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "60779be8c8885072466f1b9f0c119cf92205f398f23c85cb43ee2b6c2de9a6d6"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-02.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "35344dacc2511a94d21e8e525d21982d0180355e43a2220c709cd811abd94823"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-03.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "89bdc1209cb83860858e68d3895b4261a6ee703f81e9e1cddfd74f79353354af"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-04.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "b8510ed51ffd087ecd242bb8e5ea35eb01e858a4019bb06adcc70607212ecb1b"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-05.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "d27506c5d711e26f078209a002e95a8fef1d9c7c7c3c0f57fbc60d3292b3ffff"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-06.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "9959fbb6bf0b5434670c25bdc48b5a98da96297497d6e352074fe9ec737c0628"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-07.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "eb48889ed31d527f038d9588a933add2f8f2d65cde23ff8c876e1377b0148b79"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-08.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "fd12452e43a5eb54ef23e1d5274315a9ed567468e8ce4a36c3fc08d7407c1eda"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-09.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "64e68f172cb00d7966805561aa5caa1d47c435c6225c7ecb3f710be5c7a34db4"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-10.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "1cce07bc52342903463483c38052d256bd7c7cb828f3a17a3fa9d868084c0905"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-11.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "9947adb0a6692ce9af45c093984221743900a31e25b5700fc3d8ae0b24f5746d"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-12.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "0e63afef248fde35931e2a0d391b095a17b4308977ba9610ab444be0195d1a0d"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-13.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "cf78f94fcdc41c537c79b7a85145c6a0386d6abeafc2282482a10683065be11c"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-14.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "153ff36c9fb17f1cbb83f0b19172bef830d2500a152249c945a0fb64cab29ec6"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-15.part",
+          "kind": "audio",
+          "bytes": 1350000,
+          "sha256": "671fb32d8591bd6089ce293e384dbf33f5a66144d7596ff75eb1ec71b929aaad"
+        },
+        {
+          "path": "public/assets/levoratti-gimnasia-1958-1968/audio/audio-16.part",
+          "kind": "audio",
+          "bytes": 597397,
+          "sha256": "f32828fc272d7df2b462087b3cfd3c72207d100205891ee02ce65b7e7125cd89"
+        }
+      ],
+      "audioDuration": 2219.702857,
+      "audioSha256": "c1986f295011edcd8106ab3bc7be3bd6e6083b4d9e0218b620a02c7050fb36f6",
+      "documentSha256": "a2fff9042c4ca593c8f1aed647913127bd612a206e981095f13cda02166d7171",
+      "durationDifference": {
+        "seconds": 0.367857,
+        "reason": "La duración del documento corresponde a la última marca del SRT; el contenedor MP3 registra su propia duración."
+      }
     }
   ],
   "baseline": {

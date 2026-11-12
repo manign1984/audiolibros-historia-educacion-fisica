@@ -3,6 +3,7 @@ import { access, readFile } from 'node:fs/promises';
 import {
   alphabeticGroup,
   catalog as allCatalog,
+  workRegistry,
   programGroups,
   citationAsPlainText,
   filterCatalog,
@@ -123,7 +124,24 @@ await Promise.all([
 ]);
 
 // New catalog entries have stable physical routes; their availability is explicit.
-assert.equal(allCatalog.length, 31);
+assert.deepEqual(new Set(allCatalog.map(({ id }) => id)), new Set([
+  'hobsbawm-historia-siglo-xx', 'aisenstein-tabla-rasa',
+  'marcaida-scaltritti-estado-nacional', 'soares-corrientes-gimnasticas',
+  'lionetti-escuela-republicana', 'scharagrodsky-constitucion-ef',
+  'pineau-fresco-noble', 'feiguin-aisenstein-sujetos',
+  'torre-pastoriza-bienestar', 'almada-privilegiados',
+  'orbuch-educar-al-cuerpo', 'arata-marino-auroras-tempestades',
+  'levoratti-gimnasia-1958-1968', 'pineau-reprimir-discriminar',
+  'melano-aisenstein-ultima-dictadura', 'thwaites-rey-democracia-argentina',
+  'levoratti-debates-ef', 'galak-del-dicho-al-hecho',
+]));
+assert.equal(allCatalog.find(({ id }) => id === 'lionetti-escuela-republicana').programGroup, 'unidad-2');
+assert.deepEqual(filterCatalog(allCatalog, 'Levoratti').map(({ id }) => id), [
+  'levoratti-gimnasia-1958-1968', 'levoratti-debates-ef',
+]);
+assert.equal(filterCatalog(allCatalog, 'militares al gobierno').length, 0);
+assert.ok(workRegistry.some(({ id }) => id === 'melano-militares-juramentados'));
+
 assert.equal(new Set(allCatalog.map((entry) => entry.id)).size, allCatalog.length);
 for (const entry of allCatalog) {
   assert.ok(programGroups.some((group) => group.id === entry.programGroup));
@@ -153,7 +171,7 @@ assert.equal(marcaida.stateKey, 'marcaida-scaltritti-reader-state-v2');
 assert.deepEqual(programGroups.map(({ id }) => id), [
   'unidad-1', 'unidad-2', 'unidad-3', 'unidad-4', 'unidad-5', 'complementaria',
 ]);
-assert.deepEqual(programGroups.map(({ id }) => allCatalog.filter((entry) => entry.programGroup === id).length), [2, 2, 4, 4, 6, 13]);
+assert.deepEqual(programGroups.map(({ id }) => allCatalog.filter((entry) => entry.programGroup === id).length), [1, 3, 2, 2, 3, 7]);
 assert.equal(marcaida.programGroup, 'unidad-2');
 assert.equal(pineau.programGroup, 'unidad-4');
 assert.equal(orbuch.programGroup, 'complementaria');
@@ -166,7 +184,8 @@ assert.equal(matchesAvailability(marcaida, 'review'), true, 'Aparecer en filtro 
 assert.equal(matchesAvailability(marcaida, 'preparation'), false, 'Nunca aparecer como ficha sin materiales.');
 assert.equal(matchesAvailability(orbuch, 'review'), false);
 assert.equal(matchesAvailability(orbuch, 'available'), true);
-assert.equal(matchesAvailability(allCatalog.find((entry) => entry.id === 'braudel-historia-duraciones'), 'preparation'), true);
+assert.equal(filterCatalog(allCatalog, 'Braudel').length, 0);
+assert.equal(matchesAvailability(workRegistry.find((entry) => entry.id === 'braudel-historia-duraciones'), 'preparation'), true);
 const soares = allCatalog.find((entry) => entry.id === 'soares-corrientes-gimnasticas');
 assert.ok(soares);
 assert.equal(soares.status, 'available', 'Soares figura como Leer + escuchar, con el lector publicado.');
@@ -176,7 +195,7 @@ assert.equal(canReadAndListen(soares), true, 'Soares figura entre los lectores c
 const torrePastoriza = allCatalog.find((entry) => entry.id === 'torre-pastoriza-bienestar');
 assert.ok(torrePastoriza);
 assert.equal(canReadAndListen(torrePastoriza), true);
-assert.equal(allCatalog.filter(canReadAndListen).length, 12, 'Doce recorridos permiten leer y escuchar.');
+assert.equal(allCatalog.filter(canReadAndListen).length, 13, 'Trece recorridos del catálogo tienen estado audiovisual validado.');
 assert.match(libraryHome, /const readable = catalog\.filter/, 'La biblioteca obtiene el progreso de los recorridos existentes.');
 assert.match(libraryHome, /matchesAvailability\(entry, status\)/, 'Los filtros distinguen capacidades de estado editorial.');
 assert.match(libraryHome, /const available = catalog\.filter\(\(entry\) => entry\.status === 'available'\)/, 'Conservar los cuatro destacados del carrusel automático.');
@@ -210,7 +229,7 @@ const blocked = { getItem() { throw new Error('Blocked'); }, setItem() { throw n
 assert.deepEqual(readList(blocked, ids), []);
 assert.equal(saveList(blocked, ids), false);
 assert.equal(readProgress(blocked, pineau), 0);
-console.log('Biblioteca: 31 fichas, 12 recorridos de lectura y audio (11 disponibles y 1 en revisión), búsqueda, APA, rutas, lista y progreso verificados.');
+console.log('Biblioteca: 18 fichas de apertura, 13 recorridos con estado audiovisual validado, búsqueda, APA, rutas, lista y progreso verificados.');
 
 
 // Portada de la biblioteca = una pantalla útil bajo el encabezado real.

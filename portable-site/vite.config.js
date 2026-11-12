@@ -2,7 +2,7 @@ import { soaresLocalCandidate } from './scripts/soares-local-candidate.mjs';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
-import { LIBRARY_CONFIG, catalog } from './src/biblioteca/catalog.js';
+import { LIBRARY_CONFIG, workRegistry } from './src/biblioteca/catalog.js';
 
 const configuredBase = process.env.GITHUB_PAGES_BASE || '/';
 const base = configuredBase.endsWith('/') ? configuredBase : `${configuredBase}/`;
@@ -45,11 +45,10 @@ export default defineConfig({
         aisensteinTablaRasa: fileURLToPath(new URL('./textos/aisenstein-tabla-rasa/index.html', import.meta.url)),
         hobsbawmHistoriaSigloXX: fileURLToPath(new URL('./textos/hobsbawm-historia-siglo-xx/index.html', import.meta.url)),
         scharagrodskyConstitucionEF: fileURLToPath(new URL('./textos/scharagrodsky-constitucion-ef/index.html', import.meta.url)),
-        levorattiGimnasia1958: fileURLToPath(new URL('./textos/levoratti-gimnasia-1958-1968/index.html', import.meta.url)),
         // Las cinco entradas históricas ya están declaradas arriba.
         // Compilar las demás rutas por identidad, no por estado: una obra
         // que pasa de revisión a disponible debe conservar su página física.
-        ...Object.fromEntries(catalog.filter((entry) => ![
+        ...Object.fromEntries(workRegistry.filter((entry) => ![
           'orbuch-educar-al-cuerpo',
           'pineau-fresco-noble',
           'aisenstein-tabla-rasa',

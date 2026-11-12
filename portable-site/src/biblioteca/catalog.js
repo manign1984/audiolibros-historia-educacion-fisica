@@ -141,13 +141,38 @@ const publishedWorks = [
   },
 ];
 
-export const catalog = [
+export const workRegistry = [
   ...publishedWorks,
   ...plannedWorks.filter((entry) => !publishedWorks.some((work) => work.id === entry.id)),
 ].map((entry) => ({
   ...entry,
   programGroup: programGroupByWork.get(entry.id) ?? 'complementaria',
 }));
+
+// Selección de apertura. El registro conserva las rutas y las claves guardadas
+// de las fichas que podrán reincorporarse más adelante.
+const openingIds = new Set([
+  'hobsbawm-historia-siglo-xx',
+  'aisenstein-tabla-rasa',
+  'marcaida-scaltritti-estado-nacional',
+  'soares-corrientes-gimnasticas',
+  'lionetti-escuela-republicana',
+  'scharagrodsky-constitucion-ef',
+  'pineau-fresco-noble',
+  'feiguin-aisenstein-sujetos',
+  'torre-pastoriza-bienestar',
+  'almada-privilegiados',
+  'orbuch-educar-al-cuerpo',
+  'arata-marino-auroras-tempestades',
+  'levoratti-gimnasia-1958-1968',
+  'pineau-reprimir-discriminar',
+  'melano-aisenstein-ultima-dictadura',
+  'thwaites-rey-democracia-argentina',
+  'levoratti-debates-ef',
+  'galak-del-dicho-al-hecho',
+]);
+
+export const catalog = workRegistry.filter((entry) => openingIds.has(entry.id));
 
 export const canReadAndListen = (entry) => entry.status === 'available' || entry.status === 'review';
 export function matchesAvailability(entry, selected = 'all') {
