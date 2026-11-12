@@ -1,6 +1,20 @@
 const link = (href, children) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
 
 export const creditsContent = {
+  pineauDictadura: {
+    references: [
+      <>Pineau, P. (2014). Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983). <em>Educar em Revista</em>, (51), 103–122.</>,
+      link('https://drive.google.com/file/d/1vPYdIzNLMJNFLsZoK9z3EQED4mgGCdEt/view', 'Artículo académico original · edición en PDF con resúmenes y aparato crítico'),
+      link('https://docs.google.com/document/d/12Zdn1aWkeeAZ4ByTPsfCh3aOrNCOM8z7oqB01MJNNyc/edit', 'Texto de estudio facilitado para la lectura accesible'),
+      link('https://posgrado.filo.uba.ar/pineau-pablo', 'Universidad de Buenos Aires · biografía académica de Pablo Pineau'),
+    ],
+    rights: [
+      <>Autoría de la investigación: Pablo Pineau. La lectura conserva el cuerpo del artículo académico del documento de trabajo facilitado; para los resúmenes, notas y referencias de la edición impresa, consultar el PDF original.</>,
+      <>Fotografía del autor: Facultad de Filosofía y Letras, UBA, según la atribución de la página anterior dedicada a Pineau.</>,
+      <>Composición tipográfica de Inicio y esquemas de Contexto: elaboración didáctica de +TEC UNAHUR, no documentos históricos de época.</>,
+      <>Audiolibro aportado al proyecto +TEC UNAHUR; el seguimiento temporal es aproximado por párrafos.</>,
+    ],
+  },
   levorattiGimnasia: {
     references: [
       <>Levoratti, A. (2022). La educación física y la gimnasia en la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968). <em>Revista da ALESDE, 14</em>(2), 162–178. {link('https://doi.org/10.5380/jlasss.v14i2.87581', 'https://doi.org/10.5380/jlasss.v14i2.87581')}</>,

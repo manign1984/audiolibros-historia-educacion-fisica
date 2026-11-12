@@ -1,0 +1,2985 @@
+1
+00:00:00,000 --> 00:00:07,800
+Reprimir y discriminar. La educación en
+la última dictadura cívico-militar en
+
+2
+00:00:07,800 --> 00:00:10,160
+Argentina, (1976-1983).
+
+3
+00:00:10,583 --> 00:00:11,863
+Pablo Pineau.
+
+4
+00:00:12,258 --> 00:00:15,778
+<break time="0.8s"/>Introducción.<break
+time="1.2s"/>
+
+5
+00:00:15,894 --> 00:00:21,101
+Los sectores cívico-militares que
+ocuparon el poder en Argentina el 24 de
+
+6
+00:00:21,101 --> 00:00:26,597
+marzo de 1976 sostenían que el país se
+encontraba en crisis a causa de que la
+
+7
+00:00:26,597 --> 00:00:32,238
+sociedad se había desbordado. Por eso se
+propusieron reordenarla, y para tal no
+
+8
+00:00:32,238 --> 00:00:38,024
+dudaron en ponerse el pomposo nombre de
+"Proceso de Reorganización Nacional". Los
+
+9
+00:00:38,024 --> 00:00:43,881
+instrumentos utilizados formaron parte de
+un proyecto político basado en el estado
+
+10
+00:00:43,881 --> 00:00:49,450
+de sitio, el terrorismo de Estado, la
+prohibición del accionar de los partidos
+
+11
+00:00:49,450 --> 00:00:54,729
+y sindicatos, la represión de la
+sociedad, el abuso de poder y la sumisión
+
+12
+00:00:54,729 --> 00:00:55,814
+de la justicia.
+
+13
+00:00:56,309 --> 00:01:01,547
+Ese reordenamiento político acompañó un
+reordenamiento económico. Se adscribió a
+
+14
+00:01:01,547 --> 00:01:06,454
+las teorías monetaristas de la escuela de
+Chicago que privilegian al sector
+
+15
+00:01:06,454 --> 00:01:11,427
+financiero. La apertura de los mercados,
+el fomento de las importaciones, la
+
+16
+00:01:11,427 --> 00:01:16,665
+progresiva eliminación de los mecanismos
+clásicos de protección de la producción
+
+17
+00:01:16,665 --> 00:01:21,970
+local y una pauta cambiaría desfavorable
+se combinaron para dar como resultado un
+
+18
+00:01:21,970 --> 00:01:25,749
+proceso de desindustrialización y
+concentración económica.
+
+19
+00:01:26,144 --> 00:01:31,035
+Por supuesto, el registro educativo no
+estuvo exento de esta situación. La
+
+20
+00:01:31,035 --> 00:01:35,257
+Dictadura llevó a cabo políticas
+específicas en el sector que se
+
+21
+00:01:35,257 --> 00:01:40,349
+propusieron modificar algunas lógicas
+previas y volverlas solidarias al resto
+
+22
+00:01:40,349 --> 00:01:45,575
+de los cambios sociales. Diversos autores
+han señalado algunos de los elementos
+
+23
+00:01:45,575 --> 00:01:50,333
+constituyentes de las políticas
+educativas de la época, como su carácter
+
+24
+00:01:50,333 --> 00:01:54,889
+reactivo y autoritario, la militarización
+del sistema educativo, y la
+
+25
+00:01:54,889 --> 00:02:00,116
+burocratización y verticalización de su
+estructura administrativa en aras de un
+
+26
+00:02:00,116 --> 00:02:04,940
+mayor disciplinamiento social y la
+pérdida de la especificidad pedagógica
+
+27
+00:02:04,940 --> 00:02:05,744
+del sistema.
+
+28
+00:02:06,167 --> 00:02:11,981
+La renovación cultural y pedagogía de los
+años 1960 y 1970 había puesto en cuestión
+
+29
+00:02:11,981 --> 00:02:16,731
+los modelos educativos previos
+provenientes del siglo XIX. Esos años
+
+30
+00:02:16,731 --> 00:02:21,907
+vieron la aparición de nuevos fenómenos
+como la adscripción a las llamadas
+
+31
+00:02:21,907 --> 00:02:27,153
+teorías "críticas", que iban desde Illich
+al reproductivismo, de docentes y
+
+32
+00:02:27,153 --> 00:02:31,974
+pedagogos, la expansión del
+psicoanálisis, el avance de la psicología
+
+33
+00:02:31,974 --> 00:02:37,434
+social y la dinámica de grupo, de la
+pedagogía de la recreación, de las nuevas
+
+34
+00:02:37,434 --> 00:02:42,113
+concepciones de infancia, y la
+publicación de libros de lectura más
+
+35
+00:02:42,113 --> 00:02:47,502
+modernos que propiciaban la lectura
+comprensiva solipsista. Ya en los 1970 se
+
+36
+00:02:47,502 --> 00:02:53,173
+produjo una mayor radicalización política
+mediante la sindicalización docente, la
+
+37
+00:02:53,173 --> 00:02:58,633
+campaña de alfabetización Campaña de
+Reactivación Educativa de Adultos para la
+
+38
+00:02:58,633 --> 00:03:03,525
+Reconstrucción (CREAR), la extensión
+universitaria y la difusión de la
+
+39
+00:03:03,525 --> 00:03:08,701
+pedagogía de la Liberación. Esta
+situación fue un importante abono para la
+
+40
+00:03:08,701 --> 00:03:13,734
+Dictadura, sobre todo para quienes
+añoraban cierto pasado "mítico" de un
+
+41
+00:03:13,734 --> 00:03:14,727
+orden perdido.
+
+42
+00:03:15,107 --> 00:03:19,762
+Sostendremos en este escrito que la
+dictadura instrumentó una política
+
+43
+00:03:19,762 --> 00:03:24,888
+educativa basada en dos estrategias. Por
+un lado, la que podemos denominar la
+
+44
+00:03:24,888 --> 00:03:29,408
+estrategia represiva, coto de los
+sectores más tradicionalistas, que
+
+45
+00:03:29,408 --> 00:03:34,737
+buscaba hacer desaparecer, con el peso
+que este término tuvo en esos años, a los
+
+46
+00:03:34,737 --> 00:03:39,594
+elementos de renovación previos
+presentados en el párrafo anterior, y por
+
+47
+00:03:39,594 --> 00:03:44,788
+otro la estrategia discriminadora, coto
+de los sectores más tecnocráticos, que
+
+48
+00:03:44,788 --> 00:03:49,848
+buscaba romper los elementos presentes en
+la escuela pública tendientes a la
+
+49
+00:03:49,848 --> 00:03:54,840
+democratización social mediante la
+homogeneización: "una escuela única para
+
+50
+00:03:54,840 --> 00:04:00,169
+todos sin importar las diferencias", y
+proponer un sistema educativo fuertemente
+
+51
+00:04:00,169 --> 00:04:02,867
+fragmentado por circuitos diferenciados.
+
+52
+00:04:03,358 --> 00:04:07,578
+<break time="0.9s"/>La estrategia
+represiva.<break time="1.4s"/>
+
+53
+00:04:07,699 --> 00:04:12,784
+Los grupos que apoyaron a la dictadura
+compartían un balance fuertemente
+
+54
+00:04:12,784 --> 00:04:18,369
+negativo del período político anterior,
+calificado de "violento", "subversivo",
+
+55
+00:04:18,369 --> 00:04:24,170
+"desbordado", "demagógico", "populista",
+etc. dérota, y coincidían en la necesidad
+
+56
+00:04:24,170 --> 00:04:29,398
+de implementar un gran plan represivo
+para reordenar el país. Esta función
+
+57
+00:04:29,398 --> 00:04:34,912
+debía ser llevada a cabo por las fuerzas
+de seguridad, consideradas "baluartes
+
+58
+00:04:34,912 --> 00:04:40,641
+morales de la Nación", "guardianes de la
+soberanía", "garantes de las tradiciones
+
+59
+00:04:40,641 --> 00:04:45,797
+nacionales", etc. dérota, y co-corro a la
+unidad de la unidad, que, en el
+
+60
+00:04:45,797 --> 00:04:51,383
+contrario, se ha sucedido a la unidad de
+la unidad, que, en el contrario, se ha
+
+61
+00:04:51,383 --> 00:04:56,825
+sucedido a la unidad de la unidad. El
+país de la unidad de la unidad, que, en
+
+62
+00:04:56,825 --> 00:05:02,626
+el contrario, se ha sucedido a la unidad
+de la unidad, que, en el contrario, se ha
+
+63
+00:05:02,626 --> 00:05:08,069
+sucedido a la unidad de la unidad. El
+país de la unidad de la unidad, que, en
+
+64
+00:05:08,069 --> 00:05:13,798
+el contrario, se ha sucedido a la unidad
+de la unidad. El país de la unidad de la
+
+65
+00:05:13,798 --> 00:05:18,739
+unidad, que, en el contrario, se ha
+sucedido a la unidad de la unidad.
+
+66
+00:05:19,121 --> 00:05:24,553
+Como sostiene Masiello, la dictadura
+impuso una política social de vaciamiento
+
+67
+00:05:24,553 --> 00:05:30,127
+de la polifonía de voces que constituye a
+las sociedades democráticas porque "la
+
+68
+00:05:30,127 --> 00:05:34,924
+norma autoritaria expulsa a los
+individuos de una esfera pública y se
+
+69
+00:05:34,924 --> 00:05:40,216
+niega a permitirles el diálogo con el
+poder o cualquier crítica del Estado".
+
+70
+00:05:40,216 --> 00:05:45,507
+Con la excepción de unos pocos, la
+sociedad fue unificándose y ajustándose a
+
+71
+00:05:45,507 --> 00:05:50,657
+ese reclamo de "pacificación por
+represión" que implicaba uniformización y
+
+72
+00:05:50,657 --> 00:05:55,737
+disciplinamiento por todas las vías
+posibles. El imaginario social estaba
+
+73
+00:05:55,737 --> 00:06:01,169
+listo para la implementación del horror,
+y los niveles de aberración a los que
+
+74
+00:06:01,169 --> 00:06:06,813
+llegaron las violaciones a los derechos
+humanos en el período escapan a cualquier
+
+75
+00:06:06,813 --> 00:06:11,681
+intento de semantización, y nos vinculan
+con los límites de lo humano.
+
+76
+00:06:12,205 --> 00:06:17,085
+El sistema educativo fue un lugar
+privileged para su puesta en acción. Si
+
+77
+00:06:17,085 --> 00:06:22,237
+bien el autoritarismo es una de las
+marcas de origen de la escuela argentina,
+
+78
+00:06:22,237 --> 00:06:27,320
+y su historia previa también daba cuentas
+de actos represivos, el despliegue
+
+79
+00:06:27,320 --> 00:06:32,743
+alcanzado en la última dictadura superó
+todo diagnóstico. La desaparición forzada
+
+80
+00:06:32,743 --> 00:06:37,827
+de personas castigó muy duramente a
+docentes, investigadores, estudiantes, a
+
+81
+00:06:37,827 --> 00:06:43,385
+éstos se le sumaba además su condición de
+jóvenes, y al resto de su personal. A eso
+
+82
+00:06:43,385 --> 00:06:48,807
+deben sumarse el exilio, la encarcelación
+por motivos ideológicos, los despidos y
+
+83
+00:06:48,807 --> 00:06:53,484
+"puestas a disponibilidad", el cierre de
+instituciones y carreras, las
+
+84
+00:06:53,484 --> 00:06:58,907
+prohibiciones y otras formas de censura,
+la quema de libros y las diversas formas
+
+85
+00:06:58,907 --> 00:07:03,245
+de uniformización y disciplinamiento de
+las prácticas cotidianas.
+
+86
+00:07:03,669 --> 00:07:09,247
+El dispositivo de controlar social y
+accionar político del esquema represivo
+
+87
+00:07:09,247 --> 00:07:14,527
+se basa en la siguiente serie de
+inferencias: primero, todo hecho social
+
+88
+00:07:14,527 --> 00:07:20,105
+es un hecho político; segundo, todo hecho
+político es un hecho subversivo; y
+
+89
+00:07:20,105 --> 00:07:23,749
+tercero, todo hecho subversivo debe ser
+reprimido.
+
+90
+00:07:24,126 --> 00:07:29,775
+En los períodos en que está en vigencia,
+los sujetos deben evitar la activación de
+
+91
+00:07:29,775 --> 00:07:34,796
+esta cadena, lo cual era en muchos casos
+imposible. Durante la dictadura,
+
+92
+00:07:34,796 --> 00:07:40,306
+prácticas "sociales" como la lectura de
+ciertas publicaciones, la concurrencia a
+
+93
+00:07:40,306 --> 00:07:45,187
+eventos culturales (por ejemplo,
+recitales de rock), o el encuentro con
+
+94
+00:07:45,187 --> 00:07:50,557
+ciertas personas, eran susceptibles de
+ser reprimidos por la fuerza pública si
+
+95
+00:07:50,557 --> 00:07:56,137
+ésta así lo consideraba conveniente. A la
+inversa de los estados de derecho, toda
+
+96
+00:07:56,137 --> 00:08:01,088
+persona se veía en la obligación de
+demostrar su inocencia ante el poder
+
+97
+00:08:01,088 --> 00:08:04,366
+porque la culpabilidad era su condición
+natural.
+
+98
+00:08:04,750 --> 00:08:10,369
+Invernizzi y Gociol señalan que, si bien
+la categoría "subversivo" nunca termina
+
+99
+00:08:10,369 --> 00:08:15,490
+de ser definida, de hecho, para el
+esquema represivo todo podía serlo, se
+
+100
+00:08:15,490 --> 00:08:21,108
+utilizaba para hacer referencia a ciertos
+tópicos opuestos al "ser nacional" y a
+
+101
+00:08:21,108 --> 00:08:26,016
+nuestro modo de ser "occidental y
+cristiano". Dentro de esto, un lugar
+
+102
+00:08:26,016 --> 00:08:31,635
+especial lo ocupa el "marxismo", al que
+los censores parecen otorgarle una mayor
+
+103
+00:08:31,635 --> 00:08:37,040
+consistencia teórica y argumentativa.
+Esta caracterización difusa dio lugar a
+
+104
+00:08:37,040 --> 00:08:42,588
+la aparición de ciertas fórmulas que se
+repiten casi sin variación en todos los
+
+105
+00:08:42,588 --> 00:08:47,993
+documentos referidos al tema y en los
+dictámenes emitidos para identificar al
+
+106
+00:08:47,993 --> 00:08:53,612
+"enemigo" u "oponente", y que configuran
+los peligros introducidos en la escuela
+
+107
+00:08:53,612 --> 00:08:55,390
+por docentes subversivos.
+
+108
+00:08:55,927 --> 00:09:01,574
+Según el esquema presentado más arriba,
+todo hecho educativo, en tanto hecho
+
+109
+00:09:01,574 --> 00:09:06,845
+social, podía dar lugar a un acto de
+represión al desplegarse la cadena
+
+110
+00:09:06,845 --> 00:09:12,191
+presentada. El discurso oficial le
+asignaba a la escuela, y más aún a la
+
+111
+00:09:12,191 --> 00:09:17,989
+universidad, el haber ocupado un rol muy
+importante en la generación del "caos
+
+112
+00:09:17,989 --> 00:09:24,164
+social" de los primeros años de los 1970.
+Por eso la estrategia represiva tuvo como
+
+113
+00:09:24,164 --> 00:09:29,661
+objetivo principal disciplinar al sistema
+educativo, y erradicar de él los
+
+114
+00:09:29,661 --> 00:09:35,609
+elementos de modernización de las décadas
+anteriores, que hemos denominado en el
+
+115
+00:09:35,609 --> 00:09:41,633
+capítulo anterior como la "modernización
+incluyente", englobada dentro de la gran
+
+116
+00:09:41,633 --> 00:09:46,979
+bolsa de "lo subversivo". La cadena
+metonímica iniciada por "subversión"
+
+117
+00:09:46,979 --> 00:09:51,648
+parece no tener fin, y engarza
+significantes como drogadicción,
+
+118
+00:09:51,648 --> 00:09:57,596
+juventud, literatura comprometida, rock,
+desaliño, crisis de la familia, pérdida
+
+119
+00:09:57,596 --> 00:10:02,943
+de valores, comunismo, relativismo,
+pornografía, inmoralidad, hedonismo,
+
+120
+00:10:02,943 --> 00:10:08,741
+frivolidad, libertad, trabajos grupales,
+campamentos e ingreso irrestricto. Su
+
+121
+00:10:08,741 --> 00:10:14,313
+consecuencia fue que el impacto del
+terrorismo de Estado dentro del sistema
+
+122
+00:10:14,313 --> 00:10:17,927
+educativo fue tan grande como difícil de
+abarcar.
+
+123
+00:10:18,268 --> 00:10:23,574
+Estas prácticas tenían como su instancia
+propositiva principal reinstaurar un
+
+124
+00:10:23,574 --> 00:10:29,160
+discurso tradicionalista de la más pura
+cepa católica integrista, fundamentalista
+
+125
+00:10:29,160 --> 00:10:34,257
+y oscurantista. Así, represión y
+tradición se enlazaron profundamente para
+
+126
+00:10:34,257 --> 00:10:39,703
+ahogar todo intento de democratización
+educativa. Por ejemplo, en los Objetivos
+
+127
+00:10:39,703 --> 00:10:45,358
+Pedagógicos del Nivel Primario acordados
+con el Consejo Federal de Educación el 12
+
+128
+00:10:45,358 --> 00:10:50,525
+de diciembre de 1980 se sostiene,
+respecto del fin de la educación: "Siendo
+
+129
+00:10:50,525 --> 00:10:55,692
+el fin de la educación la formación
+integral, armónica y permanente de cada
+
+130
+00:10:55,692 --> 00:11:00,649
+hombre, en función de sus fines
+esenciales, la propia vocación y el bien
+
+131
+00:11:00,649 --> 00:11:05,606
+común, el sistema educativo deberá
+asegurar a todos los habitantes de la
+
+132
+00:11:05,606 --> 00:11:10,564
+Nación una educación acorde a tal fin, a
+través del cultivo de virtudes,
+
+133
+00:11:10,564 --> 00:11:16,149
+integrándola con los valores de la moral
+cristiana, de la tradición nacional y de
+
+134
+00:11:16,149 --> 00:11:21,735
+la dignidad del ser argentino". Y entre
+sus objetivos generales señala: "Preparar
+
+135
+00:11:21,735 --> 00:11:26,133
+al hombre para asumir los valores
+ético-religiosos de su destino
+
+136
+00:11:26,133 --> 00:11:31,719
+trascendente. Promover la consolidación
+de la unidad y estabilidad de la familia.
+
+137
+00:11:31,719 --> 00:11:36,676
+Promover una actitud de defensa de la
+soberanía política de la República
+
+138
+00:11:36,676 --> 00:11:41,634
+Argentina dentro de la comunidad
+internacional y fomentar las armoniosas
+
+139
+00:11:41,634 --> 00:11:46,381
+relaciones con los demás países, y muy
+especialmente con las naciones
+
+140
+00:11:46,381 --> 00:11:47,708
+hispanoamericanas".
+
+141
+00:11:48,158 --> 00:11:53,974
+En consonancia, el Documento "Terrorismo
+en Argentina" presenta una "Breve reseña
+
+142
+00:11:53,974 --> 00:11:58,845
+de las medidas para reconstruir la
+educación argentina". Ellas eran:
+
+143
+00:11:58,845 --> 00:12:04,515
+primero, separación de totalitarios y
+corruptos; segundo, restitución del orden
+
+144
+00:12:04,515 --> 00:12:09,604
+en las Universidades; tercero,
+fortalecimiento de los valores morales y
+
+145
+00:12:09,604 --> 00:12:15,420
+cívicos (donde se incluye la sustitución
+de la asignatura Estudios de la Realidad
+
+146
+00:12:15,420 --> 00:12:20,872
+Social Argentina, ERSA, por "Formación
+Moral y Cívica" en la escuela media);
+
+147
+00:12:20,872 --> 00:12:26,543
+cuarto, integración de la familia y la
+comunidad en el proceso educativo (donde
+
+148
+00:12:26,543 --> 00:12:31,632
+se incluye su importancia en la
+"transmisión sistemática de los valores
+
+149
+00:12:31,632 --> 00:12:37,084
+de la moral cristiana y de la tradición
+nacional"); y quinto, refuerzo de la
+
+150
+00:12:37,084 --> 00:12:42,100
+acción del Instituto Nacional de Crédito
+Educativo para la Igualdad de
+
+151
+00:12:42,100 --> 00:12:43,118
+Oportunidades.
+
+152
+00:12:43,489 --> 00:12:48,462
+Este discurso no estado dirigido
+solamente a los funcionarios educativos.
+
+153
+00:12:48,462 --> 00:12:53,918
+La metáfora médica utilizada para hablar
+de la situación del país como un cuerpo
+
+154
+00:12:53,918 --> 00:12:59,235
+al que había que curar de la infección
+que lo atacaba, producida por "el virus
+
+155
+00:12:59,235 --> 00:13:04,346
+de la subversión", reforzaba esta
+situación. Los focos de contagio y los ya
+
+156
+00:13:04,346 --> 00:13:09,457
+contagiados debían ser eliminados y
+aniquilados para proteger a los todavía
+
+157
+00:13:09,457 --> 00:13:14,568
+sanos; y a éstos últimos debía enseñarles
+a prevenirse de la enfermedad y a
+
+158
+00:13:14,568 --> 00:13:19,471
+fortalecer sus defensas. Notas en la
+prensa, circulares, disposiciones y
+
+159
+00:13:19,471 --> 00:13:24,444
+reuniones convocaban a los docentes y
+directivos a salir de la "desidía e
+
+160
+00:13:24,444 --> 00:13:29,831
+indiferencia" y a velar por la Patria
+denunciando a sus compañeros y cuidándose
+
+161
+00:13:29,831 --> 00:13:34,596
+de utilizar bibliografía sin haber
+corroborado su ideología. A su vez,
+
+162
+00:13:34,596 --> 00:13:39,914
+hacían continuas apelaciones a los padres
+para que controlaran las actividades
+
+163
+00:13:39,914 --> 00:13:44,886
+escolares de sus hijos. Las revistas que
+por entonces publicaba Editorial
+
+164
+00:13:44,886 --> 00:13:50,411
+Atlántida mostraban un apoyo constante a
+la dictadura y se sumaban a sus campañas
+
+165
+00:13:50,411 --> 00:13:55,798
+de identificación de "subversivos". Por
+ejemplo, se les aconsejaba a los padres
+
+166
+00:13:55,798 --> 00:14:01,323
+que prestaran atención a los términos que
+usaban sus hijos y a las conversaciones
+
+167
+00:14:01,323 --> 00:14:06,089
+que tenían, que revisaran tareas,
+carpetas, apuntes y cuadernos, y que
+
+168
+00:14:06,089 --> 00:14:11,545
+supieran qué leían dentro y fuera de la
+escuela. Se les alertaba que se cuidaran
+
+169
+00:14:11,545 --> 00:14:16,586
+de los docentes y preceptores que daban a
+leer "literatura comprometida" y
+
+170
+00:14:16,586 --> 00:14:22,250
+"novelistas latinoamericanos", que usaban
+las horas libres para difundir ideología,
+
+171
+00:14:22,250 --> 00:14:27,775
+que pedían a los alumnos que comentaran
+en clase recortes periodísticos "que nada
+
+172
+00:14:27,775 --> 00:14:32,540
+tienen que ver con la escuela", o que
+estimulan el trabajo en grupo en
+
+173
+00:14:32,540 --> 00:14:36,960
+detrimento del esfuerzo y la
+responsabilidad personal. Los padres
+
+174
+00:14:36,960 --> 00:14:42,209
+debían "vigilar, participar y presentar
+las quejas que estimen convenientes".
+
+175
+00:14:42,584 --> 00:14:48,312
+Como el resto de los sistemas represivos,
+la dictadura argentina también mostró una
+
+176
+00:14:48,312 --> 00:14:53,691
+especial desconfianza por los libros. El
+esquema represivo que presentamos más
+
+177
+00:14:53,691 --> 00:14:58,860
+arriba implicaba que todo material
+escrito que ingresara a la escuela debía
+
+178
+00:14:58,860 --> 00:15:03,890
+demostrar su inocencia, cuya aduana se
+volvió mucho más dura que en otras
+
+179
+00:15:03,890 --> 00:15:08,919
+épocas. Todo texto fue considerado
+peligroso por definición, y diversos y
+
+180
+00:15:08,919 --> 00:15:13,669
+poderosos mecanismos de control se
+pusieron en acción para evitar sus
+
+181
+00:15:13,669 --> 00:15:16,184
+efectos de "penetración ideológica".
+
+182
+00:15:16,599 --> 00:15:21,803
+El folleto "Subversión en el ámbito
+educativo. Conozcamos a nuestro enemigo"
+
+183
+00:15:21,803 --> 00:15:27,355
+presenta la siguiente caracterización de
+la renovación de la literatura infantil:
+
+184
+00:15:27,355 --> 00:15:32,143
+"Se advierte una notoria ofensiva
+marxista en el área de la literatura
+
+185
+00:15:32,143 --> 00:15:37,556
+infantil. En ella se propone emitir un
+tipo de mensaje que parta del niño y que
+
+186
+00:15:37,556 --> 00:15:43,038
+le permita 'autoeducarse' sobre la base
+de la 'libertad y alternativa'. Teniendo
+
+187
+00:15:43,038 --> 00:15:48,312
+en cuenta estas bases esenciales, las
+editoriales marxistas pretenden ofrecer
+
+188
+00:15:48,312 --> 00:15:53,516
+'libros útiles' para el desarrollo,
+libros que acompañen al niño en su lucha
+
+189
+00:15:53,516 --> 00:15:59,068
+por penetrar en el mundo de las cosas y
+de los adultos, que los ayuden a no tener
+
+190
+00:15:59,068 --> 00:16:04,203
+miedo a la libertad, que los ayuden a
+querer, a pelear, a afirmar su ser. A
+
+191
+00:16:04,203 --> 00:16:09,130
+defender su yo contra el yo que muchas
+veces le quieren imponer padres o
+
+192
+00:16:09,130 --> 00:16:13,710
+instituciones, consciente o
+inconscientemente, víctimas a su vez de
+
+193
+00:16:13,710 --> 00:16:18,359
+un sistema que los plasmó o trató de
+hacer a su imagen y semejanza".
+
+194
+00:16:18,904 --> 00:16:23,945
+Esto condujo a la prohibición de una
+buena cantidad de libros destinados al
+
+195
+00:16:23,945 --> 00:16:29,463
+público infantil como "Un elefante ocupa
+mucho espacio", de Elsa Bornemann, "Niños
+
+196
+00:16:29,463 --> 00:16:34,980
+de hoy", "Nuestros muchachos" y "El amor
+sigue siendo niño", de Álvaro Yunque, "La
+
+197
+00:16:34,980 --> 00:16:40,430
+Torre de cubos", de Laura Devetach, "Mi
+amigo el Pespir" y "Cinco patas", de José
+
+198
+00:16:40,430 --> 00:16:45,198
+Murillo, "Cuentos para chicos", de
+Jacques Prévert, "El nacimiento, los
+
+199
+00:16:45,198 --> 00:16:50,444
+niños y el amor", de Agnes Rosenthal,
+"Cinco Dedos", del Colectivo libros para
+
+200
+00:16:50,444 --> 00:16:55,144
+niños de Berlín, y hasta "El Principito",
+de Antoine de Saint-Exupéry.
+
+201
+00:16:55,688 --> 00:17:00,598
+Podemos presentar al respecto la
+siguiente lógica de categorización de
+
+202
+00:17:00,598 --> 00:17:05,934
+estas prácticas de censura sobre la
+literatura infantil: en primer lugar, el
+
+203
+00:17:05,934 --> 00:17:10,559
+uso de conceptos "impropios",
+"peligrosos" y "amorales" ("libertad
+
+204
+00:17:10,559 --> 00:17:15,682
+sexual", "sindicalización", "liberación",
+"lucha de clases", "burguesía",
+
+205
+00:17:15,682 --> 00:17:20,734
+"proletariado", "América Latina",
+"explotación", "injusticias sociales",
+
+206
+00:17:20,734 --> 00:17:26,141
+"feminismo", "métodos anticonceptivos",
+"Tercer Mundo", "vientre", etcetera),
+
+207
+00:17:26,141 --> 00:17:31,763
+como por ejemplo en "El nacimiento, los
+niños y el amor", de Agnes Rosenthal; en
+
+208
+00:17:31,763 --> 00:17:37,170
+segundo lugar, lecturas que propugnan un
+cuestionamiento a "nuestra escala de
+
+209
+00:17:37,170 --> 00:17:41,866
+valores tradicionales" (familia,
+religión, nacionalidad, tradición,
+
+210
+00:17:41,866 --> 00:17:46,918
+autoridad paterna, propiedad privada,
+"buen gusto", "lenguaje correcto",
+
+211
+00:17:46,918 --> 00:17:52,468
+etc.cetera), como por ejemplo en "Cinco
+Dedos", del Colectivo libros para niños
+
+212
+00:17:52,468 --> 00:17:58,231
+de Berlín; en tercer lugar, bibliografía
+producida por grupos católicos vinculados
+
+213
+00:17:58,231 --> 00:18:03,212
+a la Teología de la Liberación (por
+ejemplo, "Dios es fiel", de Beatriz
+
+214
+00:18:03,212 --> 00:18:08,549
+Casielo); y en cuarto lugar, textos que
+demuestran "ilimitada fantasía", que
+
+215
+00:18:08,549 --> 00:18:13,814
+tratan temas alejados de "nuestra
+realidad" y de "nuestra idiosincrasia", o
+
+216
+00:18:13,814 --> 00:18:19,364
+que muestren aspectos "sórdidos" de la
+vida (pobreza, migración, analfabetismo,
+
+217
+00:18:19,364 --> 00:18:24,487
+pesimismo) o "inconvenientes para la
+infancia" (por ejemplo, "La torre de
+
+218
+00:18:24,487 --> 00:18:26,408
+cubos", de Laura Devetach).
+
+219
+00:18:26,780 --> 00:18:31,812
+No hemos encontrado casos de prohibición
+de libros de lectura para la escuela
+
+220
+00:18:31,812 --> 00:18:36,446
+primaria, tal vez porque los cambios
+producidos en ellos en los últimos
+
+221
+00:18:36,446 --> 00:18:41,875
+tiempos no eran considerados "peligrosos"
+por la dictadura. De todas maneras, a las
+
+222
+00:18:41,875 --> 00:18:46,906
+escuelas primarias llegaban listas de
+libros "aprobados" o "recomendados", de
+
+223
+00:18:46,906 --> 00:18:52,136
+donde se deducía que los que allí no se
+encontraban estaban censurados de alguna
+
+224
+00:18:52,136 --> 00:18:57,102
+manera. La dictadura revitalizó el
+mecanismo de aprobación de los textos por
+
+225
+00:18:57,102 --> 00:19:02,265
+parte del Estado para poder ser usados en
+las escuelas. La transferencia de las
+
+226
+00:19:02,265 --> 00:19:07,562
+escuelas a las jurisdicciones en las que
+se hallaban habilitó un nuevo mosaico de
+
+227
+00:19:07,562 --> 00:19:12,858
+aprobaciones para ese nivel por parte de
+los distintos poderes locales que limitó
+
+228
+00:19:12,858 --> 00:19:17,890
+el imperio de las previas otorgadas a
+nivel nacional. Por eso, algunos libros
+
+229
+00:19:17,890 --> 00:19:22,921
+tuvieron que esperar su aprobación por
+largo tiempo, otros vieron limitada de
+
+230
+00:19:22,921 --> 00:19:27,820
+hecho su circulación dentro de las
+escuelas por no estar dentro de la lista
+
+231
+00:19:27,820 --> 00:19:32,984
+de "recomendados", y otros debieron ser
+modificados para poder continuar siendo
+
+232
+00:19:32,984 --> 00:19:33,580
+editados.
+
+233
+00:19:34,022 --> 00:19:39,351
+Godoy y Broda sostienen que el control de
+la lectura en las bibliotecas del ámbito
+
+234
+00:19:39,351 --> 00:19:44,284
+universitario circuló por un circuito de
+censura (mediante la prohibición de
+
+235
+00:19:44,284 --> 00:19:49,613
+ciertos textos, la negación u omisión de
+acceso a ciertos materiales conservados y
+
+236
+00:19:49,613 --> 00:19:54,613
+el disciplinamiento del acceso a la
+consulta) en articulación con un circuito
+
+237
+00:19:54,613 --> 00:20:00,007
+de violencia (mediante la desaparición de
+libros incluidos en los catálogos previos
+
+238
+00:20:00,007 --> 00:20:05,073
+por "baja" o "transferencia", quema de
+textos y otras formas de destrucción de
+
+239
+00:20:05,073 --> 00:20:05,862
+ejemplares).
+
+240
+00:20:06,365 --> 00:20:11,644
+En el nivel medio hubo también una buena
+cantidad de libros prohibidos y
+
+241
+00:20:11,644 --> 00:20:17,294
+escondidos. Entre ellos se encuentran
+todos los textos de la derogada materia
+
+242
+00:20:17,294 --> 00:20:23,094
+Estudio de la Realidad Social Argentina
+(ERSA), el manual "Las edades moderna y
+
+243
+00:20:23,094 --> 00:20:28,447
+contemporánea", de Juan Bustinza y
+Gabriel Rivas de editorial Kapelusz, y
+
+244
+00:20:28,447 --> 00:20:34,395
+"Le français et la vie", de Gaston Mauger
+y Maurice Brezeure, éste último editado
+
+245
+00:20:34,395 --> 00:20:39,822
+en el extranjero. En el caso de la
+formación docente, el expediente número
+
+246
+00:20:39,822 --> 00:20:45,175
+52.887/78 del 17 de octubre de 1978,
+firmado por Albano Harguindeguy como
+
+247
+00:20:45,175 --> 00:20:51,272
+Ministro interino de Cultura y Educación,
+prohibé el uso de la obra de Paulo Freire
+
+248
+00:20:51,272 --> 00:20:57,294
+en los institutos de formación docente de
+nivel nacional, así como decreta que sus
+
+249
+00:20:57,294 --> 00:21:00,045
+libros sean quitados de los estantes.
+
+250
+00:21:00,416 --> 00:21:05,512
+Las prácticas represivas ordenaban
+también la cotidianeidad de las aulas:
+
+251
+00:21:05,512 --> 00:21:10,537
+como dice O'Donnell, el autoritarismo
+adoptó en aquellos dos tiempos dos
+
+252
+00:21:10,537 --> 00:21:16,129
+dimensiones de igual potencia: una macro
+y una micro. Respecto a ésta última, se
+
+253
+00:21:16,129 --> 00:21:20,800
+impuso una uniformización de las
+conductas tolerables dentro de los
+
+254
+00:21:20,800 --> 00:21:25,896
+establecimientos educativos mediante
+estrictas normativas reglamentarias,
+
+255
+00:21:25,896 --> 00:21:30,992
+muchas veces de cepa castrense. Ese
+corpus reglamentario clausuraba en su
+
+256
+00:21:30,992 --> 00:21:36,442
+conjunto los mecanismos de participación,
+verticalizada la administración bajo
+
+257
+00:21:36,442 --> 00:21:41,397
+control militar directo, se adaptaban los
+valores a los de una sociedad
+
+258
+00:21:41,397 --> 00:21:47,130
+disciplinada autoritariamente, transfería
+la lógica burocrática al ámbito escolar,
+
+259
+00:21:47,130 --> 00:21:52,013
+y disciplinaba autoritariamente los
+comportamientos de los sujetos. La
+
+260
+00:21:52,013 --> 00:21:56,614
+"higiene", "la corrección" y "el
+silencio" son otros de los puntos
+
+261
+00:21:56,614 --> 00:22:01,922
+destacados. "El aspecto personal tenderá
+a cuidar el vestuario. La barba, el
+
+262
+00:22:01,922 --> 00:22:07,514
+cabello y todo aquello que configure el
+respeto mínimo que el ser humano se debe
+
+263
+00:22:07,514 --> 00:22:12,752
+a sí mismo y a los que lo rodean".
+También se convoca al personal a guardar
+
+264
+00:22:12,752 --> 00:22:18,202
+respeto en el trato "del superior al
+subalterno, del subalterno al superior, y
+
+265
+00:22:18,202 --> 00:22:23,722
+entre pares", a controlar continuamente
+las expresiones y temas de conversación
+
+266
+00:22:23,722 --> 00:22:28,747
+del alumnado. El desarrollo de su
+actividad deberá llevarse a cabo en un
+
+267
+00:22:28,747 --> 00:22:34,339
+"clima de orden y disciplina, manteniendo
+limpias las instalaciones y lugares de
+
+268
+00:22:34,339 --> 00:22:34,976
+trabajo".
+
+269
+00:22:35,453 --> 00:22:40,358
+El modelo de docente propuesto lo
+acercaba al de un funcionario que debía
+
+270
+00:22:40,358 --> 00:22:45,740
+cumplir sus actividades en forma aséptica
+bajo un fuerte control burocrático. No
+
+271
+00:22:45,740 --> 00:22:50,917
+podía participar en la toma de decisiones
+pedagogicas como "la formulación de
+
+272
+00:22:50,917 --> 00:22:55,686
+objetivos, caracterizaciones y nóminas de
+contenidos", no podía sugerir
+
+273
+00:22:55,686 --> 00:23:00,999
+bibliografía ni dar opiniones en clase
+que pudieran considerarse "subversivas",
+
+274
+00:23:00,999 --> 00:23:05,836
+y debía cuidar su aspecto físico, lo que
+incluía la prohibición para las
+
+275
+00:23:05,836 --> 00:23:08,493
+profesoras de concurrir con pantalones.
+
+276
+00:23:08,841 --> 00:23:15,116
+La circular número 137 de 1979, aplicable
+a todo el nivel medio y superior, sumaba
+
+277
+00:23:15,116 --> 00:23:21,158
+a estos preceptos la regulación de la
+cotidianeidad de los alumnos. Los varones
+
+278
+00:23:21,158 --> 00:23:26,814
+debían ir indefectiblemente vestidos con
+corbata, camisa blanca o celeste,
+
+279
+00:23:26,814 --> 00:23:32,779
+pantalón de tela y zapatos, con pelo
+corto, dos dedos por encima del cuello de
+
+280
+00:23:32,779 --> 00:23:38,744
+la camisa, y sin barba ni bigotes. Las
+mujeres debían asistir con pollera bajo
+
+281
+00:23:38,744 --> 00:23:44,322
+la rodilla, zapatos sin taco y medias
+tres cuartos. Tampoco podían llevar
+
+282
+00:23:44,322 --> 00:23:50,287
+maquillaje o adornos, y debían tener el
+pelo recogido detrás de una vincha. El
+
+283
+00:23:50,287 --> 00:23:56,329
+trato con los docentes, preceptores y
+autoridades debía ser obligatoriamente de
+
+284
+00:23:56,329 --> 00:24:01,984
+usted, evitándose la "familiaridad
+excesiva". También les estaba prohibido
+
+285
+00:24:01,984 --> 00:24:08,104
+fumar, jugar de manos y asentar leyendas
+en paredes, pupitres o similares. En el
+
+286
+00:24:08,104 --> 00:24:13,450
+caso de los pocos colegios mixtos,
+alumnos y alumnas debían formarse y
+
+287
+00:24:13,450 --> 00:24:19,105
+sentarse en las aulas en espacios
+separados no mezclados, y debía evitarse
+
+288
+00:24:19,105 --> 00:24:22,281
+todo tipo de contacto físico entre ellos.
+
+289
+00:24:22,640 --> 00:24:28,119
+En términos curriculares, los trabajos de
+Kaufmann y Doval presentan innumerables
+
+290
+00:24:28,119 --> 00:24:32,844
+ejemplos de cómo el fundamentalismo
+integrista ordenaba las propuestas
+
+291
+00:24:32,844 --> 00:24:37,911
+educativas oficiales y los textos
+aprobados alrededor de términos como "ser
+
+292
+00:24:37,911 --> 00:24:43,048
+nacional", "familia", "moral cristiana",
+"tradición occidental y cristiana",
+
+293
+00:24:43,048 --> 00:24:48,184
+"jerarquías naturales", "trascendencia
+espiritual", "respeto a los valores",
+
+294
+00:24:48,184 --> 00:24:48,800
+etcétera.
+
+295
+00:24:49,262 --> 00:24:54,985
+Esta situación de control oscurantista no
+sólo se manifestaba en las asignaturas
+
+296
+00:24:54,985 --> 00:25:00,635
+claramente "ideológicas" como "Formación
+moral y cívica", sino que atravesaba a
+
+297
+00:25:00,635 --> 00:25:06,430
+todo el currículo. Es conocido el caso de
+la matemática moderna, que en noviembre
+
+298
+00:25:06,430 --> 00:25:11,718
+de 1978 una subcomisión del Consejo
+Federal de Educación trató de prohibir
+
+299
+00:25:11,718 --> 00:25:17,368
+por servir a la difusión de la subversión
+merced a su relativismo, su condición
+
+300
+00:25:17,368 --> 00:25:23,019
+enigmática, su negación de los postulados
+de la lógica formal y las similitudes
+
+301
+00:25:23,019 --> 00:25:28,307
+entre la teoría de conjuntos y el
+comunismo en la primacía de lo colectivo
+
+302
+00:25:28,307 --> 00:25:33,450
+y la agrupación. También fueron
+cuestionados, y muchas veces prohibidos,
+
+303
+00:25:33,450 --> 00:25:39,245
+la cartografía extranjera, la gramática
+estructural, la educación por el arte, el
+
+304
+00:25:39,245 --> 00:25:44,099
+evolucionismo, la educación sexual, la
+literatura contemporánea y la
+
+305
+00:25:44,099 --> 00:25:45,982
+psicopedagogía piagetiana.
+
+306
+00:25:46,447 --> 00:25:51,227
+<break time="0.9s"/>La estrategia
+discriminadora.<break time="1.4s"/>
+
+307
+00:25:51,337 --> 00:25:56,910
+En el apartado anterior hemos sostenido
+que la estrategia represiva se relacionó
+
+308
+00:25:56,910 --> 00:26:02,554
+fuertemente con oscurantismo y la defensa
+del tradicionalismo. Pero ésa no fue su
+
+309
+00:26:02,554 --> 00:26:07,774
+única articulación propositiva. Si bien
+los sectores adeptos a la dictadura
+
+310
+00:26:07,774 --> 00:26:13,136
+coincidían indudablemente en la necesidad
+de "ordenar" y "pacificar" el país,
+
+311
+00:26:13,136 --> 00:26:18,356
+eufemismos para justificar el aparato
+represivo, diferían en sus propuestas
+
+312
+00:26:18,356 --> 00:26:23,294
+sobre cuáles eran las nuevas pautas
+sociales a propiciar. En el terreno
+
+313
+00:26:23,294 --> 00:26:28,585
+educativo, esto se evidencia en las
+marcadas diferencias entre los distintos
+
+314
+00:26:28,585 --> 00:26:33,946
+Ministros nacionales. Como ya había
+sucedido en otros gobiernos militares, la
+
+315
+00:26:33,946 --> 00:26:39,449
+política educativa de aquellos años tuvo
+también un componente tecnocrático que
+
+316
+00:26:39,449 --> 00:26:44,669
+buscaba generar una homogeneización
+disciplinada de las prácticas escolares
+
+317
+00:26:44,669 --> 00:26:50,172
+mediante propuestas modernizadoras en
+cuestiones pedagogógicas y didácticas. En
+
+318
+00:26:50,172 --> 00:26:55,110
+forma similar a otras ya ensayadas
+anteriormente se consiguieron formas
+
+319
+00:26:55,110 --> 00:27:00,119
+efectivas de articulación entre
+enunciados tradicionalistas y posiciones
+
+320
+00:27:00,119 --> 00:27:01,177
+modernizadoras.
+
+321
+00:27:01,636 --> 00:27:06,837
+Por eso, junto a la estrategia represiva,
+identificamos dentro de la política
+
+322
+00:27:06,837 --> 00:27:12,176
+educativa de la dictadura a la estrategia
+discriminadora, más solidaria con las
+
+323
+00:27:12,176 --> 00:27:16,487
+interpelaciones que se hacía a la
+educación desde el discurso el
+
+324
+00:27:16,487 --> 00:27:21,415
+conformación. Las propuestas monetaristas
+y neoliberales no precisaban la
+
+325
+00:27:21,415 --> 00:27:26,617
+conformación de un sujeto ascético y
+tradicionalmente moral, como proponía la
+
+326
+00:27:26,617 --> 00:27:32,092
+propuesta fundamentalista, sino un sujeto
+individualista, "dinámico" y hedonista,
+
+327
+00:27:32,092 --> 00:27:37,430
+que concibiera al mercado como el mejor
+rector social y considerara al consumo,
+
+328
+00:27:37,430 --> 00:27:42,700
+la especulación, y la acumulación de
+riqueza y su disfrute como rectores de su
+
+329
+00:27:42,700 --> 00:27:43,316
+conducta.
+
+330
+00:27:43,696 --> 00:27:48,615
+El discurso de la estrategia
+discriminadora no hacía tanto foco en la
+
+331
+00:27:48,615 --> 00:27:54,041
+"restauración de valores perdidos", sino
+en la necesidad de "poner a tono al
+
+332
+00:27:54,041 --> 00:27:59,106
+sistema educativo con los actuales
+requerimientos de la época" y en dar
+
+333
+00:27:59,106 --> 00:28:03,157
+"respuesta a las profundas
+transformaciones científicas y
+
+334
+00:28:03,157 --> 00:28:08,583
+tecnológicas". Por eso el orden no se
+presenta como un fin en sí mismo, sino
+
+335
+00:28:08,583 --> 00:28:14,153
+como una condición necesaria para el
+despliegue de las propuestas. La cuestión
+
+336
+00:28:14,153 --> 00:28:19,579
+educativa es concebida en términos
+modernizadores y racionalizadores que dan
+
+337
+00:28:19,579 --> 00:28:24,716
+cuenta de los avances y los debates
+contemporáneos del campo pedagógico.
+
+338
+00:28:24,716 --> 00:28:30,431
+Basada en una especial articulación de
+elementos modernizadores y tecnocráticos,
+
+339
+00:28:30,431 --> 00:28:36,002
+su consecuencia fue romper la unidad del
+sistema de educación pública para dar
+
+340
+00:28:36,002 --> 00:28:41,572
+lugar al fortalecimiento de circuitos
+diferenciados por sectores sociales para
+
+341
+00:28:41,572 --> 00:28:47,070
+subordinarlo al modelo de distribución
+regresiva de la renta y a las demandas
+
+342
+00:28:47,070 --> 00:28:52,641
+del mercado. Entre sus manifestaciones se
+encuentran las transferencias de las
+
+343
+00:28:52,641 --> 00:28:57,633
+escuelas primarias y preprimarias en
+1978, los exámenes de ingreso, el
+
+344
+00:28:57,633 --> 00:29:03,493
+arancelamiento universitario, la adopción
+del subsidiarismo como posición oficial,
+
+345
+00:29:03,493 --> 00:29:09,353
+el estímulo a las Cooperadoras Escolares,
+el Plan Dual en la enseñanza técnica, el
+
+346
+00:29:09,353 --> 00:29:15,068
+vaciamiento de contenidos, la negación de
+la enseñanza y la segmentación interna
+
+347
+00:29:15,068 --> 00:29:15,936
+del sistema.
+
+348
+00:29:16,355 --> 00:29:22,083
+La dictadura profundizó la destrucción
+del Estado educador mediante la puesta en
+
+349
+00:29:22,083 --> 00:29:27,520
+acción de medidas concretas como las
+transferencias de 1978, la adopción del
+
+350
+00:29:27,520 --> 00:29:32,958
+subsidiarismo como posición oficial, el
+estímulo a la educación privada y el
+
+351
+00:29:32,958 --> 00:29:38,468
+fortalecimiento de las cooperadoras
+escolares. La intención de transferir las
+
+352
+00:29:38,468 --> 00:29:44,051
+escuelas nacionales a las provincias en
+las que se encontraban ubicadas era de
+
+353
+00:29:44,051 --> 00:29:49,198
+larga data entre los proyectos que
+propugnaban un achique del Estado. La
+
+354
+00:29:49,198 --> 00:29:54,636
+dictadura lo recuperó y se decidió a
+llevarlo a cabo. Luego de interminables
+
+355
+00:29:54,636 --> 00:29:59,856
+discusiones en el Consejo Federal de
+Educación en los años anteriores, en
+
+356
+00:29:59,856 --> 00:30:05,366
+junio de 1978 el Poder Ejecutivo Nacional
+aprobó sin consultas el Decreto Ley
+
+357
+00:30:05,366 --> 00:30:10,296
+número 21.809/78 que lo facultó a
+transferir a las jurisdicciones las
+
+358
+00:30:10,296 --> 00:30:16,169
+instituciones de nivel inicial, primario
+y de adultos que estaban en su territorio
+
+359
+00:30:16,169 --> 00:30:21,027
+mediante el reconocimiento de la
+"competencia de la prestación de la
+
+360
+00:30:21,027 --> 00:30:26,464
+educación elemental". Luego fue firmado
+el Decreto Ley complementario número
+
+361
+00:30:26,464 --> 00:30:31,684
+21.810/78 que asignó a la Municipalidad
+de la Ciudad de Buenos Aires y al
+
+362
+00:30:31,684 --> 00:30:37,340
+Territorio Nacional de Tierra del Fuego,
+Antártida e Islas del Atlántico Sur la
+
+363
+00:30:37,340 --> 00:30:42,560
+competencia de la prestación de la
+educación elemental en sus respectivas
+
+364
+00:30:42,560 --> 00:30:47,925
+jurisdicciones. Esto último implicó la
+desaparición del Consejo Nacional de
+
+365
+00:30:47,925 --> 00:30:52,275
+Educación, cuyo cese de funciones se
+había dispuesto en 1976.
+
+366
+00:30:52,646 --> 00:30:57,794
+Este proceso, llevado a cabo en forma
+unilateral por el poder central, esgrimía
+
+367
+00:30:57,794 --> 00:31:02,019
+el federalismo y el "respeto a la
+Constitución Nacional" como sus
+
+368
+00:31:02,019 --> 00:31:06,639
+justificaciones. Sus resultados
+implicaron un corrimiento de la función
+
+369
+00:31:06,639 --> 00:31:11,722
+del Estado nacional tanto en cuestiones
+financieras como de apoyo técnico y no
+
+370
+00:31:11,722 --> 00:31:15,814
+favorecieron la generación de los
+mecanismos de participación y
+
+371
+00:31:15,814 --> 00:31:21,160
+regionalización supuestamente esperados.
+Junto a esto, aquellas jurisdicciones que
+
+372
+00:31:21,160 --> 00:31:25,583
+contaban con recursos materiales y
+humanos para hacerse cargo de sus
+
+373
+00:31:25,583 --> 00:31:30,731
+sistemas educativos pudieron hacerlo,
+sucediendo lo contrario en las provincias
+
+374
+00:31:30,731 --> 00:31:35,945
+más pobres, lo que redundó en un aumento
+de la segmentación del sistema en temas
+
+375
+00:31:35,945 --> 00:31:41,226
+que incluyen las propuestas curriculares,
+el nivel de cobertura del sistema y las
+
+376
+00:31:41,226 --> 00:31:43,206
+políticas salariales docentes.
+
+377
+00:31:43,640 --> 00:31:48,554
+Este retraimiento del Estado de su rol
+principal como educador se verifica
+
+378
+00:31:48,554 --> 00:31:53,938
+también en otros temas. Por ejemplo, el
+discurso subsidiarista terminó por ocupar
+
+379
+00:31:53,938 --> 00:31:59,121
+el espacio oficial. Esto fue posible
+además por una fuerte articulación con el
+
+380
+00:31:59,121 --> 00:32:04,506
+discurso tradicionalista que sostenía la
+primacía de la familia, y por delegación
+
+381
+00:32:04,506 --> 00:32:09,958
+la Iglesia y sus instituciones escolares,
+como agente educador principal, a la vez
+
+382
+00:32:09,958 --> 00:32:12,920
+que desconfiaba del Estado por su
+pluralismo.
+
+383
+00:32:13,344 --> 00:32:18,724
+Estas medidas estaban también amparadas
+en motivos económicos de racionalización
+
+384
+00:32:18,724 --> 00:32:23,491
+de presupuesto. Las propuestas
+monetaristas y neoliberales favorables a
+
+385
+00:32:23,491 --> 00:32:28,394
+la desburocratización y al recorte del
+gasto público evaluaban como mejor
+
+386
+00:32:28,394 --> 00:32:33,637
+inversión pública a la escuela privada
+que a la de dependencia directa, ya que
+
+387
+00:32:33,637 --> 00:32:38,336
+en el primer caso parte de las
+erogaciones eran cubiertas directamente
+
+388
+00:32:38,336 --> 00:32:41,264
+por el usuario mediante el pago de la
+cuota.
+
+389
+00:32:41,716 --> 00:32:47,312
+El Estado se corrió no sólo de su función
+de brindar el servicio educativo, sino
+
+390
+00:32:47,312 --> 00:32:53,120
+también de sostenerlo económicamente. Las
+políticas de financiamiento público de la
+
+391
+00:32:53,120 --> 00:32:58,008
+dictadura no privileged el rubro
+educación, cuyas partidas de los años
+
+392
+00:32:58,008 --> 00:33:03,746
+1976 y 1977 llegaron a ser las más bajas
+de la década, y hasta llegaron a anularse
+
+393
+00:33:03,746 --> 00:33:08,704
+rentas propias provenientes de impuestos
+especiales como los destinados
+
+394
+00:33:08,704 --> 00:33:11,396
+históricamente a la educación técnica.
+
+395
+00:33:11,760 --> 00:33:16,962
+Finalmente, dentro de las propias
+escuelas públicas se verificó un fuerte
+
+396
+00:33:16,962 --> 00:33:21,948
+estímulo por parte de la conducción
+educativa al funcionamiento de las
+
+397
+00:33:21,948 --> 00:33:27,655
+Cooperadoras como forma de garantizar la
+"autonomía institucional" y privilegiar
+
+398
+00:33:27,655 --> 00:33:33,508
+la participación de "la familia" y de la
+"comunidad", entendidas éstas en la forma
+
+399
+00:33:33,508 --> 00:33:38,204
+en que lo hacían las posiciones
+integristas de la época: entidades
+
+400
+00:33:38,204 --> 00:33:43,045
+únicas, "naturales", ahistóricas y
+armónicas, bases de toda sociedad
+
+401
+00:33:43,045 --> 00:33:43,840
+civilizada.
+
+402
+00:33:44,286 --> 00:33:49,047
+Frente al corrimiento económico del
+Estado, buena parte del sostenimiento y
+
+403
+00:33:49,047 --> 00:33:54,002
+mejoramiento de la infraestructura de las
+instituciones empezó a quedar en sus
+
+404
+00:33:54,002 --> 00:33:58,313
+manos. De esta forma, aquellos
+establecimientos a los que concurrían
+
+405
+00:33:58,313 --> 00:34:03,203
+sectores más favorecidos económicamente
+se encontraban en mejores condiciones
+
+406
+00:34:03,203 --> 00:34:07,835
+infraestructurales. Esto también
+fortaleció la diferenciación interna del
+
+407
+00:34:07,835 --> 00:34:12,790
+sistema, ya que dio lugar a mecanismos
+por los que ciertas escuelas buscaban a
+
+408
+00:34:12,790 --> 00:34:17,680
+sectores altos en detrimento de los menos
+favorecidos para poder solventarse,
+
+409
+00:34:17,680 --> 00:34:22,634
+poniendo en jaque la noción de escuela
+pública como espacio común de encuentro
+
+410
+00:34:22,634 --> 00:34:23,406
+de diversos.
+
+411
+00:34:23,839 --> 00:34:29,294
+A su vez, las Cooperadoras Escolares son
+organizaciones que tienden rápidamente a
+
+412
+00:34:29,294 --> 00:34:34,544
+verticalizarse en función de los aportes
+que realiza cada miembro. En lugar de
+
+413
+00:34:34,544 --> 00:34:39,521
+espacios basados en la representación
+igualitaria por delegación soberana,
+
+414
+00:34:39,521 --> 00:34:44,703
+englobadas en la noción de "ciudadanía",
+como eran para el caso educativo los
+
+415
+00:34:44,703 --> 00:34:49,680
+Consejos Escolares suspendidos por
+entonces, las Cooperadoras acercaron la
+
+416
+00:34:49,680 --> 00:34:54,931
+idea de sujeto de la participación a la
+de "usuario", "cliente" o "consumidor"
+
+417
+00:34:54,931 --> 00:35:00,112
+con derechos diferenciales en función de
+los aportes realizados. La dictadura
+
+418
+00:35:00,112 --> 00:35:04,953
+avanzaba así en imponer lógicas
+empresariales a los espacios públicos, y
+
+419
+00:35:04,953 --> 00:35:09,999
+abonaban el terreno para las propuestas
+neoliberales de décadas siguientes.
+
+420
+00:35:10,392 --> 00:35:14,614
+De esta forma, el repliegue de las
+distintas formas del Estado docente
+
+421
+00:35:14,614 --> 00:35:19,204
+redundó en el debilitamiento de los
+dispositivos de distribución igualitaria
+
+422
+00:35:19,204 --> 00:35:23,854
+de la educación entre los distintos
+grupos socio-económicos para dar lugar al
+
+423
+00:35:23,854 --> 00:35:28,321
+fortalecimiento de los circuitos
+educativos que analizaremos en el próximo
+
+424
+00:35:28,321 --> 00:35:28,872
+apartado.
+
+425
+00:35:29,334 --> 00:35:34,535
+A diferencia de otros países centrales y
+latinoamericanos, en la Argentina el
+
+426
+00:35:34,535 --> 00:35:39,532
+sistema educativo había mantenido
+históricamente una tendencia a la unidad
+
+427
+00:35:39,532 --> 00:35:43,912
+y homogeneidad en sus dimensiones
+institucionales, curriculares y
+
+428
+00:35:43,912 --> 00:35:48,703
+pedagogicas que, a la vez que
+disciplinaba culturalmente a la población
+
+429
+00:35:48,703 --> 00:35:54,041
+limitando sus posibilidades de disenso,
+había funcionado como una impresionante
+
+430
+00:35:54,041 --> 00:35:59,174
+maquinaria de igualación y ascenso social
+para quienes aceptaban sus pautas.
+
+431
+00:35:59,613 --> 00:36:05,242
+La dictadura evaluaba a esta situación
+como un peligro social por su "efecto
+
+432
+00:36:05,242 --> 00:36:10,797
+demagógico" que había resultado en una
+degradación del sistema educativo al
+
+433
+00:36:10,797 --> 00:36:16,651
+haber relegado su función de "seleccionar
+de los mejores" y "formar a la futura
+
+434
+00:36:16,651 --> 00:36:22,431
+dirigencia". Esta situación se había
+visto agravada en las últimas décadas por
+
+435
+00:36:22,431 --> 00:36:28,510
+la masificación de los estudios medios y
+superiores. Por ejemplo, el Ministro Juan
+
+436
+00:36:28,510 --> 00:36:33,839
+José Catalán sostenía en 1977 que: "el
+sistema democrático, igualitario,
+
+437
+00:36:33,839 --> 00:36:39,169
+abierto, libre surgido en los siglos
+XVIII y XIX ha sido socavado con la
+
+438
+00:36:39,169 --> 00:36:44,948
+aparición de las masas. Creo que hace
+falta un elemento sustancial: una lúcida
+
+439
+00:36:44,948 --> 00:36:51,028
+clase dirigente que señale a la Argentina
+sus objetivos, que fije las medidas para
+
+440
+00:36:51,028 --> 00:36:56,357
+lograrlas y que trasmita a toda la
+población los influjos políticos para
+
+441
+00:36:56,357 --> 00:36:57,933
+dirigir a la Nación".
+
+442
+00:36:58,287 --> 00:37:02,849
+La dictadura entonces se propuso
+reordenar el sistema de acuerdo a
+
+443
+00:37:02,849 --> 00:37:08,042
+criterios excluyentes, meritocráticos y
+elitistas, a fin de lograr un mayor
+
+444
+00:37:08,042 --> 00:37:13,516
+isomorfismo entre el sistema educativo y
+la pirámide de estratificación social.
+
+445
+00:37:13,516 --> 00:37:17,868
+Sus herramientas fueron el
+fortalecimiento de su diferenciación
+
+446
+00:37:17,868 --> 00:37:23,131
+interna, el reestablecimiento de la
+primacía de la segmentación vertical del
+
+447
+00:37:23,131 --> 00:37:28,325
+sistema por sobre la horizontal, que
+también fue estimulada, y el armado de
+
+448
+00:37:28,325 --> 00:37:33,167
+distintos circuitos de trayectoria
+escolar con baja relación entre sí.
+
+449
+00:37:33,608 --> 00:37:38,116
+Además de las condiciones políticas,
+pedagogicas e infraestructurales,
+
+450
+00:37:38,116 --> 00:37:42,690
+Braslavsky sostiene que uno de los
+principales elementos que aumenta la
+
+451
+00:37:42,690 --> 00:37:47,918
+segmentación del sistema se vincula con
+las formas de reclutamiento matricular de
+
+452
+00:37:47,918 --> 00:37:53,079
+cada escuela, que no responde solo a su
+ubicación geográfica, sino también a las
+
+453
+00:37:53,079 --> 00:37:58,176
+posibilidades económicas y los patrones
+culturales de las familias de origen de
+
+454
+00:37:58,176 --> 00:38:02,488
+los alumnos y a los aspectos
+organizacionales de las instituciones.
+
+455
+00:38:02,488 --> 00:38:07,716
+Estos procesos estuvieron acompañados del
+avance de posiciones subsidiaristas con
+
+456
+00:38:07,716 --> 00:38:12,355
+los siguientes efectos: primero, las
+instituciones educativas dejaron de
+
+457
+00:38:12,355 --> 00:38:17,517
+sentirse responsables de todo el proceso
+de aprendizaje de los alumnos; segundo,
+
+458
+00:38:17,517 --> 00:38:22,352
+los padres y alumnos se sintieron
+absolutamente responsables del proceso; y
+
+459
+00:38:22,352 --> 00:38:26,795
+tercero, la población recurrió
+crecientemente a mecanismos externos a
+
+460
+00:38:26,795 --> 00:38:31,565
+las instituciones educativas para
+resolver los problemas planteados por el
+
+461
+00:38:31,565 --> 00:38:36,008
+proceso de aprendizaje en el interior de
+las instituciones escolares.
+
+462
+00:38:36,357 --> 00:38:42,057
+La segmentación se evidenciaba con mayor
+fuerza en el pasaje de un nivel educativo
+
+463
+00:38:42,057 --> 00:38:47,195
+al siguiente. Por eso era política de
+ciertos institutos privados y de los
+
+464
+00:38:47,195 --> 00:38:52,402
+públicos más requeridos aplicar un examen
+de ingreso selectivo basado en la
+
+465
+00:38:52,402 --> 00:38:57,469
+importancia de "enaltecer la buena
+competencia", "premiar el esfuerzo", y
+
+466
+00:38:57,469 --> 00:39:02,396
+"seleccionar a los mejores". En la
+práctica, se generaba un dispositivo
+
+467
+00:39:02,396 --> 00:39:07,322
+perverso mediante el cual el Estado
+exigía a los sujetos la tenencia de
+
+468
+00:39:07,322 --> 00:39:12,881
+saberes para poder continuar estudios "de
+calidad" que el propio Estado no había
+
+469
+00:39:12,881 --> 00:39:18,159
+distribuido en el nivel anterior. Esto
+pasaba también en el ingreso al nivel
+
+470
+00:39:18,159 --> 00:39:23,156
+universitario. Una de sus consecuencias
+principales fue la "compra de la
+
+471
+00:39:23,156 --> 00:39:28,364
+mercancía educación", por el cual los
+sujetos debían salir a adquirir en el
+
+472
+00:39:28,364 --> 00:39:34,064
+mercado educativo privado de Academias y
+profesores particulares los conocimientos
+
+473
+00:39:34,064 --> 00:39:39,694
+que les permitían seguir estudiando. Es
+obvio cómo esta situación favorecía a los
+
+474
+00:39:39,694 --> 00:39:44,268
+grupos con ventajas económicas,
+fortaleciendo la existencia de los
+
+475
+00:39:44,268 --> 00:39:49,406
+circuitos educativos diferenciados.
+Durante la dictadura, se presentaba un
+
+476
+00:39:49,406 --> 00:39:54,402
+mosaico de colegios secundarios
+dependientes de distintos organismos que
+
+477
+00:39:54,402 --> 00:39:59,680
+seleccionaban o no a su matrícula, y en
+caso de hacerlo utilizaban criterios
+
+478
+00:39:59,680 --> 00:40:04,677
+distintos que presentaban distintos
+grados de dificultad para el acceso.
+
+479
+00:40:05,098 --> 00:40:10,411
+También se identifica la existencia de un
+proceso "poco visible a los ojos de los
+
+480
+00:40:10,411 --> 00:40:15,325
+actores del proceso educativo" que
+dificultaba su desarticulación. Éste era
+
+481
+00:40:15,325 --> 00:40:20,439
+un "vaciamiento de contenidos socialmente
+significativos", mediante el cual la
+
+482
+00:40:20,439 --> 00:40:25,088
+escuela abandonaba su tarea de
+transmisión de la cultura elaborada para
+
+483
+00:40:25,088 --> 00:40:29,405
+dar lugar a funciones como la
+"asistencia", la contención social o
+
+484
+00:40:29,405 --> 00:40:34,253
+simplemente brindar cariño y comprensión
+a los alumnos provenientes de los
+
+485
+00:40:34,253 --> 00:40:36,378
+sectores sociales más golpeados.
+
+486
+00:40:36,814 --> 00:40:41,827
+Esto también se vio estimulado por el
+incremento del trabajo burocrático que
+
+487
+00:40:41,827 --> 00:40:46,305
+directivos y docentes debían realizar
+quitándole tiempo a las tareas
+
+488
+00:40:46,305 --> 00:40:51,518
+específicas de enseñanza. Finalmente,
+cabe aclarar que, como en el resto de los
+
+489
+00:40:51,518 --> 00:40:56,799
+casos, este fenómeno no afectó por igual
+a todo el sistema, sino que lo hizo con
+
+490
+00:40:56,799 --> 00:41:02,012
+más fuerza en los circuitos que atendían
+a los grupos sociales y culturales más
+
+491
+00:41:02,012 --> 00:41:02,814
+vulnerables.
+
+492
+00:41:03,227 --> 00:41:08,145
+A esto se le suma un proceso de "fuga
+hacia delante", mediante el cual los
+
+493
+00:41:08,145 --> 00:41:13,131
+saberes socialmente significativos eran
+enseñados en los últimos años de la
+
+494
+00:41:13,131 --> 00:41:17,510
+escuela, por lo que quedaban
+monopolizados por aquellos que podían
+
+495
+00:41:17,510 --> 00:41:22,092
+completar su escolaridad. Un ejemplo
+paradigmático es la enseñanza de
+
+496
+00:41:22,092 --> 00:41:27,482
+"Formación moral y cívica", donde en los
+primeros años se enseñaban contenidos de
+
+497
+00:41:27,482 --> 00:41:32,602
+"moral", por ejemplo "el secreto" en
+primer año, y los saberes vinculados con
+
+498
+00:41:32,602 --> 00:41:37,857
+la Constitución Nacional y el ejercicio
+de la ciudad anía se presentaban recién
+
+499
+00:41:37,857 --> 00:41:42,978
+en quinto año. Se verifica además una
+cierta aceptación de esta situación por
+
+500
+00:41:42,978 --> 00:41:48,300
+parte de los inspectores y directivos de
+algunos establecimientos, dando lugar a
+
+501
+00:41:48,300 --> 00:41:53,757
+una "desjerarquización cognitiva" de las
+funciones de las escuelas, en especial de
+
+502
+00:41:53,757 --> 00:41:56,587
+aquellas que atendían a sectores
+populares.
+
+503
+00:41:57,016 --> 00:42:02,274
+En síntesis, la dictadura favoreció a la
+"discriminación" educativa mediante el
+
+504
+00:42:02,274 --> 00:42:06,588
+fortalecimiento de la segmentación
+interna horizontal y vertical,
+
+505
+00:42:06,588 --> 00:42:11,577
+desarticulando las tendencias a la
+igualdad de oportunidades que presentaba
+
+506
+00:42:11,577 --> 00:42:16,296
+el sistema previamente. Su efectividad
+radicó muchas veces en que estas
+
+507
+00:42:16,296 --> 00:42:21,823
+políticas eran acompañadas y avaladas por
+los sujetos afectados como los docentes y
+
+508
+00:42:21,823 --> 00:42:23,576
+los padres de los alumnos.
+
+509
+00:42:24,030 --> 00:42:30,092
+También en el terreno de las prácticas de
+enseñanza la dictadura se propuso generar
+
+510
+00:42:30,092 --> 00:42:35,637
+una nueva propuesta modernizadora en
+cuestiones pedagogicas y didácticas. Su
+
+511
+00:42:35,637 --> 00:42:41,478
+mejor ejemplo es el Diseño Curricular de
+1981 para la Ciudad de Buenos Aires. Su
+
+512
+00:42:41,478 --> 00:42:47,319
+Presentación establece taxativamente al
+"nivel evolutivo" de los alumnos como el
+
+513
+00:42:47,319 --> 00:42:53,086
+principal organizador de la propuesta
+curricular, en oposición a tendencias más
+
+514
+00:42:53,086 --> 00:42:58,852
+"academicistas" que privilegian el qué
+enseñar. Aclara entonces que "no sólo se
+
+515
+00:42:58,852 --> 00:43:04,471
+atiende a qué debe conocer el niño, sino
+también, y muy especialmente, a cómo
+
+516
+00:43:04,471 --> 00:43:10,460
+aprende". Coherente con esto, se continúa
+con una "Fundamentación Psicopedagógica"
+
+517
+00:43:10,460 --> 00:43:16,227
+general en la que se oponen dos teorías
+psicológicas del aprendizaje como bases
+
+518
+00:43:16,227 --> 00:43:21,476
+principales de las concepciones
+didácticas y de las actividades de aula.
+
+519
+00:43:21,476 --> 00:43:27,021
+Ellas son el conductismo (que reina en
+las aulas y debe ser desterrado) y la
+
+520
+00:43:27,021 --> 00:43:32,270
+concepción psicogenética (que es la
+propuesta por el diseño curricular).
+
+521
+00:43:32,657 --> 00:43:38,867
+Del desarrollo de esta última se deducen
+seis implicaciones pedagogicas: primero,
+
+522
+00:43:38,867 --> 00:43:43,834
+"Replanteo de la relación
+maestro-alumno"; segundo, "La situación
+
+523
+00:43:43,834 --> 00:43:49,112
+problemática como punto de partida para
+el aprendizaje"; tercero, "El
+
+524
+00:43:49,112 --> 00:43:54,701
+conocimiento como aprehensión de
+estructuras"; cuarto, "Paralelismo entre
+
+525
+00:43:54,701 --> 00:44:00,290
+el proceso evolutivo y el proceso
+didáctico"; quinto, "La evaluación como
+
+526
+00:44:00,290 --> 00:44:05,723
+parte del proceso de aprendizaje"; y
+sexto, "La escuela como estructura
+
+527
+00:44:05,723 --> 00:44:06,577
+educativa".
+
+528
+00:44:06,933 --> 00:44:12,458
+Un fuerte reduccionismo psicológico, con
+marcas tecnocráticas, ordena estas
+
+529
+00:44:12,458 --> 00:44:18,357
+implicancias. En esta línea es destacable
+el punto 4, que subordina los actos de
+
+530
+00:44:18,357 --> 00:44:24,106
+enseñanza al desarrollo evolutivo de los
+alumnos y establece una graduación de
+
+531
+00:44:24,106 --> 00:44:29,930
+hierro a seguirse que va de lo simple a
+lo complejo, de lo cercano a lo lejano,
+
+532
+00:44:29,930 --> 00:44:35,829
+de la acción al pensamiento reflexivo. Se
+usa finalmente la categoría "didáctica
+
+533
+00:44:35,829 --> 00:44:39,413
+del desarrollo" como síntesis de esta
+concepción.
+
+534
+00:44:39,877 --> 00:44:45,342
+Esta posición comprende como ineficaces o
+contraproducentes a las acciones de
+
+535
+00:44:45,342 --> 00:44:50,808
+enseñanza, estimulación o desequilibrio
+epistemológico. Se sostenía que si la
+
+536
+00:44:50,808 --> 00:44:55,841
+escuela enseñaba algo previamente al
+momento evolutivo esperado para su
+
+537
+00:44:55,841 --> 00:45:00,228
+aprendizaje, sólo se realizarían
+incorporaciones "mecánicas" y
+
+538
+00:45:00,228 --> 00:45:05,478
+"memorísticas", por lo que se debía
+seguir esperando que el alumno llegara
+
+539
+00:45:05,478 --> 00:45:10,799
+por sus propios medios, al decir del
+documento curricular, "sin apremios ni
+
+540
+00:45:10,799 --> 00:45:16,193
+exigencias innecesarias". En su conjunto,
+se propone la negación del acto de
+
+541
+00:45:16,193 --> 00:45:21,586
+enseñanza como la base de toda buena
+propuesta pedagogógica. En su conjunto,
+
+542
+00:45:21,586 --> 00:45:26,620
+Cecilia Braslavsky y Nora Krawczyk
+sostienen que esta primera propuesta
+
+543
+00:45:26,620 --> 00:45:32,301
+curricular de la Municipalidad se asienta
+en las siguientes bases pedagogógicas:
+
+544
+00:45:32,301 --> 00:45:37,478
+primero, la dimensión más importante del
+hecho educativo es el proceso de
+
+545
+00:45:37,478 --> 00:45:43,159
+aprendizaje, y no de enseñanza; segundo,
+el aprendizaje es un hecho individual y
+
+546
+00:45:43,159 --> 00:45:48,265
+no social; y tercero, ese proceso de
+aprendizaje está determinado por la
+
+547
+00:45:48,265 --> 00:45:51,717
+maduración psicológica autógena de los
+educandos.
+
+548
+00:45:52,135 --> 00:45:57,099
+La dictadura quitaba de la escuela su
+función de ampliación del universo
+
+549
+00:45:57,099 --> 00:46:02,132
+cultural de los alumnos para volverla un
+lugar de espera de un desarrollo
+
+550
+00:46:02,132 --> 00:46:07,166
+universal y autogenerado. Se suponía que
+todos los alumnos de cierta edad
+
+551
+00:46:07,166 --> 00:46:12,339
+compartían un mismo nivel evolutivo, al
+que habían arribado por motivos más
+
+552
+00:46:12,339 --> 00:46:16,534
+biológicos que culturales, más
+individuales que sociales, más
+
+553
+00:46:16,534 --> 00:46:21,917
+psicológicos que sociológicos, y que nada
+podía hacerse hasta que el alumno no
+
+554
+00:46:21,917 --> 00:46:23,175
+arribara al mismo.
+
+555
+00:46:23,511 --> 00:46:28,313
+De esta forma, aquellos alumnos que
+provenían de familias con un capital
+
+556
+00:46:28,313 --> 00:46:33,454
+cultural alto, en las que se realizaran
+cotidianamente prácticas de lectura y
+
+557
+00:46:33,454 --> 00:46:38,391
+escritura y estuvieran en presencia de
+material escrito, realizaban en ese
+
+558
+00:46:38,391 --> 00:46:43,802
+ámbito las operaciones psicológicas y los
+saltos epistemológicos para alcanzar la
+
+559
+00:46:43,802 --> 00:46:49,213
+"maduración" que la escuela esperaba pero
+no producía. Por el contrario, aquellos
+
+560
+00:46:49,213 --> 00:46:54,489
+alumnos que provenían de hogares en los
+que la presencia de libros y materiales
+
+561
+00:46:54,489 --> 00:46:59,562
+escritos era escasa, no contaban con la
+posibilidad de llegar a dicho "nivel
+
+562
+00:46:59,562 --> 00:47:04,499
+evolutivo", ya que la escuela consideraba
+que no era su función ayudarlo a
+
+563
+00:47:04,499 --> 00:47:09,234
+alcanzarlo. Ellos debían construir
+hipótesis y quemar estadios en aulas
+
+564
+00:47:09,234 --> 00:47:14,307
+vacías de estímulos y de situaciones de
+enseñanza significativas. El fracaso
+
+565
+00:47:14,307 --> 00:47:19,176
+escolar de los sectores populares era
+comprendido no como un efecto de la
+
+566
+00:47:19,176 --> 00:47:23,911
+escuela, sino como una fatalidad o una
+responsabilidad de esos sujetos.
+
+567
+00:47:24,327 --> 00:47:27,847
+<break time="0.8s"/>Conclusiones.<break
+time="1.2s"/>
+
+568
+00:47:27,963 --> 00:47:32,952
+El objetivo central que guió esta
+investigación fue identificar los efectos
+
+569
+00:47:32,952 --> 00:47:37,940
+de las políticas educativas de la última
+dictadura militar en la Argentina.
+
+570
+00:47:37,940 --> 00:47:43,266
+Nuestra hipótesis al respecto sostiene
+que su eje fue la destrucción del sistema
+
+571
+00:47:43,266 --> 00:47:48,524
+escolar surgido a fines del siglo XIX
+mediante dos estrategias. A la primera la
+
+572
+00:47:48,524 --> 00:47:53,310
+denominamos la estrategia represiva, y
+buscaba eliminar los elementos de
+
+573
+00:47:53,310 --> 00:47:58,771
+democratización y renovación presentes en
+el sistema, y disciplinarlo alrededor de
+
+574
+00:47:58,771 --> 00:48:03,692
+la cosmovisión del fundamentalismo
+católico. Para lograr este fin no duído
+
+575
+00:48:03,692 --> 00:48:06,523
+en violar los más básicos derechos
+humanos.
+
+576
+00:48:07,019 --> 00:48:12,260
+A la segunda la hemos denominado la
+estrategia discriminadora, que se propuso
+
+577
+00:48:12,260 --> 00:48:17,225
+modernizar el sistema educativo
+subordinándolo a las demandas del mercado
+
+578
+00:48:17,225 --> 00:48:22,328
+y al modelo de distribución regresiva de
+la renta mediante el estímulo y la
+
+579
+00:48:22,328 --> 00:48:26,742
+creación de circuitos educativos
+altamente segmentados por grupos
+
+580
+00:48:26,742 --> 00:48:31,845
+sociales. Reprimir no fue lo único que
+hizo la dictadura dentro del sistema
+
+581
+00:48:31,845 --> 00:48:37,362
+educativo; sus políticas tuvieron también
+una importante dimensión productiva que
+
+582
+00:48:37,362 --> 00:48:42,465
+se propuso romper el modelo de "escuela
+única" vigente históricamente en la
+
+583
+00:48:42,465 --> 00:48:47,913
+Argentina, igualitaria para todos, que
+arrasaba a la vez las desigualdades y las
+
+584
+00:48:47,913 --> 00:48:51,499
+diferencias de las poblaciones con las
+que trabajaba.
+
+585
+00:48:51,927 --> 00:48:57,071
+Hemos buscado en este escrito presentar
+algunas ideas para pensar la educación en
+
+586
+00:48:57,071 --> 00:49:01,830
+la Dictadura. Para cerrarlo, y en función
+de poder profundizar esa premisa,
+
+587
+00:49:01,830 --> 00:49:05,367
+queremos dejar sentados dos temas para
+futuros análisis.
+
+588
+00:49:05,906 --> 00:49:10,693
+En primer lugar, recordar que hubo
+fisuras y resistencias. Muchos libros
+
+589
+00:49:10,693 --> 00:49:15,615
+circulaban forrados o con las tapas
+cambiadas, muchos estudiantes editaban
+
+590
+00:49:15,615 --> 00:49:20,672
+publicaciones clandestinas, algunos
+directores "cajoneaban" las normativas y
+
+591
+00:49:20,672 --> 00:49:25,863
+documentos, y hemos escuchado muchas
+veces la anécdota de "los dos cuadernos",
+
+592
+00:49:25,863 --> 00:49:31,190
+mediante los cuales algunos maestros en
+uno cumplían con las pautas curriculares
+
+593
+00:49:31,190 --> 00:49:36,381
+prescriptas y en el otro enseñaban a leer
+y escribir. En los años más oscuros,
+
+594
+00:49:36,381 --> 00:49:41,505
+algunas prácticas educativas brillaban
+alimentando la posibilidad de volver a
+
+595
+00:49:41,505 --> 00:49:45,888
+iluminar la sociedad, y deben ser
+estudiadas para lograr una mejor
+
+596
+00:49:45,888 --> 00:49:47,506
+comprensión del período.
+
+597
+00:49:47,888 --> 00:49:53,527
+En segundo lugar, debemos realizar un
+paso más y avanzar en otras dimensiones.
+
+598
+00:49:53,527 --> 00:49:59,093
+Los documentos oficiales consultados,
+todos ellos de fácil acceso, dan cuenta
+
+599
+00:49:59,093 --> 00:50:04,805
+que la represión cultural fue asumida y
+firmada. En la mayoría de los casos, la
+
+600
+00:50:04,805 --> 00:50:10,151
+inculcación ideológica fue parte del
+currículum explícito de la Dictadura.
+
+601
+00:50:10,151 --> 00:50:15,350
+Así, la última pregunta que se nos abre
+es tratar de indagar cuál fue el
+
+602
+00:50:15,350 --> 00:50:20,989
+"currículum oculto" del Proceso. Quizás
+el estudio de esa dimensión pedagógica
+
+603
+00:50:20,989 --> 00:50:26,335
+aporte más elementos para comprender
+tanto el pasado como el presente y el
+
+604
+00:50:26,335 --> 00:50:26,848
+futuro.
+

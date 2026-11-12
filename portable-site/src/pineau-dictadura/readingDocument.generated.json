@@ -1,0 +1,929 @@
+{
+  "document": {
+    "id": "pineau-reprimir-discriminar",
+    "title": "Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)",
+    "subtitle": "Educar em Revista, n.º 51, pp. 103–122 (2014)",
+    "author": "Pablo Pineau",
+    "duration": 3026.848,
+    "versionLabel": "Edición de lectura de +TEC UNAHUR basada en el texto académico de trabajo de la cátedra",
+    "source": {
+      "kind": "ElevenLabs SRT (solo tiempos para seguimiento aproximado)",
+      "cueCount": 604,
+      "finalCueEnd": 3026.848
+    },
+    "frontMatter": [
+      {
+        "id": "pineau14-front-title",
+        "role": "title",
+        "text": "Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina, (1976-1983)."
+      },
+      {
+        "id": "pineau14-front-author",
+        "role": "author",
+        "text": "Pablo Pineau"
+      }
+    ],
+    "sections": [
+      {
+        "id": "introduccion",
+        "title": "Introducción",
+        "shortTitle": "Introducción",
+        "paragraphs": [
+          {
+            "id": "pineau14-introduccion-p01",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-introduccion-p01-s1",
+                "text": "Los sectores cívico-militares que ocuparon el poder en Argentina el 24 de marzo de 1976 sostenían que el país se encontraba en crisis a causa de que la sociedad se había desbordado. Por eso se propusieron reordenarla, y para tal no dudaron en ponerse el pomposo nombre de \"Proceso de Reorganización Nacional\". Los instrumentos utilizados formaron parte de un proyecto político basado en el estado de sitio, el terrorismo de Estado, la prohibición del accionar de los partidos y sindicatos, la represión de la sociedad, el abuso de poder y la sumisión de la justicia."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-introduccion-p02",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-introduccion-p02-s1",
+                "text": "Ese reordenamiento político acompañó un reordenamiento económico. Se adscribió a las teorías monetaristas de la escuela de Chicago que privilegian al sector financiero. La apertura de los mercados, el fomento de las importaciones, la progresiva eliminación de los mecanismos clásicos de protección de la producción local y una pauta cambiaria desfavorable se combinaron para dar como resultado un proceso de desindustrialización y concentración económica."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-introduccion-p03",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-introduccion-p03-s1",
+                "text": "Por supuesto, el registro educativo no estuvo exento de esta situación. La Dictadura llevó a cabo políticas específicas en el sector que se propusieron modificar algunas lógicas previas y volverlas solidarias al resto de los cambios sociales. Diversos autores han señalado algunos de los elementos constituyentes de las políticas educativas de la época, como su carácter reactivo y autoritario, la militarización del sistema educativo, y la burocratización y verticalización de su estructura administrativa en aras de un mayor disciplinamiento social y la pérdida de la especificidad pedagógica del sistema."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-introduccion-p04",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-introduccion-p04-s1",
+                "text": "La renovación cultural y pedagógica de los años 1960 y 1970 había puesto en cuestión los modelos educativos previos provenientes del siglo XIX. Esos años vieron la aparición de nuevos fenómenos como la adscripción a las llamadas teorías \"críticas\", que iban desde Illich al reproductivismo, de docentes y pedagogos, la expansión del psicoanálisis, el avance de la psicología social y la dinámica de grupo, de la pedagogía de la recreación, de las nuevas concepciones de infancia, y la publicación de libros de lectura más modernos que propiciaban la lectura comprensiva solipsista. Ya en los 1970 se produjo una mayor radicalización política mediante la sindicalización docente, la campaña de alfabetización Campaña de Reactivación Educativa de Adultos para la Reconstrucción (CREAR), la extensión universitaria y la difusión de la pedagogía de la Liberación. Esta situación fue un importante abono para la Dictadura, sobre todo para quienes añoraban cierto pasado \"mítico\" de un orden perdido."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-introduccion-p05",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-introduccion-p05-s1",
+                "text": "Sostendremos en este escrito que la dictadura instrumentó una política educativa basada en dos estrategias. Por un lado, la que podemos denominar la estrategia represiva, coto de los sectores más tradicionalistas, que buscaba hacer desaparecer, con el peso que este término tuvo en esos años, a los elementos de renovación previos presentados en el párrafo anterior, y por otro la estrategia discriminadora, coto de los sectores más tecnocráticos, que buscaba romper los elementos presentes en la escuela pública tendientes a la democratización social mediante la homogeneización: \"una escuela única para todos sin importar las diferencias\", y proponer un sistema educativo fuertemente fragmentado por circuitos diferenciados."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "estrategia-represiva",
+        "title": "La estrategia represiva",
+        "shortTitle": "La estrategia represiva",
+        "paragraphs": [
+          {
+            "id": "pineau14-estrategia-represiva-p01",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p01-s1",
+                "text": "Los grupos que apoyaron a la dictadura compartían un balance fuertemente negativo del período político anterior, calificado de \"violento\", \"subversivo\", \"desbordado\", \"demagógico\", \"populista\", etcétera, y coincidían en la necesidad de implementar un gran plan represivo para reordenar el país. Esta función debía ser llevada a cabo por las fuerzas de seguridad, consideradas \"baluartes morales de la Nación\", \"guardianes de la soberanía\", \"garantes de las tradiciones nacionales\", etcétera, quienes debían aniquilar cualquier foco subversivo de oposición y devolver al país la paz y la tranquilidad perdidas. Esta tarea era prioritaria, y no había que poner ningún tipo de reservas a las acciones que condujeran a ese fin."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p02",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p02-s1",
+                "text": "Como sostiene Masiello, la dictadura impuso una política social de vaciamiento de la polifonía de voces que constituye a las sociedades democráticas porque \"la norma autoritaria expulsa a los individuos de una esfera pública y se niega a permitirles el diálogo con el poder o cualquier crítica del Estado\". Con la excepción de unos pocos, la sociedad fue unificándose y ajustándose a ese reclamo de \"pacificación por represión\" que implicaba uniformización y disciplinamiento por todas las vías posibles. El imaginario social estaba listo para la implementación del horror, y los niveles de aberración a los que llegaron las violaciones a los derechos humanos en el período escapan a cualquier intento de semantización, y nos vinculan con los límites de lo humano."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p03",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p03-s1",
+                "text": "El sistema educativo fue un lugar privileged para su puesta en acción. Si bien el autoritarismo es una de las marcas de origen de la escuela argentina, y su historia previa también daba cuentas de actos represivos, el despliegue alcanzado en la última dictadura superó todo diagnóstico. La desaparición forzada de personas castigó muy duramente a docentes, investigadores, estudiantes, a éstos se le sumaba además su condición de jóvenes, y al resto de su personal. A eso deben sumarse el exilio, la encarcelación por motivos ideológicos, los despidos y \"puestas a disponibilidad\", el cierre de instituciones y carreras, las prohibiciones y otras formas de censura, la quema de libros y las diversas formas de uniformización y disciplinamiento de las prácticas cotidianas."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p04",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p04-s1",
+                "text": "El dispositivo de contralor social y accionar político del esquema represivo se basa en la siguiente serie de inferencias: primero, todo hecho social es un hecho político; segundo, todo hecho político es un hecho subversivo; y tercero, todo hecho subversivo debe ser reprimido."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p05",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p05-s1",
+                "text": "En los períodos en que está en vigencia, los sujetos deben evitar la activación de esta cadena, lo cual era en muchos casos imposible. Durante la dictadura, prácticas \"sociales\" como la lectura de ciertas publicaciones, la concurrencia a eventos culturales (por ejemplo, recitales de rock), o el encuentro con ciertas personas, eran susceptibles de ser reprimidos por la fuerza pública si ésta así lo consideraba conveniente. A la inversa de los estados de derecho, toda persona se veía en la obligación de demostrar su inocencia ante el poder porque la culpabilidad era su condición natural."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p06",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p06-s1",
+                "text": "Invernizzi y Gociol señalan que, si bien la categoría \"subversivo\" nunca termina de ser definida, de hecho, para el esquema represivo todo podía serlo, se utilizaba para hacer referencia a ciertos tópicos opuestos al \"ser nacional\" y a nuestro modo de ser \"occidental y cristiano\". Dentro de esto, un lugar especial lo ocupa el \"marxismo\", al que los censores parecen otorgarle una mayor consistencia teórica y argumentativa. Esta caracterización difusa dio lugar a la aparición de ciertas fórmulas que se repiten casi sin variación en todos los documentos referidos al tema y en los dictámenes emitidos para identificar al \"enemigo\" u \"oponente\", y que configuran los peligros introducidos en la escuela por docentes subversivos."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p07",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p07-s1",
+                "text": "Según el esquema presentado más arriba, todo hecho educativo, en tanto hecho social, podía dar lugar a un acto de represión al desplegarse la cadena presentada. El discurso oficial le asignaba a la escuela, y más aún a la universidad, el haber ocupado un rol muy importante en la generación del \"caos social\" de los primeros años de los 1970. Por eso la estrategia represiva tuvo como objetivo principal disciplinar al sistema educativo, y erradicar de él los elementos de modernización de las décadas anteriores, que hemos denominado en el capítulo anterior como la \"modernización incluyente\", englobada dentro de la gran bolsa de \"lo subversivo\". La cadena metonímica iniciada por \"subversión\" parece no tener fin, y engarza significantes como drogadicción, juventud, literatura comprometida, rock, desaliño, crisis de la familia, pérdida de valores, comunismo, relativismo, pornografía, inmoralidad, hedonismo, frivolidad, libertad, trabajos grupales, campamentos e ingreso irrestricto. Su consecuencia fue que el impacto del terrorismo de Estado dentro del sistema educativo fue tan grande como difícil de abarcar."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p08",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p08-s1",
+                "text": "Estas prácticas tenían como su instancia propositiva principal reinstaurar un discurso tradicionalista de la más pura cepa católica integrista, fundamentalista y oscurantista. Así, represión y tradición se enlazaron profundamente para ahogar todo intento de democratización educativa. Por ejemplo, en los Objetivos Pedagógicos del Nivel Primario acordados con el Consejo Federal de Educación el 12 de diciembre de 1980 se sostiene, respecto del fin de la educación: \"Siendo el fin de la educación la formación integral, armónica y permanente de cada hombre, en función de sus fines esenciales, la propia vocación y el bien común, el sistema educativo deberá asegurar a todos los habitantes de la Nación una educación acorde a tal fin, a través del cultivo de virtudes, integrándola con los valores de la moral cristiana, de la tradición nacional y de la dignidad del ser argentino\". Y entre sus objetivos generales señala: \"Preparar al hombre para asumir los valores ético-religiosos de su destino trascendente. Promover la consolidación de la unidad y estabilidad de la familia. Promover una actitud de defensa de la soberanía política de la República Argentina dentro de la comunidad internacional y fomentar las armoniosas relaciones con los demás países, y muy especialmente con las naciones hispanoamericanas\"."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p09",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p09-s1",
+                "text": "En consonancia, el Documento \"Terrorismo en Argentina\" presenta una \"Breve reseña de las medidas para reconstruir la educación argentina\". Ellas eran: primero, separación de totalitarios y corruptos; segundo, restitución del orden en las Universidades; tercero, fortalecimiento de los valores morales y cívicos (donde se incluye la sustitución de la asignatura Estudios de la Realidad Social Argentina, ERSA, por \"Formación Moral y Cívica\" en la escuela media); cuarto, integración de la familia y la comunidad en el proceso educativo (donde se incluye su importancia en la \"transmisión sistemática de los valores de la moral cristiana y de la tradición nacional\"); y quinto, refuerzo de la acción del Instituto Nacional de Crédito Educativo para la Igualdad de Oportunidades."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p10",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p10-s1",
+                "text": "Este discurso no estaba dirigido solamente a los funcionarios educativos. La metáfora médica utilizada para hablar de la situación del país como un cuerpo al que había que curar de la infección que lo atacaba, producida por \"el virus de la subversión\", reforzaba esta situación. Los focos de contagio y los ya contagiados debían ser eliminados y aniquilados para proteger a los todavía sanos; y a éstos últimos debía enseñarles a prevenirse de la enfermedad y a fortalecer sus defensas. Notas en la prensa, circulares, disposiciones y reuniones convocaban a los docentes y directivos a salir de la \"desidia e indiferencia\" y a velar por la Patria denunciando a sus compañeros y cuidándose de utilizar bibliografía sin haber corroborado su ideología. A su vez, hacían continuas apelaciones a los padres para que controlaran las actividades escolares de sus hijos. Las revistas que por entonces publicaba Editorial Atlántida mostraban un apoyo constante a la dictadura y se sumaban a sus campañas de identificación de \"subversivos\". Por ejemplo, se les aconsejaba a los padres que prestaran atención a los términos que usaban sus hijos y a las conversaciones que tenían, que revisaran tareas, carpetas, apuntes y cuadernos, y que supieran qué leían dentro y fuera de la escuela. Se les alertaba que se cuidaran de los docentes y preceptores que daban a leer \"literatura comprometida\" y \"novelistas latinoamericanos\", que usaban las horas libres para difundir ideología, que pedían a los alumnos que comentaran en clase recortes periodísticos \"que nada tienen que ver con la escuela\", o que estimulan el trabajo en grupo en detrimento del esfuerzo y la responsabilidad personal. Los padres debían \"vigilar, participar y presentar las quejas que estimen convenientes\"."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p11",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p11-s1",
+                "text": "Como el resto de los sistemas represivos, la dictadura argentina también mostró una especial desconfianza por los libros. El esquema represivo que presentamos más arriba implicaba que todo material escrito que ingresara a la escuela debía demostrar su inocencia, cuya aduana se volvió mucho más dura que en otras épocas. Todo texto fue considerado peligroso por definición, y diversos y poderosos mecanismos de control se pusieron en acción para evitar sus efectos de \"penetración ideológica\"."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p12",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p12-s1",
+                "text": "El folleto \"Subversión en el ámbito educativo. Conozcamos a nuestro enemigo\" presenta la siguiente caracterización de la renovación de la literatura infantil: \"Se advierte una notoria ofensiva marxista en el área de la literatura infantil. En ella se propone emitir un tipo de mensaje que parta del niño y que le permita ‘autoeducarse’ sobre la base de la ‘libertad y alternativa’. Teniendo en cuenta estas bases esenciales, las editoriales marxistas pretenden ofrecer ‘libros útiles’ para el desarrollo, libros que acompañen al niño en su lucha por penetrar en el mundo de las cosas y de los adultos, que los ayuden a no tener miedo a la libertad, que los ayuden a querer, a pelear, a afirmar su ser. A defender su yo contra el yo que muchas veces le quieren imponer padres o instituciones, consciente o inconscientemente, víctimas a su vez de un sistema que los plasmó o trató de hacer a su imagen y semejanza\"."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p13",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p13-s1",
+                "text": "Esto condujo a la prohibición de una buena cantidad de libros destinados al público infantil como \"Un elefante ocupa mucho espacio\", de Elsa Bornemann, \"Niños de hoy\", \"Nuestros muchachos\" y \"El amor sigue siendo niño\", de Álvaro Yunque, \"La Torre de cubos\", de Laura Devetach, \"Mi amigo el Pespir\" y \"Cinco patas\", de José Murillo, \"Cuentos para chicos\", de Jacques Prévert, \"El nacimiento, los niños y el amor\", de Agnes Rosenthal, \"Cinco Dedos\", del Colectivo libros para niños de Berlín, y hasta \"El Principito\", de Antoine de Saint-Exupéry."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p14",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p14-s1",
+                "text": "Podemos presentar al respecto la siguiente lógica de categorización de estas prácticas de censura sobre la literatura infantil: en primer lugar, el uso de conceptos \"impropios\", \"peligrosos\" y \"amorales\" (\"libertad sexual\", \"sindicalización\", \"liberación\", \"lucha de clases\", \"burguesía\", \"proletariado\", \"América Latina\", \"explotación\", \"injusticias sociales\", \"feminismo\", \"métodos anticonceptivos\", \"Tercer Mundo\", \"vientre\", etcétera), como por ejemplo en \"El nacimiento, los niños y el amor\", de Agnes Rosenthal; en segundo lugar, lecturas que propugnan un cuestionamiento a \"nuestra escala de valores tradicionales\" (familia, religión, nacionalidad, tradición, autoridad paterna, propiedad privada, \"buen gusto\", \"lenguaje correcto\", etcétera), como por ejemplo en \"Cinco Dedos\", del Colectivo libros para niños de Berlín; en tercer lugar, bibliografía producida por grupos católicos vinculados a la Teología de la Liberación (por ejemplo, \"Dios es fiel\", de Beatriz Casiello); y en cuarto lugar, textos que demuestran \"ilimitada fantasía\", que tratan temas alejados de \"nuestra realidad\" y de \"nuestra idiosincrasia\", o que muestren aspectos \"sórdidos\" de la vida (pobreza, migración, analfabetismo, pesimismo) o \"inconvenientes para la infancia\" (por ejemplo, \"La torre de cubos\", de Laura Devetach)."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p15",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p15-s1",
+                "text": "No hemos encontrado casos de prohibición de libros de lectura para la escuela primaria, tal vez porque los cambios producidos en ellos en los últimos tiempos no eran considerados \"peligrosos\" por la dictadura. De todas maneras, a las escuelas primarias llegaban listas de libros \"aprobados\" o \"recomendados\", de donde se deducía que los que allí no se encontraban estaban censurados de alguna manera. La dictadura revitalizó el mecanismo de aprobación de los textos por parte del Estado para poder ser usados en las escuelas. La transferencia de las escuelas a las jurisdicciones en las que se hallaban habilitó un nuevo mosaico de aprobaciones para ese nivel por parte de los distintos poderes locales que limitó el imperio de las previas otorgadas a nivel nacional. Por eso, algunos libros tuvieron que esperar su aprobación por largo tiempo, otros vieron limitada de hecho su circulación dentro de las escuelas por no estar dentro de la lista de \"recomendados\", y otros debieron ser modificados para poder continuar siendo editados."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p16",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p16-s1",
+                "text": "Godoy y Broda sostienen que el control de la lectura en las bibliotecas del ámbito universitario circuló por un circuito de censura (mediante la prohibición de ciertos textos, la negación u omisión de acceso a ciertos materiales conservados y el disciplinamiento del acceso a la consulta) en articulación con un circuito de violencia (mediante la desaparición de libros incluidos en los catálogos previos por \"baja\" o \"transferencia\", quema de textos y otras formas de destrucción de ejemplares)."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p17",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p17-s1",
+                "text": "En el nivel medio hubo también una buena cantidad de libros prohibidos y escondidos. Entre ellos se encuentran todos los textos de la derogada materia Estudio de la Realidad Social Argentina (ERSA), el manual \"Las edades moderna y contemporánea\", de Juan Bustinza y Gabriel Rivas de editorial Kapelusz, y \"Le français et la vie\", de Gaston Mauger y Maurice Brezeure, éste último editado en el extranjero. En el caso de la formación docente, el expediente número 52.887/78 del 17 de octubre de 1978, firmado por Albano Harguindeguy como Ministro interino de Cultura y Educación, prohíbe el uso de la obra de Paulo Freire en los institutos de formación docente de nivel nacional, así como decreta que sus libros sean quitados de los estantes."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p18",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p18-s1",
+                "text": "Las prácticas represivas ordenaban también la cotidianeidad de las aulas: como dice O’Donnell, el autoritarismo adoptó en aquellos dos tiempos dos dimensiones de igual potencia: una macro y una micro. Respecto a ésta última, se impuso una uniformización de las conductas tolerables dentro de los establecimientos educativos mediante estrictas normativas reglamentarias, muchas veces de cepa castrense. Ese corpus reglamentario clausuraba en su conjunto los mecanismos de participación, verticalizaba la administración bajo control militar directo, se adaptaban los valores a los de una sociedad disciplinada autoritariamente, transfería la lógica burocrática al ámbito escolar, y disciplinaba autoritariamente los comportamientos de los sujetos. La \"higiene\", \"la corrección\" y \"el silencio\" son otros de los puntos destacados. \"El aspecto personal tenderá a cuidar el vestuario. La barba, el cabello y todo aquello que configure el respeto mínimo que el ser humano se debe a sí mismo y a los que lo rodean\". También se convoca al personal a guardar respeto en el trato \"del superior al subalterno, del subalterno al superior, y entre pares\", a controlar continuamente las expresiones y temas de conversación del alumnado. El desarrollo de su actividad deberá llevarse a cabo en un \"clima de orden y disciplina, manteniendo limpias las instalaciones y lugares de trabajo\"."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p19",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p19-s1",
+                "text": "El modelo de docente propuesto lo acercaba al de un funcionario que debía cumplir sus actividades en forma aséptica bajo un fuerte control burocrático. No podía participar en la toma de decisiones pedagógicas como \"la formulación de objetivos, caracterizaciones y nóminas de contenidos\", no podía sugerir bibliografía ni dar opiniones en clase que pudieran considerarse \"subversivas\", y debía cuidar su aspecto físico, lo que incluía la prohibición para las profesoras de concurrir con pantalones."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p20",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p20-s1",
+                "text": "La circular número 137 de 1979, aplicable a todo el nivel medio y superior, sumaba a estos preceptos la regulación de la cotidianeidad de los alumnos. Los varones debían ir indefectiblemente vestidos con corbata, camisa blanca o celeste, pantalón de tela y zapatos, con pelo corto, dos dedos por encima del cuello de la camisa, y sin barba ni bigotes. Las mujeres debían asistir con pollera bajo la rodilla, zapatos sin taco y medias tres cuartos. Tampoco podían llevar maquillaje o adornos, y debían tener el pelo recogido detrás de una vincha. El trato con los docentes, preceptores y autoridades debía ser obligatoriamente de usted, evitándose la \"familiaridad excesiva\". También les estaba prohibido fumar, jugar de manos y asentar leyendas en paredes, pupitres o similares. En el caso de los pocos colegios mixtos, alumnos y alumnas debían formarse y sentarse en las aulas en espacios separados no mezclados, y debía evitarse todo tipo de contacto físico entre ellos."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p21",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p21-s1",
+                "text": "En términos curriculares, los trabajos de Kaufmann y Doval presentan innumerables ejemplos de cómo el fundamentalismo integrista ordenaba las propuestas educativas oficiales y los textos aprobados alrededor de términos como \"ser nacional\", \"familia\", \"moral cristiana\", \"tradición occidental y cristiana\", \"jerarquías naturales\", \"trascendencia espiritual\", \"respeto a los valores\", etcétera."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-represiva-p22",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-represiva-p22-s1",
+                "text": "Esta situación de control oscurantista no sólo se manifestaba en las asignaturas claramente \"ideológicas\" como \"Formación moral y cívica\", sino que atravesaba a todo el currículo. Es conocido el caso de la matemática moderna, que en noviembre de 1978 una subcomisión del Consejo Federal de Educación trató de prohibir por servir a la difusión de la subversión merced a su relativismo, su condición enigmática, su negación de los postulados de la lógica formal y las similitudes entre la teoría de conjuntos y el comunismo en la primacía de lo colectivo y la agrupación. También fueron cuestionados, y muchas veces prohibidos, la cartografía extranjera, la gramática estructural, la educación por el arte, el evolucionismo, la educación sexual, la literatura contemporánea y la psicopedagogía piagetiana."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "estrategia-discriminadora",
+        "title": "La estrategia discriminadora",
+        "shortTitle": "La estrategia discriminadora",
+        "paragraphs": [
+          {
+            "id": "pineau14-estrategia-discriminadora-p01",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p01-s1",
+                "text": "En el apartado anterior hemos sostenido que la estrategia represiva se relacionó fuertemente con oscurantismo y la defensa del tradicionalismo. Pero ésa no fue su única articulación propositiva. Si bien los sectores adeptos a la dictadura coincidían indudablemente en la necesidad de \"ordenar\" y \"pacificar\" el país, eufemismos para justificar el aparato represivo, diferían en sus propuestas sobre cuáles eran las nuevas pautas sociales a propiciar. En el terreno educativo, esto se evidencia en las marcadas diferencias entre los distintos Ministros nacionales. Como ya había sucedido en otros gobiernos militares, la política educativa de aquellos años tuvo también un componente tecnocrático que buscaba generar una homogeneización disciplinada de las prácticas escolares mediante propuestas modernizadoras en cuestiones pedagógicas y didácticas. En forma similar a otras ya ensayadas anteriormente se consiguieron formas efectivas de articulación entre enunciados tradicionalistas y posiciones modernizadoras."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p02",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p02-s1",
+                "text": "Por eso, junto a la estrategia represiva, identificamos dentro de la política educativa de la dictadura a la estrategia discriminadora, más solidaria con las interpelaciones que se hacía a la educación desde el discurso económico. Las propuestas monetaristas y neoliberales no precisaban la conformación de un sujeto ascético y tradicionalmente moral, como proponía la propuesta fundamentalista, sino un sujeto individualista, \"dinámico\" y hedonista, que concibiera al mercado como el mejor rector social y considerara al consumo, la especulación, y la acumulación de riqueza y su disfrute como rectores de su conducta."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p03",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p03-s1",
+                "text": "El discurso de la estrategia discriminadora no hacía tanto foco en la \"restauración de valores perdidos\", sino en la necesidad de \"poner a tono al sistema educativo con los actuales requerimientos de la época\" y en dar \"respuesta a las profundas transformaciones científicas y tecnológicas\". Por eso el orden no se presenta como un fin en sí mismo, sino como una condición necesaria para el despliegue de las propuestas. La cuestión educativa es concebida en términos modernizadores y racionalizadores que dan cuenta de los avances y los debates contemporáneos del campo pedagógico. Basada en una especial articulación de elementos modernizadores y tecnocráticos, su consecuencia fue romper la unidad del sistema de educación pública para dar lugar al fortalecimiento de circuitos diferenciados por sectores sociales para subordinarlo al modelo de distribución regresiva de la renta y a las demandas del mercado. Entre sus manifestaciones se encuentran las transferencias de las escuelas primarias y preprimarias en 1978, los exámenes de ingreso, el arancelamiento universitario, la adopción del subsidiarismo como posición oficial, el estímulo a las Cooperadoras Escolares, el Plan Dual en la enseñanza técnica, el vaciamiento de contenidos, la negación de la enseñanza y la segmentación interna del sistema."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p04",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p04-s1",
+                "text": "La dictadura profundizó la destrucción del Estado educador mediante la puesta en acción de medidas concretas como las transferencias de 1978, la adopción del subsidiarismo como posición oficial, el estímulo a la educación privada y el fortalecimiento de las cooperadoras escolares. La intención de transferir las escuelas nacionales a las provincias en las que se encontraban ubicadas era de larga data entre los proyectos que propugnaban un achique del Estado. La dictadura lo recuperó y se decidió a llevarlo a cabo. Luego de interminables discusiones en el Consejo Federal de Educación en los años anteriores, en junio de 1978 el Poder Ejecutivo Nacional aprobó sin consultas el Decreto Ley número 21.809/78 que lo facultó a transferir a las jurisdicciones las instituciones de nivel inicial, primario y de adultos que estaban en su territorio mediante el reconocimiento de la \"competencia de la prestación de la educación elemental\". Luego fue firmado el Decreto Ley complementario número 21.810/78 que asignó a la Municipalidad de la Ciudad de Buenos Aires y al Territorio Nacional de Tierra del Fuego, Antártida e Islas del Atlántico Sur la competencia de la prestación de la educación elemental en sus respectivas jurisdicciones. Esto último implicó la desaparición del Consejo Nacional de Educación, cuyo cese de funciones se había dispuesto en 1976."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p05",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p05-s1",
+                "text": "Este proceso, llevado a cabo en forma unilateral por el poder central, esgrimía el federalismo y el \"respeto a la Constitución Nacional\" como sus justificaciones. Sus resultados implicaron un corrimiento de la función del Estado nacional tanto en cuestiones financieras como de apoyo técnico y no favorecieron la generación de los mecanismos de participación y regionalización supuestamente esperados. Junto a esto, aquellas jurisdicciones que contaban con recursos materiales y humanos para hacerse cargo de sus sistemas educativos pudieron hacerlo, sucediendo lo contrario en las provincias más pobres, lo que redundó en un aumento de la segmentación del sistema en temas que incluyen las propuestas curriculares, el nivel de cobertura del sistema y las políticas salariales docentes."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p06",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p06-s1",
+                "text": "Este retraimiento del Estado de su rol principal como educador se verifica también en otros temas. Por ejemplo, el discurso subsidiarista terminó por ocupar el espacio oficial. Esto fue posible además por una fuerte articulación con el discurso tradicionalista que sostenía la primacía de la familia, y por delegación la Iglesia y sus instituciones escolares, como agente educador principal, a la vez que desconfiaba del Estado por su pluralismo."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p07",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p07-s1",
+                "text": "Estas medidas estaban también amparadas en motivos económicos de racionalización de presupuesto. Las propuestas monetaristas y neoliberales favorables a la desburocratización y al recorte del gasto público evaluaban como mejor inversión pública a la escuela privada que a la de dependencia directa, ya que en el primer caso parte de las erogaciones eran cubiertas directamente por el usuario mediante el pago de la cuota."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p08",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p08-s1",
+                "text": "El Estado se corrió no sólo de su función de brindar el servicio educativo, sino también de sostenerlo económicamente. Las políticas de financiamiento público de la dictadura no privileged el rubro educación, cuyas partidas de los años 1976 y 1977 llegaron a ser las más bajas de la década, y hasta llegaron a anularse rentas propias provenientes de impuestos especiales como los destinados históricamente a la educación técnica."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p09",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p09-s1",
+                "text": "Finalmente, dentro de las propias escuelas públicas se verificó un fuerte estímulo por parte de la conducción educativa al funcionamiento de las Cooperadoras como forma de garantizar la \"autonomía institucional\" y privilegiar la participación de \"la familia\" y de la \"comunidad\", entendidas éstas en la forma en que lo hacían las posiciones integristas de la época: entidades únicas, \"naturales\", ahistóricas y armónicas, bases de toda sociedad civilizada."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p10",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p10-s1",
+                "text": "Frente al corrimiento económico del Estado, buena parte del sostenimiento y mejoramiento de la infraestructura de las instituciones empezó a quedar en sus manos. De esta forma, aquellos establecimientos a los que concurrían sectores más favorecidos económicamente se encontraban en mejores condiciones infraestructurales. Esto también fortaleció la diferenciación interna del sistema, ya que dio lugar a mecanismos por los que ciertas escuelas buscaban a sectores altos en detrimento de los menos favorecidos para poder solventarse, poniendo en jaque la noción de escuela pública como espacio común de encuentro de diversos."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p11",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p11-s1",
+                "text": "A su vez, las Cooperadoras Escolares son organizaciones que tienden rápidamente a verticalizarse en función de los aportes que realiza cada miembro. En lugar de espacios basados en la representación igualitaria por delegación soberana, englobadas en la noción de \"ciudadanía\", como eran para el caso educativo los Consejos Escolares suspendidos por entonces, las Cooperadoras acercaron la idea de sujeto de la participación a la de \"usuario\", \"cliente\" o \"consumidor\" con derechos diferenciales en función de los aportes realizados. La dictadura avanzaba así en imponer lógicas empresariales a los espacios públicos, y abonaban el terreno para las propuestas neoliberales de décadas siguientes."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p12",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p12-s1",
+                "text": "De esta forma, el repliegue de las distintas formas del Estado docente redundó en el debilitamiento de los dispositivos de distribución igualitaria de la educación entre los distintos grupos socio-económicos para dar lugar al fortalecimiento de los circuitos educativos que analizaremos en el próximo apartado."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p13",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p13-s1",
+                "text": "A diferencia de otros países centrales y latinoamericanos, en la Argentina el sistema educativo había mantenido históricamente una tendencia a la unidad y homogeneidad en sus dimensiones institucionales, curriculares y pedagógicas que, a la vez que disciplinaba culturalmente a la población limitando sus posibilidades de disenso, había funcionado como una impresionante maquinaria de igualación y ascenso social para quienes aceptaban sus pautas."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p14",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p14-s1",
+                "text": "La dictadura evaluaba a esta situación como un peligro social por su \"efecto demagógico\" que había resultado en una degradación del sistema educativo al haber relegado su función de \"seleccionar de los mejores\" y \"formar a la futura dirigencia\". Esta situación se había visto agravada en las últimas décadas por la masificación de los estudios medios y superiores. Por ejemplo, el Ministro Juan José Catalán sostenía en 1977 que: \"el sistema democrático, igualitario, abierto, libre surgido en los siglos XVIII y XIX ha sido socavado con la aparición de las masas. Creo que hace falta un elemento sustancial: una lúcida clase dirigente que señale a la Argentina sus objetivos, que fije las medidas para lograrlas y que trasmita a toda la población los influjos políticos para dirigir a la Nación\"."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p15",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p15-s1",
+                "text": "La dictadura entonces se propuso reordenar el sistema de acuerdo a criterios excluyentes, meritocráticos y elitistas, a fin de lograr un mayor isomorfismo entre el sistema educativo y la pirámide de estratificación social. Sus herramientas fueron el fortalecimiento de su diferenciación interna, el reestablecimiento de la primacía de la segmentación vertical del sistema por sobre la horizontal, que también fue estimulada, y el armado de distintos circuitos de trayectoria escolar con baja relación entre sí."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p16",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p16-s1",
+                "text": "Además de las condiciones políticas, pedagógicas e infraestructurales, Braslavsky sostiene que uno de los principales elementos que aumenta la segmentación del sistema se vincula con las formas de reclutamiento matricular de cada escuela, que no responde solo a su ubicación geográfica, sino también a las posibilidades económicas y los patrones culturales de las familias de origen de los alumnos y a los aspectos organizacionales de las instituciones. Estos procesos estuvieron acompañados del avance de posiciones subsidiaristas con los siguientes efectos: primero, las instituciones educativas dejaron de sentirse responsables de todo el proceso de aprendizaje de los alumnos; segundo, los padres y alumnos se sintieron absolutamente responsables del proceso; y tercero, la población recurrió crecientemente a mecanismos externos a las instituciones educativas para resolver los problemas planteados por el proceso de aprendizaje en el interior de las instituciones escolares."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p17",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p17-s1",
+                "text": "La segmentación se evidenciaba con mayor fuerza en el pasaje de un nivel educativo al siguiente. Por eso era política de ciertos institutos privados y de los públicos más requeridos aplicar un examen de ingreso selectivo basado en la importancia de \"enaltecer la buena competencia\", \"premiar el esfuerzo\", y \"seleccionar a los mejores\". En la práctica, se generaba un dispositivo perverso mediante el cual el Estado exigía a los sujetos la tenencia de saberes para poder continuar estudios \"de calidad\" que el propio Estado no había distribuido en el nivel anterior. Esto pasaba también en el ingreso al nivel universitario. Una de sus consecuencias principales fue la \"compra de la mercancía educación\", por el cual los sujetos debían salir a adquirir en el mercado educativo privado de Academias y profesores particulares los conocimientos que les permitían seguir estudiando. Es obvio cómo esta situación favorecía a los grupos con ventajas económicas, fortaleciendo la existencia de los circuitos educativos diferenciados. Durante la dictadura, se presentaba un mosaico de colegios secundarios dependientes de distintos organismos que seleccionaban o no a su matrícula, y en caso de hacerlo utilizaban criterios distintos que presentaban distintos grados de dificultad para el acceso."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p18",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p18-s1",
+                "text": "También se identifica la existencia de un proceso \"poco visible a los ojos de los actores del proceso educativo\" que dificultaba su desarticulación. Éste era un \"vaciamiento de contenidos socialmente significativos\", mediante el cual la escuela abandonaba su tarea de transmisión de la cultura elaborada para dar lugar a funciones como la \"asistencia\", la contención social o simplemente brindar cariño y comprensión a los alumnos provenientes de los sectores sociales más golpeados. Esto también se vio estimulado por el incremento del trabajo burocrático que directivos y docentes debían realizar quitándole tiempo a las tareas específicas de enseñanza. Finalmente, cabe aclarar que, como en el resto de los casos, este fenómeno no afectó por igual a todo el sistema, sino que lo hizo con más fuerza en los circuitos que atendían a los grupos sociales y culturales más vulnerables."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p19",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p19-s1",
+                "text": "A esto se le suma un proceso de \"fuga hacia delante\", mediante el cual los saberes socialmente significativos eran enseñados en los últimos años de la escuela, por lo que quedaban monopolizados por aquellos que podían completar su escolaridad. Un ejemplo paradigmático es la enseñanza de \"Formación moral y cívica\", donde en los primeros años se enseñaban contenidos de \"moral\", por ejemplo \"el secreto\" en primer año, y los saberes vinculados con la Constitución Nacional y el ejercicio de la ciudadanía se presentaban recién en quinto año. Se verifica además una cierta aceptación de esta situación por parte de los inspectores y directivos de algunos establecimientos, dando lugar a una \"desjerarquización cognitiva\" de las funciones de las escuelas, en especial de aquellas que atendían a sectores populares."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p20",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p20-s1",
+                "text": "En síntesis, la dictadura favoreció a la \"discriminación\" educativa mediante el fortalecimiento de la segmentación interna horizontal y vertical, desarticulando las tendencias a la igualdad de oportunidades que presentaba el sistema previamente. Su efectividad radicó muchas veces en que estas políticas eran acompañadas y avaladas por los sujetos afectados como los docentes y los padres de los alumnos."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p21",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p21-s1",
+                "text": "También en el terreno de las prácticas de enseñanza la dictadura se propuso generar una nueva propuesta modernizadora en cuestiones pedagógicas y didácticas. Su mejor ejemplo es el Diseño Curricular de 1981 para la Ciudad de Buenos Aires. Su Presentación establece taxativamente al \"nivel evolutivo\" de los alumnos como el principal organizador de la propuesta curricular, en oposición a tendencias más \"academicistas\" que privilegian el qué enseñar. Aclara entonces que \"no sólo se atiende a qué debe conocer el niño, sino también, y muy especialmente, a cómo aprende\". Coherente con esto, se continúa con una \"Fundamentación Psicopedagógica\" general en la que se oponen dos teorías psicológicas del aprendizaje como bases principales de las concepciones didácticas y de las actividades de aula. Ellas son el conductismo (que reina en las aulas y debe ser desterrado) y la concepción psicogenética (que es la propuesta por el diseño curricular)."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p22",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p22-s1",
+                "text": "Del desarrollo de esta última se deducen seis implicaciones pedagógicas: primero, \"Replanteo de la relación maestro-alumno\"; segundo, \"La situación problemática como punto de partida para el aprendizaje\"; tercero, \"El conocimiento como aprehensión de estructuras\"; cuarto, \"Paralelismo entre el proceso evolutivo y el proceso didáctico\"; quinto, \"La evaluación como parte del proceso de aprendizaje\"; y sexto, \"La escuela como estructura educativa\"."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p23",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p23-s1",
+                "text": "Un fuerte reduccionismo psicológico, con marcas tecnocráticas, ordena estas implicancias. En esta línea es destacable el punto 4, que subordina los actos de enseñanza al desarrollo evolutivo de los alumnos y establece una graduación de hierro a seguirse que va de lo simple a lo complejo, de lo cercano a lo lejano, de la acción al pensamiento reflexivo. Se usa finalmente la categoría \"didáctica del desarrollo\" como síntesis de esta concepción."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p24",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p24-s1",
+                "text": "Esta posición comprende como ineficaces o contraproducentes a las acciones de enseñanza, estimulación o desequilibrio epistemológico. Se sostenía que si la escuela enseñaba algo previamente al momento evolutivo esperado para su aprendizaje, sólo se realizarían incorporaciones \"mecánicas\" y \"memorísticas\", por lo que se debía seguir esperando que el alumno llegara por sus propios medios, al decir del documento curricular, \"sin apremios ni exigencias innecesarias\". En su conjunto, se propone la negación del acto de enseñanza como la base de toda buena propuesta pedagógica. En su conjunto, Cecilia Braslavsky y Nora Krawczyk sostienen que esta primera propuesta curricular de la Municipalidad se asienta en las siguientes bases pedagógicas: primero, la dimensión más importante del hecho educativo es el proceso de aprendizaje, y no de enseñanza; segundo, el aprendizaje es un hecho individual y no social; y tercero, ese proceso de aprendizaje está determinado por la maduración psicológica autógena de los educandos."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p25",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p25-s1",
+                "text": "La dictadura quitaba de la escuela su función de ampliación del universo cultural de los alumnos para volverla un lugar de espera de un desarrollo universal y autogenerado. Se suponía que todos los alumnos de cierta edad compartían un mismo nivel evolutivo, al que habían arribado por motivos más biológicos que culturales, más individuales que sociales, más psicológicos que sociológicos, y que nada podía hacerse hasta que el alumno no arribara al mismo."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-estrategia-discriminadora-p26",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-estrategia-discriminadora-p26-s1",
+                "text": "De esta forma, aquellos alumnos que provenían de familias con un capital cultural alto, en las que se realizaran cotidianamente prácticas de lectura y escritura y estuvieran en presencia de material escrito, realizaban en ese ámbito las operaciones psicológicas y los saltos epistemológicos para alcanzar la \"maduración\" que la escuela esperaba pero no producía. Por el contrario, aquellos alumnos que provenían de hogares en los que la presencia de libros y materiales escritos era escasa, no contaban con la posibilidad de llegar a dicho \"nivel evolutivo\", ya que la escuela consideraba que no era su función ayudarlo a alcanzarlo. Ellos debían construir hipótesis y quemar estadios en aulas vacías de estímulos y de situaciones de enseñanza significativas. El fracaso escolar de los sectores populares era comprendido no como un efecto de la escuela, sino como una fatalidad o una responsabilidad de esos sujetos."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conclusiones",
+        "title": "Conclusiones",
+        "shortTitle": "Conclusiones",
+        "paragraphs": [
+          {
+            "id": "pineau14-conclusiones-p01",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-conclusiones-p01-s1",
+                "text": "El objetivo central que guió esta investigación fue identificar los efectos de las políticas educativas de la última dictadura militar en la Argentina. Nuestra hipótesis al respecto sostiene que su eje fue la destrucción del sistema escolar surgido a fines del siglo XIX mediante dos estrategias. A la primera la denominamos la estrategia represiva, y buscaba eliminar los elementos de democratización y renovación presentes en el sistema, y disciplinarlo alrededor de la cosmovisión del fundamentalismo católico. Para lograr este fin no dudó en violar los más básicos derechos humanos."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-conclusiones-p02",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-conclusiones-p02-s1",
+                "text": "A la segunda la hemos denominado la estrategia discriminadora, que se propuso modernizar el sistema educativo subordinándolo a las demandas del mercado y al modelo de distribución regresiva de la renta mediante el estímulo y la creación de circuitos educativos altamente segmentados por grupos sociales. Reprimir no fue lo único que hizo la dictadura dentro del sistema educativo; sus políticas tuvieron también una importante dimensión productiva que se propuso romper el modelo de \"escuela única\" vigente históricamente en la Argentina, igualitaria para todos, que arrasaba a la vez las desigualdades y las diferencias de las poblaciones con las que trabajaba."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-conclusiones-p03",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-conclusiones-p03-s1",
+                "text": "Hemos buscado en este escrito presentar algunas ideas para pensar la educación en la Dictadura. Para cerrarlo, y en función de poder profundizar esa premisa, queremos dejar sentados dos temas para futuros análisis."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-conclusiones-p04",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-conclusiones-p04-s1",
+                "text": "En primer lugar, recordar que hubo fisuras y resistencias. Muchos libros circulaban forrados o con las tapas cambiadas, muchos estudiantes editaban publicaciones clandestinas, algunos directores \"cajoneaban\" las normativas y documentos, y hemos escuchado muchas veces la anécdota de \"los dos cuadernos\", mediante los cuales algunos maestros en uno cumplían con las pautas curriculares prescriptas y en el otro enseñaban a leer y escribir. En los años más oscuros, algunas prácticas educativas brillaban alimentando la posibilidad de volver a iluminar la sociedad, y deben ser estudiadas para lograr una mejor comprensión del período."
+              }
+            ]
+          },
+          {
+            "id": "pineau14-conclusiones-p05",
+            "kind": "paragraph",
+            "sentences": [
+              {
+                "id": "pineau14-conclusiones-p05-s1",
+                "text": "En segundo lugar, debemos realizar un paso más y avanzar en otras dimensiones. Los documentos oficiales consultados, todos ellos de fácil acceso, dan cuenta que la represión cultural fue asumida y firmada. En la mayoría de los casos, la inculcación ideológica fue parte del currículum explícito de la Dictadura. Así, la última pregunta que se nos abre es tratar de indagar cuál fue el \"currículum oculto\" del Proceso. Quizás el estudio de esa dimensión pedagógica aporte más elementos para comprender tanto el pasado como el presente y el futuro."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "paragraphTimings": [
+    {
+      "id": "pineau14-introduccion-p01",
+      "start": 15.894,
+      "end": 55.814
+    },
+    {
+      "id": "pineau14-introduccion-p02",
+      "start": 56.309,
+      "end": 85.749
+    },
+    {
+      "id": "pineau14-introduccion-p03",
+      "start": 86.144,
+      "end": 125.744
+    },
+    {
+      "id": "pineau14-introduccion-p04",
+      "start": 126.167,
+      "end": 194.727
+    },
+    {
+      "id": "pineau14-introduccion-p05",
+      "start": 195.107,
+      "end": 247.578
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p01",
+      "start": 247.699,
+      "end": 291.383
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p02",
+      "start": 291.383,
+      "end": 340.216
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p03",
+      "start": 340.216,
+      "end": 392.743
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p04",
+      "start": 392.743,
+      "end": 413.484
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p05",
+      "start": 413.484,
+      "end": 454.796
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p06",
+      "start": 454.796,
+      "end": 506.016
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p07",
+      "start": 506.016,
+      "end": 581.633
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p08",
+      "start": 581.633,
+      "end": 676.149
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p09",
+      "start": 676.149,
+      "end": 735.42
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p10",
+      "start": 735.42,
+      "end": 856.586
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p11",
+      "start": 856.586,
+      "end": 888.312
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p12",
+      "start": 888.312,
+      "end": 959.068
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p13",
+      "start": 959.068,
+      "end": 994.98
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p14",
+      "start": 994.98,
+      "end": 1083.212
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p15",
+      "start": 1083.212,
+      "end": 1152.858
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p16",
+      "start": 1152.858,
+      "end": 1184.284
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p17",
+      "start": 1184.284,
+      "end": 1239.822
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p18",
+      "start": 1239.822,
+      "end": 1332.752
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p19",
+      "start": 1332.752,
+      "end": 1365.74
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p20",
+      "start": 1365.74,
+      "end": 1441.984
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p21",
+      "start": 1441.984,
+      "end": 1468.119
+    },
+    {
+      "id": "pineau14-estrategia-represiva-p22",
+      "start": 1468.119,
+      "end": 1523.019
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p01",
+      "start": 1523.019,
+      "end": 1599.449
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p02",
+      "start": 1599.449,
+      "end": 1646.617
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p03",
+      "start": 1646.617,
+      "end": 1737.633
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p04",
+      "start": 1737.633,
+      "end": 1837.34
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p05",
+      "start": 1837.34,
+      "end": 1890.731
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p06",
+      "start": 1890.731,
+      "end": 1919.121
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p07",
+      "start": 1919.121,
+      "end": 1948.394
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p08",
+      "start": 1948.394,
+      "end": 1978.008
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p09",
+      "start": 1978.008,
+      "end": 2007.655
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p10",
+      "start": 2007.655,
+      "end": 2052.79
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p11",
+      "start": 2052.79,
+      "end": 2094.931
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p12",
+      "start": 2094.931,
+      "end": 2119.204
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p13",
+      "start": 2119.204,
+      "end": 2143.912
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p14",
+      "start": 2143.912,
+      "end": 2204.948
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p15",
+      "start": 2204.948,
+      "end": 2243.131
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p16",
+      "start": 2243.131,
+      "end": 2306.795
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p17",
+      "start": 2306.795,
+      "end": 2394.402
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p18",
+      "start": 2394.402,
+      "end": 2456.799
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p19",
+      "start": 2456.799,
+      "end": 2508.3
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p20",
+      "start": 2508.3,
+      "end": 2536.296
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p21",
+      "start": 2536.296,
+      "end": 2601.476
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p22",
+      "start": 2601.476,
+      "end": 2640.29
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p23",
+      "start": 2640.29,
+      "end": 2669.93
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p24",
+      "start": 2669.93,
+      "end": 2743.159
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p25",
+      "start": 2743.159,
+      "end": 2776.534
+    },
+    {
+      "id": "pineau14-estrategia-discriminadora-p26",
+      "start": 2776.534,
+      "end": 2839.176
+    },
+    {
+      "id": "pineau14-conclusiones-p01",
+      "start": 2839.176,
+      "end": 2883.692
+    },
+    {
+      "id": "pineau14-conclusiones-p02",
+      "start": 2883.692,
+      "end": 2927.913
+    },
+    {
+      "id": "pineau14-conclusiones-p03",
+      "start": 2927.913,
+      "end": 2941.83
+    },
+    {
+      "id": "pineau14-conclusiones-p04",
+      "start": 2941.83,
+      "end": 2985.888
+    },
+    {
+      "id": "pineau14-conclusiones-p05",
+      "start": 2985.888,
+      "end": 3026.848
+    }
+  ]
+}
