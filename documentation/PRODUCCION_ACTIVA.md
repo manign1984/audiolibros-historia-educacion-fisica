@@ -6,6 +6,12 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
+## Interfaz general · Miniaturas del catálogo (13/11/2026)
+
+Se adoptó un diseño de **lectura editorial continua** para las tarjetas compartidas de Inicio, Explorar, Mi lista, «Seguí donde dejaste» y recomendaciones. La autoría y el título principal se mantienen **únicamente en la imagen de portada**; el espacio inferior muestra solo la **continuación del título bibliográfico**, definida de forma explícita para cada una de las 18 obras de apertura en `portable-site/src/biblioteca/catalog.js` (`cardContinuations`), sin aplicar cortes automáticos que alteren la redacción. Ejemplos: Aisenstein → «El saber histórico en la formación docente en Educación Física»; Almada → «La cultura física y el deporte en la política del peronismo»; Arata–Mariño → «La educación entre golpes (1955–1976)»; Feiguin–Aisenstein → «Formación de profesores de Educación Física. Argentina, 1938–1967».
+
+Si el título ya está completo en la portada, como Torre–Pastoriza, no se muestra una continuación inventada. Se preservan los títulos bibliográficos íntegros en `entry.title`, enlaces accesibles, recorridos y referencias APA; también permanecen intactos imágenes, colores, navegación, «Leer + escuchar», marcadores, duraciones, progreso, audio, notas y persistencia. En pantallas pequeñas la continuación puede ocupar más renglones para no truncar el contenido. No se modificó el carrusel principal.
+
 ## Interfaz general · Epígrafes del carrusel (13/11/2026)
 
 Se incorporaron **14 epígrafes editoriales acordados** a las imágenes de portada del carrusel, registrados en `portable-site/src/biblioteca/catalog.js` y `plannedWorks.js`. El criterio es contextual e interpretativo, con extensión breve y objetivo visual de dos renglones en escritorio. Se mantienen íntegros los textos, sin truncamiento; para dispositivos estrechos o de poca altura, el epígrafe pasa al flujo legible de la diapositiva. El diseño preserva el pie de fotografía en escritorio, la navegación, el fundido, la pausa y el comportamiento de movimiento reducido. No se modifican imágenes, páginas interiores, rutas, audio, subtítulos, cuadernos ni progreso.
