@@ -6,11 +6,19 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
+## Interfaz general · Epígrafes del carrusel (13/11/2026)
+
+Se incorporaron **14 epígrafes editoriales acordados** a las imágenes de portada del carrusel, registrados en `portable-site/src/biblioteca/catalog.js` y `plannedWorks.js`. El criterio es contextual e interpretativo, con extensión breve y objetivo visual de dos renglones en escritorio. Se mantienen íntegros los textos, sin truncamiento; para dispositivos estrechos o de poca altura, el epígrafe pasa al flujo legible de la diapositiva. El diseño preserva el pie de fotografía en escritorio, la navegación, el fundido, la pausa y el comportamiento de movimiento reducido. No se modifican imágenes, páginas interiores, rutas, audio, subtítulos, cuadernos ni progreso.
+
+Selección con epígrafe: Pineau («Reprimir y discriminar» y «Renovación, represión, cooptación»); Scharagrodsky; Aisenstein («¿Hacemos tabla rasa…?»); Orbuch; Hobsbawm; Marcaida–Scaltritti; Soares; Galak; Feiguin–Aisenstein; Torre–Pastoriza; Almada; Melano («Militares al gobierno…»); Thwaites Rey.
+
+Sin epígrafe hasta definir imágenes definitivas: **Lionetti, Arata–Mariño y las dos obras de Levoratti**. Sus fichas y rutas permanecen intactas. El texto de Scharagrodsky conserva la denominación y fecha aproximada aportadas por el responsable, sujetas a revisión documental posterior sin bloquear esta decisión editorial. El crédito y la procedencia histórica de cada imagen siguen siendo independientes del epígrafe interpretativo.
+
 ## Interfaz general · Marcaida–Scaltritti · portada del carrusel (13/11/2026)
 
 Para la ficha «La construcción del Estado nacional argentino (1852–1880)», se seleccionó la fotografía frontal de la **Aduana de Taylor y su muelle de cargas, vista desde el río** (ca. 1860). Procedencia archivística declarada: **Archivo General de la Nación**; versión digital: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aduana_Taylor_y_muelle_de_cargas_visto_desde_el_r%C3%ADo.jpg), identificada como dominio público. El recurso se sirve desde la URL pública de Wikimedia Commons, sin copiar el binario al repositorio. Se preserva sin cambios la portada editorial dentro del recorrido de Marcaida.
 
-Epígrafe aprobado: «Aduana de Taylor (inaugurada en 1857). Símbolo de la articulación con el mercado mundial y del poder económico de Buenos Aires en disputa durante la construcción del Estado nacional.»
+Epígrafe vigente, abreviado por acuerdo editorial (13/11/2026): «Aduana de Taylor (inaugurada en 1857). El poder porteño en la disputa por el Estado.»
 
 La diapositiva respeta el carrusel común y muestra el epígrafe como texto pequeño separado de la sinopsis, sin agregarlo a las demás portadas. **Ajuste del 13/11/2026:** a pedido del responsable y según su captura marcada en rojo, en escritorio amplio el epígrafe está superpuesto en el sector inferior derecho de la fotografía, alineado a la izquierda dentro de ese sector y por encima de la paginación. En celulares, ventanas estrechas o de poca altura, el epígrafe vuelve al flujo de lectura antes de los botones para evitar solapamientos y mantener la accesibilidad.
 

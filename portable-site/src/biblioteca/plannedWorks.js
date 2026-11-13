@@ -42,6 +42,7 @@ const readablePlannedWorks = {
     relatedWorkId: 'melano-militares-juramentados',
   },
   'galak-del-dicho-al-hecho': {
+    heroCaption: 'Enrique Romero Brest. La voz autorizada del campo de la Educación Física en sus inicios.',
     status: 'text',
     stateKey: 'galak-del-dicho-al-hecho-text-page-v1',
     historicalPeriod: 'Formación profesional en Educación Física · 1897–1909',
@@ -62,6 +63,7 @@ const readablePlannedWorks = {
     historicalPeriod: 'Formación docente y debates curriculares · 1993–2015',
   },
   'thwaites-rey-democracia-argentina': {
+    heroCaption: 'Buenos Aires, 2001: Estallido del modelo neoliberal.',
     status: 'available',
     sortAuthor: 'Thwaites Rey, Mabel',
     duration: 1625.521633,
@@ -72,6 +74,7 @@ const readablePlannedWorks = {
     heroArtwork: 'assets/thwaites-rey/buenos-aires-2001.jpg',
   },
   'torre-pastoriza-bienestar': {
+    heroCaption: 'Niños en Chapadmalal, hacia 1950. Representación gráfica de la democratización del bienestar.',
     status: 'available',
     duration: 8299.964082,
     readingDetail: 'Seguimiento aproximado por párrafos y cuaderno de lectura',
@@ -80,6 +83,7 @@ const readablePlannedWorks = {
     artwork: 'assets/torre-pastoriza/chapadmalal-1950.webp',
   },
   'feiguin-aisenstein-sujetos': {
+    heroCaption: 'Izado de bandera en el INEF General Belgrano. Formar líderes y salvar a los jóvenes.',
     status: 'available',
     duration: 2815.059592,
     stateKey: 'feiguin-aisenstein-sujetos-reader-state-v1',
@@ -89,6 +93,7 @@ const readablePlannedWorks = {
     heroArtwork: 'assets/feiguin-aisenstein/formacion-inef-carrusel.webp',
   },
   'almada-privilegiados': {
+    heroCaption: 'Campeonatos Evita en acuarelas. El acceso a la cultura física como ampliación de la ciudadanía.',
     status: 'text',
     stateKey: 'almada-privilegiados-text-page-v1',
     historicalPeriod: 'Primer peronismo · 1946–1955',
@@ -103,6 +108,7 @@ const readablePlannedWorks = {
     readingDetail: 'Audiolibro con seguimiento aproximado por párrafos y cuaderno de lectura',
   },
   'melano-militares-juramentados': {
+    heroCaption: 'Reapertura del INEF Gral. Belgrano. Volver al hogar, volver al espíritu.',
     status: 'text',
     historicalPeriod: 'Formación docente, dictadura y redes de poder · 1967–1981',
     heroAction: 'Abrir recorrido',
@@ -118,6 +124,7 @@ const readablePlannedWorks = {
     readingDetail: 'Lectura académica íntegra y cuaderno de notas',
   },
   'soares-corrientes-gimnasticas': {
+    heroCaption: 'Gimnasia sueca en Estocolmo. La ciencia del siglo XIX se hace gimnasia.',
     status: 'available',
     duration: 3113.377959,
     historicalPeriod: 'Gimnasias europeas · siglo XIX',
@@ -127,7 +134,7 @@ const readablePlannedWorks = {
   },
   'marcaida-scaltritti-estado-nacional': {
     heroArtwork: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Aduana_Taylor_y_muelle_de_cargas_visto_desde_el_r%C3%ADo.jpg',
-    heroCaption: 'Aduana de Taylor (inaugurada en 1857). Símbolo de la articulación con el mercado mundial y del poder económico de Buenos Aires en disputa durante la construcción del Estado nacional.',
+    heroCaption: 'Aduana de Taylor (inaugurada en 1857). El poder porteño en la disputa por el Estado.',
     status: 'review',
     duration: 1878.909388,
     historicalPeriod: '1852–1880',
