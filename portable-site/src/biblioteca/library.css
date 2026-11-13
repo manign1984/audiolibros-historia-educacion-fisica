@@ -108,6 +108,11 @@
   background:linear-gradient(122deg, transparent 58%, #ffffff20 58% 66%, transparent 66% 79%, #ffffff16 79% 88%, transparent 88%),
     linear-gradient(128deg, var(--tone-dark), var(--tone));
 }
+.library-page .hero--melano-aisenstein-ultima-dictadura .hero-art.is-active {
+  width:100%;
+  object-position:72% 50%;
+}
+.library-page .hero--soares-corrientes-gimnasticas .hero-art.is-active {object-position:65% 75%;}
 .library-page .hero--thwaites-rey-democracia-argentina .hero-art {object-position:50% 65%;}
 .library-page .hero--almada-privilegiados .hero-art {object-position:50% 68%;}
 .library-page .hero-content {max-width: min(100%, 660px);}
