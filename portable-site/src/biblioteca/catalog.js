@@ -39,6 +39,7 @@ const publishedWorks = [
     duration: 3083.755102,
     stateKey: 'scharagrodsky-constitucion-ef-reader-state-v1',
     artwork: 'assets/scharagrodsky-disputas.svg',
+    heroArtwork: 'assets/scharagrodsky-ronda-carrusel.webp',
     description: 'Las disputas entre el Sistema Argentino de Educación Física y la matriz militar: saberes, instituciones, disciplina y ciudadanía en las primeras décadas del siglo XX.',
     authorDisplay: 'Scharagrodsky, P. A.',
     authorSearch: ['Pablo Ariel Scharagrodsky', 'Scharagrodsky, Pablo', 'Scharagrodsky, P. A.'],
