@@ -325,3 +325,20 @@
     line-height:1.5;
   }
 }
+
+/* Tarjetas del catálogo y Mi lista: el título y la autoría están en la tapa.
+   Abajo se lee solo la continuación editorial del título bibliográfico. */
+.library-page .work-card h3.card-continuation {
+  color:#cbd3df;
+  font-weight:500;
+  line-height:1.55;
+  overflow-wrap:break-word;
+  text-wrap:pretty;
+}
+.library-page .work-card-info--no-continuation {
+  justify-content:flex-end;
+  padding-top:8px;
+}
+.library-page .work-card-info--no-continuation .save-button {
+  margin-top:0;
+}
