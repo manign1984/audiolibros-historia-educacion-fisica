@@ -21,13 +21,16 @@ function Inicio() {
           <p className="pd-hero-question">¿Cómo se transformó el sistema educativo mediante la represión y la producción de desigualdades?</p>
           <p className="pd-hero-detail">Dos estrategias complementarias para estudiar las políticas educativas de la dictadura y sus efectos sobre la escuela pública.</p>
         </div>
-        <div className="pd-cover" role="img" aria-label="Composición editorial contemporánea: entre 1976 y 1983, la represión y la discriminación estructuraron dos estrategias educativas. No es un documento histórico.">
-          <div className="pd-cover-top"><span>ARGENTINA</span><span>1976—1983</span></div>
-          <div className="pd-cover-years" aria-hidden="true"><span>19</span><span>76</span><span>—</span><span>83</span></div>
-          <div className="pd-cover-rule" />
-          <div className="pd-cover-bottom"><div>UNA POLÍTICA<br />EDUCATIVA</div><div>DOS<br />ESTRATEGIAS</div></div>
-          <div className="pd-cover-corner" aria-hidden="true">14 / U5</div>
-        </div>
+        <figure className="pd-cover">
+          <img
+            src={import.meta.env.BASE_URL + 'assets/pineau-reprimir-discriminar/subversion-ambito-educativo-1977.webp'}
+            alt="Tapa de Subversión en el ámbito educativo (Conozcamos a nuestro enemigo)"
+            width={962}
+            height={1283}
+            fetchPriority="high"
+          />
+          <figcaption>Ministerio de Cultura y Educación · Buenos Aires, 1977</figcaption>
+        </figure>
       </div>
     </section>
   );
