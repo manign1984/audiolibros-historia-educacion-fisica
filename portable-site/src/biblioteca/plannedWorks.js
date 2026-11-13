@@ -36,6 +36,9 @@ const records = [
 // Obras con lectura y audio habilitados; la disponibilidad del lector
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
+  'melano-aisenstein-ultima-dictadura': {
+    heroArtwork: 'assets/melano/resolucion-543-carrusel.webp',
+  },
   'galak-del-dicho-al-hecho': {
     status: 'text',
     stateKey: 'galak-del-dicho-al-hecho-text-page-v1',
@@ -113,6 +116,7 @@ const readablePlannedWorks = {
     status: 'available',
     duration: 3113.377959,
     historicalPeriod: 'Gimnasias europeas · siglo XIX',
+    heroArtwork: 'assets/soares/gimnasia-sueca-carrusel.webp',
     stateKey: 'soares-corrientes-gimnasticas-paragraph-state-v1',
     readingDetail: 'Seguimiento aproximado por párrafos',
   },
