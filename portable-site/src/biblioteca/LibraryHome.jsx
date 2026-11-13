@@ -101,6 +101,28 @@ function Shelf({ title, entries, saved, toggle, progress = {}, id }) {
 const HERO_ROTATION_MS = 10_000;
 const HERO_CROSSFADE_MS = 700;
 
+// Cortes editoriales para títulos cuyo primer enunciado es largo o no tiene separador.
+const heroTitleLead = {
+  'melano-aisenstein-ultima-dictadura': 'Formación docente en Educación Física',
+  'levoratti-gimnasia-1958-1968': 'La educación física y la gimnasia',
+  'levoratti-debates-ef': 'Los debates de la Educación Física y los enfoques de las ciencias sociales:',
+  'thwaites-rey-democracia-argentina': 'La democracia argentina',
+};
+
+function HeroTitle({ entry }) {
+  const title = entry.title;
+  const lead = heroTitleLead[entry.id];
+  const separator = /[.:?] (?=\S)/.exec(title);
+  const split = lead && title.startsWith(lead + ' ')
+    ? lead.length
+    : separator ? separator.index + 1 : title.length;
+  const subtitle = title.slice(split).trimStart();
+
+  return <h1 id="hero-title" className={split > 46 ? 'hero-title--long' : undefined}>
+    {title.slice(0, split)}{subtitle && <> <span>{subtitle}</span></>}
+  </h1>;
+}
+
 function Hero({ saved, toggle }) {
   const [index, setIndex] = useState(0);
   const [pausedByUser, setPausedByUser] = useState(false);
@@ -131,15 +153,6 @@ function Hero({ saved, toggle }) {
   const textOnly = entry.status === 'text';
   const action = hasAudio ? 'Leer y escuchar' : textOnly ? 'Leer el texto' : 'Ver ficha bibliográfica';
   const ActionIcon = hasAudio ? Play : textOnly ? BookOpen : ArrowRight;
-  // Títulos propios de cada lectura. Nunca usar la obra anterior como fallback.
-  const heroTitles = {
-    'scharagrodsky-constitucion-ef': <>La constitución de la<span>Educación Física escolar.</span></>,
-    'aisenstein-tabla-rasa': <>¿Hacemos tabla<span>rasa del pasado?</span></>,
-    'orbuch-educar-al-cuerpo': <>Educar al cuerpo<span>dentro y fuera del aula.</span></>,
-    'pineau-fresco-noble': <>Renovación,<br />represión,<span>cooptación.</span></>,
-    'hobsbawm-historia-siglo-xx': <>Historia del<span>siglo XX.</span></>,
-  };
-  const title = heroTitles[entry.id] ?? entry.shortTitle;
   return <section
     className={`hero hero--${entry.id} ${rotating ? 'hero--autoplay' : ''}`}
     aria-label="Lecturas destacadas"
@@ -164,7 +177,7 @@ function Hero({ saved, toggle }) {
       <div className="hero-content" aria-live={rotating ? 'off' : 'polite'} aria-atomic="true">
         <div className="hero-copy" key={entry.id}>
           <p className="hero-author">{entry.author.toLocaleUpperCase('es')}</p>
-          <h1 id="hero-title" aria-label={entry.shortTitle}>{title}</h1>
+          <HeroTitle entry={entry} />
           <div className="hero-meta">
             {hasAudio ? <><span className="available-dot">Disponible ahora</span><span>{formatDuration(entry.duration)} de audio</span><span>Texto + contexto</span></>
               : textOnly ? <><span>Lectura completa</span><span>Cuaderno de notas</span></>

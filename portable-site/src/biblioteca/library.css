@@ -109,6 +109,31 @@
     linear-gradient(128deg, var(--tone-dark), var(--tone));
 }
 .library-page .hero--thwaites-rey-democracia-argentina .hero-art {object-position:50% 65%;}
+.library-page .hero--almada-privilegiados .hero-art {object-position:50% 68%;}
+.library-page .hero-content {max-width: min(100%, 660px);}
+.library-page .hero-content h1 {
+  font-size:clamp(34px, 4.25vw, 67px);
+  line-height:1.04;
+  letter-spacing:-.045em;
+  text-wrap:balance;
+  overflow-wrap:anywhere;
+}
+.library-page .hero-content h1.hero-title--long {
+  font-size:clamp(28px, 3.45vw, 54px);
+}
+.library-page .hero-content h1 > span {
+  max-width:37ch;
+  margin-top:.45em;
+  color:#e9d9b6;
+  font:400 clamp(19px, 2.1vw, 34px)/1.17 Georgia, serif;
+  letter-spacing:normal;
+}
+@media (max-width:760px) {
+  .library-page .hero-content h1 {font-size:clamp(30px, 7.5vw, 45px);}
+  .library-page .hero-content h1.hero-title--long {font-size:clamp(26px, 6.4vw, 39px);}
+  .library-page .hero-content h1 > span {font-size:clamp(18px, 4.7vw, 24px);}
+  .library-page .hero--almada-privilegiados .hero-art {object-position:53% 50%;}
+}
 .library-page .hero-content .hero-meta:last-child {margin-bottom:22px;}
 .library-page .hero-copy {
   animation:hero-content-fade var(--hero-fade-duration,700ms) ease-out both;
