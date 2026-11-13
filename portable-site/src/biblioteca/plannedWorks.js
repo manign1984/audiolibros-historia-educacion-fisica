@@ -64,6 +64,7 @@ const readablePlannedWorks = {
     stateKey: 'thwaites-rey-democracia-argentina-reader-state-v1',
     historicalPeriod: 'Democracia y hegemonía neoliberal · 1983–2013',
     artwork: 'assets/thwaites-rey/plaza-de-mayo-1983.webp',
+    heroArtwork: 'assets/thwaites-rey/buenos-aires-2001.jpg',
   },
   'torre-pastoriza-bienestar': {
     status: 'available',
