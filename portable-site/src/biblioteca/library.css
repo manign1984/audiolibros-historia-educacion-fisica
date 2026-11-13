@@ -290,10 +290,9 @@
   .filter-selects{align-items:end}
 }
 
-/* Epígrafe de la Aduana de Taylor: en escritorio ocupa el pie de la
-   fotografía (a la derecha del carrusel, alineado a la izquierda dentro de esa
-   zona). En pantallas estrechas/bajas vuelve al flujo de la lectura para no
-   cubrir los botones, los selectores ni otros contenidos. */
+/* Epígrafes editoriales aprobados: comparten el pie de la fotografía
+   en escritorio y pasan al flujo de lectura en ventanas estrechas o bajas.
+   No se recorta ni se oculta el texto, para conservar la lectura accesible. */
 .library-page .hero-image-caption {
   margin:0;
   border-left:2px solid #c2f973;
@@ -301,6 +300,8 @@
   font:500 clamp(11px,.9vw,13px)/1.5 'Archivo',sans-serif;
   text-align:left;
   text-shadow:0 1px 8px #0c0e15;
+  text-wrap:balance;
+  overflow-wrap:break-word;
 }
 .library-page .hero-image-caption--photo {
   position:absolute;
@@ -317,7 +318,7 @@
   .library-page .hero-image-caption--photo {display:none;}
   .library-page .hero-image-caption--inline {
     display:block;
-    max-width:42ch;
+    max-width:min(100%,60ch);
     margin:clamp(8px,1.8cqh,15px) 0 0;
     padding:5px 0 5px 13px;
     font-size:11px;
