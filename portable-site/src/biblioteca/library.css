@@ -24,6 +24,7 @@
 @media(max-width:760px){.work-card .save-button{width:40px;height:40px}.shelf-arrows button{width:40px;height:40px}.card-author{font-size:11px}.work-card h3{font-size:13px}.card-meta{font-size:10px}.status-badge{font-size:8px}}
 
 /* Keep landscape artwork readable in the bibliographic detail view. */
+.work-intro .work-source-link{margin-right:12px}
 .work-intro .cover--large.cover--image{aspect-ratio:16/9;padding:0}
 
 /* Course identity and the original institutional logos. */
@@ -111,7 +112,7 @@
   background:linear-gradient(122deg, transparent 58%, #ffffff20 58% 66%, transparent 66% 79%, #ffffff16 79% 88%, transparent 88%),
     linear-gradient(128deg, var(--tone-dark), var(--tone));
 }
-.library-page .hero--melano-aisenstein-ultima-dictadura .hero-art.is-active {
+.library-page .hero--melano-militares-juramentados .hero-art.is-active {
   width:100%;
   object-position:72% 50%;
 }

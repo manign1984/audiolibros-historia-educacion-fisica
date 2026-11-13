@@ -166,7 +166,7 @@ const openingIds = new Set([
   'arata-marino-auroras-tempestades',
   'levoratti-gimnasia-1958-1968',
   'pineau-reprimir-discriminar',
-  'melano-aisenstein-ultima-dictadura',
+  'melano-militares-juramentados',
   'thwaites-rey-democracia-argentina',
   'levoratti-debates-ef',
   'galak-del-dicho-al-hecho',

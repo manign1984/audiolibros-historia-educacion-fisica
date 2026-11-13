@@ -22,7 +22,7 @@ const records = [
   ['torre-pastoriza-bienestar', 'Juan Carlos Torre · Elisa Pastoriza', 'La democratización del bienestar', 'La democratización del bienestar', 'gold', '2002', 'Torre, J. C. y Pastoriza, E. (2002). La democratización del bienestar. En J. C. Torre (Dir.), Los años peronistas (1943–1955) (pp. 257–312). Sudamericana.', 'programa'],
   ['almada-privilegiados', 'Cecilia Almada', 'Los privilegiados en la Nueva Argentina', 'Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo', 'gold', '2020', 'Almada, C. (2020). Los privilegiados en la Nueva Argentina. La cultura física y el deporte en la política del peronismo. History of Education in Latin America - HistELA, 3, e21434. https://doi.org/10.21680/2596-0113.2020v3n0ID21434', 'materiales'],
   ['pineau-reprimir-discriminar', 'Pablo Pineau', 'Reprimir y discriminar', 'Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983)', 'sage', '2014', 'Pineau, P. (2014). Reprimir y discriminar. La educación en la última dictadura cívico-militar en Argentina (1976–1983). Educar em Revista, 51, 103–122.', 'programa'],
-  ['melano-aisenstein-ultima-dictadura', 'Ignacio Melano · Ángela Aisenstein', 'Formación docente en dictadura', 'Formación docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”', 'sage', '2018', 'Melano, I. y Aisenstein, A. (2018). Formación docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”. En C. Kaufmann, Estudios sobre historia y política de la educación argentina reciente (1960–2000) (pp. 179–198). FahrenHouse.', 'programa', 'assets/melano/inef-general-belgrano-portada.jpg'],
+  ['melano-aisenstein-ultima-dictadura', 'Ángela Aisenstein · Ignacio Melano', 'Formación docente en dictadura', 'Formación docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”', 'sage', '2018', 'Aisenstein, Á. y Melano, I. (2018). Formación docente en Educación Física en Argentina durante la última dictadura militar. El caso del INEF “Gral. Manuel Belgrano”. En C. Kaufmann, Estudios sobre historia y política de la educación argentina reciente (1960–2000) (pp. 179–198). FahrenHouse.', 'programa', 'assets/melano/inef-general-belgrano-portada.jpg'],
   ['arata-marino-auroras-tempestades', 'Nicolás Arata · Marcelo Mariño', 'Auroras y tempestades', 'Auroras y tempestades: la educación entre golpes (1955–1976)', 'sage', '2013', 'Arata, N. y Mariño, M. (2013). Auroras y tempestades: la educación entre golpes (1955–1976). En La educación en la Argentina. Una historia en 12 lecciones (lección 10). Ediciones Novedades Educativas.', 'programa', 'assets/arata-marino/autor-editorial.svg'],
   ['melano-militares-juramentados', 'Ignacio Melano', 'Militares al gobierno, juramentados al poder', 'Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70', 'sage', '2025', 'Melano, I. (2025). Militares al gobierno, juramentados al poder: la reapertura del INEF Gral. Belgrano en la década del 70. En Formar líderes y salvar a los jóvenes. Claves para comprender la cultura escolar del Instituto Nacional de Educación Física General Belgrano (cap. 6, pp. 131–149). EdUNLu.', 'entrevistas'],
   ['feldfeber-gluz-politicas', 'Myriam Feldfeber · Nora Gluz', 'Las políticas educativas en la Argentina', 'Las políticas educativas en Argentina: herencias de los 90, contradicciones y tendencias de nuevo signo', 'pink', '2011', 'Feldfeber, M. y Gluz, N. (2011). Las políticas educativas en Argentina: herencias de los 90, contradicciones y tendencias de nuevo signo. Educação & Sociedade, 32(115), 339–356.', 'programa'],
@@ -37,7 +37,9 @@ const records = [
 // se distingue del grado de sincronización de cada obra.
 const readablePlannedWorks = {
   'melano-aisenstein-ultima-dictadura': {
-    heroArtwork: 'assets/melano/resolucion-543-carrusel.webp',
+    publicationUrl: 'https://www.fahrenhouse.com/omp/index.php/fh/catalog/view/28/27/80-1',
+    publicationLabel: 'Leer en el PDF de FahrenHouse (pp. 179–198)',
+    relatedWorkId: 'melano-militares-juramentados',
   },
   'galak-del-dicho-al-hecho': {
     status: 'text',
@@ -102,9 +104,11 @@ const readablePlannedWorks = {
   'melano-militares-juramentados': {
     status: 'text',
     historicalPeriod: 'Formación docente, dictadura y redes de poder · 1967–1981',
+    heroAction: 'Abrir recorrido',
     stateKey: 'melano-juramentados-text-page-v1',
     readingDetail: 'Lectura académica y cuaderno de notas',
-    artwork: 'assets/melano/melano-composicion-archivo.png',
+    artwork: 'assets/melano/inef-general-belgrano-portada.jpg',
+    heroArtwork: 'assets/melano/resolucion-543-carrusel.webp',
   },
   'lionetti-escuela-republicana': {
     status: 'text',
