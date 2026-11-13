@@ -16,7 +16,7 @@ function Inicio() {
         <div className="pd-hero-copy">
           <JourneyBlockLabel sectionId="inicio" />
           <p className="pd-kicker">Pablo Pineau <span aria-hidden="true">/</span> artículo académico · 2014</p>
-          <h1 id="pd-title">Reprimir <span className="pd-hero-amp">y</span><br />discriminar<span className="pd-hero-dot">.</span></h1>
+          <h1 id="pd-title">Reprimir <span className="pd-hero-amp">y</span><br />discriminar.</h1>
           <p className="pd-subtitle">La educación en la última dictadura cívico-militar en Argentina <strong>(1976–1983)</strong></p>
           <p className="pd-hero-question">¿Cómo se transformó el sistema educativo mediante la represión y la producción de desigualdades?</p>
           <p className="pd-hero-detail">Dos estrategias complementarias para estudiar las políticas educativas de la dictadura y sus efectos sobre la escuela pública.</p>
