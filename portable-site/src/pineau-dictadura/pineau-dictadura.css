@@ -16,37 +16,39 @@ body:has(.pineau-dictadura-page) {margin:0}
 .pd-screen {min-height:var(--pd-room);height:auto;display:flex;align-items:center;overflow:visible}
 .pd-container {width:min(1270px,calc(100% - 90px));margin-inline:auto}
 .pd-kicker,.pd-context-index {font:700 12px/1.5 'Archivo',sans-serif;letter-spacing:.145em;text-transform:uppercase}
-.pd-hero {background:var(--pd-coal);color:var(--pd-cream);padding:34px 0 44px}
-.pd-hero-layout {display:grid;grid-template-columns:minmax(0,1.12fr) minmax(290px,.88fr);gap:clamp(30px,5vw,80px);align-items:center}
-.pd-hero .journey-block-label {color:#e1b69f}
-.pd-kicker {margin:28px 0 14px;color:#dbc5b9}
-.pd-kicker span {padding:0 8px;color:#d06e5f}
-.pd-hero h1 {margin:0 0 22px;font:900 clamp(48px,5.65vw,88px)/.96 'Archivo',sans-serif;letter-spacing:-.068em;text-wrap:balance}
-.pd-hero h1 span:first-child,.pd-hero h1 span:nth-child(3) {display:block}
-.pd-hero-amp {display:inline;color:#d36959;font:400 .58em/.9 'Bebas Neue',sans-serif;letter-spacing:0}
-.pd-hero-dot {color:#d36959}
-.pd-subtitle {margin:0;max-width:740px;font:600 clamp(18px,1.75vw,25px)/1.35 'Archivo',sans-serif}
-.pd-subtitle strong {color:#e4ac91;white-space:nowrap}
-.pd-hero-question {margin:28px 0 0;max-width:690px;font-size:clamp(17px,1.32vw,21px);line-height:1.55;color:#f9e6db}
-.pd-hero-detail {margin:18px 0 0;max-width:660px;font-size:13px;line-height:1.6;color:#cbbcb7}
-.pd-cover {
-  margin:0;
-  min-width:0;
-  display:grid;
-  justify-items:center;
-  gap:12px;
+.pd-hero {
+  position:relative;
+  isolation:isolate;
+  background:#fff;
+  color:var(--pd-ink);
+  --journey-label-color:var(--pd-burgundy);
+  padding:clamp(30px,5svh,60px) 0;
 }
-.pd-cover img {
-  display:block;
-  width:min(100%, 410px, max(240px, calc((var(--pd-room) - 100px) * 962 / 1283)));
-  height:auto;
-  box-shadow:12px 12px 0 #161115;
+.pd-hero-layout {position:relative;z-index:1}
+.pd-hero-copy {width:min(47%,630px)}
+.pd-hero-document {position:absolute;inset:0}
+/* La línea del borde izquierdo puede quedar bajo el texto en ventanas anchas. */
+.pd-hero-document::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,#fff 0 44%,transparent 49%);
+  pointer-events:none;
 }
-.pd-cover figcaption {
-  color:#dbc5b9;
-  font:400 13px/1.5 'Archivo',sans-serif;
-  text-align:center;
+.pd-hero-document img {display:block;width:100%;height:100%;object-fit:contain}
+.pd-kicker {margin:22px 0 16px;color:var(--pd-muted)}
+.pd-kicker span {padding:0 8px;color:var(--pd-red)}
+.pd-hero h1 {
+  margin:0 0 22px;
+  font:900 clamp(36px,5.3vw,84px)/1 'Archivo',sans-serif;
+  letter-spacing:-.065em;
 }
+.pd-hero-amp {color:var(--pd-burgundy);font:400 .8em/1 Georgia,serif}
+.pd-hero-dot {color:var(--pd-burgundy)}
+.pd-subtitle {margin:0;font:600 clamp(17px,1.7vw,24px)/1.36 'Archivo',sans-serif}
+.pd-subtitle strong {color:var(--pd-burgundy);white-space:nowrap}
+.pd-hero-question {margin:22px 0 0;font-size:clamp(16px,1.3vw,20px);line-height:1.5}
+.pd-hero-detail {margin:14px 0 0;font-size:14px;line-height:1.55;color:var(--pd-muted)}
 /* Autor: idéntico componente y retrato reutilizados, únicamente se colorea su fondo. */
 .pd-author {background:#50232b;color:#f7ecdd;--paper-light:#f7ecdd;--mustard:#e2ba9e;--journey-label-color:#e2ba9e}
 .pd-context {padding:43px 0 48px}
@@ -79,24 +81,24 @@ body:has(.pineau-dictadura-page) {margin:0}
 }
 @media(max-width:1050px) {
  .pd-container{width:calc(100% - 52px)}
- .pd-hero-layout{grid-template-columns:1fr .8fr;gap:28px}
  .pd-chain{gap:9px}
  .pd-chain>div{padding:16px}
  .pd-measures article{padding:18px}
 }
 @media(max-width:760px) {
  .pd-container{width:calc(100% - 34px)}
- .pd-hero,.pd-context{padding:48px 0}
- .pd-hero-layout{display:flex;flex-direction:column;align-items:stretch;gap:34px}
- .pd-hero h1{font-size:clamp(46px,11.2vw,76px)}
+ .pd-context{padding:48px 0}
+ .pd-hero{flex-direction:column;gap:30px}
+ .pd-hero-copy{width:100%}
+ .pd-hero h1{font-size:clamp(38px,10.5vw,66px)}
+ .pd-hero-document{position:static;width:min(390px,calc(100% - 34px));overflow:hidden}
+ .pd-hero-document::after{display:none}
+ .pd-hero-document img{width:200%;max-width:none;height:auto;margin-left:-100%}
  .pd-chain{grid-template-columns:1fr;gap:10px}
  .pd-chain>div{min-height:0;gap:10px}
  .pd-arrow{transform:rotate(90deg);justify-self:center;line-height:.8}
  .pd-measures{grid-template-columns:1fr;gap:12px}
  .pd-context-footer{grid-template-columns:1fr;gap:17px}
-}
-@media(max-width:380px) {
- .pd-hero h1{font-size:clamp(34px,11.2vw,43px)}
 }
 @media(prefers-reduced-motion:reduce) {
  .pineau-dictadura-page *, .pineau-dictadura-page *::before, .pineau-dictadura-page *::after {scroll-behavior:auto}

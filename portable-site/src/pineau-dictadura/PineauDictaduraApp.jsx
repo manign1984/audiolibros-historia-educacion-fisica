@@ -16,21 +16,20 @@ function Inicio() {
         <div className="pd-hero-copy">
           <JourneyBlockLabel sectionId="inicio" />
           <p className="pd-kicker">Pablo Pineau <span aria-hidden="true">/</span> artículo académico · 2014</p>
-          <h1 id="pd-title"><span>Reprimir</span><span className="pd-hero-amp">y</span><span>discriminar</span><span className="pd-hero-dot">.</span></h1>
+          <h1 id="pd-title">Reprimir <span className="pd-hero-amp">y</span><br />discriminar<span className="pd-hero-dot">.</span></h1>
           <p className="pd-subtitle">La educación en la última dictadura cívico-militar en Argentina <strong>(1976–1983)</strong></p>
           <p className="pd-hero-question">¿Cómo se transformó el sistema educativo mediante la represión y la producción de desigualdades?</p>
           <p className="pd-hero-detail">Dos estrategias complementarias para estudiar las políticas educativas de la dictadura y sus efectos sobre la escuela pública.</p>
         </div>
-        <figure className="pd-cover">
-          <img
-            src={import.meta.env.BASE_URL + 'assets/pineau-reprimir-discriminar/subversion-ambito-educativo-1977.webp'}
-            alt="Tapa de Subversión en el ámbito educativo (Conozcamos a nuestro enemigo)"
-            width={962}
-            height={1283}
-            fetchPriority="high"
-          />
-          <figcaption>Ministerio de Cultura y Educación · Buenos Aires, 1977</figcaption>
-        </figure>
+      </div>
+      <div className="pd-hero-document">
+        <img
+          src={import.meta.env.BASE_URL + 'assets/pineau-reprimir-discriminar/subversion-ambito-educativo-1977-fondo.webp'}
+          alt="Tapa de Subversión en el ámbito educativo (Conozcamos a nuestro enemigo), Ministerio de Cultura y Educación, Buenos Aires, 1977"
+          width={1924}
+          height={1283}
+          fetchPriority="high"
+        />
       </div>
     </section>
   );
