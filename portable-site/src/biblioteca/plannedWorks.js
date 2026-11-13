@@ -86,6 +86,7 @@ const readablePlannedWorks = {
     historicalPeriod: 'Formación docente e internado · 1938–1967',
     readingDetail: 'Seguimiento aproximado por párrafos y cuaderno de lectura',
     artwork: 'assets/feiguin-aisenstein/portada.webp',
+    heroArtwork: 'assets/feiguin-aisenstein/formacion-inef-carrusel.webp',
   },
   'almada-privilegiados': {
     status: 'text',
