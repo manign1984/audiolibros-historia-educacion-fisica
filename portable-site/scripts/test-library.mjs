@@ -186,7 +186,6 @@ assert.equal(marcaida.heroArtwork, 'https://upload.wikimedia.org/wikipedia/commo
 assert.match(marcaida.heroCaption, /Aduana de Taylor.*poder económico de Buenos Aires/);
 assert.match(heroSection, /entry\.heroCaption.*hero-image-caption/, 'El epígrafe se muestra solo en la diapositiva que lo define.');
 assert.match(heroSection, /https\?:/, 'El carrusel acepta fotografías remotas sin anteponer BASE_URL.');
-assert.match(libraryCss, /\.library-page \.hero-image-caption/, 'El epígrafe tiene un estilo propio y legible.');
 assert.equal(marcaida.status, 'review');
 assert.equal(marcaida.duration, 1878.909388);
 assert.equal(marcaida.historicalPeriod, '1852–1880');
@@ -264,6 +263,7 @@ console.log('Biblioteca: 18 fichas de apertura, 13 recorridos con estado audiovi
 // Inicio muestra el catálogo completo debajo de las lecturas en curso.
 const librarySource = await readFile(new URL('../src/biblioteca/LibraryHome.jsx', import.meta.url), 'utf8');
 const libraryCss = await readFile(new URL('../src/biblioteca/library.css', import.meta.url), 'utf8');
+assert.match(libraryCss, /\.library-page \.hero-image-caption/, 'El epígrafe tiene un estilo propio y legible.');
 assert.match(librarySource, /const headerRef = useRef\(null\)/, 'Medir el encabezado de la biblioteca sin presumir una altura fija.');
 assert.match(librarySource, /observer\.observe\(header\)/, 'Responder a cambios de altura del encabezado en tablet y móvil.');
 assert.match(librarySource, /--library-header-height/, 'Compartir la altura efectiva con la portada.');
