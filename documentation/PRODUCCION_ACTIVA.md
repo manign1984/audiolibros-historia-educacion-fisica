@@ -6,6 +6,14 @@
 **Estado del catálogo:** corroborar siempre con `portable-site/src/biblioteca/catalog.js` y `portable-site/src/biblioteca/plannedWorks.js`.
 **Puerta técnica entre chats:** [Mapa operativo del lector integrado](MAPA_OPERATIVO_LECTOR_INTEGRADO.md). Es una guía de ubicación del código vigente, subordinada a las Directrices 3.0, no un segundo reglamento.
 
+## Interfaz general · Marcaida–Scaltritti · portada del carrusel (13/11/2026)
+
+Para la ficha «La construcción del Estado nacional argentino (1852–1880)», se seleccionó la fotografía frontal de la **Aduana de Taylor y su muelle de cargas, vista desde el río** (ca. 1860). Procedencia archivística declarada: **Archivo General de la Nación**; versión digital: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aduana_Taylor_y_muelle_de_cargas_visto_desde_el_r%C3%ADo.jpg), identificada como dominio público. El recurso se sirve desde la URL pública de Wikimedia Commons, sin copiar el binario al repositorio. Se preserva sin cambios la portada editorial dentro del recorrido de Marcaida.
+
+Epígrafe aprobado: «Aduana de Taylor (inaugurada en 1857). Símbolo de la articulación con el mercado mundial y del poder económico de Buenos Aires en disputa durante la construcción del Estado nacional.».
+
+La diapositiva respeta el carrusel común y muestra el epígrafe como texto pequeño separado de la sinopsis, visible en escritorio y celular, sin agregarlo a las demás portadas.
+
 ## Interfaz general · Carrusel de Inicio (12/11/2026)
 
 La portada general usa la autoría del catálogo como único rótulo superior. El nombre de la asignatura figura en el encabezado. La rotación es continua y el botón de reproducción controla la pausa. Los indicadores numerados permiten cambiar de portada sin alterar ese estado. Se respeta la preferencia de movimiento reducido. La altura del carrusel y la posición de sus 18 selectores son comunes a todas las diapositivas. En ventanas bajas o con texto ampliado puede desplazarse el contenido de la portada sin mover los controles. El carrusel incluye las 18 fichas de apertura. Cada portada ofrece el acceso que corresponde a su obra. La diapositiva de Mabel Thwaites Rey usa la fotografía aportada de Buenos Aires en 2001. Las 18 diapositivas muestran el título bibliográfico completo con una jerarquía tipográfica para los subtítulos. La diapositiva de Almada usa la acuarela aportada del campeonato infantil. «Reprimir y discriminar» usa la fotografía aportada de la quema de libros en Sarandí en el carrusel y la miniatura del catálogo. El Inicio del recorrido usa el escaneo apaisado del documento ministerial de 1977 como fondo, con el texto en bordó #50232B sobre el margen blanco. En escritorio la tapa queda desplazada a la derecha con un margen blanco superior e inferior. En pantallas estrechas la tapa se muestra debajo del texto.
