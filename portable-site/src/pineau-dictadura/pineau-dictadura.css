@@ -29,15 +29,24 @@ body:has(.pineau-dictadura-page) {margin:0}
 .pd-subtitle strong {color:#e4ac91;white-space:nowrap}
 .pd-hero-question {margin:28px 0 0;max-width:690px;font-size:clamp(17px,1.32vw,21px);line-height:1.55;color:#f9e6db}
 .pd-hero-detail {margin:18px 0 0;max-width:660px;font-size:13px;line-height:1.6;color:#cbbcb7}
-.pd-cover {min-height:490px;position:relative;display:flex;flex-direction:column;justify-content:space-between;background:#742d2b;color:#f3e8d7;outline:1px solid #cd8c78;outline-offset:-15px;border:1px solid #bd796e;padding:34px 36px 38px;box-shadow:22px 22px 0 #161115}
-.pd-cover-top,.pd-cover-bottom {display:flex;justify-content:space-between;gap:12px;font:800 11px/1.45 'Archivo',sans-serif;letter-spacing:.12em}
-.pd-cover-years {display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:center;font:400 clamp(96px,9.1vw,153px)/.75 'Bebas Neue',sans-serif;letter-spacing:-.035em}
-.pd-cover-years span:nth-child(3) {font-size:.4em;color:#eac4a7;align-self:center;padding-left:12px}
-.pd-cover-years span:last-child {justify-self:end}
-.pd-cover-rule {border-top:2px solid #efc8af}
-.pd-cover-bottom {font-size:12px}
-.pd-cover-bottom div:last-child {text-align:right}
-.pd-cover-corner {position:absolute;bottom:10px;left:18px;font:700 10px 'Archivo',sans-serif;color:#eabf9e}
+.pd-cover {
+  margin:0;
+  min-width:0;
+  display:grid;
+  justify-items:center;
+  gap:12px;
+}
+.pd-cover img {
+  display:block;
+  width:min(100%, 410px, max(240px, calc((var(--pd-room) - 100px) * 962 / 1283)));
+  height:auto;
+  box-shadow:12px 12px 0 #161115;
+}
+.pd-cover figcaption {
+  color:#dbc5b9;
+  font:400 13px/1.5 'Archivo',sans-serif;
+  text-align:center;
+}
 /* Autor: idéntico componente y retrato reutilizados, únicamente se colorea su fondo. */
 .pd-author {background:#50232b;color:#f7ecdd;--paper-light:#f7ecdd;--mustard:#e2ba9e;--journey-label-color:#e2ba9e}
 .pd-context {padding:43px 0 48px}
@@ -71,8 +80,6 @@ body:has(.pineau-dictadura-page) {margin:0}
 @media(max-width:1050px) {
  .pd-container{width:calc(100% - 52px)}
  .pd-hero-layout{grid-template-columns:1fr .8fr;gap:28px}
- .pd-cover{min-height:420px;padding:24px;box-shadow:12px 12px 0 #161115}
- .pd-cover-years{font-size:clamp(70px,9.3vw,115px)}
  .pd-chain{gap:9px}
  .pd-chain>div{padding:16px}
  .pd-measures article{padding:18px}
@@ -82,8 +89,6 @@ body:has(.pineau-dictadura-page) {margin:0}
  .pd-hero,.pd-context{padding:48px 0}
  .pd-hero-layout{display:flex;flex-direction:column;align-items:stretch;gap:34px}
  .pd-hero h1{font-size:clamp(46px,11.2vw,76px)}
- .pd-cover{min-height:340px}
- .pd-cover-years{font-size:clamp(83px,20vw,145px)}
  .pd-chain{grid-template-columns:1fr;gap:10px}
  .pd-chain>div{min-height:0;gap:10px}
  .pd-arrow{transform:rotate(90deg);justify-self:center;line-height:.8}
@@ -91,10 +96,7 @@ body:has(.pineau-dictadura-page) {margin:0}
  .pd-context-footer{grid-template-columns:1fr;gap:17px}
 }
 @media(max-width:380px) {
- .pd-hero h1{font-size:43px}
- .pd-cover{min-height:300px;padding:23px}
- .pd-cover-years{font-size:77px}
- .pd-cover-bottom{font-size:10px}
+ .pd-hero h1{font-size:clamp(34px,11.2vw,43px)}
 }
 @media(prefers-reduced-motion:reduce) {
  .pineau-dictadura-page *, .pineau-dictadura-page *::before, .pineau-dictadura-page *::after {scroll-behavior:auto}

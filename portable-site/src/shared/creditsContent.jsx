@@ -77,8 +77,9 @@ export const creditsContent = {
     ],
     rights: [
       <>Autoría de la investigación: Pablo Pineau. La lectura conserva el cuerpo del artículo académico del documento de trabajo facilitado; para los resúmenes, notas y referencias de la edición impresa, consultar el PDF original.</>,
+      <>Imágenes de archivo facilitadas para este recorrido: fotografía de la quema de libros en Sarandí y tapa de <em>Subversión en el ámbito educativo (Conozcamos a nuestro enemigo)</em>, Ministerio de Cultura y Educación, Buenos Aires, 1977.</>,
       <>Fotografía del autor: Facultad de Filosofía y Letras, UBA, según la atribución de la página anterior dedicada a Pineau.</>,
-      <>Composición tipográfica de Inicio y esquemas de Contexto: elaboración didáctica de +TEC UNAHUR, no documentos históricos de época.</>,
+      <>Esquemas de Contexto: elaboración didáctica de +TEC UNAHUR.</>,
       <>Audiolibro aportado al proyecto +TEC UNAHUR; el seguimiento temporal es aproximado por párrafos.</>,
     ],
   },

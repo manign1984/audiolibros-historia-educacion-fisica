@@ -19,7 +19,7 @@ const publishedWorks = [
     year: '2014',
     duration: 3027.226122,
     stateKey: 'pineau-reprimir-discriminar-audio-state-v1',
-    artwork: 'assets/pablo-pineau.webp',
+    artwork: 'assets/pineau-reprimir-discriminar/quema-libros-sarandi.webp',
     description: 'Las estrategias represiva y discriminadora de la política educativa dictatorial: censura, disciplinamiento, segmentación y desigualdad.',
     authorDisplay: 'Pineau, P.',
     authorSearch: ['Pablo Pineau', 'Pineau, Pablo', 'Pineau, P.'],
