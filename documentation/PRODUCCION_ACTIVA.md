@@ -10,7 +10,7 @@
 
 Para la ficha «La construcción del Estado nacional argentino (1852–1880)», se seleccionó la fotografía frontal de la **Aduana de Taylor y su muelle de cargas, vista desde el río** (ca. 1860). Procedencia archivística declarada: **Archivo General de la Nación**; versión digital: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aduana_Taylor_y_muelle_de_cargas_visto_desde_el_r%C3%ADo.jpg), identificada como dominio público. El recurso se sirve desde la URL pública de Wikimedia Commons, sin copiar el binario al repositorio. Se preserva sin cambios la portada editorial dentro del recorrido de Marcaida.
 
-Epígrafe aprobado: «Aduana de Taylor (inaugurada en 1857). Símbolo de la articulación con el mercado mundial y del poder económico de Buenos Aires en disputa durante la construcción del Estado nacional.».
+Epígrafe aprobado: «Aduana de Taylor (inaugurada en 1857). Símbolo de la articulación con el mercado mundial y del poder económico de Buenos Aires en disputa durante la construcción del Estado nacional.»
 
 La diapositiva respeta el carrusel común y muestra el epígrafe como texto pequeño separado de la sinopsis, visible en escritorio y celular, sin agregarlo a las demás portadas.
 
