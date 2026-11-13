@@ -148,11 +148,36 @@ const publishedWorks = [
   },
 ];
 
+// Continuaciones editoriales de las 18 portadas de apertura: no duplicar
+// autoría ni título principal, que ya están visibles dentro de la miniatura.
+// El título bibliográfico íntegro permanece en entry.title, enlaces y fichas.
+const cardContinuations = {
+  'pineau-reprimir-discriminar': 'La educación en la última dictadura cívico-militar en Argentina (1976–1983)',
+  'scharagrodsky-constitucion-ef': 'En la Argentina. Tensiones, conflictos y disputas con la matriz militar en las primeras décadas del siglo XX',
+  'aisenstein-tabla-rasa': 'El saber histórico en la formación docente en Educación Física',
+  'orbuch-educar-al-cuerpo': 'Análisis de dos experiencias en la Nueva Argentina de Perón',
+  'pineau-fresco-noble': 'Las estrategias de la Reforma Fresco–Noble (Provincia de Buenos Aires, década del 30)',
+  'hobsbawm-historia-siglo-xx': 'Vista panorámica del siglo XX',
+  'marcaida-scaltritti-estado-nacional': 'Argentino (1852–1880)',
+  'soares-corrientes-gimnasticas': 'Y su contenido: una historia de rupturas y permanencias',
+  'lionetti-escuela-republicana': 'Pública. La formación del ciudadano en Argentina a fines del siglo XIX',
+  'galak-del-dicho-al-hecho': 'El largo trecho del nacimiento de la formación profesional en Educación Física en Argentina (1897–1909)',
+  'feiguin-aisenstein-sujetos': 'Formación de profesores de Educación Física. Argentina, 1938–1967',
+  'torre-pastoriza-bienestar': '',
+  'almada-privilegiados': 'La cultura física y el deporte en la política del peronismo',
+  'arata-marino-auroras-tempestades': 'La educación entre golpes (1955–1976)',
+  'melano-militares-juramentados': 'La reapertura del INEF Gral. Belgrano en la década del 70',
+  'levoratti-gimnasia-1958-1968': 'En la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968)',
+  'levoratti-debates-ef': 'Y los enfoques de las ciencias sociales: un análisis de los lineamientos curriculares nacionales destinados a la formación docente en Argentina (1993–2015)',
+  'thwaites-rey-democracia-argentina': 'Bajo el largo ciclo de hegemonía neoliberal (1983–2013)',
+};
+
 export const workRegistry = [
   ...publishedWorks,
   ...plannedWorks.filter((entry) => !publishedWorks.some((work) => work.id === entry.id)),
 ].map((entry) => ({
   ...entry,
+  cardContinuation: cardContinuations[entry.id] ?? '',
   programGroup: programGroupByWork.get(entry.id) ?? 'complementaria',
 }));
 
