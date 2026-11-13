@@ -175,11 +175,12 @@ function Hero({ saved, toggle }) {
   >
     {catalog.map((item, i) => {
       const artwork = item.heroArtwork ?? item.artwork;
+      const imageSrc = /^https?:\/\//i.test(artwork ?? '') ? artwork : href(artwork);
       const artClass = `hero-art ${i === index ? 'is-active' : ''}`;
       return artwork ? <img
         key={item.id}
         className={artClass}
-        src={href(artwork)}
+        src={imageSrc}
         alt=""
         aria-hidden="true"
         loading={i === 0 ? 'eager' : 'lazy'}
@@ -198,6 +199,7 @@ function Hero({ saved, toggle }) {
               : <span>{entry.year}</span>}
           </div>
           {entry.description && <p className="hero-description">{entry.description}</p>}
+          {entry.heroCaption && <p className="hero-image-caption"><span className="sr-only">Epígrafe de la imagen: </span>{entry.heroCaption}</p>}
         </div>
         <div className="hero-actions">
           <a className="button button--primary" href={href(entry.path)}><ActionIcon size={17} fill={hasAudio ? "currentColor" : "none"} aria-hidden="true" /> {action}</a>
