@@ -20,13 +20,18 @@ body:has(.pineau-dictadura-page) {margin:0}
   position:relative;
   isolation:isolate;
   background:#fff;
-  color:var(--pd-ink);
-  --journey-label-color:var(--pd-burgundy);
+  --pd-hero-ink:#50232b;
+  color:var(--pd-hero-ink);
+  --journey-label-color:var(--pd-hero-ink);
   padding:clamp(30px,5svh,60px) 0;
 }
 .pd-hero-layout {position:relative;z-index:1}
 .pd-hero-copy {width:min(47%,630px)}
-.pd-hero-document {position:absolute;inset:0}
+.pd-hero-document {
+  position:absolute;
+  inset-block:clamp(16px,2.5svh,24px);
+  inset-inline:0 clamp(16px,2vw,40px);
+}
 /* La línea del borde izquierdo puede quedar bajo el texto en ventanas anchas. */
 .pd-hero-document::after {
   content:"";
@@ -35,20 +40,19 @@ body:has(.pineau-dictadura-page) {margin:0}
   background:linear-gradient(90deg,#fff 0 44%,transparent 49%);
   pointer-events:none;
 }
-.pd-hero-document img {display:block;width:100%;height:100%;object-fit:contain}
-.pd-kicker {margin:22px 0 16px;color:var(--pd-muted)}
-.pd-kicker span {padding:0 8px;color:var(--pd-red)}
+.pd-hero-document img {display:block;width:100%;height:100%;object-fit:contain;object-position:right center}
+.pd-kicker {margin:22px 0 16px;color:var(--pd-hero-ink)}
+.pd-kicker span {padding:0 8px;color:var(--pd-hero-ink)}
 .pd-hero h1 {
   margin:0 0 22px;
   font:900 clamp(36px,5.3vw,84px)/1 'Archivo',sans-serif;
   letter-spacing:-.065em;
 }
-.pd-hero-amp {color:var(--pd-burgundy);font:400 .8em/1 Georgia,serif}
-.pd-hero-dot {color:var(--pd-burgundy)}
+.pd-hero-amp {margin-inline-start:.12em;font:400 .8em/1 Georgia,serif;letter-spacing:normal}
 .pd-subtitle {margin:0;font:600 clamp(17px,1.7vw,24px)/1.36 'Archivo',sans-serif}
-.pd-subtitle strong {color:var(--pd-burgundy);white-space:nowrap}
+.pd-subtitle strong {white-space:nowrap}
 .pd-hero-question {margin:22px 0 0;font-size:clamp(16px,1.3vw,20px);line-height:1.5}
-.pd-hero-detail {margin:14px 0 0;font-size:14px;line-height:1.55;color:var(--pd-muted)}
+.pd-hero-detail {margin:14px 0 0;font-size:14px;line-height:1.55;color:var(--pd-hero-ink)}
 /* Autor: idéntico componente y retrato reutilizados, únicamente se colorea su fondo. */
 .pd-author {background:#50232b;color:#f7ecdd;--paper-light:#f7ecdd;--mustard:#e2ba9e;--journey-label-color:#e2ba9e}
 .pd-context {padding:43px 0 48px}
