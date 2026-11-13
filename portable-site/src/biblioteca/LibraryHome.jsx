@@ -188,6 +188,7 @@ function Hero({ saved, toggle }) {
       /> : <div key={item.id} className={`${artClass} hero-art--type tone-${item.coverTone}`} aria-hidden="true" />;
     })}
     <div className="hero-shade" />
+    {entry.heroCaption && <p className="hero-image-caption hero-image-caption--photo"><span className="sr-only">Epígrafe de la imagen: </span>{entry.heroCaption}</p>}
     <div className="library-shell hero-inner">
       <div className="hero-content" ref={contentRef} tabIndex={contentOverflows ? 0 : undefined} aria-live={rotating ? 'off' : 'polite'} aria-atomic="true">
         <div className="hero-copy" key={entry.id}>
@@ -199,7 +200,7 @@ function Hero({ saved, toggle }) {
               : <span>{entry.year}</span>}
           </div>
           {entry.description && <p className="hero-description">{entry.description}</p>}
-          {entry.heroCaption && <p className="hero-image-caption"><span className="sr-only">Epígrafe de la imagen: </span>{entry.heroCaption}</p>}
+          {entry.heroCaption && <p className="hero-image-caption hero-image-caption--inline"><span className="sr-only">Epígrafe de la imagen: </span>{entry.heroCaption}</p>}
         </div>
         <div className="hero-actions">
           <a className="button button--primary" href={href(entry.path)}><ActionIcon size={17} fill={hasAudio ? "currentColor" : "none"} aria-hidden="true" /> {action}</a>

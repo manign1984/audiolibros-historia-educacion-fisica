@@ -185,6 +185,8 @@ assert.ok(marcaida);
 assert.equal(marcaida.heroArtwork, 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Aduana_Taylor_y_muelle_de_cargas_visto_desde_el_r%C3%ADo.jpg');
 assert.match(marcaida.heroCaption, /Aduana de Taylor.*poder económico de Buenos Aires/);
 assert.match(heroSection, /entry\.heroCaption.*hero-image-caption/, 'El epígrafe se muestra solo en la diapositiva que lo define.');
+assert.match(heroSection, /hero-image-caption--photo/, 'El epígrafe se ubica al pie de la fotografía en escritorio.');
+assert.match(heroSection, /hero-image-caption--inline/, 'Mantener alternativa legible en celular y ventanas estrechas.');
 assert.match(heroSection, /https\?:/, 'El carrusel acepta fotografías remotas sin anteponer BASE_URL.');
 assert.equal(marcaida.status, 'review');
 assert.equal(marcaida.duration, 1878.909388);
@@ -264,6 +266,9 @@ console.log('Biblioteca: 18 fichas de apertura, 13 recorridos con estado audiovi
 const librarySource = await readFile(new URL('../src/biblioteca/LibraryHome.jsx', import.meta.url), 'utf8');
 const libraryCss = await readFile(new URL('../src/biblioteca/library.css', import.meta.url), 'utf8');
 assert.match(libraryCss, /\.library-page \.hero-image-caption/, 'El epígrafe tiene un estilo propio y legible.');
+assert.match(libraryCss, /\.hero-image-caption--photo\s*\{\s*position:absolute;/, 'El epígrafe de escritorio es independiente del bloque del título.');
+assert.match(libraryCss, /bottom:clamp\(70px,10cqh,100px\)/, 'El epígrafe deja espacio para la paginación inferior.');
+assert.match(libraryCss, /@media\(max-width:1100px\), \(max-height:620px\)/, 'La variante adaptable evita superposiciones en pantallas estrechas o bajas.');
 assert.match(librarySource, /const headerRef = useRef\(null\)/, 'Medir el encabezado de la biblioteca sin presumir una altura fija.');
 assert.match(librarySource, /observer\.observe\(header\)/, 'Responder a cambios de altura del encabezado en tablet y móvil.');
 assert.match(librarySource, /--library-header-height/, 'Compartir la altura efectiva con la portada.');

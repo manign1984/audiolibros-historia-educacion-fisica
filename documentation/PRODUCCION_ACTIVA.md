@@ -12,7 +12,7 @@ Para la ficha «La construcción del Estado nacional argentino (1852–1880)», 
 
 Epígrafe aprobado: «Aduana de Taylor (inaugurada en 1857). Símbolo de la articulación con el mercado mundial y del poder económico de Buenos Aires en disputa durante la construcción del Estado nacional.»
 
-La diapositiva respeta el carrusel común y muestra el epígrafe como texto pequeño separado de la sinopsis, visible en escritorio y celular, sin agregarlo a las demás portadas.
+La diapositiva respeta el carrusel común y muestra el epígrafe como texto pequeño separado de la sinopsis, sin agregarlo a las demás portadas. **Ajuste del 13/11/2026:** a pedido del responsable y según su captura marcada en rojo, en escritorio amplio el epígrafe está superpuesto en el sector inferior derecho de la fotografía, alineado a la izquierda dentro de ese sector y por encima de la paginación. En celulares, ventanas estrechas o de poca altura, el epígrafe vuelve al flujo de lectura antes de los botones para evitar solapamientos y mantener la accesibilidad.
 
 ## Interfaz general · Carrusel de Inicio (12/11/2026)
 
