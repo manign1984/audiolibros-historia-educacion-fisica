@@ -12,6 +12,8 @@ La portada general usa la autoría del catálogo como único rótulo superior. E
 
 El carrusel de «Militares al gobierno, juramentados al poder» usa el collage aportado de la Resolución 543/77 y el edificio del INEF General Belgrano. La diapositiva de «Las corrientes gimnásticas europeas» usa la fotografía aportada de gimnasia sueca en Estocolmo.
 
+La diapositiva de «Diseño de sujetos morales, sanos y patriotas» usa la fotografía aportada de la formación frente al edificio del INEF General Belgrano, encuadrada en 3:2.
+
 ## Interfaz general · Orden del catálogo (12/11/2026)
 
 Después de «Seguí donde dejaste», Inicio muestra las 18 fichas seleccionadas por el responsable para la apertura. La selección pública se registra en `portable-site/src/biblioteca/catalog.js`. Las demás fichas quedan fuera de Inicio, Explorar, la búsqueda y Mi lista, con sus rutas y datos conservados para una futura reincorporación.
