@@ -104,6 +104,12 @@
   pointer-events:none;
 }
 .library-page .hero-art.is-active {opacity:1;}
+.library-page .hero-art--type {
+  background:linear-gradient(122deg, transparent 58%, #ffffff20 58% 66%, transparent 66% 79%, #ffffff16 79% 88%, transparent 88%),
+    linear-gradient(128deg, var(--tone-dark), var(--tone));
+}
+.library-page .hero--thwaites-rey-democracia-argentina .hero-art {object-position:50% 65%;}
+.library-page .hero-content .hero-meta:last-child {margin-bottom:22px;}
 .library-page .hero-copy {
   animation:hero-content-fade var(--hero-fade-duration,700ms) ease-out both;
 }
@@ -111,13 +117,31 @@
   from {opacity:0;}
   to {opacity:1;}
 }
-.library-page .hero-pagination {align-items:center;gap:clamp(8px,1vw,16px);}
+.library-page .hero-bottom {gap:16px;}
+.library-page .hero-pagination {align-items:center;gap:8px;min-width:0;}
+.library-page .hero-pagination-pages {
+  display:grid;
+  grid-template-columns:repeat(18,minmax(0,1fr));
+  gap:2px;
+}
+.library-page .hero-pagination-pages button {
+  display:grid;
+  justify-items:center;
+  align-content:center;
+  gap:3px;
+  width:clamp(25px,2.35vw,34px);
+  min-height:36px;
+  padding:3px 0;
+  font-variant-numeric:tabular-nums;
+}
+.library-page .hero-pagination-pages button[aria-pressed=true] {font-weight:800;}
 .library-page .hero-pagination button i {
   position:relative;
   display:block;
   overflow:hidden;
-  flex-shrink:0;
+  width:70%;
 }
+.library-page .hero-pagination-pages button[aria-pressed=true] i {width:85%;}
 .library-page .hero--autoplay .hero-pagination button[aria-pressed=true] i {
   background:#ffffff3a;
 }
@@ -157,10 +181,18 @@
   opacity:.6;
   cursor:not-allowed;
 }
+@media(max-width:860px) {
+  .library-page .hero-bottom {flex-wrap:wrap;}
+}
 @media(max-width:760px) {
   .library-page .hero-art.is-active {opacity:.85;}
   .library-page .hero-bottom {flex-wrap:wrap;gap:10px;}
-  .library-page .hero-pagination {gap:9px;}
+  .library-page .hero-pagination {width:100%;gap:6px;}
+  .library-page .hero-pagination-pages {
+    flex:1;
+    grid-template-columns:repeat(9,minmax(0,1fr));
+  }
+  .library-page .hero-pagination-pages button {width:100%;}
   .library-page .hero-pagination .hero-rotation-toggle {
     margin-left:4px;
     width:40px;min-width:40px;height:40px;

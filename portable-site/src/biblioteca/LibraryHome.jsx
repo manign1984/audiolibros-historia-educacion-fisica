@@ -5,7 +5,6 @@ import { formatDuration, readList, readProgress, saveList } from './libraryState
 
 const base = import.meta.env.BASE_URL;
 const href = (path) => resolveSitePath(path, base);
-const available = catalog.filter((entry) => entry.status === 'available');
 const readable = catalog.filter((entry) => canReadAndListen(entry) || entry.status === 'text');
 const validIds = workRegistry.map((entry) => entry.id);
 
@@ -116,18 +115,22 @@ function Hero({ saved, toggle }) {
     return () => media.removeEventListener('change', syncMotion);
   }, []);
 
-  const rotating = available.length > 1 && !pausedByUser && !reducedMotion;
+  const rotating = catalog.length > 1 && !pausedByUser && !reducedMotion;
 
   useEffect(() => {
     if (!rotating) return undefined;
     const timer = window.setTimeout(
-      () => setIndex((current) => (current + 1) % available.length),
+      () => setIndex((current) => (current + 1) % catalog.length),
       HERO_ROTATION_MS,
     );
     return () => window.clearTimeout(timer);
   }, [index, rotating]);
 
-  const entry = available[index];
+  const entry = catalog[index];
+  const hasAudio = canReadAndListen(entry);
+  const textOnly = entry.status === 'text';
+  const action = hasAudio ? 'Leer y escuchar' : textOnly ? 'Leer el texto' : 'Ver ficha bibliográfica';
+  const ActionIcon = hasAudio ? Play : textOnly ? BookOpen : ArrowRight;
   // Títulos propios de cada lectura. Nunca usar la obra anterior como fallback.
   const heroTitles = {
     'scharagrodsky-constitucion-ef': <>La constitución de la<span>Educación Física escolar.</span></>,
@@ -143,39 +146,49 @@ function Hero({ saved, toggle }) {
     aria-roledescription="carrusel"
     style={{ '--hero-rotation-duration': `${HERO_ROTATION_MS}ms`, '--hero-fade-duration': `${HERO_CROSSFADE_MS}ms` }}
   >
-    {available.map((item, i) => <img
-      key={item.id}
-      className={`hero-art ${i === index ? 'is-active' : ''}`}
-      src={href(item.artwork)}
-      alt=""
-      aria-hidden="true"
-      loading={i === 0 ? 'eager' : 'lazy'}
-      fetchPriority={i === 0 ? 'high' : 'low'}
-    />)}
+    {catalog.map((item, i) => {
+      const artwork = item.heroArtwork ?? item.artwork;
+      const artClass = `hero-art ${i === index ? 'is-active' : ''}`;
+      return artwork ? <img
+        key={item.id}
+        className={artClass}
+        src={href(artwork)}
+        alt=""
+        aria-hidden="true"
+        loading={i === 0 ? 'eager' : 'lazy'}
+        fetchPriority={i === 0 ? 'high' : 'low'}
+      /> : <div key={item.id} className={`${artClass} hero-art--type tone-${item.coverTone}`} aria-hidden="true" />;
+    })}
     <div className="hero-shade" />
     <div className="library-shell hero-inner">
       <div className="hero-content" aria-live={rotating ? 'off' : 'polite'} aria-atomic="true">
         <div className="hero-copy" key={entry.id}>
           <p className="hero-author">{entry.author.toLocaleUpperCase('es')}</p>
           <h1 id="hero-title" aria-label={entry.shortTitle}>{title}</h1>
-          <div className="hero-meta"><span className="available-dot">Disponible ahora</span><span>{formatDuration(entry.duration)} de audio</span><span>Texto + contexto</span></div>
-          <p className="hero-description">{entry.description}</p>
+          <div className="hero-meta">
+            {hasAudio ? <><span className="available-dot">Disponible ahora</span><span>{formatDuration(entry.duration)} de audio</span><span>Texto + contexto</span></>
+              : textOnly ? <><span>Lectura completa</span><span>Cuaderno de notas</span></>
+              : <span>{entry.year}</span>}
+          </div>
+          {entry.description && <p className="hero-description">{entry.description}</p>}
         </div>
         <div className="hero-actions">
-          <a className="button button--primary" href={href(entry.path)}><Play size={17} fill="currentColor" aria-hidden="true" /> Leer y escuchar</a>
+          <a className="button button--primary" href={href(entry.path)}><ActionIcon size={17} fill={hasAudio ? "currentColor" : "none"} aria-hidden="true" /> {action}</a>
           <SaveButton entry={entry} saved={saved} toggle={toggle} label />
         </div>
       </div>
       <div className="hero-bottom">
         <a href="#catalogo">Descubrí la biblioteca <ArrowDown size={15} aria-hidden="true" /></a>
         <div className="hero-pagination" role="group" aria-label="Elegir lectura destacada y controlar la rotación">
-          {available.map((item, i) => <button
-            type="button"
-            key={item.id}
-            aria-label={`Mostrar ${item.shortTitle}`}
-            aria-pressed={index === i}
-            onClick={() => setIndex(i)}
-          ><span>{String(i + 1).padStart(2, '0')}</span><i aria-hidden="true" /></button>)}
+          <div className="hero-pagination-pages">
+            {catalog.map((item, i) => <button
+              type="button"
+              key={item.id}
+              aria-label={`Mostrar ${item.shortTitle}`}
+              aria-pressed={index === i}
+              onClick={() => setIndex(i)}
+            ><span>{String(i + 1).padStart(2, '0')}</span><i aria-hidden="true" /></button>)}
+          </div>
           <button
             type="button"
             className="hero-rotation-toggle"
