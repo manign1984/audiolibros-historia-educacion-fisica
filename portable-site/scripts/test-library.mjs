@@ -39,6 +39,32 @@ assert.match(cardSection, /<span className="status-badge status-badge--ready"><H
   'Todas las tarjetas usan el cartel verde Leer + escuchar.');
 assert.doesNotMatch(cardSection, /En preparación|Edición en revisión|Solo lectura|Sincronización pendiente|Sin audio/,
   'Las tarjetas no muestran estados internos de producción.');
+
+assert.match(cardSection, /entry\.cardContinuation/, 'Las tarjetas toman su continuación editorial del catálogo.');
+assert.match(cardSection, /className="card-continuation"/, 'La continuación se presenta en el lugar del antiguo título duplicado.');
+assert.doesNotMatch(cardSection, /className="card-author"/, 'La autoría no debe repetirse debajo de la miniatura.');
+assert.doesNotMatch(cardSection, /\{entry\.shortTitle\}<\/a>/, 'El título de portada no debe repetirse debajo.');
+assert.match(cardSection, /className="sr-only".*entry\.title/, 'Con título completo en portada se conserva un encabezado accesible.');
+assert.match(cardSection, /entry\.author.*entry\.title/, 'El enlace de la miniatura identifica autoría y título íntegro.');
+const expectedCardContinuations = {
+  'aisenstein-tabla-rasa': 'El saber histórico en la formación docente en Educación Física',
+  'almada-privilegiados': 'La cultura física y el deporte en la política del peronismo',
+  'arata-marino-auroras-tempestades': 'La educación entre golpes (1955–1976)',
+  'feiguin-aisenstein-sujetos': 'Formación de profesores de Educación Física. Argentina, 1938–1967',
+  'torre-pastoriza-bienestar': '',
+  'marcaida-scaltritti-estado-nacional': 'Argentino (1852–1880)',
+  'levoratti-gimnasia-1958-1968': 'En la educación primaria y el nivel medio. Un estudio sobre las perspectivas teóricas en circulación (Argentina, 1958–1968)',
+};
+assert.equal(allCatalog.length, 18, 'Las dieciocho obras de apertura siguen disponibles.');
+assert.equal(allCatalog.filter((entry) => entry.cardContinuation !== undefined).length, 18,
+  'La selección editorial define explícitamente la continuación de cada miniatura.');
+assert.equal(allCatalog.filter((entry) => entry.cardContinuation).length, 17,
+  'Solo Torre–Pastoriza tiene título completo dentro de la miniatura.');
+for (const [id, continuation] of Object.entries(expectedCardContinuations)) {
+  assert.equal(allCatalog.find((entry) => entry.id === id)?.cardContinuation, continuation,
+    `Mantener la continuación bibliográfica editorial aprobada de ${id}.`);
+}
+
 const heroSection = libraryHome.slice(libraryHome.indexOf('function Hero({ saved, toggle })'), libraryHome.indexOf('export function ProjectFooter()'));
 const heroTitleSource = libraryHome.slice(libraryHome.indexOf('const heroTitleLead'), libraryHome.indexOf('function Hero({'));
 assert.match(heroTitleSource, /const title = entry\.title;/, 'El carrusel usa el título bibliográfico completo.');
