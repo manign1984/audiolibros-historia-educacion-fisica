@@ -56,43 +56,46 @@
 
 
 
-/* Biblioteca: portada de una pantalla útil, coherente con la unidad rígida
-   de los recorridos. El alto disponible descuenta exactamente una vez el
-   encabezado real, medido en Header (una o dos filas según el ancho).
-   El catálogo comienza después de la pantalla de Inicio, nunca asoma debajo.
-   Ante ventanas bajas o zoom, el contenido puede crecer sin ser recortado. */
+/* El alto disponible se mide debajo del encabezado. La paginación tiene
+   su propia fila para conservar el mismo eje al cambiar de lectura. */
 .library-page .hero {
-  min-height:calc(100svh - var(--library-header-height, 88px));
+  height:calc(100svh - var(--library-header-height, 88px));
+  min-height:0;
+  container-type:size;
   display:flex;
   flex-direction:column;
 }
 .library-page .hero-inner {
-  flex:1 0 auto;
-  display:flex;
-  flex-direction:column;
-  padding-top:clamp(28px,5.5svh,65px);
+  flex:1 1 auto;
+  min-height:0;
+  display:grid;
+  grid-template-rows:minmax(0,1fr) auto;
+  padding-top:clamp(14px,6cqh,48px);
+}
+.library-page .hero-content {
+  overflow:auto;
+  scrollbar-width:thin;
+  padding:4px 10px 6px 4px;
+  margin-inline-start:-4px;
+}
+.library-page .hero-content:focus-visible {
+  outline-offset:-2px;
 }
 .library-page .hero-bottom {
-  margin-top:auto;
-  padding-top:clamp(20px,3.2svh,42px);
-  padding-bottom:clamp(18px,2.8svh,30px);
+  margin:0;
+  padding-top:clamp(8px,3cqh,25px);
+  padding-bottom:clamp(12px,2.8cqh,24px);
 }
-/* El descubrimiento continúa en búsqueda/filtros y estanterías; la fila de
-   tarjetas temáticas se retiró de Inicio, sin eliminar las colecciones. */
 .library-page #catalogo {scroll-margin-top:0;}
 @media(max-width:760px) {
   .library-page .hero {
-    min-height:calc(100svh - var(--library-header-height, 100px));
+    height:calc(100svh - var(--library-header-height, 100px));
   }
-  .library-page .hero-inner {
-    padding-top:clamp(175px,25svh,205px);
-  }
+  .library-page .hero-inner {padding-top:clamp(12px,15cqh,150px);}
 }
-@media(max-height:650px) and (min-width:761px) {
-  .library-page .hero-inner {padding-top:clamp(18px,3svh,32px);}
-  .library-page .hero-bottom {padding-top:18px;padding-bottom:16px;}
+@media(max-height:410px) {
+  .library-page .hero {min-height:200px;}
 }
-
 
 /* Biblioteca · rotación de destacados. Las obras siguen siendo enlaces
    funcionales y el inicio sigue midiendo una pantalla útil. El fundido dura
@@ -115,31 +118,37 @@
 .library-page .hero--soares-corrientes-gimnasticas .hero-art.is-active {object-position:65% 75%;}
 .library-page .hero--thwaites-rey-democracia-argentina .hero-art {object-position:50% 65%;}
 .library-page .hero--almada-privilegiados .hero-art {object-position:50% 68%;}
-.library-page .hero-content {max-width: min(100%, 660px);}
+.library-page .hero-content {max-width:min(100%, 660px);}
+.library-page .hero-author {margin:clamp(4px,2.6cqh,26px) 0 clamp(8px,2cqh,15px);}
+.library-page .hero-description {
+  margin:clamp(8px,2.4cqh,20px) 0 clamp(10px,2.6cqh,24px);
+  line-height:1.55;
+}
 .library-page .hero-content h1 {
-  font-size:clamp(34px, 4.25vw, 67px);
+  font-size:clamp(30px, min(4.25vw, 8.5cqh), 67px);
+  margin-bottom:clamp(10px,2.8cqh,23px);
   line-height:1.04;
   letter-spacing:-.045em;
   text-wrap:balance;
   overflow-wrap:anywhere;
 }
 .library-page .hero-content h1.hero-title--long {
-  font-size:clamp(28px, 3.45vw, 54px);
+  font-size:clamp(26px, min(3.45vw, 7.1cqh), 54px);
 }
 .library-page .hero-content h1 > span {
   max-width:37ch;
   margin-top:.45em;
   color:#e9d9b6;
-  font:400 clamp(19px, 2.1vw, 34px)/1.17 Georgia, serif;
+  font:400 clamp(18px, min(2.1vw, 4.3cqh), 34px)/1.17 Georgia, serif;
   letter-spacing:normal;
 }
 @media (max-width:760px) {
-  .library-page .hero-content h1 {font-size:clamp(30px, 7.5vw, 45px);}
-  .library-page .hero-content h1.hero-title--long {font-size:clamp(26px, 6.4vw, 39px);}
+  .library-page .hero-content h1 {font-size:clamp(26px, min(7.5vw, 6.5cqh), 45px);}
+  .library-page .hero-content h1.hero-title--long {font-size:clamp(24px, min(6.4vw, 5.8cqh), 39px);}
   .library-page .hero-content h1 > span {font-size:clamp(18px, 4.7vw, 24px);}
   .library-page .hero--almada-privilegiados .hero-art {object-position:53% 50%;}
 }
-.library-page .hero-content .hero-meta:last-child {margin-bottom:22px;}
+.library-page .hero-content .hero-meta:last-child {margin-bottom:clamp(10px,2.5cqh,22px);}
 .library-page .hero-copy {
   animation:hero-content-fade var(--hero-fade-duration,700ms) ease-out both;
 }

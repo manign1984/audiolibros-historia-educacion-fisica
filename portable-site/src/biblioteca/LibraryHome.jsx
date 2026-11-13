@@ -125,6 +125,21 @@ function HeroTitle({ entry }) {
 
 function Hero({ saved, toggle }) {
   const [index, setIndex] = useState(0);
+  const contentRef = useRef(null);
+  const [contentOverflows, setContentOverflows] = useState(false);
+
+  useEffect(() => {
+    const content = contentRef.current;
+    content.scrollTop = 0;
+    const measure = () => setContentOverflows(content.scrollHeight > content.clientHeight + 1);
+    const observer = new ResizeObserver(measure);
+    observer.observe(content);
+    observer.observe(content.querySelector('.hero-copy'));
+    observer.observe(content.querySelector('.hero-actions'));
+    measure();
+    return () => observer.disconnect();
+  }, [index]);
+
   const [pausedByUser, setPausedByUser] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(
     () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
@@ -174,7 +189,7 @@ function Hero({ saved, toggle }) {
     })}
     <div className="hero-shade" />
     <div className="library-shell hero-inner">
-      <div className="hero-content" aria-live={rotating ? 'off' : 'polite'} aria-atomic="true">
+      <div className="hero-content" ref={contentRef} tabIndex={contentOverflows ? 0 : undefined} aria-live={rotating ? 'off' : 'polite'} aria-atomic="true">
         <div className="hero-copy" key={entry.id}>
           <p className="hero-author">{entry.author.toLocaleUpperCase('es')}</p>
           <HeroTitle entry={entry} />
