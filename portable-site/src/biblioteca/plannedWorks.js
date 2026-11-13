@@ -126,6 +126,8 @@ const readablePlannedWorks = {
     readingDetail: 'Seguimiento aproximado por párrafos',
   },
   'marcaida-scaltritti-estado-nacional': {
+    heroArtwork: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Aduana_Taylor_y_muelle_de_cargas_visto_desde_el_r%C3%ADo.jpg',
+    heroCaption: 'Aduana de Taylor (inaugurada en 1857). Símbolo de la articulación con el mercado mundial y del poder económico de Buenos Aires en disputa durante la construcción del Estado nacional.',
     status: 'review',
     duration: 1878.909388,
     historicalPeriod: '1852–1880',

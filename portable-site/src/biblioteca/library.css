@@ -289,3 +289,23 @@
   .catalog-order{align-items:stretch;flex-direction:column;gap:5px}
   .filter-selects{align-items:end}
 }
+
+/* Epígrafe editorial contextual, exclusivo de diapositivas con heroCaption.
+   Fluye con el texto y no tapa la fotografía ni los controles del carrusel. */
+.library-page .hero-image-caption {
+  max-width:470px;
+  margin:clamp(8px,1.8cqh,15px) 0 0;
+  padding:5px 0 5px 13px;
+  border-left:2px solid #c2f973;
+  color:#ece8e0;
+  font:500 clamp(11px,min(1.05vw,1.6cqh),13px)/1.5 'Archivo',sans-serif;
+  text-shadow:0 1px 8px #0c0e15;
+}
+@media(max-width:760px) {
+  .library-page .hero-image-caption {
+    max-width:38ch;
+    font-size:11px;
+    line-height:1.5;
+    margin-top:10px;
+  }
+}
