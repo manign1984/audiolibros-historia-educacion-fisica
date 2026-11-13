@@ -183,7 +183,36 @@ assert.match(arataMarino.reference, /Novedades Educativas/);
 const marcaida = allCatalog.find((entry) => entry.id === 'marcaida-scaltritti-estado-nacional');
 assert.ok(marcaida);
 assert.equal(marcaida.heroArtwork, 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Aduana_Taylor_y_muelle_de_cargas_visto_desde_el_r%C3%ADo.jpg');
-assert.match(marcaida.heroCaption, /Aduana de Taylor.*poder económico de Buenos Aires/);
+assert.equal(marcaida.heroCaption, 'Aduana de Taylor (inaugurada en 1857). El poder porteño en la disputa por el Estado.');
+
+const agreedCaptions = {
+  'pineau-reprimir-discriminar': 'Quema de libros en Sarandí. El oscurantismo a plena luz del día.',
+  'scharagrodsky-constitucion-ef': 'Clase abierta del Sistema Argentino de Educación Física (SAEF) en el Instituto Nacional Superior de Educación Física (circa 1920).',
+  'aisenstein-tabla-rasa': 'Higia, diosa griega de la salud y la higiene. Un símbolo persistente del imaginario corporal moderno.',
+  'orbuch-educar-al-cuerpo': 'Composición editorial. Aula y oficina: dos escenarios de educación del cuerpo.',
+  'pineau-fresco-noble': 'El expresionismo pampeano de Salamone. Estética del Estado bonaerense durante el gobierno de Manuel Fresco.',
+  'hobsbawm-historia-siglo-xx': 'Memorias del SXX. Composición editorial.',
+  'marcaida-scaltritti-estado-nacional': 'Aduana de Taylor (inaugurada en 1857). El poder porteño en la disputa por el Estado.',
+  'soares-corrientes-gimnasticas': 'Gimnasia sueca en Estocolmo. La ciencia del siglo XIX se hace gimnasia.',
+  'galak-del-dicho-al-hecho': 'Enrique Romero Brest. La voz autorizada del campo de la Educación Física en sus inicios.',
+  'feiguin-aisenstein-sujetos': 'Izado de bandera en el INEF General Belgrano. Formar líderes y salvar a los jóvenes.',
+  'torre-pastoriza-bienestar': 'Niños en Chapadmalal, hacia 1950. Representación gráfica de la democratización del bienestar.',
+  'almada-privilegiados': 'Campeonatos Evita en acuarelas. El acceso a la cultura física como ampliación de la ciudadanía.',
+  'melano-militares-juramentados': 'Reapertura del INEF Gral. Belgrano. Volver al hogar, volver al espíritu.',
+  'thwaites-rey-democracia-argentina': 'Buenos Aires, 2001: Estallido del modelo neoliberal.',
+};
+assert.equal(Object.keys(agreedCaptions).length, 14, 'Se aprobaron catorce epígrafes.');
+assert.equal(allCatalog.filter((entry) => entry.heroCaption).length, 14, 'Solo las catorce imágenes elegidas reciben epígrafe.');
+for (const [id, caption] of Object.entries(agreedCaptions)) {
+  assert.equal(allCatalog.find((entry) => entry.id === id)?.heroCaption, caption,
+    `Mantener el epígrafe editorial aprobado de ${id}.`);
+}
+for (const id of ['lionetti-escuela-republicana', 'arata-marino-auroras-tempestades',
+  'levoratti-gimnasia-1958-1968', 'levoratti-debates-ef']) {
+  assert.equal(allCatalog.find((entry) => entry.id === id)?.heroCaption, undefined,
+    `No inventar epígrafe antes de resolver la imagen de ${id}.`);
+}
+
 assert.match(heroSection, /entry\.heroCaption.*hero-image-caption/, 'El epígrafe se muestra solo en la diapositiva que lo define.');
 assert.match(heroSection, /hero-image-caption--photo/, 'El epígrafe se ubica al pie de la fotografía en escritorio.');
 assert.match(heroSection, /hero-image-caption--inline/, 'Mantener alternativa legible en celular y ventanas estrechas.');
