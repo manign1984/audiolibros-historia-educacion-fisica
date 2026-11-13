@@ -87,6 +87,7 @@ const readablePlannedWorks = {
     stateKey: 'almada-privilegiados-text-page-v1',
     historicalPeriod: 'Primer peronismo · 1946–1955',
     artwork: 'assets/almada/campeonato-infantil.webp',
+    heroArtwork: 'assets/almada/campeonato-infantil-acuarela.webp',
   },
   'arata-marino-auroras-tempestades': {
     status: 'available',

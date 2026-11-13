@@ -40,10 +40,14 @@ assert.match(cardSection, /<span className="status-badge status-badge--ready"><H
 assert.doesNotMatch(cardSection, /En preparación|Edición en revisión|Solo lectura|Sincronización pendiente|Sin audio/,
   'Las tarjetas no muestran estados internos de producción.');
 const heroSection = libraryHome.slice(libraryHome.indexOf('function Hero({ saved, toggle })'), libraryHome.indexOf('export function ProjectFooter()'));
-assert.match(heroSection, /'aisenstein-tabla-rasa': <>¿Hacemos tabla<span>rasa del pasado\?<\/span><\/>/, 'El carrusel debe mostrar el título correcto de Aisenstein.');
-assert.match(heroSection, /'hobsbawm-historia-siglo-xx': <>Historia del<span>siglo XX\.<\/span><\/>/, 'La portada de Hobsbawm conserva su título.');
-assert.match(heroSection, /heroTitles\[entry\.id\] \?\? entry\.shortTitle/, 'Ninguna obra futura debe heredar el título de Hobsbawm.');
-assert.match(heroSection, /id="hero-title" aria-label=\{entry\.shortTitle\}/, 'El título accesible debe corresponder a la obra seleccionada.');
+const heroTitleSource = libraryHome.slice(libraryHome.indexOf('const heroTitleLead'), libraryHome.indexOf('function Hero({'));
+assert.match(heroTitleSource, /const title = entry\.title;/, 'El carrusel usa el título bibliográfico completo.');
+assert.match(heroTitleSource, /title\.slice\(0, split\)/);
+assert.match(heroTitleSource, /title\.slice\(split\)/);
+assert.match(heroSection, /<HeroTitle entry=\{entry\} \/>/);
+const almadaCover = allCatalog.find(({ id }) => id === 'almada-privilegiados');
+assert.equal(almadaCover.heroArtwork, 'assets/almada/campeonato-infantil-acuarela.webp');
+await access(new URL('../public/' + almadaCover.heroArtwork, import.meta.url));
 
 assert.equal(new Set(catalog.map((entry) => entry.id)).size, catalog.length, 'Los identificadores deben ser únicos.');
 assert.ok(orbuch && pineau, 'Las dos obras deben estar identificadas en el catálogo.');
