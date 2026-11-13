@@ -18,6 +18,8 @@ El orden inicial es por apellido. El agrupamiento por unidad toma como referenci
 
 Las 18 portadas del catálogo muestran el cartel verde «Leer + escuchar». La tarjeta conserva el acceso que corresponde al material de cada obra.
 
+La ficha «Formación docente en dictadura» de Ignacio Melano y Ángela Aisenstein usa como portada la fotografía del edificio del INEF General Belgrano aportada por el responsable.
+
 ## OBRA ACTIVA · Eduardo Galak (12/11/2026)
 
 **Obra y workId:** *Del dicho al hecho. El largo trecho del nacimiento de la formación profesional en Educación Física en Argentina (1897–1909)*, ponencia de 2012. `galak-del-dicho-al-hecho`.
