@@ -209,6 +209,9 @@ for (const entry of workRegistry.filter((item) => item.status !== 'available')) 
       assert.ok(html.includes('Juramentados al poder'), `${entry.id}: identidad de página presente.`);
     }
     continue;
+  } else if (entry.publicationUrl) {
+    assert.ok(html.includes('acceso a la edición original'), `${entry.id}: acceso editorial en los metadatos.`);
+    assert.ok(allJavaScript.includes(entry.publicationUrl), `${entry.id}: enlace a la edición original en el bundle.`);
   } else {
     assert.ok(html.includes('Recorrido en preparación.'), `${entry.id}: disponibilidad explícita en metadatos.`);
   }

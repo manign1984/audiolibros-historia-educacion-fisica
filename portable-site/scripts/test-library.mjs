@@ -141,15 +141,24 @@ assert.deepEqual(new Set(allCatalog.map(({ id }) => id)), new Set([
   'torre-pastoriza-bienestar', 'almada-privilegiados',
   'orbuch-educar-al-cuerpo', 'arata-marino-auroras-tempestades',
   'levoratti-gimnasia-1958-1968', 'pineau-reprimir-discriminar',
-  'melano-aisenstein-ultima-dictadura', 'thwaites-rey-democracia-argentina',
+  'melano-militares-juramentados', 'thwaites-rey-democracia-argentina',
   'levoratti-debates-ef', 'galak-del-dicho-al-hecho',
 ]));
 assert.equal(allCatalog.find(({ id }) => id === 'lionetti-escuela-republicana').programGroup, 'unidad-2');
 assert.deepEqual(filterCatalog(allCatalog, 'Levoratti').map(({ id }) => id), [
   'levoratti-gimnasia-1958-1968', 'levoratti-debates-ef',
 ]);
-assert.equal(filterCatalog(allCatalog, 'militares al gobierno').length, 0);
-assert.ok(workRegistry.some(({ id }) => id === 'melano-militares-juramentados'));
+const [melano] = filterCatalog(allCatalog, 'militares al gobierno');
+assert.equal(melano.path, 'textos/melano-militares-juramentados/');
+assert.equal(melano.heroArtwork, 'assets/melano/resolucion-543-carrusel.webp');
+assert.equal(melano.artwork, 'assets/melano/inef-general-belgrano-portada.jpg');
+await access(new URL('../public/' + melano.heroArtwork, import.meta.url));
+await access(new URL('../public/' + melano.artwork, import.meta.url));
+const melanoAisenstein = workRegistry.find(({ id }) => id === 'melano-aisenstein-ultima-dictadura');
+assert.ok(!allCatalog.includes(melanoAisenstein));
+assert.match(melanoAisenstein.publicationUrl, /^https:\/\/www\.fahrenhouse\.com\//);
+assert.equal(melanoAisenstein.relatedWorkId, melano.id);
+await access(new URL('../' + melanoAisenstein.path + 'index.html', import.meta.url));
 
 assert.equal(new Set(allCatalog.map((entry) => entry.id)).size, allCatalog.length);
 for (const entry of allCatalog) {
@@ -180,7 +189,7 @@ assert.equal(marcaida.stateKey, 'marcaida-scaltritti-reader-state-v2');
 assert.deepEqual(programGroups.map(({ id }) => id), [
   'unidad-1', 'unidad-2', 'unidad-3', 'unidad-4', 'unidad-5', 'complementaria',
 ]);
-assert.deepEqual(programGroups.map(({ id }) => allCatalog.filter((entry) => entry.programGroup === id).length), [1, 3, 2, 2, 3, 7]);
+assert.deepEqual(programGroups.map(({ id }) => allCatalog.filter((entry) => entry.programGroup === id).length), [1, 3, 2, 2, 2, 8]);
 assert.equal(marcaida.programGroup, 'unidad-2');
 assert.equal(pineau.programGroup, 'unidad-4');
 assert.equal(orbuch.programGroup, 'complementaria');

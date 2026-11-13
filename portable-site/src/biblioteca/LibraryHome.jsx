@@ -103,7 +103,6 @@ const HERO_CROSSFADE_MS = 700;
 
 // Cortes editoriales para títulos cuyo primer enunciado es largo o no tiene separador.
 const heroTitleLead = {
-  'melano-aisenstein-ultima-dictadura': 'Formación docente en Educación Física',
   'levoratti-gimnasia-1958-1968': 'La educación física y la gimnasia',
   'levoratti-debates-ef': 'Los debates de la Educación Física y los enfoques de las ciencias sociales:',
   'thwaites-rey-democracia-argentina': 'La democracia argentina',
@@ -166,7 +165,7 @@ function Hero({ saved, toggle }) {
   const entry = catalog[index];
   const hasAudio = canReadAndListen(entry);
   const textOnly = entry.status === 'text';
-  const action = hasAudio ? 'Leer y escuchar' : textOnly ? 'Leer el texto' : 'Ver ficha bibliográfica';
+  const action = entry.heroAction ?? (hasAudio ? 'Leer y escuchar' : textOnly ? 'Leer el texto' : 'Ver ficha bibliográfica');
   const ActionIcon = hasAudio ? Play : textOnly ? BookOpen : ArrowRight;
   return <section
     className={`hero hero--${entry.id} ${rotating ? 'hero--autoplay' : ''}`}
@@ -321,9 +320,48 @@ export default function LibraryHome() {
 export function WorkPage({ entry }) {
   const { saved, toggle, notice } = usePersonalLibrary();
   const group = programGroups.find((item) => item.id === entry.programGroup);
+  const relatedWork = catalog.find((item) => item.id === entry.relatedWorkId);
   const related = entry.programGroup === 'complementaria' ? [] : catalog.filter(
     (item) => item.programGroup === entry.programGroup && item.id !== entry.id,
   ).slice(0, 4);
   useEffect(() => { document.title = `${entry.shortTitle} · Biblioteca +TEC`; }, [entry]);
-  return <div className="library-page" id="top"><a className="skip-link" href="#ficha">Saltar a la ficha</a><Header view="" /><main className="library-shell work-page"><a className="back-link" href={base}><ArrowLeft size={16} /> Volver a la biblioteca</a><section className="work-intro" id="ficha"><Cover entry={entry} large /><div><p className="eyebrow">{group.title}</p><span className="detail-status">RECORRIDO EN PREPARACIÓN</span><h1>{entry.title}</h1><p className="detail-author">{entry.author}</p><p className="muted">{entry.year ? `Publicación · ${entry.year}` : 'Ficha bibliográfica'}</p><SaveButton entry={entry} saved={saved} toggle={toggle} label /></div></section><div className="work-details"><section><p className="eyebrow">SOBRE ESTA LECTURA</p><h2>Un espacio para volver al texto.</h2><p>Esta lectura ya tiene su lugar en la biblioteca. Su recorrido de autor, contexto histórico y lectura acompañada se irá incorporando a medida que los materiales estén disponibles.</p><p className="preparation-note"><Clock3 size={20} aria-hidden="true" /><span>Este recorrido de lectura todavía no está publicado.</span></p></section><section className="reference-panel"><h2>Referencia bibliográfica</h2><p>{citationAsPlainText(entry)}</p></section></div>{related.length > 0 && <Shelf id="relacionadas" title="En la misma unidad" entries={related} saved={saved} toggle={toggle} />}</main><ProjectFooter /><div className={`toast ${notice ? 'is-visible' : ''}`} role="status" aria-live="polite">{notice}</div></div>;
+
+  return <div className="library-page" id="top">
+    <a className="skip-link" href="#ficha">Saltar a la ficha</a>
+    <Header view="" />
+    <main className="library-shell work-page">
+      <a className="back-link" href={base}><ArrowLeft size={16} /> Volver a la biblioteca</a>
+      <section className="work-intro" id="ficha">
+        <Cover entry={entry} large />
+        <div>
+          <p className="eyebrow">{group.title}</p>
+          <span className="detail-status">{entry.publicationUrl ? 'EDICIÓN ORIGINAL' : 'RECORRIDO EN PREPARACIÓN'}</span>
+          <h1>{entry.title}</h1>
+          <p className="detail-author">{entry.author}</p>
+          <p className="muted">{entry.year ? `Publicación · ${entry.year}` : 'Ficha bibliográfica'}</p>
+          {entry.publicationUrl && <a className="button button--primary work-source-link" href={entry.publicationUrl}>
+            <BookOpen size={17} aria-hidden="true" /> {entry.publicationLabel}
+          </a>}
+          <SaveButton entry={entry} saved={saved} toggle={toggle} label />
+        </div>
+      </section>
+      <div className="work-details">
+        {entry.publicationUrl ? <section>
+          <p className="eyebrow">SOBRE ESTA LECTURA</p>
+          <h2>Consultá el capítulo en su edición original</h2>
+          <p>El enlace abre el libro completo. El capítulo comienza en la página 179 de la edición impresa.</p>
+        </section> : <section>
+          <p className="eyebrow">SOBRE ESTA LECTURA</p>
+          <h2>Un espacio para volver al texto.</h2>
+          <p>Esta lectura ya tiene su lugar en la biblioteca. Su recorrido de autor, contexto histórico y lectura acompañada se irá incorporando a medida que los materiales estén disponibles.</p>
+          <p className="preparation-note"><Clock3 size={20} aria-hidden="true" /><span>Este recorrido de lectura todavía no está publicado.</span></p>
+        </section>}
+        <section className="reference-panel"><h2>Referencia bibliográfica</h2><p>{citationAsPlainText(entry)}</p></section>
+      </div>
+      {relatedWork && <Shelf id="lectura-relacionada" title="Otro recorrido sobre el INEF General Belgrano" entries={[relatedWork]} saved={saved} toggle={toggle} />}
+      {related.length > 0 && <Shelf id="relacionadas" title="En la misma unidad" entries={related} saved={saved} toggle={toggle} />}
+    </main>
+    <ProjectFooter />
+    <div className={`toast ${notice ? 'is-visible' : ''}`} role="status" aria-live="polite">{notice}</div>
+  </div>;
 }
