@@ -14,6 +14,8 @@ El carrusel de «Militares al gobierno, juramentados al poder» usa el collage a
 
 La diapositiva de «Diseño de sujetos morales, sanos y patriotas» usa la fotografía aportada de la formación frente al edificio del INEF General Belgrano, encuadrada en 3:2.
 
+En celulares, el título de la asignatura y los dos logos se alinean en la primera fila del encabezado. Inicio mantiene la rotación automática y la preferencia de movimiento reducido. Oculta la numeración y el botón de pausa y ubica el texto y las acciones más abajo para dar espacio a la imagen. En escritorio siguen visibles los 18 selectores y el botón de pausa.
+
 ## Interfaz general · Orden del catálogo (12/11/2026)
 
 Después de «Seguí donde dejaste», Inicio muestra las 18 fichas seleccionadas por el responsable para la apertura. La selección pública se registra en `portable-site/src/biblioteca/catalog.js`. Las demás fichas quedan fuera de Inicio, Explorar, la búsqueda y Mi lista, con sus rutas y datos conservados para una futura reincorporación.
