@@ -72,8 +72,8 @@ assert.match(heroTitleSource, /title\.slice\(0, split\)/);
 assert.match(heroTitleSource, /title\.slice\(split\)/);
 assert.match(heroSection, /<HeroTitle entry=\{entry\} \/>/);
 const almadaCover = allCatalog.find(({ id }) => id === 'almada-privilegiados');
-assert.equal(almadaCover.heroArtwork, 'assets/almada/campeonato-infantil-acuarela.webp');
-await access(new URL('../public/' + almadaCover.heroArtwork, import.meta.url));
+assert.equal(almadaCover.heroArtwork, 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Argentina_-_Eva_Per%C3%B3n_en_Campeonato_de_f%C3%BAtbol_infantil.jpg');
+assert.equal(almadaCover.artwork, almadaCover.heroArtwork, 'Almada: misma foto original en carrusel y miniatura.');
 
 assert.equal(new Set(catalog.map((entry) => entry.id)).size, catalog.length, 'Los identificadores deben ser únicos.');
 assert.ok(orbuch && pineau, 'Las dos obras deben estar identificadas en el catálogo.');
@@ -224,21 +224,32 @@ const agreedCaptions = {
   'galak-del-dicho-al-hecho': 'Enrique Romero Brest. La voz autorizada del campo de la Educación Física en sus inicios.',
   'feiguin-aisenstein-sujetos': 'Izado de bandera en el INEF General Belgrano. Formar líderes y salvar a los jóvenes.',
   'torre-pastoriza-bienestar': 'Niños en Chapadmalal, hacia 1950. Representación gráfica de la democratización del bienestar.',
-  'almada-privilegiados': 'Campeonatos Evita en acuarelas. El acceso a la cultura física como ampliación de la ciudadanía.',
+  'almada-privilegiados': 'Eva Perón da el puntapié inicial en un campeonato infantil de fútbol, 1948. El acceso al deporte como ampliación de ciudadanía.',
+  'arata-marino-auroras-tempestades': 'Movilización en defensa de la enseñanza laica. «Planes de estudio democráticos, laicos, racionales y científicos».',
+  'levoratti-gimnasia-1958-1968': 'Práctica gimnástica de alumnas de la UNT. Otras maneras de experimentar y enseñar el movimiento.',
+  'levoratti-debates-ef': '«Vóley sábana» en los años noventa. Juegos modificados y nuevas formas de enseñar Educación Física.',
   'melano-militares-juramentados': 'Reapertura del INEF Gral. Belgrano. Volver al hogar, volver al espíritu.',
   'thwaites-rey-democracia-argentina': 'Buenos Aires, 2001: Estallido del modelo neoliberal.',
 };
-assert.equal(Object.keys(agreedCaptions).length, 15, 'Son quince los epígrafes de las portadas con imagen.');
-assert.equal(allCatalog.filter((entry) => entry.heroCaption).length, 15, 'Solo las quince imágenes elegidas reciben epígrafe.');
+assert.equal(Object.keys(agreedCaptions).length, 18, 'Las dieciocho portadas tienen epígrafe.');
+assert.equal(allCatalog.filter((entry) => entry.heroCaption).length, 18, 'Las dieciocho obras de apertura reciben epígrafe.');
 for (const [id, caption] of Object.entries(agreedCaptions)) {
   assert.equal(allCatalog.find((entry) => entry.id === id)?.heroCaption, caption,
     `Mantener el epígrafe editorial aprobado de ${id}.`);
 }
-for (const id of ['arata-marino-auroras-tempestades',
-  'levoratti-gimnasia-1958-1968', 'levoratti-debates-ef']) {
-  assert.equal(allCatalog.find((entry) => entry.id === id)?.heroCaption, undefined,
-    `No inventar epígrafe antes de resolver la imagen de ${id}.`);
+const coverSourceById = {
+  'arata-marino-auroras-tempestades': 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Laica_o_Libre_1959.jpg',
+  'levoratti-gimnasia-1958-1968': 'https://www.facdef.unt.edu.ar/images/img020.jpg',
+  'levoratti-debates-ef': 'assets/levoratti-debates-ef/volley-sabana-mubahdef.jpg',
+  'almada-privilegiados': 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Argentina_-_Eva_Per%C3%B3n_en_Campeonato_de_f%C3%BAtbol_infantil.jpg',
+};
+for (const [id, photo] of Object.entries(coverSourceById)) {
+  const entry = allCatalog.find((work) => work.id === id);
+  assert.equal(entry?.artwork, photo, `${id}: conservar fotografía de archivo en la tarjeta.`);
+  assert.equal(entry?.heroArtwork, photo, `${id}: conservar la misma fotografía en el carrusel.`);
 }
+await access(new URL('../public/assets/levoratti-debates-ef/volley-sabana-mubahdef.jpg', import.meta.url));
+assert.match(libraryHome, /cover--\$\{entry\.id\}/, 'El componente Cover ofrece encuadre específico por obra.');
 
 assert.match(heroSection, /entry\.heroCaption.*hero-image-caption/, 'El epígrafe se muestra solo en la diapositiva que lo define.');
 assert.match(heroSection, /hero-image-caption--photo/, 'El epígrafe se ubica al pie de la fotografía en escritorio.');
