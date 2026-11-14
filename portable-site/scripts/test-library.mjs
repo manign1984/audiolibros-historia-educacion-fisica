@@ -218,6 +218,7 @@ const agreedCaptions = {
   'orbuch-educar-al-cuerpo': 'Composición editorial. Aula y oficina: dos escenarios de educación del cuerpo.',
   'pineau-fresco-noble': 'El expresionismo pampeano de Salamone. Estética del Estado bonaerense durante el gobierno de Manuel Fresco.',
   'hobsbawm-historia-siglo-xx': 'Memorias del SXX. Composición editorial.',
+  'lionetti-escuela-republicana': 'Escuela de niñas (1889). Educar para la República, en una ciudadanía todavía desigual.',
   'marcaida-scaltritti-estado-nacional': 'Aduana de Taylor (inaugurada en 1857). El poder porteño en la disputa por el Estado.',
   'soares-corrientes-gimnasticas': 'Gimnasia sueca en Estocolmo. La ciencia del siglo XIX se hace gimnasia.',
   'galak-del-dicho-al-hecho': 'Enrique Romero Brest. La voz autorizada del campo de la Educación Física en sus inicios.',
@@ -227,13 +228,13 @@ const agreedCaptions = {
   'melano-militares-juramentados': 'Reapertura del INEF Gral. Belgrano. Volver al hogar, volver al espíritu.',
   'thwaites-rey-democracia-argentina': 'Buenos Aires, 2001: Estallido del modelo neoliberal.',
 };
-assert.equal(Object.keys(agreedCaptions).length, 14, 'Se aprobaron catorce epígrafes.');
-assert.equal(allCatalog.filter((entry) => entry.heroCaption).length, 14, 'Solo las catorce imágenes elegidas reciben epígrafe.');
+assert.equal(Object.keys(agreedCaptions).length, 15, 'Son quince los epígrafes de las portadas con imagen.');
+assert.equal(allCatalog.filter((entry) => entry.heroCaption).length, 15, 'Solo las quince imágenes elegidas reciben epígrafe.');
 for (const [id, caption] of Object.entries(agreedCaptions)) {
   assert.equal(allCatalog.find((entry) => entry.id === id)?.heroCaption, caption,
     `Mantener el epígrafe editorial aprobado de ${id}.`);
 }
-for (const id of ['lionetti-escuela-republicana', 'arata-marino-auroras-tempestades',
+for (const id of ['arata-marino-auroras-tempestades',
   'levoratti-gimnasia-1958-1968', 'levoratti-debates-ef']) {
   assert.equal(allCatalog.find((entry) => entry.id === id)?.heroCaption, undefined,
     `No inventar epígrafe antes de resolver la imagen de ${id}.`);
@@ -363,6 +364,10 @@ assert.match(libraryCss, /\.library-page \.hero-pagination \.hero-rotation-toggl
 
 // Nueva modalidad legítima de lectura sin audiolibro: no se confunde con «Leer + escuchar».
 const lionetti = allCatalog.find(entry => entry.id === 'lionetti-escuela-republicana');
+assert.equal(lionetti.artwork, 'https://pbs.twimg.com/media/F0hQOq4X0AALbUU.jpg');
+assert.equal(lionetti.heroArtwork, lionetti.artwork, 'La misma fotografía histórica se muestra en carrusel y tarjeta.');
+assert.match(lionetti.heroCaption, /Escuela de niñas \(1889\).*República/, 'Conservar la identificación e interpretación histórica.');
+assert.match(libraryHome, /const artworkSrc = \/\^https\?:/, 'La miniatura reconoce imágenes remotas sin anteponer BASE_URL.');
 assert.equal(lionetti.status, 'text');
 assert.equal(canReadAndListen(lionetti), false);
 assert.equal(matchesAvailability(lionetti, 'text'), true);

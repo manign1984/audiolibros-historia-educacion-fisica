@@ -33,6 +33,14 @@ try {
   const clone = () => structuredClone(input);
   const expectFailure = async (mutate, code) => { const value = clone(); await mutate(value); const report = await validateWorks(value); assert.ok(report.errors.some(error => error.code === code), `${code}: ${JSON.stringify(report.errors)}`); };
   assert.deepEqual((await validateWorks(input)).errors, []);
+  {
+    const remoteArtwork = clone();
+    remoteArtwork.catalog[0].artwork = 'https://pbs.twimg.com/media/F0hQOq4X0AALbUU.jpg';
+    assert.deepEqual((await validateWorks(remoteArtwork)).errors, [],
+      'Una fotografía documental por HTTPS no debe tratarse como archivo local.');
+  }
+  await expectFailure(value => { value.catalog[0].artwork = 'http://example.org/photo.jpg'; }, 'external-image');
+  await expectFailure(value => { value.catalog[0].artwork = 'assets/does-not-exist.jpg'; }, 'missing-file');
   await expectFailure(value => { value.contracts[0].config.storage.notesKey = 'changed'; }, 'storage-contract');
   await expectFailure(value => { value.catalog[0].stateKey = 'another-key'; }, 'catalog-storage');
   await expectFailure(value => { value.reservedStorageKeys = [value.contracts[0].config.storage.notesKey]; }, 'storage-collision');

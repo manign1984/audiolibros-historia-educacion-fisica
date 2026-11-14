@@ -116,7 +116,13 @@ export async function validateWorks({ root, manifest, contracts, catalog, progra
     check(programGroups.some(group => group.id === entry.programGroup), 'catalog-program-group', entry.id, 'Unidad o categoría complementaria inexistente.');
     check(present(entry.reference) || ['beforeItalic', 'italic', 'afterItalic'].every(field => present(entry.citation?.[field])), 'bibliography', entry.id, 'Falta referencia bibliográfica.');
     await exists(`${entry.path}index.html`, entry.id);
-    for (const resource of [entry.artwork, entry.thumbnail?.src].filter(Boolean)) await exists(`public/${resource.replace(/^\//, '')}`, entry.id);
+    for (const resource of [entry.artwork, entry.thumbnail?.src].filter(Boolean)) {
+      if (/^https?:\/\//i.test(resource)) {
+        const imageUrl = new URL(resource);
+        check(imageUrl.protocol === 'https:' && Boolean(imageUrl.hostname), 'external-image', entry.id,
+          'Las imágenes remotas deben utilizar una URL HTTPS válida.');
+      } else await exists(`public/${resource.replace(/^\//, '')}`, entry.id);
+    }
     if (entry.status === 'preparation') check(!entry.stateKey && !entry.duration, 'preparation-state', entry.id, 'Ficha futura con progreso o duración de lectura.');
   }
   for (const work of manifest.works) {

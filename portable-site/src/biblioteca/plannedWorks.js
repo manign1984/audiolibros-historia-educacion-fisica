@@ -118,6 +118,9 @@ const readablePlannedWorks = {
     heroArtwork: 'assets/melano/resolucion-543-carrusel.webp',
   },
   'lionetti-escuela-republicana': {
+    artwork: 'https://pbs.twimg.com/media/F0hQOq4X0AALbUU.jpg',
+    heroArtwork: 'https://pbs.twimg.com/media/F0hQOq4X0AALbUU.jpg',
+    heroCaption: 'Escuela de niñas (1889). Educar para la República, en una ciudadanía todavía desigual.',
     status: 'text',
     historicalPeriod: 'Escuela pública y ciudadanía · fines del siglo XIX',
     stateKey: 'lionetti-escuela-republicana-text-page-v1',
