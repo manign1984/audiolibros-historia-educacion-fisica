@@ -99,28 +99,6 @@
 }
 
 
-/* Fuente fotográfica completa en portadas de formato original vertical o cuadrado.
-   Evitar que el recorte 16:10 elimine pancartas, rostros o prácticas corporales. */
-.library-page .hero--arata-marino-auroras-tempestades .hero-art,
-.library-page .hero--levoratti-gimnasia-1958-1968 .hero-art,
-.library-page .hero--almada-privilegiados .hero-art {
-  object-fit:contain;
-  object-position:right center;
-}
-.library-page .cover--arata-marino-auroras-tempestades img,
-.library-page .cover--levoratti-gimnasia-1958-1968 img,
-.library-page .cover--almada-privilegiados img {
-  object-fit:contain;
-  object-position:center;
-}
-@media (max-width:760px) {
-  .library-page .hero--arata-marino-auroras-tempestades .hero-art,
-  .library-page .hero--levoratti-gimnasia-1958-1968 .hero-art,
-  .library-page .hero--almada-privilegiados .hero-art {
-    object-position:center top;
-  }
-}
-
 /* Biblioteca · rotación de destacados. Las obras siguen siendo enlaces
    funcionales y el inicio sigue midiendo una pantalla útil. El fundido dura
    700 ms; el tiempo de exposición por portada es 10 s (sin autoplay cuando
@@ -172,6 +150,29 @@
   .library-page .hero-content h1 > span {font-size:clamp(18px, 4.7vw, 24px);}
   .library-page .hero--almada-privilegiados .hero-art {object-position:53% 50%;}
 }
+/* Fuente fotográfica completa en portadas de formato original vertical o cuadrado.
+   Evitar que el recorte 16:10 elimine pancartas, rostros o prácticas corporales. */
+.library-page .hero--arata-marino-auroras-tempestades .hero-art,
+.library-page .hero--levoratti-gimnasia-1958-1968 .hero-art,
+.library-page .hero--almada-privilegiados .hero-art {
+  object-fit:contain;
+  object-position:right center;
+}
+.library-page .cover--arata-marino-auroras-tempestades img,
+.library-page .cover--levoratti-gimnasia-1958-1968 img,
+.library-page .cover--almada-privilegiados img {
+  object-fit:contain;
+  object-position:center;
+}
+@media (max-width:760px) {
+  .library-page .hero--arata-marino-auroras-tempestades .hero-art,
+  .library-page .hero--levoratti-gimnasia-1958-1968 .hero-art,
+  .library-page .hero--almada-privilegiados .hero-art {
+    object-position:center top;
+  }
+}
+
+
 .library-page .hero-content .hero-meta:last-child {margin-bottom:clamp(10px,2.5cqh,22px);}
 .library-page .hero-copy {
   animation:hero-content-fade var(--hero-fade-duration,700ms) ease-out both;
