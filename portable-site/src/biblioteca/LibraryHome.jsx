@@ -61,7 +61,8 @@ function SaveButton({ entry, saved, toggle, label = false }) {
 }
 
 export function Cover({ entry, large = false }) {
-  if (entry.artwork) return <div className={`cover cover--image ${large ? 'cover--large' : ''}`}><img src={href(entry.artwork)} alt="" loading="lazy" /><div className="cover-image-title"><span>{entry.author}</span><strong>{entry.shortTitle}</strong></div></div>;
+  const artworkSrc = /^https?:\/\//i.test(entry.artwork ?? '') ? entry.artwork : href(entry.artwork);
+  if (entry.artwork) return <div className={`cover cover--image ${large ? 'cover--large' : ''}`}><img src={artworkSrc} alt="" loading="lazy" /><div className="cover-image-title"><span>{entry.author}</span><strong>{entry.shortTitle}</strong></div></div>;
   return <div className={`cover cover--type tone-${entry.coverTone} variant-${entry.posterVariant} ${large ? 'cover--large' : ''}`} aria-hidden="true"><span className="cover-series">HISTORIA / EDUCACIÓN FÍSICA</span><span className="cover-shape" /><strong>{entry.shortTitle}</strong><span className="cover-bottom"><span>{entry.author.split(' · ')[0]}</span><span>{entry.year || 'LECTURAS'}</span></span></div>;
 }
 
